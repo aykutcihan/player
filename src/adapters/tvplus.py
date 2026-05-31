@@ -15,7 +15,7 @@ aşağıdaki alan adlarını (START_KEYS/TITLE_KEYS/DESC_KEYS) doğrula.
 from __future__ import annotations
 import json
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from typing import List, Any
 
 from bs4 import BeautifulSoup
@@ -23,7 +23,10 @@ from dateutil import parser as dtparse
 
 from adapters.base import BaseAdapter
 from models import Programme
-from normalize import IST
+from normalize import IST, ist, parse_hhmm_on
+
+TIME_RANGE_RE = re.compile(r"(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})")
+KNOWN_CATS = {"Dizi", "Film", "Spor", "Haber", "Belgesel", "Çocuk", "Müzik", "Yaşam", "Yarışma"}
 
 START_KEYS = ("startTime", "start", "beginTime", "startDate", "start_ts")
 STOP_KEYS = ("endTime", "stop", "finishTime", "endDate", "end_ts")
@@ -113,6 +116,39 @@ class TVPlusAdapter(BaseAdapter):
         return out
 
     def _from_html(self, html: str, channel_id: str) -> List[Programme]:
-        # >>> TODO: __NEXT_DATA__ boş gelirse canlı DOM'a göre doldur.
-        # Yayın akışı satırlarını seçecek CSS selector'ı PC'de inceleyip yaz.
-        return []
+        soup = BeautifulSoup(html, "lxml")
+        today = ist(datetime.now())
+        out: List[Programme] = []
+        for li in soup.select("li"):
+            h3 = li.find("h3")
+            if not h3:
+                continue
+            title = h3.get_text(strip=True)
+            if not title:
+                continue
+            start_dt = stop_dt = None
+            category = desc = None
+            for div in li.find_all("div"):
+                txt = div.get_text(strip=True)
+                m = TIME_RANGE_RE.match(txt)
+                if m:
+                    start_dt = parse_hhmm_on(today, m.group(1))
+                    stop_dt = parse_hhmm_on(today, m.group(2))
+                    if stop_dt <= start_dt:
+                        stop_dt += timedelta(days=1)
+                elif txt in KNOWN_CATS and not category:
+                    category = txt
+            p_tag = li.find("p")
+            if p_tag:
+                desc = p_tag.get_text(strip=True) or None
+            if start_dt:
+                out.append(Programme(
+                    channel_id=channel_id,
+                    start=start_dt,
+                    stop=stop_dt,
+                    title=title,
+                    category=category,
+                    desc=desc,
+                    source=self.prefix,
+                ))
+        return out

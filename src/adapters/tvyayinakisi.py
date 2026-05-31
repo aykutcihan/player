@@ -46,7 +46,7 @@ class TvYayinAkisiAdapter(BaseAdapter):
         out: List[Programme] = []
         # >>> TODO: doğru kapsayıcıyı seç. Şimdilik tüm <li>'leri tara.
         for li in soup.select("li"):
-            txt = " ".join(li.get_text(" ").split())
+            txt = " ".join(li.get_text("").split())
             if not txt:
                 continue
             low = txt.lower()
