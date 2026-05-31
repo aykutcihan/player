@@ -1057,7 +1057,7 @@ channels:
       - tvplus:sinema-tv-1001-hd--181
       - tvyayinakisi:sinema-tv-1001
 
-  tr.sinematv2:
+  Sinema2.tr:
     name: "Sinema TV 2"
     sources:
       - tvplus:sinema-tv-2-hd--199
