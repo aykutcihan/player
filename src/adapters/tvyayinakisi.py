@@ -21,7 +21,10 @@ from adapters.base import BaseAdapter
 from models import Programme
 from normalize import ist
 
-TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})")
+TIME_RANGE_RE = re.compile(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})")
+TIME_RE = re.compile(r"(\d{1,2})\s*:\s*(\d{2})")
+CAT_RE = re.compile(r"\b(Spor|Dizi|Film|Belgesel|Haber|Çocuk|Müzik)\b$")
+FILLER = ("az sonra", "yayın akışı bulunamadı", "bu gün için")
 
 
 class TvYayinAkisiAdapter(BaseAdapter):
@@ -36,14 +39,16 @@ class TvYayinAkisiAdapter(BaseAdapter):
     def fetch(self, source_id: str, channel_id: str) -> List[Programme]:
         if not self._loaded:
             self._fill_cache()
-        raw = self._cache.get(source_id, [])
-        # Önbellekte channel_id placeholder — doğrusu burada set edilir
-        return [Programme(
-            channel_id=channel_id,
-            start=p.start, stop=p.stop,
-            title=p.title, category=p.category,
-            source=self.prefix,
-        ) for p in raw]
+        if source_id in self._cache:
+            raw = self._cache[source_id]
+            return [Programme(
+                channel_id=channel_id,
+                start=p.start, stop=p.stop,
+                title=p.title, category=p.category,
+                source=self.prefix,
+            ) for p in raw]
+        # Guide'da yok — bireysel kanal sayfasını dene (eski <li><strong> yapısı)
+        return self._fetch_individual(source_id, channel_id)
 
     def _fill_cache(self):
         self._loaded = True
@@ -55,6 +60,46 @@ class TvYayinAkisiAdapter(BaseAdapter):
         self._parse_page(html)
         total = sum(len(v) for v in self._cache.values())
         print(f"  [tvyayinakisi] {len(self._cache)} kanal, {total} program önbelleğe alındı.")
+
+    def _fetch_individual(self, slug: str, channel_id: str) -> List[Programme]:
+        """Bireysel kanal sayfası: <li><strong>HH</strong>:MM Başlık [Kategori]"""
+        try:
+            html = self._get(f"{self.base_url}/{slug}-yayin-akisi/").text
+        except Exception:
+            return []
+        soup = BeautifulSoup(html, "lxml")
+        today = ist(datetime.now())
+        out: List[Programme] = []
+        for li in soup.select("li"):
+            if not li.find("strong"):
+                continue
+            txt = " ".join(li.get_text("").split())
+            if not txt or any(f in txt.lower() for f in FILLER):
+                continue
+            mt = TIME_RE.search(txt)
+            if not mt:
+                continue
+            hhmm = f"{mt.group(1)}:{mt.group(2)}"
+            rest = txt[mt.end():].strip(" -–—")
+            if not rest:
+                continue
+            cm = CAT_RE.search(rest)
+            category = cm.group(1) if cm else None
+            title = rest[:cm.start()].strip() if cm else rest
+            try:
+                h, m = int(mt.group(1)), int(mt.group(2))
+                start_dt = ist(datetime(today.year, today.month, today.day, h % 24, m))
+                if h >= 24:
+                    start_dt += timedelta(days=1)
+            except ValueError:
+                continue
+            out.append(Programme(
+                channel_id=channel_id,
+                start=start_dt,
+                title=title, category=category,
+                source=self.prefix,
+            ))
+        return out
 
     def _parse_page(self, html: str):
         soup = BeautifulSoup(html, "lxml")
@@ -72,7 +117,7 @@ class TvYayinAkisiAdapter(BaseAdapter):
                 title = title_el.get_text(strip=True) if title_el else ""
                 time_txt = time_el.get_text("").replace(" ", "") if time_el else ""
 
-                m = TIME_RE.search(time_txt)
+                m = TIME_RANGE_RE.search(time_txt)
                 if not m or not title:
                     continue
 
