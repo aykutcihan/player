@@ -126,29 +126,24 @@ class TVPlusAdapter(BaseAdapter):
             title = h3.get_text(strip=True)
             if not title:
                 continue
-            start_dt = stop_dt = None
-            category = desc = None
-            for div in li.find_all("div"):
-                txt = div.get_text(strip=True)
-                m = TIME_RANGE_RE.match(txt)
-                if m:
-                    start_dt = parse_hhmm_on(today, m.group(1))
-                    stop_dt = parse_hhmm_on(today, m.group(2))
-                    if stop_dt <= start_dt:
-                        stop_dt += timedelta(days=1)
-                elif txt in KNOWN_CATS and not category:
-                    category = txt
+            li_text = li.get_text(" ")
+            m = TIME_RANGE_RE.search(li_text)
+            if not m:
+                continue
+            start_dt = parse_hhmm_on(today, m.group(1))
+            stop_dt = parse_hhmm_on(today, m.group(2))
+            if stop_dt <= start_dt:
+                stop_dt += timedelta(days=1)
+            category = next((c for c in KNOWN_CATS if c in li_text), None)
             p_tag = li.find("p")
-            if p_tag:
-                desc = p_tag.get_text(strip=True) or None
-            if start_dt:
-                out.append(Programme(
-                    channel_id=channel_id,
-                    start=start_dt,
-                    stop=stop_dt,
-                    title=title,
-                    category=category,
-                    desc=desc,
-                    source=self.prefix,
-                ))
+            desc = p_tag.get_text(strip=True) or None if p_tag else None
+            out.append(Programme(
+                channel_id=channel_id,
+                start=start_dt,
+                stop=stop_dt,
+                title=title,
+                category=category,
+                desc=desc,
+                source=self.prefix,
+            ))
         return out

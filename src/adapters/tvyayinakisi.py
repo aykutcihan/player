@@ -26,7 +26,7 @@ from models import Programme
 from normalize import parse_hhmm_on, simplify, ist
 
 FILLER = ("az sonra", "yayın akışı bulunamadı", "bu gün için")
-TIME_RE = re.compile(r"\b(\d{1,2}:\d{2})\b")
+TIME_RE = re.compile(r"(\d{1,2})\s*:\s*(\d{2})")
 
 
 class TvYayinAkisiAdapter(BaseAdapter):
@@ -55,7 +55,7 @@ class TvYayinAkisiAdapter(BaseAdapter):
             mt = TIME_RE.search(txt)
             if not mt:
                 continue
-            hhmm = mt.group(1)
+            hhmm = f"{mt.group(1)}:{mt.group(2)}"
             rest = txt[mt.end():].strip(" -–—")
             if not rest:
                 continue
