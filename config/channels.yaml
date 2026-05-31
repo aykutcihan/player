@@ -17,6 +17,7 @@
 #
 # Öncelik: liste[0]=birincil (zengin), sonrakiler boşlukları doldurur.
 # ============================================================
+
 # Tam kanal listesi — TV+ , Tivibu , tvyayinakisi birleşimi
 # Öncelik: TV+ -> Tivibu -> tvyayinakisi (mevcut olanlar). beIN -> tvyayinakisi(+digiturk).
 # tvg-id'leri kendi M3U'na göre değiştirebilirsin. name serbest.
@@ -168,11 +169,13 @@ channels:
     name: "beIN Gurme"
     sources:
       - tvyayinakisi:bein-gurme
+      - digiturkburada:bein-gurme-hd-yayin-akisi-15
 
   tr.beinhomeentertainment:
     name: "beIN Home Entertainment"
     sources:
       - tvyayinakisi:bein-home-entertainment
+      - digiturkburada:bein-home-entertainment-hd-yayin-akisi-14
 
   tr.beiniz:
     name: "beIN Iz"
@@ -188,26 +191,31 @@ channels:
     name: "beIN Movies Premiere"
     sources:
       - tvyayinakisi:bein-movies-premiere
+      - digiturkburada:bein-movies-premiere-hd-yayin-akisi-6
 
   tr.beinmoviesstars:
     name: "beIN Movies Stars"
     sources:
       - tvyayinakisi:bein-movies-stars
+      - digiturkburada:bein-movies-stars-hd-yayin-akisi-8
 
   tr.beinmoviesturk:
     name: "beIN Movies Turk"
     sources:
       - tvyayinakisi:bein-movies-turk
+      - digiturkburada:bein-movies-turk-hd-yayin-akisi-12
 
   tr.beinseries1:
     name: "beIN Series 1"
     sources:
       - tvyayinakisi:bein-series-1
+      - digiturkburada:bein-series-1-hd-yayin-akisi-160
 
   tr.beinseries2:
     name: "beIN Series 2"
     sources:
       - tvyayinakisi:bein-series-2
+      - digiturkburada:bein-series-2-hd-yayin-akisi-161
 
   tr.beinsports1:
     name: "beIN Sports 1"
@@ -219,31 +227,42 @@ channels:
     name: "beIN Sports 2"
     sources:
       - tvyayinakisi:bein-sports-2
+      - digiturkburada:bein-sports-2-hd-yayin-akisi-61
 
   tr.beinsports3:
     name: "beIN Sports 3"
     sources:
       - tvyayinakisi:bein-sports-3
+      - digiturkburada:bein-sports-3-hd-yayin-akisi-62
 
   tr.beinsports4:
     name: "beIN Sports 4"
     sources:
       - tvyayinakisi:bein-sports-4
+      - digiturkburada:bein-sports-4-hd-yayin-akisi-63
+
+  tr.beinsports5:
+    name: "beIN Sports 5"
+    sources:
+      - digiturkburada:bein-sports-5-hd-yayin-akisi-154
 
   tr.beinsportshaber:
     name: "beIN Sports Haber"
     sources:
       - tvyayinakisi:bein-sports-haber
+      - digiturkburada:bein-sports-haber-hd-yayin-akisi-66
 
   tr.beinsportsmax1:
     name: "beIN Sports Max 1"
     sources:
       - tvyayinakisi:bein-sports-max-1
+      - digiturkburada:bein-sports-max-1-hd-yayin-akisi-64
 
   tr.beinsportsmax2:
     name: "beIN Sports Max 2"
     sources:
       - tvyayinakisi:bein-sports-max-2
+      - digiturkburada:bein-sports-max-2-hd-yayin-akisi-65
 
   tr.benguturk:
     name: "Benguturk"
@@ -503,6 +522,7 @@ channels:
     sources:
       - tvplus:fb-tv--148
       - tvyayinakisi:fb-tv
+      - digiturkburada:fb-tv-hd-yayin-akisi-59
 
   tr.filmscreen:
     name: "Filmscreen"
@@ -555,6 +575,7 @@ channels:
     name: "GS TV"
     sources:
       - tvyayinakisi:gs-tv
+      - digiturkburada:gs-tv-hd-yayin-akisi-58
 
   tr.gzttv:
     name: "Gzt TV"
