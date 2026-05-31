@@ -119,24 +119,27 @@ class TVPlusAdapter(BaseAdapter):
         soup = BeautifulSoup(html, "lxml")
         today = ist(datetime.now())
         out: List[Programme] = []
-        for li in soup.select("li"):
-            h3 = li.find("h3")
-            if not h3:
+        for li in soup.select("li.epg-card"):
+            title_el = li.find("h3", class_="epg-card__title")
+            if not title_el:
                 continue
-            title = h3.get_text(strip=True)
+            title = title_el.get_text(strip=True)
             if not title:
                 continue
-            li_text = li.get_text(" ")
-            m = TIME_RANGE_RE.search(li_text)
+            time_el = li.find("p", class_="epg-card__time")
+            if not time_el:
+                continue
+            m = TIME_RANGE_RE.match(time_el.get_text(strip=True))
             if not m:
                 continue
             start_dt = parse_hhmm_on(today, m.group(1))
             stop_dt = parse_hhmm_on(today, m.group(2))
             if stop_dt <= start_dt:
                 stop_dt += timedelta(days=1)
-            category = next((c for c in KNOWN_CATS if c in li_text), None)
-            p_tag = li.find("p")
-            desc = p_tag.get_text(strip=True) or None if p_tag else None
+            genre_el = li.find("p", class_="epg-card__genres")
+            category = genre_el.get_text(strip=True) if genre_el else None
+            desc_el = li.find("p", class_="epg-card__description-desktop")
+            desc = desc_el.get_text(strip=True) or None if desc_el else None
             out.append(Programme(
                 channel_id=channel_id,
                 start=start_dt,
