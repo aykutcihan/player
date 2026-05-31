@@ -68,22 +68,33 @@ def main():
                 settings.get("min_gap_minutes", 2),
                 settings.get("overlap_tolerance_minutes", 5))
             merged = derive_stops(merged)
-            # beIN kanalları: son programdan sonra 01:10'a kadar "Gece Yayını" ekle
+            # beIN kanalları: son programdan sonra yeni veri gelene kadar aynı günü döngüyle tekrarla
             if merged and "bein" in tvg_id.lower():
                 last = max(merged, key=lambda p: p.start)
                 if last.stop:
-                    now = ist(datetime.now())
-                    gece_bitis = (now + timedelta(days=1)).replace(
-                        hour=1, minute=10, second=0, microsecond=0)
-                    if last.stop < gece_bitis:
-                        merged.append(Programme(
-                            channel_id=tvg_id,
-                            start=last.stop,
-                            stop=gece_bitis,
-                            title=f"{ch.name} - Gece Yayını",
-                            desc="Güncel yayın bilgisi bir sonraki güncellemede gelecek.",
-                            source="placeholder",
-                        ))
+                    loop_end = last.stop + timedelta(hours=24)
+                    sorted_progs = sorted(
+                        [p for p in merged if p.stop and p.source != "loop"],
+                        key=lambda p: p.start)
+                    if sorted_progs:
+                        cur = last.stop
+                        while cur < loop_end:
+                            offset = cur - sorted_progs[0].start
+                            for p in sorted_progs:
+                                ns = p.start + offset
+                                ne = p.stop + offset
+                                if ns >= loop_end:
+                                    break
+                                merged.append(Programme(
+                                    channel_id=tvg_id,
+                                    start=ns,
+                                    stop=min(ne, loop_end),
+                                    title=p.title,
+                                    desc=p.desc,
+                                    category=p.category,
+                                    source="loop",
+                                ))
+                            cur = cur + (sorted_progs[-1].stop - sorted_progs[0].start)
         else:
             merged = placeholder_programmes(
                 tvg_id, settings.get("window_days", 7))
