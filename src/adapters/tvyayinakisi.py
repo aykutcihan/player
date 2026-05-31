@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup
 
 from adapters.base import BaseAdapter
 from models import Programme
-from normalize import ist
+from normalize import ist, simplify
 
 TIME_RANGE_RE = re.compile(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})")
 TIME_RE = re.compile(r"(\d{1,2})\s*:\s*(\d{2})")
@@ -85,7 +85,9 @@ class TvYayinAkisiAdapter(BaseAdapter):
                 continue
             cm = CAT_RE.search(rest)
             category = cm.group(1) if cm else None
-            title = rest[:cm.start()].strip() if cm else rest
+            raw_title = rest[:cm.start()].strip() if cm else rest
+            # Spor kanalları: "21. Hafta A - B Maçı" → title="A - B", desc=full
+            s = simplify(raw_title) if category and category.lower() == "spor" else {"title": raw_title, "desc": None}
             try:
                 h, m = int(mt.group(1)), int(mt.group(2))
                 start_dt = ist(datetime(today.year, today.month, today.day, h % 24, m))
@@ -96,7 +98,7 @@ class TvYayinAkisiAdapter(BaseAdapter):
             out.append(Programme(
                 channel_id=channel_id,
                 start=start_dt,
-                title=title, category=category,
+                title=s["title"], desc=s["desc"], category=category,
                 source=self.prefix,
             ))
         return out
