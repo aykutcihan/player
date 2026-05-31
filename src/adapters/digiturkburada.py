@@ -20,7 +20,7 @@ from adapters.base import BaseAdapter
 from models import Programme
 from normalize import parse_hhmm_on, simplify, ist
 
-TIME_RE = re.compile(r"\b(\d{1,2}:\d{2})\b")
+TIME_RE = re.compile(r"(\d{1,2}):(\d{2})")
 
 
 class DigiturkBuradaAdapter(BaseAdapter):
@@ -34,21 +34,24 @@ class DigiturkBuradaAdapter(BaseAdapter):
 
     def _parse(self, html: str, channel_id: str) -> List[Programme]:
         soup = BeautifulSoup(html, "lxml")
+        soup.encoding = "utf-8"
         today = ist(datetime.now())
         out: List[Programme] = []
-        # >>> TODO: gerçek tablo selector'ı. Şimdilik tr/li üzerinden saat+ad ayıkla.
-        for row in soup.select("tr, li"):
-            txt = " ".join(row.get_text(" ").split())
-            mt = TIME_RE.search(txt)
-            if not mt:
+        # Tablo: <tr><td>Yayın İsmi</td><td>Başlangıç</td></tr>
+        for row in soup.select("tr"):
+            cells = row.select("td")
+            if len(cells) < 2:
                 continue
-            name = txt[mt.end():].strip(" -–—")
-            if not name:
+            name = cells[0].get_text(strip=True)
+            time_txt = cells[1].get_text(strip=True)
+            mt = TIME_RE.match(time_txt)
+            if not mt or not name:
                 continue
-            s = simplify(name)  # beIN spor: maç adı çıkar
+            hhmm = f"{mt.group(1)}:{mt.group(2)}"
+            s = simplify(name)
             out.append(Programme(
                 channel_id=channel_id,
-                start=parse_hhmm_on(today, mt.group(1)),
+                start=parse_hhmm_on(today, hhmm),
                 title=s["title"], desc=s["desc"], category="Spor",
                 source=self.prefix,
             ))
