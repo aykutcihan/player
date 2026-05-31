@@ -19,7 +19,7 @@ jobs:
       PYTHONUTF8: "1"
     defaults:
       run:
-        shell: powershell
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -27,7 +27,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Hazırlık
-        run: New-Item -Force -ItemType Directory -Path cache | Out-Null
+        run: mkdir -p cache
 
       - name: EPG üret
         env:
@@ -39,15 +39,13 @@ jobs:
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          if (Test-Path "epg.xml")          { git add epg.xml }
-          if (Test-Path "cache/tmdb.json")  { git add cache/tmdb.json }
+          [ -f epg.xml ]          && git add epg.xml
+          [ -f cache/tmdb.json ]  && git add cache/tmdb.json
 
-          git diff --cached --quiet
-          if ($LASTEXITCODE -ne 0) {
-            $ts = [System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ")
-            git commit -m "Automated EPG update ($ts)"
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok, commit atlanıyor."
+          else
+            git commit -m "Automated EPG update ($(date -u +%FT%TZ))"
             git pull --rebase origin master
             git push
-          } else {
-            Write-Host "Degisiklik yok, commit atlanıyor."
-          }
+          fi
