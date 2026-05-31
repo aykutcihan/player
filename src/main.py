@@ -58,8 +58,6 @@ def main():
                 if progs:
                     per_source.append(progs)
                     print(f"  {tvg_id} <- {src}: {len(progs)} program")
-                else:
-                    print(f"  [boş] {tvg_id} <- {src}: 0 program")
             except Exception as e:
                 print(f"  [hata] {tvg_id} <- {src}: {e}")
 
