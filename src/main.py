@@ -9,16 +9,17 @@ Ana orkestratör:
 from __future__ import annotations
 import sys
 from pathlib import Path
+from datetime import datetime, timedelta
 
 import requests
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from models import Channel
+from models import Channel, Programme
 from adapters import build_registry, split_source
 from merge import merge_sources
-from normalize import derive_stops
+from normalize import derive_stops, ist
 from enrich_tmdb import TMDbEnricher
 from placeholder import placeholder_programmes
 from xmltv import write_xmltv
@@ -67,6 +68,22 @@ def main():
                 settings.get("min_gap_minutes", 2),
                 settings.get("overlap_tolerance_minutes", 5))
             merged = derive_stops(merged)
+            # beIN kanalları: son programdan sonra 01:10'a kadar "Gece Yayını" ekle
+            if merged and "bein" in tvg_id.lower():
+                last = max(merged, key=lambda p: p.start)
+                if last.stop:
+                    now = ist(datetime.now())
+                    gece_bitis = (now + timedelta(days=1)).replace(
+                        hour=1, minute=10, second=0, microsecond=0)
+                    if last.stop < gece_bitis:
+                        merged.append(Programme(
+                            channel_id=tvg_id,
+                            start=last.stop,
+                            stop=gece_bitis,
+                            title=f"{ch.name} - Gece Yayını",
+                            desc="Güncel yayın bilgisi bir sonraki güncellemede gelecek.",
+                            source="placeholder",
+                        ))
         else:
             merged = placeholder_programmes(
                 tvg_id, settings.get("window_days", 7))
