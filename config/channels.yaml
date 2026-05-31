@@ -6,25 +6,22 @@
 #     name: "Oynatıcıda görünecek ad"
 #     sources: [ "<adapter>:<kaynak-id>", ... ]   # ÖNCELİK SIRASI
 #
-# tvg-id: M3U dosyandaki tvg-id ile BİREBİR aynı olmalı.
-#         M3U yoksa istediğini uydur (örn. tr.startv) ama M3U'da da aynısını kullan.
+# tvg-id formatlari:
+#   Standart (iptv-org uyumlu): ChannelName.tr  ornek: HalkTV.tr
+#   Eski format:                tr.channelname   ornek: tr.halktv
 #
 # Kaynak id biçimleri:
 #   tvplus:<slug>            örn. tvplus:star-tv-hd--89
 #   tivibu:<chID>            örn. tivibu:ch00000000000000001170
-#   tvyayinakisi:<slug>      örn. tvyayinakisi:star-tv   (URL: /{slug}-yayin-akisi/)
+#   tvyayinakisi:<slug>      örn. tvyayinakisi:star-tv
 #   digiturkburada:<slug-id> örn. digiturkburada:bein-sports-1-hd-yayin-akisi-60
 #
 # Öncelik: liste[0]=birincil (zengin), sonrakiler boşlukları doldurur.
 # ============================================================
 
-# Tam kanal listesi — TV+ , Tivibu , tvyayinakisi birleşimi
-# Öncelik: TV+ -> Tivibu -> tvyayinakisi (mevcut olanlar). beIN -> tvyayinakisi(+digiturk).
-# tvg-id'leri kendi M3U'na göre değiştirebilirsin. name serbest.
-
 channels:
 
-  tr24tv.tr:
+  24TV.tr:
     name: "24"
     sources:
       - tvplus:24-hd--32
@@ -38,48 +35,48 @@ channels:
       - tivibu:ch00000000000000001401
       - tvyayinakisi:360
 
-  tr.ahaber:
+  AHaber.tr:
     name: "A Haber"
     sources:
       - tvplus:a-haber-hd--160
       - tivibu:ch00000000000000001021
       - tvyayinakisi:a-haber
 
-  tr.anews:
+  ANews.tr:
     name: "A News"
     sources:
       - tvplus:a-news-hd--101
       - tvyayinakisi:a-news
 
-  tr.apara:
+  APara.tr:
     name: "A Para"
     sources:
       - tvplus:a-para-hd--79
       - tivibu:ch00000000000000001024
       - tvyayinakisi:a-para
 
-  tr.aspor:
+  ASpor.tr:
     name: "A Spor"
     sources:
       - tvplus:a-spor-hd--3
       - tivibu:ch00000000000000001025
       - tvyayinakisi:a-spor
 
-  tr.a2:
+  A2TV.tr:
     name: "A2"
     sources:
       - tvplus:a2-hd--2
       - tivibu:ch00000000000000001026
       - tvyayinakisi:a2
 
-  tr.akittv:
+  AkitTV.tr:
     name: "Akit TV"
     sources:
       - tvplus:akit-tv-hd--13
       - tivibu:ch00000000000000001027
       - tvyayinakisi:akit-tv
 
-  tr.aksutv:
+  AksuTV.tr:
     name: "Aksu TV"
     sources:
       - tvyayinakisi:aksu-tv
@@ -113,20 +110,20 @@ channels:
     sources:
       - tvyayinakisi:arirang-tv
 
-  tr.astv:
+  ASTV.tr:
     name: "As TV"
     sources:
       - tvplus:as-tv--4466
       - tvyayinakisi:as-tv
 
-  tr.atv:
+  ATV.tr:
     name: "Atv"
     sources:
       - tvplus:atv-hd--124
       - tivibu:ch00000000000000001017
       - tvyayinakisi:atv
 
-  tr.atvavrupa:
+  ATVAvrupa.tr:
     name: "Atv Avrupa"
     sources:
       - tvyayinakisi:atv-avrupa
@@ -165,7 +162,7 @@ channels:
       - tvplus:bbc-news--4460
       - tvyayinakisi:bbc-news
 
-  tr.beingurme:
+  beINGurme.tr:
     name: "beIN Gurme"
     sources:
       - tvyayinakisi:bein-gurme
@@ -177,29 +174,29 @@ channels:
       - tvyayinakisi:bein-home-entertainment
       - digiturkburada:bein-home-entertainment-hd-yayin-akisi-14
 
-  tr.beiniz:
+  beINIZ.tr:
     name: "beIN Iz"
     sources:
       - tvyayinakisi:bein-iz
 
-  tr.beinmoviesaction2:
+  beINMoviesAction2.tr:
     name: "beIN Movies Action 2"
     sources:
       - tvyayinakisi:bein-movies-action-2
 
-  tr.beinmoviespremiere:
+  beINMoviesPremiere.tr:
     name: "beIN Movies Premiere"
     sources:
       - tvyayinakisi:bein-movies-premiere
       - digiturkburada:bein-movies-premiere-hd-yayin-akisi-6
 
-  tr.beinmoviesstars:
+  beINMoviesStars.tr:
     name: "beIN Movies Stars"
     sources:
       - tvyayinakisi:bein-movies-stars
       - digiturkburada:bein-movies-stars-hd-yayin-akisi-8
 
-  tr.beinmoviesturk:
+  beINMoviesTurk.tr:
     name: "beIN Movies Turk"
     sources:
       - tvyayinakisi:bein-movies-turk
@@ -246,7 +243,7 @@ channels:
     sources:
       - digiturkburada:bein-sports-5-hd-yayin-akisi-154
 
-  tr.beinsportshaber:
+  beINSportsHaber.tr:
     name: "beIN Sports Haber"
     sources:
       - tvyayinakisi:bein-sports-haber
@@ -264,7 +261,7 @@ channels:
       - tvyayinakisi:bein-sports-max-2
       - digiturkburada:bein-sports-max-2-hd-yayin-akisi-65
 
-  tr.benguturk:
+  BenguturkTV.tr:
     name: "Benguturk"
     sources:
       - tvplus:benguturk--47
@@ -276,7 +273,7 @@ channels:
     sources:
       - tivibu:ch00000000000000001481
 
-  tr.beyaztv:
+  BeyazTV.tr:
     name: "Beyaz TV"
     sources:
       - tvplus:beyaz-tv-hd--135
@@ -289,13 +286,13 @@ channels:
       - tvplus:bi-kanal--4495
       - tvyayinakisi:bi-kanal-tv
 
-  tr.bizimevtv:
+  BizimevTV.tr:
     name: "Bizim Ev TV"
     sources:
       - tvplus:bizim-ev-tv--118
       - tvyayinakisi:bizim-ev-tv
 
-  tr.bloomberght:
+  BloombergHT.tr:
     name: "Bloomberg HT"
     sources:
       - tvplus:bloomberg-ht-hd--96
@@ -325,7 +322,7 @@ channels:
     sources:
       - tvyayinakisi:brt-3
 
-  tr.cartoonnetwork:
+  CartoonNetwork.tr:
     name: "Cartoon Network"
     sources:
       - tvplus:cartoon-network--20
@@ -338,7 +335,7 @@ channels:
       - tivibu:ch00000000000000001091
       - tvyayinakisi:cartoonito
 
-  tr.cbeebies:
+  CBeebies.tr:
     name: "Cbeebies"
     sources:
       - tvplus:cbeebies--4520
@@ -354,7 +351,7 @@ channels:
     sources:
       - tvyayinakisi:cgtn
 
-  tr.ciftcitv:
+  CiftciTV.tr:
     name: "Ciftci TV"
     sources:
       - tvplus:ciftci-tv--2279
@@ -365,7 +362,7 @@ channels:
     sources:
       - tvyayinakisi:classical-harmony
 
-  tr.cnbce:
+  CNBCe.tr:
     name: "CNBC E"
     sources:
       - tvplus:cnbce--4362
@@ -378,14 +375,14 @@ channels:
       - tvplus:cnn-international--4454
       - tvyayinakisi:cnn-international
 
-  tr.cnnturk:
+  CNNTurk.tr:
     name: "CNN Turk"
     sources:
       - tvplus:cnn-turk-hd--158
       - tivibu:ch00000000000000001092
       - tvyayinakisi:cnn-turk
 
-  tr.cocuksmart:
+  CocukSmart.tr:
     name: "Cocuk Smart"
     sources:
       - tvyayinakisi:cocuk-smart
@@ -407,7 +404,7 @@ channels:
       - tvplus:da-vinci-hd--208
       - tvyayinakisi:da-vinci
 
-  tr.discoverychannel:
+  DiscoveryChannel.tr:
     name: "Discovery Channel"
     sources:
       - tvplus:discovery-channel-hd--8
@@ -421,17 +418,17 @@ channels:
       - tivibu:ch00000000000000001123
       - tvyayinakisi:disney-junior
 
-  tr.dizismartmax:
+  DiziSmartMax.tr:
     name: "Dizismart Max"
     sources:
       - tvyayinakisi:dizismart-max
 
-  tr.dizismartpremium:
+  DiziSmartPremium.tr:
     name: "Dizismart Premium"
     sources:
       - tvyayinakisi:dizismart-premium
 
-  tr.dmax:
+  DMAX.tr:
     name: "DMAX"
     sources:
       - tvplus:dmax-hd--180
@@ -443,7 +440,7 @@ channels:
     sources:
       - tvyayinakisi:docuscreen
 
-  tr.dreamturk:
+  DreamTurk.tr:
     name: "Dream Turk"
     sources:
       - tvplus:dream-turk--153
@@ -468,7 +465,7 @@ channels:
     sources:
       - tvplus:ekol-tv--4355
 
-  tr.ekoturk:
+  Ekoturk.tr:
     name: "Ekoturk"
     sources:
       - tvplus:ekoturk-hd--100
@@ -487,7 +484,7 @@ channels:
       - tivibu:ch00000000000000002389
       - tvyayinakisi:epic-drama
 
-  tr.eurod:
+  EuroD.tr:
     name: "Euro D"
     sources:
       - tvyayinakisi:euro-d
@@ -517,7 +514,7 @@ channels:
     sources:
       - tvyayinakisi:fashion-tv
 
-  tr.fbtv:
+  FBTV.tr:
     name: "FB TV"
     sources:
       - tvplus:fb-tv--148
@@ -530,13 +527,13 @@ channels:
       - tivibu:ch00000000000000002905
       - tvyayinakisi:filmscreen
 
-  tr.flashhaber:
+  FlashHaberTV.tr:
     name: "Flash Haber"
     sources:
       - tvplus:flash-haber--2979
       - tvyayinakisi:flash-haber
 
-  tr.fmtv:
+  FMTV.tr:
     name: "Fm TV"
     sources:
       - tvplus:fm-tv--163
@@ -564,7 +561,7 @@ channels:
     sources:
       - tvyayinakisi:freedom-tv
 
-  tr.fx:
+  FX.tr:
     name: "FX"
     sources:
       - tvplus:fx-hd--131
@@ -577,33 +574,33 @@ channels:
       - tvyayinakisi:gs-tv
       - digiturkburada:gs-tv-hd-yayin-akisi-58
 
-  tr.gzttv:
+  GZT.tr:
     name: "Gzt TV"
     sources:
       - tvplus:gzt-tv--4461
       - tvyayinakisi:gzt-tv
 
-  tr.haberglobal:
+  HaberGlobal.tr:
     name: "Haber Global"
     sources:
       - tvplus:haber-global-hd--5
       - tivibu:ch00000000000000001156
       - tvyayinakisi:haber-global
 
-  tr.haberturk:
+  HaberturkTV.tr:
     name: "Haberturk"
     sources:
       - tvplus:haberturk-hd--87
       - tivibu:ch00000000000000001159
       - tvyayinakisi:haberturk
 
-  tr.habitattv:
+  Habitat.tr:
     name: "Habitat TV"
     sources:
       - tivibu:ch00000000000000001160
       - tvyayinakisi:habitat-tv
 
-  tr.halktv:
+  HalkTV.tr:
     name: "Halk TV"
     sources:
       - tvplus:halk-tv--91
@@ -614,59 +611,59 @@ channels:
     sources:
       - tvyayinakisi:hayat-2
 
-  tr.htspor:
+  HTSporTV.tr:
     name: "HT Spor"
     sources:
       - tvplus:ht-spor--4396
       - tvyayinakisi:ht-spor
 
-  tr.kadirgatv:
+  KadirgaTV.tr:
     name: "Kadirga TV"
     sources:
       - tvplus:kadirga-tv--110
       - tvyayinakisi:kadirga-tv
 
-  tr.kanal23:
+  Kanal23.tr:
     name: "Kanal 23"
     sources:
       - tvplus:kanal-23--2359
       - tvyayinakisi:kanal-23
 
-  tr.kanal26:
+  Kanal26.tr:
     name: "Kanal 26"
     sources:
       - tvplus:kanal-26--143
       - tvyayinakisi:kanal-26
 
-  tr.kanal33:
+  Kanal33.tr:
     name: "Kanal 33"
     sources:
       - tvplus:kanal-33--146
       - tvyayinakisi:kanal-33
 
-  tr.kanal7:
+  Kanal7.tr:
     name: "Kanal 7"
     sources:
       - tvplus:kanal-7-hd--90
       - tivibu:ch00000000000000001165
       - tvyayinakisi:kanal-7
 
-  tr.kanal7avrupa:
+  Kanal7Avrupa.tr:
     name: "Kanal 7 Avrupa"
     sources:
       - tvyayinakisi:kanal-7-avrupa
 
-  tr.kanalavrupatv:
+  KanalAvrupa.tr:
     name: "Kanal Avrupa TV"
     sources:
       - tvyayinakisi:kanal-avrupa-tv
 
-  tr.kanalb:
+  KanalB.tr:
     name: "Kanal B"
     sources:
       - tvyayinakisi:kanal-b
 
-  tr.kanald:
+  KanalD.tr:
     name: "Kanal D"
     sources:
       - tvplus:kanal-d-hd--88
@@ -679,7 +676,7 @@ channels:
       - tvplus:kanal-t--42
       - tvyayinakisi:kanal-t
 
-  tr.kanalv:
+  KanalV.tr:
     name: "Kanal V"
     sources:
       - tvplus:kanal-v--114
@@ -712,19 +709,19 @@ channels:
     sources:
       - tvyayinakisi:kitchen-tv
 
-  tr.kontv:
+  KonTV.tr:
     name: "Kon TV"
     sources:
       - tvplus:kontv-hd--63
       - tvyayinakisi:kon-tv
 
-  tr.krttv:
+  KRT.tr:
     name: "KRT TV"
     sources:
       - tvplus:krt-tv--111
       - tvyayinakisi:krt-tv
 
-  tr.lalegultv:
+  LalegulTV.tr:
     name: "Lalegul TV"
     sources:
       - tvyayinakisi:lalegul-tv
@@ -734,7 +731,7 @@ channels:
     sources:
       - tvyayinakisi:langlab
 
-  tr.liderhabertv:
+  LiderHaber.tr:
     name: "Lider Haber TV"
     sources:
       - tvyayinakisi:lider-haber-tv
@@ -755,7 +752,7 @@ channels:
     sources:
       - tvyayinakisi:mcm-top
 
-  tr.meltemtv:
+  MeltemTV.tr:
     name: "Meltem TV"
     sources:
       - tvplus:meltem-tv--138
@@ -766,14 +763,14 @@ channels:
     sources:
       - tvyayinakisi:mezzo
 
-  tr.minikacocuk:
+  MinikaCocuk.tr:
     name: "Minika Cocuk"
     sources:
       - tvplus:minika-cocuk--102
       - tivibu:ch00000000000000001187
       - tvyayinakisi:minika-cocuk
 
-  tr.minikago:
+  MinikaGo.tr:
     name: "Minika Go"
     sources:
       - tvplus:minika-go--7
@@ -786,12 +783,12 @@ channels:
       - tvplus:moonbug-kids-tv--4266
       - tvyayinakisi:moonbug-kids-tv-turkce
 
-  tr.moviesmartclassic:
+  MovieSmartClassic.tr:
     name: "Moviesmart Classic"
     sources:
       - tvyayinakisi:moviesmart-classic
 
-  tr.moviesmartturk:
+  MovieSmartTurk.tr:
     name: "Moviesmart Turk"
     sources:
       - tvyayinakisi:moviesmart-turk
@@ -816,14 +813,14 @@ channels:
     sources:
       - tvyayinakisi:myzen-tv
 
-  tr.nationalgeographic:
+  NationalGeographic.tr:
     name: "National Geographic"
     sources:
       - tvplus:national-geographic-hd--2799
       - tivibu:ch00000000000000001201
       - tvyayinakisi:national-geographic
 
-  tr.nationalgeographicwild:
+  NationalGeographicWild.tr:
     name: "National Geographic Wild"
     sources:
       - tvplus:national-geographic-wild-hd--139
@@ -846,24 +843,24 @@ channels:
       - tivibu:ch00000000000000001189
       - tvyayinakisi:nhk-world
 
-  tr.nickjr:
+  NickJr.tr:
     name: "Nick Jr"
     sources:
       - tvplus:nick-jr--4353
       - tvyayinakisi:nick-jr
 
-  tr.nickelodeon:
+  Nickelodeon.tr:
     name: "Nickelodeon"
     sources:
       - tvplus:nickelodeon--4487
       - tvyayinakisi:nickelodeon
 
-  tr.nicktoons:
+  Nicktoons.tr:
     name: "Nicktoons"
     sources:
       - tvplus:nicktoons--2739
 
-  tr.now:
+  NOWTV.tr:
     name: "Now"
     sources:
       - tvplus:now--93
@@ -875,30 +872,30 @@ channels:
     sources:
       - tvplus:nr1-rap-hd--41
 
-  tr.ntv:
+  NTV.tr:
     name: "NTV"
     sources:
       - tvplus:ntv-hd--81
       - tivibu:ch00000000000000001221
       - tvyayinakisi:ntv
 
-  tr.number1turk:
+  Number1Turk.tr:
     name: "Number1 Turk"
     sources:
       - tvplus:number1-turk-hd--98
       - tivibu:ch00000000000000001223
 
-  tr.number1tv:
+  Number1TV.tr:
     name: "Number1 TV"
     sources:
       - tvplus:number1-tv-hd--204
 
-  tr.on6:
+  On6.tr:
     name: "On6"
     sources:
       - tvplus:on6--169
 
-  tr.on6tv:
+  On6.tr:
     name: "On6 TV"
     sources:
       - tvyayinakisi:on6-tv
@@ -908,13 +905,13 @@ channels:
     sources:
       - tvyayinakisi:onlar-tv
 
-  tr.powerturk:
+  PowerTurkTV.tr:
     name: "Power Turk"
     sources:
       - tvplus:power-turk-hd--202
       - tivibu:ch00000000000000001225
 
-  tr.powertv:
+  PowerTV.tr:
     name: "Power TV"
     sources:
       - tvplus:power-tv-hd--172
@@ -946,14 +943,14 @@ channels:
     sources:
       - tvyayinakisi:russia-24
 
-  tr.ssport:
+  SSport.tr:
     name: "S Sport"
     sources:
       - tvplus:s-sport--11
       - tivibu:ch00000000000000001227
       - tvyayinakisi:s-sport
 
-  tr.ssport2:
+  SSport2.tr:
     name: "S Sport 2"
     sources:
       - tvplus:s-sport-2--170
@@ -964,29 +961,29 @@ channels:
     sources:
       - tivibu:ch00000000000000001168
 
-  tr.semerkand:
+  SemerkandTV.tr:
     name: "Semerkand"
     sources:
       - tvplus:semerkand-hd--97
 
-  tr.semerkandtv:
+  SemerkandTV.tr:
     name: "Semerkand TV"
     sources:
       - tvyayinakisi:semerkand-tv
 
-  tr.showtv:
+  ShowTV.tr:
     name: "Show TV"
     sources:
       - tvplus:show-tv-hd--130
       - tivibu:ch00000000000000001230
       - tvyayinakisi:show-tv
 
-  tr.showmax:
+  ShowMax.tr:
     name: "Showmax"
     sources:
       - tvyayinakisi:showmax
 
-  tr.showturk:
+  ShowTurk.tr:
     name: "Showturk"
     sources:
       - tvyayinakisi:showturk
@@ -996,58 +993,58 @@ channels:
     sources:
       - tvyayinakisi:sifir-tv
 
-  tr.sinema1001:
+  Sinema1001.tr:
     name: "Sinema 1001"
     sources:
       - tivibu:ch00000000000000001262
 
-  tr.sinema1002:
+  Sinema1002.tr:
     name: "Sinema 1002"
     sources:
       - tvplus:sinema-1002-hd--190
       - tivibu:ch00000000000000002813
       - tvyayinakisi:sinema-1002
 
-  tr.sinemaaile:
+  SinemaAile.tr:
     name: "Sinema Aile"
     sources:
       - tvplus:sinema-aile-hd--155
       - tivibu:ch00000000000000001271
       - tvyayinakisi:sinema-aile
 
-  tr.sinemaaile2:
+  SinemaAile2.tr:
     name: "Sinema Aile 2"
     sources:
       - tvplus:sinema-aile-2-hd--182
       - tivibu:ch00000000000000002786
       - tvyayinakisi:sinema-aile-2
 
-  tr.sinemaaksiyon:
+  SinemaAksiyon.tr:
     name: "Sinema Aksiyon"
     sources:
       - tivibu:ch00000000000000001263
 
-  tr.sinemaaksiyon2:
+  SinemaAksiyon2.tr:
     name: "Sinema Aksiyon 2"
     sources:
       - tvplus:sinema-aksiyon-2-hd--196
       - tivibu:ch00000000000000002803
       - tvyayinakisi:sinema-aksiyon-2
 
-  tr.sinemakomedi:
+  SinemaKomedi.tr:
     name: "Sinema Komedi"
     sources:
       - tvplus:sinema-komedi-hd--154
       - tivibu:ch00000000000000001281
       - tvyayinakisi:sinema-komedi
 
-  tr.sinemakomedi2:
+  SinemaKomedi2.tr:
     name: "Sinema Komedi 2"
     sources:
       - tivibu:ch00000000000000002785
       - tvyayinakisi:sinema-komedi-2
 
-  tr.sinematv:
+  SinemaTV.tr:
     name: "Sinema TV"
     sources:
       - tvplus:sinema-tv-hd--166
@@ -1073,14 +1070,14 @@ channels:
       - tvplus:sinema-tv-aksiyon-hd--129
       - tvyayinakisi:sinema-tv-aksiyon
 
-  tr.sinemayerli:
+  SinemaYerli.tr:
     name: "Sinema Yerli"
     sources:
       - tvplus:sinema-yerli-hd--12
       - tivibu:ch00000000000000001259
       - tvyayinakisi:sinema-yerli
 
-  tr.sinemayerli2:
+  SinemaYerli2.tr:
     name: "Sinema Yerli 2"
     sources:
       - tvplus:sinema-yerli-2-hd--61
@@ -1097,7 +1094,7 @@ channels:
     sources:
       - tvplus:somine-plus--2200
 
-  tr.sozcutv:
+  SozcuTV.tr:
     name: "Sozcu TV"
     sources:
       - tvplus:sozcu-tv--4294
@@ -1110,13 +1107,13 @@ channels:
       - tivibu:ch00000000000000002833
       - tvyayinakisi:spacetoon
 
-  tr.sportstv:
+  SportsTV.tr:
     name: "Sports TV"
     sources:
       - tvplus:sports-tv-hd--173
       - tvyayinakisi:sports-tv
 
-  tr.startv:
+  StarTV.tr:
     name: "Star TV"
     sources:
       - tvplus:star-tv-hd--89
@@ -1135,33 +1132,33 @@ channels:
       - tvplus:tabii-tv--4400
       - tvyayinakisi:tabii-tv
 
-  tr.tarihtv:
+  TarihTV.tr:
     name: "Tarih TV"
     sources:
       - tvplus:tarih-tv--4253
       - tivibu:ch00000000000000002187
       - tvyayinakisi:tarih-tv
 
-  tr.tarimtv:
+  TarimTV.tr:
     name: "Tarim TV"
     sources:
       - tvplus:tarim-tv--141
       - tvyayinakisi:tarim-tv
 
-  tr.tele1:
+  Tele1.tr:
     name: "Tele1"
     sources:
       - tvplus:tele1--189
       - tvyayinakisi:tele1
 
-  tr.teve2:
+  tv2.tr:
     name: "Teve2"
     sources:
       - tvplus:tv2-hd--95
       - tivibu:ch00000000000000001291
       - tvyayinakisi:teve2
 
-  tr.tgrthaber:
+  TGRTHaber.tr:
     name: "TGRT Haber"
     sources:
       - tvplus:tgrt-haber-hd--34
@@ -1173,13 +1170,13 @@ channels:
     sources:
       - tvyayinakisi:tinyteen-tv
 
-  tr.tivi6:
+  Tivi6.tr:
     name: "Tivi6"
     sources:
       - tvplus:tivi6--4481
       - tvyayinakisi:tivi6
 
-  tr.tivibuspor:
+  TivibuSpor.tr:
     name: "Tivibu Spor"
     sources:
       - tivibu:ch00000000000000001355
@@ -1189,17 +1186,17 @@ channels:
     sources:
       - tivibu:ch00000000000000001356
 
-  tr.tivibuspor2:
+  TivibuSpor2.tr:
     name: "Tivibu Spor 2"
     sources:
       - tivibu:ch00000000000000001270
 
-  tr.tivibuspor3:
+  TivibuSpor3.tr:
     name: "Tivibu Spor 3"
     sources:
       - tivibu:ch00000000000000001357
 
-  tr.tivibuspor4:
+  TivibuSpor4.tr:
     name: "Tivibu Spor 4"
     sources:
       - tivibu:ch00000000000000001971
@@ -1209,19 +1206,19 @@ channels:
     sources:
       - tivibu:ch00000000000000001358
 
-  tr.tjktv:
+  TJKTV.tr:
     name: "TJK TV"
     sources:
       - tvyayinakisi:tjk-tv
 
-  tr.tlc:
+  TLC.tr:
     name: "TLC"
     sources:
       - tvplus:tlc--174
       - tivibu:ch00000000000000001301
       - tvyayinakisi:tlc
 
-  tr.tmbtv:
+  TMB.tr:
     name: "Tmb TV"
     sources:
       - tvplus:tmb-tv--2280
@@ -1242,46 +1239,46 @@ channels:
     sources:
       - tvyayinakisi:trt-4k
 
-  tr.trt1:
+  TRT1.tr:
     name: "TRT 1"
     sources:
       - tvplus:trt1-hd--144
       - tivibu:ch00000000000000001266
       - tvyayinakisi:trt-1
 
-  tr.trt2:
+  TRT2.tr:
     name: "TRT 2"
     sources:
       - tvplus:trt-2-hd--83
       - tivibu:ch00000000000000001302
       - tvyayinakisi:trt-2
 
-  tr.trt3:
+  TRT3.tr:
     name: "TRT 3"
     sources:
       - tvplus:trt-3--116
       - tvyayinakisi:trt-3
 
-  tr.trtarabi:
+  TRTArabi.tr:
     name: "TRT Arabi"
     sources:
       - tvplus:trt-arabi--76
       - tvyayinakisi:trt-arabi
 
-  tr.trtavaz:
+  TRTAvaz.tr:
     name: "TRT Avaz"
     sources:
       - tvplus:trt-avaz--193
       - tvyayinakisi:trt-avaz
 
-  tr.trtbelgesel:
+  TRTBelgesel.tr:
     name: "TRT Belgesel"
     sources:
       - tvplus:trt-belgesel-hd--21
       - tivibu:ch00000000000000001304
       - tvyayinakisi:trt-belgesel
 
-  tr.trtcocuk:
+  TRTCocuk.tr:
     name: "TRT Cocuk"
     sources:
       - tvplus:trt-cocuk-hd--99
@@ -1295,14 +1292,14 @@ channels:
       - tivibu:ch00000000000000001125
       - tvyayinakisi:trt-diyanet
 
-  tr.trtdiyanetcocuk:
+  TRTDiyanetCocuk.tr:
     name: "TRT Diyanet Cocuk"
     sources:
       - tvplus:trt-diyanet-cocuk--4319
       - tivibu:ch00000000000000002298
       - tvyayinakisi:trt-diyanet-cocuk
 
-  tr.trteba:
+  TRTEBA.tr:
     name: "TRT Eba"
     sources:
       - tvplus:trt-eba--2300
@@ -1313,45 +1310,45 @@ channels:
     sources:
       - tvplus:trt-genc--4492
 
-  tr.trthaber:
+  TRTHaber.tr:
     name: "TRT Haber"
     sources:
       - tvplus:trt-haber-hd--30
       - tivibu:ch00000000000000001307
       - tvyayinakisi:trt-haber
 
-  tr.trtkurdi:
+  TRTKurdi.tr:
     name: "TRT Kurdi"
     sources:
       - tvplus:trt-kurdi--10
       - tvyayinakisi:trt-kurdi
 
-  tr.trtmuzik:
+  TRTMuzik.tr:
     name: "TRT Muzik"
     sources:
       - tvplus:trt-muzik--159
       - tivibu:ch00000000000000001331
       - tvyayinakisi:trt-muzik
 
-  tr.trtspor:
+  TRTSpor.tr:
     name: "TRT Spor"
     sources:
       - tvplus:trt-spor-hd--31
       - tvyayinakisi:trt-spor
 
-  tr.trtsporyildiz:
+  TRTSporYildiz.tr:
     name: "TRT Spor Yildiz"
     sources:
       - tvplus:trt-spor-yildiz--205
       - tvyayinakisi:trt-spor-yildiz
 
-  tr.trtturk:
+  TRTTurk.tr:
     name: "TRT Turk"
     sources:
       - tvplus:trt-turk--156
       - tvyayinakisi:trt-turk
 
-  tr.trtworld:
+  TRTWorld.tr:
     name: "TRT World"
     sources:
       - tvplus:trt-world-hd--38
@@ -1372,7 +1369,7 @@ channels:
     sources:
       - tivibu:ch00000000000000001269
 
-  tr.turkhaber:
+  TurkHaberTV.tr:
     name: "Turkhaber"
     sources:
       - tvplus:turkhaber--4335
@@ -1394,13 +1391,13 @@ channels:
     sources:
       - tvyayinakisi:tv-2020
 
-  tr.tv4:
+  TV4.tr:
     name: "TV 4"
     sources:
       - tvplus:tv-4--2899
       - tvyayinakisi:tv-4
 
-  tr.tv8:
+  TV8.tr:
     name: "TV 8"
     sources:
       - tvplus:tv8-hd--134
@@ -1412,7 +1409,7 @@ channels:
     sources:
       - tvplus:tv-ekstra-ufc--121
 
-  tr.tv100:
+  TV100.tr:
     name: "Tv100"
     sources:
       - tvplus:tv100--179
@@ -1424,7 +1421,7 @@ channels:
     sources:
       - tvyayinakisi:tv42
 
-  tr.tv5:
+  TV5.tr:
     name: "Tv5"
     sources:
       - tvplus:tv5--4359
@@ -1437,53 +1434,53 @@ channels:
       - tivibu:ch00000000000000001234
       - tvyayinakisi:tv5-monde
 
-  tr.tv85:
+  TV85.tr:
     name: "Tv85"
     sources:
       - tvplus:tv85-hd--188
       - tivibu:ch00000000000000001310
       - tvyayinakisi:tv85
 
-  tr.tvnet:
+  TVNET.tr:
     name: "Tvnet"
     sources:
       - tvplus:tvnet-hd--92
       - tivibu:ch00000000000000001361
       - tvyayinakisi:tvnet
 
-  tr.tytturk:
+  TYTTurk.tr:
     name: "Tyt Turk"
     sources:
       - tvplus:tyt-turk--4488
       - tvyayinakisi:tyt-turk
 
-  tr.ulketv:
+  UlkeTV.tr:
     name: "Ulke TV"
     sources:
       - tvplus:ulke-tv-hd--145
       - tivibu:ch00000000000000001360
       - tvyayinakisi:ulke-tv
 
-  tr.ulusalkanal:
+  UlusalKanal.tr:
     name: "Ulusal Kanal"
     sources:
       - tvplus:ulusal-kanal--2240
       - tvyayinakisi:ulusal-kanal
 
-  tr.vavtv:
+  VavTV.tr:
     name: "Vav TV"
     sources:
       - tvplus:vav-tv--2859
       - tivibu:ch00000000000000001371
       - tvyayinakisi:vav-tv
 
-  tr.viasatexplore:
+  ViasatExplore.tr:
     name: "Viasat Explore"
     sources:
       - tvplus:viasat-explore--59
       - tvyayinakisi:viasat-explore
 
-  tr.viasathistory:
+  ViasatHistory.tr:
     name: "Viasat History"
     sources:
       - tvplus:viasat-history-hd--44
@@ -1495,7 +1492,7 @@ channels:
       - tivibu:ch00000000000000002594
       - tvyayinakisi:w-sport
 
-  tr.yabantv:
+  YabanTV.tr:
     name: "Yaban TV"
     sources:
       - tvyayinakisi:yaban-tv
