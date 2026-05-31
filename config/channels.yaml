@@ -1636,3 +1636,54 @@ channels:
     name: "MCE TV"
     sources:
       - staticschedule:tr.mceutv
+
+  tr.aztv:
+    name: "Az TV"
+    sources:
+      - turksatkablo:Az TV
+
+  tr.birtv:
+    name: "Bir TV"
+    sources:
+      - turksatkablo:Bir TV
+
+  tr.bursatvon6:
+    name: "Bursa TVON6"
+    sources:
+      - turksatkablo:Bursa, TVON6
+
+  tr.cgtndocumentary:
+    name: "CGTN Documentary"
+    sources:
+      - turksatkablo:CGTN Documentary
+
+  tr.ekolsports:
+    name: "Ekol Sports"
+    sources:
+      - turksatkablo:Ekol Sports
+
+  tr.idchannel:
+    name: "ID Channel"
+    sources:
+      - turksatkablo:ID
+
+  tr.kabloinfo:
+    name: "Kablo Info"
+    sources:
+      - turksatkablo:Kablo Info
+
+  tr.olayturk:
+    name: "OlayTürk"
+    sources:
+      - turksatkablo:OlayTürk
+
+  tr.sauditv:
+    name: "Saudi TV"
+    sources:
+      - turksatkablo:Saudi TV
+
+  tr.tv1:
+    name: "TV 1"
+    sources:
+      - turksatkablo:TV1
+
