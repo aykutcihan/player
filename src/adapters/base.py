@@ -19,7 +19,7 @@ class BaseAdapter(ABC):
     prefix: str = ""          # 'tvplus', 'tivibu', ...
     base_url: str = ""
 
-    def __init__(self, session: requests.Session | None = None, delay: float = 0.5):
+    def __init__(self, session: requests.Session | None = None, delay: float = 0.2):
         self.s = session or requests.Session()
         self.s.headers.update({
             "User-Agent": UA,
