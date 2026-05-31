@@ -747,9 +747,6 @@
   <channel id="tr24tv.tr">
     <display-name>24</display-name>
   </channel>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.360">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.360">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
@@ -999,7 +996,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.360">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.a2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.360">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.a2">
@@ -1251,7 +1248,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.a2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ahaber">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.a2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ahaber">
@@ -1503,7 +1500,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ahaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.akittv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ahaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.akittv">
@@ -1755,7 +1752,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.akittv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.aksutv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.akittv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.aksutv">
@@ -2007,7 +2004,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.aksutv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.aljazeeraarabic">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.aksutv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.aljazeeraarabic">
@@ -2259,7 +2256,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.aljazeeraarabic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.aljazeeraenglish">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.aljazeeraarabic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.aljazeeraenglish">
@@ -2511,7 +2508,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.aljazeeraenglish">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.alquranalkareem">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.aljazeeraenglish">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.alquranalkareem">
@@ -2763,7 +2760,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.alquranalkareem">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.alsunnah">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.alquranalkareem">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.alsunnah">
@@ -3015,7 +3012,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.alsunnah">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.anews">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.alsunnah">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.anews">
@@ -3267,7 +3264,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.anews">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.apara">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.anews">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.apara">
@@ -3519,7 +3516,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.apara">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.arirangtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.apara">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.arirangtv">
@@ -3771,7 +3768,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.arirangtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.aspor">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.arirangtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.aspor">
@@ -4023,7 +4020,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.aspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.astv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.aspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.astv">
@@ -4275,7 +4272,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.astv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.atv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.astv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.atv">
@@ -4527,7 +4524,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.atv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.atvavrupa">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.atv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.atvavrupa">
@@ -4779,7 +4776,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.atvavrupa">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.azoomee">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.atvavrupa">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.azoomee">
@@ -5031,7 +5028,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.azoomee">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.babyfirst">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.azoomee">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.babyfirst">
@@ -5283,7 +5280,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.babyfirst">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.babytv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.babyfirst">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.babytv">
@@ -5535,7 +5532,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.babytv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bbcearth">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.babytv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bbcearth">
@@ -5787,7 +5784,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bbcearth">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bbcfirst">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bbcearth">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bbcfirst">
@@ -6039,7 +6036,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bbcfirst">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bbcnews">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bbcfirst">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bbcnews">
@@ -6291,7 +6288,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bbcnews">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beingurme">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bbcnews">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beingurme">
@@ -6543,7 +6540,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beingurme">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinhomeentertainment">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beingurme">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinhomeentertainment">
@@ -6795,7 +6792,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinhomeentertainment">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beiniz">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinhomeentertainment">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beiniz">
@@ -7047,7 +7044,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beiniz">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinmoviesaction2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beiniz">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinmoviesaction2">
@@ -7299,7 +7296,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinmoviesaction2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinmoviespremiere">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinmoviesaction2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinmoviespremiere">
@@ -7551,7 +7548,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinmoviespremiere">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinmoviesstars">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinmoviespremiere">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinmoviesstars">
@@ -7803,7 +7800,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinmoviesstars">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinmoviesturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinmoviesstars">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinmoviesturk">
@@ -8055,7 +8052,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinmoviesturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinseries1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinmoviesturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinseries1">
@@ -8307,7 +8304,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinseries1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinseries2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinseries1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinseries2">
@@ -8559,7 +8556,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinseries2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsports1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinseries2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsports1">
@@ -8811,7 +8808,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsports1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsports2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsports1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsports2">
@@ -9063,7 +9060,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsports2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsports3">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsports2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsports3">
@@ -9315,7 +9312,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsports3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsports4">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsports3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsports4">
@@ -9567,7 +9564,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsports4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsports5">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsports4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsports5">
@@ -9819,7 +9816,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsports5">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsportshaber">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsports5">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsportshaber">
@@ -10071,7 +10068,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsportshaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsportsmax1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsportshaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsportsmax1">
@@ -10323,7 +10320,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsportsmax1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beinsportsmax2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsportsmax1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beinsportsmax2">
@@ -10575,7 +10572,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beinsportsmax2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.benguturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beinsportsmax2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.benguturk">
@@ -10827,7 +10824,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.benguturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.benimkanalim">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.benguturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.benimkanalim">
@@ -11079,7 +11076,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.benimkanalim">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.beyaztv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.benimkanalim">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.beyaztv">
@@ -11331,7 +11328,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.beyaztv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bikanal">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.beyaztv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bikanal">
@@ -11583,7 +11580,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bikanal">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bizimevtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bikanal">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bizimevtv">
@@ -11835,7 +11832,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bizimevtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bloomberg">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bizimevtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bloomberg">
@@ -12087,7 +12084,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bloomberg">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.bloomberght">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bloomberg">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.bloomberght">
@@ -12339,7 +12336,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.bloomberght">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.brt1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.bloomberght">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.brt1">
@@ -12591,7 +12588,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.brt1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.brt2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.brt1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.brt2">
@@ -12843,7 +12840,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.brt2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.brt3">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.brt2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.brt3">
@@ -13095,7 +13092,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.brt3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cartoonito">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.brt3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cartoonito">
@@ -13347,7 +13344,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cartoonito">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cartoonnetwork">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cartoonito">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cartoonnetwork">
@@ -13599,7 +13596,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cartoonnetwork">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cbeebies">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cartoonnetwork">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cbeebies">
@@ -13851,7 +13848,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cbeebies">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cctv4">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cbeebies">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cctv4">
@@ -14103,7 +14100,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cctv4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cgtn">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cctv4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cgtn">
@@ -14355,7 +14352,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cgtn">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ciftcitv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cgtn">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ciftcitv">
@@ -14607,7 +14604,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ciftcitv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.classicalharmony">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ciftcitv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.classicalharmony">
@@ -14859,7 +14856,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.classicalharmony">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cnbce">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.classicalharmony">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cnbce">
@@ -15111,7 +15108,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cnbce">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cnninternational">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cnbce">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cnninternational">
@@ -15363,7 +15360,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cnninternational">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cnnturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cnninternational">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cnnturk">
@@ -15615,7 +15612,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cnnturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cocuksmart">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cnnturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cocuksmart">
@@ -15867,7 +15864,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cocuksmart">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cosmoen">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cocuksmart">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cosmoen">
@@ -16119,7 +16116,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cosmoen">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.cosmosports">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cosmoen">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.cosmosports">
@@ -16371,7 +16368,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.cosmosports">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.davinci">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.cosmosports">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.davinci">
@@ -16623,7 +16620,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.davinci">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.discoverychannel">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.davinci">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.discoverychannel">
@@ -16875,7 +16872,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.discoverychannel">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.disneyjunior">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.discoverychannel">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.disneyjunior">
@@ -17127,7 +17124,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.disneyjunior">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.diyanettv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.disneyjunior">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.diyanettv">
@@ -17379,7 +17376,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.diyanettv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.dizismartmax">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.diyanettv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.dizismartmax">
@@ -17631,7 +17628,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.dizismartmax">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.dizismartpremium">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.dizismartmax">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.dizismartpremium">
@@ -17883,7 +17880,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.dizismartpremium">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.dmax">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.dizismartpremium">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.dmax">
@@ -18135,7 +18132,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.dmax">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.docuscreen">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.dmax">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.docuscreen">
@@ -18387,7 +18384,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.docuscreen">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.dreamturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.docuscreen">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.dreamturk">
@@ -18639,7 +18636,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.dreamturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ducktv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.dreamturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ducktv">
@@ -18891,7 +18888,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ducktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.dw">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ducktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.dw">
@@ -19143,7 +19140,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.dw">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ekoltv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.dw">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ekoltv">
@@ -19395,7 +19392,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ekoltv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ekoturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ekoltv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ekoturk">
@@ -19647,7 +19644,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ekoturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.englishclubtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ekoturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.englishclubtv">
@@ -19899,7 +19896,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.englishclubtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.epicdrama">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.englishclubtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.epicdrama">
@@ -20151,7 +20148,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.epicdrama">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.eurod">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.epicdrama">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.eurod">
@@ -20403,7 +20400,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.eurod">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.euronews">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.eurod">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.euronews">
@@ -20655,7 +20652,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.euronews">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.eurosport1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.euronews">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.eurosport1">
@@ -20907,7 +20904,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.eurosport1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.eurosport2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.eurosport1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.eurosport2">
@@ -21159,7 +21156,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.eurosport2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.fashiontv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.eurosport2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.fashiontv">
@@ -21411,7 +21408,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.fashiontv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.fbtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.fashiontv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.fbtv">
@@ -21663,7 +21660,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.fbtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.filmscreen">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.fbtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.filmscreen">
@@ -21915,7 +21912,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.filmscreen">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.flashhaber">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.filmscreen">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.flashhaber">
@@ -22167,7 +22164,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.flashhaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.fmtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.flashhaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.fmtv">
@@ -22419,7 +22416,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.fmtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.france24">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.fmtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.france24">
@@ -22671,7 +22668,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.france24">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.france24arabic">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.france24">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.france24arabic">
@@ -22923,7 +22920,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.france24arabic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.france24english">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.france24arabic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.france24english">
@@ -23175,7 +23172,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.france24english">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.freedomtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.france24english">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.freedomtv">
@@ -23427,7 +23424,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.freedomtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.fx">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.freedomtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.fx">
@@ -23679,7 +23676,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.fx">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.gstv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.fx">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.gstv">
@@ -23931,7 +23928,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.gstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.gzttv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.gstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.gzttv">
@@ -24183,7 +24180,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.gzttv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.haberglobal">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.gzttv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.haberglobal">
@@ -24435,7 +24432,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.haberglobal">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.haberturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.haberglobal">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.haberturk">
@@ -24687,7 +24684,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.haberturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.habitattv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.haberturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.habitattv">
@@ -24939,7 +24936,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.habitattv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.halktv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.habitattv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.halktv">
@@ -25191,7 +25188,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.halktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.hayat2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.halktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.hayat2">
@@ -25443,7 +25440,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.hayat2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.htspor">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.hayat2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.htspor">
@@ -25695,7 +25692,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.htspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kadirgatv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.htspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kadirgatv">
@@ -25947,7 +25944,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kadirgatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanal23">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kadirgatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanal23">
@@ -26199,7 +26196,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanal23">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanal26">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanal23">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanal26">
@@ -26451,7 +26448,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanal26">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanal33">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanal26">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanal33">
@@ -26703,7 +26700,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanal33">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanal7">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanal33">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanal7">
@@ -26955,7 +26952,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanal7">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanal7avrupa">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanal7">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanal7avrupa">
@@ -27207,7 +27204,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanal7avrupa">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanalavrupatv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanal7avrupa">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanalavrupatv">
@@ -27459,7 +27456,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanalavrupatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanalb">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanalavrupatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanalb">
@@ -27711,13 +27708,259 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanalb">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531190000 +0300" stop="20260531193000 +0300" channel="tr.kanald">
-    <title lang="tr">‘da Kanal D Ana Haber, hafta sonu 18:45‘te Kanal D Haber Hafta Sonu yayınlanıyor.</title>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanalb">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531190000 +0300" stop="20260531210000 +0300" channel="tr.kanald">
-    <title lang="tr">‘da, hafta sonu 18:45‘te yayınlanır.</title>
+  <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanalt">
+  <programme start="20260531160000 +0300" stop="20260531180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanald">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanald">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanalt">
@@ -27969,7 +28212,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanalt">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kanalv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanalt">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kanalv">
@@ -28221,7 +28464,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kanalv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kbsworld">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kanalv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kbsworld">
@@ -28473,7 +28716,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kbsworld">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kibrisadatv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kbsworld">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kibrisadatv">
@@ -28725,7 +28968,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kibrisadatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kibrisgenctv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kibrisadatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kibrisgenctv">
@@ -28977,7 +29220,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kibrisgenctv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kibristv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kibrisgenctv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kibristv">
@@ -29229,7 +29472,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kibristv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kitchentv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kibristv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kitchentv">
@@ -29481,7 +29724,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kitchentv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.kontv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kitchentv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.kontv">
@@ -29733,7 +29976,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.kontv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.krttv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.kontv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.krttv">
@@ -29985,7 +30228,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.krttv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.lalegultv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.krttv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.lalegultv">
@@ -30237,7 +30480,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.lalegultv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.langlab">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.lalegultv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.langlab">
@@ -30489,7 +30732,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.langlab">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.liderhabertv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.langlab">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.liderhabertv">
@@ -30741,7 +30984,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.liderhabertv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.lingotoonstv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.liderhabertv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.lingotoonstv">
@@ -30993,7 +31236,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.lovenature">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.lovenature">
@@ -31245,7 +31488,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.lovenature">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.mcmtop">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.lovenature">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.mcmtop">
@@ -31497,7 +31740,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.mcmtop">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.meltemtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.mcmtop">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.meltemtv">
@@ -31749,10 +31992,259 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.meltemtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531052500 +0300" stop="20260531072500 +0300" channel="tr.mezzo">
-    <title lang="tr">"Betroffenheit" de Crystal Pite</title>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.meltemtv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.minikacocuk">
+  <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.mezzo">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.mezzo">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.minikacocuk">
@@ -32004,7 +32496,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.minikacocuk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.minikago">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.minikacocuk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.minikago">
@@ -32256,7 +32748,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.minikago">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.moonbugkidstv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.minikago">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.moonbugkidstv">
@@ -32508,7 +33000,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.moonbugkidstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.moviesmartclassic">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.moonbugkidstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.moviesmartclassic">
@@ -32760,7 +33252,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.moviesmartclassic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.moviesmartturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.moviesmartclassic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.moviesmartturk">
@@ -33012,7 +33504,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.moviesmartturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.mtv00s">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.moviesmartturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.mtv00s">
@@ -33264,7 +33756,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.mtv00s">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.mtvhits">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.mtv00s">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.mtvhits">
@@ -33516,7 +34008,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.mtvhits">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.mtvlive">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.mtvhits">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.mtvlive">
@@ -33768,7 +34260,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.mtvlive">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.myzentv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.mtvlive">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.myzentv">
@@ -34020,7 +34512,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.myzentv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nationalgeographic">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.myzentv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nationalgeographic">
@@ -34272,7 +34764,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nationalgeographic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nationalgeographicwild">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nationalgeographic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nationalgeographicwild">
@@ -34524,7 +35016,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nationalgeographicwild">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nbatv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nationalgeographicwild">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nbatv">
@@ -34776,7 +35268,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nbatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.neohabertv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nbatv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.neohabertv">
@@ -35028,7 +35520,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.neohabertv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nhkworld">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.neohabertv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nhkworld">
@@ -35280,7 +35772,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nhkworld">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nickelodeon">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nhkworld">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nickelodeon">
@@ -35532,7 +36024,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nickelodeon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nickjr">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nickelodeon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nickjr">
@@ -35784,7 +36276,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nickjr">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nicktoons">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nickjr">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nicktoons">
@@ -36036,7 +36528,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nicktoons">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.now">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nicktoons">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.now">
@@ -36288,7 +36780,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.now">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.nr1rap">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.now">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.nr1rap">
@@ -36540,7 +37032,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.nr1rap">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ntv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.nr1rap">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ntv">
@@ -36792,7 +37284,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ntv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.number1turk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ntv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.number1turk">
@@ -37044,7 +37536,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.number1turk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.number1tv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.number1turk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.number1tv">
@@ -37296,7 +37788,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.number1tv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.on6">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.number1tv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.on6">
@@ -37548,7 +38040,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.on6">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.on6tv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.on6">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.on6tv">
@@ -37800,7 +38292,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.on6tv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.onlartv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.on6tv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.onlartv">
@@ -38052,7 +38544,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.onlartv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.powerturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.onlartv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.powerturk">
@@ -38304,7 +38796,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.powerturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.powertv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.powerturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.powertv">
@@ -38556,7 +39048,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.powertv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.radyoviva">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.powertv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.radyoviva">
@@ -38808,7 +39300,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.radyoviva">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.raiuno">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.radyoviva">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.raiuno">
@@ -39060,7 +39552,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.raiuno">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.rtarabic">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.raiuno">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.rtarabic">
@@ -39312,7 +39804,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.rtarabic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.rtrplaneta">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.rtarabic">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.rtrplaneta">
@@ -39564,7 +40056,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.rtrplaneta">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.russia24">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.rtrplaneta">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.russia24">
@@ -39816,7 +40308,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.russia24">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.saudiquran">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.russia24">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.saudiquran">
@@ -40068,7 +40560,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.saudiquran">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.semerkand">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.saudiquran">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.semerkand">
@@ -40320,7 +40812,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.semerkand">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.semerkandtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.semerkand">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.semerkandtv">
@@ -40572,7 +41064,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.semerkandtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.showmax">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.semerkandtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.showmax">
@@ -40824,7 +41316,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.showmax">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.showturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.showmax">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.showturk">
@@ -41076,7 +41568,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.showturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.showtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.showturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.showtv">
@@ -41328,7 +41820,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.showtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sifirtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.showtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sifirtv">
@@ -41580,7 +42072,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sifirtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinema1001">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sifirtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinema1001">
@@ -41832,7 +42324,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinema1001">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinema1002">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinema1001">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinema1002">
@@ -42084,7 +42576,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinema1002">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemaaile">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinema1002">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemaaile">
@@ -42336,7 +42828,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemaaile">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemaaile2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemaaile">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemaaile2">
@@ -42588,7 +43080,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemaaile2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemaaksiyon">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemaaile2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemaaksiyon">
@@ -42840,7 +43332,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemaaksiyon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemaaksiyon2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemaaksiyon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemaaksiyon2">
@@ -43092,7 +43584,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemaaksiyon2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemakomedi">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemaaksiyon2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemakomedi">
@@ -43344,7 +43836,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemakomedi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemakomedi2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemakomedi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemakomedi2">
@@ -43596,11 +44088,259 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemakomedi2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531031500 +0300" stop="20260531051500 +0300" channel="tr.sinematv">
-    <title lang="tr">'72 Yazı, Tuscaloosa</title>
-    <category lang="tr">Film</category>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemakomedi2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinematv1001">
+  <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinematv">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinematv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinematv1001">
@@ -43852,10 +44592,259 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinematv1001">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531050000 +0300" stop="20260531070000 +0300" channel="tr.sinematv2">
-    <title lang="tr">'72 Yazı, Tuscaloosa</title>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinematv1001">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinematvaksiyon">
+  <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinematv2">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinematv2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinematvaksiyon">
@@ -44107,7 +45096,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinematvaksiyon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemayerli">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinematvaksiyon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemayerli">
@@ -44359,7 +45348,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemayerli">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sinemayerli2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemayerli">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sinemayerli2">
@@ -44611,7 +45600,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemayerli2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.skynewsarabia">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemayerli2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.skynewsarabia">
@@ -44863,7 +45852,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.skynewsarabia">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.somineplus">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.skynewsarabia">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.somineplus">
@@ -45115,7 +46104,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.somineplus">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sozcutv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.somineplus">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sozcutv">
@@ -45367,7 +46356,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sozcutv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.spacetoon">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sozcutv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.spacetoon">
@@ -45619,7 +46608,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.spacetoon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.sportstv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.spacetoon">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.sportstv">
@@ -45871,7 +46860,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sportstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ssport">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sportstv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ssport">
@@ -46123,7 +47112,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ssport">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ssport2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ssport">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ssport2">
@@ -46375,7 +47364,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ssport2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.startv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ssport2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.startv">
@@ -46627,7 +47616,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.startv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tabiispor">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.startv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tabiispor">
@@ -46879,7 +47868,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tabiispor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tabiitv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tabiispor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tabiitv">
@@ -47131,7 +48120,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tabiitv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tarihtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tabiitv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tarihtv">
@@ -47383,7 +48372,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tarihtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tarimtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tarihtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tarimtv">
@@ -47635,7 +48624,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tarimtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tele1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tarimtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tele1">
@@ -47887,7 +48876,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tele1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.teve2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tele1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.teve2">
@@ -48139,7 +49128,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.teve2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tgrthaber">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.teve2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tgrthaber">
@@ -48391,7 +49380,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tgrthaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tinyteentv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tgrthaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tinyteentv">
@@ -48643,7 +49632,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tinyteentv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivi6">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tinyteentv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivi6">
@@ -48895,7 +49884,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivi6">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivibuspor">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivi6">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivibuspor">
@@ -49147,7 +50136,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibuspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivibuspor1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibuspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivibuspor1">
@@ -49399,7 +50388,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibuspor1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivibuspor2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibuspor1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivibuspor2">
@@ -49651,7 +50640,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibuspor2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivibuspor3">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibuspor2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivibuspor3">
@@ -49903,7 +50892,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibuspor3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivibuspor4">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibuspor3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivibuspor4">
@@ -50155,7 +51144,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibuspor4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tivibutanitim">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibuspor4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tivibutanitim">
@@ -50407,7 +51396,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibutanitim">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tjktv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibutanitim">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tjktv">
@@ -50659,7 +51648,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tjktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tlc">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tjktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tlc">
@@ -50911,7 +51900,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tlc">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tmbtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tlc">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tmbtv">
@@ -51163,7 +52152,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tmbtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tracesportstars">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tmbtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tracesportstars">
@@ -51415,7 +52404,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tracesportstars">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.traceurban">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tracesportstars">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.traceurban">
@@ -51667,7 +52656,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.traceurban">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trt">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.traceurban">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trt">
@@ -51919,7 +52908,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trt">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trt1">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trt">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trt1">
@@ -52171,7 +53160,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trt1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trt2">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trt1">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trt2">
@@ -52423,7 +53412,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trt2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trt3">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trt2">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trt3">
@@ -52675,7 +53664,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trt3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtarabi">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trt3">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtarabi">
@@ -52927,7 +53916,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtarabi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtavaz">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtarabi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtavaz">
@@ -53179,7 +54168,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtavaz">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtbelgesel">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtavaz">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtbelgesel">
@@ -53431,7 +54420,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtbelgesel">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtcocuk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtbelgesel">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtcocuk">
@@ -53683,7 +54672,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtcocuk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtdiyanetcocuk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtcocuk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtdiyanetcocuk">
@@ -53935,7 +54924,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtdiyanetcocuk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trteba">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtdiyanetcocuk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trteba">
@@ -54187,7 +55176,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trteba">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtgenc">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trteba">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtgenc">
@@ -54439,7 +55428,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtgenc">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trthaber">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtgenc">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trthaber">
@@ -54691,7 +55680,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trthaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtkurdi">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trthaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtkurdi">
@@ -54943,7 +55932,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtkurdi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtmuzik">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtkurdi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtmuzik">
@@ -55195,7 +56184,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtmuzik">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtspor">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtmuzik">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtspor">
@@ -55447,7 +56436,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtsporyildiz">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtspor">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtsporyildiz">
@@ -55699,7 +56688,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtsporyildiz">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtsporyildiz">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtturk">
@@ -55951,7 +56940,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.trtworld">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.trtworld">
@@ -56203,7 +57192,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.trtworld">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.turkcepop">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.trtworld">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.turkcepop">
@@ -56455,7 +57444,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.turkcepop">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.turkceslow">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.turkcepop">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.turkceslow">
@@ -56707,7 +57696,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.turkceslow">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.turkhaber">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.turkceslow">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.turkhaber">
@@ -56959,7 +57948,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.turkhaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.turkhalkmuzigi">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.turkhaber">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.turkhalkmuzigi">
@@ -57211,7 +58200,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.turkhalkmuzigi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.turkmenelitv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.turkhalkmuzigi">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.turkmenelitv">
@@ -57463,7 +58452,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.turkmenelitv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.turkmenelitv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv">
@@ -57715,7 +58704,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv100">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv100">
@@ -57967,7 +58956,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv100">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv2020">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv100">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv2020">
@@ -58219,7 +59208,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv2020">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv4">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv2020">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv4">
@@ -58471,7 +59460,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv42">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv42">
@@ -58723,7 +59712,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv42">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv5">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv42">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv5">
@@ -58975,7 +59964,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv5">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv5monde">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv5">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv5monde">
@@ -59227,7 +60216,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv5monde">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv8">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv5monde">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv8">
@@ -59479,7 +60468,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv8">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tv85">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv8">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tv85">
@@ -59731,7 +60720,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tv85">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tvekstraufc">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tv85">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tvekstraufc">
@@ -59983,7 +60972,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tvekstraufc">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tvnet">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tvekstraufc">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tvnet">
@@ -60235,7 +61224,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tvnet">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.tytturk">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tvnet">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.tytturk">
@@ -60487,7 +61476,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tytturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ulketv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tytturk">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ulketv">
@@ -60739,7 +61728,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ulketv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.ulusalkanal">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ulketv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.ulusalkanal">
@@ -60991,7 +61980,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.ulusalkanal">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.vavtv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.ulusalkanal">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.vavtv">
@@ -61243,7 +62232,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.vavtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.viasatexplore">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.vavtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.viasatexplore">
@@ -61495,7 +62484,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.viasatexplore">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.viasathistory">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.viasatexplore">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.viasathistory">
@@ -61747,7 +62736,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.viasathistory">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.wsport">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.viasathistory">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.wsport">
@@ -61999,7 +62988,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.wsport">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.yabantv">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.wsport">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr.yabantv">
@@ -62251,7 +63240,7 @@
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.yabantv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr24tv.tr">
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.yabantv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260531140000 +0300" stop="20260531160000 +0300" channel="tr24tv.tr">
@@ -62501,6 +63490,9 @@
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
   <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr24tv.tr">
+    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
+  </programme>
+  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr24tv.tr">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
 </tv>
