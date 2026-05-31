@@ -2,8 +2,8 @@ name: EPG update
 
 on:
   schedule:
-    - cron: "0 * * * *"      # saat başı (UTC). Gecikmeler olabilir (GitHub kuyruğu).
-  workflow_dispatch: {}        # elle tetikleme
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -14,23 +14,18 @@ concurrency:
 
 jobs:
   build:
-    env:
-      # Node.js 20 uyarılarını bastırmak ve Node 24'e hazırlık için
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    defaults:
+      run:
+        shell: pwsh
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
 
       - name: Bağımlılıklar
         run: pip install -r requirements.txt
 
       - name: Hazırlık
-        run: |
-          mkdir -p cache
+        run: New-Item -Force -ItemType Directory -Path cache | Out-Null
 
       - name: EPG üret
         env:
@@ -41,16 +36,16 @@ jobs:
         run: |
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Dosyalar varsa ekle (128 hatasını önlemek için kontrol ekledik)
-          [ -f epg.xml ] && git add epg.xml
-          [ -f cache/tmdb.json ] && git add cache/tmdb.json
-          
-          # İçerik değişmediyse commit YOK
-          if git diff --cached --quiet; then
-            echo "Değişiklik yok, commit atlanıyor."
-          else
-            git commit -m "Automated EPG update ($(date -u +%FT%TZ))"
-            git pull --rebase origin master || echo "No rebase needed"
+
+          if (Test-Path "epg.xml")          { git add epg.xml }
+          if (Test-Path "cache/tmdb.json")  { git add cache/tmdb.json }
+
+          git diff --cached --quiet
+          if ($LASTEXITCODE -ne 0) {
+            $ts = [System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ")
+            git commit -m "Automated EPG update ($ts)"
+            git pull --rebase origin master
             git push
-          fi
+          } else {
+            Write-Host "Degisiklik yok, commit atlanıyor."
+          }
