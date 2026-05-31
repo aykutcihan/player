@@ -28,7 +28,7 @@ channels:
       - tivibu:ch00000000000000001001
       - tvyayinakisi:24
 
-  tr.360:
+  360.tr:
     name: "360"
     sources:
       - tvplus:360-hd--86
@@ -411,7 +411,7 @@ channels:
       - tivibu:ch00000000000000001111
       - tvyayinakisi:discovery-channel
 
-  tr.disneyjunior:
+  DisneyJr.tr:
     name: "Disney Junior"
     sources:
       - tvplus:disney-junior--149
@@ -1285,7 +1285,7 @@ channels:
       - tivibu:ch00000000000000001213
       - tvyayinakisi:trt-cocuk
 
-  tr.diyanettv:
+  DiyanetTV.tr:
     name: "TRT Diyanet"
     sources:
       - tvplus:diyanet-tv--175
