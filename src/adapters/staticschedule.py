@@ -1,8 +1,13 @@
 """
-staticschedule — Sabit haftalık yayın akışı döngüsü.
+staticschedule — Sabit haftalık/günlük yayın akışı döngüsü.
 
-Her hafta aynı programı tekrar eden kanallar için kullanılır.
-Veri: WEEKDAY_SCHEDULE dict — gün numarası (0=Pzt) → [(saat, dakika, başlık), ...]
+Her hafta/gün aynı programı tekrar eden kanallar için kullanılır.
+
+Format iki türlü olabilir:
+  - Haftalık (farklı günler): "tr.kanal": {"tz": TZ, "days": {0: [...], 1: [...], ...}}
+  - Günlük (her gün aynı): "tr.kanal": {"tz": TZ, "daily": [...]}
+
+Tuple: (saat, dakika, başlık) veya (saat, dakika, başlık, açıklama)
 
 source_id = channel_id (channels.yaml'da kanalın tvg-id'si ile eşleşir)
 """
@@ -20,9 +25,28 @@ DE_TZ = tz.gettz("Europe/Berlin")    # Almanya saati (yaz/kış otomatik)
 IST_TZ = tz.gettz("Europe/Istanbul")
 
 # Gün numarası: 0=Pazartesi, 1=Salı, ..., 6=Pazar
-SCHEDULES: Dict[str, List[Tuple]] = {
+SCHEDULES: Dict[str, Dict] = {
 
+    # ── NEO HABER — her gün aynı, Türkiye saati ──────────────────
+    "tr.neohabertv": {
+        "tz": IST_TZ,
+        "daily": [
+            ( 8,  0, "Uyanma Servisi",        "Kutluhan Nesil ile"),
+            (11,  0, "Ekonomi Ajansı",         "Hanzade Avcıoğlu ile"),
+            (12,  0, "Gün Ortası",             "Senem Gökdağ ile"),
+            (14,  0, "Aramızda Kalsın",        "Esra Kavrukkoca ile"),
+            (15,  0, "Dokun Hayata",           "Elif Akar ile"),
+            (17,  0, "Beyaz Masa",             "Ertuğrut Turan ile"),
+            (18, 30, "Ana Haber",              "Alper Esin Baran ile"),
+            (19, 30, "Neo Haber Akşam Kuşağı", "Neo Haber akşam yayını"),
+            (23,  0, "Gece Kuşağı Yayını",    "Neo Haber gece yayını"),
+        ],
+    },
+
+    # ── KANAL AVRUPA — haftalık, Almanya saati ───────────────────
     "tr.kanalavrupatv": {
+        "tz": DE_TZ,
+        "days": {
         0: [  # PAZARTESİ
             ( 6,  0, "Klip Saati"),
             ( 6, 45, "Yaşayan Tarih"),
@@ -180,7 +204,8 @@ SCHEDULES: Dict[str, List[Tuple]] = {
             ( 3, 45, "Bir Demet Türkü"),
             ( 5,  0, "Türkülerimiz"),
         ],
-    }
+        },
+    },
 }
 
 
@@ -196,28 +221,40 @@ class StaticScheduleAdapter(BaseAdapter):
     def _generate(self, schedule: dict, channel_id: str) -> List[Programme]:
         now = ist(datetime.now())
         out: List[Programme] = []
+        sched_tz = schedule.get("tz", DE_TZ)
 
-        # Bu haftanın Pazartesi'ni bul (Almanya saatiyle, gün başı)
-        now_de = now.astimezone(DE_TZ)
-        monday = (now_de - timedelta(days=now_de.weekday())).replace(
+        now_local = now.astimezone(sched_tz)
+        monday = (now_local - timedelta(days=now_local.weekday())).replace(
             hour=0, minute=0, second=0, microsecond=0)
 
-        # Geçen hafta + bu hafta + 2 gelecek hafta
-        for week_offset in range(-1, 3):
-            week_start = monday + timedelta(weeks=week_offset)
-            for weekday, programs in schedule.items():
-                day_base = week_start + timedelta(days=weekday)
-                for h, m, title in programs:
-                    # 00-05 arası saatler ertesi güne aittir
-                    day = day_base + timedelta(days=1) if h < 6 else day_base
-                    # Almanya saatinde oluştur → İstanbul'a çevir
-                    dt_de = datetime(day.year, day.month, day.day, h, m,
-                                     tzinfo=DE_TZ)
-                    start_dt = dt_de.astimezone(IST_TZ)
-                    out.append(Programme(
-                        channel_id=channel_id,
-                        start=start_dt,
-                        title=title,
-                        source=self.prefix,
-                    ))
+        if "daily" in schedule:
+            # Günlük döngü: her gün aynı, 4 hafta üret
+            programs = schedule["daily"]
+            for day_offset in range(-7, 22):
+                day_base = monday + timedelta(days=day_offset)
+                self._add_programs(programs, day_base, sched_tz, channel_id, out)
+        else:
+            # Haftalık döngü
+            days = schedule.get("days", {})
+            for week_offset in range(-1, 3):
+                week_start = monday + timedelta(weeks=week_offset)
+                for weekday, programs in days.items():
+                    day_base = week_start + timedelta(days=weekday)
+                    self._add_programs(programs, day_base, sched_tz, channel_id, out)
+
         return out
+
+    def _add_programs(self, programs, day_base, sched_tz, channel_id, out):
+        for entry in programs:
+            h, m, title = entry[0], entry[1], entry[2]
+            desc = entry[3] if len(entry) > 3 else None
+            day = day_base + timedelta(days=1) if h < 6 else day_base
+            start_dt = datetime(day.year, day.month, day.day, h, m,
+                                tzinfo=sched_tz).astimezone(IST_TZ)
+            out.append(Programme(
+                channel_id=channel_id,
+                start=start_dt,
+                title=title,
+                desc=desc,
+                source=self.prefix,
+            ))
