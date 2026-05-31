@@ -33,7 +33,12 @@ class TivibuAdapter(BaseAdapter):
     def fetch(self, source_id: str, channel_id: str) -> List[Programme]:
         if not self._loaded:
             self._fill_cache()
-        return self._cache.get(source_id, [])
+        return [Programme(
+            channel_id=channel_id,
+            start=p.start, stop=p.stop,
+            title=p.title, category=p.category,
+            source=self.prefix,
+        ) for p in self._cache.get(source_id, [])]
 
     def _fill_cache(self):
         self._loaded = True
