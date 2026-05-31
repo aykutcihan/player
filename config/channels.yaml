@@ -655,6 +655,7 @@ channels:
   tr.kanal7avrupa:
     name: "Kanal 7 Avrupa"
     sources:
+      - kanaltvtr:https://www.kanal7avrupa.com/yayin-akisi
       - tvyayinakisi:kanal-7-avrupa
 
   tr.kanalavrupatv:
