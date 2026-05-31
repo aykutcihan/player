@@ -661,6 +661,7 @@ channels:
   tr.kanalavrupatv:
     name: "Kanal Avrupa TV"
     sources:
+      - staticschedule:tr.kanalavrupatv
       - tvyayinakisi:kanal-avrupa-tv
 
   tr.kanalb:
