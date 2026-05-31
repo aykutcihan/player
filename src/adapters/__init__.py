@@ -6,6 +6,7 @@ from adapters.digiturkburada import DigiturkBuradaAdapter
 from adapters.canlitv import CanliTvAdapter
 from adapters.kanaltvtr import KanalTvTrAdapter
 from adapters.staticschedule import StaticScheduleAdapter
+from adapters.turksatkablo import TurksatKabloAdapter
 
 
 def build_registry(session=None):
@@ -17,6 +18,7 @@ def build_registry(session=None):
         CanliTvAdapter(session),
         KanalTvTrAdapter(session),
         StaticScheduleAdapter(session),
+        TurksatKabloAdapter(session),
     ]
     return {a.prefix: a for a in insts}
 
