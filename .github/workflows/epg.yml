@@ -30,7 +30,9 @@ jobs:
         run: playwright install chromium
 
       - name: Hazırlık
-        run: if not exist cache mkdir cache
+        run: |
+          if not exist cache mkdir cache
+          for /d /r src %%d in (__pycache__) do rd /s /q "%%d" 2>nul
 
       - name: EPG üret
         env:
