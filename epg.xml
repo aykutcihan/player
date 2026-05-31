@@ -2476,18 +2476,18 @@ Yakışıklı ve başarılı bir iş adamı olan Hakan’a ve onun iki sevimli �
     <title lang="tr">VIBE IN ACTION: K-INITIATIVE</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531223000 +0300" channel="tr.arirangtv">
-    <title lang="tr">SmartBiz Accelerators •</title>
+    <title lang="tr">SmartBiz Accelerators</title>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531230000 +0300" channel="tr.arirangtv">
     <title lang="tr">Premium Collection B</title>
   </programme>
   <programme start="20260531230000 +0300" stop="20260531233000 +0300" channel="tr.arirangtv">
-    <title lang="tr">Regional Tastes •</title>
+    <title lang="tr">Regional Tastes</title>
   </programme>
   <programme start="20260531233000 +0300" stop="20260531235000 +0300" channel="tr.arirangtv">
-    <title lang="tr">Art and the city</title>
+    <title lang="tr">Art and the city •</title>
   </programme>
-  <programme start="20260531235000 +0300" stop="20260601015000 +0300" channel="tr.arirangtv">
+  <programme start="20260531235000 +0300" stop="20260601060000 +0300" channel="tr.arirangtv">
     <title lang="tr">Exploring Korean Literature</title>
   </programme>
   <programme start="20260531020000 +0300" stop="20260531030000 +0300" channel="tr.aspor">
@@ -4722,7 +4722,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
   <programme start="20260531200000 +0300" stop="20260531203600 +0300" channel="tr.beingurme">
     <title lang="tr">Karadeniz Usulü S2 B 7 Yaşam</title>
   </programme>
-  <programme start="20260531203600 +0300" stop="20260531223600 +0300" channel="tr.beingurme">
+  <programme start="20260531203600 +0300" stop="20260601060000 +0300" channel="tr.beingurme">
     <title lang="tr">Ateşin Sırrı S1 B 13 Yaşam</title>
   </programme>
   <programme start="20260531005500 +0300" stop="20260531015500 +0300" channel="tr.beinhomeentertainment">
@@ -4797,7 +4797,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
   <programme start="20260531191000 +0300" stop="20260531200600 +0300" channel="tr.beinhomeentertainment">
     <title lang="tr">Escape To The Country S31 Ep. 11 Yaşam</title>
   </programme>
-  <programme start="20260531200600 +0300" stop="20260531220600 +0300" channel="tr.beinhomeentertainment">
+  <programme start="20260531200600 +0300" stop="20260601060000 +0300" channel="tr.beinhomeentertainment">
     <title lang="tr">Escape To The Country S31 Ep. 12 Yaşam</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531004000 +0300" channel="tr.beiniz">
@@ -4924,7 +4924,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Duyulan Şehirler S1 E 3</title>
     <category lang="tr">Belgesel</category>
   </programme>
-  <programme start="20260531202500 +0300" stop="20260531222500 +0300" channel="tr.beiniz">
+  <programme start="20260531202500 +0300" stop="20260601060000 +0300" channel="tr.beiniz">
     <title lang="tr">İstikamet Ege S2 B36</title>
     <category lang="tr">Belgesel</category>
   </programme>
@@ -4964,7 +4964,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Man With No Past (2025)</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531185500 +0300" stop="20260531205500 +0300" channel="tr.beinmoviesaction2">
+  <programme start="20260531185500 +0300" stop="20260601060000 +0300" channel="tr.beinmoviesaction2">
     <title lang="tr">Civil War (2024)</title>
     <category lang="tr">Film</category>
   </programme>
@@ -5004,7 +5004,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Man With No Past (2025)</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531185500 +0300" stop="20260531205500 +0300" channel="tr.beinmoviespremiere">
+  <programme start="20260531185500 +0300" stop="20260601060000 +0300" channel="tr.beinmoviespremiere">
     <title lang="tr">Civil War (2024)</title>
     <category lang="tr">Film</category>
   </programme>
@@ -5052,7 +5052,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Galaxy Quest (1999)</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinmoviesstars">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.beinmoviesstars">
     <title lang="tr">Nightcrawler (2014)</title>
     <category lang="tr">Film</category>
   </programme>
@@ -5104,7 +5104,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Sağ Salim 3: Ölü Ya Da Diri</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531201400 +0300" stop="20260531221400 +0300" channel="tr.beinmoviesturk">
+  <programme start="20260531201400 +0300" stop="20260601060000 +0300" channel="tr.beinmoviesturk">
     <title lang="tr">Anons</title>
     <category lang="tr">Film</category>
   </programme>
@@ -5188,7 +5188,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Sheriff Country S1 Ep 20</title>
     <category lang="tr">Dizi</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinseries1">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.beinseries1">
     <title lang="tr">Lord Of The Flies S1 Ep 3</title>
     <category lang="tr">Dizi</category>
   </programme>
@@ -5272,7 +5272,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Narrow Road To The Deep North, The S1 Ep 1</title>
     <category lang="tr">Dizi</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinseries2">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.beinseries2">
     <title lang="tr">Narrow Road To The Deep North, The S1 Ep 2</title>
     <category lang="tr">Dizi</category>
   </programme>
@@ -5334,7 +5334,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Kocaelispor (25-26) Sezonu Golleri</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531204600 +0300" stop="20260531224600 +0300" channel="tr.beinsports1">
+  <programme start="20260531204600 +0300" stop="20260601060000 +0300" channel="tr.beinsports1">
     <title lang="tr">Uğurcan Çakır Kurtarış Top 20 (25-26)</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -5428,7 +5428,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">21. Haftanın Golleri</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsports2">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.beinsports2">
     <title lang="tr">E.ümraniyespor - Serikspor</title>
     <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.ümraniyespor - Serikspor Maçı Bant -</desc>
     <category lang="tr">Spor</category>
@@ -5483,7 +5483,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Brighton - Man.city Maçı Bant -</desc>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531200100 +0300" stop="20260531220100 +0300" channel="tr.beinsports3">
+  <programme start="20260531200100 +0300" stop="20260601060000 +0300" channel="tr.beinsports3">
     <title lang="tr">Nott'm Forest - West Ham Utd</title>
     <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Nott'm Forest - West Ham Utd Maçı Bant -</desc>
     <category lang="tr">Spor</category>
@@ -5581,7 +5581,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">10. Haftanın Golleri</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531200200 +0300" stop="20260531220200 +0300" channel="tr.beinsports4">
+  <programme start="20260531200200 +0300" stop="20260601060000 +0300" channel="tr.beinsports4">
     <title lang="tr">Nantes - Monaco</title>
     <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nantes - Monaco Maçı Bant -</desc>
     <category lang="tr">Spor</category>
@@ -5630,7 +5630,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Erokspor - Fenerbahçe</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531201500 +0300" stop="20260531221500 +0300" channel="tr.beinsports5">
+  <programme start="20260531201500 +0300" stop="20260601060000 +0300" channel="tr.beinsports5">
     <title lang="tr">Çeyrek Finaller</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -5755,7 +5755,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Bein Sports Max 1</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsportsmax1">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.beinsportsmax1">
     <title lang="tr">Bein Sports Max 1</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -5807,7 +5807,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Bein Sports Max 2</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsportsmax2">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.beinsportsmax2">
     <title lang="tr">Bein Sports Max 2</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -9696,16 +9696,16 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Across the Strait</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531223000 +0300" channel="tr.cctv4">
-    <title lang="tr">Network News •</title>
+    <title lang="tr">Network News</title>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531230000 +0300" channel="tr.cctv4">
     <title lang="tr">Talk with LuJian</title>
   </programme>
   <programme start="20260531230000 +0300" stop="20260531233000 +0300" channel="tr.cctv4">
-    <title lang="tr">China News •</title>
+    <title lang="tr">China News</title>
   </programme>
-  <programme start="20260531233000 +0300" stop="20260601013000 +0300" channel="tr.cctv4">
-    <title lang="tr">Focus Today</title>
+  <programme start="20260531233000 +0300" stop="20260601060000 +0300" channel="tr.cctv4">
+    <title lang="tr">Focus Today •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.cgtn">
     <title lang="tr">The World Today Uluslararası</title>
@@ -9818,7 +9818,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
   <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.cgtn">
     <title lang="tr">Africa Live Uluslararası</title>
   </programme>
-  <programme start="20260531203000 +0300" stop="20260531223000 +0300" channel="tr.cgtn">
+  <programme start="20260531203000 +0300" stop="20260601060000 +0300" channel="tr.cgtn">
     <title lang="tr">Faces Of Africa Uluslararası</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010000 +0300" channel="tr.ciftcitv">
@@ -10962,13 +10962,13 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Antonio de Pereda. Still Life with an Ebony Chest</title>
   </programme>
   <programme start="20260531221200 +0300" stop="20260531221400 +0300" channel="tr.classicalharmony">
-    <title lang="tr">Francisco Goya. the Family Of the Infante Don Luis •</title>
+    <title lang="tr">Francisco Goya. the Family Of the Infante Don Luis</title>
   </programme>
   <programme start="20260531221400 +0300" stop="20260531221600 +0300" channel="tr.classicalharmony">
     <title lang="tr">Diego Velázquez. Philip IV Hunting Wild Boar (La Tela Real)</title>
   </programme>
   <programme start="20260531221600 +0300" stop="20260531222300 +0300" channel="tr.classicalharmony">
-    <title lang="tr">1) Pablo Picasso. Two Women Running on the Beach 2) Pablo Picasso. Seated Woman 3) Pablo Picasso. Mother and Child •</title>
+    <title lang="tr">1) Pablo Picasso. Two Women Running on the Beach 2) Pablo Picasso. Seated Woman 3) Pablo Picasso. Mother and Child</title>
   </programme>
   <programme start="20260531222300 +0300" stop="20260531222600 +0300" channel="tr.classicalharmony">
     <title lang="tr">August Friedrich Albrecht Schenck. Anguish</title>
@@ -11007,7 +11007,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Camille Pissarro. Houses at Bougival (Autumn)</title>
   </programme>
   <programme start="20260531230100 +0300" stop="20260531230500 +0300" channel="tr.classicalharmony">
-    <title lang="tr">1. Vasily Sadovnikov. View Of Palace Square And Winter Palace In St. Petersburg 2. Edward Petrovich Hau. Interiors of the Winter Palace. the Guardroom 3. Edward Petrovich Hau. Interiors of the Winter Palace. the Large Drawing Room of Empress Alexandra Fyodorovna 4. Edward Petrovich Hau. Interiors of the Winter Palace. the Raspberry Study of Empress Maria Alexandrovna 5. Edward Petrovich Hau. Interiors of the Winter Palace. the First Reserved Apartment. the Large Study of Grand Princess Maria Nikolayevna 6. Edward Petrovich Hau. Interiors of the Winter Palace. the Study of Emperor Alexander II •</title>
+    <title lang="tr">1. Vasily Sadovnikov. View Of Palace Square And Winter Palace In St. Petersburg 2. Edward Petrovich Hau. Interiors of the Winter Palace. the Guardroom 3. Edward Petrovich Hau. Interiors of the Winter Palace. the Large Drawing Room of Empress Alexandra Fyodorovna 4. Edward Petrovich Hau. Interiors of the Winter Palace. the Raspberry Study of Empress Maria Alexandrovna 5. Edward Petrovich Hau. Interiors of the Winter Palace. the First Reserved Apartment. the Large Study of Grand Princess Maria Nikolayevna 6. Edward Petrovich Hau. Interiors of the Winter Palace. the Study of Emperor Alexander II</title>
   </programme>
   <programme start="20260531230500 +0300" stop="20260531230900 +0300" channel="tr.classicalharmony">
     <title lang="tr">Canaletto. the Entrance to the Grand Canal, Venice</title>
@@ -11031,7 +11031,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Josef Püttner. Hustle and Bustle in St Mark's Square, Venice</title>
   </programme>
   <programme start="20260531233000 +0300" stop="20260531233500 +0300" channel="tr.classicalharmony">
-    <title lang="tr">Gustav Klimt. the Kiss</title>
+    <title lang="tr">Gustav Klimt. the Kiss •</title>
   </programme>
   <programme start="20260531233500 +0300" stop="20260531233800 +0300" channel="tr.classicalharmony">
     <title lang="tr">Joachim Beuckelaer. the Four Elements</title>
@@ -11048,7 +11048,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
   <programme start="20260531235000 +0300" stop="20260531235400 +0300" channel="tr.classicalharmony">
     <title lang="tr">Jean Béraud: Images 1) Le Boulevard St. Denis Paris 2) Bridge of Art (Windy Day) 3) the Milliner on the Champs Elysées 4) Boulevard des Capucines 5) Boulevard Des Capucines at the Site of Theater Du Vaudeville 6) Après l'Office à l'Eglise de la Sainte-Trinité</title>
   </programme>
-  <programme start="20260531235400 +0300" stop="20260601015400 +0300" channel="tr.classicalharmony">
+  <programme start="20260531235400 +0300" stop="20260601060000 +0300" channel="tr.classicalharmony">
     <title lang="tr">Peter Paul Rubens: Images 1) Venus at a Mirror 2) Cleopatra 3) Bathsheba at the Fountain 4) Girl with Flag 5) Portrait of a Young Woman with a Rosary</title>
   </programme>
   <programme start="20260531004000 +0300" stop="20260531012000 +0300" channel="tr.cnbce">
@@ -11985,7 +11985,7 @@ Dünyada ve Türkiye'de olup biten tüm gelişmeler Ana Haber'de izleyicilere su
   <programme start="20260531200000 +0300" stop="20260531234000 +0300" channel="tr.cosmosports">
     <title lang="tr">Fight Exclusive Night •</title>
   </programme>
-  <programme start="20260531234000 +0300" stop="20260601014000 +0300" channel="tr.cosmosports">
+  <programme start="20260531234000 +0300" stop="20260601060000 +0300" channel="tr.cosmosports">
     <title lang="tr">Kralların Kralı Kahramanlar Serisi</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531002000 +0300" channel="tr.davinci">
@@ -14118,15 +14118,15 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">Uzaktan Kontrollü Savaş</title>
   </programme>
   <programme start="20260531215500 +0300" stop="20260531225500 +0300" channel="tr.docuscreen">
-    <title lang="tr">Dave Gossage •</title>
+    <title lang="tr">Dave Gossage</title>
   </programme>
   <programme start="20260531225500 +0300" stop="20260531232000 +0300" channel="tr.docuscreen">
-    <title lang="tr">Afrika'da Gezinti •</title>
-  </programme>
-  <programme start="20260531232000 +0300" stop="20260531235000 +0300" channel="tr.docuscreen">
     <title lang="tr">Afrika'da Gezinti</title>
   </programme>
-  <programme start="20260531235000 +0300" stop="20260601015000 +0300" channel="tr.docuscreen">
+  <programme start="20260531232000 +0300" stop="20260531235000 +0300" channel="tr.docuscreen">
+    <title lang="tr">Afrika'da Gezinti •</title>
+  </programme>
+  <programme start="20260531235000 +0300" stop="20260601060000 +0300" channel="tr.docuscreen">
     <title lang="tr">Yeni Sınır</title>
   </programme>
   <programme start="20260531070000 +0300" stop="20260531120000 +0300" channel="tr.dreamturk">
@@ -19204,7 +19204,7 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
   <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.fashiontv">
     <title lang="tr">Most Watched Yaşam</title>
   </programme>
-  <programme start="20260531203000 +0300" stop="20260531223000 +0300" channel="tr.fashiontv">
+  <programme start="20260531203000 +0300" stop="20260601060000 +0300" channel="tr.fashiontv">
     <title lang="tr">Most Watched Yaşam</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531013000 +0300" channel="tr.fbtv">
@@ -21708,7 +21708,7 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">Up to Date</title>
   </programme>
   <programme start="20260531213000 +0300" stop="20260531223000 +0300" channel="tr.freedomtv">
-    <title lang="tr">FreeDOM •</title>
+    <title lang="tr">FreeDOM</title>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531224000 +0300" channel="tr.freedomtv">
     <title lang="tr">Up to Date</title>
@@ -21716,7 +21716,7 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
   <programme start="20260531224000 +0300" stop="20260531233500 +0300" channel="tr.freedomtv">
     <title lang="tr">Yabluska Street •</title>
   </programme>
-  <programme start="20260531233500 +0300" stop="20260601013500 +0300" channel="tr.freedomtv">
+  <programme start="20260531233500 +0300" stop="20260601060000 +0300" channel="tr.freedomtv">
     <title lang="tr">News reports</title>
   </programme>
   <programme start="20260531000500 +0300" stop="20260531005500 +0300" channel="tr.fx">
@@ -21951,7 +21951,7 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">Ana Haber Bülteni</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.gstv">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.gstv">
     <title lang="tr">Nokta Transfer</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -22661,13 +22661,13 @@ Gizem Ösün hem grafiklerle anlatıyor hem de farklı ülkelerden uzmanlarla ko
     <title lang="tr">Istraga sedmice</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531223300 +0300" channel="tr.hayat2">
-    <title lang="tr">Crno-bijeli svijet •</title>
+    <title lang="tr">Crno-bijeli svijet</title>
   </programme>
   <programme start="20260531223300 +0300" stop="20260531232200 +0300" channel="tr.hayat2">
-    <title lang="tr">Pravo vrijeme •</title>
+    <title lang="tr">Pravo vrijeme</title>
   </programme>
-  <programme start="20260531232200 +0300" stop="20260601012200 +0300" channel="tr.hayat2">
-    <title lang="tr">Mjesto povratka - Život povratnika</title>
+  <programme start="20260531232200 +0300" stop="20260601060000 +0300" channel="tr.hayat2">
+    <title lang="tr">Mjesto povratka - Život povratnika •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010000 +0300" channel="tr.htspor">
     <title lang="tr">Haber Bülteni</title>
@@ -23707,13 +23707,13 @@ Gizem Ösün hem grafiklerle anlatıyor hem de farklı ülkelerden uzmanlarla ko
     <title lang="tr">Tarih Bahçesi</title>
   </programme>
   <programme start="20260531213000 +0300" stop="20260531230000 +0300" channel="tr.kanalb">
-    <title lang="tr">Yurdun Sesi •</title>
+    <title lang="tr">Yurdun Sesi</title>
   </programme>
   <programme start="20260531230000 +0300" stop="20260531233000 +0300" channel="tr.kanalb">
-    <title lang="tr">Unutulmayanlar •</title>
+    <title lang="tr">Unutulmayanlar</title>
   </programme>
-  <programme start="20260531233000 +0300" stop="20260601013000 +0300" channel="tr.kanalb">
-    <title lang="tr">Videokolik</title>
+  <programme start="20260531233000 +0300" stop="20260601060000 +0300" channel="tr.kanalb">
+    <title lang="tr">Videokolik •</title>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531023000 +0300" channel="tr.kanald">
     <title lang="tr">2 Başlı Köpekbalığı</title>
@@ -24114,10 +24114,10 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Two Days and One Night</title>
   </programme>
   <programme start="20260531215500 +0300" stop="20260531231000 +0300" channel="tr.kbsworld">
-    <title lang="tr">The Return of Superman •</title>
+    <title lang="tr">The Return of Superman</title>
   </programme>
-  <programme start="20260531231000 +0300" stop="20260601011000 +0300" channel="tr.kbsworld">
-    <title lang="tr">My Neighbor, Charles</title>
+  <programme start="20260531231000 +0300" stop="20260601060000 +0300" channel="tr.kbsworld">
+    <title lang="tr">My Neighbor, Charles •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531014500 +0300" channel="tr.kibrisadatv">
     <title lang="tr">Ada Sinema</title>
@@ -24503,18 +24503,18 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Vege izazov</title>
   </programme>
   <programme start="20260531215000 +0300" stop="20260531221500 +0300" channel="tr.kitchentv">
-    <title lang="tr">Bojanina radionica kolača •</title>
+    <title lang="tr">Bojanina radionica kolača</title>
   </programme>
   <programme start="20260531221500 +0300" stop="20260531224000 +0300" channel="tr.kitchentv">
-    <title lang="tr">Gastronomski Dnevnik Vokija Kostića •</title>
+    <title lang="tr">Gastronomski Dnevnik Vokija Kostića</title>
   </programme>
   <programme start="20260531224000 +0300" stop="20260531231000 +0300" channel="tr.kitchentv">
-    <title lang="tr">Poljičanke •</title>
+    <title lang="tr">Poljičanke</title>
   </programme>
   <programme start="20260531231000 +0300" stop="20260531233500 +0300" channel="tr.kitchentv">
-    <title lang="tr">Veliki zalogaji Toma Gretića</title>
+    <title lang="tr">Veliki zalogaji Toma Gretića •</title>
   </programme>
-  <programme start="20260531233500 +0300" stop="20260601013500 +0300" channel="tr.kitchentv">
+  <programme start="20260531233500 +0300" stop="20260601060000 +0300" channel="tr.kitchentv">
     <title lang="tr">Katarinine čarolije</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531005000 +0300" channel="tr.kontv">
@@ -24816,7 +24816,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
   <programme start="20260531210000 +0300" stop="20260531230000 +0300" channel="tr.lalegultv">
     <title lang="tr">Haftanın Sohbeti</title>
   </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.lalegultv">
+  <programme start="20260531230000 +0300" stop="20260601060000 +0300" channel="tr.lalegultv">
     <title lang="tr">Ümmeti̇n Hi̇zmetkarı •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.langlab">
@@ -25204,16 +25204,16 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Grammar Wise New</title>
   </programme>
   <programme start="20260531220600 +0300" stop="20260531221500 +0300" channel="tr.langlab">
-    <title lang="tr">English In Focus •</title>
+    <title lang="tr">English In Focus</title>
   </programme>
   <programme start="20260531221500 +0300" stop="20260531221900 +0300" channel="tr.langlab">
     <title lang="tr">Get a Call_Detective</title>
   </programme>
   <programme start="20260531221900 +0300" stop="20260531225900 +0300" channel="tr.langlab">
-    <title lang="tr">English United •</title>
+    <title lang="tr">English United</title>
   </programme>
   <programme start="20260531225900 +0300" stop="20260531230800 +0300" channel="tr.langlab">
-    <title lang="tr">City Grammar •</title>
+    <title lang="tr">City Grammar</title>
   </programme>
   <programme start="20260531230800 +0300" stop="20260531231800 +0300" channel="tr.langlab">
     <title lang="tr">English 911</title>
@@ -25228,9 +25228,9 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Coffee Chat</title>
   </programme>
   <programme start="20260531233100 +0300" stop="20260531235800 +0300" channel="tr.langlab">
-    <title lang="tr">City Grammar</title>
+    <title lang="tr">City Grammar •</title>
   </programme>
-  <programme start="20260531235800 +0300" stop="20260601015800 +0300" channel="tr.langlab">
+  <programme start="20260531235800 +0300" stop="20260601060000 +0300" channel="tr.langlab">
     <title lang="tr">English Up</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010000 +0300" channel="tr.liderhabertv">
@@ -25278,7 +25278,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
   <programme start="20260531190000 +0300" stop="20260531215500 +0300" channel="tr.liderhabertv">
     <title lang="tr">Program Tekrarı</title>
   </programme>
-  <programme start="20260531215500 +0300" stop="20260531235500 +0300" channel="tr.liderhabertv">
+  <programme start="20260531215500 +0300" stop="20260601060000 +0300" channel="tr.liderhabertv">
     <title lang="tr">Telegol •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003800 +0300" channel="tr.lingotoonstv">
@@ -25681,13 +25681,13 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Life Around</title>
   </programme>
   <programme start="20260531220900 +0300" stop="20260531221500 +0300" channel="tr.lingotoonstv">
-    <title lang="tr">Irregular Verbs •</title>
+    <title lang="tr">Irregular Verbs</title>
   </programme>
   <programme start="20260531221500 +0300" stop="20260531221900 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Get a Call</title>
   </programme>
   <programme start="20260531221900 +0300" stop="20260531222100 +0300" channel="tr.lingotoonstv">
-    <title lang="tr">Wrong&amp;right •</title>
+    <title lang="tr">Wrong&amp;right</title>
   </programme>
   <programme start="20260531222100 +0300" stop="20260531222700 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Coffee Chat</title>
@@ -25702,7 +25702,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Alfred &amp; Wilfred</title>
   </programme>
   <programme start="20260531230200 +0300" stop="20260531231400 +0300" channel="tr.lingotoonstv">
-    <title lang="tr">Life Around •</title>
+    <title lang="tr">Life Around</title>
   </programme>
   <programme start="20260531231400 +0300" stop="20260531231800 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Sing&amp;Spell</title>
@@ -25713,8 +25713,8 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
   <programme start="20260531232200 +0300" stop="20260531232400 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Wrong&amp;right</title>
   </programme>
-  <programme start="20260531232400 +0300" stop="20260601012400 +0300" channel="tr.lingotoonstv">
-    <title lang="tr">Easy Talk</title>
+  <programme start="20260531232400 +0300" stop="20260601060000 +0300" channel="tr.lingotoonstv">
+    <title lang="tr">Easy Talk •</title>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531013500 +0300" channel="tr.lovenature">
     <title lang="tr">Bir Arının Günlüğü</title>
@@ -25867,7 +25867,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Top Gold</title>
     <category lang="tr">Müzik</category>
   </programme>
-  <programme start="20260531170000 +0300" stop="20260531190000 +0300" channel="tr.mcmtop">
+  <programme start="20260531170000 +0300" stop="20260601060000 +0300" channel="tr.mcmtop">
     <title lang="tr">Top Mix</title>
     <category lang="tr">Müzik</category>
   </programme>
@@ -26034,7 +26034,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Intermezzo</title>
     <category lang="tr">Müzik</category>
   </programme>
-  <programme start="20260531190500 +0300" stop="20260531210500 +0300" channel="tr.mezzo">
+  <programme start="20260531190500 +0300" stop="20260601060000 +0300" channel="tr.mezzo">
     <title lang="tr">Opera</title>
     <category lang="tr">Müzik</category>
   </programme>
@@ -28771,12 +28771,12 @@ macera başlar.</desc>
     <title lang="tr">Luana's Kitchen</title>
   </programme>
   <programme start="20260531215000 +0300" stop="20260531224500 +0300" channel="tr.myzentv">
-    <title lang="tr">100 Places to See •</title>
+    <title lang="tr">100 Places to See</title>
   </programme>
   <programme start="20260531224500 +0300" stop="20260531234500 +0300" channel="tr.myzentv">
     <title lang="tr">100 Places to See •</title>
   </programme>
-  <programme start="20260531234500 +0300" stop="20260601014500 +0300" channel="tr.myzentv">
+  <programme start="20260531234500 +0300" stop="20260601060000 +0300" channel="tr.myzentv">
     <title lang="tr">Massages</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531005000 +0300" channel="tr.nationalgeographic">
@@ -32709,7 +32709,7 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
   <programme start="20260531182000 +0300" stop="20260531194000 +0300" channel="tr.raiuno">
     <title lang="tr">Da Noi...a Ruota Libera -... Uluslararası</title>
   </programme>
-  <programme start="20260531194000 +0300" stop="20260531214000 +0300" channel="tr.raiuno">
+  <programme start="20260531194000 +0300" stop="20260601060000 +0300" channel="tr.raiuno">
     <title lang="tr">L'eredità Weekend -... Uluslararası</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.rtarabic">
@@ -32988,7 +32988,7 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
   <programme start="20260531223000 +0300" stop="20260531230000 +0300" channel="tr.rtrplaneta">
     <title lang="tr">Moscow. Kremlin. Putin</title>
   </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.rtrplaneta">
+  <programme start="20260531230000 +0300" stop="20260601060000 +0300" channel="tr.rtrplaneta">
     <title lang="tr">Sunday evening with Vladimir Solovyov •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003700 +0300" channel="tr.russia24">
@@ -33163,109 +33163,13 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
     <title lang="tr">News</title>
   </programme>
   <programme start="20260531220300 +0300" stop="20260531223200 +0300" channel="tr.russia24">
-    <title lang="tr">Investigation by Eduard Petrov •</title>
+    <title lang="tr">Investigation by Eduard Petrov</title>
   </programme>
   <programme start="20260531223200 +0300" stop="20260531230000 +0300" channel="tr.russia24">
     <title lang="tr">Investigation by Eduard Petrov</title>
   </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.russia24">
+  <programme start="20260531230000 +0300" stop="20260601060000 +0300" channel="tr.russia24">
     <title lang="tr">News •</title>
-  </programme>
-  <programme start="20260531010000 +0300" stop="20260531020000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531020000 +0300" stop="20260531030000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531030000 +0300" stop="20260531040000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531040000 +0300" stop="20260531050000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531050000 +0300" stop="20260531060000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531060000 +0300" stop="20260531070000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531070000 +0300" stop="20260531080000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531080000 +0300" stop="20260531090000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531090000 +0300" stop="20260531100000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531100000 +0300" stop="20260531110000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531110000 +0300" stop="20260531120000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531120000 +0300" stop="20260531130000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531130000 +0300" stop="20260531140000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531140000 +0300" stop="20260531150000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531150000 +0300" stop="20260531160000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531160000 +0300" stop="20260531170000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531170000 +0300" stop="20260531180000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531180000 +0300" stop="20260531190000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531210000 +0300" stop="20260531220000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531220000 +0300" stop="20260531230000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
-  </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.saudiquran">
-    <title lang="tr">Kabe'den Canlı Yayın</title>
-    <category lang="tr">Yaşam</category>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531020000 +0300" channel="tr.saudiquran">
     <title lang="tr">Kabe'den Canlı Yayın</title>
@@ -33547,9 +33451,9 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
     <title lang="tr">Güzergâh Röportaj</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531230000 +0300" channel="tr.semerkandtv">
-    <title lang="tr">Hasbihal Tartışma •</title>
+    <title lang="tr">Hasbihal Tartışma</title>
   </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.semerkandtv">
+  <programme start="20260531230000 +0300" stop="20260601060000 +0300" channel="tr.semerkandtv">
     <title lang="tr">Hacegan Sohbetleri Magazin •</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.showmax">
@@ -37425,10 +37329,10 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Yummy for Mummy</title>
   </programme>
   <programme start="20260531215800 +0300" stop="20260531233000 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Kung Fu Panda •</title>
+    <title lang="tr">Kung Fu Panda</title>
   </programme>
   <programme start="20260531233000 +0300" stop="20260531233600 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Life Around Kids</title>
+    <title lang="tr">Life Around Kids •</title>
   </programme>
   <programme start="20260531233600 +0300" stop="20260531234300 +0300" channel="tr.tinyteentv">
     <title lang="tr">Alfred &amp; Wilfred</title>
@@ -37439,7 +37343,7 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
   <programme start="20260531234700 +0300" stop="20260531235900 +0300" channel="tr.tinyteentv">
     <title lang="tr">Life Around Kids</title>
   </programme>
-  <programme start="20260531235900 +0300" stop="20260601015900 +0300" channel="tr.tinyteentv">
+  <programme start="20260531235900 +0300" stop="20260601060000 +0300" channel="tr.tinyteentv">
     <title lang="tr">Magic Science</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531012000 +0300" channel="tr.tivi6">
@@ -38439,16 +38343,16 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Football Nation</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531223000 +0300" channel="tr.tracesportstars">
-    <title lang="tr">Football Nation •</title>
+    <title lang="tr">Football Nation</title>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531230000 +0300" channel="tr.tracesportstars">
     <title lang="tr">Football Nation</title>
   </programme>
   <programme start="20260531230000 +0300" stop="20260531233000 +0300" channel="tr.tracesportstars">
-    <title lang="tr">Football Nation •</title>
-  </programme>
-  <programme start="20260531233000 +0300" stop="20260601013000 +0300" channel="tr.tracesportstars">
     <title lang="tr">Football Nation</title>
+  </programme>
+  <programme start="20260531233000 +0300" stop="20260601060000 +0300" channel="tr.tracesportstars">
+    <title lang="tr">Football Nation •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010000 +0300" channel="tr.traceurban">
     <title lang="tr">Weekend vibes</title>
@@ -38475,9 +38379,9 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Urban Hit 10</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531230000 +0300" channel="tr.traceurban">
-    <title lang="tr">100% Ladies •</title>
+    <title lang="tr">100% Ladies</title>
   </programme>
-  <programme start="20260531230000 +0300" stop="20260601010000 +0300" channel="tr.traceurban">
+  <programme start="20260531230000 +0300" stop="20260601060000 +0300" channel="tr.traceurban">
     <title lang="tr">Weekend vibes •</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.trt">
@@ -43241,11 +43145,10 @@ Sporun kalbinde, totemlerin ve ritüellerin hikayesi 'Onsuz Asla' programında..
     <title lang="tr">Rumeysa Zügül İle Turkuaz</title>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531233000 +0300" channel="tr.tv42">
-    <title lang="tr">Tarım •</title>
+    <title lang="tr">Tarım</title>
   </programme>
-  <programme start="20260531233000 +0300" stop="20260601013000 +0300" channel="tr.tv42">
-    <title lang="tr"></title>
-    <category lang="tr">Belgesel</category>
+  <programme start="20260531233000 +0300" stop="20260601060000 +0300" channel="tr.tv42">
+    <title lang="tr">Belgesel •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531005000 +0300" channel="tr.tv5">
     <title lang="tr">Panorama</title>
@@ -45175,7 +45078,7 @@ Olaylar genelde Mükremin'in ve arkadaşı Tirbüşon'un etrafında gelişir. Di
     <title lang="tr">Sportif Balıkçılık</title>
     <category lang="tr">Belgesel</category>
   </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.yabantv">
+  <programme start="20260531200000 +0300" stop="20260601060000 +0300" channel="tr.yabantv">
     <title lang="tr">Sizin Av Safariniz</title>
     <category lang="tr">Belgesel</category>
   </programme>
