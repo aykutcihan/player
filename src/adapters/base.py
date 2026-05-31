@@ -8,7 +8,11 @@ from typing import List
 
 from models import Programme
 
-UA = ("Mozilla/5.0 (compatible; kisisel-epg/1.0)")  # robots'a açık siteler
+UA = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/125.0.0.0 Safari/537.36"
+)
 
 
 class BaseAdapter(ABC):
@@ -17,7 +21,12 @@ class BaseAdapter(ABC):
 
     def __init__(self, session: requests.Session | None = None, delay: float = 0.5):
         self.s = session or requests.Session()
-        self.s.headers.update({"User-Agent": UA})
+        self.s.headers.update({
+            "User-Agent": UA,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "Accept-Encoding": "gzip, deflate, br",
+        })
         self.delay = delay
 
     def _get(self, url: str, **kw) -> requests.Response:
