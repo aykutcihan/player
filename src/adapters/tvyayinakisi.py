@@ -1,78 +1,97 @@
 """
-tvyayinakisi (tvyayinakisi.com) — beIN ailesi + uzun kuyruk + 3. yedek.
+tvyayinakisi.com — Tek istekte tüm kanallar.
 
-URL:  https://www.tvyayinakisi.com/{slug}-yayin-akisi/
-Satır: başlangıç saati + ad + tür (Spor/Dizi/...). BİTİŞ YOK, AÇIKLAMA YOK.
-Statik HTML'de yalnız BUGÜN dolu (ileri günler boştu).
+URL: https://www.tvyayinakisi.com/tvde-bugun-rehberi/
+Yapı: div.channels-today__program[data-channel-slug] kapsayıcısı içinde
+      div.channels-today__program__item elementleri (başlık + saat aralığı).
 
-- bitiş normalize'da sonraki başlangıçtan türetilir.
-- spor/maç isimleri simplify() ile sadeleştirilir.
-- 'Az Sonra...' filler satırları elenir.
-
->>> CANLI HTML'E GÖRE AYAR GEREKEBİLİR <<<
-Saat + ad + kategoriyi taşıyan <li>/<div> selector'ını PC'de doğrula.
-Aşağıdaki parser, gördüğümüz render düzenine (kalın saat + ad + [tür]) göre
-metin tabanlı bir yaklaşım kullanıyor.
+Avantajlar (eski adaptöre göre):
+- Tek HTTP isteği → 50 kanal
+- Başlangıç VE bitiş saati mevcut
+- Temiz class-based selector, fragile regex yok
 """
 from __future__ import annotations
 import re
-from datetime import datetime
-from typing import List
+from datetime import datetime, timedelta
+from typing import List, Dict
 
 from bs4 import BeautifulSoup
 
 from adapters.base import BaseAdapter
 from models import Programme
-from normalize import parse_hhmm_on, simplify, ist
+from normalize import ist
 
-FILLER = ("az sonra", "yayın akışı bulunamadı", "bu gün için")
-TIME_RE = re.compile(r"(\d{1,2})\s*:\s*(\d{2})")
+TIME_RE = re.compile(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2}):(\d{2})")
 
 
 class TvYayinAkisiAdapter(BaseAdapter):
     prefix = "tvyayinakisi"
     base_url = "https://www.tvyayinakisi.com"
 
-    SPORTS = {"spor"}  # bu türde simplify uygula
+    def __init__(self, session=None, delay: float = 0.2):
+        super().__init__(session, delay)
+        self._cache: Dict[str, List[Programme]] = {}
+        self._loaded = False
 
     def fetch(self, source_id: str, channel_id: str) -> List[Programme]:
-        url = f"{self.base_url}/{source_id}-yayin-akisi/"
-        html = self._get(url).text
-        return self._parse(html, channel_id)
+        if not self._loaded:
+            self._fill_cache()
+        raw = self._cache.get(source_id, [])
+        # Önbellekte channel_id placeholder — doğrusu burada set edilir
+        return [Programme(
+            channel_id=channel_id,
+            start=p.start, stop=p.stop,
+            title=p.title, category=p.category,
+            source=self.prefix,
+        ) for p in raw]
 
-    def _parse(self, html: str, channel_id: str) -> List[Programme]:
+    def _fill_cache(self):
+        self._loaded = True
+        try:
+            html = self._get(f"{self.base_url}/tvde-bugun-rehberi/").text
+        except Exception as e:
+            print(f"  [tvyayinakisi] istek hatasi: {e}")
+            return
+        self._parse_page(html)
+        total = sum(len(v) for v in self._cache.values())
+        print(f"  [tvyayinakisi] {len(self._cache)} kanal, {total} program önbelleğe alındı.")
+
+    def _parse_page(self, html: str):
         soup = BeautifulSoup(html, "lxml")
         today = ist(datetime.now())
-        out: List[Programme] = []
-        # >>> TODO: doğru kapsayıcıyı seç. Şimdilik tüm <li>'leri tara.
-        for li in soup.select("li"):
-            txt = " ".join(li.get_text("").split())
-            if not txt:
-                continue
-            low = txt.lower()
-            if any(f in low for f in FILLER):
-                continue
-            mt = TIME_RE.search(txt)
-            if not mt:
-                continue
-            hhmm = f"{mt.group(1)}:{mt.group(2)}"
-            rest = txt[mt.end():].strip(" -–—")
-            if not rest:
-                continue
-            # kategori (sonda köşeli/parantez ya da bilinen kelime) — kaba
-            category = None
-            cm = re.search(r"\b(Spor|Dizi|Film|Belgesel|Haber|Çocuk|Müzik)\b$", rest)
-            if cm:
-                category = cm.group(1)
-                rest = rest[: cm.start()].strip(" -–—")
-            prog = Programme(
-                channel_id=channel_id,
-                start=parse_hhmm_on(today, hhmm),
-                title=rest, category=category, source=self.prefix,
-            )
-            if category and category.lower() in self.SPORTS:
-                s = simplify(rest)
-                prog.title, prog.desc = s["title"], s["desc"]
-            out.append(prog)
-        # bitişler normalize.derive_stops ile sonradan doldurulacak
-        return out
+
+        for ch_div in soup.select("div.channels-today__program[data-channel-slug]"):
+            slug_full = ch_div.get("data-channel-slug", "")
+            slug = slug_full.replace("-yayin-akisi", "")
+
+            progs: List[Programme] = []
+            for item in ch_div.select("div.channels-today__program__item"):
+                title_el = item.select_one(".channels-today__program__title")
+                time_el = item.select_one(".channels-today__program__time")
+
+                title = title_el.get_text(strip=True) if title_el else ""
+                time_txt = time_el.get_text("").replace(" ", "") if time_el else ""
+
+                m = TIME_RE.search(time_txt)
+                if not m or not title:
+                    continue
+
+                sh, sm, eh, em = int(m.group(1)), int(m.group(2)), int(m.group(3)), int(m.group(4))
+                # 24:XX → ertesi günün 0:XX
+                start_dt = ist(datetime(today.year, today.month, today.day, sh % 24, sm))
+                stop_dt = ist(datetime(today.year, today.month, today.day, eh % 24, em))
+                if sh >= 24:
+                    start_dt += timedelta(days=1)
+                if eh >= 24 or stop_dt <= start_dt:
+                    stop_dt += timedelta(days=1)
+
+                progs.append(Programme(
+                    channel_id="",  # fetch() içinde doğru id ile üretilir
+                    start=start_dt,
+                    stop=stop_dt,
+                    title=title,
+                    source=self.prefix,
+                ))
+
+            if progs:
+                self._cache[slug] = progs
