@@ -24,7 +24,7 @@
 
 channels:
 
-  tr.24:
+  tr24tv.tr:
     name: "24"
     sources:
       - tvplus:24-hd--32
