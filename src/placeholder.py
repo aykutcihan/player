@@ -6,7 +6,7 @@ from typing import List
 from models import Programme
 from normalize import ist
 
-TEXT = "Yayın akışı bilgisi mevcut değil"
+TEXT = "Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor"
 
 
 def placeholder_programmes(channel_id: str, days: int = 7,
