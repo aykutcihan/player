@@ -121,6 +121,29 @@ Samsung TV, boş program yerine bu metni gösterir.
 
 ---
 
+## Önbellekli adaptörler (cache pattern)
+
+Tivibu ve tvyayinakisi tek bir HTTP isteğiyle tüm kanalları yükler.
+Her `fetch()` çağrısı bu önbellekten okur — site binlerce kez sorgulanmaz.
+
+```python
+class TivibuAdapter(BaseAdapter):
+    def __init__(self):
+        self._cache = {}    # {ch_id: [Programme, ...]}
+        self._loaded = False
+
+    def fetch(self, source_id, channel_id):
+        if not self._loaded:
+            self._fill_cache()  # İlk çağrıda TÜM kanalları yükle
+        return self._cache.get(source_id, [])
+
+    def _fill_cache(self):
+        # 11 kategori sayfası yükle → 113 kanal
+        ...
+```
+
+---
+
 ## Bağımlılıklar
 
 | Paket | Kullanım |

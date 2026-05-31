@@ -44,6 +44,17 @@ algılayıp blokluyor. Ev makinesi Türk IP'ine sahip olduğu için bloklanmıyo
 
 ---
 
+## Adaptör durumu (özet)
+
+| Adaptör | Kanal | Program | Kapsam | Açıklama |
+|---------|-------|---------|--------|----------|
+| **TV+** | ~150 | 10-80/kanal | ~10 gün | Birincil kaynak, en zengin |
+| **Tivibu** | 113 | 5-30/kanal | Bugün | Playwright ile, Tivibu Spor dahil |
+| **tvyayinakisi** | 50 | 8-20/kanal | Bugün | Tek istekte tüm kanallar |
+| **DigiTürk Burada** | ~20 | 5-15/kanal | Bugün | beIN Sports yedek |
+
+---
+
 ## Dosya yapısı
 
 ```

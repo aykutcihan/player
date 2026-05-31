@@ -43,51 +43,71 @@ Slug, TV+ URL'inden alınır:
 
 ## 2. Tivibu (tivibu)
 
-**Kaynak:** `https://www.tivibu.com.tr/canli-tv/`
+**Kaynak:** `https://www.tivibu.com.tr/canli-tv/` + kategori sayfaları
 
 **Avantajlar:**
-- Sinema kanalları için iyi kaynak (ücretsiz erişilenler)
-- Bazı kanallar için tek kaynak (Sinema 1001, Sinema Aksiyon, vb.)
+- **113 kanal** — Tivibu Spor 1-4 dahil tüm kategoriler
+- Bazı kanallar için tek kaynak (Tivibu Spor, Sinema 1001, vb.)
 
 **Nasıl çalışır:**
 - Site JavaScript gerektirdiği için **Playwright** (headless Chromium) kullanır
 - `--disable-blink-features=AutomationControlled` ile bot tespitini atlatır
-- Tek sayfa yüklemesinde **tüm görünür kanalları** önbelleğe alır
-- `fetch()` çağrıları önbellekten okur (performans için)
+- **11 kategori sayfasını** sırayla yükler, tüm kanalları önbelleğe alır:
+  `/canli-tv/`, `/canli-tv/spor`, `/canli-tv/muzik`, `/canli-tv/ulusal`,
+  `/canli-tv/haber`, `/canli-tv/dizi`, `/canli-tv/belgesel`, `/canli-tv/cocuk`,
+  `/canli-tv/yasam-stil`, `/canli-tv/global`, `/canli-tv/sinema`
+- `fetch()` çağrıları bu önbellekten okur
 
 **Kısıtlamalar:**
-- Sadece **14 kanal** (ücretsiz erişilebilen sinema kanalları)
-- Tivibu Spor, müzik kanalları → üyelik gerekiyor, erişilemiyor
-- İlk kez Chromium indirilirken ~130MB indirme yapılır
+- İlk kez Chromium indirilirken ~130MB indirme yapılır (sonra önbellekte kalır)
+- Sadece **bugünkü** program verisi (TV+ gibi 10 günlük değil)
 
 **Source ID formatı:** `tivibu:{chID}` → örn. `tivibu:ch00000000000000001170`
 
-**Desteklenen kanallar (ücretsiz):**
-- Sinema TV, Sinema TV 2, Sinema 1001, Sinema 1002
-- Sinema Aile, Sinema Aile 2, Sinema Aksiyon, Sinema Aksiyon 2
-- Sinema Komedi, Sinema Komedi 2, Sinema Yerli, Sinema Yerli 2
-- Tarih TV, Tivibu Tanıtım
+**Desteklenen kategoriler:**
+| Kategori | Örnek kanallar |
+|----------|----------------|
+| Spor | Tivibu Spor 1-4, Eurosport 1-2, S Sport |
+| Müzik | Türk Halk Müziği, Türkçe Pop, Türkçe Slow |
+| Ulusal | ATV, Star TV, Kanal D, Show TV, TRT 1 |
+| Haber | CNN Türk, NTV, A Haber, Haberturk |
+| Dizi | BBC First, FX, Epic Drama |
+| Belgesel | Discovery, National Geographic, Tarih TV |
+| Çocuk | Disney Junior, Minika Go, Cartoon Network |
+| Sinema | Sinema TV, Sinema 1001, Sinema Aksiyon, vb. |
+| Global | NHK World, DW, France 24, Saudi Quran |
 
-**Durum:** ✅ Çalışıyor (14 kanal)
+**Durum:** ✅ Çalışıyor (113 kanal)
 
 ---
 
 ## 3. tvyayinakisi (tvyayinakisi)
 
-**Kaynak:** `https://www.tvyayinakisi.com/{slug}-yayin-akisi/`
+**Kaynak:** `https://www.tvyayinakisi.com/tvde-bugun-rehberi/`
 
 **Avantajlar:**
-- Çok sayıda kanal
-- Sadece bugünkü program
+- **Tek HTTP isteği** → **50 kanal**
+- Başlangıç **ve** bitiş saati var (eski versiyonda sadece başlangıç vardı)
+- Temiz CSS class-based yapı (fragile regex yok)
 
 **Nasıl çalışır:**
-- HTML'deki `<li>` elementlerini parse eder
-- Saat: `<strong>HH</strong>:MM` formatı (`get_text("")` ile birleştirir)
-- Kategori: `<a>Dizi</a>` şeklinde link içinde
+- `/tvde-bugun-rehberi/` sayfasını **tek seferde** çeker
+- `div.channels-today__program[data-channel-slug]` → her kanal bloğu
+- `data-channel-slug="star-tv-yayin-akisi"` → slug = `star-tv`
+- `.channels-today__program__title` → program başlığı
+- `.channels-today__program__time` → `"HH:MM - HH:MM"` formatı
+- Tüm kanallar önbelleğe alınır, `fetch()` önbellekten okur
 
 **Source ID formatı:** `tvyayinakisi:{slug}` → örn. `tvyayinakisi:star-tv`
 
-**Durum:** ⚠️ Geçici sorunlar (site zaman zaman timeout)
+Slug = kanal URL'indeki parça:
+`https://www.tvyayinakisi.com/`**`star-tv`**`-yayin-akisi/`
+
+**Kısıtlamalar:**
+- Sadece **bugünkü** program (yarın ve sonrası yok)
+- 50 kanal → channels.yaml'daki tüm kanalları kapsamıyor
+
+**Durum:** ✅ Çalışıyor (50 kanal, tek istek)
 
 ---
 
