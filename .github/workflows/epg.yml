@@ -14,6 +14,9 @@ concurrency:
 
 jobs:
   build:
+    env:
+      # Node.js 20 uyarılarını bastırmak ve Node 24'e hazırlık için
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,10 +35,14 @@ jobs:
 
       - name: Değiştiyse commit'le
         run: |
-          git config user.name  "epg-bot"
-          git config user.email "epg-bot@users.noreply.github.com"
-          git add epg.xml cache/tmdb.json
-          # içerik değişmediyse commit YOK -> gereksiz commit önlenir
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Dosyalar varsa ekle (128 hatasını önler)
+          [ -f epg.xml ] && git add epg.xml
+          [ -f cache/tmdb.json ] && git add cache/tmdb.json
+          
+          # İçerik değişmediyse commit YOK
           if git diff --cached --quiet; then
             echo "Değişiklik yok, commit atlanıyor."
           else
