@@ -64,14 +64,15 @@ class TurksatKabloAdapter(BaseAdapter):
             return
 
         today = ist(datetime.now())
-        day_base = today + timedelta(days=day - 1)
+        # 1.json = yarın (today+1), 2.json = öbür gün (today+2), ...
+        day_base = today + timedelta(days=day)
 
         for ch in data.get("k", []):
             ch_name = ch.get("n", "").strip()
+            ch_id = ch.get("i")
             if not ch_name:
                 continue
             progs = []
-            prev_stop = None
             for p in ch.get("p", []):
                 title = (p.get("b") or "").strip()
                 if not title or title == "-":
