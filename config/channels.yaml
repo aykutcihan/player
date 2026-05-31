@@ -1019,11 +1019,6 @@ channels:
       - tivibu:ch00000000000000002786
       - tvyayinakisi:sinema-aile-2
 
-  SinemaAksiyon.tr:
-    name: "Sinema Aksiyon"
-    sources:
-      - tivibu:ch00000000000000001263
-
   SinemaAksiyon2.tr:
     name: "Sinema Aksiyon 2"
     sources:
@@ -1064,10 +1059,11 @@ channels:
       - tivibu:ch00000000000000002783
       - tvyayinakisi:sinema-tv-2
 
-  tr.sinematvaksiyon:
-    name: "Sinema TV Aksiyon"
+  SinemaAksiyon.tr:
+    name: "Sinema Aksiyon"
     sources:
       - tvplus:sinema-tv-aksiyon-hd--129
+      - tivibu:ch00000000000000001263
       - tvyayinakisi:sinema-tv-aksiyon
 
   SinemaYerli.tr:
