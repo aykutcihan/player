@@ -366,6 +366,9 @@
   <channel id="tr.lovenature">
     <display-name>Love Nature</display-name>
   </channel>
+  <channel id="tr.mceutv">
+    <display-name>MCE TV</display-name>
+  </channel>
   <channel id="tr.mcmtop">
     <display-name>Mcm Top</display-name>
   </channel>
@@ -4666,8 +4669,8 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531010000 +0300" channel="tr.beinseries2">
-    <title lang="tr">Ghosts S5 Ep 21</title>
-    <category lang="tr">Dizi</category>
+    <title lang="tr">Ghosts S5 Ep 21 Dizi •</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531020000 +0300" channel="tr.beinseries2">
     <title lang="tr">Law &amp; Order ('21) S5 Ep 19</title>
@@ -4754,8 +4757,8 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531230000 +0300" channel="tr.beinseries2">
-    <title lang="tr">Ghosts S5 Ep 21</title>
-    <category lang="tr">Dizi</category>
+    <title lang="tr">Ghosts S5 Ep 21 Dizi •</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531230000 +0300" stop="20260601000000 +0300" channel="tr.beinseries2">
     <title lang="tr">Law &amp; Order ('21) S5 Ep 19</title>
@@ -4842,8 +4845,8 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260601203000 +0300" stop="20260601210000 +0300" channel="tr.beinseries2">
-    <title lang="tr">Ghosts S5 Ep 21</title>
-    <category lang="tr">Dizi</category>
+    <title lang="tr">Ghosts S5 Ep 21 Dizi •</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260601210000 +0300" stop="20260601220000 +0300" channel="tr.beinseries2">
     <title lang="tr">Law &amp; Order ('21) S5 Ep 19</title>
@@ -5947,8 +5950,53 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <title lang="tr">Bein Sports Max 2 Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531000000 +0300" stop="20260531070000 +0300" channel="tr.benguturk">
-    <title lang="tr">Gece Haberleri</title>
+  <programme start="20260531004000 +0300" stop="20260531013000 +0300" channel="tr.benguturk">
+    <title lang="tr">Spor Bülteni</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531013000 +0300" stop="20260531070000 +0300" channel="tr.benguturk">
+    <title lang="tr">Tekrar Programlar</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531070000 +0300" stop="20260531090000 +0300" channel="tr.benguturk">
+    <title lang="tr">Yeni Gün</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531090000 +0300" stop="20260531100000 +0300" channel="tr.benguturk">
+    <title lang="tr">Ekonomi Ekranı</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531100000 +0300" stop="20260531120000 +0300" channel="tr.benguturk">
+    <title lang="tr">Ajans</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531120000 +0300" stop="20260531130000 +0300" channel="tr.benguturk">
+    <title lang="tr">Haber Bülteni</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531130000 +0300" stop="20260531150000 +0300" channel="tr.benguturk">
+    <title lang="tr">Gün Ortası</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531150000 +0300" stop="20260531160000 +0300" channel="tr.benguturk">
+    <title lang="tr">Haber Bülteni</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531180000 +0300" channel="tr.benguturk">
+    <title lang="tr">Gündem</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531190000 +0300" channel="tr.benguturk">
+    <title lang="tr">Ajanda</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.benguturk">
+    <title lang="tr">Ana Haber</title>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.benguturk">
+    <title lang="tr">Türkiye'nin Gündemi</title>
+    <category lang="tr">Haber</category>
   </programme>
   <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.benimkanalim">
     <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
@@ -6258,8 +6306,7 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <category lang="tr">Haber</category>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531040000 +0300" channel="tr.bikanal">
-    <title lang="tr">Leylifer</title>
-    <category lang="tr">Dizi</category>
+    <title lang="tr">Leylifer Dizi •</title>
   </programme>
   <programme start="20260531040000 +0300" stop="20260531060000 +0300" channel="tr.bikanal">
     <title lang="tr">Aşk ve Gurur</title>
@@ -9020,10 +9067,10 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.cgtn">
-    <title lang="tr">The World Today Uluslararası •</title>
+    <title lang="tr">The World Today Uluslararası</title>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531010000 +0300" channel="tr.cgtn">
-    <title lang="tr">Assignment Asia Uluslararası</title>
+    <title lang="tr">Assignment Asia Uluslararası •</title>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531020000 +0300" channel="tr.cgtn">
     <title lang="tr">Americas Now Uluslararası</title>
@@ -9460,6 +9507,166 @@ Bu arada çiftler her gün bir zarf seçerek şanslarını arttırmaya çalış�
     <title lang="tr">Ümit Aktaş İle İyilik Hareketi</title>
     <desc lang="tr">Ümit Aktaş ile İyilik Hareketi, sağlık, beslenme ve yaşam kalitesini artırmaya odaklanan bir programdır. Alanında uzman konuklar, doğru bilgiler ve pratik önerilerle izleyicilerin yaşamına değer katıyor.</desc>
     <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531061000 +0300" stop="20260531064000 +0300" channel="tr.cnbce">
+    <title lang="tr">Oto Ekonomi</title>
+    <desc lang="tr">Otomotiv dünyasındaki ekonomik gelişmeleri ele alan program, araç fiyatları, ikinci el piyasası, yeni teknolojiler ve tüketici alışkanlıklarını inceler. Uzman yorumlarıyla izleyici, piyasayı ve geleceğe dair beklentileri daha net takip eder.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531064000 +0300" stop="20260531070000 +0300" channel="tr.cnbce">
+    <title lang="tr">Sesli Ekonomi</title>
+    <desc lang="tr">Ekonomi gündemini farklı bir anlatım diliyle ele alan bu program, piyasaların seyrini, öne çıkan verileri ve uzman yorumlarını sesli bir deneyimle izleyiciye ulaştırır. Karmaşık kavramlar sadeleştirilir, rakamların arkasındaki anlam netleştirilir.</desc>
+    <category lang="tr">Finans</category>
+  </programme>
+  <programme start="20260531070000 +0300" stop="20260531073000 +0300" channel="tr.cnbce">
+    <title lang="tr">Sabah Notları</title>
+    <desc lang="tr">Piyasaların seyrinden döviz ve emtiaya, gündemin ekonomik başlıklarını içeren, güne bilinçli bir başlangıç yapmak için net ve sade bir bakış sunar.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531073000 +0300" stop="20260531080000 +0300" channel="tr.cnbce">
+    <title lang="tr">Gazetelerde Bugün</title>
+    <desc lang="tr">Gazetelerde Bugün, Türkiye ve dünya gündemindeki ekonomi ve genel haberleri detaylı bir şekilde izleyicilere sunan kapsamlı bir programdır. Program, günlük gazetelerde öne çıkan başlıkları, finansal gelişmeleri, siyasi olayları ve toplumsal konuları analiz ederek, izleyicilerin güncel olaylardan haberdar olmasını sağlar.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531080000 +0300" stop="20260531083000 +0300" channel="tr.cnbce">
+    <title lang="tr">Piyasa Özeti</title>
+    <desc lang="tr">Finans dünyasındaki günlük hareketleri sade ve anlaşılır biçimde ekrana taşıyan bu program, borsa, döviz, emtia ve küresel piyasaları tek çerçevede değerlendirir. Öne çıkan veriler, kritik gelişmeler ve kısa analizlerle izleyici piyasanın yönüne hızlıca hâkim olur. Karmaşık rakamlar net yorumlarla anlam kazanır.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531083000 +0300" stop="20260531090000 +0300" channel="tr.cnbce">
+    <title lang="tr">Sabah Notları</title>
+    <desc lang="tr">Güne ekonomiyle başlamak isteyenler için hazırlanan bu program, piyasaların yönünü, döviz ve emtia hareketlerini, küresel gelişmelerin yerel etkilerini anlaşılır bir dille ele alır. Uzman yorumları ve özet analizlerle izleyici, günün ekonomik gündemine hızlıca hâkim olur.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531090000 +0300" stop="20260531093000 +0300" channel="tr.cnbce">
+    <title lang="tr">Para Ekranı</title>
+    <desc lang="tr">Para Ekranı, günlük ekonomi haberlerini, piyasa gelişmelerini ve finans dünyasındaki önemli olayları izleyicilere aktaran bilgilendirici bir programdır. Analizler ve yorumlarla ekonomik kararlar desteklenir. İzleyiciler hem bilgi edinir hem de finansal farkındalık kazanır.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531093000 +0300" stop="20260531100000 +0300" channel="tr.cnbce">
+    <title lang="tr">Analiste Sor</title>
+    <desc lang="tr">İzleyicilerin ekonomi ve finans dünyasına dair sorularını yanıtlayan bir programdır. Piyasa analizleri, yatırım önerileri ve ekonomik gelişmeler alanında uzman analistler tarafından ele alınır. Program, izleyicilere bilgi sunarken finansal farkındalık kazandırmayı hedefler.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531100000 +0300" stop="20260531103000 +0300" channel="tr.cnbce">
+    <title lang="tr">Makro Gündem</title>
+    <desc lang="tr">Küresel ekonomiyi etkileyen temel dinamikleri ele alan program, makro veriler, merkez bankası kararları ve jeopolitik gelişmeleri uzman yorumlarıyla değerlendirir. Büyüme, enflasyon, faiz ve emtia hareketleri izleyiciye anlaşılır bir biçimde aktarılır, piyasaları büyük resim üzerinden takip etme imkânı sağlanır.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531103000 +0300" stop="20260531110000 +0300" channel="tr.cnbce">
+    <title lang="tr">Para Ekranı</title>
+    <desc lang="tr">Para Ekranı, günlük ekonomi haberlerini, piyasa gelişmelerini ve finans dünyasındaki önemli olayları izleyicilere aktaran bilgilendirici bir programdır. Analizler ve yorumlarla ekonomik kararlar desteklenir. İzleyiciler hem bilgi edinir hem de finansal farkındalık kazanır.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531110000 +0300" stop="20260531113000 +0300" channel="tr.cnbce">
+    <title lang="tr">Küresel Görünüm</title>
+    <desc lang="tr">Küresel ekonomide öne çıkan başlıkları mercek altına alan program, büyüme verileri, merkez bankası kararları ve jeopolitik gelişmelerin piyasalara etkisini inceler. Farklı bölgelerden gelen sinyaller uzman yorumlarıyla değerlendirilir. İzleyici, dünya ekonomisini geniş bir perspektiften takip etme fırsatı bulur.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531113000 +0300" stop="20260531120000 +0300" channel="tr.cnbce">
+    <title lang="tr">İş ve Fon</title>
+    <desc lang="tr">Yatırım dünyasının nabzını tutan program, şirket gelişmeleri, fon performansları ve piyasa eğilimlerini tek çerçevede ele alır. Uzman yorumlarıyla desteklenen içerikte riskler ve fırsatlar birlikte değerlendirilir. İzleyici, iş dünyası ve fon piyasalarının yönünü daha net takip etme imkânı bulur.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531120000 +0300" stop="20260531123000 +0300" channel="tr.cnbce">
+    <title lang="tr">e-Cafe</title>
+    <desc lang="tr">Gündemin hızına kısa bir ara vermek isteyenler için hazırlanan program, yoğun haber akışı arasında izleyiciye nefes aldıran sohbetler sunar. Ekonomi, kültür ve günlük yaşam başlıkları sakin bir tempoyla ele alınır. İzleyici, olayların arka planını ve farklı yorumlarını görerek gündemi takip eder.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531123000 +0300" stop="20260531130000 +0300" channel="tr.cnbce">
+    <title lang="tr">E-Hayat</title>
+    <desc lang="tr">Dijital dönüşümün ekonomiye etkilerini merkezine alan bu program, yeni iş modellerini, finansal teknolojileri ve değişen tüketim alışkanlıklarını mercek altına alır. Günlük yaşamda karşılığı olan başlıklar, sade bir anlatımla ele alınır.</desc>
+    <category lang="tr">Tartışma</category>
+  </programme>
+  <programme start="20260531130000 +0300" stop="20260531133000 +0300" channel="tr.cnbce">
+    <title lang="tr">Editörün Seçimi</title>
+    <desc lang="tr">Editörün Seçimi ekonomi programında güncel piyasa gelişmeleri, döviz, enflasyon ve finans haberleri ele alınır. Uzman yorumlarıyla ekonomik veriler sade bir şekilde açıklanır. İzleyiciler, piyasaları etkileyen önemli gelişmeleri kısa ve anlaşılır şekilde öğrenir.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531133000 +0300" stop="20260531140000 +0300" channel="tr.cnbce">
+    <title lang="tr">Oto Ekonomi</title>
+    <desc lang="tr">Otomotiv dünyasındaki ekonomik gelişmeleri ele alan program, araç fiyatları, ikinci el piyasası, yeni teknolojiler ve tüketici alışkanlıklarını inceler. Uzman yorumlarıyla izleyici, piyasayı ve geleceğe dair beklentileri daha net takip eder.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531140000 +0300" stop="20260531141000 +0300" channel="tr.cnbce">
+    <title lang="tr">Para Ekranı</title>
+    <desc lang="tr">Finans ve ekonomi gündemi bu programda farklı bir bakış açısıyla ele alınıyor. "Para Ekranı", piyasalardaki hareketlilikten şirket haberlerine, yatırım trendlerinden küresel gelişmelere kadar geniş bir içerik sunuyor. Uzman konuklar ve analizlerle ekonomi dünyasının nabzı tutuluyor.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531141000 +0300" stop="20260531150000 +0300" channel="tr.cnbce">
+    <title lang="tr">Kazandıran Strateji</title>
+    <desc lang="tr">Finans dünyasında doğru kararları mercek altına alan bu program, yatırım araçlarını, piyasa trendlerini ve stratejik hamleleri detaylı inceler. Uzman yorumlarıyla riskler, fırsatlar ve alternatif senaryolar birlikte değerlendirilir. İzleyici, piyasayı bilinçle okumayı ve uzun vadeli düşünmeyi öğrenir.</desc>
+    <category lang="tr">Tartışma</category>
+  </programme>
+  <programme start="20260531150000 +0300" stop="20260531153000 +0300" channel="tr.cnbce">
+    <title lang="tr">Para Yönetimi</title>
+    <desc lang="tr">Para Yönetimi programında, bireysel ve kurumsal finans stratejileri masaya yatırılıyor. Piyasadaki değişimler, yatırım fırsatları ve tasarruf yöntemleri izleyiciye anlaşılır ve pratik şekilde aktarılıyor. Ekonomi dünyasına dair önemli gelişmeler her bölümde detaylı şekilde inceleniyor.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531153000 +0300" stop="20260531160000 +0300" channel="tr.cnbce">
+    <title lang="tr">Küresel Görünüm</title>
+    <desc lang="tr">Küresel ekonomide öne çıkan başlıkları mercek altına alan program, büyüme verileri, merkez bankası kararları ve jeopolitik gelişmelerin piyasalara etkisini inceler. Farklı bölgelerden gelen sinyaller uzman yorumlarıyla değerlendirilir. İzleyici, dünya ekonomisini geniş bir perspektiften takip etme fırsatı bulur.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531170000 +0300" channel="tr.cnbce">
+    <title lang="tr">4'te Ekonomi</title>
+    <desc lang="tr">Gün içinde ekonomide öne çıkan başlıkları ekrana taşıyan bu program, piyasaların yönünü, açıklanan kritik verileri ve küresel gelişmelerin etkilerini sade bir dille özetler. Uzman yorumları ve kısa analizlerle izleyici, günün ekonomik fotoğrafını net biçimde görür ve rakamların arkasındaki anlamı daha kolay kavrar.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531170000 +0300" stop="20260531173000 +0300" channel="tr.cnbce">
+    <title lang="tr">Son Baskı</title>
+    <desc lang="tr">Gündemin manşetleri, perde arkasındaki gelişmeler ve çoğu kez gözden kaçan kritik ayrıntılar bu programda mercek altına alınıyor. Piyasalardaki en güncel verilerle hazırlanan analizler sayesinde izleyici, ekonomiyi bütünlüklü takip edebiliyor. Son Baskı, büyük resmi görmek isteyenler için rehber oluyor.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531173000 +0300" stop="20260531183000 +0300" channel="tr.cnbce">
+    <title lang="tr">Son Baskı</title>
+    <desc lang="tr">Gündemin manşetleri, perde arkasındaki gelişmeler ve çoğu kez gözden kaçan kritik ayrıntılar bu programda mercek altına alınıyor. Piyasalardaki en güncel verilerle hazırlanan analizler sayesinde izleyici, ekonomiyi bütünlüklü takip edebiliyor. Son Baskı, büyük resmi görmek isteyenler için rehber oluyor.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531183000 +0300" stop="20260531184500 +0300" channel="tr.cnbce">
+    <title lang="tr">Dünyadan Haberler</title>
+    <desc lang="tr">Dünyanın dört bir yanından gelen önemli gelişmeleri derleyen bu program, siyaset, ekonomi, diplomasi ve toplumsal olayları sade bir dille ele alır. Farklı ülkelerden yansıyan haberler, arka planlarıyla değerlendirilir. İzleyici, küresel gündemi tek ekranda geniş perspektifle takip eder.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531184500 +0300" stop="20260531191500 +0300" channel="tr.cnbce">
+    <title lang="tr">Nasıl Başardık?</title>
+    <desc lang="tr">İş dünyasındaki büyük dönüşümü, yapay zekâ ve sürdürülebilirlik ekseninde ele alan bu program, ilham verici başarı hikâyeleriyle bu ekranda.</desc>
+    <category lang="tr">Tartışma</category>
+  </programme>
+  <programme start="20260531191500 +0300" stop="20260531192500 +0300" channel="tr.cnbce">
+    <title lang="tr">Tech</title>
+    <desc lang="tr">Teknoloji dünyasındaki hızlı dönüşümü mercek altına alan bu program, yapay zekâdan siber güvenliğe, girişimcilikten yeni nesil cihazlara kadar öne çıkan başlıkları anlaşılır bir dille ele alır. Uzman yorumları ve güncel örneklerle trendlerin iş hayatına ve günlük yaşama etkisi değerlendirilir.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531192500 +0300" stop="20260531200000 +0300" channel="tr.cnbce">
+    <title lang="tr">Art-e</title>
+    <desc lang="tr">Sanatın dönüştürücü gücü, farklı disiplinler üzerinden ilham verici ve yaratıcı bir yolculukla anlatılıyor.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.cnbce">
+    <title lang="tr">Yapay Zeka ve Ötesi</title>
+    <desc lang="tr">Otomasyon ve yeni nesil teknolojilerin dünyayı nasıl dönüştürdüğünü ele alan bu program, dijital çağın sunduğu fırsatları ve riskleri mercek altına alır. Uzman görüşleri ve örneklerle, teknolojinin iş dünyası, üretim ve günlük yaşama etkileri değerlendirilir. İzleyici, geleceği bugünden okuma imkânı bulur.</desc>
+    <category lang="tr">Magazin</category>
+  </programme>
+  <programme start="20260531203000 +0300" stop="20260531213000 +0300" channel="tr.cnbce">
+    <title lang="tr">Saba Tümer'le</title>
+    <desc lang="tr">Cnbc-e Saba Tümer'le programı ile sevdiklerinizle buluşup gülmek, eğlenmek ve kafanızı dağıtmak için sizi ekrana çağırıyor.</desc>
+    <category lang="tr">Eğlence</category>
+  </programme>
+  <programme start="20260531213000 +0300" stop="20260531230000 +0300" channel="tr.cnbce">
+    <title lang="tr">Sefiller</title>
+    <desc lang="tr">Sefiller, eski mahkûm Jean Valjean'ın yeni bir hayat kurma çabasını konu alıyor. Polis müfettişi Javert'in takibi altında geçen hikâye; aşk, fedakârlık ve adalet temalarıyla Fransız toplumunun zor dönemlerini etkileyici bir müzikal anlatımla ekrana taşıyor.</desc>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531230000 +0300" stop="20260531235000 +0300" channel="tr.cnbce">
+    <title lang="tr">The Tonight Show with Jimmy Fallon</title>
+    <desc lang="tr">Ünlü konuklar, eğlenceli oyunlar, yaratıcı skeçler ve canlı müzik performanslarıyla şekillenen bu late-night şov, izleyicilere tempolu ve kahkaha dolu bir gece deneyimi sunuyor. Samimi sohbetler, beklenmedik anlar ve spontane eğlence, her bölümü sürprizlerle dolu hale getiriyor.</desc>
+    <category lang="tr">Eğlence</category>
+  </programme>
+  <programme start="20260531235000 +0300" stop="20260601001000 +0300" channel="tr.cnbce">
+    <title lang="tr">Saba Tümer'le</title>
+    <desc lang="tr">Saba Tümer'le, samimi sohbetleri, içten soruları ve sürpriz konuklarıyla izleyiciyi ekran başına davet eden keyifli bir talk show programıdır. Sanat, magazin ve gündeme dair renkli başlıklar; bol kahkaha, duygu dolu anlar ve merak uyandıran sohbetlerle izleyicilere keyifli dakikalar sunar.</desc>
+    <category lang="tr">Eğlence</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010000 +0300" channel="tr.cnninternational">
     <title lang="tr">CNN Newsroom Sunday</title>
@@ -12881,11 +13088,11 @@ Dünyada ve Türkiye'de olup biten tüm gelişmeler Ana Haber'de izleyicilere su
     <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.ekoturk">
-    <title lang="tr">Marka Değeri Haber •</title>
+    <title lang="tr">Marka Değeri</title>
+    <category lang="tr">Haber</category>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531020000 +0300" channel="tr.ekoturk">
-    <title lang="tr">Yaşanabilir Dünya</title>
-    <category lang="tr">Haber</category>
+    <title lang="tr">Yaşanabilir Dünya Haber •</title>
   </programme>
   <programme start="20260531020000 +0300" stop="20260531030000 +0300" channel="tr.ekoturk">
     <title lang="tr">Alkin Lakin</title>
@@ -13447,10 +13654,10 @@ Dünyada ve Türkiye'de olup biten tüm gelişmeler Ana Haber'de izleyicilere su
     <title lang="tr">5 Minutes Uluslararası</title>
   </programme>
   <programme start="20260531000500 +0300" stop="20260531002900 +0300" channel="tr.euronews">
-    <title lang="tr">News Uluslararası •</title>
+    <title lang="tr">News Uluslararası</title>
   </programme>
   <programme start="20260531002900 +0300" stop="20260531003400 +0300" channel="tr.euronews">
-    <title lang="tr">5 Minutes Uluslararası</title>
+    <title lang="tr">5 Minutes Uluslararası •</title>
   </programme>
   <programme start="20260531003400 +0300" stop="20260531010000 +0300" channel="tr.euronews">
     <title lang="tr">News Uluslararası</title>
@@ -19390,7 +19597,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.langlab">
-    <title lang="tr">English Up •</title>
+    <title lang="tr">English Up</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.liderhabertv">
     <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
@@ -19781,6 +19988,2190 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Lemur Adası Çeteleri</title>
     <desc lang="tr">Yavrular büyüdükçe her birlikte yeni güç mücadeleleri patlak veriyor. Acımasız Kraliçe Crystal'den düşük rütbeli Erica'ya kadar, her üyenin doğru konuma gelmek için etkili yöntemlerle yarışmalarını izleyin. Bu sırada yavrular, müttefiklerin ve düşmanların kendi geleceklerini nasıl şekillendireceğini anlamaya başlıyorlar.</desc>
     <category lang="tr">Belgesel-Sezon 1, Bölüm 4</category>
+  </programme>
+  <programme start="20260518070000 +0300" stop="20260518073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260518073000 +0300" stop="20260518080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260518080000 +0300" stop="20260518083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260518083000 +0300" stop="20260518093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260518093000 +0300" stop="20260518103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260518103000 +0300" stop="20260518111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260518111500 +0300" stop="20260518120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260518120000 +0300" stop="20260518130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260518130000 +0300" stop="20260518150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260518150000 +0300" stop="20260518161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260518161500 +0300" stop="20260518171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260518171500 +0300" stop="20260518173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260518173500 +0300" stop="20260518180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260518180000 +0300" stop="20260518190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260518190000 +0300" stop="20260518200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260518200000 +0300" stop="20260518203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260518203000 +0300" stop="20260518220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260518220000 +0300" stop="20260518230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260518230000 +0300" stop="20260519000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ekip 1</title>
+  </programme>
+  <programme start="20260519000000 +0300" stop="20260519003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260519003000 +0300" stop="20260519010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kutup Yıldızları</title>
+  </programme>
+  <programme start="20260519010000 +0300" stop="20260519030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260519030000 +0300" stop="20260519040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260519040000 +0300" stop="20260519044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260519044500 +0300" stop="20260519060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260519060000 +0300" stop="20260519070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260519070000 +0300" stop="20260519073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260519073000 +0300" stop="20260519080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260519080000 +0300" stop="20260519083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260519083000 +0300" stop="20260519093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260519093000 +0300" stop="20260519103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260519103000 +0300" stop="20260519111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260519111500 +0300" stop="20260519120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260519120000 +0300" stop="20260519130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260519130000 +0300" stop="20260519150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260519150000 +0300" stop="20260519161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260519161500 +0300" stop="20260519171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260519171500 +0300" stop="20260519173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260519173500 +0300" stop="20260519180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260519180000 +0300" stop="20260519190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260519190000 +0300" stop="20260519200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260519200000 +0300" stop="20260519203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260519203000 +0300" stop="20260519220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260519220000 +0300" stop="20260519230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260519230000 +0300" stop="20260520000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kendi Okulumüza Doğru</title>
+  </programme>
+  <programme start="20260520000000 +0300" stop="20260520003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260520003000 +0300" stop="20260520010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260520010000 +0300" stop="20260520030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260520030000 +0300" stop="20260520040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260520040000 +0300" stop="20260520044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260520044500 +0300" stop="20260520060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260520060000 +0300" stop="20260520070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260520070000 +0300" stop="20260520073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260520073000 +0300" stop="20260520080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260520080000 +0300" stop="20260520083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260520083000 +0300" stop="20260520093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260520093000 +0300" stop="20260520103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260520103000 +0300" stop="20260520111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260520111500 +0300" stop="20260520120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260520120000 +0300" stop="20260520130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260520130000 +0300" stop="20260520150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260520150000 +0300" stop="20260520161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260520161500 +0300" stop="20260520171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260520171500 +0300" stop="20260520173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260520173500 +0300" stop="20260520180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260520180000 +0300" stop="20260520190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260520190000 +0300" stop="20260520200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260520200000 +0300" stop="20260520203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260520203000 +0300" stop="20260520220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260520220000 +0300" stop="20260520230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260520230000 +0300" stop="20260521000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ve İnsan Aldandı</title>
+  </programme>
+  <programme start="20260521000000 +0300" stop="20260521003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260521003000 +0300" stop="20260521010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Etik Politik</title>
+  </programme>
+  <programme start="20260521010000 +0300" stop="20260521030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260521030000 +0300" stop="20260521040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260521040000 +0300" stop="20260521044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260521044500 +0300" stop="20260521060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260521060000 +0300" stop="20260521070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260521070000 +0300" stop="20260521073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260521073000 +0300" stop="20260521080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260521080000 +0300" stop="20260521083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260521083000 +0300" stop="20260521093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260521093000 +0300" stop="20260521103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260521103000 +0300" stop="20260521111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260521111500 +0300" stop="20260521120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260521120000 +0300" stop="20260521130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260521130000 +0300" stop="20260521150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260521150000 +0300" stop="20260521161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260521161500 +0300" stop="20260521171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260521171500 +0300" stop="20260521173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260521173500 +0300" stop="20260521180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260521180000 +0300" stop="20260521190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260521190000 +0300" stop="20260521200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260521200000 +0300" stop="20260521203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260521203000 +0300" stop="20260521220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260521220000 +0300" stop="20260521230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260521230000 +0300" stop="20260522000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Büyük Buluşma</title>
+  </programme>
+  <programme start="20260522000000 +0300" stop="20260522003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260522003000 +0300" stop="20260522010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Aktüel</title>
+  </programme>
+  <programme start="20260522010000 +0300" stop="20260522030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260522030000 +0300" stop="20260522040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260522040000 +0300" stop="20260522044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260522044500 +0300" stop="20260522060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260522060000 +0300" stop="20260522070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260522070000 +0300" stop="20260522073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260522073000 +0300" stop="20260522080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260522080000 +0300" stop="20260522083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260522083000 +0300" stop="20260522093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260522093000 +0300" stop="20260522103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260522103000 +0300" stop="20260522111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260522111500 +0300" stop="20260522120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260522120000 +0300" stop="20260522130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260522130000 +0300" stop="20260522150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260522150000 +0300" stop="20260522161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260522161500 +0300" stop="20260522171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260522171500 +0300" stop="20260522173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260522173500 +0300" stop="20260522180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260522180000 +0300" stop="20260522190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260522190000 +0300" stop="20260522200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260522200000 +0300" stop="20260522203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260522203000 +0300" stop="20260522220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260522220000 +0300" stop="20260522230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260522230000 +0300" stop="20260523000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Güz Gülleri</title>
+  </programme>
+  <programme start="20260523000000 +0300" stop="20260523003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260523003000 +0300" stop="20260523010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260523010000 +0300" stop="20260523030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260523030000 +0300" stop="20260523040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260523040000 +0300" stop="20260523044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260523044500 +0300" stop="20260523060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260523060000 +0300" stop="20260523070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260523070000 +0300" stop="20260523073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260523073000 +0300" stop="20260523080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260523080000 +0300" stop="20260523083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260523083000 +0300" stop="20260523093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260523093000 +0300" stop="20260523103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260523103000 +0300" stop="20260523111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260523111500 +0300" stop="20260523120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260523120000 +0300" stop="20260523130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260523130000 +0300" stop="20260523150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260523150000 +0300" stop="20260523161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260523161500 +0300" stop="20260523171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260523171500 +0300" stop="20260523173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260523173500 +0300" stop="20260523180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260523180000 +0300" stop="20260523190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260523190000 +0300" stop="20260523200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260523200000 +0300" stop="20260523203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260523203000 +0300" stop="20260523220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260523220000 +0300" stop="20260523230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260523230000 +0300" stop="20260524000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Küçük Gelin</title>
+  </programme>
+  <programme start="20260524000000 +0300" stop="20260524003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260524003000 +0300" stop="20260524010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kitabın Ortası</title>
+  </programme>
+  <programme start="20260524010000 +0300" stop="20260524030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260524030000 +0300" stop="20260524040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260524040000 +0300" stop="20260524044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260524044500 +0300" stop="20260524060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260524060000 +0300" stop="20260524070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260524070000 +0300" stop="20260524073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260524073000 +0300" stop="20260524080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260524080000 +0300" stop="20260524083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260524083000 +0300" stop="20260524093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260524093000 +0300" stop="20260524103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260524103000 +0300" stop="20260524111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260524111500 +0300" stop="20260524120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260524120000 +0300" stop="20260524130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260524130000 +0300" stop="20260524150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260524150000 +0300" stop="20260524161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260524161500 +0300" stop="20260524171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260524171500 +0300" stop="20260524173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260524173500 +0300" stop="20260524180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260524180000 +0300" stop="20260524190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260524190000 +0300" stop="20260524200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260524200000 +0300" stop="20260524203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260524203000 +0300" stop="20260524220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260524220000 +0300" stop="20260524230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260524230000 +0300" stop="20260525000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ritmini Arayan Kalpler</title>
+  </programme>
+  <programme start="20260525000000 +0300" stop="20260525003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260525003000 +0300" stop="20260525010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dünyalem</title>
+  </programme>
+  <programme start="20260525010000 +0300" stop="20260525030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260525030000 +0300" stop="20260525040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260525040000 +0300" stop="20260525044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260525044500 +0300" stop="20260525060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260525060000 +0300" stop="20260525070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260525070000 +0300" stop="20260525073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260525073000 +0300" stop="20260525080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260525080000 +0300" stop="20260525083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260525083000 +0300" stop="20260525093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260525093000 +0300" stop="20260525103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260525103000 +0300" stop="20260525111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260525111500 +0300" stop="20260525120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260525120000 +0300" stop="20260525130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260525130000 +0300" stop="20260525150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260525150000 +0300" stop="20260525161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260525161500 +0300" stop="20260525171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260525171500 +0300" stop="20260525173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260525173500 +0300" stop="20260525180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260525180000 +0300" stop="20260525190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260525190000 +0300" stop="20260525200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260525200000 +0300" stop="20260525203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260525203000 +0300" stop="20260525220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260525220000 +0300" stop="20260525230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260525230000 +0300" stop="20260526000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ekip 1</title>
+  </programme>
+  <programme start="20260526000000 +0300" stop="20260526003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260526003000 +0300" stop="20260526010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kutup Yıldızları</title>
+  </programme>
+  <programme start="20260526010000 +0300" stop="20260526030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260526030000 +0300" stop="20260526040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260526040000 +0300" stop="20260526044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260526044500 +0300" stop="20260526060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260526060000 +0300" stop="20260526070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260526070000 +0300" stop="20260526073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260526073000 +0300" stop="20260526080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260526080000 +0300" stop="20260526083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260526083000 +0300" stop="20260526093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260526093000 +0300" stop="20260526103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260526103000 +0300" stop="20260526111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260526111500 +0300" stop="20260526120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260526120000 +0300" stop="20260526130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260526130000 +0300" stop="20260526150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260526150000 +0300" stop="20260526161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260526161500 +0300" stop="20260526171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260526171500 +0300" stop="20260526173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260526173500 +0300" stop="20260526180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260526180000 +0300" stop="20260526190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260526190000 +0300" stop="20260526200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260526200000 +0300" stop="20260526203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260526203000 +0300" stop="20260526220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260526220000 +0300" stop="20260526230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260526230000 +0300" stop="20260527000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kendi Okulumüza Doğru</title>
+  </programme>
+  <programme start="20260527000000 +0300" stop="20260527003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260527003000 +0300" stop="20260527010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260527010000 +0300" stop="20260527030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260527030000 +0300" stop="20260527040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260527040000 +0300" stop="20260527044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260527044500 +0300" stop="20260527060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260527060000 +0300" stop="20260527070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260527070000 +0300" stop="20260527073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260527073000 +0300" stop="20260527080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260527080000 +0300" stop="20260527083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260527083000 +0300" stop="20260527093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260527093000 +0300" stop="20260527103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260527103000 +0300" stop="20260527111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260527111500 +0300" stop="20260527120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260527120000 +0300" stop="20260527130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260527130000 +0300" stop="20260527150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260527150000 +0300" stop="20260527161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260527161500 +0300" stop="20260527171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260527171500 +0300" stop="20260527173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260527173500 +0300" stop="20260527180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260527180000 +0300" stop="20260527190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260527190000 +0300" stop="20260527200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260527200000 +0300" stop="20260527203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260527203000 +0300" stop="20260527220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260527220000 +0300" stop="20260527230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260527230000 +0300" stop="20260528000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ve İnsan Aldandı</title>
+  </programme>
+  <programme start="20260528000000 +0300" stop="20260528003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260528003000 +0300" stop="20260528010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Etik Politik</title>
+  </programme>
+  <programme start="20260528010000 +0300" stop="20260528030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260528030000 +0300" stop="20260528040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260528040000 +0300" stop="20260528044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260528044500 +0300" stop="20260528060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260528060000 +0300" stop="20260528070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260528070000 +0300" stop="20260528073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260528073000 +0300" stop="20260528080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260528080000 +0300" stop="20260528083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260528083000 +0300" stop="20260528093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260528093000 +0300" stop="20260528103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260528103000 +0300" stop="20260528111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260528111500 +0300" stop="20260528120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260528120000 +0300" stop="20260528130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260528130000 +0300" stop="20260528150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260528150000 +0300" stop="20260528161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260528161500 +0300" stop="20260528171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260528171500 +0300" stop="20260528173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260528173500 +0300" stop="20260528180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260528180000 +0300" stop="20260528190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260528190000 +0300" stop="20260528200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260528200000 +0300" stop="20260528203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260528203000 +0300" stop="20260528220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260528220000 +0300" stop="20260528230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260528230000 +0300" stop="20260529000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Büyük Buluşma</title>
+  </programme>
+  <programme start="20260529000000 +0300" stop="20260529003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260529003000 +0300" stop="20260529010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Aktüel</title>
+  </programme>
+  <programme start="20260529010000 +0300" stop="20260529030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260529030000 +0300" stop="20260529040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260529040000 +0300" stop="20260529044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260529044500 +0300" stop="20260529060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260529060000 +0300" stop="20260529070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260529070000 +0300" stop="20260529073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260529073000 +0300" stop="20260529080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260529080000 +0300" stop="20260529083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260529083000 +0300" stop="20260529093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260529093000 +0300" stop="20260529103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260529103000 +0300" stop="20260529111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260529111500 +0300" stop="20260529120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260529120000 +0300" stop="20260529130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260529130000 +0300" stop="20260529150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260529150000 +0300" stop="20260529161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260529161500 +0300" stop="20260529171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260529171500 +0300" stop="20260529173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260529173500 +0300" stop="20260529180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260529180000 +0300" stop="20260529190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260529190000 +0300" stop="20260529200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260529200000 +0300" stop="20260529203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260529203000 +0300" stop="20260529220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260529220000 +0300" stop="20260529230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260529230000 +0300" stop="20260530000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Güz Gülleri</title>
+  </programme>
+  <programme start="20260530000000 +0300" stop="20260530003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260530003000 +0300" stop="20260530010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260530010000 +0300" stop="20260530030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260530030000 +0300" stop="20260530040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260530040000 +0300" stop="20260530044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260530044500 +0300" stop="20260530060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260530060000 +0300" stop="20260530070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260530070000 +0300" stop="20260530073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260530073000 +0300" stop="20260530080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260530080000 +0300" stop="20260530083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260530083000 +0300" stop="20260530093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260530093000 +0300" stop="20260530103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260530103000 +0300" stop="20260530111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260530111500 +0300" stop="20260530120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260530120000 +0300" stop="20260530130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260530130000 +0300" stop="20260530150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260530150000 +0300" stop="20260530161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260530161500 +0300" stop="20260530171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260530171500 +0300" stop="20260530173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260530173500 +0300" stop="20260530180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260530180000 +0300" stop="20260530190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260530190000 +0300" stop="20260530200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260530200000 +0300" stop="20260530203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260530203000 +0300" stop="20260530220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260530220000 +0300" stop="20260530230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260530230000 +0300" stop="20260531000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Küçük Gelin</title>
+  </programme>
+  <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260531003000 +0300" stop="20260531010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kitabın Ortası</title>
+  </programme>
+  <programme start="20260531010000 +0300" stop="20260531030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260531030000 +0300" stop="20260531040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260531040000 +0300" stop="20260531044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260531044500 +0300" stop="20260531060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260531060000 +0300" stop="20260531070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260531070000 +0300" stop="20260531073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260531073000 +0300" stop="20260531080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260531080000 +0300" stop="20260531083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260531083000 +0300" stop="20260531093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260531093000 +0300" stop="20260531103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260531103000 +0300" stop="20260531111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260531111500 +0300" stop="20260531120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260531120000 +0300" stop="20260531130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260531130000 +0300" stop="20260531150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260531150000 +0300" stop="20260531161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260531161500 +0300" stop="20260531171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260531171500 +0300" stop="20260531173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260531173500 +0300" stop="20260531180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260531203000 +0300" stop="20260531220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260531230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260531230000 +0300" stop="20260601000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ritmini Arayan Kalpler</title>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260601003000 +0300" stop="20260601010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dünyalem</title>
+  </programme>
+  <programme start="20260601010000 +0300" stop="20260601030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260601030000 +0300" stop="20260601040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260601044500 +0300" stop="20260601060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260601070000 +0300" stop="20260601073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260601073000 +0300" stop="20260601080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260601083000 +0300" stop="20260601093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260601093000 +0300" stop="20260601103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260601103000 +0300" stop="20260601111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260601111500 +0300" stop="20260601120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260601130000 +0300" stop="20260601150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260601150000 +0300" stop="20260601161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260601161500 +0300" stop="20260601171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260601171500 +0300" stop="20260601173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260601173500 +0300" stop="20260601180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260601190000 +0300" stop="20260601200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260601203000 +0300" stop="20260601220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260601220000 +0300" stop="20260601230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260601230000 +0300" stop="20260602000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ekip 1</title>
+  </programme>
+  <programme start="20260602000000 +0300" stop="20260602003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260602003000 +0300" stop="20260602010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kutup Yıldızları</title>
+  </programme>
+  <programme start="20260602010000 +0300" stop="20260602030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260602030000 +0300" stop="20260602040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260602040000 +0300" stop="20260602044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260602044500 +0300" stop="20260602060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260602060000 +0300" stop="20260602070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260602070000 +0300" stop="20260602073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260602073000 +0300" stop="20260602080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260602080000 +0300" stop="20260602083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260602083000 +0300" stop="20260602093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260602093000 +0300" stop="20260602103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260602103000 +0300" stop="20260602111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260602111500 +0300" stop="20260602120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260602120000 +0300" stop="20260602130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260602130000 +0300" stop="20260602150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260602150000 +0300" stop="20260602161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260602161500 +0300" stop="20260602171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260602171500 +0300" stop="20260602173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260602173500 +0300" stop="20260602180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260602180000 +0300" stop="20260602190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260602190000 +0300" stop="20260602200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260602200000 +0300" stop="20260602203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260602203000 +0300" stop="20260602220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260602220000 +0300" stop="20260602230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260602230000 +0300" stop="20260603000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kendi Okulumüza Doğru</title>
+  </programme>
+  <programme start="20260603000000 +0300" stop="20260603003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260603003000 +0300" stop="20260603010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260603010000 +0300" stop="20260603030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260603030000 +0300" stop="20260603040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260603040000 +0300" stop="20260603044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260603044500 +0300" stop="20260603060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260603060000 +0300" stop="20260603070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260603070000 +0300" stop="20260603073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260603073000 +0300" stop="20260603080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260603080000 +0300" stop="20260603083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260603083000 +0300" stop="20260603093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260603093000 +0300" stop="20260603103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260603103000 +0300" stop="20260603111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260603111500 +0300" stop="20260603120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260603120000 +0300" stop="20260603130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260603130000 +0300" stop="20260603150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260603150000 +0300" stop="20260603161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260603161500 +0300" stop="20260603171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260603171500 +0300" stop="20260603173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260603173500 +0300" stop="20260603180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260603180000 +0300" stop="20260603190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260603190000 +0300" stop="20260603200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260603200000 +0300" stop="20260603203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260603203000 +0300" stop="20260603220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260603220000 +0300" stop="20260603230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260603230000 +0300" stop="20260604000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ve İnsan Aldandı</title>
+  </programme>
+  <programme start="20260604000000 +0300" stop="20260604003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260604003000 +0300" stop="20260604010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Etik Politik</title>
+  </programme>
+  <programme start="20260604010000 +0300" stop="20260604030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260604030000 +0300" stop="20260604040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260604040000 +0300" stop="20260604044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260604044500 +0300" stop="20260604060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260604060000 +0300" stop="20260604070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260604070000 +0300" stop="20260604073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260604073000 +0300" stop="20260604080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260604080000 +0300" stop="20260604083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260604083000 +0300" stop="20260604093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260604093000 +0300" stop="20260604103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260604103000 +0300" stop="20260604111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260604111500 +0300" stop="20260604120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260604120000 +0300" stop="20260604130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260604130000 +0300" stop="20260604150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260604150000 +0300" stop="20260604161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260604161500 +0300" stop="20260604171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260604171500 +0300" stop="20260604173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260604173500 +0300" stop="20260604180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260604180000 +0300" stop="20260604190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260604190000 +0300" stop="20260604200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260604200000 +0300" stop="20260604203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260604203000 +0300" stop="20260604220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260604220000 +0300" stop="20260604230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260604230000 +0300" stop="20260605000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Büyük Buluşma</title>
+  </programme>
+  <programme start="20260605000000 +0300" stop="20260605003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260605003000 +0300" stop="20260605010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Aktüel</title>
+  </programme>
+  <programme start="20260605010000 +0300" stop="20260605030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260605030000 +0300" stop="20260605040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260605040000 +0300" stop="20260605044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260605044500 +0300" stop="20260605060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260605060000 +0300" stop="20260605070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260605070000 +0300" stop="20260605073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260605073000 +0300" stop="20260605080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260605080000 +0300" stop="20260605083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260605083000 +0300" stop="20260605093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260605093000 +0300" stop="20260605103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260605103000 +0300" stop="20260605111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260605111500 +0300" stop="20260605120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260605120000 +0300" stop="20260605130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260605130000 +0300" stop="20260605150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260605150000 +0300" stop="20260605161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260605161500 +0300" stop="20260605171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260605171500 +0300" stop="20260605173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260605173500 +0300" stop="20260605180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260605180000 +0300" stop="20260605190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260605190000 +0300" stop="20260605200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260605200000 +0300" stop="20260605203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260605203000 +0300" stop="20260605220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260605220000 +0300" stop="20260605230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260605230000 +0300" stop="20260606000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Güz Gülleri</title>
+  </programme>
+  <programme start="20260606000000 +0300" stop="20260606003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260606003000 +0300" stop="20260606010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260606010000 +0300" stop="20260606030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260606030000 +0300" stop="20260606040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260606040000 +0300" stop="20260606044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260606044500 +0300" stop="20260606060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260606060000 +0300" stop="20260606070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260606070000 +0300" stop="20260606073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260606073000 +0300" stop="20260606080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260606080000 +0300" stop="20260606083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260606083000 +0300" stop="20260606093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260606093000 +0300" stop="20260606103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260606103000 +0300" stop="20260606111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260606111500 +0300" stop="20260606120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260606120000 +0300" stop="20260606130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260606130000 +0300" stop="20260606150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260606150000 +0300" stop="20260606161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260606161500 +0300" stop="20260606171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260606171500 +0300" stop="20260606173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260606173500 +0300" stop="20260606180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260606180000 +0300" stop="20260606190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260606190000 +0300" stop="20260606200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260606200000 +0300" stop="20260606203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260606203000 +0300" stop="20260606220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260606220000 +0300" stop="20260606230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260606230000 +0300" stop="20260607000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Küçük Gelin</title>
+  </programme>
+  <programme start="20260607000000 +0300" stop="20260607003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260607003000 +0300" stop="20260607010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kitabın Ortası</title>
+  </programme>
+  <programme start="20260607010000 +0300" stop="20260607030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260607030000 +0300" stop="20260607040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260607040000 +0300" stop="20260607044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260607044500 +0300" stop="20260607060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260607060000 +0300" stop="20260607070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260607070000 +0300" stop="20260607073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260607073000 +0300" stop="20260607080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260607080000 +0300" stop="20260607083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260607083000 +0300" stop="20260607093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260607093000 +0300" stop="20260607103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260607103000 +0300" stop="20260607111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260607111500 +0300" stop="20260607120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260607120000 +0300" stop="20260607130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260607130000 +0300" stop="20260607150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260607150000 +0300" stop="20260607161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260607161500 +0300" stop="20260607171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260607171500 +0300" stop="20260607173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260607173500 +0300" stop="20260607180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260607180000 +0300" stop="20260607190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260607190000 +0300" stop="20260607200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260607200000 +0300" stop="20260607203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260607203000 +0300" stop="20260607220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260607220000 +0300" stop="20260607230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260607230000 +0300" stop="20260608000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ritmini Arayan Kalpler</title>
+  </programme>
+  <programme start="20260608000000 +0300" stop="20260608003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260608003000 +0300" stop="20260608010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dünyalem</title>
+  </programme>
+  <programme start="20260608010000 +0300" stop="20260608030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260608030000 +0300" stop="20260608040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260608040000 +0300" stop="20260608044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260608044500 +0300" stop="20260608060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260608060000 +0300" stop="20260608070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260608070000 +0300" stop="20260608073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260608073000 +0300" stop="20260608080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260608080000 +0300" stop="20260608083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260608083000 +0300" stop="20260608093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260608093000 +0300" stop="20260608103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260608103000 +0300" stop="20260608111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260608111500 +0300" stop="20260608120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260608120000 +0300" stop="20260608130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260608130000 +0300" stop="20260608150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260608150000 +0300" stop="20260608161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260608161500 +0300" stop="20260608171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260608171500 +0300" stop="20260608173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260608173500 +0300" stop="20260608180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260608180000 +0300" stop="20260608190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260608190000 +0300" stop="20260608200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260608200000 +0300" stop="20260608203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260608203000 +0300" stop="20260608220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260608220000 +0300" stop="20260608230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260608230000 +0300" stop="20260609000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ekip 1</title>
+  </programme>
+  <programme start="20260609000000 +0300" stop="20260609003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260609003000 +0300" stop="20260609010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kutup Yıldızları</title>
+  </programme>
+  <programme start="20260609010000 +0300" stop="20260609030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260609030000 +0300" stop="20260609040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260609040000 +0300" stop="20260609044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260609044500 +0300" stop="20260609060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260609060000 +0300" stop="20260609070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260609070000 +0300" stop="20260609073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260609073000 +0300" stop="20260609080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260609080000 +0300" stop="20260609083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260609083000 +0300" stop="20260609093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260609093000 +0300" stop="20260609103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260609103000 +0300" stop="20260609111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260609111500 +0300" stop="20260609120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260609120000 +0300" stop="20260609130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260609130000 +0300" stop="20260609150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260609150000 +0300" stop="20260609161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260609161500 +0300" stop="20260609171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260609171500 +0300" stop="20260609173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260609173500 +0300" stop="20260609180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260609180000 +0300" stop="20260609190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260609190000 +0300" stop="20260609200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260609200000 +0300" stop="20260609203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260609203000 +0300" stop="20260609220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260609220000 +0300" stop="20260609230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260609230000 +0300" stop="20260610000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kendi Okulumüza Doğru</title>
+  </programme>
+  <programme start="20260610000000 +0300" stop="20260610003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260610003000 +0300" stop="20260610010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260610010000 +0300" stop="20260610030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260610030000 +0300" stop="20260610040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260610040000 +0300" stop="20260610044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260610044500 +0300" stop="20260610060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260610060000 +0300" stop="20260610070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260610070000 +0300" stop="20260610073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260610073000 +0300" stop="20260610080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260610080000 +0300" stop="20260610083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260610083000 +0300" stop="20260610093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260610093000 +0300" stop="20260610103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260610103000 +0300" stop="20260610111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260610111500 +0300" stop="20260610120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260610120000 +0300" stop="20260610130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260610130000 +0300" stop="20260610150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260610150000 +0300" stop="20260610161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260610161500 +0300" stop="20260610171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260610171500 +0300" stop="20260610173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260610173500 +0300" stop="20260610180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260610180000 +0300" stop="20260610190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260610190000 +0300" stop="20260610200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260610200000 +0300" stop="20260610203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260610203000 +0300" stop="20260610220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260610220000 +0300" stop="20260610230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260610230000 +0300" stop="20260611000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ve İnsan Aldandı</title>
+  </programme>
+  <programme start="20260611000000 +0300" stop="20260611003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260611003000 +0300" stop="20260611010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Etik Politik</title>
+  </programme>
+  <programme start="20260611010000 +0300" stop="20260611030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260611030000 +0300" stop="20260611040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260611040000 +0300" stop="20260611044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260611044500 +0300" stop="20260611060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260611060000 +0300" stop="20260611070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260611070000 +0300" stop="20260611073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260611073000 +0300" stop="20260611080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260611080000 +0300" stop="20260611083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260611083000 +0300" stop="20260611093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260611093000 +0300" stop="20260611103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260611103000 +0300" stop="20260611111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260611111500 +0300" stop="20260611120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260611120000 +0300" stop="20260611130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260611130000 +0300" stop="20260611150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260611150000 +0300" stop="20260611161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260611161500 +0300" stop="20260611171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260611171500 +0300" stop="20260611173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260611173500 +0300" stop="20260611180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260611180000 +0300" stop="20260611190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260611190000 +0300" stop="20260611200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260611200000 +0300" stop="20260611203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260611203000 +0300" stop="20260611220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260611220000 +0300" stop="20260611230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260611230000 +0300" stop="20260612000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Büyük Buluşma</title>
+  </programme>
+  <programme start="20260612000000 +0300" stop="20260612003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260612003000 +0300" stop="20260612010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Aktüel</title>
+  </programme>
+  <programme start="20260612010000 +0300" stop="20260612030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260612030000 +0300" stop="20260612040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260612040000 +0300" stop="20260612044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260612044500 +0300" stop="20260612060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260612060000 +0300" stop="20260612070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260612070000 +0300" stop="20260612073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260612073000 +0300" stop="20260612080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260612080000 +0300" stop="20260612083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260612083000 +0300" stop="20260612093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260612093000 +0300" stop="20260612103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260612103000 +0300" stop="20260612111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260612111500 +0300" stop="20260612120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260612120000 +0300" stop="20260612130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260612130000 +0300" stop="20260612150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260612150000 +0300" stop="20260612161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Pasta Börek</title>
+  </programme>
+  <programme start="20260612161500 +0300" stop="20260612171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260612171500 +0300" stop="20260612173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260612173500 +0300" stop="20260612180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260612180000 +0300" stop="20260612190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260612190000 +0300" stop="20260612200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260612200000 +0300" stop="20260612203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260612203000 +0300" stop="20260612220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260612220000 +0300" stop="20260612230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260612230000 +0300" stop="20260613000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Güz Gülleri</title>
+  </programme>
+  <programme start="20260613000000 +0300" stop="20260613003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260613003000 +0300" stop="20260613010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Nurdan Hüzmeler</title>
+  </programme>
+  <programme start="20260613010000 +0300" stop="20260613030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260613030000 +0300" stop="20260613040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260613040000 +0300" stop="20260613044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260613044500 +0300" stop="20260613060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260613060000 +0300" stop="20260613070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260613070000 +0300" stop="20260613073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260613073000 +0300" stop="20260613080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260613080000 +0300" stop="20260613083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260613083000 +0300" stop="20260613093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260613093000 +0300" stop="20260613103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260613103000 +0300" stop="20260613111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260613111500 +0300" stop="20260613120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260613120000 +0300" stop="20260613130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260613130000 +0300" stop="20260613150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260613150000 +0300" stop="20260613161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260613161500 +0300" stop="20260613171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260613171500 +0300" stop="20260613173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260613173500 +0300" stop="20260613180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260613180000 +0300" stop="20260613190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260613190000 +0300" stop="20260613200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260613200000 +0300" stop="20260613203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260613203000 +0300" stop="20260613220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260613220000 +0300" stop="20260613230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260613230000 +0300" stop="20260614000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Küçük Gelin</title>
+  </programme>
+  <programme start="20260614000000 +0300" stop="20260614003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260614003000 +0300" stop="20260614010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kitabın Ortası</title>
+  </programme>
+  <programme start="20260614010000 +0300" stop="20260614030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260614030000 +0300" stop="20260614040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260614040000 +0300" stop="20260614044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260614044500 +0300" stop="20260614060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260614060000 +0300" stop="20260614070000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
+  </programme>
+  <programme start="20260614070000 +0300" stop="20260614073000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dua Vakti</title>
+  </programme>
+  <programme start="20260614073000 +0300" stop="20260614080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Efendimiz (s.a.v.)</title>
+  </programme>
+  <programme start="20260614080000 +0300" stop="20260614083000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dini Programlar</title>
+  </programme>
+  <programme start="20260614083000 +0300" stop="20260614093000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260614093000 +0300" stop="20260614103000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber Yorum</title>
+  </programme>
+  <programme start="20260614103000 +0300" stop="20260614111500 +0300" channel="tr.mceutv">
+    <title lang="tr">Çınarın Gölgesinde</title>
+  </programme>
+  <programme start="20260614111500 +0300" stop="20260614120000 +0300" channel="tr.mceutv">
+    <title lang="tr">Aile ve Çocuk Eğitimi Kuşağı</title>
+  </programme>
+  <programme start="20260614120000 +0300" stop="20260614130000 +0300" channel="tr.mceutv">
+    <title lang="tr">Mavi Rüya</title>
+  </programme>
+  <programme start="20260614130000 +0300" stop="20260614150000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haberler</title>
+  </programme>
+  <programme start="20260614150000 +0300" stop="20260614161500 +0300" channel="tr.mceutv">
+    <title lang="tr">Yemek Programı - Yeşil Elma</title>
+  </programme>
+  <programme start="20260614161500 +0300" stop="20260614171500 +0300" channel="tr.mceutv">
+    <title lang="tr">İki Dünya Arasında</title>
+  </programme>
+  <programme start="20260614171500 +0300" stop="20260614173500 +0300" channel="tr.mceutv">
+    <title lang="tr">Gençlere Özel</title>
+  </programme>
+  <programme start="20260614173500 +0300" stop="20260614180000 +0300" channel="tr.mceutv">
+    <title lang="tr">Çocuk Kuşağı</title>
+  </programme>
+  <programme start="20260614180000 +0300" stop="20260614190000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260614190000 +0300" stop="20260614200000 +0300" channel="tr.mceutv">
+    <title lang="tr">TV Filmi</title>
+  </programme>
+  <programme start="20260614200000 +0300" stop="20260614203000 +0300" channel="tr.mceutv">
+    <title lang="tr">Kültür-Eğitim</title>
+  </programme>
+  <programme start="20260614203000 +0300" stop="20260614220000 +0300" channel="tr.mceutv">
+    <title lang="tr">Haber-Yorum</title>
+  </programme>
+  <programme start="20260614220000 +0300" stop="20260614230000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Haber</title>
+  </programme>
+  <programme start="20260614230000 +0300" stop="20260615000000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ritmini Arayan Kalpler</title>
+  </programme>
+  <programme start="20260615000000 +0300" stop="20260615003000 +0300" channel="tr.mceutv">
+    <title lang="tr">Bamteli</title>
+  </programme>
+  <programme start="20260615003000 +0300" stop="20260615010000 +0300" channel="tr.mceutv">
+    <title lang="tr">Dünyalem</title>
+  </programme>
+  <programme start="20260615010000 +0300" stop="20260615030000 +0300" channel="tr.mceutv">
+    <title lang="tr">Gece Haberleri</title>
+  </programme>
+  <programme start="20260615030000 +0300" stop="20260615040000 +0300" channel="tr.mceutv">
+    <title lang="tr">Beşinci Boyut</title>
+  </programme>
+  <programme start="20260615040000 +0300" stop="20260615044500 +0300" channel="tr.mceutv">
+    <title lang="tr">Almanca + İngilizce</title>
+  </programme>
+  <programme start="20260615044500 +0300" stop="20260615060000 +0300" channel="tr.mceutv">
+    <title lang="tr">Ana Dizi Kuşağı</title>
+  </programme>
+  <programme start="20260615060000 +0300" stop="20260615080000 +0300" channel="tr.mceutv">
+    <title lang="tr">Hatim Saati</title>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531070000 +0300" channel="tr.mcmtop">
     <title lang="tr">Top Mix</title>
@@ -21699,7 +24090,7 @@ macera başlar.</desc>
     <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.myzentv">
-    <title lang="tr">Massages •</title>
+    <title lang="tr">Massages</title>
   </programme>
   <programme start="20260531010500 +0300" stop="20260531015000 +0300" channel="tr.nationalgeographic">
     <title lang="tr">Oklahoma City Saldırısı: Amerika'da Bir Gün</title>
@@ -30313,6 +32704,64 @@ Ailesine çok çektiren, ne okuyan ne de çalışıp hayatını bir düzene soka
     <desc lang="tr">Son dönemde en çok istek alan şarkılar ve türküler Klip Saati'nde... Programda farklı müzik türlerine yer veriliyor.</desc>
     <category lang="tr">Müzik</category>
   </programme>
+  <programme start="20260531060000 +0300" stop="20260531073000 +0300" channel="tr.teve2">
+    <title lang="tr">Kavak Yelleri</title>
+    <desc lang="tr">Mutlu ve güvenli ailesinden kopup kendi yolunu bulmaya, büyümeye çalışan Deniz; idealist, güçlü, maddi zorluklara rağmen okuyan, hayata karşı sert görünmeye çalışan hassas Aslı; rahat ve esprili tavırlarıyla içindeki acıyı saklamaya çalışan Efe ve isyankar Mine... 
+
+Sıkı dostluklar, ilk aşklar, üniversite, aşılmaya çalışılan aile sorunları ve bütün bunlara gögüs germeye çalışan dört genç. Geçen yıl hayatlarındaki en önemli sınavı verdikleri düşünen sıkı dostlar, esas bu yıl ağır sınavlardan geçiyorlar. Ama bu defakiler dostluğun, aşkın ve düşlerin sınanacağı sınavlar olacak!</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531073000 +0300" stop="20260531090000 +0300" channel="tr.teve2">
+    <title lang="tr">Ihlamurlar Altında</title>
+    <desc lang="tr">Varoşların güzelliğiyle dillere destan Elif'i, gönlünü mahallenin yürekli delikanlısı Yılmaz'a kaptırmıştır. Dürüstlüğüyle çevresindekilerin sevgisini kazanmayı başaran Yılmaz'ın gözü Elif'ten başka kimseyi görmez. Birbirlerine deli gibi aşık olan Yılmaz ve Elif'in tüm arzuları, masallardaki gibi hayatları boyunca mutlu olmaktır. 
+
+Elif'in çalıştığı Teksil fabrikasının veliahdı Ömer, Elif'i görünce büyülenmiş ve yakın takibe almıştır. Varoşlardan çok uzakta zengin bir hayat yaşayan Ömer ve kız kardeşi Filiz için samimi bir aşka sahip olmak en büyük zenginliktir. Filiz yurt dışında eğitim görmüştür ve işinde çok başarılıdır. Beklenmedik bir kaza Elif, Yılmaz, Ömer ve Filiz'in kaderlerini birleştirecektir.</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531090000 +0300" stop="20260531110000 +0300" channel="tr.teve2">
+    <title lang="tr">Akasya Durağı</title>
+    <desc lang="tr">Akasya taksi durağında çalışan şoförlerinin ekmek kavgaları, hüzünleri, neşeleri...</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531110000 +0300" stop="20260531130000 +0300" channel="tr.teve2">
+    <title lang="tr">Öyle Bir Geçer Zaman Ki</title>
+    <desc lang="tr">Yıl 1967. Ali Akarsu uzun yol gemilerinde ikinci kaptanlık yapmaktadır ve zamanının çoğunu ailesinden uzaklarda gemilerde geçirmektedir. Ailenin reisi geçim derdi için okyanus ötelerinde giderken, aileyi bir arada tutan dört çocuğuna hem annelik hem de babalık yapan ise eşi Cemile’dir. 
+
+Uzun bir seferin ardından Ali evine dönmektedir. Evin ahalisi, özellikle de Cemile tatlı bir telaş içindedir. Mete, Berrin, Aylin ama en çok da dört çocuğun en küçüğü olan Osman babasının dönüşünü pencerede beklemektedir. Ali her ne kadar ailesine kavuştuğu için mutlu görünse de halinde bir gariplik vardır. Üstelik daha ilk günden Mete’nin okuldaki haytalıkları ortaya çıkınca Ali, sinirlerine hakim olamaz. Evde büyük bir tartışma patlak verir. Ali’nin kızı Berrin ile de aralarında aşamadığı bir soğukluk vardır.  
+ 
+Ancak Akarsu Ailesi’nin hayatı Cemile’nin kocasının ceketinde bulduğu mektup ile tamamen değişecektir.</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531130000 +0300" stop="20260531153000 +0300" channel="tr.teve2">
+    <title lang="tr">Üç Kız Kardeş</title>
+    <desc lang="tr">Türkan, Dönüş ve Derya... Biri güzelliği, biri uysallığı, diğeri de asiliğiyle dillere destan, birbirlerine bağlı üç kız kardeş. Yaşıtları gibi basit hayaller kurarken ne geçmişlerindeki gölge onların peşini bırakacak, ne de talihleri onlardan yana olacaktır. Üç kız kardeş, anne ve babalarıyla mutlu bir hayat sürerken Türkan’ın yaptığı evlilikle birlikte kara bulutlar ailenin üstünde gezinmeye başlayacak, artık hiçbir şey eskisi gibi olmayacaktır. Türkan, mahsur kaldığı masalsı şatoda mutsuzluğuna kılıflar dikmeye çalışırken Dönüş’ün hayatı, geçmişten gelen büyük sırla alt üst olacak, Derya da dönüşü olmayan bir yola adım atacaktır.</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531153000 +0300" stop="20260531180000 +0300" channel="tr.teve2">
+    <title lang="tr">Çocuklar Duymasın</title>
+    <desc lang="tr">Sert, aslında ne kadar duygusal olsa da duygularını göstermekten kaçınan, anti romantik, kıskanç Taş Fırın erkeği Haluk ile modern, kariyerinin zirvesinde olan ve romantizm beklentisinden hiç vazgeçmeyen Meltem’in evlilikleri, dostlarıyla ilişkileri, iş hayatları ve ev içi küçük problemleri her zamanki gibi ön plandadır. Artık çocuklar büyümüş ve her ikisi de evden gitmiştir. Ancak Haluk ve Meltem, Emine ve Emine’nin kayınvalidesi Kükrek Kadriye sayesinde hiç yalnız kalmazlar. Dominant teyze Gönül ve Zero Tuna’nın gündemi TEOG’dur. Çocukları Beton Orçun ve Merve TEOG sınavına hazırlanmaktadır. Bir TEOG annesi olan Gönül, çocukları internetten uzaklaştırıp ders çalışmalarını sağlamak için elinden geleni yapar.</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531193000 +0300" channel="tr.teve2">
+    <title lang="tr">Akasya Durağı</title>
+    <desc lang="tr">Akasya taksi durağında çalışan şoförlerinin ekmek kavgaları, hüzünleri, neşeleri...</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531193000 +0300" stop="20260531211500 +0300" channel="tr.teve2">
+    <title lang="tr">Kelime Oyunu</title>
+    <desc lang="tr">İbrahim Selim'in sunduğu sevilen yarışma programı Kelime Oyunu ekrana geliyor.</desc>
+    <category lang="tr">Yarışma</category>
+  </programme>
+  <programme start="20260531211500 +0300" stop="20260531234500 +0300" channel="tr.teve2">
+    <title lang="tr">Ben Bilmem Eşim Bilir</title>
+    <desc lang="tr">Dört çiftin kıyasıya yarıştığı programda, çiftlerin birbirlerini ne kadar tanıdıkları eğlenceli bir şekilde ekrana geliyor.</desc>
+    <category lang="tr">Yarışma</category>
+  </programme>
+  <programme start="20260531234500 +0300" stop="20260601013000 +0300" channel="tr.teve2">
+    <title lang="tr">Kanıt</title>
+    <desc lang="tr">Dizi, konsept danışmanlığını ve sunuculuğunu Kriminalist Prof. Dr. Sevil Atasoy'un yaptığı, yaşanmış gerçek suç hikâyelerinden esinlenilerek hazırlanmış. Dizide, zekice yapıldığına inanılan cinayetlerin, hırsızlıkların, adam kaçırmaların yani birçok suç olayının nasıl çözüldüğü ve hangi noktada kimlerin ne kadar etkisi olduğu ekrana getiriliyor.</desc>
+    <category lang="tr">Dizi</category>
+  </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.tgrthaber">
     <title lang="tr">Stüdyoda Futbol</title>
     <desc lang="tr">Liglerden kupalara uzanan futbol gündemi, haftanın öne çıkan karşılaşmaları ve tartışmalı anları bu programda ele alınır. Uzman yorumları, istatistikler ve analizlerle izleyiciye oyunun perde arkası anlatılır.</desc>
@@ -32023,9 +34472,188 @@ Son dakika haberler, sıcak gelişmeler, röportajlar ve günün ön plana çık
     <desc lang="tr">TRT arabi correspondents shed light on different events across the globe.</desc>
     <category lang="tr">Haber</category>
   </programme>
-  <programme start="20260531003000 +0300" stop="20260531010000 +0300" channel="tr.trtavaz">
-    <title lang="tr">Avaz Gündem</title>
+  <programme start="20260531060000 +0300" stop="20260531063000 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
     <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531063000 +0300" stop="20260531070000 +0300" channel="tr.trtarabi">
+    <title lang="tr">The Land Of Civilisations</title>
+    <desc lang="tr">The Land of Civilizations program explores the history of Anatolia; where the first civilizations arose, ancient cities, and ancient sculptures.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531070000 +0300" stop="20260531074800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531074800 +0300" stop="20260531080000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531080000 +0300" stop="20260531084800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531084800 +0300" stop="20260531090000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Fil Iqtisad</title>
+    <desc lang="tr">A specialized Arabic language business show tackling economic, business and financial news and issues in T rkiye and the MENA region.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531090000 +0300" stop="20260531094800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531094800 +0300" stop="20260531100000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531100000 +0300" stop="20260531103000 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531103000 +0300" stop="20260531110000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Qissa Vema Fiha</title>
+    <desc lang="tr">TRT arabi correspondents shed light on different events across the globe.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531110000 +0300" stop="20260531114800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531114800 +0300" stop="20260531120000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531120000 +0300" stop="20260531124800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531124800 +0300" stop="20260531130000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Fil Iqtisad</title>
+    <desc lang="tr">A specialized Arabic language business show tackling economic, business and financial news and issues in T rkiye and the MENA region.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531130000 +0300" stop="20260531133000 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531133000 +0300" stop="20260531140000 +0300" channel="tr.trtarabi">
+    <title lang="tr">The Land Of Civilisations</title>
+    <desc lang="tr">The Land of Civilizations program explores the history of Anatolia; where the first civilizations arose, ancient cities, and ancient sculptures.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531140000 +0300" stop="20260531144800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531144800 +0300" stop="20260531150000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531150000 +0300" stop="20260531154800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531154800 +0300" stop="20260531160000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531164800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531164800 +0300" stop="20260531170000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Fil Iqtisad</title>
+    <desc lang="tr">A specialized Arabic language business show tackling economic, business and financial news and issues in T rkiye and the MENA region.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531170000 +0300" stop="20260531173000 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531173000 +0300" stop="20260531180000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Tafaul</title>
+    <desc lang="tr">Current affairs programme focusing on social media trends, hashtags and topics.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531184800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531184800 +0300" stop="20260531190000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531190000 +0300" stop="20260531194800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531194800 +0300" stop="20260531200000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531204800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531204800 +0300" stop="20260531210000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Fil Iqtisad</title>
+    <desc lang="tr">A specialized Arabic language business show tackling economic, business and financial news and issues in T rkiye and the MENA region.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531210000 +0300" stop="20260531214800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531214800 +0300" stop="20260531220000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260531224800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531224800 +0300" stop="20260531230000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Doc - Malafat</title>
+    <desc lang="tr">A program highlighting the humanitarian and daily-life impacts of the war in the Middle East on affected countries and citizens.</desc>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531230000 +0300" stop="20260531234800 +0300" channel="tr.trtarabi">
+    <title lang="tr">News</title>
+    <desc lang="tr">TRT Arabi not only brings you the latest from around the globe as it happens but goes deep and beyond to reveal the truth.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531234800 +0300" stop="20260601000000 +0300" channel="tr.trtarabi">
+    <title lang="tr">Fil Iqtisad</title>
+    <desc lang="tr">A specialized Arabic language business show tackling economic, business and financial news and issues in T rkiye and the MENA region.</desc>
+    <category lang="tr">Haber</category>
+  </programme>
+  <programme start="20260531003000 +0300" stop="20260531010000 +0300" channel="tr.trtavaz">
+    <title lang="tr">Avaz Gündem Haber •</title>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531013000 +0300" channel="tr.trtavaz">
     <title lang="tr">Umudu Taşıyanlar Yaşam</title>
@@ -34828,49 +37456,21 @@ Olaylar genelde Mükremin'in ve arkadaşı Tirbüşon'un etrafında gelişir. Di
     <category lang="tr">Magazin</category>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531020000 +0300" channel="tr.tytturk">
-    <title lang="tr">Tyt Hafta Sonu Ana Haber Ulusal</title>
+    <title lang="tr">TYT Hafta Sonu Ana Haber</title>
+    <category lang="tr">Haber</category>
   </programme>
   <programme start="20260531020000 +0300" stop="20260531033000 +0300" channel="tr.tytturk">
-    <title lang="tr">Her Şey Masada Ulusal</title>
+    <title lang="tr">Her Şey Masada Diğer</title>
   </programme>
   <programme start="20260531033000 +0300" stop="20260531043000 +0300" channel="tr.tytturk">
-    <title lang="tr">Sinema Ulusal</title>
+    <title lang="tr">Sinema</title>
+    <category lang="tr">Film</category>
   </programme>
   <programme start="20260531043000 +0300" stop="20260531053000 +0300" channel="tr.tytturk">
-    <title lang="tr">Şampiyon Mutfakta Ulusal</title>
+    <title lang="tr">Şampiyon Mutfakta Yaşam</title>
   </programme>
-  <programme start="20260531053000 +0300" stop="20260531061500 +0300" channel="tr.tytturk">
-    <title lang="tr">Yeşim'in Dünyası Ulusal</title>
-  </programme>
-  <programme start="20260531061500 +0300" stop="20260531073000 +0300" channel="tr.tytturk">
-    <title lang="tr">Çizgi Film Ulusal</title>
-  </programme>
-  <programme start="20260531073000 +0300" stop="20260531103000 +0300" channel="tr.tytturk">
-    <title lang="tr">Cengiz Semercioğlu'nun... Ulusal</title>
-  </programme>
-  <programme start="20260531103000 +0300" stop="20260531123000 +0300" channel="tr.tytturk">
-    <title lang="tr">Ebru Akel İle Türkiye... Ulusal</title>
-  </programme>
-  <programme start="20260531123000 +0300" stop="20260531130000 +0300" channel="tr.tytturk">
-    <title lang="tr">Tyt Türk E-haber Ulusal</title>
-  </programme>
-  <programme start="20260531130000 +0300" stop="20260531151500 +0300" channel="tr.tytturk">
-    <title lang="tr">Emret Komutanım Ulusal</title>
-  </programme>
-  <programme start="20260531151500 +0300" stop="20260531153000 +0300" channel="tr.tytturk">
-    <title lang="tr">Dolgu Ulusal</title>
-  </programme>
-  <programme start="20260531153000 +0300" stop="20260531163000 +0300" channel="tr.tytturk">
-    <title lang="tr">Balçiçek İlter İle... Ulusal</title>
-  </programme>
-  <programme start="20260531163000 +0300" stop="20260531184500 +0300" channel="tr.tytturk">
-    <title lang="tr">Yaşam Alanı Ulusal</title>
-  </programme>
-  <programme start="20260531184500 +0300" stop="20260531200000 +0300" channel="tr.tytturk">
-    <title lang="tr">Tyt Ana Haber Ulusal</title>
-  </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.tytturk">
-    <title lang="tr">Seda Sayan İle Her Şey Masada Ulusal</title>
+  <programme start="20260531053000 +0300" stop="20260531073000 +0300" channel="tr.tytturk">
+    <title lang="tr">Yeşim'in Dünyası Diğer</title>
   </programme>
   <programme start="20260531070000 +0300" stop="20260531110000 +0300" channel="tr.ulketv">
     <title lang="tr">Ülke'de Bu Sabah</title>
