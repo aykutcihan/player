@@ -55,7 +55,13 @@ def derive_stops(programmes: List[Programme], day_end: Optional[datetime] = None
         if i + 1 < len(progs):
             p.stop = progs[i + 1].start
         else:
-            p.stop = day_end or (p.start + timedelta(hours=2))
+            # Son program: ertesi gün 06:00'a kadar uzat — gece boşluğunu kapat
+            if day_end:
+                p.stop = day_end
+            else:
+                next_day_6am = (p.start + timedelta(days=1)).replace(
+                    hour=6, minute=0, second=0, microsecond=0)
+                p.stop = next_day_6am if next_day_6am > p.start else p.start + timedelta(hours=2)
     # geçersiz (stop<=start) olanları düzelt
     for p in progs:
         if p.stop and p.stop <= p.start:
