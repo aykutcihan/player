@@ -76,15 +76,20 @@ class TivibuAdapter(BaseAdapter):
                 )
                 page = ctx.new_page()
                 for path in CATEGORY_PATHS:
-                    try:
-                        page.goto(
-                            f"{self.base_url}{path}",
-                            wait_until="networkidle",
-                            timeout=25000,
-                        )
-                        self._parse_page(page.content())
-                    except Exception as e:
-                        print(f"  [tivibu] {path} hatasi: {e}")
+                    for attempt in range(2):  # max 2 deneme
+                        try:
+                            page.goto(
+                                f"{self.base_url}{path}",
+                                wait_until="networkidle",
+                                timeout=40000,
+                            )
+                            self._parse_page(page.content())
+                            break
+                        except Exception as e:
+                            if attempt == 0:
+                                print(f"  [tivibu] {path} yeniden deneniyor...")
+                            else:
+                                print(f"  [tivibu] {path} hatasi: {e}")
                 browser.close()
         except Exception as e:
             print(f"  [tivibu] Playwright hatasi: {e}")
