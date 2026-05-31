@@ -48,7 +48,7 @@ jobs:
             git commit -m "Automated EPG update"
             if exist .git\rebase-merge git rebase --abort
             if exist .git\rebase-apply git rebase --abort
-            git pull --rebase origin master
+            git pull --rebase -X theirs origin master
             git push
           ) else (
             echo Degisiklik yok, commit atlanıyor.
