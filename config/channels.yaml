@@ -1503,3 +1503,8 @@ channels:
     name: "Yaban TV"
     sources:
       - tvyayinakisi:yaban-tv
+
+  tr.mceutv:
+    name: "MCE TV"
+    sources:
+      - staticschedule:tr.mceutv
