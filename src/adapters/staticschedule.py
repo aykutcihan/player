@@ -10,9 +10,14 @@ from __future__ import annotations
 from datetime import datetime, timedelta
 from typing import List, Dict, Tuple
 
+from dateutil import tz
+
 from adapters.base import BaseAdapter
 from models import Programme
 from normalize import ist
+
+DE_TZ = tz.gettz("Europe/Berlin")    # Almanya saati (yaz/kış otomatik)
+IST_TZ = tz.gettz("Europe/Istanbul")
 
 # Gün numarası: 0=Pazartesi, 1=Salı, ..., 6=Pazar
 SCHEDULES: Dict[str, List[Tuple]] = {
@@ -192,25 +197,23 @@ class StaticScheduleAdapter(BaseAdapter):
         now = ist(datetime.now())
         out: List[Programme] = []
 
-        # Bu haftanın Pazartesi'ni bul (gün başı)
-        monday = (now - timedelta(days=now.weekday())).replace(
+        # Bu haftanın Pazartesi'ni bul (Almanya saatiyle, gün başı)
+        now_de = now.astimezone(DE_TZ)
+        monday = (now_de - timedelta(days=now_de.weekday())).replace(
             hour=0, minute=0, second=0, microsecond=0)
 
-        # 2 hafta üret (geçen hafta + bu hafta + gelecek hafta)
+        # Geçen hafta + bu hafta + 2 gelecek hafta
         for week_offset in range(-1, 3):
             week_start = monday + timedelta(weeks=week_offset)
             for weekday, programs in schedule.items():
                 day_base = week_start + timedelta(days=weekday)
                 for h, m, title in programs:
                     # 00-05 arası saatler ertesi güne aittir
-                    if h < 6:
-                        start_dt = ist(datetime(
-                            day_base.year, day_base.month, day_base.day,
-                            h, m)) + timedelta(days=1)
-                    else:
-                        start_dt = ist(datetime(
-                            day_base.year, day_base.month, day_base.day,
-                            h, m))
+                    day = day_base + timedelta(days=1) if h < 6 else day_base
+                    # Almanya saatinde oluştur → İstanbul'a çevir
+                    dt_de = datetime(day.year, day.month, day.day, h, m,
+                                     tzinfo=DE_TZ)
+                    start_dt = dt_de.astimezone(IST_TZ)
                     out.append(Programme(
                         channel_id=channel_id,
                         start=start_dt,
