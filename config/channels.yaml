@@ -1687,3 +1687,7 @@ channels:
     sources:
       - turksatkablo:TV1
 
+  tr.gurbet24tv:
+    name: "Gurbet24 TV"
+    sources:
+      - gurbet24:gurbet24
