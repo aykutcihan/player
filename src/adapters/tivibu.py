@@ -43,7 +43,20 @@ class TivibuAdapter(BaseAdapter):
             print("  [tivibu] playwright kurulu degil, atlaniyor.")
             return
 
-        contents = []
+        # Her kategori sayfasi ayri URL'e sahip
+        CATEGORY_PATHS = [
+            "/canli-tv/",
+            "/canli-tv/spor",
+            "/canli-tv/muzik",
+            "/canli-tv/ulusal",
+            "/canli-tv/haber",
+            "/canli-tv/dizi",
+            "/canli-tv/belgesel",
+            "/canli-tv/cocuk",
+            "/canli-tv/yasam-stil",
+            "/canli-tv/global",
+            "/canli-tv/sinema",
+        ]
         try:
             with sync_playwright() as pw:
                 browser = pw.chromium.launch(
@@ -62,44 +75,20 @@ class TivibuAdapter(BaseAdapter):
                     'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
                 )
                 page = ctx.new_page()
-                page.goto(
-                    f"{self.base_url}/canli-tv/",
-                    wait_until="networkidle",
-                    timeout=30000,
-                )
-                contents.append(page.content())
-
-                # Ek sayfalar: GetMultiPrevueData API'sini Playwright uzerinden cagir
-                token = page.evaluate(
-                    "document.querySelector('input[name=__RequestVerificationToken]')?.value"
-                    " || document.cookie.split(';').find(c=>c.includes('CSRF'))?.split('=')[1]?.trim()"
-                    " || ''"
-                )
-                for page_no in range(2, 6):
+                for path in CATEGORY_PATHS:
                     try:
-                        resp = page.evaluate(f"""
-                            fetch('/Channel/GetMultiPrevueData', {{
-                                method: 'POST',
-                                headers: {{
-                                    'Content-Type': 'application/x-www-form-urlencoded',
-                                    'X-Requested-With': 'XMLHttpRequest',
-                                    'RequestVerificationToken': '{token}'
-                                }},
-                                body: 'channelColumnCode=020000&channelDateBegin=&channelDateEnd=&channelSearchValue=&pageNo={page_no}'
-                            }}).then(r=>r.text())
-                        """)
-                        if resp and "programBox" in resp:
-                            contents.append(resp)
-                    except Exception:
-                        break
-
+                        page.goto(
+                            f"{self.base_url}{path}",
+                            wait_until="networkidle",
+                            timeout=25000,
+                        )
+                        self._parse_page(page.content())
+                    except Exception as e:
+                        print(f"  [tivibu] {path} hatasi: {e}")
                 browser.close()
         except Exception as e:
             print(f"  [tivibu] Playwright hatasi: {e}")
             return
-
-        for content in contents:
-            self._parse_page(content)
         total = sum(len(v) for v in self._cache.values())
         print(f"  [tivibu] {len(self._cache)} kanal, {total} program önbelleğe alındı.")
 
