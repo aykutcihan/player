@@ -747,6 +747,186 @@
   <channel id="tr24tv.tr">
     <display-name>24</display-name>
   </channel>
+  <programme start="20260531001500 +0300" stop="20260531024500 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Müttefik</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531024500 +0300" stop="20260531044500 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Öldür Ya Da Öl</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531044500 +0300" stop="20260531070000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Dünyalar Savaşı</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531070000 +0300" stop="20260531090000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Gizli Pencere</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531090000 +0300" stop="20260531104500 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Fatima</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531104500 +0300" stop="20260531130000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Can Dostum</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531130000 +0300" stop="20260531151500 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Geçip Giden Zaman</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531151500 +0300" stop="20260531173000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Machuca</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531173000 +0300" stop="20260531193000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Karar Günü</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531193000 +0300" stop="20260531220000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Ateş Hattında</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601001500 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Geçip Giden Zaman</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601003000 +0300" channel="ch00000000000000001262">
+    <title lang="tr">Azınlık Raporu</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531014500 +0300" stop="20260531033000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Aeon Flux</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531033000 +0300" stop="20260531053000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Karanlık Şehir</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531053000 +0300" stop="20260531073000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Transfüzyon</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531073000 +0300" stop="20260531093000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Snıper: The Last Stand</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531093000 +0300" stop="20260531121500 +0300" channel="ch00000000000000001263">
+    <title lang="tr">2012</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531121500 +0300" stop="20260531141500 +0300" channel="ch00000000000000001263">
+    <title lang="tr">İtalyan İşi</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531141500 +0300" stop="20260531160000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">İkili Oyun</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531160000 +0300" stop="20260531180000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Öncü</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Panik Odası</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Automata</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601003000 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Painted Skin 2</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531234500 +0300" stop="20260601014500 +0300" channel="ch00000000000000001263">
+    <title lang="tr">Hayalet Sürücü</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531000000 +0300" stop="20260531030000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531030000 +0300" stop="20260531060000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531060000 +0300" stop="20260531090000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531090000 +0300" stop="20260531120000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531120000 +0300" stop="20260531150000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531150000 +0300" stop="20260531180000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531210000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531210000 +0300" stop="20260601000000 +0300" channel="ch00000000000000001358">
+    <title lang="tr">Tivibu'nun Renkli Dünyası</title>
+    <category lang="tr">Yaşam</category>
+  </programme>
+  <programme start="20260531011500 +0300" stop="20260531030000 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Lucy Artık Bir Gangster</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531030000 +0300" stop="20260531051500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Annie</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531051500 +0300" stop="20260531070000 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Mutlu Yıllar</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531070000 +0300" stop="20260531084500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Acele Baba Aranıyor</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531084500 +0300" stop="20260531104500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Ghostbusters: Hayalet Avcıları</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531104500 +0300" stop="20260531123000 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Strong Fathers, Strong Daughters</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531123000 +0300" stop="20260531144500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Meksikalı</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531144500 +0300" stop="20260531164500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Sürüsüne Bereket</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531164500 +0300" stop="20260531184500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Seninle Başım Dertte</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531184500 +0300" stop="20260531204500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Yedek Polisler</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531204500 +0300" stop="20260531231500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Yeniden Yirmi</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531231500 +0300" stop="20260601011500 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Sürüsüne Bereket</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531231500 +0300" stop="20260601010000 +0300" channel="ch00000000000000002785">
+    <title lang="tr">Büyük Kar Taneleri</title>
+    <category lang="tr">Film</category>
+  </programme>
   <programme start="20260531004500 +0300" stop="20260531020000 +0300" channel="tr.360">
     <title lang="tr">Pınar Altuğ Atacan ile Kim O?</title>
     <desc lang="tr">Pınar Altuğ Atacan, ünlü konuklarıyla sohbetin en doğal ve en keyifli hâlini ekrana taşıyor. Konukların bilinmeyen yönleri, hayatlarına dair özel hikâyeleri ve merak edilen anıları 360 ekranında...</desc>
@@ -2464,10 +2644,10 @@ Yakışıklı ve başarılı bir iş adamı olan Hakan’a ve onun iki sevimli �
     <title lang="tr">Premium Collection A</title>
   </programme>
   <programme start="20260531193000 +0300" stop="20260531200000 +0300" channel="tr.arirangtv">
-    <title lang="tr">SmartBiz Accelerators •</title>
+    <title lang="tr">SmartBiz Accelerators</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.arirangtv">
-    <title lang="tr">Simply K-Pop SNS</title>
+    <title lang="tr">Simply K-Pop SNS •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531213000 +0300" channel="tr.arirangtv">
     <title lang="tr">Beauty On and Off</title>
@@ -4395,10 +4575,10 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Cennetin Ötesinde Yaşam</title>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.bbcfirst">
-    <title lang="tr">Cennette Ölüm Yaşam •</title>
+    <title lang="tr">Cennette Ölüm Yaşam</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.bbcfirst">
-    <title lang="tr">Cennette Ölüm Yaşam</title>
+    <title lang="tr">Cennette Ölüm Yaşam •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.bbcnews">
     <title lang="tr">BBC News</title>
@@ -4672,10 +4852,10 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Ekmek Arası Muhabbet S1 B 8 Yaşam</title>
   </programme>
   <programme start="20260531192100 +0300" stop="20260531200000 +0300" channel="tr.beingurme">
-    <title lang="tr">Nihan'ın Dünya Sofrası S1 B 5 Yaşam •</title>
+    <title lang="tr">Nihan'ın Dünya Sofrası S1 B 5 Yaşam</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531203600 +0300" channel="tr.beingurme">
-    <title lang="tr">Karadeniz Usulü S2 B 7 Yaşam</title>
+    <title lang="tr">Karadeniz Usulü S2 B 7 Yaşam •</title>
   </programme>
   <programme start="20260531203600 +0300" stop="20260531223600 +0300" channel="tr.beingurme">
     <title lang="tr">Ateşin Sırrı S1 B 13 Yaşam</title>
@@ -4750,10 +4930,10 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Race Across The World S5 Ep5 Yaşam</title>
   </programme>
   <programme start="20260531191000 +0300" stop="20260531200600 +0300" channel="tr.beinhomeentertainment">
-    <title lang="tr">Escape To The Country S31 Ep. 11 Yaşam •</title>
+    <title lang="tr">Escape To The Country S31 Ep. 11 Yaşam</title>
   </programme>
   <programme start="20260531200600 +0300" stop="20260531220600 +0300" channel="tr.beinhomeentertainment">
-    <title lang="tr">Escape To The Country S31 Ep. 12 Yaşam</title>
+    <title lang="tr">Escape To The Country S31 Ep. 12 Yaşam •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531004000 +0300" channel="tr.beiniz">
     <title lang="tr">Maceraperest Franziska S1 E 8</title>
@@ -5006,8 +5186,8 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Film</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinmoviesstars">
-    <title lang="tr">Nightcrawler (2014)</title>
-    <category lang="tr">Film</category>
+    <title lang="tr">Nightcrawler (2014) Film •</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531013700 +0300" channel="tr.beinmoviesturk">
     <title lang="tr">Uçuş 811</title>
@@ -5054,8 +5234,8 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Film</category>
   </programme>
   <programme start="20260531181600 +0300" stop="20260531201400 +0300" channel="tr.beinmoviesturk">
-    <title lang="tr">Sağ Salim 3: Ölü Ya Da Diri Film •</title>
-    <category lang="tr">Spor</category>
+    <title lang="tr">Sağ Salim 3: Ölü Ya Da Diri</title>
+    <category lang="tr">Film</category>
   </programme>
   <programme start="20260531201400 +0300" stop="20260531221400 +0300" channel="tr.beinmoviesturk">
     <title lang="tr">Anons</title>
@@ -5142,8 +5322,8 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinseries1">
-    <title lang="tr">Lord Of The Flies S1 Ep 3</title>
-    <category lang="tr">Dizi</category>
+    <title lang="tr">Lord Of The Flies S1 Ep 3 Dizi •</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010100 +0300" channel="tr.beinseries2">
     <title lang="tr">Law &amp; Order ('21) S5 Ep 16</title>
@@ -5226,8 +5406,8 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinseries2">
-    <title lang="tr">Narrow Road To The Deep North, The S1 Ep 2</title>
-    <category lang="tr">Dizi</category>
+    <title lang="tr">Narrow Road To The Deep North, The S1 Ep 2 Dizi •</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531021500 +0300" channel="tr.beinsports1">
     <title lang="tr">T.konyaspor - Kocaelispor</title>
@@ -5280,7 +5460,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200200 +0300" stop="20260531203100 +0300" channel="tr.beinsports1">
-    <title lang="tr">Konyaspor (25-26) Sezonu Golleri</title>
+    <title lang="tr">Konyaspor (25-26) Sezonu Golleri Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531203100 +0300" stop="20260531204600 +0300" channel="tr.beinsports1">
@@ -5378,12 +5558,11 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531194500 +0300" stop="20260531200000 +0300" channel="tr.beinsports2">
-    <title lang="tr">21. Haftanın Golleri Spor •</title>
+    <title lang="tr">21. Haftanın Golleri</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsports2">
-    <title lang="tr">E.ümraniyespor - Serikspor</title>
-    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.ümraniyespor - Serikspor Maçı Bant</desc>
+    <title lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.ümraniyespor - Serikspor Maçı Bant - Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.beinsports3">
@@ -5437,8 +5616,7 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200100 +0300" stop="20260531220100 +0300" channel="tr.beinsports3">
-    <title lang="tr">Nott'm Forest - West Ham Utd</title>
-    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Nott'm Forest - West Ham Utd Maçı Bant</desc>
+    <title lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Nott'm Forest - West Ham Utd Maçı Bant - Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531014500 +0300" channel="tr.beinsports4">
@@ -5531,12 +5709,11 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531194700 +0300" stop="20260531200200 +0300" channel="tr.beinsports4">
-    <title lang="tr">10. Haftanın Golleri Spor •</title>
+    <title lang="tr">10. Haftanın Golleri</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200200 +0300" stop="20260531220200 +0300" channel="tr.beinsports4">
-    <title lang="tr">Nantes - Monaco</title>
-    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nantes - Monaco Maçı Bant</desc>
+    <title lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nantes - Monaco Maçı Bant - Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531014500 +0300" channel="tr.beinsports5">
@@ -5672,11 +5849,11 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.beinsportshaber">
-    <title lang="tr">Haber 56 Dk - Canlı Spor •</title>
+    <title lang="tr">Haber 56 Dk - Canlı</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531201700 +0300" channel="tr.beinsportshaber">
-    <title lang="tr">Kasımpaşa (25-26) Sezonu Golleri</title>
+    <title lang="tr">Kasımpaşa (25-26) Sezonu Golleri Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531201700 +0300" stop="20260531203000 +0300" channel="tr.beinsportshaber">
@@ -5728,11 +5905,11 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.beinsportsmax1">
-    <title lang="tr">Bein Sports Max 1 Spor •</title>
+    <title lang="tr">Bein Sports Max 1</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsportsmax1">
-    <title lang="tr">Bein Sports Max 1</title>
+    <title lang="tr">Bein Sports Max 1 Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.beinsportsmax2">
@@ -5780,11 +5957,11 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.beinsportsmax2">
-    <title lang="tr">Bein Sports Max 2 Spor •</title>
+    <title lang="tr">Bein Sports Max 2</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsportsmax2">
-    <title lang="tr">Bein Sports Max 2</title>
+    <title lang="tr">Bein Sports Max 2 Spor •</title>
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531090000 +0300" stop="20260531100000 +0300" channel="tr.benguturk">
@@ -9660,10 +9837,10 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Music Fair</title>
   </programme>
   <programme start="20260531191500 +0300" stop="20260531200000 +0300" channel="tr.cctv4">
-    <title lang="tr">Cartoon City •</title>
+    <title lang="tr">Cartoon City</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.cctv4">
-    <title lang="tr">Health China</title>
+    <title lang="tr">Health China •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531213000 +0300" channel="tr.cctv4">
     <title lang="tr">Chinese Story</title>
@@ -9789,10 +9966,10 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">The World Today Uluslararası</title>
   </programme>
   <programme start="20260531193000 +0300" stop="20260531200000 +0300" channel="tr.cgtn">
-    <title lang="tr">Razor Uluslararası •</title>
+    <title lang="tr">Razor Uluslararası</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.cgtn">
-    <title lang="tr">Africa Live Uluslararası</title>
+    <title lang="tr">Africa Live Uluslararası •</title>
   </programme>
   <programme start="20260531203000 +0300" stop="20260531223000 +0300" channel="tr.cgtn">
     <title lang="tr">Faces Of Africa Uluslararası</title>
@@ -10821,7 +10998,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">The Adoration of the Golden Calf. Nicolas Poussin</title>
   </programme>
   <programme start="20260531195000 +0300" stop="20260531195300 +0300" channel="tr.classicalharmony">
-    <title lang="tr">The Three Robinson Sisters. George Theodore Berthon •</title>
+    <title lang="tr">The Three Robinson Sisters. George Theodore Berthon</title>
   </programme>
   <programme start="20260531195300 +0300" stop="20260531195800 +0300" channel="tr.classicalharmony">
     <title lang="tr">Jean Auguste Dominique Ingres: Images 1) Half-Figure of a Bather 2) La Grande Odalisque 3) Odalisque and Slave</title>
@@ -10836,7 +11013,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Raphael: 1) Small Cowper Madonna 2) Madonna of the Meadow 3) the Sistine Madonna</title>
   </programme>
   <programme start="20260531201000 +0300" stop="20260531201300 +0300" channel="tr.classicalharmony">
-    <title lang="tr">Caravaggio. Rest on the Flight into Egypt</title>
+    <title lang="tr">Caravaggio. Rest on the Flight into Egypt •</title>
   </programme>
   <programme start="20260531201300 +0300" stop="20260531201600 +0300" channel="tr.classicalharmony">
     <title lang="tr">Rogier van der Weyden. Dream of Pope Sergius</title>
@@ -11956,10 +12133,10 @@ Dünyada ve Türkiye'de olup biten tüm gelişmeler Ana Haber'de izleyicilere su
     <title lang="tr">Altın İz Serisi</title>
   </programme>
   <programme start="20260531190500 +0300" stop="20260531200000 +0300" channel="tr.cosmosports">
-    <title lang="tr">Freeride Dünya Turu •</title>
+    <title lang="tr">Freeride Dünya Turu</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531234000 +0300" channel="tr.cosmosports">
-    <title lang="tr">Fight Exclusive Night</title>
+    <title lang="tr">Fight Exclusive Night •</title>
   </programme>
   <programme start="20260531234000 +0300" stop="20260601014000 +0300" channel="tr.cosmosports">
     <title lang="tr">Kralların Kralı Kahramanlar Serisi</title>
@@ -14082,10 +14259,10 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">Yeni Sınır</title>
   </programme>
   <programme start="20260531194500 +0300" stop="20260531201000 +0300" channel="tr.docuscreen">
-    <title lang="tr">Inside Outer Space •</title>
+    <title lang="tr">Inside Outer Space</title>
   </programme>
   <programme start="20260531201000 +0300" stop="20260531204000 +0300" channel="tr.docuscreen">
-    <title lang="tr">Yeni Sınır</title>
+    <title lang="tr">Yeni Sınır •</title>
   </programme>
   <programme start="20260531204000 +0300" stop="20260531210500 +0300" channel="tr.docuscreen">
     <title lang="tr">Yeni Sınır</title>
@@ -19175,10 +19352,10 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">Fashion From Singapore Yaşam</title>
   </programme>
   <programme start="20260531193000 +0300" stop="20260531200000 +0300" channel="tr.fashiontv">
-    <title lang="tr">Fashion From Singapore Yaşam •</title>
+    <title lang="tr">Fashion From Singapore Yaşam</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.fashiontv">
-    <title lang="tr">Most Watched Yaşam</title>
+    <title lang="tr">Most Watched Yaşam •</title>
   </programme>
   <programme start="20260531203000 +0300" stop="20260531223000 +0300" channel="tr.fashiontv">
     <title lang="tr">Most Watched Yaşam</title>
@@ -19372,10 +19549,10 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">Nehir Kırmızı Akar</title>
   </programme>
   <programme start="20260531181500 +0300" stop="20260531195500 +0300" channel="tr.filmscreen">
-    <title lang="tr">Çılgın Joe •</title>
+    <title lang="tr">Çılgın Joe</title>
   </programme>
   <programme start="20260531195500 +0300" stop="20260531213000 +0300" channel="tr.filmscreen">
-    <title lang="tr">Kaçak Yolcu</title>
+    <title lang="tr">Kaçak Yolcu •</title>
   </programme>
   <programme start="20260531213000 +0300" stop="20260531231000 +0300" channel="tr.filmscreen">
     <title lang="tr">Kitap Kulübü</title>
@@ -21524,10 +21701,10 @@ Hâce’nin hikmetli nefesi; insanların ruhuna dokundukça, saflar belirginleş
     <title lang="tr">FreeDOM</title>
   </programme>
   <programme start="20260531194000 +0300" stop="20260531200000 +0300" channel="tr.freedomtv">
-    <title lang="tr">Special Report •</title>
+    <title lang="tr">Special Report</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.freedomtv">
-    <title lang="tr">FreeDOM</title>
+    <title lang="tr">FreeDOM •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531213000 +0300" channel="tr.freedomtv">
     <title lang="tr">Up to Date</title>
@@ -22472,10 +22649,10 @@ Gizem Ösün hem grafiklerle anlatıyor hem de farklı ülkelerden uzmanlarla ko
     <title lang="tr">Svijet sporta</title>
   </programme>
   <programme start="20260531195000 +0300" stop="20260531201100 +0300" channel="tr.hayat2">
-    <title lang="tr">Vijesti u 7 •</title>
+    <title lang="tr">Vijesti u 7</title>
   </programme>
   <programme start="20260531201100 +0300" stop="20260531220000 +0300" channel="tr.hayat2">
-    <title lang="tr">Istraga sedmice</title>
+    <title lang="tr">Istraga sedmice •</title>
   </programme>
   <programme start="20260531220000 +0300" stop="20260531223300 +0300" channel="tr.hayat2">
     <title lang="tr">Crno-bijeli svijet</title>
@@ -23515,10 +23692,10 @@ Gizem Ösün hem grafiklerle anlatıyor hem de farklı ülkelerden uzmanlarla ko
     <title lang="tr">7 Gün</title>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.kanalb">
-    <title lang="tr">Başkentte Sağlık •</title>
+    <title lang="tr">Başkentte Sağlık</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.kanalb">
-    <title lang="tr">Ana Haber Bülteni</title>
+    <title lang="tr">Ana Haber Bülteni •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531213000 +0300" channel="tr.kanalb">
     <title lang="tr">Tarih Bahçesi</title>
@@ -24305,10 +24482,10 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Gastronomad</title>
   </programme>
   <programme start="20260531194000 +0300" stop="20260531200500 +0300" channel="tr.kitchentv">
-    <title lang="tr">Čini i začini •</title>
+    <title lang="tr">Čini i začini</title>
   </programme>
   <programme start="20260531200500 +0300" stop="20260531203500 +0300" channel="tr.kitchentv">
-    <title lang="tr">Slatki atelje</title>
+    <title lang="tr">Slatki atelje •</title>
   </programme>
   <programme start="20260531203500 +0300" stop="20260531210000 +0300" channel="tr.kitchentv">
     <title lang="tr">U Milice divan dan</title>
@@ -24625,10 +24802,10 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Yesevi Yolu</title>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.lalegultv">
-    <title lang="tr">Şeyhülislamlarımız •</title>
+    <title lang="tr">Şeyhülislamlarımız</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.lalegultv">
-    <title lang="tr">Nur Pınarı</title>
+    <title lang="tr">Nur Pınarı •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531230000 +0300" channel="tr.lalegultv">
     <title lang="tr">Haftanın Sohbeti</title>
@@ -24979,13 +25156,13 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Life Around</title>
   </programme>
   <programme start="20260531193800 +0300" stop="20260531195900 +0300" channel="tr.langlab">
-    <title lang="tr">Grammar Wise New •</title>
+    <title lang="tr">Grammar Wise New</title>
   </programme>
   <programme start="20260531195900 +0300" stop="20260531200800 +0300" channel="tr.langlab">
     <title lang="tr">English In Focus</title>
   </programme>
   <programme start="20260531200800 +0300" stop="20260531201200 +0300" channel="tr.langlab">
-    <title lang="tr">Idiom Kitchen</title>
+    <title lang="tr">Idiom Kitchen •</title>
   </programme>
   <programme start="20260531201200 +0300" stop="20260531201500 +0300" channel="tr.langlab">
     <title lang="tr">Irregular Verbs</title>
@@ -25447,7 +25624,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Alfred &amp; Wilfred</title>
   </programme>
   <programme start="20260531194900 +0300" stop="20260531200100 +0300" channel="tr.lingotoonstv">
-    <title lang="tr">Life Around •</title>
+    <title lang="tr">Life Around</title>
   </programme>
   <programme start="20260531200100 +0300" stop="20260531200700 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Irregular Verbs</title>
@@ -25456,7 +25633,7 @@ Akkayaların sahibi olduğu Bodrum Eğitim Vakfı Lisesi'ne kaydı yapılan Aras
     <title lang="tr">Get a Call</title>
   </programme>
   <programme start="20260531201100 +0300" stop="20260531201300 +0300" channel="tr.lingotoonstv">
-    <title lang="tr">Wrong&amp;right</title>
+    <title lang="tr">Wrong&amp;right •</title>
   </programme>
   <programme start="20260531201300 +0300" stop="20260531201900 +0300" channel="tr.lingotoonstv">
     <title lang="tr">Coffee Chat</title>
@@ -28574,10 +28751,10 @@ macera başlar.</desc>
     <title lang="tr">Julie's Frenchy Cookbook</title>
   </programme>
   <programme start="20260531191000 +0300" stop="20260531200000 +0300" channel="tr.myzentv">
-    <title lang="tr">Julie's Frenchy Cookbook •</title>
+    <title lang="tr">Julie's Frenchy Cookbook</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.myzentv">
-    <title lang="tr">Julie's Frenchy Cookbook</title>
+    <title lang="tr">Julie's Frenchy Cookbook •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531212500 +0300" channel="tr.myzentv">
     <title lang="tr">Luana's Kitchen</title>
@@ -29583,13 +29760,13 @@ Roma’daki Kolezyum’dan Angkor Wat’ın parıldayan havuzlarına, Sri Lanka�
     <title lang="tr">NHK Newsline</title>
   </programme>
   <programme start="20260531191000 +0300" stop="20260531200000 +0300" channel="tr.nhkworld">
-    <title lang="tr">Somewhere Street •</title>
+    <title lang="tr">Somewhere Street</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531201000 +0300" channel="tr.nhkworld">
     <title lang="tr">NHK Newsline</title>
   </programme>
   <programme start="20260531201000 +0300" stop="20260531202500 +0300" channel="tr.nhkworld">
-    <title lang="tr">Laugh Then Think: Japan's Offbeat Science</title>
+    <title lang="tr">Laugh Then Think: Japan's Offbeat Science •</title>
   </programme>
   <programme start="20260531202500 +0300" stop="20260531203000 +0300" channel="tr.nhkworld">
     <title lang="tr">Core Kyoto Mini</title>
@@ -32756,10 +32933,10 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
     <title lang="tr">News</title>
   </programme>
   <programme start="20260531175500 +0300" stop="20260531200000 +0300" channel="tr.rtrplaneta">
-    <title lang="tr">Songs from the heart •</title>
+    <title lang="tr">Songs from the heart</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531223000 +0300" channel="tr.rtrplaneta">
-    <title lang="tr">Vesti of the Week</title>
+    <title lang="tr">Vesti of the Week •</title>
   </programme>
   <programme start="20260531223000 +0300" stop="20260531230000 +0300" channel="tr.rtrplaneta">
     <title lang="tr">Moscow. Kremlin. Putin</title>
@@ -32915,10 +33092,10 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
     <title lang="tr">Special report</title>
   </programme>
   <programme start="20260531193700 +0300" stop="20260531200000 +0300" channel="tr.russia24">
-    <title lang="tr">Special report •</title>
+    <title lang="tr">Special report</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531201700 +0300" channel="tr.russia24">
-    <title lang="tr">News</title>
+    <title lang="tr">News •</title>
   </programme>
   <programme start="20260531201700 +0300" stop="20260531203700 +0300" channel="tr.russia24">
     <title lang="tr">Special report</title>
@@ -33372,11 +33549,11 @@ Eda nefret ettiği bu adamın teklifini önce reddetse de koşullar değişince 
     <title lang="tr">Semerkand Sohbetleri Magazin</title>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.semerkandtv">
-    <title lang="tr">Bedesten Belgesel •</title>
+    <title lang="tr">Bedesten</title>
+    <category lang="tr">Belgesel</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531210000 +0300" channel="tr.semerkandtv">
-    <title lang="tr">Yüzyılın Âlimleri</title>
-    <category lang="tr">Belgesel</category>
+    <title lang="tr">Yüzyılın Âlimleri Belgesel •</title>
   </programme>
   <programme start="20260531210000 +0300" stop="20260531220000 +0300" channel="tr.semerkandtv">
     <title lang="tr">Güzergâh Röportaj</title>
@@ -34211,258 +34388,6 @@ Bu arada da petrolle zenginleşen Zeki ve Metin, mahallede yaşayan ve herkesi s
   <programme start="20260607160000 +0300" stop="20260607180000 +0300" channel="tr.sifirtv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607140000 +0300" stop="20260607160000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607160000 +0300" stop="20260607180000 +0300" channel="tr.sinema1001">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
   <programme start="20260531020000 +0300" stop="20260531043000 +0300" channel="tr.sinema1002">
     <title lang="tr">Müttefik</title>
     <desc lang="tr">1942… II. Dünya Savaşı, devam etmektedir. Ülkeleri adına tetikçilik yapan Amerikalı Max Vatan ve Fransız Marianne Beausejour, bir görev sırasında karşılaşır. İkisi de Casablanca'daki Nazi Alman elçisini öldürmek için görevlendirilmiştir. Görev sırasında birbirlerine aşık olan iki tetikçi evlenirler. Ancak birbirlerinden sakladıkları sırlar, aralarında bir gerilime neden olacaktır.</desc>
@@ -34662,258 +34587,6 @@ Bu arada da petrolle zenginleşen Zeki ve Metin, mahallede yaşayan ve herkesi s
     <title lang="tr">The King And I</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607140000 +0300" stop="20260607160000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607160000 +0300" stop="20260607180000 +0300" channel="tr.sinemaaksiyon">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
   <programme start="20260531013000 +0300" stop="20260531033000 +0300" channel="tr.sinemaaksiyon2">
     <title lang="tr">Hayalet Sürücü</title>
     <desc lang="tr">Motorsikletçi Johnny Blaze, babasının ölümcül bir kansere yakalandığını öğrenince, babasının tekrar sağlıklı olmasına karşılık ruhunu Mephistopheles'e satar. Ancak şeytan onu kandırır ve Barton bir motorsiklet kazasında ölür. Bunun üzerine Johnny herkesi ve her şeyi terk ederek uzaklaşır. Yıllar sonra Johnny çok ünlü bir motorsikletçi olarak geri döner ve Roxanne ile tekrar tanışır.  Ancak geceleri Mephistopheles'in emrinde çalışmak zorundadır.</desc>
@@ -35033,45 +34706,6 @@ Birlikte, yaklaşan büyük bir fırtınanın ortasında tehlikeli ama büyüley
     <title lang="tr">Barbarlar</title>
     <desc lang="tr">Brittany's Town oybirliğiyle Ukraynalı mültecileri devlet yardımı karşılığında kabul etmeye karar verdi. Ancak Ukraynalıların yerine Suriyeli göçmenlerin gelmesi bazı çatışmalara neden oldu.</desc>
     <category lang="tr">Film</category>
-  </programme>
-  <programme start="20260531000000 +0300" stop="20260531010000 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Büyük Kar Taneleri</title>
-  </programme>
-  <programme start="20260531010000 +0300" stop="20260531024500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Lucy Artık Bir Gangster</title>
-  </programme>
-  <programme start="20260531024500 +0300" stop="20260531050000 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Annie</title>
-  </programme>
-  <programme start="20260531050000 +0300" stop="20260531070000 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Mutlu Yıllar</title>
-  </programme>
-  <programme start="20260531070000 +0300" stop="20260531084500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Acele Baba Aranıyor</title>
-  </programme>
-  <programme start="20260531084500 +0300" stop="20260531110000 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Hayalet Avcıları</title>
-  </programme>
-  <programme start="20260531110000 +0300" stop="20260531124500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Strong Fathers, Strong Daughters</title>
-  </programme>
-  <programme start="20260531124500 +0300" stop="20260531150000 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Meksikalı</title>
-  </programme>
-  <programme start="20260531150000 +0300" stop="20260531164500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Sürüsüne Bereket</title>
-  </programme>
-  <programme start="20260531164500 +0300" stop="20260531184500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Seninle Başım Dertte</title>
-  </programme>
-  <programme start="20260531184500 +0300" stop="20260531204500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Yedek Polisler •</title>
-  </programme>
-  <programme start="20260531204500 +0300" stop="20260531231500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Yeniden Yirmi</title>
-  </programme>
-  <programme start="20260531231500 +0300" stop="20260601011500 +0300" channel="tr.sinemakomedi2">
-    <title lang="tr">Büyük Kar Taneleri</title>
   </programme>
   <programme start="20260531013000 +0300" stop="20260531031500 +0300" channel="tr.sinematv">
     <title lang="tr">Uzun Kabus</title>
@@ -37471,13 +37105,13 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Sunny Songs</title>
   </programme>
   <programme start="20260531194800 +0300" stop="20260531195800 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Art Land •</title>
+    <title lang="tr">Art Land</title>
   </programme>
   <programme start="20260531195800 +0300" stop="20260531200700 +0300" channel="tr.tinyteentv">
     <title lang="tr">English Playtime</title>
   </programme>
   <programme start="20260531200700 +0300" stop="20260531201900 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Crafty Hands</title>
+    <title lang="tr">Crafty Hands •</title>
   </programme>
   <programme start="20260531201900 +0300" stop="20260531202900 +0300" channel="tr.tinyteentv">
     <title lang="tr">Okey-Dokey</title>
@@ -38872,258 +38506,6 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
   <programme start="20260607160000 +0300" stop="20260607180000 +0300" channel="tr.tivibuspor4">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
-  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607140000 +0300" stop="20260607160000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
-  <programme start="20260607160000 +0300" stop="20260607180000 +0300" channel="tr.tivibutanitim">
-    <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
-  </programme>
   <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.tjktv">
     <title lang="tr">Yayın akışı bilgisi mevcut değil</title>
   </programme>
@@ -39714,10 +39096,10 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Fight Stars</title>
   </programme>
   <programme start="20260531193000 +0300" stop="20260531200000 +0300" channel="tr.tracesportstars">
-    <title lang="tr">Star Rated •</title>
+    <title lang="tr">Star Rated</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531203000 +0300" channel="tr.tracesportstars">
-    <title lang="tr">Flashpoint</title>
+    <title lang="tr">Flashpoint •</title>
   </programme>
   <programme start="20260531203000 +0300" stop="20260531210000 +0300" channel="tr.tracesportstars">
     <title lang="tr">Football Stars</title>
@@ -45180,11 +44562,11 @@ Sporun kalbinde, totemlerin ve ritüellerin hikayesi 'Onsuz Asla' programında..
     <category lang="tr">Belgesel</category>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531195500 +0300" channel="tr.tv42">
-    <title lang="tr">Ana Haber •</title>
+    <title lang="tr">Ana</title>
+    <category lang="tr">Haber</category>
   </programme>
   <programme start="20260531195500 +0300" stop="20260531204500 +0300" channel="tr.tv42">
-    <title lang="tr"></title>
-    <category lang="tr">Belgesel</category>
+    <title lang="tr">Belgesel •</title>
   </programme>
   <programme start="20260531204500 +0300" stop="20260531223000 +0300" channel="tr.tv42">
     <title lang="tr">Rumeysa Zügül İle Turkuaz</title>
@@ -47004,10 +46386,10 @@ Olaylar genelde Mükremin'in ve arkadaşı Tirbüşon'un etrafında gelişir. Di
     <title lang="tr">The Titan Forest Patagonia</title>
   </programme>
   <programme start="20260531193000 +0300" stop="20260531200000 +0300" channel="tr.wsport">
-    <title lang="tr">Sports Woman •</title>
+    <title lang="tr">Sports Woman</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531213000 +0300" channel="tr.wsport">
-    <title lang="tr">Netball Super League</title>
+    <title lang="tr">Netball Super League •</title>
   </programme>
   <programme start="20260531213000 +0300" stop="20260531220000 +0300" channel="tr.wsport">
     <title lang="tr">Heroines</title>
@@ -47100,11 +46482,11 @@ Olaylar genelde Mükremin'in ve arkadaşı Tirbüşon'un etrafında gelişir. Di
     <category lang="tr">Belgesel</category>
   </programme>
   <programme start="20260531190000 +0300" stop="20260531200000 +0300" channel="tr.yabantv">
-    <title lang="tr">Sportif Balıkçılık Belgesel •</title>
+    <title lang="tr">Sportif Balıkçılık</title>
+    <category lang="tr">Belgesel</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.yabantv">
-    <title lang="tr">Sizin Av Safariniz</title>
-    <category lang="tr">Belgesel</category>
+    <title lang="tr">Sizin Av Safariniz Belgesel •</title>
   </programme>
   <programme start="20260531010000 +0300" stop="20260531023000 +0300" channel="tr24tv.tr">
     <title lang="tr">Bu Ülke</title>
