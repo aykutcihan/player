@@ -3,6 +3,7 @@ from adapters.tvplus import TVPlusAdapter
 from adapters.tivibu import TivibuAdapter
 from adapters.tvyayinakisi import TvYayinAkisiAdapter
 from adapters.digiturkburada import DigiturkBuradaAdapter
+from adapters.canlitv import CanliTvAdapter
 
 
 def build_registry(session=None):
@@ -11,6 +12,7 @@ def build_registry(session=None):
         TivibuAdapter(session),
         TvYayinAkisiAdapter(session),
         DigiturkBuradaAdapter(session),
+        CanliTvAdapter(session),
     ]
     return {a.prefix: a for a in insts}
 

@@ -129,6 +129,7 @@ channels:
   tr.atvavrupa:
     name: "Atv Avrupa"
     sources:
+      - canlitv:atv-avrupa
       - tvyayinakisi:atv-avrupa
 
   tr.azoomee:
