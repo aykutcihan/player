@@ -32,7 +32,8 @@ jobs:
       - name: Hazırlık
         run: |
           if not exist cache mkdir cache
-          for /d /r src %%d in (__pycache__) do rd /s /q "%%d" 2>nul
+          if exist src\__pycache__ rd /s /q src\__pycache__
+          if exist src\adapters\__pycache__ rd /s /q src\adapters\__pycache__
 
       - name: EPG üret
         env:
