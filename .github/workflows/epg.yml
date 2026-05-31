@@ -26,6 +26,9 @@ jobs:
       - name: Bağımlılıklar
         run: pip install -r requirements.txt
 
+      - name: Playwright tarayici
+        run: playwright install chromium
+
       - name: Hazırlık
         run: if not exist cache mkdir cache
 

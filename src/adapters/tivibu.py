@@ -1,24 +1,15 @@
 """
-Tivibu (tivibu.com.tr) — YEDEK + en geniş tarih (~2 hafta) + Tivibu Spor beşlisi (özel).
+Tivibu (tivibu.com.tr) — Playwright ile canli-tv sayfasindan program verisi.
 
-Kanal akışı satır biçimi (kategori sayfalarında görülen):
-    'Program Adı  Kategori - 20:00 → 21:30 Canlı'
-yani: ad + tür(Yaşam/Film/Dizi/Diğer) + başlangıç → bitiş (BİTİŞ VAR).
-
-Kanal id'si: ch00000000000000001170 gibi.
-Detay/akış uç noktası:  /rv?i=2|ch{id}&datatype=2
-(üyelik duvarı sadece VİDEO için; akış metni görünür.)
-
->>> CANLI HTML'E GÖRE AYAR GEREKEBİLİR <<<
-- /rv çıktısının HTML mi JSON mu olduğunu PC'de doğrula.
-- Çok günlük veri için tarih parametresi gerekebilir (tab'lar 24.05→07.06 idi).
-- Açıklama (özet) listede yoktu; detay panelinde olabilir -> istersen ayrı çek.
+Site JavaScript gerektirdiği için requests ile çalışmıyor.
+Tek Playwright oturumunda tüm kanallar yüklenir ve önbelleğe alınır;
+her fetch() çağrısı bu önbellekten kanal ID'sine göre veri döndürür.
 """
 from __future__ import annotations
 import re
 from datetime import datetime, timedelta
-from typing import List
-from urllib.parse import quote
+from typing import List, Dict
+from urllib.parse import unquote
 
 from bs4 import BeautifulSoup
 
@@ -26,52 +17,137 @@ from adapters.base import BaseAdapter
 from models import Programme
 from normalize import ist
 
-# 'Program Adı  Kategori - 20:00 → 21:30'
-ROW_RE = re.compile(
-    r"^(?P<title>.+?)\s+(?P<cat>Yaşam|Film|Dizi|Diğer|Spor|Haber|Çocuk|Müzik)\s*-\s*"
-    r"(?P<start>\d{1,2}:\d{2})\s*(?:→|->)\s*(?P<stop>\d{1,2}:\d{2})",
-    re.IGNORECASE,
-)
+CH_RE = re.compile(r"ch[0-9a-f]{20}", re.IGNORECASE)
+TIME_RE = re.compile(r"(\d{1,2}):(\d{2})")
 
 
 class TivibuAdapter(BaseAdapter):
     prefix = "tivibu"
     base_url = "https://www.tivibu.com.tr"
 
-    def fetch(self, source_id: str, channel_id: str) -> List[Programme]:
-        # source_id örn: ch00000000000000001170
-        ident = quote(f"2|{source_id}", safe="")
-        url = f"{self.base_url}/rv?i={ident}&datatype=2"
-        text = self._get(url).text
-        return self._parse(text, channel_id)
+    def __init__(self, session=None, delay: float = 0.2):
+        super().__init__(session, delay)
+        self._cache: Dict[str, List[Programme]] = {}
+        self._loaded = False
 
-    def _parse(self, text: str, channel_id: str) -> List[Programme]:
-        soup = BeautifulSoup(text, "lxml")
-        lines = [ln.strip() for ln in soup.get_text("\n").splitlines() if ln.strip()]
-        base = datetime.now(tz=ist(datetime.now()).tzinfo)
-        out: List[Programme] = []
-        prev_start = None
-        day_offset = 0
-        for ln in lines:
-            m = ROW_RE.match(ln)
+    def fetch(self, source_id: str, channel_id: str) -> List[Programme]:
+        if not self._loaded:
+            self._fill_cache()
+        return self._cache.get(source_id, [])
+
+    def _fill_cache(self):
+        self._loaded = True
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            print("  [tivibu] playwright kurulu degil, atlaniyor.")
+            return
+
+        contents = []
+        try:
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch(
+                    headless=True,
+                    args=["--disable-blink-features=AutomationControlled", "--no-sandbox"],
+                )
+                ctx = browser.new_context(
+                    user_agent=(
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/125.0.0.0 Safari/537.36"
+                    ),
+                    viewport={"width": 1366, "height": 768},
+                )
+                ctx.add_init_script(
+                    'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
+                )
+                page = ctx.new_page()
+                page.goto(
+                    f"{self.base_url}/canli-tv/",
+                    wait_until="networkidle",
+                    timeout=30000,
+                )
+                contents.append(page.content())
+
+                # Ek sayfalar: GetMultiPrevueData API'sini Playwright uzerinden cagir
+                token = page.evaluate(
+                    "document.querySelector('input[name=__RequestVerificationToken]')?.value"
+                    " || document.cookie.split(';').find(c=>c.includes('CSRF'))?.split('=')[1]?.trim()"
+                    " || ''"
+                )
+                for page_no in range(2, 6):
+                    try:
+                        resp = page.evaluate(f"""
+                            fetch('/Channel/GetMultiPrevueData', {{
+                                method: 'POST',
+                                headers: {{
+                                    'Content-Type': 'application/x-www-form-urlencoded',
+                                    'X-Requested-With': 'XMLHttpRequest',
+                                    'RequestVerificationToken': '{token}'
+                                }},
+                                body: 'channelColumnCode=020000&channelDateBegin=&channelDateEnd=&channelSearchValue=&pageNo={page_no}'
+                            }}).then(r=>r.text())
+                        """)
+                        if resp and "programBox" in resp:
+                            contents.append(resp)
+                    except Exception:
+                        break
+
+                browser.close()
+        except Exception as e:
+            print(f"  [tivibu] Playwright hatasi: {e}")
+            return
+
+        for content in contents:
+            self._parse_page(content)
+        total = sum(len(v) for v in self._cache.values())
+        print(f"  [tivibu] {len(self._cache)} kanal, {total} program önbelleğe alındı.")
+
+    def _parse_page(self, content: str):
+        soup = BeautifulSoup(content, "lxml")
+        today = ist(datetime.now())
+
+        for box in soup.select(".programBox"):
+            link = box.find("a", href=True)
+            if not link:
+                continue
+            m = CH_RE.search(unquote(link["href"]))
             if not m:
                 continue
-            sh, sm = map(int, m.group("start").split(":"))
-            eh, em = map(int, m.group("stop").split(":"))
-            start = (base + timedelta(days=day_offset)).replace(
-                hour=sh, minute=sm, second=0, microsecond=0)
-            # gece yarısı geçişi: start önceki start'tan küçükse ertesi güne sar
-            if prev_start and start < prev_start:
-                day_offset += 1
-                start += timedelta(days=1)
-            prev_start = start
-            stop = start.replace(hour=eh, minute=em)
-            if stop <= start:
-                stop += timedelta(days=1)
-            out.append(Programme(
-                channel_id=channel_id, start=start, stop=stop,
-                title=m.group("title").strip(),
-                category=m.group("cat").strip(),
+            ch_id = m.group(0)
+
+            title_el = box.find(class_="programTitle")
+            type_el = box.find(class_="type")
+            start_el = box.find(class_="startTime")
+            stop_el = box.find(class_="finishTime")
+
+            title = title_el.get_text(strip=True) if title_el else ""
+            category = type_el.get_text(strip=True) if type_el else None
+            start_txt = start_el.get_text(strip=True) if start_el else ""
+            stop_txt = stop_el.get_text(strip=True) if stop_el else ""
+
+            if not title or not start_txt:
+                continue
+
+            ms = TIME_RE.match(start_txt)
+            if not ms:
+                continue
+            start_dt = ist(datetime(today.year, today.month, today.day,
+                                    int(ms.group(1)), int(ms.group(2))))
+
+            stop_dt = None
+            me = TIME_RE.match(stop_txt)
+            if me:
+                stop_dt = ist(datetime(today.year, today.month, today.day,
+                                       int(me.group(1)), int(me.group(2))))
+                if stop_dt <= start_dt:
+                    stop_dt += timedelta(days=1)
+
+            self._cache.setdefault(ch_id, []).append(Programme(
+                channel_id=ch_id,
+                start=start_dt,
+                stop=stop_dt,
+                title=title,
+                category=category,
                 source=self.prefix,
             ))
-        return out
