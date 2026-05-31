@@ -2661,257 +2661,221 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <desc lang="tr">Dünyanın en çok seyredilen ve en çok kazandıran bilgi yarışması Kim Milyoner Olmak İster?, Oktay Kaynarca'nın sunumuyla ekrana geliyor. Programa Türkiye'nin farklı yerlerinden ya da farklı ülkelerden başvuru yapıp, mülakatla seçilen yarışmacılar katılıyor. Yine moral desteği için yarışmacıların yakınları da stüdyoda yerlerini alıyorlar. Toplamda on üç soruyu yanıtlamak için yarışmacılara joker hakları sunuluyor. Ayrıca iki baraj hakkı da veriliyor. Baraj sorularına doğru yanıt verildiğinde o ana kadar kazanılan ödül, her durumda yarışmacının oluyor. On üç soru doğru yanıtlanırsa kazanılacak ödül 5 milyon TL...</desc>
     <category lang="tr">Yarışma</category>
   </programme>
-  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260531060000 +0300" stop="20260531080000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kahvaltı Haberi</title>
   </programme>
-  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260531080000 +0300" stop="20260531110000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Müge Anlı İle Tatlı Sert</title>
   </programme>
-  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260531110000 +0300" stop="20260531120000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Gün Ortası</title>
   </programme>
-  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260531120000 +0300" stop="20260531140000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Mutfak Bahane</title>
+  </programme>
+  <programme start="20260531140000 +0300" stop="20260531173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Esra Erol'da</title>
+  </programme>
+  <programme start="20260531173000 +0300" stop="20260531175000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
+  </programme>
+  <programme start="20260531175000 +0300" stop="20260531180000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Avrupa Haber</title>
+  </programme>
+  <programme start="20260531180000 +0300" stop="20260531200000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Uçuş Ekibi</title>
+  </programme>
+  <programme start="20260531200000 +0300" stop="20260531214000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Arabulucu</title>
+  </programme>
+  <programme start="20260531214000 +0300" stop="20260531222000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Dizi Tv-Tekrar</title>
+  </programme>
+  <programme start="20260531222000 +0300" stop="20260601031000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">A.B.İ.-Tekrar</title>
+  </programme>
+  <programme start="20260601031000 +0300" stop="20260601060000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
   <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Kahvaltı Haberi</title>
   </programme>
-  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601080000 +0300" stop="20260601110000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Müge Anlı İle Tatlı Sert</title>
   </programme>
-  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601110000 +0300" stop="20260601120000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Gün Ortası</title>
   </programme>
   <programme start="20260601120000 +0300" stop="20260601140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Mutfak Bahane</title>
   </programme>
-  <programme start="20260601140000 +0300" stop="20260601160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601140000 +0300" stop="20260601173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Esra Erol'da</title>
   </programme>
-  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601173000 +0300" stop="20260601175000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
   </programme>
-  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601175000 +0300" stop="20260601180000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Avrupa Haber</title>
   </programme>
-  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601180000 +0300" stop="20260601222000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">A.B.İ.-Yeni Bölüm</title>
   </programme>
-  <programme start="20260601220000 +0300" stop="20260602000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601222000 +0300" stop="20260601233000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Londra Aktüel-Yeni Bölüm</title>
   </programme>
-  <programme start="20260602000000 +0300" stop="20260602020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260601233000 +0300" stop="20260602031000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Otel Franco</title>
   </programme>
-  <programme start="20260602020000 +0300" stop="20260602040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260602040000 +0300" stop="20260602060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602031000 +0300" stop="20260602060000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
   <programme start="20260602060000 +0300" stop="20260602080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Kahvaltı Haberi</title>
   </programme>
-  <programme start="20260602080000 +0300" stop="20260602100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602080000 +0300" stop="20260602110000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Müge Anlı İle Tatlı Sert</title>
   </programme>
-  <programme start="20260602100000 +0300" stop="20260602120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602110000 +0300" stop="20260602120000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Gün Ortası</title>
   </programme>
   <programme start="20260602120000 +0300" stop="20260602140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Mutfak Bahane</title>
   </programme>
-  <programme start="20260602140000 +0300" stop="20260602160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602140000 +0300" stop="20260602173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Esra Erol'da</title>
   </programme>
-  <programme start="20260602160000 +0300" stop="20260602180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602173000 +0300" stop="20260602175000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
   </programme>
-  <programme start="20260602180000 +0300" stop="20260602200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602175000 +0300" stop="20260602204000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Avrupa Haber</title>
   </programme>
-  <programme start="20260602200000 +0300" stop="20260602220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260602204000 +0300" stop="20260603035000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kuruluş Orhan-Tekrar</title>
   </programme>
-  <programme start="20260602220000 +0300" stop="20260603000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260603000000 +0300" stop="20260603020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260603020000 +0300" stop="20260603040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260603040000 +0300" stop="20260603060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603035000 +0300" stop="20260603060000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
   <programme start="20260603060000 +0300" stop="20260603080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Kahvaltı Haberi</title>
   </programme>
-  <programme start="20260603080000 +0300" stop="20260603100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603080000 +0300" stop="20260603110000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Müge Anlı İle Tatlı Sert</title>
   </programme>
-  <programme start="20260603100000 +0300" stop="20260603120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603110000 +0300" stop="20260603120000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Gün Ortası</title>
   </programme>
   <programme start="20260603120000 +0300" stop="20260603140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Mutfak Bahane</title>
   </programme>
-  <programme start="20260603140000 +0300" stop="20260603160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603140000 +0300" stop="20260603173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Esra Erol'da</title>
   </programme>
-  <programme start="20260603160000 +0300" stop="20260603180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603173000 +0300" stop="20260603175000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
+  </programme>
+  <programme start="20260603175000 +0300" stop="20260603180000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Avrupa Haber</title>
   </programme>
   <programme start="20260603180000 +0300" stop="20260603200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Gizli Görev</title>
   </programme>
-  <programme start="20260603200000 +0300" stop="20260603220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603200000 +0300" stop="20260603222000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Buzkıran</title>
   </programme>
-  <programme start="20260603220000 +0300" stop="20260604000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260603222000 +0300" stop="20260604030000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Aynı Yağmur Altında-Tekrar</title>
   </programme>
-  <programme start="20260604000000 +0300" stop="20260604020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604030000 +0300" stop="20260604080000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
-  <programme start="20260604020000 +0300" stop="20260604040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604080000 +0300" stop="20260604110000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Müge Anlı İle Tatlı Sert</title>
   </programme>
-  <programme start="20260604040000 +0300" stop="20260604060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260604060000 +0300" stop="20260604080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260604080000 +0300" stop="20260604100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260604100000 +0300" stop="20260604120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604110000 +0300" stop="20260604120000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Gün Ortası</title>
   </programme>
   <programme start="20260604120000 +0300" stop="20260604140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Mutfak Bahane</title>
   </programme>
-  <programme start="20260604140000 +0300" stop="20260604160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604140000 +0300" stop="20260604173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Esra Erol'da</title>
   </programme>
-  <programme start="20260604160000 +0300" stop="20260604180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604173000 +0300" stop="20260604175000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
   </programme>
-  <programme start="20260604180000 +0300" stop="20260604200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604175000 +0300" stop="20260604180000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Avrupa Haber</title>
   </programme>
-  <programme start="20260604200000 +0300" stop="20260604220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604180000 +0300" stop="20260604195000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Zorla Güvenlik-Tv'de İlk</title>
   </programme>
-  <programme start="20260604220000 +0300" stop="20260605000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604195000 +0300" stop="20260604230000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">A.B.İ.-Tekrar</title>
   </programme>
-  <programme start="20260605000000 +0300" stop="20260605020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260604230000 +0300" stop="20260605031000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Yerli Dizi-Tekrar</title>
   </programme>
-  <programme start="20260605020000 +0300" stop="20260605040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605031000 +0300" stop="20260605050000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
-  <programme start="20260605040000 +0300" stop="20260605060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605050000 +0300" stop="20260605053000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kahvaltı Haberi</title>
   </programme>
-  <programme start="20260605060000 +0300" stop="20260605080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605053000 +0300" stop="20260605080000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv'de Hafta Sonu</title>
   </programme>
   <programme start="20260605080000 +0300" stop="20260605100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+    <title lang="tr">Kuşaklılar</title>
   </programme>
-  <programme start="20260605100000 +0300" stop="20260605120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605100000 +0300" stop="20260605131000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">A.B.İ.-Tekrar</title>
   </programme>
-  <programme start="20260605120000 +0300" stop="20260605140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605131000 +0300" stop="20260605173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Aynı Yağmur Altında-Tekrar</title>
   </programme>
-  <programme start="20260605140000 +0300" stop="20260605160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605173000 +0300" stop="20260605180000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
   </programme>
-  <programme start="20260605160000 +0300" stop="20260605180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605180000 +0300" stop="20260605201000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">C Takımı 2-Tv'de İlk</title>
   </programme>
-  <programme start="20260605180000 +0300" stop="20260605200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605201000 +0300" stop="20260605233000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Aynı Yağmur Altında</title>
   </programme>
-  <programme start="20260605200000 +0300" stop="20260605220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260605233000 +0300" stop="20260606030000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Sinema</title>
   </programme>
-  <programme start="20260605220000 +0300" stop="20260606000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606030000 +0300" stop="20260606053000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
-  <programme start="20260606000000 +0300" stop="20260606020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606053000 +0300" stop="20260606080000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv'de Hafta Sonu</title>
   </programme>
-  <programme start="20260606020000 +0300" stop="20260606040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606080000 +0300" stop="20260606111000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kuruluş Orhan-Tekrar</title>
   </programme>
-  <programme start="20260606040000 +0300" stop="20260606060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606111000 +0300" stop="20260606121000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Dizi Tv-Yeni Bölüm</title>
   </programme>
-  <programme start="20260606060000 +0300" stop="20260606080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606121000 +0300" stop="20260606143000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">A.B.İ.-Tekrar</title>
   </programme>
-  <programme start="20260606080000 +0300" stop="20260606100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606143000 +0300" stop="20260606173000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Avrupa Vizyon-Yeni Bölüm</title>
   </programme>
-  <programme start="20260606100000 +0300" stop="20260606120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606173000 +0300" stop="20260606180000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Atv Ana Haber Bülteni</title>
   </programme>
-  <programme start="20260606120000 +0300" stop="20260606140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606180000 +0300" stop="20260606205000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Aynı Yağmur Altında-Yeni Bölüm</title>
   </programme>
-  <programme start="20260606140000 +0300" stop="20260606160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260606205000 +0300" stop="20260607032000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Yerli Dizi-Tekrar</title>
   </programme>
-  <programme start="20260606160000 +0300" stop="20260606180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260606180000 +0300" stop="20260606200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260606200000 +0300" stop="20260606220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260606220000 +0300" stop="20260607000000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607000000 +0300" stop="20260607020000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607020000 +0300" stop="20260607040000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607040000 +0300" stop="20260607060000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607060000 +0300" stop="20260607080000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607080000 +0300" stop="20260607100000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607100000 +0300" stop="20260607120000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607120000 +0300" stop="20260607140000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607140000 +0300" stop="20260607160000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607160000 +0300" stop="20260607180000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607180000 +0300" stop="20260607200000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
-  </programme>
-  <programme start="20260607200000 +0300" stop="20260607220000 +0300" channel="tr.atvavrupa">
-    <title lang="tr">Kaynaktaki teknik sorun nedeniyle yayın akışı bilgisi geçici olarak alınamıyor</title>
+  <programme start="20260607032000 +0300" stop="20260607052000 +0300" channel="tr.atvavrupa">
+    <title lang="tr">Kardeşlerim-Tekrar</title>
   </programme>
   <programme start="20260531000100 +0300" stop="20260531000800 +0300" channel="tr.azoomee">
     <title lang="tr">Bitz ve Bob - Sen De Yapabilirsin</title>
@@ -4425,15 +4389,15 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Cennette Ölüm</title>
     <category lang="tr">Dizi</category>
   </programme>
-  <programme start="20260531210100 +0300" stop="20260531220000 +0300" channel="tr.bbcfirst">
-    <title lang="tr">Sessiz Tanık - S28 B05</title>
-    <category lang="tr">Dizi</category>
-  </programme>
-  <programme start="20260531220000 +0300" stop="20260531230000 +0300" channel="tr.bbcfirst">
+  <programme start="20260531210100 +0300" stop="20260531220100 +0300" channel="tr.bbcfirst">
     <title lang="tr">Sessiz Tanık</title>
     <category lang="tr">Dizi</category>
   </programme>
-  <programme start="20260531230000 +0300" stop="20260531234500 +0300" channel="tr.bbcfirst">
+  <programme start="20260531220100 +0300" stop="20260531230100 +0300" channel="tr.bbcfirst">
+    <title lang="tr">Sessiz Tanık - S28 B06</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531230100 +0300" stop="20260531234500 +0300" channel="tr.bbcfirst">
     <title lang="tr">Savaş ve Barış</title>
     <category lang="tr">Dizi</category>
   </programme>
@@ -6991,10 +6955,6 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Bein Sports Max 1</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531220000 +0300" stop="20260601011000 +0300" channel="tr.beinsportsmax1">
-    <title lang="tr">beIN Sports Max 1 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
-  </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.beinsportsmax2">
     <title lang="tr">Bein Sports Max 2</title>
     <category lang="tr">Spor</category>
@@ -7102,10 +7062,6 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
   <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.beinsportsmax2">
     <title lang="tr">Bein Sports Max 2</title>
     <category lang="tr">Spor</category>
-  </programme>
-  <programme start="20260531220000 +0300" stop="20260601011000 +0300" channel="tr.beinsportsmax2">
-    <title lang="tr">beIN Sports Max 2 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
   </programme>
   <programme start="20260531090000 +0300" stop="20260531100000 +0300" channel="tr.benguturk">
     <title lang="tr">Hafta Sonu Yeni Gün</title>
@@ -12330,16 +12286,16 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Gustav Klimt. the Kiss</title>
   </programme>
   <programme start="20260531233500 +0300" stop="20260531233800 +0300" channel="tr.classicalharmony">
-    <title lang="tr">Joachim Beuckelaer. the Four Elements •</title>
+    <title lang="tr">Joachim Beuckelaer. the Four Elements</title>
   </programme>
   <programme start="20260531233800 +0300" stop="20260531234200 +0300" channel="tr.classicalharmony">
-    <title lang="tr">The Spanish Wedding. Mariano Fortuny •</title>
+    <title lang="tr">The Spanish Wedding. Mariano Fortuny</title>
   </programme>
   <programme start="20260531234200 +0300" stop="20260531234500 +0300" channel="tr.classicalharmony">
     <title lang="tr">At the Masquerade. Charles Hermans</title>
   </programme>
   <programme start="20260531234500 +0300" stop="20260531235000 +0300" channel="tr.classicalharmony">
-    <title lang="tr">Jean Frédéric Bazille: Images 1) Bathers (Summer Scene) 2) the Pink Dress 3) Bathers (Summer Scene) 4) View of the Village 5) Bathers (Summer Scene) 6) Family Reunion (Family Portraits)</title>
+    <title lang="tr">Jean Frédéric Bazille: Images 1) Bathers (Summer Scene) 2) the Pink Dress 3) Bathers (Summer Scene) 4) View of the Village 5) Bathers (Summer Scene) 6) Family Reunion (Family Portraits) •</title>
   </programme>
   <programme start="20260531235000 +0300" stop="20260531235400 +0300" channel="tr.classicalharmony">
     <title lang="tr">Jean Béraud: Images 1) Le Boulevard St. Denis Paris 2) Bridge of Art (Windy Day) 3) the Milliner on the Champs Elysées 4) Boulevard des Capucines 5) Boulevard Des Capucines at the Site of Theater Du Vaudeville 6) Après l'Office à l'Eglise de la Sainte-Trinité</title>
@@ -30070,10 +30026,10 @@ macera başlar.</desc>
     <title lang="tr">100 Places to See</title>
   </programme>
   <programme start="20260531224500 +0300" stop="20260531234500 +0300" channel="tr.myzentv">
-    <title lang="tr">100 Places to See •</title>
+    <title lang="tr">100 Places to See</title>
   </programme>
   <programme start="20260531234500 +0300" stop="20260601014500 +0300" channel="tr.myzentv">
-    <title lang="tr">Massages</title>
+    <title lang="tr">Massages •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531005000 +0300" channel="tr.nationalgeographic">
     <title lang="tr">Mega Yapılar</title>
@@ -38631,13 +38587,13 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Life Around Kids</title>
   </programme>
   <programme start="20260531233600 +0300" stop="20260531234300 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Alfred &amp; Wilfred •</title>
+    <title lang="tr">Alfred &amp; Wilfred</title>
   </programme>
   <programme start="20260531234300 +0300" stop="20260531234700 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Sing&amp;Spell •</title>
+    <title lang="tr">Sing&amp;Spell</title>
   </programme>
   <programme start="20260531234700 +0300" stop="20260531235900 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Life Around Kids</title>
+    <title lang="tr">Life Around Kids •</title>
   </programme>
   <programme start="20260531235900 +0300" stop="20260601015900 +0300" channel="tr.tinyteentv">
     <title lang="tr">Magic Science</title>
