@@ -19,7 +19,7 @@ jobs:
       PYTHONUTF8: "1"
     defaults:
       run:
-        shell: bash
+        shell: cmd
     steps:
       - uses: actions/checkout@v4
 
@@ -27,7 +27,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Hazırlık
-        run: mkdir -p cache
+        run: if not exist cache mkdir cache
 
       - name: EPG üret
         env:
@@ -36,16 +36,15 @@ jobs:
 
       - name: Değiştiyse commit'le
         run: |
-          git config --global user.name  "github-actions[bot]"
+          git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          [ -f epg.xml ]          && git add epg.xml
-          [ -f cache/tmdb.json ]  && git add cache/tmdb.json
-
-          if git diff --cached --quiet; then
-            echo "Değişiklik yok, commit atlanıyor."
-          else
-            git commit -m "Automated EPG update ($(date -u +%FT%TZ))"
+          if exist epg.xml git add epg.xml
+          if exist cache\tmdb.json git add cache\tmdb.json
+          git diff --cached --quiet
+          if errorlevel 1 (
+            git commit -m "Automated EPG update"
             git pull --rebase origin master
             git push
-          fi
+          ) else (
+            echo Degisiklik yok, commit atlanıyor.
+          )
