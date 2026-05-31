@@ -4725,9 +4725,93 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
   <programme start="20260531203600 +0300" stop="20260531223600 +0300" channel="tr.beingurme">
     <title lang="tr">Ateşin Sırrı S1 B 13 Yaşam</title>
   </programme>
-  <programme start="20260531223600 +0300" stop="20260601011000 +0300" channel="tr.beingurme">
-    <title lang="tr">beIN Gurme - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531223600 +0300" stop="20260601001100 +0300" channel="tr.beingurme">
+    <title lang="tr">Çiğdem'le Semt Pazarları S1 B10 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601001100 +0300" stop="20260601004100 +0300" channel="tr.beingurme">
+    <title lang="tr">4 Lezzet S1 B 2 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601004100 +0300" stop="20260601015200 +0300" channel="tr.beingurme">
+    <title lang="tr">Tek Kişilik Tarifler S1 B 2 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601015200 +0300" stop="20260601030600 +0300" channel="tr.beingurme">
+    <title lang="tr">Gastronomi Maceraları S7 B140 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601030600 +0300" stop="20260601050100 +0300" channel="tr.beingurme">
+    <title lang="tr">Nihan'ın Dünya Sofrası S1 B 4 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601050100 +0300" stop="20260601053700 +0300" channel="tr.beingurme">
+    <title lang="tr">İdil'le S2 B13 Yaşam</title>
+  </programme>
+  <programme start="20260601053700 +0300" stop="20260601061200 +0300" channel="tr.beingurme">
+    <title lang="tr">Ekmek Arası Muhabbet S1 B 9 Yaşam</title>
+  </programme>
+  <programme start="20260601061200 +0300" stop="20260601065200 +0300" channel="tr.beingurme">
+    <title lang="tr">Görevimiz Yemek S1 B44 Yaşam</title>
+  </programme>
+  <programme start="20260601065200 +0300" stop="20260601071100 +0300" channel="tr.beingurme">
+    <title lang="tr">Lezzetin Ustaları S3 B79 Yaşam</title>
+  </programme>
+  <programme start="20260601071100 +0300" stop="20260601075200 +0300" channel="tr.beingurme">
+    <title lang="tr">4 Lezzet S1 B 5 Yaşam</title>
+  </programme>
+  <programme start="20260601075200 +0300" stop="20260601083200 +0300" channel="tr.beingurme">
+    <title lang="tr">Sofrada Buluşalım S1 B 3 Yaşam</title>
+  </programme>
+  <programme start="20260601083200 +0300" stop="20260601090600 +0300" channel="tr.beingurme">
+    <title lang="tr">İdil'le S2 B12 Yaşam</title>
+  </programme>
+  <programme start="20260601090600 +0300" stop="20260601094600 +0300" channel="tr.beingurme">
+    <title lang="tr">Ekmek Arası Muhabbet S1 B 10 Yaşam</title>
+  </programme>
+  <programme start="20260601094600 +0300" stop="20260601103100 +0300" channel="tr.beingurme">
+    <title lang="tr">Gastronomi Maceraları S7 B137 Yaşam</title>
+  </programme>
+  <programme start="20260601103100 +0300" stop="20260601111700 +0300" channel="tr.beingurme">
+    <title lang="tr">Hamur İşi S2 B6 Yaşam</title>
+  </programme>
+  <programme start="20260601111700 +0300" stop="20260601115600 +0300" channel="tr.beingurme">
+    <title lang="tr">Açık Ateş Başında S1 B7 Yaşam</title>
+  </programme>
+  <programme start="20260601115600 +0300" stop="20260601122700 +0300" channel="tr.beingurme">
+    <title lang="tr">Lezzetin Ustaları Avrupa S1 B1 Yaşam</title>
+  </programme>
+  <programme start="20260601122700 +0300" stop="20260601131200 +0300" channel="tr.beingurme">
+    <title lang="tr">Çiğdem'le Semt Pazarları S1 B10 Yaşam</title>
+  </programme>
+  <programme start="20260601131200 +0300" stop="20260601143600 +0300" channel="tr.beingurme">
+    <title lang="tr">Celal Arpat Ile Tarihi Lezzetler S2 B1 Yaşam</title>
+  </programme>
+  <programme start="20260601143600 +0300" stop="20260601151700 +0300" channel="tr.beingurme">
+    <title lang="tr">Sofrada Buluşalım S1 B 1 Yaşam</title>
+  </programme>
+  <programme start="20260601151700 +0300" stop="20260601155600 +0300" channel="tr.beingurme">
+    <title lang="tr">İdil'le S2 B14 Yaşam</title>
+  </programme>
+  <programme start="20260601155600 +0300" stop="20260601171700 +0300" channel="tr.beingurme">
+    <title lang="tr">Ekmek Arası Muhabbet S1 B 8 Yaşam</title>
+  </programme>
+  <programme start="20260601171700 +0300" stop="20260601175600 +0300" channel="tr.beingurme">
+    <title lang="tr">Nihan'ın Dünya Sofrası S1 B 5 Yaşam</title>
+  </programme>
+  <programme start="20260601175600 +0300" stop="20260601183200 +0300" channel="tr.beingurme">
+    <title lang="tr">Karadeniz Usulü S2 B 7 Yaşam</title>
+  </programme>
+  <programme start="20260601183200 +0300" stop="20260601203200 +0300" channel="tr.beingurme">
+    <title lang="tr">Ateşin Sırrı S1 B 13 Yaşam</title>
+  </programme>
+  <programme start="20260601203200 +0300" stop="20260601220700 +0300" channel="tr.beingurme">
+    <title lang="tr">Çiğdem'le Semt Pazarları S1 B10 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601220700 +0300" stop="20260601223600 +0300" channel="tr.beingurme">
+    <title lang="tr">4 Lezzet S1 B 2 Yaşam</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531005500 +0300" stop="20260531015500 +0300" channel="tr.beinhomeentertainment">
     <title lang="tr">Grand Designs S24 Ep 6 Yaşam</title>
@@ -4804,9 +4888,90 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
   <programme start="20260531200600 +0300" stop="20260531220600 +0300" channel="tr.beinhomeentertainment">
     <title lang="tr">Escape To The Country S31 Ep. 12 Yaşam</title>
   </programme>
-  <programme start="20260531220600 +0300" stop="20260601011000 +0300" channel="tr.beinhomeentertainment">
-    <title lang="tr">beIN Home Entertainment - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220600 +0300" stop="20260531230600 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Grand Designs S24 Ep 6 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260531230600 +0300" stop="20260601001100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep1 Yaşam</title>
+  </programme>
+  <programme start="20260601001100 +0300" stop="20260601011200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep2 Yaşam</title>
+  </programme>
+  <programme start="20260601011200 +0300" stop="20260601021300 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep3 Yaşam</title>
+  </programme>
+  <programme start="20260601021300 +0300" stop="20260601024100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 59 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601024100 +0300" stop="20260601031200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 60 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601031200 +0300" stop="20260601034200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 61 Yaşam</title>
+  </programme>
+  <programme start="20260601034200 +0300" stop="20260601041200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 62 Yaşam</title>
+  </programme>
+  <programme start="20260601041200 +0300" stop="20260601044100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 63 Yaşam</title>
+  </programme>
+  <programme start="20260601044100 +0300" stop="20260601051200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 64 Yaşam</title>
+  </programme>
+  <programme start="20260601051200 +0300" stop="20260601054200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 65 Yaşam</title>
+  </programme>
+  <programme start="20260601054200 +0300" stop="20260601061200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Everyday Gourmet S11 Ep 66 Yaşam</title>
+  </programme>
+  <programme start="20260601061200 +0300" stop="20260601071200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Escape To The Country S31 Ep. 11 Yaşam</title>
+  </programme>
+  <programme start="20260601071200 +0300" stop="20260601081200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Escape To The Country S31 Ep. 12 Yaşam</title>
+  </programme>
+  <programme start="20260601081200 +0300" stop="20260601091200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Jamie's 5 Ingredient Mediterranean Meals Ep 2 Yaşam</title>
+  </programme>
+  <programme start="20260601091200 +0300" stop="20260601101100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Jamie Oliver: Seasons S1 Ep 8 Yaşam</title>
+  </programme>
+  <programme start="20260601101100 +0300" stop="20260601111100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Jamie Oliver: Seasons S1 Ep 9 Yaşam</title>
+  </programme>
+  <programme start="20260601111100 +0300" stop="20260601121200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Grand Designs Sweden S1 Ep 1 Yaşam</title>
+  </programme>
+  <programme start="20260601121200 +0300" stop="20260601130700 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Grand Designs Sweden S1 Ep 2 Yaşam</title>
+  </programme>
+  <programme start="20260601130700 +0300" stop="20260601141100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep3 Yaşam</title>
+  </programme>
+  <programme start="20260601141100 +0300" stop="20260601151700 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep4 Yaşam</title>
+  </programme>
+  <programme start="20260601151700 +0300" stop="20260601162100 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep5 Yaşam</title>
+  </programme>
+  <programme start="20260601162100 +0300" stop="20260601171700 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Escape To The Country S31 Ep. 11 Yaşam</title>
+  </programme>
+  <programme start="20260601171700 +0300" stop="20260601191700 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Escape To The Country S31 Ep. 12 Yaşam</title>
+  </programme>
+  <programme start="20260601191700 +0300" stop="20260601201700 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Grand Designs S24 Ep 6 Yaşam</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601201700 +0300" stop="20260601212200 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep1 Yaşam</title>
+  </programme>
+  <programme start="20260601212200 +0300" stop="20260601220600 +0300" channel="tr.beinhomeentertainment">
+    <title lang="tr">Race Across The World S5 Ep2 Yaşam</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531004000 +0300" channel="tr.beiniz">
     <title lang="tr">Maceraperest Franziska S1 E 8</title>
@@ -4936,9 +5101,145 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">İstikamet Ege S2 B36</title>
     <category lang="tr">Belgesel</category>
   </programme>
-  <programme start="20260531222500 +0300" stop="20260601011000 +0300" channel="tr.beiniz">
-    <title lang="tr">beIN Iz - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531222500 +0300" stop="20260531230500 +0300" channel="tr.beiniz">
+    <title lang="tr">Maceraperest Franziska S1 E 8</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531230500 +0300" stop="20260531234000 +0300" channel="tr.beiniz">
+    <title lang="tr">Kesişen Kültürler S2 Ep3</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260531234000 +0300" stop="20260601004500 +0300" channel="tr.beiniz">
+    <title lang="tr">Akdeniz Rehberi S1 Ep 6</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601004500 +0300" stop="20260601012000 +0300" channel="tr.beiniz">
+    <title lang="tr">Gece Müzeciliği S1 Ep 2</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601012000 +0300" stop="20260601015500 +0300" channel="tr.beiniz">
+    <title lang="tr">Kalemimde Anadolu S1 Ep 4</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601015500 +0300" stop="20260601022600 +0300" channel="tr.beiniz">
+    <title lang="tr">Yolun Bittiği Yer S1 E 10</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601022600 +0300" stop="20260601030500 +0300" channel="tr.beiniz">
+    <title lang="tr">Bir Varmış Bir Yokmuş Anadolu S1 Ep10</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601030500 +0300" stop="20260601034000 +0300" channel="tr.beiniz">
+    <title lang="tr">Balkanlar S1 Ep9</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601034000 +0300" stop="20260601042000 +0300" channel="tr.beiniz">
+    <title lang="tr">İstanbul'un Yüzleri 53</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601042000 +0300" stop="20260601050000 +0300" channel="tr.beiniz">
+    <title lang="tr">Türkiye’nin Fotoğraf Rotaları S1 Ep 3</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601050000 +0300" stop="20260601054100 +0300" channel="tr.beiniz">
+    <title lang="tr">Farklı Rotalar 9</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601054100 +0300" stop="20260601061600 +0300" channel="tr.beiniz">
+    <title lang="tr">Beş Şehir 2</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601061600 +0300" stop="20260601064500 +0300" channel="tr.beiniz">
+    <title lang="tr">İstanbul'un Müzeleri S1 Ep6</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601064500 +0300" stop="20260601072500 +0300" channel="tr.beiniz">
+    <title lang="tr">Ne Halin Varsa Gez 4</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601072500 +0300" stop="20260601081000 +0300" channel="tr.beiniz">
+    <title lang="tr">Anadolu'nun Kadınları S1 Ep7</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601081000 +0300" stop="20260601084600 +0300" channel="tr.beiniz">
+    <title lang="tr">İstikamet Ege S2 B35</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601084600 +0300" stop="20260601092600 +0300" channel="tr.beiniz">
+    <title lang="tr">Bir Varmış Bir Yokmuş Anadolu S1 Ep11</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601092600 +0300" stop="20260601100600 +0300" channel="tr.beiniz">
+    <title lang="tr">Şehre Umut Verenler S1 Ep1</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601100600 +0300" stop="20260601104600 +0300" channel="tr.beiniz">
+    <title lang="tr">Sudaki İzler: Amerika S1 Ep6</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601104600 +0300" stop="20260601112500 +0300" channel="tr.beiniz">
+    <title lang="tr">Maceraperest Franziska S1 E 8</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601112500 +0300" stop="20260601121000 +0300" channel="tr.beiniz">
+    <title lang="tr">Gerçek Tarihin İzinde S3 Ep6</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601121000 +0300" stop="20260601124500 +0300" channel="tr.beiniz">
+    <title lang="tr">Mimarların Evleri S3 Ep 3</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601124500 +0300" stop="20260601132000 +0300" channel="tr.beiniz">
+    <title lang="tr">Suda Yaşayanlar S1 Ep 7</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601132000 +0300" stop="20260601140000 +0300" channel="tr.beiniz">
+    <title lang="tr">İmza Peyzajım S1 Ep 7</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601144100 +0300" channel="tr.beiniz">
+    <title lang="tr">Cenk &amp; Mike S1 Ep 7</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601144100 +0300" stop="20260601152000 +0300" channel="tr.beiniz">
+    <title lang="tr">Türkiye’nin Fotoğraf Rotaları S1 Ep 3</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601152000 +0300" stop="20260601160000 +0300" channel="tr.beiniz">
+    <title lang="tr">Bir Ege Hayali S1 Ep8</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601164600 +0300" channel="tr.beiniz">
+    <title lang="tr">Kesişen Kültürler S2 Ep4</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601164600 +0300" stop="20260601172600 +0300" channel="tr.beiniz">
+    <title lang="tr">Balkanlar S1 Ep9</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601172600 +0300" stop="20260601181100 +0300" channel="tr.beiniz">
+    <title lang="tr">Farklı Rotalar 9</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601181100 +0300" stop="20260601185000 +0300" channel="tr.beiniz">
+    <title lang="tr">Duyulan Şehirler S1 E 3</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601185000 +0300" stop="20260601205000 +0300" channel="tr.beiniz">
+    <title lang="tr">İstikamet Ege S2 B36</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601205000 +0300" stop="20260601213000 +0300" channel="tr.beiniz">
+    <title lang="tr">Maceraperest Franziska S1 E 8</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601213000 +0300" stop="20260601220500 +0300" channel="tr.beiniz">
+    <title lang="tr">Kesişen Kültürler S2 Ep3</title>
+    <category lang="tr">Belgesel</category>
+  </programme>
+  <programme start="20260601220500 +0300" stop="20260601222500 +0300" channel="tr.beiniz">
+    <title lang="tr">Akdeniz Rehberi S1 Ep 6</title>
+    <category lang="tr">Belgesel</category>
   </programme>
   <programme start="20260531004900 +0300" stop="20260531030000 +0300" channel="tr.beinmoviesaction2">
     <title lang="tr">Smile 2 (2024)</title>
@@ -4980,9 +5281,53 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Civil War (2024)</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531205500 +0300" stop="20260601011000 +0300" channel="tr.beinmoviesaction2">
-    <title lang="tr">beIN Movies Action 2 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531205500 +0300" stop="20260531230600 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Smile 2 (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531230600 +0300" stop="20260601010100 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Relay (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601010100 +0300" stop="20260601040600 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Ordinary Angels (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601040600 +0300" stop="20260601055400 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Poker Face (2022)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601055400 +0300" stop="20260601074100 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Best Christmas Pageant Ever, The (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601074100 +0300" stop="20260601092700 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">1992 (2022)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601092700 +0300" stop="20260601111700 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Painter, The (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601111700 +0300" stop="20260601130400 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Winter Spring Summer Or Fall (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601130400 +0300" stop="20260601150100 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Man With No Past (2025)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601150100 +0300" stop="20260601170100 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Civil War (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601170100 +0300" stop="20260601191200 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Smile 2 (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601191200 +0300" stop="20260601205500 +0300" channel="tr.beinmoviesaction2">
+    <title lang="tr">Relay (2024)</title>
+    <category lang="tr">Film</category>
   </programme>
   <programme start="20260531004900 +0300" stop="20260531030000 +0300" channel="tr.beinmoviespremiere">
     <title lang="tr">Smile 2 (2024)</title>
@@ -5024,9 +5369,53 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Civil War (2024)</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531205500 +0300" stop="20260601011000 +0300" channel="tr.beinmoviespremiere">
-    <title lang="tr">beIN Movies Premiere - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531205500 +0300" stop="20260531230600 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Smile 2 (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531230600 +0300" stop="20260601010100 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Relay (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601010100 +0300" stop="20260601040600 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Ordinary Angels (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601040600 +0300" stop="20260601055400 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Poker Face (2022)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601055400 +0300" stop="20260601074100 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Best Christmas Pageant Ever, The (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601074100 +0300" stop="20260601092700 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">1992 (2022)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601092700 +0300" stop="20260601111700 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Painter, The (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601111700 +0300" stop="20260601130400 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Winter Spring Summer Or Fall (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601130400 +0300" stop="20260601150100 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Man With No Past (2025)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601150100 +0300" stop="20260601170100 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Civil War (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601170100 +0300" stop="20260601191200 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Smile 2 (2024)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601191200 +0300" stop="20260601205500 +0300" channel="tr.beinmoviespremiere">
+    <title lang="tr">Relay (2024)</title>
+    <category lang="tr">Film</category>
   </programme>
   <programme start="20260531000100 +0300" stop="20260531015000 +0300" channel="tr.beinmoviesstars">
     <title lang="tr">From Dusk Till Dawn (1996)</title>
@@ -5076,9 +5465,61 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Nightcrawler (2014)</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531220000 +0300" stop="20260601011000 +0300" channel="tr.beinmoviesstars">
-    <title lang="tr">beIN Movies Stars - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220000 +0300" stop="20260531234900 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">From Dusk Till Dawn (1996)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531234900 +0300" stop="20260601012700 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Sleepless (2017)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601012700 +0300" stop="20260601033300 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Ghost (1990)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601033300 +0300" stop="20260601050600 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">The Little Prince (1974)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601050600 +0300" stop="20260601070700 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">The Gentlemen, The (</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601070700 +0300" stop="20260601085300 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Blue Water, White Death (1971)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601085300 +0300" stop="20260601101900 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">7 Chinese Bros (7 Chinese Brothers) (2015)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601101900 +0300" stop="20260601120500 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Venom: Let There Be Carnage (2021)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601120500 +0300" stop="20260601135400 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Assault On Wall Street (2013)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601135400 +0300" stop="20260601160200 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Super 8 (2011)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601160200 +0300" stop="20260601175900 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Galaxy Quest (1999)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601175900 +0300" stop="20260601195900 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Nightcrawler (2014)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601195900 +0300" stop="20260601214800 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">From Dusk Till Dawn (1996)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601214800 +0300" stop="20260601220000 +0300" channel="tr.beinmoviesstars">
+    <title lang="tr">Sleepless (2017)</title>
+    <category lang="tr">Film</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531013700 +0300" channel="tr.beinmoviesturk">
     <title lang="tr">Uçuş 811</title>
@@ -5132,9 +5573,65 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Anons</title>
     <category lang="tr">Film</category>
   </programme>
-  <programme start="20260531221400 +0300" stop="20260601011000 +0300" channel="tr.beinmoviesturk">
-    <title lang="tr">beIN Movies Turk - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531221400 +0300" stop="20260531235100 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Uçuş 811</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260531235100 +0300" stop="20260601013500 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Bucur</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601013500 +0300" stop="20260601031700 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Gırgıriye'de Büyük Seçim</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601031700 +0300" stop="20260601054800 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Organize İşler: Sazan Sarmalı</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601054800 +0300" stop="20260601072800 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Dugum Salonu (2018)</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601072800 +0300" stop="20260601080600 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Afişteki Yeşilçam S1 Ep3</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601080600 +0300" stop="20260601084100 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Afişteki Yeşilçam S1 Ep4</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601084100 +0300" stop="20260601104500 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Eksi Elmalar</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601104500 +0300" stop="20260601123700 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Kurtuluş: Son Durak</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601123700 +0300" stop="20260601143800 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Vizontele</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601143800 +0300" stop="20260601163000 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Berlin Kaplani</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601163000 +0300" stop="20260601182800 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Sağ Salim 3: Ölü Ya Da Diri</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601182800 +0300" stop="20260601202800 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Anons</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601202800 +0300" stop="20260601220500 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Uçuş 811</title>
+    <category lang="tr">Film</category>
+  </programme>
+  <programme start="20260601220500 +0300" stop="20260601221400 +0300" channel="tr.beinmoviesturk">
+    <title lang="tr">Bucur</title>
+    <category lang="tr">Film</category>
   </programme>
   <programme start="20260531000100 +0300" stop="20260531010000 +0300" channel="tr.beinseries1">
     <title lang="tr">Dexter: Resurrection S1 Ep6</title>
@@ -5220,9 +5717,101 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Lord Of The Flies S1 Ep 3</title>
     <category lang="tr">Dizi</category>
   </programme>
-  <programme start="20260531220000 +0300" stop="20260601011000 +0300" channel="tr.beinseries1">
-    <title lang="tr">beIN Series 1 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220000 +0300" stop="20260531225900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Dexter: Resurrection S1 Ep6</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531225900 +0300" stop="20260531235900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Dexter: Resurrection S1 Ep7</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531235900 +0300" stop="20260601005900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Dexter: Resurrection S1 Ep8</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601005900 +0300" stop="20260601015900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Chicago Pd S13 Ep 11</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601015900 +0300" stop="20260601025900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Chicago Pd S13 Ep 12</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601025900 +0300" stop="20260601035900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Star Trek: Strange New Worlds S3 Ep 7</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601035900 +0300" stop="20260601050000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Star Trek: Strange New Worlds S3 Ep 8</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601050000 +0300" stop="20260601060000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Star Trek: Strange New Worlds S3 Ep 9</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601065900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Star Trek: Strange New Worlds S3 Ep 10</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601065900 +0300" stop="20260601080000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Fbi S8 Ep 22</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601090000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Murdoch Mysteries - S17 Ep 12</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601090000 +0300" stop="20260601100000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Murdoch Mysteries - S17 Ep 13</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601110000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Chicago Pd S13 Ep 14</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601110000 +0300" stop="20260601120000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Chicago Pd S13 Ep 15</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601125900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Happy Face S1 Ep 8</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601125900 +0300" stop="20260601135900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Cia S1 Ep 12</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601135900 +0300" stop="20260601150000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Ncis: Tony &amp; Ziva S1 Ep 7</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601150000 +0300" stop="20260601160000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Ncis: Tony &amp; Ziva S1 Ep 8</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601170000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Ncis: Tony &amp; Ziva S1 Ep 9</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601170000 +0300" stop="20260601175900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Sheriff Country S1 Ep 20</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601175900 +0300" stop="20260601195900 +0300" channel="tr.beinseries1">
+    <title lang="tr">Lord Of The Flies S1 Ep 3</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601195900 +0300" stop="20260601205800 +0300" channel="tr.beinseries1">
+    <title lang="tr">Dexter: Resurrection S1 Ep6</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601205800 +0300" stop="20260601215800 +0300" channel="tr.beinseries1">
+    <title lang="tr">Dexter: Resurrection S1 Ep7</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601215800 +0300" stop="20260601220000 +0300" channel="tr.beinseries1">
+    <title lang="tr">Dexter: Resurrection S1 Ep8</title>
+    <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531010100 +0300" channel="tr.beinseries2">
     <title lang="tr">Law &amp; Order ('21) S5 Ep 16</title>
@@ -5308,9 +5897,97 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Narrow Road To The Deep North, The S1 Ep 2</title>
     <category lang="tr">Dizi</category>
   </programme>
-  <programme start="20260531220000 +0300" stop="20260601011000 +0300" channel="tr.beinseries2">
-    <title lang="tr">beIN Series 2 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220000 +0300" stop="20260531230100 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 16</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260531230100 +0300" stop="20260601000000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 17</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601010000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 18</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601010000 +0300" stop="20260601020100 +0300" channel="tr.beinseries2">
+    <title lang="tr">Grosse Pointe Garden Society S1 Ep 11</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601020100 +0300" stop="20260601030000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Grosse Pointe Garden Society S1 Ep 12</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601030000 +0300" stop="20260601040000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Grosse Pointe Garden Society S1 Ep 13</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601050000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Doc S2 Ep 11</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601050000 +0300" stop="20260601060000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Doc S2 Ep 12</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601070100 +0300" channel="tr.beinseries2">
+    <title lang="tr">Doc S2 Ep 13</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601070100 +0300" stop="20260601080000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Fire Country S4 Ep 20</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601090000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Elsbeth S3 Ep 20</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601090000 +0300" stop="20260601100000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Chicago Med S11 Ep 12</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601110000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Chicago Med S11 Ep 13</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601110000 +0300" stop="20260601120100 +0300" channel="tr.beinseries2">
+    <title lang="tr">Miniature Wife, The S1 B7</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601120100 +0300" stop="20260601130000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 19</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601130000 +0300" stop="20260601140000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 20</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601150000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Grosse Pointe Garden Society S1 Ep 13</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601150000 +0300" stop="20260601160000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Apples Never Fall S1 Ep 1</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601170000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Apples Never Fall S1 Ep 2</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601170000 +0300" stop="20260601180000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Narrow Road To The Deep North, The S1 Ep 1</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Narrow Road To The Deep North, The S1 Ep 2</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601210100 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 16</title>
+    <category lang="tr">Dizi</category>
+  </programme>
+  <programme start="20260601210100 +0300" stop="20260601220000 +0300" channel="tr.beinseries2">
+    <title lang="tr">Law &amp; Order ('21) S5 Ep 17</title>
+    <category lang="tr">Dizi</category>
   </programme>
   <programme start="20260531003000 +0300" stop="20260531021500 +0300" channel="tr.beinsports1">
     <title lang="tr">T.konyaspor - Kocaelispor</title>
@@ -5374,9 +6051,72 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Uğurcan Çakır Kurtarış Top 20 (25-26)</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531224600 +0300" stop="20260601011000 +0300" channel="tr.beinsports1">
-    <title lang="tr">beIN Sports 1 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531224600 +0300" stop="20260601003100 +0300" channel="tr.beinsports1">
+    <title lang="tr">T.konyaspor - Kocaelispor</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta T.konyaspor - Kocaelispor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601003100 +0300" stop="20260601021600 +0300" channel="tr.beinsports1">
+    <title lang="tr">Z.kayserispor - Samsunspor</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta Z.kayserispor - Samsunspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601021600 +0300" stop="20260601041600 +0300" channel="tr.beinsports1">
+    <title lang="tr">Gaziantep F.k. - H.antalyaspor</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta Gaziantep F.k. - H.antalyaspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601041600 +0300" stop="20260601061600 +0300" channel="tr.beinsports1">
+    <title lang="tr">C.alanyaspor - Göztepe</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta C.alanyaspor - Göztepe Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601061600 +0300" stop="20260601081600 +0300" channel="tr.beinsports1">
+    <title lang="tr">İ.eyüpspor - Kasımpaşa</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta İ.eyüpspor - Kasımpaşa Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601081600 +0300" stop="20260601101700 +0300" channel="tr.beinsports1">
+    <title lang="tr">T.konyaspor - Kocaelispor</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta T.konyaspor - Kocaelispor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601101700 +0300" stop="20260601121600 +0300" channel="tr.beinsports1">
+    <title lang="tr">Beşiktaş - Gençlerbirliği</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta Beşiktaş - Gençlerbirliği Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601121600 +0300" stop="20260601141600 +0300" channel="tr.beinsports1">
+    <title lang="tr">Fenerbahçe - M.f.karagümrük</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta Fenerbahçe - M.f.karagümrük Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601141600 +0300" stop="20260601161700 +0300" channel="tr.beinsports1">
+    <title lang="tr">R.başakşehir F.k. - Galatasaray</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta R.başakşehir F.k. - Galatasaray Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601161700 +0300" stop="20260601181800 +0300" channel="tr.beinsports1">
+    <title lang="tr">Ç.rizespor - Trabzonspor</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta Ç.rizespor - Trabzonspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601181800 +0300" stop="20260601184700 +0300" channel="tr.beinsports1">
+    <title lang="tr">Konyaspor (25-26) Sezonu Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601184700 +0300" stop="20260601190200 +0300" channel="tr.beinsports1">
+    <title lang="tr">Kocaelispor (25-26) Sezonu Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601190200 +0300" stop="20260601210200 +0300" channel="tr.beinsports1">
+    <title lang="tr">Uğurcan Çakır Kurtarış Top 20 (25-26)</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601210200 +0300" stop="20260601224600 +0300" channel="tr.beinsports1">
+    <title lang="tr">T.konyaspor - Kocaelispor</title>
+    <desc lang="tr">Trendyol Süper Lig Season 2025/2026 9. Hafta T.konyaspor - Kocaelispor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531014500 +0300" channel="tr.beinsports2">
     <title lang="tr">Bandırmaspor - A.g.pendikspor</title>
@@ -5473,9 +6213,109 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.ümraniyespor - Serikspor Maçı Bant -</desc>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531220000 +0300" stop="20260601011000 +0300" channel="tr.beinsports2">
-    <title lang="tr">beIN Sports 2 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220000 +0300" stop="20260531234500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Bandırmaspor - A.g.pendikspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Bandırmaspor - A.g.pendikspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260531234500 +0300" stop="20260601000000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601014500 +0300" channel="tr.beinsports2">
+    <title lang="tr">E.erokspor - İ.a.vanspor Fk</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.erokspor - İ.a.vanspor Fk Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601014500 +0300" stop="20260601020000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601034500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Erzurumspor Fk - Amed S.f.</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Erzurumspor Fk - Amed S.f. Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601034500 +0300" stop="20260601040000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601054500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Boluspor - S.g.sarıyerspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Boluspor - S.g.sarıyerspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601054500 +0300" stop="20260601060000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601074500 +0300" channel="tr.beinsports2">
+    <title lang="tr">E.ümraniyespor - Serikspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.ümraniyespor - Serikspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601074500 +0300" stop="20260601080000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601094500 +0300" channel="tr.beinsports2">
+    <title lang="tr">A.h.iğdır Fk - Sakaryaspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta A.h.iğdır Fk - Sakaryaspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601094500 +0300" stop="20260601100000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601114500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Bandırmaspor - A.g.pendikspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Bandırmaspor - A.g.pendikspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601114500 +0300" stop="20260601120000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601134500 +0300" channel="tr.beinsports2">
+    <title lang="tr">E.erokspor - İ.a.vanspor Fk</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.erokspor - İ.a.vanspor Fk Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601134500 +0300" stop="20260601140000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601154500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Erzurumspor Fk - Amed S.f.</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Erzurumspor Fk - Amed S.f. Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601154500 +0300" stop="20260601160000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601174500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Boluspor - S.g.sarıyerspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Boluspor - S.g.sarıyerspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601174500 +0300" stop="20260601180000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.beinsports2">
+    <title lang="tr">E.ümraniyespor - Serikspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta E.ümraniyespor - Serikspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601214500 +0300" channel="tr.beinsports2">
+    <title lang="tr">Bandırmaspor - A.g.pendikspor</title>
+    <desc lang="tr">Trendyol 1. Lig Season 2025/2026 21. Hafta Bandırmaspor - A.g.pendikspor Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601214500 +0300" stop="20260601220000 +0300" channel="tr.beinsports2">
+    <title lang="tr">21. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.beinsports3">
     <title lang="tr">Chelsea - Fulham</title>
@@ -5532,9 +6372,65 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Nott'm Forest - West Ham Utd Maçı Bant -</desc>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531220100 +0300" stop="20260601011000 +0300" channel="tr.beinsports3">
-    <title lang="tr">beIN Sports 3 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220100 +0300" stop="20260601000100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Chelsea - Fulham</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Chelsea - Fulham Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601000100 +0300" stop="20260601020100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Man.utd - Burnley</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Man.utd - Burnley Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601020100 +0300" stop="20260601040100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Wolves - Everton</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Wolves - Everton Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601040100 +0300" stop="20260601060100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Brighton - Man.city</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Brighton - Man.city Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601060100 +0300" stop="20260601080100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Nott'm Forest - West Ham Utd</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Nott'm Forest - West Ham Utd Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601080100 +0300" stop="20260601100100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Liverpool - Arsenal</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Liverpool - Arsenal Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601100100 +0300" stop="20260601120100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Chelsea - Fulham</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Chelsea - Fulham Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601120100 +0300" stop="20260601140100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Man.utd - Burnley</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Man.utd - Burnley Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601140100 +0300" stop="20260601160100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Wolves - Everton</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Wolves - Everton Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601160100 +0300" stop="20260601180200 +0300" channel="tr.beinsports3">
+    <title lang="tr">Brighton - Man.city</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Brighton - Man.city Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601180200 +0300" stop="20260601200200 +0300" channel="tr.beinsports3">
+    <title lang="tr">Nott'm Forest - West Ham Utd</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Nott'm Forest - West Ham Utd Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601200200 +0300" stop="20260601220100 +0300" channel="tr.beinsports3">
+    <title lang="tr">Chelsea - Fulham</title>
+    <desc lang="tr">İngiltere Premier Lig Season 2025/2026 3. Hafta Chelsea - Fulham Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531014500 +0300" channel="tr.beinsports4">
     <title lang="tr">Lorient - Paris Sg</title>
@@ -5634,9 +6530,112 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nantes - Monaco Maçı Bant -</desc>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531220200 +0300" stop="20260601011000 +0300" channel="tr.beinsports4">
-    <title lang="tr">beIN Sports 4 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531220200 +0300" stop="20260531234700 +0300" channel="tr.beinsports4">
+    <title lang="tr">Lorient - Paris Sg</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Lorient - Paris Sg Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260531234700 +0300" stop="20260601000200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601000200 +0300" stop="20260601014700 +0300" channel="tr.beinsports4">
+    <title lang="tr">Nice - Lille</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nice - Lille Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601014700 +0300" stop="20260601020200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601020200 +0300" stop="20260601034800 +0300" channel="tr.beinsports4">
+    <title lang="tr">Metz - Lens</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Metz - Lens Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601034800 +0300" stop="20260601034900 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601034900 +0300" stop="20260601040300 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601040300 +0300" stop="20260601054800 +0300" channel="tr.beinsports4">
+    <title lang="tr">Marseille - Angers</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Marseille - Angers Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601054800 +0300" stop="20260601060200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601060200 +0300" stop="20260601074800 +0300" channel="tr.beinsports4">
+    <title lang="tr">Nantes - Monaco</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nantes - Monaco Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601074800 +0300" stop="20260601080200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601080200 +0300" stop="20260601094900 +0300" channel="tr.beinsports4">
+    <title lang="tr">Mcdonald's Ligue 1 Season 2025/2026 Play - Out Rövanş Nice - Saint Etienne Maçı Bant</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601094900 +0300" stop="20260601100300 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601100300 +0300" stop="20260601114700 +0300" channel="tr.beinsports4">
+    <title lang="tr">Lorient - Paris Sg</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Lorient - Paris Sg Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601114700 +0300" stop="20260601120200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601120200 +0300" stop="20260601134700 +0300" channel="tr.beinsports4">
+    <title lang="tr">Nice - Lille</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nice - Lille Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601134700 +0300" stop="20260601140200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601140200 +0300" stop="20260601154900 +0300" channel="tr.beinsports4">
+    <title lang="tr">Metz - Lens</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Metz - Lens Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601154900 +0300" stop="20260601160300 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601160300 +0300" stop="20260601174900 +0300" channel="tr.beinsports4">
+    <title lang="tr">Marseille - Angers</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Marseille - Angers Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601174900 +0300" stop="20260601180400 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601180400 +0300" stop="20260601200400 +0300" channel="tr.beinsports4">
+    <title lang="tr">Nantes - Monaco</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Nantes - Monaco Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601200400 +0300" stop="20260601214900 +0300" channel="tr.beinsports4">
+    <title lang="tr">Lorient - Paris Sg</title>
+    <desc lang="tr">Mcdonald's Ligue 1 Season 2025/2026 10. Hafta Lorient - Paris Sg Maçı Bant -</desc>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601214900 +0300" stop="20260601220200 +0300" channel="tr.beinsports4">
+    <title lang="tr">10. Haftanın Golleri</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531014500 +0300" channel="tr.beinsports5">
     <title lang="tr">Beşiktaş - Galatasaray</title>
@@ -5686,9 +6685,57 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <title lang="tr">Çeyrek Finaller</title>
     <category lang="tr">Spor</category>
   </programme>
-  <programme start="20260531221500 +0300" stop="20260601011000 +0300" channel="tr.beinsports5">
-    <title lang="tr">beIN Sports 5 - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260531221500 +0300" stop="20260601000000 +0300" channel="tr.beinsports5">
+    <title lang="tr">Beşiktaş - Galatasaray</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.beinsports5">
+    <title lang="tr">Premier PADEL</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601041500 +0300" channel="tr.beinsports5">
+    <title lang="tr">Premier PADEL</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601041500 +0300" stop="20260601042200 +0300" channel="tr.beinsports5">
+    <title lang="tr">Madrid Maratonu</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601042200 +0300" stop="20260601071600 +0300" channel="tr.beinsports5">
+    <title lang="tr">Madrid Maratonu</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601071600 +0300" stop="20260601074500 +0300" channel="tr.beinsports5">
+    <title lang="tr">Sailing To The Games</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601074500 +0300" stop="20260601101500 +0300" channel="tr.beinsports5">
+    <title lang="tr">Ferrari Challenge</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601101500 +0300" stop="20260601131600 +0300" channel="tr.beinsports5">
+    <title lang="tr">European Le Mans</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601131600 +0300" stop="20260601150000 +0300" channel="tr.beinsports5">
+    <title lang="tr">Trabzonspor - Bahçeşehir</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601150000 +0300" stop="20260601164500 +0300" channel="tr.beinsports5">
+    <title lang="tr">Türk Telekom - Anadolu Efes</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601164500 +0300" stop="20260601183000 +0300" channel="tr.beinsports5">
+    <title lang="tr">Erokspor - Fenerbahçe</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601183000 +0300" stop="20260601203000 +0300" channel="tr.beinsports5">
+    <title lang="tr">Çeyrek Finaller</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601203000 +0300" stop="20260601221500 +0300" channel="tr.beinsports5">
+    <title lang="tr">Beşiktaş - Galatasaray</title>
+    <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531003000 +0300" channel="tr.beinsportshaber">
     <title lang="tr">Skor</title>
@@ -5767,9 +6814,82 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
   <programme start="20260531214500 +0300" stop="20260601000000 +0300" channel="tr.beinsportshaber">
     <title lang="tr">Skor</title>
   </programme>
-  <programme start="20260601000000 +0300" stop="20260601011000 +0300" channel="tr.beinsportshaber">
-    <title lang="tr">beIN Sports Haber - Gece Yayını</title>
-    <desc lang="tr">Güncel yayın bilgisi bir sonraki güncellemede gelecek.</desc>
+  <programme start="20260601000000 +0300" stop="20260601003000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Skor</title>
+  </programme>
+  <programme start="20260601003000 +0300" stop="20260601011500 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Trendyol Süper Lig Maç Özetleri</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601011500 +0300" stop="20260601034500 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Skor</title>
+  </programme>
+  <programme start="20260601034500 +0300" stop="20260601043000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Trendyol Süper Lig Maç Özetleri</title>
+  </programme>
+  <programme start="20260601043000 +0300" stop="20260601060000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Skor</title>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601070000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Skor</title>
+  </programme>
+  <programme start="20260601070000 +0300" stop="20260601080000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Sail GP</title>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601090000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Geçmişten Günümüze</title>
+  </programme>
+  <programme start="20260601090000 +0300" stop="20260601091500 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Derbi Haftası</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601091500 +0300" stop="20260601093000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Derbi Klip</title>
+  </programme>
+  <programme start="20260601093000 +0300" stop="20260601100000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Derbi Analiz</title>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601110000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">beIN Sabah</title>
+  </programme>
+  <programme start="20260601110000 +0300" stop="20260601113000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Derbi Günü</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601113000 +0300" stop="20260601120000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Kadro Tercihi</title>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601130000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Geçmişten Günümüze</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601130000 +0300" stop="20260601140000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">İki Yıldız</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601140000 +0300" stop="20260601180000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Lig Merkezi</title>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601190000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Ana Haber</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601190000 +0300" stop="20260601200000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Ana Haber</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601210000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Bein Garaj</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601210000 +0300" stop="20260601211500 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Coupe De France Goller</title>
+  </programme>
+  <programme start="20260601211500 +0300" stop="20260601214500 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Premier League Stories</title>
+  </programme>
+  <programme start="20260601214500 +0300" stop="20260602000000 +0300" channel="tr.beinsportshaber">
+    <title lang="tr">Skor</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531020000 +0300" channel="tr.beinsportsmax1">
     <title lang="tr">Bein Sports Max 1</title>
@@ -5816,6 +6936,58 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601133000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601133000 +0300" stop="20260601143000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Formula Regional European...</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601143000 +0300" stop="20260601160000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Gt World Challenge Europe</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601180000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.beinsportsmax1">
+    <title lang="tr">Bein Sports Max 1</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.beinsportsmax1">
     <title lang="tr">Bein Sports Max 1</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -5872,6 +7044,62 @@ Asporça'nın saraya dönüşü dengeleri değiştirirken, Sultan Orhan'ın İzn
     <category lang="tr">Spor</category>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531220000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260531220000 +0300" stop="20260601000000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601000000 +0300" stop="20260601020000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601020000 +0300" stop="20260601040000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601040000 +0300" stop="20260601060000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601060000 +0300" stop="20260601080000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601080000 +0300" stop="20260601100000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601100000 +0300" stop="20260601120000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601120000 +0300" stop="20260601121500 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601121500 +0300" stop="20260601145000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Fia European Truck Racing...</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601145000 +0300" stop="20260601160000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Fia European Truck Racing...</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601160000 +0300" stop="20260601170000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601170000 +0300" stop="20260601180000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601180000 +0300" stop="20260601200000 +0300" channel="tr.beinsportsmax2">
+    <title lang="tr">Bein Sports Max 2</title>
+    <category lang="tr">Spor</category>
+  </programme>
+  <programme start="20260601200000 +0300" stop="20260601220000 +0300" channel="tr.beinsportsmax2">
     <title lang="tr">Bein Sports Max 2</title>
     <category lang="tr">Spor</category>
   </programme>
@@ -11105,7 +12333,7 @@ Tolga, zengin bir ailenin varisi olarak aileyi kurtaracak tek çare gibi görün
     <title lang="tr">Joachim Beuckelaer. the Four Elements •</title>
   </programme>
   <programme start="20260531233800 +0300" stop="20260531234200 +0300" channel="tr.classicalharmony">
-    <title lang="tr">The Spanish Wedding. Mariano Fortuny</title>
+    <title lang="tr">The Spanish Wedding. Mariano Fortuny •</title>
   </programme>
   <programme start="20260531234200 +0300" stop="20260531234500 +0300" channel="tr.classicalharmony">
     <title lang="tr">At the Masquerade. Charles Hermans</title>
@@ -12051,10 +13279,10 @@ Dünyada ve Türkiye'de olup biten tüm gelişmeler Ana Haber'de izleyicilere su
     <title lang="tr">Freeride Dünya Turu</title>
   </programme>
   <programme start="20260531200000 +0300" stop="20260531234000 +0300" channel="tr.cosmosports">
-    <title lang="tr">Fight Exclusive Night •</title>
+    <title lang="tr">Fight Exclusive Night</title>
   </programme>
   <programme start="20260531234000 +0300" stop="20260601014000 +0300" channel="tr.cosmosports">
-    <title lang="tr">Kralların Kralı Kahramanlar Serisi</title>
+    <title lang="tr">Kralların Kralı Kahramanlar Serisi •</title>
   </programme>
   <programme start="20260531000000 +0300" stop="20260531002000 +0300" channel="tr.davinci">
     <title lang="tr">Bilimi Kendin Yap: Bilim Sanatı</title>
@@ -37406,7 +38634,7 @@ Burak Akkul'un hazırlayıp sunduğu Çok Gezenti ile ülke ülke gezip nerede n
     <title lang="tr">Alfred &amp; Wilfred •</title>
   </programme>
   <programme start="20260531234300 +0300" stop="20260531234700 +0300" channel="tr.tinyteentv">
-    <title lang="tr">Sing&amp;Spell</title>
+    <title lang="tr">Sing&amp;Spell •</title>
   </programme>
   <programme start="20260531234700 +0300" stop="20260531235900 +0300" channel="tr.tinyteentv">
     <title lang="tr">Life Around Kids</title>
