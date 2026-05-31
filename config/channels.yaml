@@ -1,0 +1,67 @@
+# ============================================================
+# KANAL YAPILANDIRMASI
+# ------------------------------------------------------------
+# Her kanal için:
+#   <tvg-id>:
+#     name: "Oynatıcıda görünecek ad"
+#     sources: [ "<adapter>:<kaynak-id>", ... ]   # ÖNCELİK SIRASI
+#
+# tvg-id: M3U dosyandaki tvg-id ile BİREBİR aynı olmalı.
+#         M3U yoksa istediğini uydur (örn. tr.startv) ama M3U'da da aynısını kullan.
+#
+# Kaynak id biçimleri:
+#   tvplus:<slug>            örn. tvplus:star-tv-hd--89
+#   tivibu:<chID>            örn. tivibu:ch00000000000000001170
+#   tvyayinakisi:<slug>      örn. tvyayinakisi:star-tv   (URL: /{slug}-yayin-akisi/)
+#   digiturkburada:<slug-id> örn. digiturkburada:bein-sports-1-hd-yayin-akisi-60
+#
+# Öncelik: liste[0]=birincil (zengin), sonrakiler boşlukları doldurur.
+# ============================================================
+
+channels:
+
+  tr.trt1:
+    name: "TRT 1"
+    sources:
+      - tvplus:trt1-hd--144
+      - tivibu:ch00000000000000001266
+      - tvyayinakisi:trt-1
+
+  tr.startv:
+    name: "Star TV"
+    sources:
+      - tvplus:star-tv-hd--89
+      - tivibu:ch00000000000000001170
+      - tvyayinakisi:star-tv
+
+  tr.kanald:
+    name: "Kanal D"
+    sources:
+      - tvplus:kanal-d-hd--88
+      - tivibu:ch00000000000000001166
+      - tvyayinakisi:kanal-d
+
+  # beIN: TV+/Tivibu taşımıyor -> tvyayinakisi birincil, digiturk yedek
+  tr.beinsports1:
+    name: "beIN Sports 1"
+    sources:
+      - tvyayinakisi:bein-sports-1
+      - digiturkburada:bein-sports-1-hd-yayin-akisi-60
+
+  tr.ssport:
+    name: "S Sport"
+    sources:
+      - tvplus:s-sport--11
+      - tivibu:ch00000000000000001227
+      - tvyayinakisi:s-sport
+
+  # Tivibu'ya özel — sadece Tivibu'dan gelir
+  tr.tivibuspor1:
+    name: "Tivibu Spor 1"
+    sources:
+      - tivibu:ch00000000000000001356
+
+  # Hiç kaynağı olmayan kanal örneği -> placeholder üretilir
+  tr.ornek_kaynaksiz:
+    name: "Örnek Kanal (kaynaksız)"
+    sources: []
