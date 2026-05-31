@@ -12,8 +12,11 @@ from typing import List
 from models import Programme
 
 
-def _gaps(progs: List[Programme]):
-    """Sıralı programlar arasındaki (start, stop) boşluklarını döndür."""
+def _gaps(progs: List[Programme], far_future=None):
+    """Sıralı programlar arasındaki boşlukları döndür.
+    Son programdan sonraki boşluğu da döndürür (far_future'a kadar).
+    """
+    from datetime import timedelta
     progs = sorted(progs, key=lambda p: p.start)
     gaps = []
     cursor = None
@@ -24,6 +27,10 @@ def _gaps(progs: List[Programme]):
         if p.start > cursor:
             gaps.append((cursor, p.start))
         cursor = max(cursor, p.stop)
+    # Son programdan sonraki boşluk
+    if cursor is not None:
+        end = far_future or (cursor + timedelta(days=14))
+        gaps.append((cursor, end))
     return gaps, progs
 
 
