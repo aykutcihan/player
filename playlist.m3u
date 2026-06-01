@@ -27,7 +27,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Ulusal",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Ulusal",Halk TV
-https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?sid=78fvpcjm6ehr&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
+https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 #EXTINF:-1 tvg-id="tr.htspor" group-title="Ulusal",HT Spor
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanal23" group-title="Ulusal",Kanal 23
@@ -108,7 +108,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Ulusal",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Ulusal",Halk TV
-https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?sid=78fvpcjm6ehr&app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
+https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 #EXTINF:-1 tvg-id="tr.htspor" group-title="Ulusal",HT Spor
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanal23" group-title="Ulusal",Kanal 23
