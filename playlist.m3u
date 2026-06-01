@@ -201,7 +201,7 @@ https://cdn501.kavuntv.net/tgrthaber.m3u8?tkn=aoshXfPjDv4Rbz
 #EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=bYgqeqBTj4bWwcQsoIfMlw&e=1780394093
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=hs5lmTMtP5tPlWadV7fUTw&e=1780394439
 #EXTINF:-1 tvg-id="tr.beinsports1" group-title="Spor",beIN Sports 1
 https://2i4.d72577a9dd0ec71.cfd/zirve/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports2" group-title="Spor",beIN Sports 2
@@ -257,7 +257,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=bYgqeqBTj4bWwcQsoIfMlw&e=1780394093
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=hs5lmTMtP5tPlWadV7fUTw&e=1780394439
 #EXTINF:-1 tvg-id="tr.beinsports1" group-title="Spor",beIN Sports 1
 https://2i4.d72577a9dd0ec71.cfd/zirve/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports2" group-title="Spor",beIN Sports 2
@@ -767,7 +767,7 @@ https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protoc
 
 # ── YEREL (112 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.apara" group-title="Yerel",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=gcFNwKTQoVnFOTzz1XYipA&e=1780394094
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=8cd6pRp2jJzmrJTN7fPOYg&e=1780394439
 #EXTINF:-1 tvg-id="tr.ciftcitv" group-title="Yerel",Ciftci TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",BURDUR KANAL-15
@@ -810,7 +810,7 @@ https://cdn508.tvkulesi.com/ulketv.m3u8?tkn=j4VZ-8j7EJiJgQvFmnby3A&tms=178035668
 https://cdn507.kavuntv.net/ulketv.m3u8?tkn=S7Py-jR10ZRIKvNpa
 
 #EXTINF:-1 tvg-id="tr.ekoturk" group-title="Haber",Ekoturk
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780370497/ei/4fcdaqeDOcyL6dsPloXA6Qw/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwqyg8ImGY4D3DEo2GYa83a54whQDydMTWXKsmoy_0dMF-baV8VDJui08_pUKbw4pnbG_OWwRBgu/spc/96Xrvzz7aKMMDpnmwKTbxCd-6R8IegPeLgKwwafUjB2a6xq8FQ/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4002500/met/1780348898,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,51565682/mt/1780348602/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgIFdemPwhi37SjgrJyy1_t0jK00snnh3Yyfl8dDUEOeMCIBLq0HmTRu5uFCwrf9wKEqonfdcag2qqn9uzXgu_yQeG/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAOvcPdd4fgVMEDpMYpDLipR72-TejvgAlQY1elx2Ma--AiEAp0w3lwF96oHLSQnx_P6xE5zF90d2FvGfQI8Zh5IwTDk%3D/playlist/index.m3u8
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780370844/ei/PPkdapOhKr69zPsP57biyAg/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwqkwvUOTO3QGsqDEo5y7Tz9TVpMAd0swS9A7GMgSHNCkzDb4JZ4W010NrQdzQjzXgWdG1bSE9Ow/spc/96Xrv0qpA74kKOdhfFBT7noKvWSosNJzy_JrXzZNeLx2W7euQA/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4002500/met/1780349244,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pcm2cms/yes/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565682,51946837/mt/1780348602/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRgIhAK2ZkRBkr1aZHeLNO6wliY4xAwC0ib9v8vNkwgc3CgZyAiEA8m_cOdey1_IDzPA8jtMd6su0of1qQrz4nAoOEg0qhVo%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pcm2cms,pl,rms/lsig/APaTxxMwRAIgT0CrDKtAPC2E6KZqBLuTn2o8ruN57pd4EqO24eIXMqkCIDSAM_L-ubB9TEL2Rg2Al4gFoAjEYgbbF6CH69Lg8mdN/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber (v-kavu)
@@ -851,11 +851,11 @@ http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/4e98253f-f791-42da-8497-51e821dde886.png" group-title="Yerel",FİNANSTÜRK
 https://yayin30.haber100.com/live/finansturk/chunklist_w377520896.m3u8
 #EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=gcFNwKTQoVnFOTzz1XYipA&e=1780394094
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=qaa5bZElYjxvcHdo2n3qFg&e=1780394440
 #EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para (v-kavu)
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=gcFNwKTQoVnFOTzz1XYipA&e=1780394094
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=qaa5bZElYjxvcHdo2n3qFg&e=1780394440
 #EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para (v-tvku)
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=DaoIB7xBkCym7T9EizXZ6Q&e=1780394095
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=CdecRQnIPk9FpHqEiUwPrA&e=1780394441
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Haber",KRT TV
 https://live.artidijitalmedya.com/artidijital_grt/grt/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Haber",KRT Tv (v-kavu)
@@ -865,11 +865,11 @@ https://cdn505.tvkulesi.com/krttv.m3u8?tkn=YwGcbxuokCM9qBb24qy_Uw&tms=1780357560
 
 # ── SPOR (40 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=j1EnLGU4t4L0HWhQ30o9ug&e=1780394095
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=kqtT94fNO0aJ8v4w3jl9kw&e=1780394441
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor (v-kavu)
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=rCRYmAJQBFUDVxxZw-eQ5w&e=1780394096
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=Vc-6eAhiJ9l-S4UZlCiWjQ&e=1780394442
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor (v-tvku)
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=rCRYmAJQBFUDVxxZw-eQ5w&e=1780394096
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=JVcaN7vyQJIgFtxLkeDoLg&e=1780394443
 
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
