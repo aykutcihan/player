@@ -47,9 +47,12 @@ jobs:
         run: python src/main.py
 
       - name: Değiştiyse commit'le
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:%GITHUB_TOKEN%@github.com/aykutcihan/epg-generator.git
           if exist epg.xml git add epg.xml
           if exist cache\tmdb.json git add cache\tmdb.json
           if exist playlist.m3u git add playlist.m3u
