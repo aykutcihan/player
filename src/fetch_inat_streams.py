@@ -32,8 +32,6 @@ INAT_CHANNELS = {
     "tr.trtspor":        "trtspor",
     "tr.trtsporyildiz":  "trtspor2",
     "tr.trt1":           "trt1",
-    "tr.aspor":          "as",
-    "tr.atv":            "atv",
     "tr.tv8":            "tv8",
     "tr.tv85":           "tv85",
     "tr.nbatv":          "nbatv",

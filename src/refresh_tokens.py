@@ -17,11 +17,12 @@ PLAYLIST = ROOT / "playlist.m3u"
 
 # tvg-id → (channel_id, base_url)  — token API parametreleri
 TOKEN_CHANNELS = {
-    "tr.atv":     (851502, "https://trkvz-live.ercdn.net/atv/atv.m3u8"),
-    "tr.ahaber":  (851501, "https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8"),
-    "tr.aspor":   (851504, "https://trkvz-live.ercdn.net/aspor/aspor.m3u8"),
-    "tr.apara":   (705995, "https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8"),
-    "tr.a2":      (851503, "https://trkvz-live.ercdn.net/a2/a2.m3u8"),
+    "tr.atv":      (851502, "https://trkvz-live.ercdn.net/atv/atv.m3u8"),
+    "tr.ahaber":   (851501, "https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8"),
+    "tr.aspor":    (851504, "https://trkvz-live.ercdn.net/aspor/aspor.m3u8"),
+    "tr.apara":    (705995, "https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8"),
+    "tr.a2":       (851503, "https://trkvz-live.ercdn.net/a2/a2.m3u8"),
+    "tr.atvavrupa":(851502, "https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8"),
 }
 
 TOKEN_API = "https://securevideotoken.tmgrup.com.tr/webtv/secure"
