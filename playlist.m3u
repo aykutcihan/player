@@ -42,14 +42,14 @@ https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
 
 #EXTINF:-1 tvg-id="tr.tv85" group-title="Ulusal",Tv8,5
 https://2i4.d72577a9dd0ec71.cfd/tv85/mono.m3u8
-#EXTINF:-1 tvg-id="tr.trtturk" group-title="Avrupa",TRT Turk
+#EXTINF:-1 tvg-id="tr.trtturk" group-title="Ulusal",TRT Turk
 https://tv-trtturk.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.a2" group-title="Yerel",A2
+#EXTINF:-1 tvg-id="tr.a2" group-title="Ulusal",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=U5sEhQ5sUMKgV2TxkbzyJA&e=1780351340
 
 
 # ── HABER (29 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.trt3" tvg-logo="https://i.ibb.co/BN9tk1q/tbmm22.png" group-title="Ulusal",MECLİS
+#EXTINF:-1 tvg-id="tr.trt3" tvg-logo="https://i.ibb.co/BN9tk1q/tbmm22.png" group-title="Haber",MECLİS
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/7b8dbf43-064f-4458-9c93-71089eaf493b.png" group-title="Haber",TÜRK HABER
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
@@ -86,33 +86,33 @@ http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8
 #EXTINF:-1 tvg-id="tr.tgrthaber" group-title="Haber",TGRT Haber
 https://canli.tgrthaber.com/tgrt.m3u8
 
-#EXTINF:-1 tvg-id="tr.ulketv" group-title="Yerel",Ulke TV
+#EXTINF:-1 tvg-id="tr.ulketv" group-title="Haber",Ulke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tr.ekoturk" group-title="Ulusal",Ekoturk
+#EXTINF:-1 tvg-id="tr.ekoturk" group-title="Haber",Ekoturk
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780357634/ei/osUdar7ED6DS6dsPoLLqGA/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpMNAha_nbu3dtSHpD2YgswolCZCuEgwxeaz4PcfJsJL9y5VKMbeBrJT7mSJAr8xtufzgJxz_MT/spc/96Xrv1yBeiOdEZpT43DsU8JM4dvNKgElnnWFo-Tuia5Lyrk-0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4376250/met/1780336034,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780335640/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgW3_WClMgr7gIDkWatV1YJNMxQzhgIjESaNMVHc8InfICIBqhZ4FB8yUDqWMIMQU77Y6-VLGGeMRGtTX_mDBPLkQ7/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgTqgfDzgCSFuX9j1QaEGNXFE3oeJ2M3vktOPet8UlrvECIFlcYF461WgHxtF_7ocfyXnhNNcE2cKB4XjKDnbljX-i/playlist/index.m3u8
-#EXTINF:-1 tvg-id="tr.flashhaber" group-title="Ulusal",Flash Haber
+#EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
 
-#EXTINF:-1 tvg-id="tr.halktv" group-title="Ulusal",Halk TV
+#EXTINF:-1 tvg-id="tr.halktv" group-title="Haber",Halk TV
 https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
 
 
 #EXTINF:-1 tvg-id="tr.trthaber" group-title="Haber",TRT Haber
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.ilketv",Ilke TV
+#EXTINF:-1 tvg-id="tr.ilketv" group-title="Haber",Ilke TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
-#EXTINF:-1 tvg-id="tr.medyahabertv",Medya Haber TV
+#EXTINF:-1 tvg-id="tr.medyahabertv" group-title="Haber",Medya Haber TV
 https://canliyayin.b-cdn.net/medyahaber.m3u8
-#EXTINF:-1 tvg-id="tr.yoltv",Yol TV
+#EXTINF:-1 tvg-id="tr.yoltv" group-title="Haber",Yol TV
 https://live.yoltv.com/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/f648574b-3fcd-4e1e-b1ea-22c65e4906a9.png" group-title="Yerel",CAN
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/4e98253f-f791-42da-8497-51e821dde886.png" group-title="Yerel",FİNANSTÜRK
 https://yayin30.haber100.com/live/finansturk/chunklist_w377520896.m3u8
-#EXTINF:-1 tvg-id="tr.apara" group-title="Yerel",A Para
+#EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para
 https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=ic-BgnTA8sq4RBrznhNjxg&e=1780379904
-#EXTINF:-1 tvg-id="tr.krttv" group-title="Yerel",KRT TV
+#EXTINF:-1 tvg-id="tr.krttv" group-title="Haber",KRT TV
 https://live.artidijitalmedya.com/artidijital_grt/grt/playlist.m3u8
 
 # ── SPOR (40 kanal) ────────────────────────────
@@ -134,30 +134,30 @@ https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8
 https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
 
 # ── KULTUR (40 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.gzttv" group-title="Ulusal",Gzt TV
+#EXTINF:-1 tvg-id="tr.gzttv" group-title="Kultur",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Avrupa",TRT Avaz
+#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Kultur",TRT Avaz
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="tr.trtgenc" group-title="Yerel",TRT Genc
+#EXTINF:-1 tvg-id="tr.trtgenc" group-title="Kultur",TRT Genc
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="tr.diyanettv" group-title="Dini",TRT Diyanet
+#EXTINF:-1 tvg-id="tr.diyanettv" group-title="Kultur",TRT Diyanet
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.dosttv" tvg-logo="http://assets.tvcdn.net/95e2b9a5-991b-4eda-bd0f-ec3c570d9147.png" group-title="Dini",Dost TV
+#EXTINF:-1 tvg-id="tr.dosttv" tvg-logo="http://assets.tvcdn.net/95e2b9a5-991b-4eda-bd0f-ec3c570d9147.png" group-title="Kultur",Dost TV
 https://dost.stream.emsal.im/tv/live.m3u8
-#EXTINF:-1 tvg-id="tr.lalegultv" group-title="Dini",Lalegul TV
+#EXTINF:-1 tvg-id="tr.lalegultv" group-title="Kultur",Lalegul TV
 https://lbl.netmedya.net/hls/lalegultv.m3u8
 
-#EXTINF:-1 tvg-id="tr.semerkand" group-title="Dini",Semerkand
+#EXTINF:-1 tvg-id="tr.semerkand" group-title="Kultur",Semerkand
 https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tr.jintv",Jin TV
+#EXTINF:-1 tvg-id="tr.jintv" group-title="Kultur",Jin TV
 https://live.jintv.org/medialive/jintv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/qRsfyb2/tvmor.png" group-title="Yerel",MOR
 https://live.euromediacenter.com/tvmor/index.m3u8
 
-#EXTINF:-1 tvg-id="tr.ciftcitv" tvg-logo="http://assets.tvcdn.net/0ddba95e-9ad0-4d8a-9527-b562e173da80.png" group-title="Yerel",ÇİFTÇİ
+#EXTINF:-1 tvg-id="tr.ciftcitv" tvg-logo="http://assets.tvcdn.net/0ddba95e-9ad0-4d8a-9527-b562e173da80.png" group-title="Kultur",ÇİFTÇİ
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/6014fb29-bf4c-4e83-8982-949179e6bd8e.png" group-title="Yerel",KÖY
 http://188.245.211.255:1935/canlitv/koytv.stream/playlist.m3u8?hash=b2af21dbc448fa5061951177c2a92134
@@ -223,10 +223,10 @@ https://tvsms.club/tvz.php?kanal=toppop&file=.m3u8
 https://yayin.santraltr.com/hls/genctv.m3u8
 #EXTINF:-1 tvg-id="tr.trtmuzik" group-title="Muzik",TRT Muzik
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.medmuziktv",Med Muzik TV
+#EXTINF:-1 tvg-id="tr.medmuziktv" group-title="Muzik",Med Muzik TV
 http://54.36.110.140/live3/live3.m3u8
 
-#EXTINF:-1 tvg-id="tr.tmbtv" group-title="Yerel",Tmb TV
+#EXTINF:-1 tvg-id="tr.tmbtv" group-title="Muzik",Tmb TV
 https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8
 
 # ── COCUK (6 kanal) ────────────────────────────
@@ -264,7 +264,7 @@ https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
 
 # ── YEREL (116 kanal) ────────────────────────────
 
-#EXTINF:-1 tvg-id="tr.gurbet24tv" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Avrupa",ERZINCAN GURBET-24
+#EXTINF:-1 tvg-id="tr.gurbet24tv" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",ERZINCAN GURBET-24
 http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
@@ -273,7 +273,7 @@ https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/f00f1472-e8e7-4f30-b9e3-fb4376a43aac.png" group-title="Yerel",ELAZIĞ KANAL FIRAT
 https://live.artidijitalmedya.com/artidijital_kanalfirat/kanalfirat/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.kanal26" group-title="Ulusal",Kanal 26
+#EXTINF:-1 tvg-id="tr.kanal26" group-title="Yerel",Kanal 26
 https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",BURDUR KANAL-15
 https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
