@@ -154,22 +154,22 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
-    # ── TEMPO TV — 2 saatlik müzik döngüsü ───────────────────────
+    # ── TEMPO TV ──────────────────────────────────────────────────
     "tr.tempotv": {
         "tz": IST_TZ,
         "daily": [
-            ( 0, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            ( 2, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            ( 4, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            ( 6, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            ( 8, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (10, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (12, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (14, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (16, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (18, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (20, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
-            (22, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            ( 0, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            ( 2, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            ( 4, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            ( 6, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            ( 8, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            (10, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            (12, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            (14, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            (16, 0, "Klip Saati",    "Türkçe pop ve arabesk müzik klipleri"),
+            (19, 0, "Müzik Programı","Canlı müzik yayını ve müzik programları"),
+            (21, 0, "Müzik Programı","Canlı müzik yayını ve müzik programları"),
+            (23, 0, "Müzik Programı","Canlı müzik yayını ve müzik programları"),
         ],
     },
 
