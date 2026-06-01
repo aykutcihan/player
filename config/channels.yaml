@@ -4,7 +4,7 @@
 
 channels:
 
-  tr24tv.tr:
+  tr.24:
     name: "24"
     sources:
       - tvplus:24-hd--32
@@ -1371,7 +1371,7 @@ channels:
       - tvyayinakisi:yaban-tv
 
   tr.mceutv:
-    name: "MCE TV"
+    name: "MCEU TV"
     sources:
       - staticschedule:tr.mceutv
 
