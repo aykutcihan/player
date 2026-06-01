@@ -7,6 +7,8 @@ https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protoc
 https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
 #EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+#EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 #EXTINF:-1 tvg-id="tr.beyaztv" group-title="Ulusal",Beyaz TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.bikanal" group-title="Ulusal",Bi Kanal TV
@@ -15,10 +17,9 @@ https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=EYfGo9cX52K5cnv08aR3iw&e=1780351340
 #EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Ulusal",Bizim Ev TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.dreamturk" group-title="Ulusal",Dream Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+
 #EXTINF:-1 tvg-id="tr.ekoturk" group-title="Ulusal",Ekoturk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780357634/ei/osUdar7ED6DS6dsPoLLqGA/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpMNAha_nbu3dtSHpD2YgswolCZCuEgwxeaz4PcfJsJL9y5VKMbeBrJT7mSJAr8xtufzgJxz_MT/spc/96Xrv1yBeiOdEZpT43DsU8JM4dvNKgElnnWFo-Tuia5Lyrk-0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4376250/met/1780336034,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780335640/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgW3_WClMgr7gIDkWatV1YJNMxQzhgIjESaNMVHc8InfICIBqhZ4FB8yUDqWMIMQU77Y6-VLGGeMRGtTX_mDBPLkQ7/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgTqgfDzgCSFuX9j1QaEGNXFE3oeJ2M3vktOPet8UlrvECIFlcYF461WgHxtF_7ocfyXnhNNcE2cKB4XjKDnbljX-i/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Ulusal",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
 #EXTINF:-1 tvg-id="tr.fmtv" group-title="Ulusal",Fm TV
@@ -39,8 +40,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.kanalb" group-title="Ulusal",Kanal B
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+
 #EXTINF:-1 tvg-id="tr.kanalt" group-title="Ulusal",Kanal T
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
@@ -100,7 +100,7 @@ https://trkvz-live.ercdn.net/atv/atv.m3u8?st=eUPTKb--0hsnbkTGLAX-5A&e=1780347014
 #EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Ulusal",Bizim Ev TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ekoturk" group-title="Ulusal",Ekoturk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780357634/ei/osUdar7ED6DS6dsPoLLqGA/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpMNAha_nbu3dtSHpD2YgswolCZCuEgwxeaz4PcfJsJL9y5VKMbeBrJT7mSJAr8xtufzgJxz_MT/spc/96Xrv1yBeiOdEZpT43DsU8JM4dvNKgElnnWFo-Tuia5Lyrk-0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4376250/met/1780336034,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780335640/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgW3_WClMgr7gIDkWatV1YJNMxQzhgIjESaNMVHc8InfICIBqhZ4FB8yUDqWMIMQU77Y6-VLGGeMRGtTX_mDBPLkQ7/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgTqgfDzgCSFuX9j1QaEGNXFE3oeJ2M3vktOPet8UlrvECIFlcYF461WgHxtF_7ocfyXnhNNcE2cKB4XjKDnbljX-i/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Ulusal",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
 #EXTINF:-1 tvg-id="tr.fmtv" group-title="Ulusal",Fm TV

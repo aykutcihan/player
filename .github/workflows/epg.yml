@@ -38,6 +38,9 @@ jobs:
       - name: Token yenile
         run: python src/refresh_tokens.py
 
+      - name: YouTube stream guncelle
+        run: python src/refresh_youtube.py
+
 
       - name: EPG üret
         env:
