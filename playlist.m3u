@@ -258,7 +258,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=sFSl2D0WtthEapIurboIcQ&e=1780377447
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=DAKTOBEy1WnGLjzZVExMIA&e=1780379904
 #EXTINF:-1 tvg-id="tr.beinsports1" group-title="Spor",beIN Sports 1
 https://2i4.d72577a9dd0ec71.cfd/zirve/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports2" group-title="Spor",beIN Sports 2
@@ -314,7 +314,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=sx0Pd0CioiFHdGRPYoILIQ&e=1780377448
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=DAKTOBEy1WnGLjzZVExMIA&e=1780379904
 #EXTINF:-1 tvg-id="tr.beinsports1" group-title="Spor",beIN Sports 1
 https://2i4.d72577a9dd0ec71.cfd/zirve/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports2" group-title="Spor",beIN Sports 2
@@ -824,7 +824,7 @@ https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protoc
 
 # ── YEREL (112 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.apara" group-title="Yerel",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=iy3yU5FtAQ2KEvGpp-4Ypg&e=1780377447
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=ic-BgnTA8sq4RBrznhNjxg&e=1780379904
 #EXTINF:-1 tvg-id="tr.ciftcitv" group-title="Yerel",Ciftci TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",BURDUR KANAL-15
