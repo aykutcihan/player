@@ -1414,3 +1414,15 @@ channels:
     name: "Dost TV"
     sources:
       - dosttv:dosttv
+
+  tr.ilketv:
+    name: "Ilke TV"
+    sources: []
+
+  tr.jintv:
+    name: "Jin TV"
+    sources: []
+
+  tr.yoltv:
+    name: "Yol TV"
+    sources: []
