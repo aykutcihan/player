@@ -15,50 +15,28 @@ https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
 https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",Atv
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=EYfGo9cX52K5cnv08aR3iw&e=1780351340
-#EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Ulusal",Bizim Ev TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 #EXTINF:-1 tvg-id="tr.ekoturk" group-title="Ulusal",Ekoturk
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780357634/ei/osUdar7ED6DS6dsPoLLqGA/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpMNAha_nbu3dtSHpD2YgswolCZCuEgwxeaz4PcfJsJL9y5VKMbeBrJT7mSJAr8xtufzgJxz_MT/spc/96Xrv1yBeiOdEZpT43DsU8JM4dvNKgElnnWFo-Tuia5Lyrk-0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4376250/met/1780336034,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780335640/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgW3_WClMgr7gIDkWatV1YJNMxQzhgIjESaNMVHc8InfICIBqhZ4FB8yUDqWMIMQU77Y6-VLGGeMRGtTX_mDBPLkQ7/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgTqgfDzgCSFuX9j1QaEGNXFE3oeJ2M3vktOPet8UlrvECIFlcYF461WgHxtF_7ocfyXnhNNcE2cKB4XjKDnbljX-i/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Ulusal",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
-#EXTINF:-1 tvg-id="tr.fmtv" group-title="Ulusal",Fm TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Ulusal",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Ulusal",Halk TV
 https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
-#EXTINF:-1 tvg-id="tr.htspor" group-title="Ulusal",HT Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanal23" group-title="Ulusal",Kanal 23
 https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.kanal26" group-title="Ulusal",Kanal 26
 https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.kanal33" group-title="Ulusal",Kanal 33
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanal7" group-title="Ulusal",Kanal 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-id="tr.kanalb" group-title="Ulusal",Kanal B
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
-#EXTINF:-1 tvg-id="tr.kanalt" group-title="Ulusal",Kanal T
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.on6" group-title="Ulusal",On6
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
-#EXTINF:-1 tvg-id="tr.sozcutv" group-title="Ulusal",Sozcu TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sportstv" group-title="Ulusal",Sports TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.startv" group-title="Ulusal",Star TV
 https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
-#EXTINF:-1 tvg-id="tr.tele1" group-title="Ulusal",Tele1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.teve2" group-title="Ulusal",Teve2
 https://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.tivi6" group-title="Ulusal",Tivi6
@@ -67,76 +45,38 @@ https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trt2" group-title="Ulusal",TRT 2
 https://tv-trt2.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.trt3" group-title="Ulusal",TRT 3
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tv4" group-title="Ulusal",TV 4
 https://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
 #EXTINF:-1 tvg-id="tr.tv8" group-title="Ulusal",TV 8
 https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tv100" group-title="Ulusal",Tv100
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
-#EXTINF:-1 tvg-id="tr.tv42" group-title="Ulusal",Tv42
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tv5" group-title="Ulusal",Tv5
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tv85" group-title="Ulusal",Tv85
 https://2i4.d72577a9dd0ec71.cfd/tv85/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tvnet" group-title="Ulusal",Tvnet
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tytturk" group-title="Ulusal",Tyt Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.ulusalkanal" group-title="Ulusal",Ulusal Kanal
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.vavtv" group-title="Ulusal",Vav TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tv1" group-title="Ulusal",TV 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trt3" tvg-logo="https://i.ibb.co/BN9tk1q/tbmm22.png" group-title="Ulusal",MECLİS
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 #EXTINF:-1 tvg-id="tr.dreamturk" tvg-logo="https://i.ibb.co/4SsJS4R/dreamturk.png" group-title="Ulusal",DREAM TÜRK
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8 
 #EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",Atv
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=eUPTKb--0hsnbkTGLAX-5A&e=1780347014
-#EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Ulusal",Bizim Ev TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ekoturk" group-title="Ulusal",Ekoturk
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780357634/ei/osUdar7ED6DS6dsPoLLqGA/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpMNAha_nbu3dtSHpD2YgswolCZCuEgwxeaz4PcfJsJL9y5VKMbeBrJT7mSJAr8xtufzgJxz_MT/spc/96Xrv1yBeiOdEZpT43DsU8JM4dvNKgElnnWFo-Tuia5Lyrk-0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4376250/met/1780336034,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780335640/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgW3_WClMgr7gIDkWatV1YJNMxQzhgIjESaNMVHc8InfICIBqhZ4FB8yUDqWMIMQU77Y6-VLGGeMRGtTX_mDBPLkQ7/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgTqgfDzgCSFuX9j1QaEGNXFE3oeJ2M3vktOPet8UlrvECIFlcYF461WgHxtF_7ocfyXnhNNcE2cKB4XjKDnbljX-i/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Ulusal",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
-#EXTINF:-1 tvg-id="tr.fmtv" group-title="Ulusal",Fm TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Ulusal",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Ulusal",Halk TV
 https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
-#EXTINF:-1 tvg-id="tr.htspor" group-title="Ulusal",HT Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanal23" group-title="Ulusal",Kanal 23
 https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.kanal26" group-title="Ulusal",Kanal 26
 https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.kanal33" group-title="Ulusal",Kanal 33
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanal7" group-title="Ulusal",Kanal 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
-#EXTINF:-1 tvg-id="tr.kanalb" group-title="Ulusal",Kanal B
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
-#EXTINF:-1 tvg-id="tr.kanalt" group-title="Ulusal",Kanal T
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.on6" group-title="Ulusal",On6
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sozcutv" group-title="Ulusal",Sozcu TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sportstv" group-title="Ulusal",Sports TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tele1" group-title="Ulusal",Tele1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.teve2" group-title="Ulusal",Teve2
 https://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.tivi6" group-title="Ulusal",Tivi6
@@ -145,30 +85,14 @@ https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
 https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trt2" group-title="Ulusal",TRT 2
 https://tv-trt2.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.trt3" group-title="Ulusal",TRT 3
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tv4" group-title="Ulusal",TV 4
 https://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
 #EXTINF:-1 tvg-id="tr.tv8" group-title="Ulusal",TV 8
 https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tv100" group-title="Ulusal",Tv100
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
-#EXTINF:-1 tvg-id="tr.tv42" group-title="Ulusal",Tv42
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tv5" group-title="Ulusal",Tv5
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tv85" group-title="Ulusal",Tv85
 https://2i4.d72577a9dd0ec71.cfd/tv85/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tvnet" group-title="Ulusal",Tvnet
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tytturk" group-title="Ulusal",Tyt Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.ulusalkanal" group-title="Ulusal",Ulusal Kanal
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.vavtv" group-title="Ulusal",Vav TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tv1" group-title="Ulusal",TV 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 # ── HABER (42 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.360" group-title="Haber",360
@@ -193,10 +117,6 @@ https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live_1080p3000000kbps/i
 https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=XnW-uIAW7YTEAu2k1nNnnA&e=1780351339
 #EXTINF:-1 tvg-id="tr.bloomberght" group-title="Haber",Bloomberg HT
 https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8?ce=2&app=201b9556-b11c-4d92-b264-f21fd24e9aaf
-#EXTINF:-1 tvg-id="tr.brt1" group-title="Haber",BRT 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.brt2" group-title="Haber",BRT 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.cnbce" group-title="Haber",CNBC-e
 https://cnbc-e.daioncdn.net/cnbc-e/cnbc-e.m3u8?app=web&st=W4wyJb_daYiYOmvElODSzQ&e=1780337397
 #EXTINF:-1 tvg-id="tr.cnnturk" group-title="Haber",CNN Turk
@@ -207,8 +127,6 @@ https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
 https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3
 #EXTINF:-1 tvg-id="tr.liderhabertv" group-title="Haber",Lider Haber TV
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
-#EXTINF:-1 tvg-id="tr.neohabertv" group-title="Haber",Neo Haber TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ntv" group-title="Haber",NTV
 http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8
 #EXTINF:-1 tvg-id="tr.tgrthaber" group-title="Haber",TGRT Haber
@@ -217,14 +135,6 @@ https://canli.tgrthaber.com/tgrt.m3u8
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trtworld" group-title="Haber",TRT World
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.turkhaber" group-title="Haber",Turkhaber
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.turkmenelitv" group-title="Haber",Turkmeneli TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.birtv" group-title="Haber",Bir TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.olayturk" group-title="Haber",OlayTürk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="Mavi Karadeniz" tvg-logo="https://i.ibb.co/wrMn5rgQ/mktv.png" group-title="Haber",MK HABER
 https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/7b8dbf43-064f-4458-9c93-71089eaf493b.png" group-title="Haber",TÜRK HABER
@@ -233,10 +143,6 @@ https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
 https://cdn-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",A Haber
 https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=3mWQqs78_23m2in92QRbqw&e=1780347012
-#EXTINF:-1 tvg-id="tr.brt1" group-title="Haber",BRT 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.brt2" group-title="Haber",BRT 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.liderhabertv" group-title="Haber",Lider Haber TV
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
 #EXTINF:-1 tvg-id="tr.ntv" group-title="Haber",NTV
@@ -247,14 +153,6 @@ https://canli.tgrthaber.com/tgrt.m3u8
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trtworld" group-title="Haber",TRT World
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.turkhaber" group-title="Haber",Turkhaber
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.turkmenelitv" group-title="Haber",Turkmeneli TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.birtv" group-title="Haber",Bir TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.olayturk" group-title="Haber",OlayTürk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 # ── SPOR (56 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB TV
@@ -271,48 +169,32 @@ https://2i4.d72577a9dd0ec71.cfd/b3/mono.m3u8
 https://2i4.d72577a9dd0ec71.cfd/b4/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports5" group-title="Spor",beIN Sports 5
 https://2i4.d72577a9dd0ec71.cfd/b5/mono.m3u8
-#EXTINF:-1 tvg-id="tr.beinsportshaber" group-title="Spor",beIN Sports Haber
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.beinsportsmax1" group-title="Spor",beIN Sports Max 1
 https://2i4.d72577a9dd0ec71.cfd/bm1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsportsmax2" group-title="Spor",beIN Sports Max 2
 https://2i4.d72577a9dd0ec71.cfd/bm2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.cosmosports" group-title="Spor",Cosmosports
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.eurosport1" group-title="Spor",Eurosport 1
 https://2i4.d72577a9dd0ec71.cfd/eu1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.eurosport2" group-title="Spor",Eurosport 2
 https://2i4.d72577a9dd0ec71.cfd/eu2/mono.m3u8
 #EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.gstv" group-title="Spor",GS TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ssport" group-title="Spor",S Sport
 https://2i4.d72577a9dd0ec71.cfd/ss/mono.m3u8
 #EXTINF:-1 tvg-id="tr.ssport2" group-title="Spor",S Sport 2
 https://2i4.d72577a9dd0ec71.cfd/ss2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tabiispor" group-title="Spor",Tabii Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tivibuspor" group-title="Spor",Tivibu Spor
 https://2i4.d72577a9dd0ec71.cfd/t1/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tivibuspor1" group-title="Spor",Tivibu Spor 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tivibuspor2" group-title="Spor",Tivibu Spor 2
 https://2i4.d72577a9dd0ec71.cfd/t2/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tivibuspor3" group-title="Spor",Tivibu Spor 3
 https://2i4.d72577a9dd0ec71.cfd/t3/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tivibuspor4" group-title="Spor",Tivibu Spor 4
 https://2i4.d72577a9dd0ec71.cfd/t4/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tracesportstars" group-title="Spor",Trace Sport Stars
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtspor" group-title="Spor",TRT Spor
 https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trtsporyildiz" group-title="Spor",TRT Spor Yildiz
 https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tvekstraufc" group-title="Spor",TV Ekstra Ufc
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.wsport" group-title="Spor",W Sport
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
@@ -327,76 +209,36 @@ https://2i4.d72577a9dd0ec71.cfd/b3/mono.m3u8
 https://2i4.d72577a9dd0ec71.cfd/b4/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports5" group-title="Spor",beIN Sports 5
 https://2i4.d72577a9dd0ec71.cfd/b5/mono.m3u8
-#EXTINF:-1 tvg-id="tr.beinsportshaber" group-title="Spor",beIN Sports Haber
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.beinsportsmax1" group-title="Spor",beIN Sports Max 1
 https://2i4.d72577a9dd0ec71.cfd/bm1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsportsmax2" group-title="Spor",beIN Sports Max 2
 https://2i4.d72577a9dd0ec71.cfd/bm2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.cosmosports" group-title="Spor",Cosmosports
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.eurosport1" group-title="Spor",Eurosport 1
 https://2i4.d72577a9dd0ec71.cfd/eu1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.eurosport2" group-title="Spor",Eurosport 2
 https://2i4.d72577a9dd0ec71.cfd/eu2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.gstv" group-title="Spor",GS TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ssport" group-title="Spor",S Sport
 https://2i4.d72577a9dd0ec71.cfd/ss/mono.m3u8
 #EXTINF:-1 tvg-id="tr.ssport2" group-title="Spor",S Sport 2
 https://2i4.d72577a9dd0ec71.cfd/ss2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tabiispor" group-title="Spor",Tabii Spor
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tivibuspor" group-title="Spor",Tivibu Spor
 https://2i4.d72577a9dd0ec71.cfd/t1/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tivibuspor1" group-title="Spor",Tivibu Spor 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tivibuspor2" group-title="Spor",Tivibu Spor 2
 https://2i4.d72577a9dd0ec71.cfd/t2/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tivibuspor3" group-title="Spor",Tivibu Spor 3
 https://2i4.d72577a9dd0ec71.cfd/t3/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tivibuspor4" group-title="Spor",Tivibu Spor 4
 https://2i4.d72577a9dd0ec71.cfd/t4/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tracesportstars" group-title="Spor",Trace Sport Stars
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtspor" group-title="Spor",TRT Spor
 https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trtsporyildiz" group-title="Spor",TRT Spor Yildiz
 https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.tvekstraufc" group-title="Spor",TV Ekstra Ufc
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.wsport" group-title="Spor",W Sport
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
 
 # ── MUZIK (53 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.classicalharmony" group-title="Muzik",Classical Harmony
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.mcmtop" group-title="Muzik",Mcm Top
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.mezzo" group-title="Muzik",Mezzo
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nr1rap" group-title="Muzik",Nr1 Rap
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.number1turk" group-title="Muzik",Number1 Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.number1tv" group-title="Muzik",Number1 TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.powerturk" tvg-logo="https://i.ibb.co/B6N9KsN/powerturk22.png" group-title="Muzik",Power Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.powertv" tvg-logo="https://i.ibb.co/xhfcTC7/powertv.png" group-title="Muzik",Power TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.traceurban" group-title="Muzik",Trace Urban
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtmuzik" group-title="Muzik",TRT Muzik
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.turkhalkmuzigi" group-title="Muzik",Turk Halk Muzigi
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.turkcepop" group-title="Muzik",Turkce Pop
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.turkceslow" group-title="Muzik",Turkce Slow
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.chilltv" tvg-logo="http://assets.tvcdn.net/972fe810-96d7-4cad-8918-fe0c28a45e7d.png" group-title="Muzik",Chill TV
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/chill-tv/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkSlow.tr" tvg-logo="https://i.ibb.co/rZxNWKv/pslow.png" group-title="Muzik",PowerTurk Slow
@@ -451,330 +293,38 @@ https://yayin.santraltr.com/hls/ezo.m3u8
 https://tvsms.club/tv.php?kanal=damar&file=.m3u8
 #EXTINF:-1 tvg-id="tr.armatv" tvg-logo="http://assets.tvcdn.net/372149bf-3045-43ea-9794-dfea243bfb0e.png" group-title="Muzik",ARABESK
 https://tvsms.club/tv.php?kanal=arabeskyeni&file=.m3u8
-#EXTINF:-1 tvg-id="tr.classicalharmony" group-title="Muzik",Classical Harmony
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.mcmtop" group-title="Muzik",Mcm Top
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.mezzo" group-title="Muzik",Mezzo
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nr1rap" group-title="Muzik",Nr1 Rap
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.number1turk" group-title="Muzik",Number1 Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.number1tv" group-title="Muzik",Number1 TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.powerturk" tvg-logo="https://i.ibb.co/B6N9KsN/powerturk22.png" group-title="Muzik",Power Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.powertv" tvg-logo="https://i.ibb.co/xhfcTC7/powertv.png" group-title="Muzik",Power TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.traceurban" group-title="Muzik",Trace Urban
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtmuzik" group-title="Muzik",TRT Muzik
 https://tv-trtmuzik.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.turkhalkmuzigi" group-title="Muzik",Turk Halk Muzigi
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.turkcepop" group-title="Muzik",Turkce Pop
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.turkceslow" group-title="Muzik",Turkce Slow
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 # ── SINEMA (58 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.bbcfirst" group-title="Sinema",BBC First
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beingurme" group-title="Sinema",beIN Gurme
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinhomeentertainment" group-title="Sinema",beIN Home Entertainment
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beiniz" group-title="Sinema",beIN Iz
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviesaction2" group-title="Sinema",beIN Movies Action 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviespremiere" group-title="Sinema",beIN Movies Premiere
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviesstars" group-title="Sinema",beIN Movies Stars
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviesturk" group-title="Sinema",beIN Movies Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinseries1" group-title="Sinema",beIN Series 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinseries2" group-title="Sinema",beIN Series 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.docuscreen" group-title="Sinema",Docuscreen
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.epicdrama" group-title="Sinema",Epic Drama
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.filmscreen" group-title="Sinema",Filmscreen
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.fx" group-title="Sinema",FX
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinema1001" group-title="Sinema",Sinema 1001
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinema1002" group-title="Sinema",Sinema 1002
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaile" group-title="Sinema",Sinema Aile
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaile2" group-title="Sinema",Sinema Aile 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaksiyon" group-title="Sinema",Sinema Aksiyon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaksiyon2" group-title="Sinema",Sinema Aksiyon 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemakomedi" group-title="Sinema",Sinema Komedi
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemakomedi2" group-title="Sinema",Sinema Komedi 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematv" group-title="Sinema",Sinema TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematv1001" group-title="Sinema",Sinema TV 1001
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematv2" group-title="Sinema",Sinema TV 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematvaksiyon" group-title="Sinema",Sinema TV Aksiyon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemayerli" group-title="Sinema",Sinema Yerli
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemayerli2" group-title="Sinema",Sinema Yerli 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tabiitv" group-title="Sinema",Tabii TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.bbcfirst" group-title="Sinema",BBC First
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beingurme" group-title="Sinema",beIN Gurme
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinhomeentertainment" group-title="Sinema",beIN Home Entertainment
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beiniz" group-title="Sinema",beIN Iz
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviesaction2" group-title="Sinema",beIN Movies Action 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviespremiere" group-title="Sinema",beIN Movies Premiere
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviesstars" group-title="Sinema",beIN Movies Stars
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinmoviesturk" group-title="Sinema",beIN Movies Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinseries1" group-title="Sinema",beIN Series 1
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.beinseries2" group-title="Sinema",beIN Series 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.docuscreen" group-title="Sinema",Docuscreen
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.epicdrama" group-title="Sinema",Epic Drama
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.filmscreen" group-title="Sinema",Filmscreen
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.fx" group-title="Sinema",FX
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinema1001" group-title="Sinema",Sinema 1001
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinema1002" group-title="Sinema",Sinema 1002
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaile" group-title="Sinema",Sinema Aile
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaile2" group-title="Sinema",Sinema Aile 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaksiyon" group-title="Sinema",Sinema Aksiyon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemaaksiyon2" group-title="Sinema",Sinema Aksiyon 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemakomedi" group-title="Sinema",Sinema Komedi
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemakomedi2" group-title="Sinema",Sinema Komedi 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematv" group-title="Sinema",Sinema TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematv1001" group-title="Sinema",Sinema TV 1001
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematv2" group-title="Sinema",Sinema TV 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinematvaksiyon" group-title="Sinema",Sinema TV Aksiyon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemayerli" group-title="Sinema",Sinema Yerli
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.sinemayerli2" group-title="Sinema",Sinema Yerli 2
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tabiitv" group-title="Sinema",Tabii TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 # ── COCUK (44 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.cartoonnetwork" group-title="Cocuk",Cartoon Network
 http://50.7.144.122:1935/live/cartoon-network.stream/playlist.m3u8?hash=b2af21dbc448fa5061951177c2a92134 
-#EXTINF:-1 tvg-id="tr.azoomee" group-title="Cocuk",Azoomee
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.babytv" group-title="Cocuk",Babytv
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.cartoonnetwork" group-title="Cocuk",Cartoon Network
 http://50.7.144.122:1935/live/cartoon-network.stream/playlist.m3u8?hash=b2af21dbc448fa5061951177c2a92134
-#EXTINF:-1 tvg-id="tr.cartoonito" group-title="Cocuk",Cartoonito
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.cbeebies" group-title="Cocuk",Cbeebies
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.davinci" group-title="Cocuk",Da Vinci
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.disneyjunior" group-title="Cocuk",Disney Junior
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.ducktv" group-title="Cocuk",Duck TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.englishclubtv" group-title="Cocuk",English Club TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.langlab" group-title="Cocuk",Langlab
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.lingotoonstv" group-title="Cocuk",Lingotoons TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.minikacocuk" group-title="Cocuk",Minika Cocuk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.minikago" group-title="Cocuk",Minika Go
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.moonbugkidstv" group-title="Cocuk",Moonbug Kids TV Turkce
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.myzentv" group-title="Cocuk",Myzen TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nickjr" group-title="Cocuk",Nick Jr
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nickelodeon" group-title="Cocuk",Nickelodeon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nicktoons" group-title="Cocuk",Nicktoons
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.spacetoon" group-title="Cocuk",Spacetoon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tinyteentv" group-title="Cocuk",Tinyteen TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtcocuk" group-title="Cocuk",TRT Cocuk
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="tr.trtdiyanetcocuk" group-title="Cocuk",TRT Diyanet Cocuk
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
-#EXTINF:-1 tvg-id="tr.azoomee" group-title="Cocuk",Azoomee
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.babytv" group-title="Cocuk",Babytv
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.cartoonito" group-title="Cocuk",Cartoonito
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.cbeebies" group-title="Cocuk",Cbeebies
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.davinci" group-title="Cocuk",Da Vinci
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.disneyjunior" group-title="Cocuk",Disney Junior
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.ducktv" group-title="Cocuk",Duck TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.englishclubtv" group-title="Cocuk",English Club TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.langlab" group-title="Cocuk",Langlab
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.lingotoonstv" group-title="Cocuk",Lingotoons TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.minikacocuk" group-title="Cocuk",Minika Cocuk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.minikago" group-title="Cocuk",Minika Go
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.moonbugkidstv" group-title="Cocuk",Moonbug Kids TV Turkce
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.myzentv" group-title="Cocuk",Myzen TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nickjr" group-title="Cocuk",Nick Jr
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nickelodeon" group-title="Cocuk",Nickelodeon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nicktoons" group-title="Cocuk",Nicktoons
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.spacetoon" group-title="Cocuk",Spacetoon
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tinyteentv" group-title="Cocuk",Tinyteen TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtcocuk" group-title="Cocuk",TRT Cocuk
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="tr.trtdiyanetcocuk" group-title="Cocuk",TRT Diyanet Cocuk
 https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 
 # ── BELGESEL (28 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.bbcearth" group-title="Belgesel",BBC Earth
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.discoverychannel" group-title="Belgesel",Discovery Channel
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.dmax" group-title="Belgesel",DMAX
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.habitattv" group-title="Belgesel",Habitat TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.lovenature" group-title="Belgesel",Love Nature
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nationalgeographic" group-title="Belgesel",National Geographic
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nationalgeographicwild" group-title="Belgesel",National Geographic Wild
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tarihtv" group-title="Belgesel",Tarih TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tarimtv" group-title="Belgesel",Tarim TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tlc" group-title="Belgesel",TLC
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.trtbelgesel" group-title="Belgesel",TRT Belgesel
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.viasatexplore" group-title="Belgesel",Viasat Explore
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.viasathistory" group-title="Belgesel",Viasat History
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.yabantv" group-title="Belgesel",Yaban TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.bbcearth" group-title="Belgesel",BBC Earth
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.discoverychannel" group-title="Belgesel",Discovery Channel
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.dmax" group-title="Belgesel",DMAX
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.habitattv" group-title="Belgesel",Habitat TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.lovenature" group-title="Belgesel",Love Nature
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nationalgeographic" group-title="Belgesel",National Geographic
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.nationalgeographicwild" group-title="Belgesel",National Geographic Wild
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tarihtv" group-title="Belgesel",Tarih TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tarimtv" group-title="Belgesel",Tarim TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.tlc" group-title="Belgesel",TLC
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.trtbelgesel" group-title="Belgesel",TRT Belgesel
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.viasatexplore" group-title="Belgesel",Viasat Explore
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.viasathistory" group-title="Belgesel",Viasat History
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.yabantv" group-title="Belgesel",Yaban TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 # ── DINI (17 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.akittv" group-title="Dini",Akit TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.alquranalkareem" group-title="Dini",Al Quran Al Kareem TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.alsunnah" group-title="Dini",Al Sunnah Al Nabawiyah
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kadirgatv" group-title="Dini",Kadirga TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.lalegultv" group-title="Dini",Lalegul TV
 https://lbl.netmedya.net/hls/lalegultv.m3u8
-#EXTINF:-1 tvg-id="tr.saudiquran" group-title="Dini",Saudi Quran
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.semerkand" group-title="Dini",Semerkand
 https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.diyanettv" group-title="Dini",TRT Diyanet
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.dosttv" tvg-logo="http://assets.tvcdn.net/95e2b9a5-991b-4eda-bd0f-ec3c570d9147.png" group-title="Dini",Dost TV
 https://dost.stream.emsal.im/tv/live.m3u8
-#EXTINF:-1 tvg-id="tr.akittv" group-title="Dini",Akit TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.alquranalkareem" group-title="Dini",Al Quran Al Kareem TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.alsunnah" group-title="Dini",Al Sunnah Al Nabawiyah
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kadirgatv" group-title="Dini",Kadirga TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.lalegultv" group-title="Dini",Lalegul TV
 https://lbl.netmedya.net/hls/lalegultv.m3u8
-#EXTINF:-1 tvg-id="tr.saudiquran" group-title="Dini",Saudi Quran
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.semerkand" group-title="Dini",Semerkand
 https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.diyanettv" group-title="Dini",TRT Diyanet
@@ -787,12 +337,6 @@ https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protoc
 https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=SHAjMSLtwJsmdaHjvOEOVQ&e=1780347014
 #EXTINF:-1 tvg-id="tr.atvavrupa" group-title="Avrupa",Atv Avrupa
 https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=Ii2GGA0kjffTvtb623nYTQ&e=1780351341
-#EXTINF:-1 tvg-id="tr.france24" group-title="Avrupa",France 24
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kanal7avrupa" group-title="Avrupa",Kanal 7 Avrupa
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kanalavrupatv" group-title="Avrupa",Kanal Avrupa TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtarabi" group-title="Avrupa",TRT Arabi
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trtavaz" group-title="Avrupa",TRT Avaz
@@ -807,12 +351,6 @@ https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protoc
 http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Avrupa",ERZINCAN GURBET-24
 http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.france24" group-title="Avrupa",France 24
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kanal7avrupa" group-title="Avrupa",Kanal 7 Avrupa
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kanalavrupatv" group-title="Avrupa",Kanal Avrupa TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtarabi" group-title="Avrupa",TRT Arabi
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trtavaz" group-title="Avrupa",TRT Avaz
@@ -885,34 +423,14 @@ https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
 #EXTINF:-1 tvg-id="tr.a2" group-title="Yerel",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=U5sEhQ5sUMKgV2TxkbzyJA&e=1780351340
-#EXTINF:-1 tvg-id="tr.cosmoen" group-title="Yerel",Cosmo En
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.ekoltv" group-title="Yerel",Ekol TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kibrisadatv" group-title="Yerel",Kibris Ada TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kibrisgenctv" group-title="Yerel",Kibris Genc TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kibristv" group-title="Yerel",Kibris TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kitchentv" group-title="Yerel",Kitchen TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kontv" group-title="Yerel",Kon TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Yerel",KRT TV
 https://live.artidijitalmedya.com/artidijital_grt/grt/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.meltemtv" group-title="Yerel",Meltem TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tmbtv" group-title="Yerel",Tmb TV
 https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.trteba" group-title="Yerel",TRT Eba
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtgenc" group-title="Yerel",TRT Genc
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.ulketv" group-title="Yerel",Ulke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.idchannel" group-title="Yerel",ID Channel
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/f648574b-3fcd-4e1e-b1ea-22c65e4906a9.png" group-title="Yerel",CAN
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/4e98253f-f791-42da-8497-51e821dde886.png" group-title="Yerel",FİNANSTÜRK
@@ -931,8 +449,6 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 http://188.245.211.255:1935/canlitv/koytv.stream/playlist.m3u8?hash=b2af21dbc448fa5061951177c2a92134
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/2998d78b-5098-4e5a-8450-b2f7148ff817.png" group-title="Yerel",TOPRAK
 http://188.245.211.255:1935/canlitv/topraktv.stream/playlist.m3u8?hash=b2af21dbc448fa5061951177c2a92134
-#EXTINF:-1 tvg-id="EuroD.tr" tvg-logo="" group-title="Yerel",EURO D
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",EU VİYANA
 http://nrttn172.kesintisizyayin.com:29010/nrttn/nrttn/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",EU BRÜKSEL TÜRK
@@ -1071,31 +587,11 @@ https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
 #EXTINF:-1 tvg-id="tr.a2" group-title="Yerel",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=yJLLWe6xgoc0TmD6o4ZZIA&e=1780347013
-#EXTINF:-1 tvg-id="tr.cosmoen" group-title="Yerel",Cosmo En
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.ekoltv" group-title="Yerel",Ekol TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kibrisadatv" group-title="Yerel",Kibris Ada TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kibrisgenctv" group-title="Yerel",Kibris Genc TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kibristv" group-title="Yerel",Kibris TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kitchentv" group-title="Yerel",Kitchen TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.kontv" group-title="Yerel",Kon TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Yerel",KRT TV
 https://live.artidijitalmedya.com/artidijital_grt/grt/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.meltemtv" group-title="Yerel",Meltem TV
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tmbtv" group-title="Yerel",Tmb TV
 https://live.artidijitalmedya.com/artidijital_tontv/tontv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.trteba" group-title="Yerel",TRT Eba
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtgenc" group-title="Yerel",TRT Genc
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.ulketv" group-title="Yerel",Ulke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.idchannel" group-title="Yerel",ID Channel
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
