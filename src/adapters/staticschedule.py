@@ -154,6 +154,12 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
+    # ── SLOW KARADENİZ — 2 saatlik döngü ────────────────────────
+    "tr.slowkaradeniz": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Karadeniz Yöresi Şarkıları", "Karadeniz yöresi türküleri ve horon müziği yayını") for h in range(0, 24, 2)],
+    },
+
     # ── MÜZİK KANALLARI — 2 saatlik döngüler ─────────────────────
     "tr.toppop": {
         "tz": IST_TZ,

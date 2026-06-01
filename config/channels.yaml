@@ -1552,3 +1552,8 @@ channels:
     name: "Ezgi TV"
     sources:
       - staticschedule:tr.ezgitv
+
+  tr.slowkaradeniz:
+    name: "Slow Karadeniz"
+    sources:
+      - staticschedule:tr.slowkaradeniz
