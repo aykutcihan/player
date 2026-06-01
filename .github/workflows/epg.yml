@@ -41,6 +41,8 @@ jobs:
       - name: YouTube stream guncelle
         run: python src/refresh_youtube.py
 
+      - name: tvkulesi/kavuntv stream guncelle
+        run: python src/refresh_tvku.py
 
       - name: EPG üret
         env:
