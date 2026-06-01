@@ -154,6 +154,25 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
+    # ── CHILL TV — 2 saatlik sakinleştirici müzik döngüsü ────────
+    "tr.chilltv": {
+        "tz": IST_TZ,
+        "daily": [
+            ( 0, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            ( 2, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            ( 4, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            ( 6, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            ( 8, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (10, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (12, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (14, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (16, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (18, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (20, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+            (22, 0, "Chill Yayını", "Sakinleştirici, lounge ve ambient müzik yayını"),
+        ],
+    },
+
     # ── TEMPO TV ──────────────────────────────────────────────────
     "tr.tempotv": {
         "tz": IST_TZ,

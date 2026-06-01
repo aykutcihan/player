@@ -1498,3 +1498,8 @@ channels:
     name: "Tempo TV"
     sources:
       - staticschedule:tr.tempotv
+
+  tr.chilltv:
+    name: "Chill TV"
+    sources:
+      - staticschedule:tr.chilltv
