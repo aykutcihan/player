@@ -1494,3 +1494,9 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="ZarokTV.tr",Zarok TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.ilketv",Ilke TV
+https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
+#EXTINF:-1 tvg-id="tr.jintv",Jin TV
+https://live.jintv.org/medialive/jintv.m3u8
+#EXTINF:-1 tvg-id="tr.yoltv",Yol TV
+https://live.yoltv.com/hls/0/stream.m3u8
