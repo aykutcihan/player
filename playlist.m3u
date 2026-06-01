@@ -48,6 +48,8 @@ https://tv-trtturk.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.a2" group-title="Ulusal",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=U5sEhQ5sUMKgV2TxkbzyJA&e=1780351340
 
+#EXTINF:-1 tvg-id="tr.ekoltv",Ekol TV
+https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
 
 # ── HABER (29 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.tv100" group-title="Haber",Tv100
@@ -483,3 +485,5 @@ https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="tr.habitattv" group-title="Belgesel",Habitat TV
+https://cdn509.tvkulesi.com/habitattv.m3u8?tkn=f8ozbyrZ1ke4tGBz5pH01Q&tms=1780354571&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=habitat-tv
