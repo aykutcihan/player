@@ -147,7 +147,7 @@ http://livetv.powerapp.com.tr/dance/dance.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.nr1dance" tvg-logo="https://i.ibb.co/LR5v10B/nr1dance.jpg",NR1 Dance
 https://b01c02nl.mediatriple.net/videoonlylive/mtkgeuihrlfwlive/u_stream_5c9e2aa8acf44_1/playlist.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo=""tvg-id="tr.toppop",Top Pop
+#EXTINF:-1 tvg-id="" tvg-logo="" tvg-id="tr.toppop",Top Pop
 https://tvsms.club/tvz.php?kanal=toppop&file=.m3u8
 
 #EXTINF:-1 tvg-id="tr.finest" tvg-logo="http://assets.tvcdn.net/63a00e4e-eb16-4c55-9917-d1d2053f8b8b.png",Finest TV
@@ -165,7 +165,7 @@ https://yayin.santraltr.com/hls/zeynotv.m3u8
 #EXTINF:-1 tvg-id="tr.dostmuzik" tvg-logo="http://assets.tvcdn.net/f8af5ed8-4d05-4c2f-aa71-7d8e45ec19c2.png",Dost Muzik
 https://tvsms.club/tvz.php?kanal=dost&file=.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/fc1e5546-cc3e-4c7e-b379-f16052c81901.png",GENÇ SMS
+#EXTINF:-1 tvg-id="tr.toppop" tvg-logo="http://assets.tvcdn.net/fc1e5546-cc3e-4c7e-b379-f16052c81901.png",GENÇ SMS
 https://yayin.santraltr.com/hls/genctv.m3u8
 
 #EXTINF:-1 tvg-id="tr.armatv" tvg-logo="http://assets.tvcdn.net/4ed2a8ac-fd7f-4379-84cc-af1473c3fa72.png",Arma TV
@@ -180,7 +180,7 @@ https://yayin.santraltr.com/hls/ezo.m3u8
 #EXTINF:-1 tvg-id="tr.damartv",Damar TV
 https://tvsms.club/tv.php?kanal=damar&file=.m3u8
 
-#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/372149bf-3045-43ea-9794-dfea243bfb0e.png",ARABESK
+#EXTINF:-1 tvg-id="tr.armatv" tvg-logo="http://assets.tvcdn.net/372149bf-3045-43ea-9794-dfea243bfb0e.png",ARABESK
 https://tvsms.club/tv.php?kanal=arabeskyeni&file=.m3u8
 
 

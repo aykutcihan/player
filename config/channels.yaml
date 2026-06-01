@@ -773,8 +773,9 @@ channels:
   tr.nr1rap:
     name: "Nr1 Rap"
     sources:
-      - staticschedule:tr.nr1rap
       - tvplus:nr1-rap-hd--41
+      - staticschedule:tr.nr1rap
+    
 
   tr.ntv:
     name: "NTV"
@@ -787,15 +788,16 @@ channels:
   tr.number1turk:
     name: "Number1 Turk"
     sources:
-      - staticschedule:tr.number1turk
       - tvplus:number1-turk-hd--98
       - tivibu:ch00000000000000001223
+      - staticschedule:tr.number1turk
+
 
   tr.number1tv:
     name: "Number1 TV"
     sources:
-      - staticschedule:tr.number1tv
       - tvplus:number1-tv-hd--204
+      - staticschedule:tr.number1tv
 
   tr.on6:
     name: "On6"
@@ -1480,10 +1482,6 @@ channels:
     sources:
       - staticschedule:tr.nr1dance
 
-  tr.nr1damar:
-    name: "NR1 Damar"
-    sources:
-      - staticschedule:tr.nr1damar
 
   tr.kraltv:
     name: "Kral TV"
