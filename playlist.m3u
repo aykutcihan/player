@@ -1,11 +1,16 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml,https://epg.pw/xmltv/epg_TR.xml"
 
 # ── ULUSAL (44 kanal) ────────────────────────────
+
+#EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
+https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+
 #EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",Atv
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=EYfGo9cX52K5cnv08aR3iw&e=1780351340
 
 #EXTINF:-1 tvg-id="tr.beyaztv" group-title="Ulusal",Beyaz TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
+
 #EXTINF:-1 tvg-id="tr.bikanal" group-title="Ulusal",Bi Kanal TV
 https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 
@@ -13,8 +18,7 @@ https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.kanal7" group-title="Ulusal",Kanal 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
 
-#EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
-https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+
 #EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
 
@@ -55,8 +59,6 @@ https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d1369b16-75de-49dd-893f-8a197d7b1130.png" group-title="Haber",TRABZON HABER61
 https://cdn-haber61tv.yayin.com.tr/haber61tv/haber61tv/playlist.m3u8
-#EXTINF:-1 tvg-id="EuroStar.tr" tvg-logo="https://i.imgur.com/kb165Ot.png" group-title="Haber",EUROSTAR
-https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live_1080p3000000kbps/index.m3u8?st=0ZgQIZcSPX9MrFpXIXIVKA&e=1780378516
 #EXTINF:-1 tvg-id="Mavi Karadeniz" tvg-logo="https://i.ibb.co/wrMn5rgQ/mktv.png" group-title="Haber",MK HABER
 https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.360" group-title="Haber",360
@@ -240,6 +242,8 @@ https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 
 
 # ── AVRUPA (15 kanal) ────────────────────────────
+#EXTINF:-1 tvg-id="EuroStar.tr" tvg-logo="https://i.imgur.com/kb165Ot.png" group-title="Haber",EUROSTAR
+https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live_1080p3000000kbps/index.m3u8?st=0ZgQIZcSPX9MrFpXIXIVKA&e=1780378516
 
 #EXTINF:-1 tvg-id="tr.atvavrupa" group-title="Avrupa",Atv Avrupa
 https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=SHAjMSLtwJsmdaHjvOEOVQ&e=1780347014
@@ -477,3 +481,5 @@ https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now TV
+https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8?st=ePadfIsxqT3VEFKnBH3dxA&e=1780353948
