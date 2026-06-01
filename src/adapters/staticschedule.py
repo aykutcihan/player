@@ -43,9 +43,9 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
-    # ── MCE TV — haftalık, Almanya saati ─────────────────────────
+    # ── MCE TV — haftalık, Istanbul saati ────────────────────────
     "tr.mceutv": {
-        "tz": DE_TZ,
+        "tz": IST_TZ,
         "days": {
             0: [  # PAZARTESİ
                 ( 5,  0, "Hatim Saati"),
