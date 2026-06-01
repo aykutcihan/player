@@ -473,7 +473,7 @@ http://dygvideo.dygdigital.com/live/hls/kralpop?m3u8
 #EXTINF:-1 tvg-logo="https://i.ibb.co/4SsJS4R/dreamturk.png",DREAM TÜRK
 https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8
 
-#EXTINF:-1 tvg-id="PowerTurkTV.tr" tvg-logo="https://i.ibb.co/B6N9KsN/powerturk22.png",PowerTurk TV
+#EXTINF:-1 tvg-id="tr.powerturk" tvg-logo="https://i.ibb.co/B6N9KsN/powerturk22.png",PowerTurk TV
 http://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-logo="https://i.ibb.co/wSPFds2/nr1turk.png",NR1 TÜRK
