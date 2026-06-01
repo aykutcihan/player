@@ -38,6 +38,9 @@ jobs:
       - name: Token yenile
         run: python src/refresh_tokens.py
 
+      - name: Inat stream guncelle
+        run: python src/fetch_inat_streams.py
+
       - name: EPG üret
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
