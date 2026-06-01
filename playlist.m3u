@@ -1500,3 +1500,5 @@ https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 https://live.jintv.org/medialive/jintv.m3u8
 #EXTINF:-1 tvg-id="tr.yoltv",Yol TV
 https://live.yoltv.com/hls/0/stream.m3u8
+#EXTINF:-1 tvg-id="tr.medyahabertv",Medya Haber TV
+https://canliyayin.b-cdn.net/medyahaber.m3u8

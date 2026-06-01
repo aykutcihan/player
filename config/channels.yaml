@@ -1426,3 +1426,7 @@ channels:
   tr.yoltv:
     name: "Yol TV"
     sources: []
+
+  tr.medyahabertv:
+    name: "Medya Haber TV"
+    sources: []
