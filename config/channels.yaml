@@ -772,6 +772,7 @@ channels:
   tr.nr1rap:
     name: "Nr1 Rap"
     sources:
+      - staticschedule:tr.nr1rap
       - tvplus:nr1-rap-hd--41
 
   tr.ntv:
@@ -785,12 +786,14 @@ channels:
   tr.number1turk:
     name: "Number1 Turk"
     sources:
+      - staticschedule:tr.number1turk
       - tvplus:number1-turk-hd--98
       - tivibu:ch00000000000000001223
 
   tr.number1tv:
     name: "Number1 TV"
     sources:
+      - staticschedule:tr.number1tv
       - tvplus:number1-tv-hd--204
 
   tr.on6:
@@ -805,6 +808,7 @@ channels:
     name: "Power Turk"
     sources:
       - tvplus:power-turk-hd--202
+      - powerapp:powerturktv
       - tivibu:ch00000000000000001225
 
   tr.powertv:
@@ -1431,3 +1435,51 @@ channels:
   tr.medyahabertv:
     name: "Medya Haber TV"
     sources: []
+  tr.powerdance:
+    name: "Power Dance"
+    sources:
+      - staticschedule:tr.powerdance
+
+  tr.powerlove:
+    name: "Power Love"
+    sources:
+      - staticschedule:tr.powerlove
+
+  tr.powerturkslow:
+    name: "PowerTurk Slow"
+    sources:
+      - staticschedule:tr.powerturkslow
+
+  tr.powerturkakustik:
+    name: "PowerTurk Akustik"
+    sources:
+      - staticschedule:tr.powerturkakustik
+
+  tr.powerturkeniyiler:
+    name: "PowerTurk En Iyiler"
+    sources:
+      - staticschedule:tr.powerturkeniyiler
+
+  tr.powerturktaptaze:
+    name: "PowerTurk Taptaze"
+    sources:
+      - staticschedule:tr.powerturktaptaze
+
+  tr.powerplus:
+    name: "Power Plus"
+    sources:
+      - staticschedule:tr.powerplus
+  tr.nr1ask:
+    name: "NR1 Ask"
+    sources:
+      - staticschedule:tr.nr1ask
+
+  tr.nr1dance:
+    name: "NR1 Dance"
+    sources:
+      - staticschedule:tr.nr1dance
+
+  tr.nr1damar:
+    name: "NR1 Damar"
+    sources:
+      - staticschedule:tr.nr1damar
