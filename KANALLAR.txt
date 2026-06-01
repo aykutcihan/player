@@ -1,0 +1,243 @@
+KANAL LİSTESİ
+==================================================
+
+24                                  tr.24
+360                                 tr.360
+A Haber                             tr.ahaber
+A Para                              tr.apara
+A Spor                              tr.aspor
+A2                                  tr.a2
+Akit TV                             tr.akittv
+Al Quran Al Kareem TV               tr.alquranalkareem
+Al Sunnah Al Nabawiyah              tr.alsunnah
+As TV                               tr.astv
+Atv                                 tr.atv
+Atv Avrupa                          tr.atvavrupa
+Azoomee                             tr.azoomee
+Babytv                              tr.babytv
+BBC Earth                           tr.bbcearth
+BBC First                           tr.bbcfirst
+beIN Gurme                          tr.beingurme
+beIN Home Entertainment             tr.beinhomeentertainment
+beIN Iz                             tr.beiniz
+beIN Movies Action 2                tr.beinmoviesaction2
+beIN Movies Premiere                tr.beinmoviespremiere
+beIN Movies Stars                   tr.beinmoviesstars
+beIN Movies Turk                    tr.beinmoviesturk
+beIN Series 1                       tr.beinseries1
+beIN Series 2                       tr.beinseries2
+beIN Sports 1                       tr.beinsports1
+beIN Sports 2                       tr.beinsports2
+beIN Sports 3                       tr.beinsports3
+beIN Sports 4                       tr.beinsports4
+beIN Sports 5                       tr.beinsports5
+beIN Sports Haber                   tr.beinsportshaber
+beIN Sports Max 1                   tr.beinsportsmax1
+beIN Sports Max 2                   tr.beinsportsmax2
+Benguturk                           tr.benguturk
+Beyaz TV                            tr.beyaztv
+Bi Kanal TV                         tr.bikanal
+Bizim Ev TV                         tr.bizimevtv
+Bloomberg HT                        tr.bloomberght
+BRT 1                               tr.brt1
+BRT 2                               tr.brt2
+Cartoon Network                     tr.cartoonnetwork
+Cartoonito                          tr.cartoonito
+Cbeebies                            tr.cbeebies
+Cctv4                               tr.cctv4
+CGTN                                tr.cgtn
+Ciftci TV                           tr.ciftcitv
+Classical Harmony                   tr.classicalharmony
+CNBC E                              tr.cnbce
+CNN International                   tr.cnninternational
+CNN Turk                            tr.cnnturk
+Cosmo En                            tr.cosmoen
+Cosmosports                         tr.cosmosports
+Da Vinci                            tr.davinci
+Discovery Channel                   tr.discoverychannel
+Disney Junior                       tr.disneyjunior
+DMAX                                tr.dmax
+Docuscreen                          tr.docuscreen
+Dream Turk                          tr.dreamturk
+Duck TV                             tr.ducktv
+Ekol TV                             tr.ekoltv
+Ekoturk                             tr.ekoturk
+English Club TV                     tr.englishclubtv
+Epic Drama                          tr.epicdrama
+Eurosport 1                         tr.eurosport1
+Eurosport 2                         tr.eurosport2
+FB TV                               tr.fbtv
+Filmscreen                          tr.filmscreen
+Flash Haber                         tr.flashhaber
+Fm TV                               tr.fmtv
+France 24                           tr.france24
+FX                                  tr.fx
+GS TV                               tr.gstv
+Gzt TV                              tr.gzttv
+Haber Global                        tr.haberglobal
+Haberturk                           tr.haberturk
+Habitat TV                          tr.habitattv
+Halk TV                             tr.halktv
+HT Spor                             tr.htspor
+Kadirga TV                          tr.kadirgatv
+Kanal 23                            tr.kanal23
+Kanal 26                            tr.kanal26
+Kanal 33                            tr.kanal33
+Kanal 7                             tr.kanal7
+Kanal 7 Avrupa                      tr.kanal7avrupa
+Kanal Avrupa TV                     tr.kanalavrupatv
+Kanal B                             tr.kanalb
+Kanal D                             tr.kanald
+Kanal T                             tr.kanalt
+Kanal V                             tr.kanalv
+Kibris Ada TV                       tr.kibrisadatv
+Kibris Genc TV                      tr.kibrisgenctv
+Kibris TV                           tr.kibristv
+Kitchen TV                          tr.kitchentv
+Kon TV                              tr.kontv
+KRT TV                              tr.krttv
+Lalegul TV                          tr.lalegultv
+Langlab                             tr.langlab
+Lider Haber TV                      tr.liderhabertv
+Lingotoons TV                       tr.lingotoonstv
+Love Nature                         tr.lovenature
+Mcm Top                             tr.mcmtop
+Meltem TV                           tr.meltemtv
+Mezzo                               tr.mezzo
+Minika Cocuk                        tr.minikacocuk
+Minika Go                           tr.minikago
+Moonbug Kids TV Turkce              tr.moonbugkidstv
+Myzen TV                            tr.myzentv
+National Geographic                 tr.nationalgeographic
+National Geographic Wild            tr.nationalgeographicwild
+Neo Haber TV                        tr.neohabertv
+Nick Jr                             tr.nickjr
+Nickelodeon                         tr.nickelodeon
+Nicktoons                           tr.nicktoons
+Now                                 tr.now
+Nr1 Rap                             tr.nr1rap
+NTV                                 tr.ntv
+Number1 Turk                        tr.number1turk
+Number1 TV                          tr.number1tv
+On6                                 tr.on6
+Power Turk                          tr.powerturk
+Power TV                            tr.powertv
+S Sport                             tr.ssport
+S Sport 2                           tr.ssport2
+Saudi Quran                         tr.saudiquran
+Semerkand                           tr.semerkand
+Show TV                             tr.showtv
+Sinema 1001                         tr.sinema1001
+Sinema 1002                         tr.sinema1002
+Sinema Aile                         tr.sinemaaile
+Sinema Aile 2                       tr.sinemaaile2
+Sinema Aksiyon                      tr.sinemaaksiyon
+Sinema Aksiyon 2                    tr.sinemaaksiyon2
+Sinema Komedi                       tr.sinemakomedi
+Sinema Komedi 2                     tr.sinemakomedi2
+Sinema TV                           tr.sinematv
+Sinema TV 1001                      tr.sinematv1001
+Sinema TV 2                         tr.sinematv2
+Sinema TV Aksiyon                   tr.sinematvaksiyon
+Sinema Yerli                        tr.sinemayerli
+Sinema Yerli 2                      tr.sinemayerli2
+Sozcu TV                            tr.sozcutv
+Spacetoon                           tr.spacetoon
+Sports TV                           tr.sportstv
+Star TV                             tr.startv
+Tabii Spor                          tr.tabiispor
+Tabii TV                            tr.tabiitv
+Tarih TV                            tr.tarihtv
+Tarim TV                            tr.tarimtv
+Tele1                               tr.tele1
+Teve2                               tr.teve2
+TGRT Haber                          tr.tgrthaber
+Tinyteen TV                         tr.tinyteentv
+Tivi6                               tr.tivi6
+Tivibu Spor                         tr.tivibuspor
+Tivibu Spor 1                       tr.tivibuspor1
+Tivibu Spor 2                       tr.tivibuspor2
+Tivibu Spor 3                       tr.tivibuspor3
+Tivibu Spor 4                       tr.tivibuspor4
+TLC                                 tr.tlc
+Tmb TV                              tr.tmbtv
+Trace Sport Stars                   tr.tracesportstars
+Trace Urban                         tr.traceurban
+TRT 1                               tr.trt1
+TRT 2                               tr.trt2
+TRT 3                               tr.trt3
+TRT Arabi                           tr.trtarabi
+TRT Avaz                            tr.trtavaz
+TRT Belgesel                        tr.trtbelgesel
+TRT Cocuk                           tr.trtcocuk
+TRT Diyanet                         tr.diyanettv
+TRT Diyanet Cocuk                   tr.trtdiyanetcocuk
+TRT Eba                             tr.trteba
+TRT Genc                            tr.trtgenc
+TRT Haber                           tr.trthaber
+TRT Kurdi                           tr.trtkurdi
+TRT Muzik                           tr.trtmuzik
+TRT Spor                            tr.trtspor
+TRT Spor Yildiz                     tr.trtsporyildiz
+TRT Turk                            tr.trtturk
+TRT World                           tr.trtworld
+Turk Halk Muzigi                    tr.turkhalkmuzigi
+Turkce Pop                          tr.turkcepop
+Turkce Slow                         tr.turkceslow
+Turkhaber                           tr.turkhaber
+Turkmeneli TV                       tr.turkmenelitv
+TV 4                                tr.tv4
+TV 8                                tr.tv8
+TV Ekstra Ufc                       tr.tvekstraufc
+Tv100                               tr.tv100
+Tv42                                tr.tv42
+Tv5                                 tr.tv5
+Tv85                                tr.tv85
+Tvnet                               tr.tvnet
+Tyt Turk                            tr.tytturk
+Ulke TV                             tr.ulketv
+Ulusal Kanal                        tr.ulusalkanal
+Vav TV                              tr.vavtv
+Viasat Explore                      tr.viasatexplore
+Viasat History                      tr.viasathistory
+W Sport                             tr.wsport
+Yaban TV                            tr.yabantv
+MCEU TV                             tr.mceutv
+Bir TV                              tr.birtv
+Ekol Sports                         tr.ekolsports
+ID Channel                          tr.idchannel
+OlayTürk                            tr.olayturk
+TV 1                                tr.tv1
+Gurbet24 TV                         tr.gurbet24tv
+Med Muzik TV                        tr.medmuziktv
+Dost TV                             tr.dosttv
+Ilke TV                             tr.ilketv
+Jin TV                              tr.jintv
+Yol TV                              tr.yoltv
+Medya Haber TV                      tr.medyahabertv
+Power Dance                         tr.powerdance
+Power Love                          tr.powerlove
+PowerTurk Slow                      tr.powerturkslow
+PowerTurk Akustik                   tr.powerturkakustik
+PowerTurk En Iyiler                 tr.powerturkeniyiler
+PowerTurk Taptaze                   tr.powerturktaptaze
+Power Plus                          tr.powerplus
+NR1 Ask                             tr.nr1ask
+NR1 Dance                           tr.nr1dance
+Kral TV                             tr.kraltv
+Kral Pop TV                         tr.kralpoptv
+Tempo TV                            tr.tempotv
+Chill TV                            tr.chilltv
+Top Pop                             tr.toppop
+Finest TV                           tr.finest
+Guclu TV                            tr.guclutv
+Dost Muzik                          tr.dostmuzik
+Genc SMS                            tr.gencsms
+Arma TV                             tr.armatv
+Sila TV                             tr.silatv
+Damar TV                            tr.damartv
+Ezo TV                              tr.ezotv
+Ezgi TV                             tr.ezgitv
+Slow Karadeniz                      tr.slowkaradeniz
+
+Toplam: 238 kanal
