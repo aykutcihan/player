@@ -1,5 +1,11 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml,https://epg.pw/xmltv/epg_TR.xml"
 
+#EXTINF:-1 tvg-id="tr.startv",Star TV
+https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
+
+#EXTINF:-1 tvg-id="tr.showtv",Show TV
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+
 #EXTINF:-1 tvg-id="tr.24",24
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.360",360
@@ -19,6 +25,10 @@ https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=TDhG9CyIQzJXVXoh7OhmUA&e=1780347012
 #EXTINF:-1 tvg-id="tr.benguturk",Benguturk
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
+
+#EXTINF:-1 tvg-id="EuroStar.tr" tvg-logo="https://i.imgur.com/kb165Ot.png",EUROSTAR
+https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live_1080p3000000kbps/index.m3u8?st=0ZgQIZcSPX9MrFpXIXIVKA&e=1780378516
+
 
 #EXTINF:-1 tvg-id="tr.ciftcitv",Ciftci TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
@@ -262,8 +272,7 @@ https://2i4.d72577a9dd0ec71.cfd/ss2/mono.m3u8
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.semerkand",Semerkand
 https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.showtv",Show TV
-https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+
 #EXTINF:-1 tvg-id="tr.sinema1001",Sinema 1001
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.sinema1002",Sinema 1002
@@ -298,8 +307,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.sportstv",Sports TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
-#EXTINF:-1 tvg-id="tr.startv",Star TV
-https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
+
 #EXTINF:-1 tvg-id="tr.tabiispor",Tabii Spor
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tabiitv",Tabii TV
@@ -550,8 +558,6 @@ https://tvsms.club/tv.php?kanal=damar&file=.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/372149bf-3045-43ea-9794-dfea243bfb0e.png",ARABESK
 https://tvsms.club/tv.php?kanal=arabeskyeni&file=.m3u8
 
-#EXTINF:-1 tvg-id="EuroStar.tr" tvg-logo="https://i.imgur.com/kb165Ot.png",EUROSTAR
-https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live_1080p3000000kbps/index.m3u8?st=0ZgQIZcSPX9MrFpXIXIVKA&e=1780378516
 
 #EXTINF:-1 tvg-id="EuroD.tr" tvg-logo="",EURO D
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
