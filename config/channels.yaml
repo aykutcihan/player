@@ -389,6 +389,7 @@ channels:
   tr.dreamturk:
     name: "Dream Turk"
     sources:
+      - dreamturk:dreamturk
       - tvplus:dream-turk--153
       - turksatkablo:Dream Türk
       - tivibu:ch00000000000000001095

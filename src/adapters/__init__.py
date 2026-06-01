@@ -10,6 +10,7 @@ from adapters.turksatkablo import TurksatKabloAdapter
 from adapters.gurbet24 import Gurbet24Adapter
 from adapters.dosttv import DostTvAdapter
 from adapters.powerapp import PowerAppAdapter
+from adapters.dreamturk import DreamTurkAdapter
 
 
 def build_registry(session=None):
@@ -25,6 +26,7 @@ def build_registry(session=None):
         Gurbet24Adapter(session),
         DostTvAdapter(session),
         PowerAppAdapter(session),
+        DreamTurkAdapter(session),
     ]
     return {a.prefix: a for a in insts}
 
