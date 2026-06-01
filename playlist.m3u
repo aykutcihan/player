@@ -5,13 +5,13 @@ https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.360",360
 https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
 #EXTINF:-1 tvg-id="tr.ahaber",A Haber
-https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=7fnogNWKaEP9QDKgeLw9gQ&e=1780338418
+https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=lW4h15iSxNbNyDj6M9E8Ww&e=1780338960
 #EXTINF:-1 tvg-id="tr.apara",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=acLIHEYwSthTvlYBr00HuQ&e=1780338418
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=SMOSFU15t9toWInlEH0b3w&e=1780338960
 #EXTINF:-1 tvg-id="tr.aspor",A Spor
 https://2i4.d72577a9dd0ec71.cfd/as/mono.m3u8
 #EXTINF:-1 tvg-id="tr.a2",A2
-https://trkvz-live.ercdn.net/a2/a2.m3u8?st=d9-FWvuxjJpT1n9DpBKE1A&e=1780338419
+https://trkvz-live.ercdn.net/a2/a2.m3u8?st=ZU4c1nacol_jwLvcPyVDnw&e=1780338961
 #EXTINF:-1 tvg-id="tr.akittv",Akit TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.alquranalkareem",Al Quran Al Kareem TV
@@ -1493,9 +1493,9 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.trt1" group-title="Spor",TRT 1
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=8RuMTMohj-AIUKw2ovg6WQ&e=1780338419
+https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=281zec5piNTIPymUiWJinw&e=1780338961
 #EXTINF:-1 tvg-id="tr.atv" group-title="Spor",ATV
-https://trkvz-live.ercdn.net/atv/atv.m3u8?st=OOJ_fAsvSZVuXNEp7RBKqQ&e=1780338420
+https://trkvz-live.ercdn.net/atv/atv.m3u8?st=Q-TMUhWg5FJsRASRlPnA9Q&e=1780338961
 #EXTINF:-1 tvg-id="tr.tv8" group-title="Spor",TV 8
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tv85" group-title="Spor",TV 8.5
