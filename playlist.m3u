@@ -5,22 +5,34 @@
 https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+#EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV (v2)
+https://cdn505.tvkulesi.com/showtv.m3u8?tkn=HOEiCXmzELT6KuQyGlUVRw&tms=1780355265&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=show-tv
 #EXTINF:-1 tvg-id="tr.startv" group-title="Ulusal",Star TV
 https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
+#EXTINF:-1 tvg-id="tr.startv" group-title="Ulusal",Star TV (v2)
+https://cdn503.tvkulesi.com/startv.m3u8?tkn=LxZCERQMN1_-asOu9liriQ&tms=1780355282&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=star-tv
 
 #EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now TV
 https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8?st=ePadfIsxqT3VEFKnBH3dxA&e=1780353948 
+#EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now TV (v2)
+https://cdn503.tvkulesi.com/foxtv.m3u8?tkn=IeLfVDR_42wYCvWeaHGSVQ&tms=1780355362&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=now-tv
 
 #EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
+#EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D (v2)
+https://cdn504.tvkulesi.com/kanald.m3u8?tkn=48l-7JI6PtCQHUyJL133EQ&tms=1780355257&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-d
 
 #EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",Atv
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=EYfGo9cX52K5cnv08aR3iw&e=1780351340
 #EXTINF:-1 tvg-id="tr.tv8" group-title="Ulusal",TV 8
 https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
+#EXTINF:-1 tvg-id="tr.tv8" group-title="Ulusal",TV 8 (v2)
+https://cdn504.tvkulesi.com/tv8.m3u8?tkn=62_55slb6xYpsfIpmLAAkQ&tms=1780355247&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv8
 
 #EXTINF:-1 tvg-id="tr.beyaztv" group-title="Ulusal",Beyaz TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.beyaztv" group-title="Ulusal",Beyaz TV (v2)
+https://cdn502.tvkulesi.com/beyaztv.m3u8?tkn=RsEoUfy5Ayk4ZD5IOly3Hw&tms=1780355290&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=beyaz-tv
 
 #EXTINF:-1 tvg-id="tr.bikanal" group-title="Ulusal",Bi Kanal TV
 https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
@@ -28,6 +40,8 @@ https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 
 #EXTINF:-1 tvg-id="tr.kanal7" group-title="Ulusal",Kanal 7
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.kanal7" group-title="Ulusal",Kanal 7 (v2)
+https://cdn502.tvkulesi.com/kanal7.m3u8?tkn=bVLmJZBkjgKuXyaRdTnY-w&tms=1780355274&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-7
 
 
 
@@ -45,8 +59,12 @@ https://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
 https://2i4.d72577a9dd0ec71.cfd/tv85/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trtturk" group-title="Ulusal",TRT Turk
 https://tv-trtturk.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="tr.trtturk" group-title="Ulusal",TRT Turk (v2)
+https://cdn900.tvkulesi.com/trtturk.m3u8?tkn=VZF_Xp4VO9bnWEiE0IcG1w&tms=1780355336&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-turk
 #EXTINF:-1 tvg-id="tr.a2" group-title="Ulusal",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=U5sEhQ5sUMKgV2TxkbzyJA&e=1780351340
+#EXTINF:-1 tvg-id="tr.a2" group-title="Ulusal",A2 TV (v2)
+https://cdn501.tvkulesi.com/a2tv.m3u8?tkn=RhEoZt-Yx1kJsGgXOiw8-Q&tms=1780355297&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a2-tv
 
 #EXTINF:-1 tvg-id="tr.ekoltv",Ekol TV
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
@@ -139,6 +157,8 @@ https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
 # ── KULTUR (40 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.trt2" group-title="Kultur",TRT 2
 https://tv-trt2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="tr.trt2" group-title="Kultur",TRT 2 (v2)
+https://cdn900.tvkulesi.com/trt2.m3u8?tkn=Ab63evMbGrWcGFsVCsZd5w&tms=1780355356&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-2
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Kultur",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtavaz" group-title="Kultur",TRT Avaz
@@ -247,11 +267,15 @@ https://tv-trtdiyanetcocuk.medya.trt.com.tr/master_720.m3u8
 # ── AVRUPA (15 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="EuroStar.tr" tvg-logo="https://i.imgur.com/kb165Ot.png" group-title="Haber",EUROSTAR
 https://dogusdyg-eurostar.lg.mncdn.com/dogusdyg_eurostar/live_1080p3000000kbps/index.m3u8?st=0ZgQIZcSPX9MrFpXIXIVKA&e=1780378516
+#EXTINF:-1 tvg-id="EuroStar.tr" tvg-logo="https://i.imgur.com/kb165Ot.png" group-title="Haber",Euro Star (v2)
+https://cdn507.tvkulesi.com/eurostar.m3u8?tkn=juExpGYVGGOF4mlaXLHksw&tms=1780355309&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=euro-star
 
 #EXTINF:-1 tvg-id="tr.atvavrupa" group-title="Avrupa",Atv Avrupa
 https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=SHAjMSLtwJsmdaHjvOEOVQ&e=1780347014
 #EXTINF:-1 tvg-id="tr.atvavrupa" group-title="Avrupa",Atv Avrupa
 https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=Ii2GGA0kjffTvtb623nYTQ&e=1780351341
+#EXTINF:-1 tvg-id="tr.atvavrupa" group-title="Avrupa",ATV Avrupa (v2)
+https://cdn508.tvkulesi.com/atvavrupa.m3u8?tkn=MeYhP6ED6srCa7K8x-Lw_w&tms=1780355303&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv-avrupa
 
 #EXTINF:-1 tvg-id="tr.mceutv" group-title="Avrupa",MCEU TV
 https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protocol=https&output=playlist.m3u8
@@ -485,5 +509,13 @@ https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi (v2)
+https://tv-trtkurdi.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="tr.habitattv" group-title="Belgesel",Habitat TV
 https://cdn509.tvkulesi.com/habitattv.m3u8?tkn=f8ozbyrZ1ke4tGBz5pH01Q&tms=1780354571&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=habitat-tv
+#EXTINF:-1 tvg-id="tr.eurod" group-title="Ulusal",Euro D
+https://cdn505.tvkulesi.com/eurod.m3u8?tkn=Q3wFKiceNVKWrBhdo6Mjbg&tms=1780355315&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=euro-d
+#EXTINF:-1 tvg-id="TV8int.tr" group-title="Ulusal",TV8 Int
+https://cdn508.tvkulesi.com/tv8int.m3u8?tkn=yK2EWVJuH3kM6SNIyMYmmA&tms=1780355324&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv8-int
+#EXTINF:-1 tvg-id="tr.aztv" group-title="Avrupa",Az TV
+https://cdn509.tvkulesi.com/aztv.m3u8?tkn=OmkYj_YK37pvHGgYSEXSgA&tms=1780355345&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=az-tv
