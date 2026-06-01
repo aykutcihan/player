@@ -4,10 +4,30 @@
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.360",360
 https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
-#EXTINF:-1 tvg-id="tr.ahaber",A Haber
-https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=5m4eoHIgqPByGARXwTR40Q&e=1780345566
+
+
+#EXTINF:-1 tvg-id="tr.beyaztv",Beyaz TV
+https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.bikanal",Bi Kanal TV
+https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.apara",A Para
 https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=Rxf2RxskYaBgH7I24uViCw&e=1780345566
+#EXTINF:-1 tvg-id="tr.benguturk",Benguturk
+https://tv.ensonhaber.com/benguturk/benguturk.m3u8
+
+#EXTINF:-1 tvg-id="tr.ciftcitv",Ciftci TV
+https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
+
+
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png",BURDUR KANAL-15
+https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.astv" tvg-logo="http://assets.tvcdn.net/448471a0-f688-4ac5-a279-1771f384b6de.png",BURSA AS
+https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
+
+
+#EXTINF:-1 tvg-id="tr.ahaber",A Haber
+https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=5m4eoHIgqPByGARXwTR40Q&e=1780345566
+
 #EXTINF:-1 tvg-id="tr.aspor",A Spor
 https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=ago_YUiqCmgQGHcJyWmg7g&e=1780345728
 #EXTINF:-1 tvg-id="tr.a2",A2
@@ -20,10 +40,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
 
-#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png",BURDUR KANAL-15
-https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.astv" tvg-logo="http://assets.tvcdn.net/448471a0-f688-4ac5-a279-1771f384b6de.png",BURSA AS
-https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
+
 
 
 #EXTINF:-1 tvg-id="tr.atv",Atv
@@ -72,12 +89,7 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://2i4.d72577a9dd0ec71.cfd/bm1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsportsmax2",beIN Sports Max 2
 https://2i4.d72577a9dd0ec71.cfd/bm2/mono.m3u8
-#EXTINF:-1 tvg-id="tr.benguturk",Benguturk
-https://tv.ensonhaber.com/benguturk/benguturk.m3u8
-#EXTINF:-1 tvg-id="tr.beyaztv",Beyaz TV
-https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
-#EXTINF:-1 tvg-id="tr.bikanal",Bi Kanal TV
-https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
+
 #EXTINF:-1 tvg-id="tr.bizimevtv",Bizim Ev TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.bloomberght",Bloomberg HT
@@ -93,16 +105,13 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 #EXTINF:-1 tvg-id="tr.cbeebies",Cbeebies
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 
-#EXTINF:-1 tvg-id="tr.ciftcitv",Ciftci TV
-https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
+
 #EXTINF:-1 tvg-id="tr.classicalharmony",Classical Harmony
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.cnbce",CNBC-e
 https://cnbc-e.daioncdn.net/cnbc-e/cnbc-e.m3u8?app=web&st=W4wyJb_daYiYOmvElODSzQ&e=1780337397
-#EXTINF:-1 tvg-id="tr.cnninternational",CNN International
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.cnnturk",CNN Turk
-https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=7IndO3lo1vuBydvPYI-hlA&e=1780312533
 #EXTINF:-1 tvg-id="tr.cosmoen",Cosmo En
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.cosmosports",Cosmosports
