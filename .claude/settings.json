@@ -14,7 +14,12 @@
       "Bash(python src/fetch_inat_streams.py)",
       "Bash(grep -A1 'tvg-id=\"__TRACKED_VAR__\"' playlist.m3u)",
       "Bash(grep -A1 'tvg-id=\"__TRACKED_VAR__\",' playlist.m3u)",
-      "Bash(git show *)"
+      "Bash(git show *)",
+      "Bash(git rebase *)",
+      "Bash(git reset *)",
+      "Bash(python sort_playlist.py)",
+      "Bash(yt-dlp --get-url -f \"best\" \"https://www.youtube.com/watch?v=5ovykCkBWfU\")",
+      "Bash(python src/refresh_youtube.py)"
     ]
   }
 }
