@@ -154,6 +154,48 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
+    # ── MÜZİK KANALLARI — 2 saatlik döngüler ─────────────────────
+    "tr.toppop": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Müzik Yayını", "Pop müzik video yayını") for h in range(0, 24, 2)],
+    },
+    "tr.finest": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Türkçe Pop Yayını", "Türkçe pop müzik video yayını") for h in range(0, 24, 2)],
+    },
+    "tr.guclutv": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Özgün Müzik Yayını", "Özgün ve yöresel Türk müziği yayını") for h in range(0, 24, 2)],
+    },
+    "tr.dostmuzik": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Halk Müziği Yayını", "Türk halk müziği ve türkü yayını") for h in range(0, 24, 2)],
+    },
+    "tr.gencsms": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Müzik Yayını", "Genç dinleyicilere yönelik müzik video yayını") for h in range(0, 24, 2)],
+    },
+    "tr.armatv": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Arabesk Müzik Yayını", "Arabesk ve Türk sanat müziği video yayını") for h in range(0, 24, 2)],
+    },
+    "tr.silatv": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Arabesk Müzik Yayını", "Arabesk ve duygusal Türk müziği yayını") for h in range(0, 24, 2)],
+    },
+    "tr.damartv": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Damar Arabesk Yayını", "Damar arabesk müzik video yayını") for h in range(0, 24, 2)],
+    },
+    "tr.ezotv": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Halk Müziği Yayını", "Türk halk müziği ve yöresel türküler yayını") for h in range(0, 24, 2)],
+    },
+    "tr.ezgitv": {
+        "tz": IST_TZ,
+        "daily": [(h, 0, "Özgün Müzik Yayını", "Özgün ve kültürel Türk müziği yayını") for h in range(0, 24, 2)],
+    },
+
     # ── CHILL TV — 2 saatlik sakinleştirici müzik döngüsü ────────
     "tr.chilltv": {
         "tz": IST_TZ,

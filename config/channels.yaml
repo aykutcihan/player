@@ -1503,3 +1503,52 @@ channels:
     name: "Chill TV"
     sources:
       - staticschedule:tr.chilltv
+  tr.toppop:
+    name: "Top Pop"
+    sources:
+      - staticschedule:tr.toppop
+
+  tr.finest:
+    name: "Finest TV"
+    sources:
+      - staticschedule:tr.finest
+
+  tr.guclutv:
+    name: "Guclu TV"
+    sources:
+      - staticschedule:tr.guclutv
+
+  tr.dostmuzik:
+    name: "Dost Muzik"
+    sources:
+      - staticschedule:tr.dostmuzik
+
+  tr.gencsms:
+    name: "Genc SMS"
+    sources:
+      - staticschedule:tr.gencsms
+
+  tr.armatv:
+    name: "Arma TV"
+    sources:
+      - staticschedule:tr.armatv
+
+  tr.silatv:
+    name: "Sila TV"
+    sources:
+      - staticschedule:tr.silatv
+
+  tr.damartv:
+    name: "Damar TV"
+    sources:
+      - staticschedule:tr.damartv
+
+  tr.ezotv:
+    name: "Ezo TV"
+    sources:
+      - staticschedule:tr.ezotv
+
+  tr.ezgitv:
+    name: "Ezgi TV"
+    sources:
+      - staticschedule:tr.ezgitv
