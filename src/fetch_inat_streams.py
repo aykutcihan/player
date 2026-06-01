@@ -14,13 +14,31 @@ GATEWAY = "https://inattvgiris.one/"
 
 # tvg-id → inat channel id
 INAT_CHANNELS = {
-    "tr.beinsports1":   "zirve",
-    "tr.beinsports2":   "b2",
-    "tr.beinsports3":   "b3",
-    "tr.beinsports4":   "b4",
-    "tr.beinsportshaber": "bsh",
-    "tr.ssport":        "ss",
-    "tr.ssport2":       "sms2",
+    "tr.beinsports1":    "zirve",
+    "tr.beinsports2":    "b2",
+    "tr.beinsports3":    "b3",
+    "tr.beinsports4":    "b4",
+    "tr.beinsports5":    "b5",
+    "tr.beinsportsmax1": "bm1",
+    "tr.beinsportsmax2": "bm2",
+    "tr.ssport":         "ss",
+    "tr.ssport2":        "ss2",
+    "tr.tivibuspor":     "t1",
+    "tr.tivibuspor2":    "t2",
+    "tr.tivibuspor3":    "t3",
+    "tr.tivibuspor4":    "t4",
+    "tr.smartspor":      "smarts",
+    "tr.smartspor2":     "sms2",
+    "tr.trtspor":        "trtspor",
+    "tr.trtsporyildiz":  "trtspor2",
+    "tr.trt1":           "trt1",
+    "tr.aspor":          "as",
+    "tr.atv":            "atv",
+    "tr.tv8":            "tv8",
+    "tr.tv85":           "tv85",
+    "tr.nbatv":          "nbatv",
+    "tr.eurosport1":     "eu1",
+    "tr.eurosport2":     "eu2",
 }
 
 
