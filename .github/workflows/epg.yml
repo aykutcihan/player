@@ -52,6 +52,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           if exist epg.xml git add epg.xml
           if exist cache\tmdb.json git add cache\tmdb.json
+          if exist playlist.m3u git add playlist.m3u
           git diff --cached --quiet
           if errorlevel 1 (
             git commit -m "Automated EPG update"
