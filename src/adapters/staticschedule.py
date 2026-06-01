@@ -27,6 +27,25 @@ IST_TZ = tz.gettz("Europe/Istanbul")
 # Gün numarası: 0=Pazartesi, 1=Salı, ..., 6=Pazar
 SCHEDULES: Dict[str, Dict] = {
 
+    # ── MED MÜZİK TV — 2 saatlik döngü, 7/24 ────────────────────
+    "tr.medmuziktv": {
+        "tz": IST_TZ,
+        "daily": [
+            ( 0,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            ( 2,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            ( 4,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            ( 6,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            ( 8,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (10,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (12,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (14,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (16,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (18,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (20,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+            (22,  0, "Müzik Yayını", "Çeşitli sanatçılardan Kürtçe müzik yayını"),
+        ],
+    },
+
     # ── NEO HABER — her gün aynı, Türkiye saati ──────────────────
     "tr.neohabertv": {
         "tz": IST_TZ,

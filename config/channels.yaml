@@ -1404,3 +1404,8 @@ channels:
     name: "Gurbet24 TV"
     sources:
       - gurbet24:gurbet24
+
+  tr.medmuziktv:
+    name: "Med Muzik TV"
+    sources:
+      - staticschedule:tr.medmuziktv
