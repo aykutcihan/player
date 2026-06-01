@@ -20,7 +20,11 @@
       "Bash(python sort_playlist.py)",
       "Bash(yt-dlp --get-url -f \"best\" \"https://www.youtube.com/watch?v=5ovykCkBWfU\")",
       "Bash(python src/refresh_youtube.py)",
-      "Bash(python fetch_all_streams.py)"
+      "Bash(python fetch_all_streams.py)",
+      "PowerShell($f = \"C:\\\\Users\\\\Aykut\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Dev-stepup-epg-generator\\\\5fc228f0-9316-4f26-8ca7-7b1d2fc84ab1\\\\tasks\\\\ba95fv6rg.output\"; \\(Get-Item $f\\).Length; Get-Content $f -Raw)",
+      "Bash(python fetch_fast.py)",
+      "PowerShell(Get-Process python)",
+      "PowerShell(Stop-Process -Force 2>&1)"
     ]
   }
 }
