@@ -16,7 +16,7 @@ https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.bikanal",Bi Kanal TV
 https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.apara",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=Z8IP5-y8UZINpW2EQnewvA&e=1780347289
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=TDhG9CyIQzJXVXoh7OhmUA&e=1780347012
 #EXTINF:-1 tvg-id="tr.benguturk",Benguturk
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 
@@ -31,12 +31,12 @@ https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
 
 
 #EXTINF:-1 tvg-id="tr.ahaber",A Haber
-https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=5m4eoHIgqPByGARXwTR40Q&e=1780345566
+https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=3mWQqs78_23m2in92QRbqw&e=1780347012
 
 #EXTINF:-1 tvg-id="tr.aspor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=rDkwrSXhapgrA5iIbEz8hw&e=1780347289
+https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=SQIYnqGswptUPmbO_ERGYQ&e=1780347013
 #EXTINF:-1 tvg-id="tr.a2",A2
-https://trkvz-live.ercdn.net/a2/a2.m3u8?st=T7QWFEUpGWUWZtkhCw_Mxg&e=1780345567
+https://trkvz-live.ercdn.net/a2/a2.m3u8?st=yJLLWe6xgoc0TmD6o4ZZIA&e=1780347013
 #EXTINF:-1 tvg-id="tr.akittv",Akit TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.alquranalkareem",Al Quran Al Kareem TV
@@ -49,9 +49,9 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 
 
 #EXTINF:-1 tvg-id="tr.atv",Atv
-https://trkvz-live.ercdn.net/atv/atv.m3u8?st=zZIlynNuZ7IgIyx1wpYPLA&e=1780345728
+https://trkvz-live.ercdn.net/atv/atv.m3u8?st=eUPTKb--0hsnbkTGLAX-5A&e=1780347014
 #EXTINF:-1 tvg-id="tr.atvavrupa",Atv Avrupa
-https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=y5Fb_-FR6bCcH8Sy_xEzfA&e=1780345729
+https://trkvz-live.ercdn.net/atvavrupa/atvavrupa.m3u8?st=SHAjMSLtwJsmdaHjvOEOVQ&e=1780347014
 #EXTINF:-1 tvg-id="tr.azoomee",Azoomee
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.babytv",Babytv
@@ -1507,9 +1507,9 @@ https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trt1" group-title="Spor",TRT 1
 https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=rDkwrSXhapgrA5iIbEz8hw&e=1780347289
+https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=pV7VWsxmUplyMkMp9twKfQ&e=1780347015
 #EXTINF:-1 tvg-id="tr.atv" group-title="Spor",ATV
-https://trkvz-live.ercdn.net/atv/atv.m3u8?st=_02Z_t-B9INpOtS2gNDYVw&e=1780345729
+https://trkvz-live.ercdn.net/atv/atv.m3u8?st=xW7j2QFDOLjmmxGfAqaiMw&e=1780347015
 #EXTINF:-1 tvg-id="tr.tv8" group-title="Spor",TV 8
 https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
 #EXTINF:-1 tvg-id="tr.tv85" group-title="Spor",TV 8.5
