@@ -40,7 +40,7 @@ https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8?ce=2&app=201b9556-b11c-4
 
 
 #EXTINF:-1 tvg-id="tr.apara",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=Wt5ge2POIBfPm3vWe_RyVw&e=1780351339
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=F_qc9cLp_6Wktwas93lk1g&e=1780352333
 #EXTINF:-1 tvg-id="tr.benguturk",Benguturk
 https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 
@@ -66,7 +66,7 @@ https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
 https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=XnW-uIAW7YTEAu2k1nNnnA&e=1780351339
 
 #EXTINF:-1 tvg-id="tr.aspor",A Spor
-https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=LW8Bq8GmovHtSMvRFczChA&e=1780351339
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=DZQQtmwC49bbb5YyK6q4TQ&e=1780352333
 #EXTINF:-1 tvg-id="tr.a2",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=U5sEhQ5sUMKgV2TxkbzyJA&e=1780351340
 #EXTINF:-1 tvg-id="tr.akittv",Akit TV
@@ -800,7 +800,7 @@ https://live.artidijitalmedya.com/artidijital_astv/astv/chunks.m3u8
 https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=3mWQqs78_23m2in92QRbqw&e=1780347012
 
 #EXTINF:-1 tvg-id="tr.aspor",A Spor
-https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=SQIYnqGswptUPmbO_ERGYQ&e=1780347013
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=DZQQtmwC49bbb5YyK6q4TQ&e=1780352333
 #EXTINF:-1 tvg-id="tr.a2",A2
 https://trkvz-live.ercdn.net/a2/a2.m3u8?st=yJLLWe6xgoc0TmD6o4ZZIA&e=1780347013
 #EXTINF:-1 tvg-id="tr.akittv",Akit TV
@@ -1929,7 +1929,7 @@ https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
 #EXTINF:-1 tvg-id="tr.trt1" group-title="Spor",TRT 1
 https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/aspor/aspor.m3u8?st=hXKIr5ayRQreHlzse7jUKw&e=1780351341
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=p1qw6LD6esAhzva6PlgH4Q&e=1780352334
 #EXTINF:-1 tvg-id="tr.atv" group-title="Spor",ATV
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=hbrqYFEBFN0q4Tdhnvp7Sw&e=1780351342
 #EXTINF:-1 tvg-id="tr.tv8" group-title="Spor",TV 8
