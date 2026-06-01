@@ -811,6 +811,7 @@ channels:
     name: "Power TV"
     sources:
       - tvplus:power-tv-hd--172
+      - powerapp:powertv
       - tivibu:ch00000000000000001231
       - tvyayinakisi:power-tv
 

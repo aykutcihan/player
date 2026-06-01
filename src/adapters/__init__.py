@@ -9,6 +9,7 @@ from adapters.staticschedule import StaticScheduleAdapter
 from adapters.turksatkablo import TurksatKabloAdapter
 from adapters.gurbet24 import Gurbet24Adapter
 from adapters.dosttv import DostTvAdapter
+from adapters.powerapp import PowerAppAdapter
 
 
 def build_registry(session=None):
@@ -23,6 +24,7 @@ def build_registry(session=None):
         TurksatKabloAdapter(session),
         Gurbet24Adapter(session),
         DostTvAdapter(session),
+        PowerAppAdapter(session),
     ]
     return {a.prefix: a for a in insts}
 
