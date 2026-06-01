@@ -154,6 +154,25 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
+    # ── TEMPO TV — 2 saatlik müzik döngüsü ───────────────────────
+    "tr.tempotv": {
+        "tz": IST_TZ,
+        "daily": [
+            ( 0, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            ( 2, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            ( 4, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            ( 6, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            ( 8, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (10, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (12, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (14, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (16, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (18, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (20, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+            (22, 0, "Tempo TV Yayını", "Türkçe pop ve arabesk müzik video yayını"),
+        ],
+    },
+
     # ── KRAL TV KANALLARI ─────────────────────────────────────────
     "tr.kraltv": {
         "tz": IST_TZ,

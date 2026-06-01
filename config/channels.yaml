@@ -1493,3 +1493,8 @@ channels:
     name: "Kral Pop TV"
     sources:
       - staticschedule:tr.kralpoptv
+
+  tr.tempotv:
+    name: "Tempo TV"
+    sources:
+      - staticschedule:tr.tempotv
