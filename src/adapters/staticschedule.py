@@ -154,6 +154,42 @@ SCHEDULES: Dict[str, Dict] = {
         ],
     },
 
+    # ── KRAL TV KANALLARI ─────────────────────────────────────────
+    "tr.kraltv": {
+        "tz": IST_TZ,
+        "daily": [
+            ( 0, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            ( 2, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            ( 4, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            ( 6, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            ( 8, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (10, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (12, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (14, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (16, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (18, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (20, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+            (22, 0, "Kral TV Yayını", "Türkü, halk müziği ve Türk sanat müziği video yayını"),
+        ],
+    },
+    "tr.kralpoptv": {
+        "tz": IST_TZ,
+        "daily": [
+            ( 0, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            ( 2, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            ( 4, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            ( 6, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            ( 8, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (10, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (12, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (14, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (16, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (18, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (20, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+            (22, 0, "Kral Pop TV Yayını", "Türkçe pop müzik video kanalı yayını"),
+        ],
+    },
+
     # ── NR1 / NUMBER1 KANALLARI ──────────────────────────────────
     "tr.nr1rap": {
         "tz": IST_TZ,

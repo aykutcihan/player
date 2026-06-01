@@ -807,15 +807,15 @@ channels:
   tr.powerturk:
     name: "Power Turk"
     sources:
-      - tvplus:power-turk-hd--202
       - powerapp:powerturktv
+      - tvplus:power-turk-hd--202
       - tivibu:ch00000000000000001225
 
   tr.powertv:
     name: "Power TV"
     sources:
-      - tvplus:power-tv-hd--172
       - powerapp:powertv
+      - tvplus:power-tv-hd--172
       - tivibu:ch00000000000000001231
       - tvyayinakisi:power-tv
 
@@ -1483,3 +1483,13 @@ channels:
     name: "NR1 Damar"
     sources:
       - staticschedule:tr.nr1damar
+
+  tr.kraltv:
+    name: "Kral TV"
+    sources:
+      - staticschedule:tr.kraltv
+
+  tr.kralpoptv:
+    name: "Kral Pop TV"
+    sources:
+      - staticschedule:tr.kralpoptv
