@@ -70,7 +70,7 @@ https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playli
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/7b8dbf43-064f-4458-9c93-71089eaf493b.png",TÜRK HABER
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TRT 3 Spor" tvg-logo="https://i.ibb.co/BN9tk1q/tbmm22.png",MECLİS
+#EXTINF:-1 tvg-id="tr.trt3" tvg-logo="https://i.ibb.co/BN9tk1q/tbmm22.png",MECLİS
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/4e98253f-f791-42da-8497-51e821dde886.png",FİNANSTÜRK
 https://yayin30.haber100.com/live/finansturk/chunklist_w377520896.m3u8
