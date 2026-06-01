@@ -15,9 +15,9 @@ https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-3
 https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
 
 #EXTINF:-1 tvg-id="tr.cnbce",CNBC-e
-https://cnbc-e.daioncdn.net/cnbc-e/cnbc-e.m3u8?app=web&st=W4wyJb_daYiYOmvElODSzQ&e=1780337397
+https://cnbc-e.daioncdn.net/cnbc-e/cnbc-e_1080p.m3u8?e=1780339385&st=4oDydTLivum3d7JTNL7okg
 #EXTINF:-1 tvg-id="tr.cnnturk",CNN Turk
-https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=7IndO3lo1vuBydvPYI-hlA&e=1780312533
+https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=qPPQdbIFB4qCEJhoPCnGlw&e=1780314208
 
 #EXTINF:-1 tvg-id="tr.fbtv",FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
