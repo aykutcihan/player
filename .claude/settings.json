@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh workflow *)",
+      "PowerShell(Start-Process cmd -ArgumentList '/k \"cd C:\\\\actions-runner && run.cmd\"' -WindowStyle Normal)",
+      "Bash(python -c ' *)",
+      "Bash(pip install *)",
+      "Bash(playwright install *)",
+      "Bash(git rm *)",
+      "Bash(python -c \"import yaml; d=yaml.safe_load\\(open\\('config/channels.yaml',encoding='utf-8'\\)\\); print\\('Gecerli, toplam kanal:', len\\(d['channels']\\)\\)\")",
+      "WebFetch(domain:www.gurbet24.com)",
+      "Bash(git stash *)",
+      "WebFetch(domain:www.powerapp.com.tr)",
+      "Bash(python src/fetch_inat_streams.py)",
+      "Bash(grep -A1 'tvg-id=\"__TRACKED_VAR__\"' playlist.m3u)",
+      "Bash(grep -A1 'tvg-id=\"__TRACKED_VAR__\",' playlist.m3u)"
+    ]
+  }
+}
