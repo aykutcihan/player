@@ -140,6 +140,8 @@ https://cdn502.kavuntv.net/a2tv.m3u8?tkn=Jly8kR8_bZSmkZhtCKbRWQ&tms=1780364130&h
 
 #EXTINF:-1 tvg-id="tr.ekoltv",Ekol TV
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.ekoltv",Ekol Tv (kavu)
+https://cdn900.kavuntv.net/ekoltv.m3u8?tkn=rkr6W2ZM6Ovw4AKadJFVPA&tms=1780364642&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekol-tv
 #EXTINF:-1 tvg-id="tr.ekoltv",Ekol Tv (tvku)
 https://cdn900.tvkulesi.com/ekoltv.m3u8?tkn=-O7tfr4qnZspv8k4K_1vCg&tms=1780363496&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekol-tv
 #EXTINF:-1 tvg-id="tr.ekoltv",Ekol Tv (v-kavu)
@@ -150,6 +152,8 @@ https://cdn900.tvkulesi.com/ekoltv.m3u8?tkn=j41m861YV2hLwa5WOJF0dA&tms=178035719
 # ── HABER (29 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.tv100" group-title="Haber",Tv100
 https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.tv100" group-title="Haber",TV100 (kavu)
+https://cdn506.kavuntv.net/tv100.m3u8?tkn=dd2b_-3pdkZlhIB9oValCQ&tms=1780364637&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv100
 #EXTINF:-1 tvg-id="tr.tv100" group-title="Haber",TV1 (kavu)
 https://cdn900.kavuntv.net/tv1.m3u8?tkn=1KinOFgOuKB1bipyYiWeoQ&tms=1780364288&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv1
 #EXTINF:-1 tvg-id="tr.tv100" group-title="Haber",TV100 (tvku)
@@ -170,8 +174,12 @@ https://live.artidijitalmedya.com/artidijital_mavikaradeniz/mavikaradeniz/playli
 https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
 #EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",A Haber
 https://trkvz-live.ercdn.net/ahaber/ahaber.m3u8?st=XnW-uIAW7YTEAu2k1nNnnA&e=1780351339
+#EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",A Haber (kavu)
+https://cdn509.kavuntv.net/ahaber.m3u8?tkn=V5LanJfC6Y-asViQnAPptg&tms=1780364440&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-haber
 #EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",A Haber (tvku)
 https://cdn507.tvkulesi.com/ahaber.m3u8?tkn=qGOYuqXyWS0iJd283KAAsg&tms=1780363292&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-haber
+#EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",ER Tv (kavu)
+https://cdn900.kavuntv.net/ertv.m3u8?tkn=X8Cg1jWvFm2G0F5if7ajmA&tms=1780365224&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=er-tv
 #EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",ER Tv (tvku)
 https://cdn900.tvkulesi.com/ertv.m3u8?tkn=aING-Sxs3oNMYITDpipfkg&tms=1780364085&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=er-tv
 #EXTINF:-1 tvg-id="tr.ahaber" group-title="Haber",A Haber (v-kavu)
@@ -186,6 +194,8 @@ https://tv.ensonhaber.com/benguturk/benguturk.m3u8
 https://cdn506.kavuntv.net/benguturktv.m3u8?tkn=JCIRJ2KR4k19
 #EXTINF:-1 tvg-id="tr.bloomberght" group-title="Haber",Bloomberg HT
 https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8?ce=2&app=201b9556-b11c-4d92-b264-f21fd24e9aaf
+#EXTINF:-1 tvg-id="tr.bloomberght" group-title="Haber",Bloomberg HT (kavu)
+https://cdn502.kavuntv.net/bloomberght.m3u8?tkn=ScmmxouoKoOF1zdjmbUHAA&tms=1780364464&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bloomberg-ht
 #EXTINF:-1 tvg-id="tr.bloomberght" group-title="Haber",Bloomberg HT (tvku)
 https://cdn506.tvkulesi.com/bloomberght.m3u8?tkn=m2bG_caxjQN3tUWN2ySDjw&tms=1780363316&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bloomberg-ht
 #EXTINF:-1 tvg-id="tr.bloomberght" group-title="Haber",Bloomberg HT (v-kavu)
@@ -202,6 +212,8 @@ https://cnbc-e.daioncdn.net/cnbc-e/cnbc-e_1080p.m3u8?e=1780339385&st=4oDydTLivum
 https://live.duhnet.tv//S2/HLS_LIVE/cnnturknp/playlist.m3u8?&live=true&app=com.cnnturk&st=7IndO3lo1vuBydvPYI-hlA&e=1780312533
 #EXTINF:-1 tvg-id="tr.haberglobal" group-title="Haber",Haber Global
 https://tv.ensonhaber.com/haberglobal/haberglobal_720p.m3u8
+#EXTINF:-1 tvg-id="tr.haberglobal" group-title="Haber",Haber Global (kavu)
+https://cdn508.kavuntv.net/haberglobal.m3u8?tkn=HLWDUsMp6m9EVYXj6Ynjyg&tms=1780364766&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=haber-global
 #EXTINF:-1 tvg-id="tr.haberglobal" group-title="Haber",Haber Global (tvku)
 https://cdn503.tvkulesi.com/haberglobal.m3u8?tkn=ERJ0ytMnP17cAoOnwjsUHw&tms=1780363620&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=haber-global
 #EXTINF:-1 tvg-id="tr.haberglobal" group-title="Haber",Haber Global (v-kavu)
@@ -214,6 +226,8 @@ https://ciner.daioncdn.net/haberturktv/haberturktv_1080p.m3u8?app=c98ab0b0-50cc-
 https://cdn501.kavuntv.net/haberturk.m3u8?tkn=OL6JpLUBNpwAvq
 #EXTINF:-1 tvg-id="tr.liderhabertv" group-title="Haber",Lider Haber TV
 http://nrttn172.kesintisizyayin.com:29010/lidertv/lidertv/sec-f5-v1-a1.m3u8
+#EXTINF:-1 tvg-id="tr.liderhabertv" group-title="Haber",Lider Haber Tv (kavu)
+https://cdn900.kavuntv.net/liderhaber.m3u8?tkn=wpSLMeJqzrNBhSiafA_Ffw&tms=1780364488&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lider-haber
 #EXTINF:-1 tvg-id="tr.liderhabertv" group-title="Haber",Lider Haber Tv (tvku)
 https://cdn900.tvkulesi.com/liderhaber.m3u8?tkn=l5YYk2K0yP_DcDmfwYGxgA&tms=1780363341&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lider-haber
 #EXTINF:-1 tvg-id="tr.liderhabertv" group-title="Haber",Lider Haber Tv (v-kavu)
@@ -227,6 +241,8 @@ https://cdn900.kavuntv.net/liderhaber.m3u8?tkn=iSgXaBqqG_P1Q
 https://edge.taksimbilisim.com/neohaber/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.ntv" group-title="Haber",NTV
 http://dygvideo.dygdigital.com/live/hls/ntv4puhu?m3u8
+#EXTINF:-1 tvg-id="tr.ntv" group-title="Haber",NTV (kavu)
+https://cdn509.kavuntv.net/ntv.m3u8?tkn=4LUnqbxJx5P1-UJthKmhVA&tms=1780364456&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv
 #EXTINF:-1 tvg-id="tr.ntv" group-title="Haber",NTV (tvku)
 https://cdn506.tvkulesi.com/ntv.m3u8?tkn=MLVstvVBV5jTTBap8CHuBA&tms=1780363308&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv
 #EXTINF:-1 tvg-id="tr.ntv" group-title="Haber",NTV (v-kavu)
@@ -238,6 +254,8 @@ https://cdn504.kavuntv.net/ntv.m3u8?tkn=hRcj9e4pIUNcCtdQXfJ-
 
 #EXTINF:-1 tvg-id="tr.tgrthaber" group-title="Haber",TGRT Haber
 https://canli.tgrthaber.com/tgrt.m3u8
+#EXTINF:-1 tvg-id="tr.tgrthaber" group-title="Haber",TGRT Haber (kavu)
+https://cdn509.kavuntv.net/tgrthaber.m3u8?tkn=THNVgpKCo_IzFEqab2utSw&tms=1780364448&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tgrt-haber
 #EXTINF:-1 tvg-id="tr.tgrthaber" group-title="Haber",TGRT Haber (tvku)
 https://cdn501.tvkulesi.com/tgrthaber.m3u8?tkn=KvjXbLF3UqoaG60GzrHmag&tms=1780363300&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tgrt-haber
 #EXTINF:-1 tvg-id="tr.tgrthaber" group-title="Haber",TGRT Haber (v-kavu)
@@ -250,10 +268,14 @@ https://cdn501.kavuntv.net/tgrthaber.m3u8?tkn=aoshXfPjDv4Rbz
 # ── SPOR (56 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB TV
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB Tv (kavu)
+https://cdn502.kavuntv.net/fbtv.m3u8?tkn=hckMv7PGxYtYNRbyMkr4aQ&tms=1780364806&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=fb-tv
 #EXTINF:-1 tvg-id="tr.fbtv" group-title="Spor",FB Tv (tvku)
 https://cdn504.tvkulesi.com/fbtv.m3u8?tkn=6hSNjXJBbAkO2vMLgERRpQ&tms=1780363660&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=fb-tv
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=JFjOjfImRtIkOjsy_xO-UQ&e=1780395581
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=uM_ZQLu7xghZyTB80JDIOQ&e=1780386861
+#EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor (kavu)
+https://cdn504.kavuntv.net/aspor.m3u8?tkn=Z_xlOT1gfUUPBiBDl50Evg&tms=1780364809&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-spor
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor (tvku)
 https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=JFjOjfImRtIkOjsy_xO-UQ&e=1780395581
 #EXTINF:-1 tvg-id="tr.beinsports1" group-title="Spor",beIN Sports 1
@@ -268,6 +290,8 @@ https://2i4.d72577a9dd0ec71.cfd/b4/mono.m3u8
 https://2i4.d72577a9dd0ec71.cfd/b5/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsportshaber" group-title="Spor",beIN Sports Haber
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.beinsportshaber" group-title="Spor",Bein Sports Haber (kavu)
+https://cdn502.kavuntv.net/beinsporthaber.m3u8?tkn=v8jbCxFp64kmtfemoudqwg&tms=1780364875&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bein-sports-haber
 #EXTINF:-1 tvg-id="tr.beinsportshaber" group-title="Spor",Bein Sports Haber (tvku)
 https://cdn503.tvkulesi.com/beinsporthaber.m3u8?tkn=yqE-AgXaBOYeD4Ys1UQXxQ&tms=1780363729&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bein-sports-haber
 #EXTINF:-1 tvg-id="tr.beinsportsmax1" group-title="Spor",beIN Sports Max 1
@@ -286,6 +310,8 @@ https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ssport" group-title="Spor",S Sport
 https://2i4.d72577a9dd0ec71.cfd/ss/mono.m3u8
+#EXTINF:-1 tvg-id="tr.ssport" group-title="Spor",S Sport (kavu)
+https://cdn900.kavuntv.net/gstv.m3u8?tkn=3wgOXqM91Hxl3jzueHZIgw&tms=1780364846&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=s-sport
 #EXTINF:-1 tvg-id="tr.ssport" group-title="Spor",S Sport (tvku)
 https://cdn900.tvkulesi.com/gstv.m3u8?tkn=vB-nn_1W33mIUeHGB_ttWw&tms=1780363700&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=s-sport
 #EXTINF:-1 tvg-id="tr.ssport2" group-title="Spor",S Sport 2
@@ -294,6 +320,8 @@ https://2i4.d72577a9dd0ec71.cfd/ss2/mono.m3u8
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.tivibuspor" group-title="Spor",Tivibu Spor
 https://2i4.d72577a9dd0ec71.cfd/t1/mono.m3u8
+#EXTINF:-1 tvg-id="tr.tivibuspor" group-title="Spor",Tivibu Spor (kavu)
+https://cdn900.kavuntv.net/tivibuspor.m3u8?tkn=HU7I0bsD_DoZr06OCt772w&tms=1780364841&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tivibu-spor
 #EXTINF:-1 tvg-id="tr.tivibuspor" group-title="Spor",Tivibu Spor (tvku)
 https://cdn900.tvkulesi.com/tivibuspor.m3u8?tkn=dlWmMdhRBJYomKhBRE34ww&tms=1780363694&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tivibu-spor
 #EXTINF:-1 tvg-id="tr.tivibuspor1" group-title="Spor",Tivibu Spor 1
@@ -308,6 +336,8 @@ https://2i4.d72577a9dd0ec71.cfd/t4/mono.m3u8
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtspor" group-title="Spor",TRT Spor
 https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8
+#EXTINF:-1 tvg-id="tr.trtspor" group-title="Spor",TRT Spor (kavu)
+https://cdn508.kavuntv.net/trtspor.m3u8?tkn=gMBAXDOBHoD4ZVd3iEP6Ig&tms=1780364804&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-spor
 #EXTINF:-1 tvg-id="tr.trtspor" group-title="Spor",TRT Spor (tvku)
 https://cdn508.tvkulesi.com/trtspor.m3u8?tkn=QFbgkg7tvFlnM5rnQOTXfQ&tms=1780363657&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-spor
 #EXTINF:-1 tvg-id="tr.trtsporyildiz" group-title="Spor",TRT Spor Yildiz
@@ -318,10 +348,12 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports (kavu)
+https://cdn900.kavuntv.net/ekolsports.m3u8?tkn=AROLGVrxXbYPpUIMZmtosQ&tms=1780364873&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekol-sports
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports (tvku)
 https://cdn900.tvkulesi.com/ekolsports.m3u8?tkn=2-pWfJepZGAL3dB0P6vtpQ&tms=1780363727&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekol-sports
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=JFjOjfImRtIkOjsy_xO-UQ&e=1780395581
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=SFYZm0uSa7C4TgubQ6QPzA&e=1780386862
 #EXTINF:-1 tvg-id="tr.beinsports1" group-title="Spor",beIN Sports 1
 https://2i4.d72577a9dd0ec71.cfd/zirve/mono.m3u8
 #EXTINF:-1 tvg-id="tr.beinsports2" group-title="Spor",beIN Sports 2
@@ -606,6 +638,8 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 # ── COCUK (44 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.cartoonnetwork" group-title="Cocuk",Cartoon Network
 http://50.7.144.122:1935/live/cartoon-network.stream/playlist.m3u8?hash=b2af21dbc448fa5061951177c2a92134 
+#EXTINF:-1 tvg-id="tr.cartoonnetwork" group-title="Cocuk",Cartoon Network (kavu)
+https://cdn508.kavuntv.net/cartoon.m3u8?tkn=WeW9QZ8CbOJ0ioAfC6edkA&tms=1780364896&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cartoon-network
 #EXTINF:-1 tvg-id="tr.cartoonnetwork" group-title="Cocuk",Cartoon Network (tvku)
 https://cdn502.tvkulesi.com/cartoon.m3u8?tkn=HC3aWZDAD1wAssw28M2rOA&tms=1780363750&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cartoon-network
 #EXTINF:-1 tvg-id="tr.azoomee" group-title="Cocuk",Azoomee
@@ -632,10 +666,14 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.minikacocuk" group-title="Cocuk",Minika Cocuk
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.minikacocuk" group-title="Cocuk",Minika Çocuk (kavu)
+https://cdn508.kavuntv.net/minikacocuk.m3u8?tkn=fmA4fI4vzkRMzy9FCaU0mQ&tms=1780364901&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=minika-cocuk
 #EXTINF:-1 tvg-id="tr.minikacocuk" group-title="Cocuk",Minika Çocuk (tvku)
 https://cdn509.tvkulesi.com/minikacocuk.m3u8?tkn=mPPI3OTKQl1GsBGf9WDoxQ&tms=1780363756&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=minika-cocuk
 #EXTINF:-1 tvg-id="tr.minikago" group-title="Cocuk",Minika Go
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.minikago" group-title="Cocuk",Minika GO (kavu)
+https://cdn507.kavuntv.net/minikago.m3u8?tkn=BdoSoljkn2iVnm6vW6k0iQ&tms=1780364904&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=minika-go
 #EXTINF:-1 tvg-id="tr.minikago" group-title="Cocuk",Minika GO (tvku)
 https://cdn509.tvkulesi.com/minikago.m3u8?tkn=j9huyKyyp0ykCUKpa2HJLQ&tms=1780363758&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=minika-go
 #EXTINF:-1 tvg-id="tr.moonbugkidstv" group-title="Cocuk",Moonbug Kids TV Turkce
@@ -654,6 +692,8 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.trtcocuk" group-title="Cocuk",TRT Cocuk
 https://tv-trtcocuk.medya.trt.com.tr/master_720.m3u8
+#EXTINF:-1 tvg-id="tr.trtcocuk" group-title="Cocuk",TRT Çocuk (kavu)
+https://cdn507.kavuntv.net/trtcocuk.m3u8?tkn=Zp4ETFEoXnT3P9Q5LLTsMQ&tms=1780364885&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-cocuk
 #EXTINF:-1 tvg-id="tr.trtcocuk" group-title="Cocuk",TRT Çocuk (tvku)
 https://cdn509.tvkulesi.com/trtcocuk.m3u8?tkn=26RoydFhi52a4kvF3Bom-Q&tms=1780363740&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-cocuk
 #EXTINF:-1 tvg-id="tr.trtdiyanetcocuk" group-title="Cocuk",TRT Diyanet Cocuk
@@ -764,6 +804,8 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 # ── DINI (17 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.akittv" group-title="Dini",Akit TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.akittv" group-title="Dini",Akit Tv (kavu)
+https://cdn900.kavuntv.net/akittv.m3u8?tkn=06qVL8oyqbCXzb_l6gSDIw&tms=1780364466&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=akit-tv
 #EXTINF:-1 tvg-id="tr.akittv" group-title="Dini",Akit Tv (tvku)
 https://cdn900.tvkulesi.com/akittv.m3u8?tkn=uD4wR0hLfiVpHD4JiJ5gDw&tms=1780363319&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=akit-tv
 #EXTINF:-1 tvg-id="tr.alquranalkareem" group-title="Dini",Al Quran Al Kareem TV
@@ -772,10 +814,14 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kadirgatv" group-title="Dini",Kadirga TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.kadirgatv" group-title="Dini",Kadırga Tv (kavu)
+https://cdn900.kavuntv.net/kadirgatv.m3u8?tkn=-I41KaSRjyOjB7E0HMRbGw&tms=1780365205&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kadirga-tv
 #EXTINF:-1 tvg-id="tr.kadirgatv" group-title="Dini",Kadırga Tv (tvku)
 https://cdn900.tvkulesi.com/kadirgatv.m3u8?tkn=EIN2pqqLKo9g13p3pARnXQ&tms=1780364066&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kadirga-tv
 #EXTINF:-1 tvg-id="tr.lalegultv" group-title="Dini",Lalegul TV
 https://lbl.netmedya.net/hls/lalegultv.m3u8
+#EXTINF:-1 tvg-id="tr.lalegultv" group-title="Dini",Lalegül Tv (kavu)
+https://cdn900.kavuntv.net/lalegultv.m3u8?tkn=qzMaePLeym16hDm1j03xnA&tms=1780364936&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lalegul-tv
 #EXTINF:-1 tvg-id="tr.lalegultv" group-title="Dini",Lalegül Tv (tvku)
 https://cdn900.tvkulesi.com/lalegultv.m3u8?tkn=GsUj1bIZ6qVNR8ZYlQlwqA&tms=1780363790&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lalegul-tv
 #EXTINF:-1 tvg-id="tr.saudiquran" group-title="Dini",Saudi Quran
@@ -822,6 +868,8 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://cdn900.kavuntv.net/kanal7avrupa.m3u8?tkn=uoTgJT8YwM2rWcGmTgTg4Q&tms=1780364422&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-7-avrupa
 #EXTINF:-1 tvg-id="tr.kanalavrupatv" group-title="Avrupa",Kanal Avrupa TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.kanalavrupatv" group-title="Avrupa",Kanal Avrupa (kavu)
+https://cdn900.kavuntv.net/kanalavrupa.m3u8?tkn=6TwQx8WC1JdFrjH-n-J8Ww&tms=1780364632&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-avrupa
 #EXTINF:-1 tvg-id="tr.kanalavrupatv" group-title="Avrupa",Kanal Avrupa (tvku)
 https://cdn900.tvkulesi.com/kanalavrupa.m3u8?tkn=eX5wewtTza1gYw5TU13KtA&tms=1780363485&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-avrupa
 #EXTINF:-1 tvg-id="tr.trtarabi" group-title="Avrupa",TRT Arabi
@@ -857,13 +905,17 @@ https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protoc
 
 # ── YEREL (112 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.apara" group-title="Yerel",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=03IkWvivEZOjnwMdo9wZMg&e=1780395582
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=WELaU9I2zF4fOUE5OmUKHw&e=1780386862
+#EXTINF:-1 tvg-id="tr.apara" group-title="Yerel",A Para (kavu)
+https://cdn900.kavuntv.net/apara.m3u8?tkn=jy4Orf2m2YJM7oLRGxSU6A&tms=1780364763&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-para
 #EXTINF:-1 tvg-id="tr.apara" group-title="Yerel",A Para (tvku)
 https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=03IkWvivEZOjnwMdo9wZMg&e=1780395582
 #EXTINF:-1 tvg-id="tr.ciftcitv" group-title="Yerel",Ciftci TV
 https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",BURDUR KANAL-15
 https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",Kanal 15 (kavu)
+https://cdn900.kavuntv.net/kanal15.m3u8?tkn=CFZkYWIMbe-uouI6GoW4oA&tms=1780365216&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-15
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",Kanal 15 (tvku)
 https://cdn900.tvkulesi.com/kanal15.m3u8?tkn=r56KjFfkj1QUKGP_t6E12A&tms=1780364077&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-15
 #EXTINF:-1 tvg-id="tr.astv" tvg-logo="http://assets.tvcdn.net/448471a0-f688-4ac5-a279-1771f384b6de.png" group-title="Yerel",BURSA AS
@@ -876,32 +928,46 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kibrisadatv" group-title="Yerel",Kibris Ada TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.kibrisadatv" group-title="Yerel",Ada Tv (kavu)
+https://cdn900.kavuntv.net/adatv.m3u8?tkn=-YubG1Bc8SmI_gwxit_-bQ&tms=1780365037&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ada-tv
 #EXTINF:-1 tvg-id="tr.kibrisadatv" group-title="Yerel",Ada Tv (tvku)
 https://cdn900.tvkulesi.com/adatv.m3u8?tkn=F1WZWHYj6a1zQz0elsIkYQ&tms=1780363891&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ada-tv
 #EXTINF:-1 tvg-id="tr.kibrisgenctv" group-title="Yerel",Kibris Genc TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.kibrisgenctv" group-title="Yerel",Kıbrıs Genç Tv (kavu)
+https://cdn900.kavuntv.net/kibrisgenctv.m3u8?tkn=5WD6_Nd10YgDkm2Qe7swBw&tms=1780365101&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-genc-tv
 #EXTINF:-1 tvg-id="tr.kibrisgenctv" group-title="Yerel",Kıbrıs Genç Tv (tvku)
 https://cdn900.tvkulesi.com/kibrisgenctv.m3u8?tkn=LIlPrvXy5MNGdadVVpDsrQ&tms=1780363962&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-genc-tv
 #EXTINF:-1 tvg-id="tr.kibristv" group-title="Yerel",Kibris TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.kibristv" group-title="Yerel",Kıbrıs Tv (kavu)
+https://cdn900.kavuntv.net/kibristv.m3u8?tkn=L4R4o6_nHGF9CCQCqRY_1w&tms=1780365211&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-tv
 #EXTINF:-1 tvg-id="tr.kibristv" group-title="Yerel",Kıbrıs Tv (tvku)
 https://cdn900.tvkulesi.com/kibristv.m3u8?tkn=qt7W_BwEALi3htarxDjWRQ&tms=1780364072&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-tv
 #EXTINF:-1 tvg-id="tr.kitchentv" group-title="Yerel",Kitchen TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
 #EXTINF:-1 tvg-id="tr.kontv" group-title="Yerel",Kon TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.kontv" group-title="Yerel",Kon Tv (kavu)
+https://cdn900.kavuntv.net/kontv.m3u8?tkn=I5JxPGUmhi3yIt26j19RBQ&tms=1780365007&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kon-tv
 #EXTINF:-1 tvg-id="tr.kontv" group-title="Yerel",Kon Tv (tvku)
 https://cdn900.tvkulesi.com/kontv.m3u8?tkn=l9N7y414r9iFqTreM-Ghuw&tms=1780363861&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kon-tv
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Yerel",KRT TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.krttv" group-title="Yerel",KRT Tv (kavu)
+https://cdn507.kavuntv.net/krttv.m3u8?tkn=wKg9UXCCFyyWQF1lMIhjOQ&tms=1780364791&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=krt-tv
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Yerel",KRT Tv (tvku)
 https://cdn505.tvkulesi.com/krttv.m3u8?tkn=3UUNlimWce4MDqo-AfWlMg&tms=1780363644&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=krt-tv
 #EXTINF:-1 tvg-id="tr.meltemtv" group-title="Yerel",Meltem TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.meltemtv" group-title="Yerel",Meltem Tv (kavu)
+https://cdn900.kavuntv.net/meltemtv.m3u8?tkn=0Ste7UJV0VIxWOgKz1Eg7w&tms=1780364565&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=meltem-tv
 #EXTINF:-1 tvg-id="tr.meltemtv" group-title="Yerel",Meltem Tv (tvku)
 https://cdn900.tvkulesi.com/meltemtv.m3u8?tkn=HCUJFF9C00OJZ9zkixbkYQ&tms=1780363418&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=meltem-tv
 #EXTINF:-1 tvg-id="tr.tmbtv" group-title="Yerel",Tmb TV
 https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=d5539841-018b-48b4-80fe-8bac2ffc3d5e&ce=2
+#EXTINF:-1 tvg-id="tr.tmbtv" group-title="Yerel",TMB Tv (kavu)
+https://cdn508.kavuntv.net/tmbtv.m3u8?tkn=TSsM1kNXPQDypb3iDXIdPA&tms=1780364496&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tmb-tv
 #EXTINF:-1 tvg-id="tr.tmbtv" group-title="Yerel",TMB Tv (tvku)
 https://cdn507.tvkulesi.com/tmbtv.m3u8?tkn=k8RhUNPKJ8MVrllo9UL8yw&tms=1780363349&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tmb-tv
 #EXTINF:-1 tvg-id="tr.trteba" group-title="Yerel",TRT Eba
@@ -910,6 +976,8 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 https://tv-trtgenc.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.ulketv" group-title="Yerel",Ulke TV
 https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.ulketv" group-title="Yerel",Ülke Tv (kavu)
+https://cdn506.kavuntv.net/ulketv.m3u8?tkn=VWRT3tvZgjclnHObaYiaVQ&tms=1780364458&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ulke-tv
 #EXTINF:-1 tvg-id="tr.ulketv" group-title="Yerel",Ülke Tv (tvku)
 https://cdn509.tvkulesi.com/ulketv.m3u8?tkn=dG3ZG8MST8-seCYa8L2njg&tms=1780363311&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ulke-tv
 #EXTINF:-1 tvg-id="tr.ulketv" group-title="Haber",Ülke Tv (v-kavu)
@@ -920,9 +988,11 @@ https://cdn508.tvkulesi.com/ulketv.m3u8?tkn=j4VZ-8j7EJiJgQvFmnby3A&tms=178035668
 https://cdn507.kavuntv.net/ulketv.m3u8?tkn=S7Py-jR10ZRIKvNpa
 
 #EXTINF:-1 tvg-id="tr.ekoturk" group-title="Haber",Ekoturk
-https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780371987/ei/s_0davDRDZ_N6dsPs7mauAc/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpvvCuxOnamw78UlQXcCXJw4WdJ9Mmqa1mAYMcyJ7yzTkkAHnjS93V4zIsMN7rXN38-6txk6QSM/spc/96Xrv8FSCX1Fo3SF_v1LWSfRMH6yULIlF5OBKdc4PYauDoaQbg/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4083750/met/1780350387,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565682/mt/1780349560/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRgIhAIelKW8wnHu2paQjVUNJC1f4LYv_nTHVyE5Coj4Fw68KAiEA7lQoiT7lP-GQ94svs2A7RPEU4eUQML4Z52ae5lekC_w%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRQIgB_saa1CaAW6qcbmPks1kFreRCj1IFs5BX-Dpp2M6HeECIQDgwof4MvIEO-O4gqz-bLpzCyh8VXpKMM9ac3a6DgKhQA%3D%3D/playlist/index.m3u8
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780357634/ei/osUdar7ED6DS6dsPoLLqGA/ip/31.21.186.28/id/5ovykCkBWfU.9/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr4---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpMNAha_nbu3dtSHpD2YgswolCZCuEgwxeaz4PcfJsJL9y5VKMbeBrJT7mSJAr8xtufzgJxz_MT/spc/96Xrv1yBeiOdEZpT43DsU8JM4dvNKgElnnWFo-Tuia5Lyrk-0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4376250/met/1780336034,/mh/S8/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/4/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780335640/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRAIgW3_WClMgr7gIDkWatV1YJNMxQzhgIjESaNMVHc8InfICIBqhZ4FB8yUDqWMIMQU77Y6-VLGGeMRGtTX_mDBPLkQ7/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgTqgfDzgCSFuX9j1QaEGNXFE3oeJ2M3vktOPet8UlrvECIFlcYF461WgHxtF_7ocfyXnhNNcE2cKB4XjKDnbljX-i/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber
 https://flashhaber-live.ercdn.net/flashhaber/flashhaber.m3u8
+#EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber (kavu)
+https://cdn900.kavuntv.net/flashtv.m3u8?tkn=D2F6SMpEFvyG9oRuqN_kwQ&tms=1780364650&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=flash-haber
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber (tvku)
 https://cdn900.tvkulesi.com/flashtv.m3u8?tkn=48X4jf1m6oZwOUHy474ecA&tms=1780363504&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=flash-haber
 #EXTINF:-1 tvg-id="tr.flashhaber" group-title="Haber",Flash Haber (v-kavu)
@@ -932,6 +1002,8 @@ https://cdn900.tvkulesi.com/flashtv.m3u8?tkn=6q70vNONVX930xYuUtAlWg&tms=17803572
 
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Haber",Halk TV
 https://halktv.daioncdn.net/halktv/halktv_1080p.m3u8?app=c86957d3-74a7-44da-9ad2-dc358c769609&ce=3
+#EXTINF:-1 tvg-id="tr.halktv" group-title="Haber",Halk Tv (kavu)
+https://cdn506.kavuntv.net/halktv-master.m3u8?tkn=1i3LPD9I0frEhxwOLnGwoQ&tms=1780364450&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=halk-tv
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Haber",Halk Tv (tvku)
 https://cdn507.tvkulesi.com/halktv-master.m3u8?tkn=-reNYAC2dIvLzNwqohK0uQ&tms=1780363303&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=halk-tv
 #EXTINF:-1 tvg-id="tr.halktv" group-title="Haber",Halk Tv (v-kavu)
@@ -944,6 +1016,8 @@ https://cdn501.kavuntv.net/halktv-master.m3u8?tkn=xina-hIurZ
 
 #EXTINF:-1 tvg-id="tr.trthaber" group-title="Haber",TRT Haber
 https://tv-trthaber.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="tr.trthaber" group-title="Haber",TRT Haber (kavu)
+https://cdn507.kavuntv.net/trthaber.m3u8?tkn=ke_6UPxrNBoX1WcH_oaipw&tms=1780364437&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-haber
 #EXTINF:-1 tvg-id="tr.trthaber" group-title="Haber",TRT Haber (tvku)
 https://cdn504.tvkulesi.com/trthaber.m3u8?tkn=8ld6XGjWOvTE7j4OF-vOaA&tms=1780363290&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-haber
 #EXTINF:-1 tvg-id="tr.trthaber" group-title="Haber",TRT Haber (v-kavu)
@@ -954,6 +1028,8 @@ https://cdn501.tvkulesi.com/trthaber.m3u8?tkn=2ASqdDdTJsRwhWqgDt6Y5w&tms=1780356
 https://cdn509.kavuntv.net/trthaber.m3u8?tkn=whzJVaWCqFIVUbb
 #EXTINF:-1 tvg-id="tr.ilketv" group-title="Haber",Ilke TV
 https://stream.ilketv.com.tr/hls/ilkecanli.m3u8https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
+#EXTINF:-1 tvg-id="tr.ilketv" group-title="Haber",İlke Tv (kavu)
+https://cdn900.kavuntv.net/ilketv.m3u8?tkn=K2vVSyahtYHS_FmoRqmQAA&tms=1780364794&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ilke-tv
 #EXTINF:-1 tvg-id="tr.ilketv" group-title="Haber",İlke Tv (tvku)
 https://cdn900.tvkulesi.com/ilketv.m3u8?tkn=BbcyJDZPdpgSiQjtLHy-LA&tms=1780363647&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ilke-tv
 #EXTINF:-1 tvg-id="tr.ilketv" group-title="Haber",İlke Tv (v-kavu)
@@ -969,11 +1045,11 @@ http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/4e98253f-f791-42da-8497-51e821dde886.png" group-title="Yerel",FİNANSTÜRK
 https://yayin30.haber100.com/live/finansturk/chunklist_w377520896.m3u8
 #EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=r14wclk7cNouQpctfX3cog&e=1780395583
+https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=ic-BgnTA8sq4RBrznhNjxg&e=1780379904
 #EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para (v-kavu)
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=r14wclk7cNouQpctfX3cog&e=1780395583
+https://cdn900.kavuntv.net/apara.m3u8?tkn=874SAWKm6P2hnbWFNg_Wlw&tms=1780360048&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-para
 #EXTINF:-1 tvg-id="tr.apara" group-title="Haber",A Para (v-tvku)
-https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=7okNSpY_VCzmmuK4RrNvAg&e=1780395584
+https://cdn900.tvkulesi.com/apara.m3u8?tkn=GajSbkuk76Vs-8hy8TuIfw&tms=1780357490&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-para
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Haber",KRT TV
 https://live.artidijitalmedya.com/artidijital_grt/grt/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Haber",KRT Tv (v-kavu)
@@ -983,11 +1059,11 @@ https://cdn505.tvkulesi.com/krttv.m3u8?tkn=YwGcbxuokCM9qBb24qy_Uw&tms=1780357560
 
 # ── SPOR (40 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=Uome758RFziMUObPRoPBWw&e=1780395584
+https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=DAKTOBEy1WnGLjzZVExMIA&e=1780379904
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor (v-kavu)
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=Uome758RFziMUObPRoPBWw&e=1780395584
+https://cdn504.kavuntv.net/aspor.m3u8?tkn=D_Qtl-kmIHn-kRyQ0JUcSA&tms=1780360146&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-spor
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor (v-tvku)
-https://trkvz-live.ercdn.net/asporhd/asporhd.m3u8?st=isNcsHEc888zT0YllYtAJA&e=1780395585
+https://cdn503.tvkulesi.com/aspor.m3u8?tkn=MaGDQP-d-eukW3lIEdFbhg&tms=1780357596&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-spor
 
 #EXTINF:-1 tvg-id="tr.ekolsports" group-title="Spor",Ekol Sports
 https://ekoltv-live.ercdn.net/ekoltv/ekoltv_1080p.m3u8
@@ -1210,12 +1286,16 @@ https://cdn900.tvkulesi.com/kanalv.m3u8?tkn=mFDmVBqB2HX4H684urUH9Q&tms=178035649
 
 #EXTINF:-1 tvg-id="tr.kanal23" tvg-logo="http://assets.tvcdn.net/4ef4336c-ddd3-4de6-acda-9ce6f474902a.png" group-title="Yerel",ELAZIĞ KANAL-23
 https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.kanal23" tvg-logo="http://assets.tvcdn.net/4ef4336c-ddd3-4de6-acda-9ce6f474902a.png" group-title="Yerel",Kanal 23 (kavu)
+https://cdn900.kavuntv.net/kanal23.m3u8?tkn=MaVL82Yl26oA35poztenkA&tms=1780365139&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-23
 #EXTINF:-1 tvg-id="tr.kanal23" tvg-logo="http://assets.tvcdn.net/4ef4336c-ddd3-4de6-acda-9ce6f474902a.png" group-title="Yerel",Kanal 23 (tvku)
 https://cdn900.tvkulesi.com/kanal23.m3u8?tkn=fSjvy8XPsBj_0qcMb2uVJQ&tms=1780364000&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-23
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/f00f1472-e8e7-4f30-b9e3-fb4376a43aac.png" group-title="Yerel",ELAZIĞ KANAL FIRAT
 https://live.artidijitalmedya.com/artidijital_kanalfirat/kanalfirat/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.kanal26" group-title="Yerel",Kanal 26
 https://live.artidijitalmedya.com/artidijital_kanal26/kanal26/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.kanal26" group-title="Yerel",Kanal 26 (kavu)
+https://cdn900.kavuntv.net/kanal26.m3u8?tkn=Z81iSS8iM9w_KOeRUcVIqg&tms=1780365071&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-26
 #EXTINF:-1 tvg-id="tr.kanal26" group-title="Yerel",Kanal 26 (tvku)
 https://cdn900.tvkulesi.com/kanal26.m3u8?tkn=cQJPX4dem7PDRITCEuU21Q&tms=1780363925&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-26
 #EXTINF:-1 tvg-id="tr.kanal26" group-title="Yerel",Kanal 26 (v-kavu)
@@ -1238,6 +1318,8 @@ https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/eXErSv0.png" group-title="Yerel",AFYONKARAHİSAR KANAL 3
 https://live.artidijitalmedya.com/artidijital_kanal3/kanal3/chunks.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/eXErSv0.png" group-title="Yerel",Kanal 3 (kavu)
+https://cdn900.kavuntv.net/kanal3.m3u8?tkn=hD5ZwTApSLH0iMnfqThJpA&tms=1780364661&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-3
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/eXErSv0.png" group-title="Yerel",Kanal 3 (tvku)
 https://cdn900.tvkulesi.com/kanal3.m3u8?tkn=7XOFBpR-OkVOwm6sNAH3Bw&tms=1780363515&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-3
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/ce326dc3-6050-4712-a4cd-d056e835b1c7.png" group-title="Yerel",ANTALYA DİM ALANYA
@@ -1248,6 +1330,8 @@ https://win1.yayin.com.tr/postatv/postatv/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",AYDIN TV-DEN
 http://canli.tvden.com.tr/hls/live.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",NTV De (kavu)
+https://cdn900.kavuntv.net/ntvde.m3u8?tkn=WVMaPkidGNbOOZ2JapYb4Q&tms=1780364664&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-live
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",NTV De (tvku)
 https://cdn900.tvkulesi.com/ntvde.m3u8?tkn=whEqWuSyEBbb9wcV9PtXEw&tms=1780363517&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-live
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/906cf95e-e70e-4fb2-b03c-fee6f0d292ad.png" group-title="Yerel",BURDUR KANAL-15
@@ -1275,6 +1359,8 @@ https://live.artidijitalmedya.com/artidijital_estv/estv/chunks.m3u8
 https://live.artidijitalmedya.com/artidijital_grt/grt/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8f937d9e-b63c-4110-b734-fc6cfc11a6e8.png" group-title="Yerel",ISPARTA KANAL-32
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8f937d9e-b63c-4110-b734-fc6cfc11a6e8.png" group-title="Yerel",Kanal 32 (kavu)
+https://cdn900.kavuntv.net/kanal32.m3u8?tkn=X6C2B3Ou1yBLb8IjRpGYZQ&tms=1780365232&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-32
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8f937d9e-b63c-4110-b734-fc6cfc11a6e8.png" group-title="Yerel",Kanal 32 (tvku)
 https://cdn900.tvkulesi.com/kanal32.m3u8?tkn=5FrDsfYpWrWnEuT5Iglj9w&tms=1780364093&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-32
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/dd542b6c-6472-4661-90af-016c86db6aca.png" group-title="Yerel",İSTANBUL KANAL-34
@@ -1289,6 +1375,8 @@ https://cdn-time35tv.yayin.com.tr/time35tv/time35tv/playlist.m3u8
 https://live.euromediacenter.com/balkanturktv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d81bdb8a-5ba3-4eb9-bbae-f3b323c79f60.png" group-title="Yerel",KAHRAMANMARAŞ AKSU
 https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d81bdb8a-5ba3-4eb9-bbae-f3b323c79f60.png" group-title="Yerel",HR (kavu)
+https://cdn900.kavuntv.net/hrtv.m3u8?tkn=CpRFJzJ5PqvzFQbvPGKPnQ&tms=1780364681&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hr-live
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d81bdb8a-5ba3-4eb9-bbae-f3b323c79f60.png" group-title="Yerel",HR (tvku)
 https://cdn900.tvkulesi.com/hrtv.m3u8?tkn=vUrVgqdAI4v4Uzuza7uB0A&tms=1780363533&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hr-live
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/5702a0f6-7b78-4645-bacf-516f63fed0b7.png" group-title="Yerel",KARABÜK BRTV
@@ -1317,6 +1405,10 @@ https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
 https://edge1.socialsmart.tv/kocaelitv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/de6c8885-b1ca-41d8-8e96-67e32cc7a881.png" group-title="Yerel",KOCAELİ TV-41
 https://live.artidijitalmedya.com/artidijital_tv41/tv41/chunks.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/de6c8885-b1ca-41d8-8e96-67e32cc7a881.png" group-title="Yerel",TV 41 (kavu)
+https://cdn900.kavuntv.net/tv41.m3u8?tkn=tlCdVoQpXVJ-EQ9rRzlGyQ&tms=1780365165&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-41
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/de6c8885-b1ca-41d8-8e96-67e32cc7a881.png" group-title="Yerel",Kocaeli Tv (kavu)
+https://cdn900.kavuntv.net/kocaelitv.m3u8?tkn=eOV3h4vkVuyaFWDCC0aDFA&tms=1780365066&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kocaeli-tv
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/de6c8885-b1ca-41d8-8e96-67e32cc7a881.png" group-title="Yerel",TV 41 (tvku)
 https://cdn900.tvkulesi.com/tv41.m3u8?tkn=l66GOTImvrWKaAPPRcq-Qw&tms=1780364026&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-41
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/de6c8885-b1ca-41d8-8e96-67e32cc7a881.png" group-title="Yerel",Kocaeli Tv (tvku)
@@ -1335,6 +1427,8 @@ https://edge1.socialsmart.tv/manisaetv/bant1/playlist.m3u8
 https://edge1.socialsmart.tv/iceltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/3045a8ca-99c6-45ac-835f-44e99e3f0e6b.png" group-title="Yerel",MERSİN KANAL-33
 https://edge1.socialsmart.tv/kanal33/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/3045a8ca-99c6-45ac-835f-44e99e3f0e6b.png" group-title="Yerel",Kanal 33 (kavu)
+https://cdn900.kavuntv.net/kanal33.m3u8?tkn=z8x49IFiLvwh3trnjT6npw&tms=1780365181&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-33
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/3045a8ca-99c6-45ac-835f-44e99e3f0e6b.png" group-title="Yerel",Kanal 33 (tvku)
 https://cdn900.tvkulesi.com/kanal33.m3u8?tkn=lHfbMrnXUO1LE0FhqASSsA&tms=1780364042&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-33
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",MERSİN SUN RTV
@@ -1347,6 +1441,8 @@ https://edge1.socialsmart.tv/frttv/bant1/chunks.m3u8
 https://edge1.socialsmart.tv/altastv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/1c27dd5e-0bd9-4928-8b1e-20c5da6118c3.png" group-title="Yerel",ORDU TV-52
 https://edge1.socialsmart.tv/tv52/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/1c27dd5e-0bd9-4928-8b1e-20c5da6118c3.png" group-title="Yerel",Tv 52 (kavu)
+https://cdn900.kavuntv.net/tv52.m3u8?tkn=2Jt7l8rLxwFUA9YiNjsu2g&tms=1780365136&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-52
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/1c27dd5e-0bd9-4928-8b1e-20c5da6118c3.png" group-title="Yerel",Tv 52 (tvku)
 https://cdn900.tvkulesi.com/tv52.m3u8?tkn=M5nQtFzZRVn08mLsPiZDLg&tms=1780363997&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-52
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/dcde5345-2b03-4146-9952-06bc60ef5238.png" group-title="Yerel",ORDU OBB
@@ -1359,6 +1455,8 @@ https://kanal53.ozelip.com:3448/hybrid/play.m3u8
 https://yayin.rizeturk.com:3777/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d7296b88-706a-423b-85a1-54c09d9197eb.png" group-title="Yerel",SAKARYA TV-264
 http://mc1.mediatriple.net/videoonlylive/mtdxkkitgbrckilive/broadcast_5ee244263fd6d.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d7296b88-706a-423b-85a1-54c09d9197eb.png" group-title="Yerel",TV 264 (kavu)
+https://cdn900.kavuntv.net/tv264.m3u8?tkn=XEpy4_0zy2snh30qTsYo_w&tms=1780365012&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-264
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d7296b88-706a-423b-85a1-54c09d9197eb.png" group-title="Yerel",TV 264 (tvku)
 https://cdn900.tvkulesi.com/tv264.m3u8?tkn=6kl3bXSjlCx_p2kdOrIMpg&tms=1780363866&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-264
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/61ca9d01-b1cc-4163-8ceb-4e51ad1d4f70.png" group-title="Yerel",SİVAS KANAL-58
@@ -1367,6 +1465,8 @@ https://live.artidijitalmedya.com/artidijital_kanal58/kanal58/playlist.m3u8
 https://edge1.socialsmart.tv/gtv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8ef995b2-0b34-4541-b396-bfe826d4f271.png" group-title="Yerel",ŞANLIURFA KANAL URFA
 https://edge1.socialsmart.tv/kanalurfa/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8ef995b2-0b34-4541-b396-bfe826d4f271.png" group-title="Yerel",Kanal Urfa (kavu)
+https://cdn900.kavuntv.net/kanalurfa.m3u8?tkn=mWRGtf7IftzSCDuDgiUmFw&tms=1780365184&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-urfa
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8ef995b2-0b34-4541-b396-bfe826d4f271.png" group-title="Yerel",Kanal Urfa (tvku)
 https://cdn900.tvkulesi.com/kanalurfa.m3u8?tkn=3Zi7eihUSRnYlmM6GKq7ig&tms=1780364045&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-urfa
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/232aa8e5-a3c8-49b3-b54d-2a4a21ef04d1.png" group-title="Yerel",ŞANLIURFA UR FANATİK
@@ -1382,6 +1482,8 @@ https://live.artidijitalmedya.com/artidijital_kanal15/kanal15/playlist.m3u8
 
 #EXTINF:-1 tvg-id="tr.aksutv2" group-title="Yerel",Aksu TV
 https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.aksutv2" group-title="Yerel",Aksu Tv (kavu)
+https://cdn900.kavuntv.net/aksutv.m3u8?tkn=14_gkrw4pyXi6cDHIB59bA&tms=1780365171&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksu-tv
 #EXTINF:-1 tvg-id="tr.aksutv2" group-title="Yerel",Aksu Tv (tvku)
 https://cdn900.tvkulesi.com/aksutv.m3u8?tkn=2u7sz0tClm7kNDih0hx5fQ&tms=1780364032&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksu-tv
 #EXTINF:-1 tvg-id="tr.aksutv2" group-title="Yerel",Aksu Tv (v-kavu)
@@ -1402,6 +1504,8 @@ https://live.artidijitalmedya.com/artidijital_brtv/brtv/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_dimtv/dimtv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.erciyestv" group-title="Yerel",Erciyes TV
 https://live.artidijitalmedya.com/artidijital_erciyestv/erciyestv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.erciyestv" group-title="Yerel",Es Tv (kavu)
+https://cdn900.kavuntv.net/estv.m3u8?tkn=ZJYsm6MbDhODXyiZDxoc6g&tms=1780365115&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=es-tv
 #EXTINF:-1 tvg-id="tr.erciyestv" group-title="Yerel",Es Tv (tvku)
 https://cdn900.tvkulesi.com/estv.m3u8?tkn=rueOEL-6lHq5mw4CHELf6w&tms=1780363976&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=es-tv
 #EXTINF:-1 tvg-id="tr.estv" group-title="Yerel",ES TV
@@ -1430,6 +1534,8 @@ https://cdn900.tvkulesi.com/kanal3.m3u8?tkn=9YhjCIvgqpqhF9sGMYPmTQ&tms=178035723
 https://live.artidijitalmedya.com/artidijital_kanal58/kanal58/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.kanalfirat" group-title="Yerel",Kanal Firat
 https://live.artidijitalmedya.com/artidijital_kanalfirat/kanalfirat/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.kanalfirat" group-title="Yerel",Kanal Fırat (kavu)
+https://cdn900.kavuntv.net/kanalfirat.m3u8?tkn=QklnIsxYlJGGC2NVv857Tw&tms=1780365235&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-firat
 #EXTINF:-1 tvg-id="tr.kanalfirat" group-title="Yerel",Kanal Fırat (tvku)
 https://cdn900.tvkulesi.com/kanalfirat.m3u8?tkn=zf60M_jLzptcjDrQK__YfQ&tms=1780364096&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-firat
 #EXTINF:-1 tvg-id="tr.kanalfirat" group-title="Yerel",Kanal Fırat (v-kavu)
@@ -1438,10 +1544,14 @@ https://cdn900.kavuntv.net/kanalfirat.m3u8?tkn=re7CseQ6-V3CXzTknqCglA&tms=178036
 https://cdn900.tvkulesi.com/kanalfirat.m3u8?tkn=FdERAKKhUz1dFdzZNsB3Zw&tms=1780358593&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-firat
 #EXTINF:-1 tvg-id="tr.kaytv" group-title="Yerel",Kay TV
 https://live.artidijitalmedya.com/artidijital_kaytv/kaytv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.kaytv" group-title="Yerel",Çay Tv (kavu)
+https://cdn900.kavuntv.net/caytv.m3u8?tkn=Dm7kMBh5HNTgraQSkWq3Bg&tms=1780365010&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cay-tv
 #EXTINF:-1 tvg-id="tr.kaytv" group-title="Yerel",Çay Tv (tvku)
 https://cdn900.tvkulesi.com/caytv.m3u8?tkn=X4JIN8MzTjiHDPftuEPixA&tms=1780363864&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cay-tv
 #EXTINF:-1 tvg-id="tr.kentturktv" group-title="Yerel",Kent Turk TV
 https://live.artidijitalmedya.com/artidijital_kentturktv/kentturktv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.kentturktv" group-title="Yerel",Kent Türk TV (kavu)
+https://cdn900.kavuntv.net/kentturktv.m3u8?tkn=Akl1hNhS_Ep7pOzUScLAdg&tms=1780364975&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kent-turk-tv
 #EXTINF:-1 tvg-id="tr.kentturktv" group-title="Yerel",Kent Türk TV (tvku)
 https://cdn900.tvkulesi.com/kentturktv.m3u8?tkn=gi6kJ8hBFkS-LcXL4EZkJA&tms=1780363829&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kent-turk-tv
 #EXTINF:-1 tvg-id="tr.kentturktv" group-title="Yerel",Kent Türk TV (v-kavu)
@@ -1450,6 +1560,8 @@ https://cdn900.kavuntv.net/kentturktv.m3u8?tkn=Okeoai-YU5a9kRBXP9ceRw&tms=178036
 https://cdn900.tvkulesi.com/kentturktv.m3u8?tkn=ZGmA5600EhEpCQCJb1SLCA&tms=1780357956&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kent-turk-tv
 #EXTINF:-1 tvg-id="tr.konyaolaytv" group-title="Yerel",Konya Olay TV
 https://live.artidijitalmedya.com/artidijital_konyaolaytv/konyaolaytv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.konyaolaytv" group-title="Yerel",Olay TV (kavu)
+https://cdn506.kavuntv.net/olaytv.m3u8?tkn=OCCk7d_p1jwFaL2RbOnJ4Q&tms=1780364531&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kapanan
 #EXTINF:-1 tvg-id="tr.konyaolaytv" group-title="Yerel",Olay TV (tvku)
 https://cdn501.tvkulesi.com/olaytv.m3u8?tkn=Up4gOdc9_HhONAoW86Zhbw&tms=1780363383&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kapanan
 
@@ -1458,6 +1570,8 @@ https://cdn501.tvkulesi.com/olaytv.m3u8?tkn=Up4gOdc9_HhONAoW86Zhbw&tms=178036338
 https://live.artidijitalmedya.com/artidijital_lifetv/lifetv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.mercantv" group-title="Yerel",Mercan TV
 https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.mercantv" group-title="Yerel",Mercan Tv (kavu)
+https://cdn900.kavuntv.net/mercantv.m3u8?tkn=lrDMyZBtl8_1EEysPfDxLA&tms=1780364978&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mercan-tv
 #EXTINF:-1 tvg-id="tr.mercantv" group-title="Yerel",Mercan Tv (tvku)
 https://cdn900.tvkulesi.com/mercantv.m3u8?tkn=fwl1a5OYJ8y9OYjW-wuHvw&tms=1780363832&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mercan-tv
 #EXTINF:-1 tvg-id="tr.mercantv" group-title="Yerel",Mercan Tv (v-kavu)
@@ -1489,6 +1603,8 @@ https://cdn900.tvkulesi.com/tv41.m3u8?tkn=QXid41aQTkebWhT3S_PwZw&tms=1780358408&
 https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.vuslattv" group-title="Yerel",Vuslat TV
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.vuslattv" group-title="Yerel",Vuslat Tv (kavu)
+https://cdn900.kavuntv.net/vuslattv.m3u8?tkn=RLA2ZAlKEmexnw-O4frNNg&tms=1780364686&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vuslat-tv
 #EXTINF:-1 tvg-id="tr.vuslattv" group-title="Yerel",Vuslat Tv (v-kavu)
 https://cdn900.kavuntv.net/vuslattv.m3u8?tkn=KZRazs4IVCDxOxeS9SPSwg&tms=1780359894&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vuslat-tv
 #EXTINF:-1 tvg-id="tr.vuslattv" group-title="Yerel",Vuslat Tv (v-tvku)
@@ -1521,6 +1637,8 @@ https://cdn503.kavuntv.net/aztv.m3u8?tkn=yu9qrmVaMF-kSU2ggB6DbA&tms=1780358695&h
 https://cdn504.tvkulesi.com/aztv.m3u8?tkn=hexi7yJjslRnTSkkw_v-qg&tms=1780355895&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=az-tv
 #EXTINF:-1 tvg-id="tr.sozcutv" group-title="Haber",Sozcu TV
 https://cdn900.kavuntv.net/sozcutv.m3u8?tkn=DOqA2O0oz7U2P2bc
+#EXTINF:-1 tvg-id="tr.sozcutv" group-title="Haber",Sözcü Tv (kavu)
+https://cdn900.kavuntv.net/sozcutv.m3u8?tkn=yYB1wwYIznrJ9ig4-M1UCA&tms=1780364453&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sozcu-tv
 #EXTINF:-1 tvg-id="tr.sozcutv" group-title="Haber",Sözcü Tv (tvku)
 https://cdn900.tvkulesi.com/sozcutv.m3u8?tkn=s_4_vbP-SHJVEZ2rh_5meg&tms=1780363305&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sozcu-tv
 #EXTINF:-1 tvg-id="tr.sozcutv" group-title="Haber",Sözcü Tv (v-kavu)
@@ -1537,6 +1655,8 @@ https://cdn900.tvkulesi.com/akittv.m3u8?tkn=kiYmmm1HIFkBVttLVYf9xA&tms=178035669
 https://tv-trtworld.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="tr.ulusalkanal" group-title="Haber",Ulusal Kanal
 https://cdn900.kavuntv.net/ulusal.m3u8?tkn=vcLHgiJwbCev5Aj9i
+#EXTINF:-1 tvg-id="tr.ulusalkanal" group-title="Haber",Ulusal Kanal (kavu)
+https://cdn900.kavuntv.net/ulusal.m3u8?tkn=tyLONLHKHHPZijKFD8J9Zw&tms=1780364461&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ulusal-kanal
 #EXTINF:-1 tvg-id="tr.ulusalkanal" group-title="Haber",Ulusal Kanal (tvku)
 https://cdn900.tvkulesi.com/ulusal.m3u8?tkn=NRoZusXESO2c21afbUt_0Q&tms=1780363313&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ulusal-kanal
 #EXTINF:-1 tvg-id="tr.ulusalkanal" group-title="Haber",Ulusal Kanal (v-kavu)
@@ -1989,12 +2109,16 @@ https://cdn501.kavuntv.net/shoppingtv.m3u8?tkn=wNEKKP_u4yK5KaUuRpPETw&tms=178036
 https://cdn503.kavuntv.net/shoppingtv.m3u8?tkn=JKLftVdFcb_XzosAAPiHLg&tms=1780359336&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=shopping-tv
 #EXTINF:-1 tvg-id="tvku.haberturktv" group-title="Haber",Habertürk Tv
 https://cdn504.tvkulesi.com/haberturk.m3u8?tkn=HynXrxvJbhY8iRTK4lF72A&tms=1780356641&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=haberturk-tv
+#EXTINF:-1 tvg-id="tvku.haberturktv" group-title="Haber",Habertürk Tv (kavu)
+https://cdn504.kavuntv.net/haberturk.m3u8?tkn=a3ZyvRUUaDd1HnZ6S0nsPA&tms=1780364442&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=haberturk-tv
 #EXTINF:-1 tvg-id="tvku.haberturktv" group-title="Haber",Habertürk Tv (tvku)
 https://cdn501.tvkulesi.com/haberturk.m3u8?tkn=w3qgEwUvhSJnMXbIVJjWYA&tms=1780363295&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=haberturk-tv
 #EXTINF:-1 tvg-id="tvku.haberturktv" group-title="Haber",Habertürk Tv (v-kavu)
 https://cdn507.kavuntv.net/haberturk.m3u8?tkn=XDoWOP0jUm-FtHoReY1nCA&tms=1780359369&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=haberturk-tv
 #EXTINF:-1 tvg-id="tvku.arb24tv" group-title="Haber",Arb 24
 https://cdn900.tvkulesi.com/arb24.m3u8?tkn=4Vrgfw0phfLzrpXdPhrHlg&tms=1780356715&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=arb-24-tv
+#EXTINF:-1 tvg-id="tvku.arb24tv" group-title="Haber",Arb 24 (kavu)
+https://cdn900.kavuntv.net/arb24.m3u8?tkn=azI8uTCwYiyL4upG1YTLJg&tms=1780364474&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=arb-24-tv
 #EXTINF:-1 tvg-id="tvku.arb24tv" group-title="Haber",Arb 24 (v-kavu)
 https://cdn900.kavuntv.net/arb24.m3u8?tkn=R_JrH4zNCSFewAigkNK_Ag&tms=1780359432&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=arb-24-tv
 #EXTINF:-1 tvg-id="tvku.rudawtv" group-title="Haber",Rudaw Tv
@@ -2003,18 +2127,24 @@ https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8
 http://207.180.223.92:1935/live/kanalt/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.on4tv" group-title="Haber",ON4 Tv
 https://cdn900.tvkulesi.com/on4tv.m3u8?tkn=-EcqHYJTCBRDN7wSI_mvsw&tms=1780356733&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=on4-tv
+#EXTINF:-1 tvg-id="tvku.on4tv" group-title="Haber",ON4 Tv (kavu)
+https://cdn900.kavuntv.net/on4tv.m3u8?tkn=80N4Xi2lFepyh4FlmHlPAw&tms=1780364482&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=on4-tv
 #EXTINF:-1 tvg-id="tvku.on4tv" group-title="Haber",ON4 Tv (tvku)
 https://cdn900.tvkulesi.com/on4tv.m3u8?tkn=E9fahS-li7hrE-utRkJd4g&tms=1780363336&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=on4-tv
 #EXTINF:-1 tvg-id="tvku.on4tv" group-title="Haber",ON4 Tv (v-kavu)
 https://cdn900.kavuntv.net/on4tv.m3u8?tkn=Fyn0Ftip_6C_HwHxtqViIA&tms=1780359447&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=on4-tv
 #EXTINF:-1 tvg-id="tvku.aljazeeraarabic" group-title="Haber",Al Jazeera Arabic
 https://cdn900.tvkulesi.com/aljazeerachannel.m3u8?tkn=f5gh8D8_rFw3N3n0l9hQYQ&tms=1780356738&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-arabic
+#EXTINF:-1 tvg-id="tvku.aljazeeraarabic" group-title="Haber",Al Jazeera Arabic (kavu)
+https://cdn900.kavuntv.net/aljazeerachannel.m3u8?tkn=YTs14B268qZt-6WlMdm3Gw&tms=1780364485&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-arabic
 #EXTINF:-1 tvg-id="tvku.aljazeeraarabic" group-title="Haber",Al Jazeera Arabic (tvku)
 https://cdn900.tvkulesi.com/aljazeerachannel.m3u8?tkn=5XuzSPBPWEzcDksfVZD5jg&tms=1780363338&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-arabic
 #EXTINF:-1 tvg-id="tvku.aljazeeraarabic" group-title="Haber",Al Jazeera Arabic (v-kavu)
 https://cdn900.kavuntv.net/aljazeerachannel.m3u8?tkn=P7VJ7-eQ9oNaHm0KYOi0Kw&tms=1780359452&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-arabic
 #EXTINF:-1 tvg-id="tvku.kanal24" group-title="Haber",Kanal 24
 https://cdn509.tvkulesi.com/24tv.m3u8?tkn=ckrs57856tXcDW5q1dvJvQ&tms=1780356749&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-24
+#EXTINF:-1 tvg-id="tvku.kanal24" group-title="Haber",Kanal 24 (kavu)
+https://cdn501.kavuntv.net/24tv.m3u8?tkn=AKMUHeJ0uLvmJL_LUBMZBg&tms=1780364490&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-24
 #EXTINF:-1 tvg-id="tvku.kanal24" group-title="Haber",Kanal 24 (tvku)
 https://cdn503.tvkulesi.com/24tv.m3u8?tkn=d_QmbQqm7Nvi4R0OOcHcbQ&tms=1780363344&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-24
 #EXTINF:-1 tvg-id="tvku.kanal24" group-title="Haber",Kanal 24 (v-kavu)
@@ -2023,58 +2153,78 @@ https://cdn506.kavuntv.net/24tv.m3u8?tkn=6QeQrEXxSdLVMUMjs7Laig&tms=1780359464&h
 https://muzkurd.com/sterktv/sterk/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.benguturktv" group-title="Haber",Bengütürk Tv
 https://cdn506.tvkulesi.com/benguturktv.m3u8?tkn=BAEz1TVhdGABFECQbLE6eQ&tms=1780356774&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=benguturk-tv
+#EXTINF:-1 tvg-id="tvku.benguturktv" group-title="Haber",Bengütürk Tv (kavu)
+https://cdn503.kavuntv.net/benguturktv.m3u8?tkn=Cs1wZfbtzfa4XezDUNo_YA&tms=1780364499&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=benguturk-tv
 #EXTINF:-1 tvg-id="tvku.benguturktv" group-title="Haber",Bengütürk Tv (tvku)
 https://cdn502.tvkulesi.com/benguturktv.m3u8?tkn=FFPZtiOLVDOQ7M_GIKCHcg&tms=1780363351&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=benguturk-tv
 #EXTINF:-1 tvg-id="tvku.benguturktv" group-title="Haber",Bengütürk Tv (v-kavu)
 https://cdn505.kavuntv.net/benguturktv.m3u8?tkn=RUXcI6fWHoPfhQAX_JTwTA&tms=1780359489&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=benguturk-tv
 #EXTINF:-1 tvg-id="tvku.yasamtv" group-title="Haber",Yaşam Tv
 https://cdn507.tvkulesi.com/yasamtv.m3u8?tkn=g9b-igIdZSlC8y2Hyp-8SQ&tms=1780356786&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yasam-tv
+#EXTINF:-1 tvg-id="tvku.yasamtv" group-title="Haber",Yaşam Tv (kavu)
+https://cdn507.kavuntv.net/yasamtv.m3u8?tkn=CESO7grtR-Z2Kbm2UM1y-g&tms=1780364501&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yasam-tv
 #EXTINF:-1 tvg-id="tvku.yasamtv" group-title="Haber",Yaşam Tv (tvku)
 https://cdn502.tvkulesi.com/yasamtv.m3u8?tkn=7QJLSv7cXpS_cjRdvYJuHA&tms=1780363354&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yasam-tv
 #EXTINF:-1 tvg-id="tvku.yasamtv" group-title="Haber",Yaşam Tv (v-kavu)
 https://cdn503.kavuntv.net/yasamtv.m3u8?tkn=NVG6RtIp05EvUgXXQbjI_Q&tms=1780359494&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yasam-tv
 #EXTINF:-1 tvg-id="tvku.gunestvkktc" group-title="Haber",Güneş Tv
 https://cdn900.tvkulesi.com/gunestv.m3u8?tkn=sIwLLQMAQ2FJtgx9oWWRAw&tms=1780356792&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunestvkktc
+#EXTINF:-1 tvg-id="tvku.gunestvkktc" group-title="Haber",Güneş Tv (kavu)
+https://cdn900.kavuntv.net/gunestv.m3u8?tkn=CPwB-HyoDQgTHI3UwkZw8g&tms=1780364504&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunestvkktc
 #EXTINF:-1 tvg-id="tvku.gunestvkktc" group-title="Haber",Güneş Tv (v-kavu)
 https://cdn900.kavuntv.net/gunestv.m3u8?tkn=r7ptXAs_MH5dSaNNaJFqJQ&tms=1780359499&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunestvkktc
 #EXTINF:-1 tvg-id="tvku.berattv" group-title="Haber",Berat Tv
 https://cdn900.tvkulesi.com/berattv.m3u8?tkn=Dssu5pLVY86EFJv4lTGHbA&tms=1780356806&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=berat-tv
+#EXTINF:-1 tvg-id="tvku.berattv" group-title="Haber",Berat Tv (kavu)
+https://cdn900.kavuntv.net/berattv.m3u8?tkn=i_WtxrCpcZBom-eVp4bQOg&tms=1780364509&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=berat-tv
 #EXTINF:-1 tvg-id="tvku.berattv" group-title="Haber",Berat Tv (tvku)
 https://cdn900.tvkulesi.com/berattv.m3u8?tkn=hCeeZBPumJnBOJvA1jkshQ&tms=1780363362&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=berat-tv
 #EXTINF:-1 tvg-id="tvku.berattv" group-title="Haber",Berat Tv (v-kavu)
 https://cdn900.kavuntv.net/berattv.m3u8?tkn=xzi7mJ1BQDp8cbk5Pc3fcQ&tms=1780359509&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=berat-tv
 #EXTINF:-1 tvg-id="tvku.tv2020" group-title="Haber",Tv 2020
 https://cdn900.tvkulesi.com/tv2020.m3u8?tkn=umiPPNg2dTflFrTvMQkJLQ&tms=1780356812&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-2020
+#EXTINF:-1 tvg-id="tvku.tv2020" group-title="Haber",Tv 2020 (kavu)
+https://cdn900.kavuntv.net/tv2020.m3u8?tkn=SBrnXbuPWK6v5u7mR4WhQw&tms=1780364512&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-2020
 #EXTINF:-1 tvg-id="tvku.tv2020" group-title="Haber",Tv 2020 (tvku)
 https://cdn900.tvkulesi.com/tv2020.m3u8?tkn=J6MFhm04LrGrpNEPCue2CQ&tms=1780363365&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-2020
 #EXTINF:-1 tvg-id="tvku.tv2020" group-title="Haber",Tv 2020 (v-kavu)
 https://cdn900.kavuntv.net/tv2020.m3u8?tkn=TAQMUzuX2fiJWIw4uDyf_A&tms=1780359514&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-2020
 #EXTINF:-1 tvg-id="tvku.cbcaztv" group-title="Haber",CBC Az Tv
 https://cdn507.tvkulesi.com/cbcaztv.m3u8?tkn=sU7d_5gkZ2Lo_ShafPT0cQ&tms=1780356818&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cbc-az-tv
+#EXTINF:-1 tvg-id="tvku.cbcaztv" group-title="Haber",CBC Az Tv (kavu)
+https://cdn503.kavuntv.net/cbcaztv.m3u8?tkn=IJh4GJre1FNYqDvC8DcAQw&tms=1780364515&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cbc-az-tv
 #EXTINF:-1 tvg-id="tvku.cbcaztv" group-title="Haber",CBC Az Tv (tvku)
 https://cdn506.tvkulesi.com/cbcaztv.m3u8?tkn=Y52BQ71vpcNAFVMv9TNhJg&tms=1780363367&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cbc-az-tv
 #EXTINF:-1 tvg-id="tvku.cbcaztv" group-title="Haber",CBC Az Tv (v-kavu)
 https://cdn506.kavuntv.net/cbcaztv.m3u8?tkn=d1Cpn_rhGuGfgy3Gj8DIQA&tms=1780359518&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cbc-az-tv
 #EXTINF:-1 tvg-id="tvku.sehiyyetv" group-title="Haber",Sehiyye Tv
 https://cdn900.tvkulesi.com/sehiyyetv.m3u8?tkn=wr3-ZRA_sg_oTC6UJXrCsA&tms=1780356825&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sehiyye-tv
+#EXTINF:-1 tvg-id="tvku.sehiyyetv" group-title="Haber",Sehiyye Tv (kavu)
+https://cdn900.kavuntv.net/sehiyyetv.m3u8?tkn=40PQ2PNysOy6R0rFBeZ1Yw&tms=1780364517&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sehiyye-tv
 #EXTINF:-1 tvg-id="tvku.sehiyyetv" group-title="Haber",Sehiyye Tv (tvku)
 https://cdn900.tvkulesi.com/sehiyyetv.m3u8?tkn=OVhbTU5e54LbHL1JH-vdmg&tms=1780363370&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sehiyye-tv
 #EXTINF:-1 tvg-id="tvku.sehiyyetv" group-title="Haber",Sehiyye Tv (v-kavu)
 https://cdn900.kavuntv.net/sehiyyetv.m3u8?tkn=O7HzMDCM6c3NUTsQYZib1g&tms=1780359523&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sehiyye-tv
 #EXTINF:-1 tvg-id="tvku.tgrteu" group-title="Haber",TGRT EU
 https://cdn900.tvkulesi.com/tgrteu.m3u8?tkn=X68L2d4-bLm1QDhwdM3s4Q&tms=1780356830&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tgrt-eu
+#EXTINF:-1 tvg-id="tvku.tgrteu" group-title="Haber",TGRT EU (kavu)
+https://cdn900.kavuntv.net/tgrteu.m3u8?tkn=gJ7DTT_g5RWDtQ3X0YvRFA&tms=1780364520&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tgrt-eu
 #EXTINF:-1 tvg-id="tvku.tgrteu" group-title="Haber",TGRT EU (tvku)
 https://cdn900.tvkulesi.com/tgrteu.m3u8?tkn=YtEfqyhgQA489rcb2kSB0w&tms=1780363373&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tgrt-eu
 #EXTINF:-1 tvg-id="tvku.tgrteu" group-title="Haber",TGRT EU (v-kavu)
 https://cdn900.kavuntv.net/tgrteu.m3u8?tkn=js10-SKRdJdXsWdachkwQg&tms=1780359528&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tgrt-eu
 #EXTINF:-1 tvg-id="tvku.alatoo24" group-title="Haber",Ala Too 24
 https://cdn509.tvkulesi.com/alatoo24.m3u8?tkn=CTBddhZDQT_xhgFbHnkOpw&tms=1780356837&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ala-too-24
+#EXTINF:-1 tvg-id="tvku.alatoo24" group-title="Haber",Ala Too 24 (kavu)
+https://cdn501.kavuntv.net/alatoo24.m3u8?tkn=NwzDWzu-aQTvux108ATumA&tms=1780364523&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ala-too-24
 #EXTINF:-1 tvg-id="tvku.alatoo24" group-title="Haber",Ala Too 24 (tvku)
 https://cdn509.tvkulesi.com/alatoo24.m3u8?tkn=kPF8X3Pxh-DBjZGvDlO4Tg&tms=1780363375&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ala-too-24
 #EXTINF:-1 tvg-id="tvku.alatoo24" group-title="Haber",Ala Too 24 (v-kavu)
 https://cdn502.kavuntv.net/alatoo24.m3u8?tkn=QyknLuJ_pgGIaGCdbBPo1A&tms=1780359533&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ala-too-24
 #EXTINF:-1 tvg-id="tvku.bbnturktv" group-title="Haber",BBN Türk
 https://cdn900.tvkulesi.com/bbnturk.m3u8?tkn=3O5NR_FQBF1nsEenVS4DBg&tms=1780356842&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bbn-turk-tv
+#EXTINF:-1 tvg-id="tvku.bbnturktv" group-title="Haber",BBN Türk (kavu)
+https://cdn900.kavuntv.net/bbnturk.m3u8?tkn=Urow6UE8lje3j4HUpCKweQ&tms=1780364525&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bbn-turk-tv
 #EXTINF:-1 tvg-id="tvku.bbnturktv" group-title="Haber",BBN Türk (tvku)
 https://cdn900.tvkulesi.com/bbnturk.m3u8?tkn=A8bgh4HEniXukyHlhwsY5w&tms=1780363378&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bbn-turk-tv
 #EXTINF:-1 tvg-id="tvku.bbnturktv" group-title="Haber",BBN Türk (v-kavu)
@@ -2087,60 +2237,80 @@ https://cdn507.tvkulesi.com/olaytv.m3u8?tkn=4efi1dc1ZHSZ6kpJkV-w8g&tms=178035685
 https://cdn501.kavuntv.net/olaytv.m3u8?tkn=f5bf_g1Uk75tbOerkT0e7Q&tms=1780359549&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kapanan
 #EXTINF:-1 tvg-id="tvku.rossiya24" group-title="Haber",Rossiya 24
 https://cdn900.tvkulesi.com/rossiya24.m3u8?tkn=D7vj6MLXHI3M80VscCR2Ug&tms=1780356862&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rossiya-24
+#EXTINF:-1 tvg-id="tvku.rossiya24" group-title="Haber",Rossiya 24 (kavu)
+https://cdn900.kavuntv.net/rossiya24.m3u8?tkn=ECEHsgDOq65cuHDLE6aQew&tms=1780364533&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rossiya-24
 #EXTINF:-1 tvg-id="tvku.rossiya24" group-title="Haber",Rossiya 24 (tvku)
 https://cdn900.tvkulesi.com/rossiya24.m3u8?tkn=p3BhxkeiigJ4GRMaTeanvA&tms=1780363386&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rossiya-24
 #EXTINF:-1 tvg-id="tvku.rossiya24" group-title="Haber",Rossiya 24 (v-kavu)
 https://cdn900.kavuntv.net/rossiya24.m3u8?tkn=mnbyMoYbIkoH8Imlt8ZBIA&tms=1780359555&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rossiya-24
 #EXTINF:-1 tvg-id="tvku.nhkworldjapan" group-title="Haber",NHK World Japan
 https://cdn900.tvkulesi.com/nhkworldjpn.m3u8?tkn=tE1r-rKMG6P4gIgI_4l4JA&tms=1780356867&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=nhk-world-japan
+#EXTINF:-1 tvg-id="tvku.nhkworldjapan" group-title="Haber",NHK World Japan (kavu)
+https://cdn900.kavuntv.net/nhkworldjpn.m3u8?tkn=t-NGa5a5y7zkQYzqF-g7zA&tms=1780364536&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=nhk-world-japan
 #EXTINF:-1 tvg-id="tvku.nhkworldjapan" group-title="Haber",NHK World Japan (tvku)
 https://cdn900.tvkulesi.com/nhkworldjpn.m3u8?tkn=bmwr-igc094lVseIhpwOPg&tms=1780363389&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=nhk-world-japan
 #EXTINF:-1 tvg-id="tvku.nhkworldjapan" group-title="Haber",NHK World Japan (v-kavu)
 https://cdn900.kavuntv.net/nhkworldjpn.m3u8?tkn=ES60vkXlPVAVqnOT_3doyA&tms=1780359560&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=nhk-world-japan
 #EXTINF:-1 tvg-id="tvku.rtrplaneta" group-title="Haber",RTR Planeta
 https://cdn900.tvkulesi.com/rtrplaneta.m3u8?tkn=nXYx_aN5zx5bDgIcjq-xww&tms=1780356873&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rtr-planeta
+#EXTINF:-1 tvg-id="tvku.rtrplaneta" group-title="Haber",RTR Planeta (kavu)
+https://cdn900.kavuntv.net/rtrplaneta.m3u8?tkn=mOPe5kGc3qr3wn4CvG5Psg&tms=1780364538&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rtr-planeta
 #EXTINF:-1 tvg-id="tvku.rtrplaneta" group-title="Haber",RTR Planeta (tvku)
 https://cdn900.tvkulesi.com/rtrplaneta.m3u8?tkn=LhRBMvONCE4_suTMOolJ0A&tms=1780363391&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rtr-planeta
 #EXTINF:-1 tvg-id="tvku.rtrplaneta" group-title="Haber",RTR Planeta (v-kavu)
 https://cdn900.kavuntv.net/rtrplaneta.m3u8?tkn=JGw1tG4Fhh4KZKZT75OHTA&tms=1780359564&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rtr-planeta
 #EXTINF:-1 tvg-id="tvku.turkmenelitv" group-title="Haber",Türkmeneli Tv
 https://cdn900.tvkulesi.com/turkmenelitv.m3u8?tkn=IuQmQTY2hysbLDJxJw7UpQ&tms=1780356881&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turkmeneli-tv
+#EXTINF:-1 tvg-id="tvku.turkmenelitv" group-title="Haber",Türkmeneli Tv (kavu)
+https://cdn900.kavuntv.net/turkmenelitv.m3u8?tkn=FTOwgX4ecfF6Pl2mn4__Yg&tms=1780364541&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turkmeneli-tv
 #EXTINF:-1 tvg-id="tvku.turkmenelitv" group-title="Haber",Türkmeneli Tv (tvku)
 https://cdn900.tvkulesi.com/turkmenelitv.m3u8?tkn=Pf6faVTC0vUsMdjF0POKqA&tms=1780363394&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turkmeneli-tv
 #EXTINF:-1 tvg-id="tvku.turkmenelitv" group-title="Haber",Türkmeneli Tv (v-kavu)
 https://cdn900.kavuntv.net/turkmenelitv.m3u8?tkn=IGMLNIjaHKcfcalZU_l7gw&tms=1780359569&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turkmeneli-tv
 #EXTINF:-1 tvg-id="tvku.realtv" group-title="Haber",Real Tv
 https://cdn503.tvkulesi.com/realtv.m3u8?tkn=v7pkXPJqRh1gHA9HwEIWMA&tms=1780356887&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=real-tv
+#EXTINF:-1 tvg-id="tvku.realtv" group-title="Haber",Real Tv (kavu)
+https://cdn501.kavuntv.net/realtv.m3u8?tkn=sjuz8uBQzGjBXs10CrkMDg&tms=1780364544&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=real-tv
 #EXTINF:-1 tvg-id="tvku.realtv" group-title="Haber",Real Tv (tvku)
 https://cdn509.tvkulesi.com/realtv.m3u8?tkn=162yxf20Z3Ulx78zdSNdVw&tms=1780363397&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=real-tv
 #EXTINF:-1 tvg-id="tvku.realtv" group-title="Haber",Real Tv (v-kavu)
 https://cdn508.kavuntv.net/realtv.m3u8?tkn=AK2iaYQSqqfOiNOQvy9i4w&tms=1780359574&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=real-tv
 #EXTINF:-1 tvg-id="tvku.dunyatv" group-title="Haber",Dünya Tv
 https://cdn507.tvkulesi.com/dunyatv.m3u8?tkn=2ex7oCErDxSGbUn2CJJY5w&tms=1780356895&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dunya-tv
+#EXTINF:-1 tvg-id="tvku.dunyatv" group-title="Haber",Dünya Tv (kavu)
+https://cdn506.kavuntv.net/dunyatv.m3u8?tkn=Iz3NTWBlGyDDmZO8j7HtXA&tms=1780364546&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dunya-tv
 #EXTINF:-1 tvg-id="tvku.dunyatv" group-title="Haber",Dünya Tv (tvku)
 https://cdn503.tvkulesi.com/dunyatv.m3u8?tkn=kgMHqp_klT1UpUIC_s7kTA&tms=1780363399&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dunya-tv
 #EXTINF:-1 tvg-id="tvku.dunyatv" group-title="Haber",Dünya Tv (v-kavu)
 https://cdn501.kavuntv.net/dunyatv.m3u8?tkn=Kyj4tP-EpXaWimVitzUFyA&tms=1780359579&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dunya-tv
 #EXTINF:-1 tvg-id="tvku.diyalogtv" group-title="Haber",Diyalog Tv
 https://cdn509.tvkulesi.com/diyalogtv.m3u8?tkn=2PbNAcEPG_KKIhJedWSWxQ&tms=1780356901&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyalog-tv
+#EXTINF:-1 tvg-id="tvku.diyalogtv" group-title="Haber",Diyalog Tv (kavu)
+https://cdn501.kavuntv.net/diyalogtv.m3u8?tkn=5JOLZO2dotXfJCm7l4kv4Q&tms=1780364549&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyalog-tv
 #EXTINF:-1 tvg-id="tvku.diyalogtv" group-title="Haber",Diyalog Tv (tvku)
 https://cdn507.tvkulesi.com/diyalogtv.m3u8?tkn=dgVKHGR_1Bh-rZcXLjfPwg&tms=1780363402&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyalog-tv
 #EXTINF:-1 tvg-id="tvku.diyalogtv" group-title="Haber",Diyalog Tv (v-kavu)
 https://cdn503.kavuntv.net/diyalogtv.m3u8?tkn=0xd2f6qlZoKI_3tLsc4wAw&tms=1780359584&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyalog-tv
 #EXTINF:-1 tvg-id="tvku.imeditv" group-title="Haber",imedi tv
 https://cdn900.tvkulesi.com/imeditv.m3u8?tkn=C1OK1FXwnEi6QLWQijtxTw&tms=1780356911&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=imedi-tv
+#EXTINF:-1 tvg-id="tvku.imeditv" group-title="Haber",imedi tv (kavu)
+https://cdn900.kavuntv.net/imeditv.m3u8?tkn=PhQOcKyx2j5UB06AdNZ6FQ&tms=1780364552&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=imedi-tv
 #EXTINF:-1 tvg-id="tvku.imeditv" group-title="Haber",imedi tv (tvku)
 https://cdn900.tvkulesi.com/imeditv.m3u8?tkn=qxneY7X2ffd-wMMXxSGNZw&tms=1780363405&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=imedi-tv
 #EXTINF:-1 tvg-id="tvku.imeditv" group-title="Haber",imedi tv (v-kavu)
 https://cdn900.kavuntv.net/imeditv.m3u8?tkn=-3gUmPLUhRxuaazckLNjfg&tms=1780359588&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=imedi-tv
 #EXTINF:-1 tvg-id="tvku.mtavariarkhi" group-title="Haber",Mtavari Arkhi
 https://cdn900.tvkulesi.com/mtavariarkhi.m3u8?tkn=6rkvxPu4e_hO0wQm6-qbKw&tms=1780356918&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mtavari-arkhi
+#EXTINF:-1 tvg-id="tvku.mtavariarkhi" group-title="Haber",Mtavari Arkhi (kavu)
+https://cdn900.kavuntv.net/mtavariarkhi.m3u8?tkn=gov987QMnUWpJzWoa0fwgQ&tms=1780364554&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mtavari-arkhi
 #EXTINF:-1 tvg-id="tvku.mtavariarkhi" group-title="Haber",Mtavari Arkhi (tvku)
 https://cdn900.tvkulesi.com/mtavariarkhi.m3u8?tkn=-6Ovm-_x_9g8g-WHpwXGVQ&tms=1780363407&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mtavari-arkhi
 #EXTINF:-1 tvg-id="tvku.mtavariarkhi" group-title="Haber",Mtavari Arkhi (v-kavu)
 https://cdn900.kavuntv.net/mtavariarkhi.m3u8?tkn=kqPiiypqxo3zY6viixx8mQ&tms=1780359593&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mtavari-arkhi
 #EXTINF:-1 tvg-id="tvku.obieqtivi" group-title="Haber",Obieqtivi
 https://cdn900.tvkulesi.com/obieqtivi.m3u8?tkn=8BskLPvB5Dz4bWLPTfbN9A&tms=1780356926&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=obieqtivi
+#EXTINF:-1 tvg-id="tvku.obieqtivi" group-title="Haber",Obieqtivi (kavu)
+https://cdn900.kavuntv.net/obieqtivi.m3u8?tkn=odh42_7JSReQt9uBLql7dg&tms=1780364557&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=obieqtivi
 #EXTINF:-1 tvg-id="tvku.obieqtivi" group-title="Haber",Obieqtivi (tvku)
 https://cdn900.tvkulesi.com/obieqtivi.m3u8?tkn=JurSQNAngJPBPUi-1BVUfw&tms=1780363410&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=obieqtivi
 #EXTINF:-1 tvg-id="tvku.obieqtivi" group-title="Haber",Obieqtivi (v-kavu)
@@ -2149,6 +2319,8 @@ https://cdn900.kavuntv.net/obieqtivi.m3u8?tkn=3gja-yss-m0PYL6h4FLOUg&tms=1780359
 https://ip252.ozelip.com:1936/protv5/protv5/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.pravdatut" group-title="Haber",Pravda Tut
 https://cdn507.tvkulesi.com/pravdatut.m3u8?tkn=VLVs_Qm2tML0QL-EtzjHOA&tms=1780356941&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=pravda-tut
+#EXTINF:-1 tvg-id="tvku.pravdatut" group-title="Haber",Pravda Tut (kavu)
+https://cdn505.kavuntv.net/pravdatut.m3u8?tkn=yAM-TWxn63wI-Z3kRQzxQQ&tms=1780364562&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=pravda-tut
 #EXTINF:-1 tvg-id="tvku.pravdatut" group-title="Haber",Pravda Tut (tvku)
 https://cdn501.tvkulesi.com/pravdatut.m3u8?tkn=zxjidSq6yxzEWzlRNPePTw&tms=1780363415&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=pravda-tut
 #EXTINF:-1 tvg-id="tvku.pravdatut" group-title="Haber",Pravda Tut (v-kavu)
@@ -2159,48 +2331,64 @@ https://cdn900.tvkulesi.com/meltemtv.m3u8?tkn=f4B35YmJUynPYNECoXDXqg&tms=1780356
 https://cdn900.kavuntv.net/meltemtv.m3u8?tkn=GzykAbqsCpyzMVhGKDiPpw&tms=1780359617&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=meltem-tv
 #EXTINF:-1 tvg-id="tvku.rustavi2" group-title="Haber",Rustavi 2
 https://cdn900.tvkulesi.com/rustavi2.m3u8?tkn=d1Vr2KcHpXOENxiik-o6Kg&tms=1780356964&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rustavi-2
+#EXTINF:-1 tvg-id="tvku.rustavi2" group-title="Haber",Rustavi 2 (kavu)
+https://cdn900.kavuntv.net/rustavi2.m3u8?tkn=PW0PEOqm7St-Js8Rs4ba0w&tms=1780364568&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rustavi-2
 #EXTINF:-1 tvg-id="tvku.rustavi2" group-title="Haber",Rustavi 2 (tvku)
 https://cdn900.tvkulesi.com/rustavi2.m3u8?tkn=qzeixeEFTHXt7BfCahMcjQ&tms=1780363420&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rustavi-2
 #EXTINF:-1 tvg-id="tvku.rustavi2" group-title="Haber",Rustavi 2 (v-kavu)
 https://cdn900.kavuntv.net/rustavi2.m3u8?tkn=KTugN-2UEJrG_V4-hrdFpA&tms=1780359626&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rustavi-2
 #EXTINF:-1 tvg-id="tvku.tv25georgia" group-title="Haber",TV 25 Georgia
 https://cdn900.tvkulesi.com/tv25georgia.m3u8?tkn=qBssYxphaDAzrQJNVKND5Q&tms=1780356973&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-25-georgia
+#EXTINF:-1 tvg-id="tvku.tv25georgia" group-title="Haber",TV 25 Georgia (kavu)
+https://cdn900.kavuntv.net/tv25georgia.m3u8?tkn=3QzNpuq7qNehm-n_sZ2zzw&tms=1780364570&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-25-georgia
 #EXTINF:-1 tvg-id="tvku.tv25georgia" group-title="Haber",TV 25 Georgia (tvku)
 https://cdn900.tvkulesi.com/tv25georgia.m3u8?tkn=N_mGm2QXmCPgxJgU-C6EIA&tms=1780363423&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-25-georgia
 #EXTINF:-1 tvg-id="tvku.tv25georgia" group-title="Haber",TV 25 Georgia (v-kavu)
 https://cdn900.kavuntv.net/tv25georgia.m3u8?tkn=uq5GA3TAbE3H9FTbDE4HeA&tms=1780359631&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-25-georgia
 #EXTINF:-1 tvg-id="tvku.tvpirveli" group-title="Haber",Tv Pirveli
 https://cdn509.tvkulesi.com/tvpirveli.m3u8?tkn=tAf2CiWv99KMA706k5sxpQ&tms=1780356979&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-pirveli
+#EXTINF:-1 tvg-id="tvku.tvpirveli" group-title="Haber",Tv Pirveli (kavu)
+https://cdn508.kavuntv.net/tvpirveli.m3u8?tkn=MUa5wT-jc0tKaL4KOwLuRw&tms=1780364573&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-pirveli
 #EXTINF:-1 tvg-id="tvku.tvpirveli" group-title="Haber",Tv Pirveli (tvku)
 https://cdn505.tvkulesi.com/tvpirveli.m3u8?tkn=TimmjSC_F55OULElwVUnMQ&tms=1780363426&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-pirveli
 #EXTINF:-1 tvg-id="tvku.tvpirveli" group-title="Haber",Tv Pirveli (v-kavu)
 https://cdn505.kavuntv.net/tvpirveli.m3u8?tkn=VOVAqbZOZkiRuky4-whGQg&tms=1780359636&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-pirveli
 #EXTINF:-1 tvg-id="tvku.inratingtv" group-title="Haber",InRating Tv
 https://cdn509.tvkulesi.com/inratingtv.m3u8?tkn=23r24iPUbqie1vKWe8xPqQ&tms=1780356988&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=inrating-tv
+#EXTINF:-1 tvg-id="tvku.inratingtv" group-title="Haber",InRating Tv (kavu)
+https://cdn501.kavuntv.net/inratingtv.m3u8?tkn=QI1QqV8omt78ZVhvxnXHhg&tms=1780364576&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=inrating-tv
 #EXTINF:-1 tvg-id="tvku.inratingtv" group-title="Haber",InRating Tv (tvku)
 https://cdn502.tvkulesi.com/inratingtv.m3u8?tkn=p3-fnIoo2EC4--bWOWGeGA&tms=1780363429&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=inrating-tv
 #EXTINF:-1 tvg-id="tvku.inratingtv" group-title="Haber",InRating Tv (v-kavu)
 https://cdn509.kavuntv.net/inratingtv.m3u8?tkn=4ujHhqcaoiLtCqJIJHys5g&tms=1780359641&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=inrating-tv
 #EXTINF:-1 tvg-id="tvku.1tvgeorgia" group-title="Haber",1 TV Georgia
 https://cdn900.tvkulesi.com/1tvgeorgia.m3u8?tkn=-tiwYEiFfzeGG-yNr9gUPg&tms=1780356996&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1-tv-georgia
+#EXTINF:-1 tvg-id="tvku.1tvgeorgia" group-title="Haber",1 TV Georgia (kavu)
+https://cdn900.kavuntv.net/1tvgeorgia.m3u8?tkn=u4e7ypuX075hrsdZVBgR5w&tms=1780364578&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1-tv-georgia
 #EXTINF:-1 tvg-id="tvku.1tvgeorgia" group-title="Haber",1 TV Georgia (tvku)
 https://cdn900.tvkulesi.com/1tvgeorgia.m3u8?tkn=ADeJ_7vaIo6x1qSO5DHqSw&tms=1780363432&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1-tv-georgia
 #EXTINF:-1 tvg-id="tvku.1tvgeorgia" group-title="Haber",1 TV Georgia (v-kavu)
 https://cdn900.kavuntv.net/1tvgeorgia.m3u8?tkn=TwhmxKjiyfYWyo2A4rIGSA&tms=1780359646&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1-tv-georgia
 #EXTINF:-1 tvg-id="tvku.flashtv" group-title="Haber",Flash Tv
 https://cdn900.tvkulesi.com/flashtv.m3u8?tkn=y4u8FtnJh9uAhwt88vVxSA&tms=1780357004&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=flash-tv
+#EXTINF:-1 tvg-id="tvku.flashtv" group-title="Haber",Flash Tv (kavu)
+https://cdn900.kavuntv.net/flashtv.m3u8?tkn=ELm35KSt3v9E2USw2oImRg&tms=1780364581&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=flash-tv
 #EXTINF:-1 tvg-id="tvku.flashtv" group-title="Haber",Flash Tv (tvku)
 https://cdn900.tvkulesi.com/flashtv.m3u8?tkn=PNiwDx87EpQXZ61pgVREwg&tms=1780363435&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=flash-tv
 #EXTINF:-1 tvg-id="tvku.flashtv" group-title="Haber",Flash Tv (v-kavu)
 https://cdn900.kavuntv.net/flashtv.m3u8?tkn=-qd5wRBo8myKw291NS347A&tms=1780359650&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=flash-tv
 #EXTINF:-1 tvg-id="tvku.fardatv" group-title="Haber",Farda Tv
 https://cdn504.tvkulesi.com/fardatv.m3u8?tkn=WrgUXQ8zmRqCH3gsTnwlCA&tms=1780357021&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=farda-tv
+#EXTINF:-1 tvg-id="tvku.fardatv" group-title="Haber",Farda Tv (kavu)
+https://cdn503.kavuntv.net/fardatv.m3u8?tkn=oGVu3P01eLVqhndrcTjzWQ&tms=1780364586&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=farda-tv
 #EXTINF:-1 tvg-id="tvku.fardatv" group-title="Haber",Farda Tv (tvku)
 https://cdn507.tvkulesi.com/fardatv.m3u8?tkn=7E-4wcCMZ1AncOR6fYcG0g&tms=1780363440&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=farda-tv
 #EXTINF:-1 tvg-id="tvku.fardatv" group-title="Haber",Farda Tv (v-kavu)
 https://cdn503.kavuntv.net/fardatv.m3u8?tkn=mH6H9EcsOl2gt008Fc-eYw&tms=1780359661&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=farda-tv
 #EXTINF:-1 tvg-id="tvku.watantv" group-title="Haber",Watan Tv
 https://cdn507.tvkulesi.com/watantv.m3u8?tkn=DkoPJY2pyD3my-I3iOmB7w&tms=1780357028&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=watan-tv
+#EXTINF:-1 tvg-id="tvku.watantv" group-title="Haber",Watan Tv (kavu)
+https://cdn507.kavuntv.net/watantv.m3u8?tkn=NslQlsTcKxqRNEu_f5OyPQ&tms=1780364589&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=watan-tv
 #EXTINF:-1 tvg-id="tvku.watantv" group-title="Haber",Watan Tv (tvku)
 https://cdn504.tvkulesi.com/watantv.m3u8?tkn=9OdHBjDAnWev0g92-Y6v8g&tms=1780363443&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=watan-tv
 #EXTINF:-1 tvg-id="tvku.watantv" group-title="Haber",Watan Tv (v-kavu)
@@ -2215,54 +2403,72 @@ https://waw2.artiyerelmedya.net/olayturk/bant1/playlist.m3u8
 http://198.100.158.231:1935/kanal16/_definst_/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.gunaztv" group-title="Haber",Günaz Tv
 https://cdn900.tvkulesi.com/gunaztv.m3u8?tkn=W2MtdiC-DV54xE9nY66yWw&tms=1780357094&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunaz-tv
+#EXTINF:-1 tvg-id="tvku.gunaztv" group-title="Haber",Günaz Tv (kavu)
+https://cdn900.kavuntv.net/gunaztv.m3u8?tkn=QcAXf8BjVFqT2580HAGjfw&tms=1780364605&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunaz-tv
 #EXTINF:-1 tvg-id="tvku.gunaztv" group-title="Haber",Günaz Tv (tvku)
 https://cdn900.tvkulesi.com/gunaztv.m3u8?tkn=7NTqy5bgsb9Hr9-e7cILvg&tms=1780363459&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunaz-tv
 #EXTINF:-1 tvg-id="tvku.gunaztv" group-title="Haber",Günaz Tv (v-kavu)
 https://cdn900.kavuntv.net/gunaztv.m3u8?tkn=qgn-oOEvBrzhc7g9M8UDeA&tms=1780359727&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gunaz-tv
 #EXTINF:-1 tvg-id="tvku.aznewstv" group-title="Haber",Aznews Tv
 https://cdn900.tvkulesi.com/anttv.m3u8?tkn=1iDrTA9R2bb9fHNxcyIbwA&tms=1780357101&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aznews-tv
+#EXTINF:-1 tvg-id="tvku.aznewstv" group-title="Haber",Aznews Tv (kavu)
+https://cdn900.kavuntv.net/anttv.m3u8?tkn=N9PT-KtC6wy3Ro18HxpM5w&tms=1780364608&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aznews-tv
 #EXTINF:-1 tvg-id="tvku.aznewstv" group-title="Haber",Aznews Tv (tvku)
 https://cdn900.tvkulesi.com/anttv.m3u8?tkn=7pmq0G0kUXydu_ej-3UzaQ&tms=1780363461&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aznews-tv
 #EXTINF:-1 tvg-id="tvku.aznewstv" group-title="Haber",Aznews Tv (v-kavu)
 https://cdn900.kavuntv.net/anttv.m3u8?tkn=KOoRitvQFFaGBx5bt_e3-A&tms=1780359732&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aznews-tv
 #EXTINF:-1 tvg-id="tvku.iraninternational" group-title="Haber",İran International
 https://cdn900.tvkulesi.com/iraninternational.m3u8?tkn=gYKJ0DVzvsZhqjP1YG8n3A&tms=1780357114&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=iran-international
+#EXTINF:-1 tvg-id="tvku.iraninternational" group-title="Haber",İran International (kavu)
+https://cdn900.kavuntv.net/iraninternational.m3u8?tkn=wQU8OYuZibz2hDan1tDyAg&tms=1780364613&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=iran-international
 #EXTINF:-1 tvg-id="tvku.iraninternational" group-title="Haber",İran International (tvku)
 https://cdn900.tvkulesi.com/iraninternational.m3u8?tkn=W_jzyP1Q7j3F4K68t-Oznw&tms=1780363467&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=iran-international
 #EXTINF:-1 tvg-id="tvku.iraninternational" group-title="Haber",İran International (v-kavu)
 https://cdn900.kavuntv.net/iraninternational.m3u8?tkn=HBJNbsI4Etj5k9sIUwDbDw&tms=1780359747&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=iran-international
 #EXTINF:-1 tvg-id="tvku.caddetv" group-title="Haber",Cadde Tv
 https://cdn900.tvkulesi.com/caddetv.m3u8?tkn=lx7LDViafAlz_F_ZvU37sA&tms=1780357121&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cadde-tv
+#EXTINF:-1 tvg-id="tvku.caddetv" group-title="Haber",Cadde Tv (kavu)
+https://cdn900.kavuntv.net/caddetv.m3u8?tkn=oZQAd_OVqVaD0MhPDuEwCA&tms=1780364616&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cadde-tv
 #EXTINF:-1 tvg-id="tvku.caddetv" group-title="Haber",Cadde Tv (tvku)
 https://cdn900.tvkulesi.com/caddetv.m3u8?tkn=wVtiREYdLAZZu8t-IBo4vg&tms=1780363469&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cadde-tv
 #EXTINF:-1 tvg-id="tvku.caddetv" group-title="Haber",Cadde Tv (v-kavu)
 https://cdn900.kavuntv.net/caddetv.m3u8?tkn=yTA4mOtr7Ihv1Jb8X24qpg&tms=1780359752&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=cadde-tv
 #EXTINF:-1 tvg-id="tvku.atvazadtv" group-title="Haber",ATV Azad Tv
 https://cdn508.tvkulesi.com/atvaz.m3u8?tkn=_jQMsRFN-QAU3y6qL3Ic3Q&tms=1780357126&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv-azad-tv
+#EXTINF:-1 tvg-id="tvku.atvazadtv" group-title="Haber",ATV Azad Tv (kavu)
+https://cdn504.kavuntv.net/atvaz.m3u8?tkn=uykc3f2hHz4X5vgGoUDLqg&tms=1780364618&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv-azad-tv
 #EXTINF:-1 tvg-id="tvku.atvazadtv" group-title="Haber",ATV Azad Tv (tvku)
 https://cdn507.tvkulesi.com/atvaz.m3u8?tkn=VtYGmTqC3dfBWLeEiitQ5Q&tms=1780363472&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv-azad-tv
 #EXTINF:-1 tvg-id="tvku.atvazadtv" group-title="Haber",ATV Azad Tv (v-kavu)
 https://cdn508.kavuntv.net/atvaz.m3u8?tkn=63jmga_jikq-PXRCfz8UQw&tms=1780359758&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv-azad-tv
 #EXTINF:-1 tvg-id="tvku.worldturk" group-title="Haber",World Türk
 https://cdn900.tvkulesi.com/worldturk.m3u8?tkn=fn0H4gjv0lhgFTxYyeTaqg&tms=1780357133&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=world-turk
+#EXTINF:-1 tvg-id="tvku.worldturk" group-title="Haber",World Türk (kavu)
+https://cdn900.kavuntv.net/worldturk.m3u8?tkn=Xqw9XMmtd3HxUTKXNfn6rg&tms=1780364621&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=world-turk
 #EXTINF:-1 tvg-id="tvku.worldturk" group-title="Haber",World Türk (tvku)
 https://cdn900.tvkulesi.com/worldturk.m3u8?tkn=3fKHU97ZXB3I9O4V0K_tqw&tms=1780363475&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=world-turk
 #EXTINF:-1 tvg-id="tvku.worldturk" group-title="Haber",World Türk (v-kavu)
 https://cdn900.kavuntv.net/worldturk.m3u8?tkn=uxKxbAz2E41gTJWj3N6yzQ&tms=1780359766&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=world-turk
 #EXTINF:-1 tvg-id="tvku.yesilyoltv" group-title="Haber",Yeşilyol Tv
 https://cdn900.tvkulesi.com/yesilyoltv.m3u8?tkn=59q9ZEgeYS0BBTtROA26Hw&tms=1780357140&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yesilyol-tv
+#EXTINF:-1 tvg-id="tvku.yesilyoltv" group-title="Haber",Yeşilyol Tv (kavu)
+https://cdn900.kavuntv.net/yesilyoltv.m3u8?tkn=E0TOmoVCOQvUGStwSKt2Xg&tms=1780364624&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yesilyol-tv
 #EXTINF:-1 tvg-id="tvku.yesilyoltv" group-title="Haber",Yeşilyol Tv (tvku)
 https://cdn900.tvkulesi.com/yesilyoltv.m3u8?tkn=6t8iE3JLPgFcGvmEGWJ0fQ&tms=1780363477&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yesilyol-tv
 #EXTINF:-1 tvg-id="tvku.yesilyoltv" group-title="Haber",Yeşilyol Tv (v-kavu)
 https://cdn900.kavuntv.net/yesilyoltv.m3u8?tkn=CdhUGARVfzV_3aVwLdcrAA&tms=1780359774&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=yesilyol-tv
 #EXTINF:-1 tvg-id="tvku.kanalb" group-title="Haber",Kanal B
 https://cdn900.tvkulesi.com/kanalb.m3u8?tkn=9Tik7NT-e5VGuJ-QPgBLEQ&tms=1780357148&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-b
+#EXTINF:-1 tvg-id="tvku.kanalb" group-title="Haber",Kanal B (kavu)
+https://cdn900.kavuntv.net/kanalb.m3u8?tkn=afKYtxogKTT8FKQEvVcPVQ&tms=1780364626&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-b
 #EXTINF:-1 tvg-id="tvku.kanalb" group-title="Haber",Kanal B (tvku)
 https://cdn900.tvkulesi.com/kanalb.m3u8?tkn=cGYeEVArLgc2qUIcuYvd_g&tms=1780363480&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-b
 #EXTINF:-1 tvg-id="tvku.kanalb" group-title="Haber",Kanal B (v-kavu)
 https://cdn900.kavuntv.net/kanalb.m3u8?tkn=jfP5tHFqM9U3Y5OtLjOI8Q&tms=1780359780&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-b
 #EXTINF:-1 tvg-id="tvku.tvnet" group-title="Haber",TVNET
 https://cdn900.tvkulesi.com/tvnet.m3u8?tkn=LyOq06C5Y_UQ4vBoSLWFZg&tms=1780357156&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tvnet
+#EXTINF:-1 tvg-id="tvku.tvnet" group-title="Haber",TVNET (kavu)
+https://cdn900.kavuntv.net/tvnet.m3u8?tkn=EPL_TXTMqfxBnd-4rDXRew&tms=1780364629&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tvnet
 #EXTINF:-1 tvg-id="tvku.tvnet" group-title="Haber",TVNET (tvku)
 https://cdn900.tvkulesi.com/tvnet.m3u8?tkn=MxLyXzNo_M0AdvbNSKy_FA&tms=1780363483&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tvnet
 #EXTINF:-1 tvg-id="tvku.tvnet" group-title="Haber",TVNET (v-kavu)
@@ -2273,42 +2479,56 @@ https://cdn900.tvkulesi.com/kanalavrupa.m3u8?tkn=k1F5Xhoxx0hTMQY2iK2LIg&tms=1780
 https://cdn900.kavuntv.net/kanalavrupa.m3u8?tkn=Z2-Gucts5hBNLABs8GJbVQ&tms=1780359791&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-avrupa
 #EXTINF:-1 tvg-id="tvku.alarabiyaalhadath" group-title="Haber",Al Arabiya Al Hadath
 https://cdn900.tvkulesi.com/alarabiyaalhadath.m3u8?tkn=A6Ug5SNX-5hHlqRDYYvFPQ&tms=1780357170&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-arabiya-alhadath
+#EXTINF:-1 tvg-id="tvku.alarabiyaalhadath" group-title="Haber",Al Arabiya Al Hadath (kavu)
+https://cdn900.kavuntv.net/alarabiyaalhadath.m3u8?tkn=WwxgXG7htRSZSxX1_6EHtA&tms=1780364634&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-arabiya-alhadath
 #EXTINF:-1 tvg-id="tvku.alarabiyaalhadath" group-title="Haber",Al Arabiya Al Hadath (tvku)
 https://cdn900.tvkulesi.com/alarabiyaalhadath.m3u8?tkn=saInK9XW9d-EOkPeOfiAmg&tms=1780363488&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-arabiya-alhadath
 #EXTINF:-1 tvg-id="tvku.alarabiyaalhadath" group-title="Haber",Al Arabiya Al Hadath (v-kavu)
 https://cdn900.kavuntv.net/alarabiyaalhadath.m3u8?tkn=Snw8-zUUFqQfZwR3hCKEjA&tms=1780359796&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-arabiya-alhadath
 #EXTINF:-1 tvg-id="tvku.turksattanitim" group-title="Haber",Türksat Tanıtım
 https://cdn900.tvkulesi.com/turksattanitim.m3u8?tkn=sjvuqUXNyEe11-We8pLJIw&tms=1780357185&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turksat-tanitim
+#EXTINF:-1 tvg-id="tvku.turksattanitim" group-title="Haber",Türksat Tanıtım (kavu)
+https://cdn900.kavuntv.net/turksattanitim.m3u8?tkn=0DA1rfoEgwpfvb0-FDpNTw&tms=1780364640&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turksat-tanitim
 #EXTINF:-1 tvg-id="tvku.turksattanitim" group-title="Haber",Türksat Tanıtım (tvku)
 https://cdn900.tvkulesi.com/turksattanitim.m3u8?tkn=x5CoILZVa7N4BLz0PPjj-w&tms=1780363493&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turksat-tanitim
 #EXTINF:-1 tvg-id="tvku.turksattanitim" group-title="Haber",Türksat Tanıtım (v-kavu)
 https://cdn900.kavuntv.net/turksattanitim.m3u8?tkn=B-ypi2XClA6XkrLlCfIX8w&tms=1780359806&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=turksat-tanitim
 #EXTINF:-1 tvg-id="tvku.kudustv" group-title="Haber",Kudüs Tv
 https://cdn900.tvkulesi.com/kudustv.m3u8?tkn=yIgFM1DmTBaKFE5RA112dg&tms=1780357201&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kudus-tv
+#EXTINF:-1 tvg-id="tvku.kudustv" group-title="Haber",Kudüs Tv (kavu)
+https://cdn900.kavuntv.net/kudustv.m3u8?tkn=nbemdT9o4Qjiqsijmai0SA&tms=1780364645&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kudus-tv
 #EXTINF:-1 tvg-id="tvku.kudustv" group-title="Haber",Kudüs Tv (tvku)
 https://cdn900.tvkulesi.com/kudustv.m3u8?tkn=TCRtq7vAcLgUIc_0wwUT_Q&tms=1780363499&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kudus-tv
 #EXTINF:-1 tvg-id="tvku.kudustv" group-title="Haber",Kudüs Tv (v-kavu)
 https://cdn900.kavuntv.net/kudustv.m3u8?tkn=fJki3ju0YltFP2_1fihmoQ&tms=1780359816&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kudus-tv
 #EXTINF:-1 tvg-id="tvku.bakutv" group-title="Haber",Baku Tv
 https://cdn900.tvkulesi.com/bakutv.m3u8?tkn=5CfiLrHciLP5goN1PVRbnw&tms=1780357208&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=baku-tv
+#EXTINF:-1 tvg-id="tvku.bakutv" group-title="Haber",Baku Tv (kavu)
+https://cdn900.kavuntv.net/bakutv.m3u8?tkn=zFx0bDUbeYXxnuw2x4Hj1g&tms=1780364648&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=baku-tv
 #EXTINF:-1 tvg-id="tvku.bakutv" group-title="Haber",Baku Tv (tvku)
 https://cdn900.tvkulesi.com/bakutv.m3u8?tkn=Low4fClW2FKVsXtZFVbMRA&tms=1780363501&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=baku-tv
 #EXTINF:-1 tvg-id="tvku.bakutv" group-title="Haber",Baku Tv (v-kavu)
 https://cdn900.kavuntv.net/bakutv.m3u8?tkn=HpoPbvPQzQyr_AiDD2jsLA&tms=1780359821&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=baku-tv
 #EXTINF:-1 tvg-id="tvku.engelsiztv" group-title="Haber",Engelsiz Tv
 https://cdn900.tvkulesi.com/engelsiztv.m3u8?tkn=HdEUBbvDk19bEBdb_vuuXg&tms=1780357224&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=engelsiz-tv
+#EXTINF:-1 tvg-id="tvku.engelsiztv" group-title="Haber",Engelsiz Tv (kavu)
+https://cdn900.kavuntv.net/engelsiztv.m3u8?tkn=DsaCgkyk8hyMVL_f5ec8dQ&tms=1780364653&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=engelsiz-tv
 #EXTINF:-1 tvg-id="tvku.engelsiztv" group-title="Haber",Engelsiz Tv (tvku)
 https://cdn900.tvkulesi.com/engelsiztv.m3u8?tkn=20YrXQUlvuWsajm4dnPUXQ&tms=1780363506&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=engelsiz-tv
 #EXTINF:-1 tvg-id="tvku.engelsiztv" group-title="Haber",Engelsiz Tv (v-kavu)
 https://cdn900.kavuntv.net/engelsiztv.m3u8?tkn=G3nrgoheW1Ud_QnxKcojiQ&tms=1780359831&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=engelsiz-tv
 #EXTINF:-1 tvg-id="tvku.france24francais" group-title="Haber",France 24 Francais
 https://cdn900.tvkulesi.com/france24francais.m3u8?tkn=KrIPFmkghY-jXh-gNpsksA&tms=1780357229&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-francais
+#EXTINF:-1 tvg-id="tvku.france24francais" group-title="Haber",France 24 Francais (kavu)
+https://cdn900.kavuntv.net/france24francais.m3u8?tkn=2Al0BaU3UxiVsPG8-GTkGA&tms=1780364656&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-francais
 #EXTINF:-1 tvg-id="tvku.france24francais" group-title="Haber",France 24 Francais (tvku)
 https://cdn900.tvkulesi.com/france24francais.m3u8?tkn=OixJIJgDJ3SELmbupWLpbw&tms=1780363509&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-francais
 #EXTINF:-1 tvg-id="tvku.france24francais" group-title="Haber",France 24 Francais (v-kavu)
 https://cdn900.kavuntv.net/france24francais.m3u8?tkn=KSUOCDuo8eg1oXkn1ijcHg&tms=1780359836&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-francais
 #EXTINF:-1 tvg-id="tvku.n24live" group-title="Haber",N24
 https://cdn900.tvkulesi.com/n24doku.m3u8?tkn=S0LLg5vNh31kaGLCVB1l-A&tms=1780357234&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=n24-live
+#EXTINF:-1 tvg-id="tvku.n24live" group-title="Haber",N24 (kavu)
+https://cdn900.kavuntv.net/n24doku.m3u8?tkn=YkgQ9tBXWxNSteIIm4MsKQ&tms=1780364658&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=n24-live
 #EXTINF:-1 tvg-id="tvku.n24live" group-title="Haber",N24 (tvku)
 https://cdn900.tvkulesi.com/n24doku.m3u8?tkn=kOPqRbFNYB8pXqn5sDsdGQ&tms=1780363512&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=n24-live
 #EXTINF:-1 tvg-id="tvku.n24live" group-title="Haber",N24 (v-kavu)
@@ -2319,10 +2539,14 @@ https://cdn900.tvkulesi.com/ntvde.m3u8?tkn=zrCeAoUZf6sL9D3hYlIVBA&tms=1780357244
 https://cdn900.kavuntv.net/ntvde.m3u8?tkn=f05OfEQwLxyA3ky2NG3Pdg&tms=1780359851&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-live
 #EXTINF:-1 tvg-id="tvku.servustvlive" group-title="Haber",Servus Tv
 https://cdn900.tvkulesi.com/servustv.m3u8?tkn=XKA8nT2gcuWTXC9-FWytqA&tms=1780357249&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=servus-tv-live
+#EXTINF:-1 tvg-id="tvku.servustvlive" group-title="Haber",Servus Tv (kavu)
+https://cdn900.kavuntv.net/servustv.m3u8?tkn=KwBs5JSj3gJvmDLgQMzuDw&tms=1780364666&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=servus-tv-live
 #EXTINF:-1 tvg-id="tvku.servustvlive" group-title="Haber",Servus Tv (v-kavu)
 https://cdn900.kavuntv.net/servustv.m3u8?tkn=k5sUlPdbUeKJcQ33M6MwMA&tms=1780359856&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=servus-tv-live
 #EXTINF:-1 tvg-id="tvku.tele5live" group-title="Haber",Tele5 De
 https://cdn900.tvkulesi.com/tele5de.m3u8?tkn=nV6GOQPTxblUdw_GRJUoNA&tms=1780357254&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tele5-live
+#EXTINF:-1 tvg-id="tvku.tele5live" group-title="Haber",Tele5 De (kavu)
+https://cdn900.kavuntv.net/tele5de.m3u8?tkn=sKJWx1yiaGDwhI_oGE0R1Q&tms=1780364669&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tele5-live
 #EXTINF:-1 tvg-id="tvku.tele5live" group-title="Haber",Tele5 De (tvku)
 https://cdn900.tvkulesi.com/tele5de.m3u8?tkn=YSywcIAvQzcNo1RJdqw86A&tms=1780363522&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tele5-live
 #EXTINF:-1 tvg-id="tvku.tele5live" group-title="Haber",Tele5 De (v-kavu)
@@ -2337,30 +2561,40 @@ https://cdn900.tvkulesi.com/hrtv.m3u8?tkn=6VRgysowhsR_cXuUTDNhOQ&tms=1780357288&
 https://cdn900.kavuntv.net/hrtv.m3u8?tkn=fKZ414GOzt_NqmAZ2XSynA&tms=1780359884&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hr-live
 #EXTINF:-1 tvg-id="tvku.halktveuro" group-title="Haber",Halk Tv Euro
 https://cdn509.tvkulesi.com/halktv.m3u8?tkn=FgmRR7rjbNvXDKV3vhQK2A&tms=1780357308&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=halk-tv-euro
+#EXTINF:-1 tvg-id="tvku.halktveuro" group-title="Haber",Halk Tv Euro (kavu)
+https://cdn502.kavuntv.net/halktv.m3u8?tkn=LEFOEjvJS0XBT2yOdcMWiQ&tms=1780364689&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=halk-tv-euro
 #EXTINF:-1 tvg-id="tvku.halktveuro" group-title="Haber",Halk Tv Euro (tvku)
 https://cdn504.tvkulesi.com/halktv.m3u8?tkn=FghHHCo49t2taBh6gRZFmA&tms=1780363541&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=halk-tv-euro
 #EXTINF:-1 tvg-id="tvku.halktveuro" group-title="Haber",Halk Tv Euro (v-kavu)
 https://cdn504.kavuntv.net/halktv.m3u8?tkn=gECCCwgVYM0O8fmS6etBQg&tms=1780359899&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=halk-tv-euro
 #EXTINF:-1 tvg-id="tvku.weltderwunderlive" group-title="Haber",Welt
 https://cdn900.tvkulesi.com/welttv.m3u8?tkn=3tR9zXKDmAVGH8so026dtA&tms=1780357314&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=welt-der-wunder-live
+#EXTINF:-1 tvg-id="tvku.weltderwunderlive" group-title="Haber",Welt (kavu)
+https://cdn900.kavuntv.net/welttv.m3u8?tkn=he9RfLjfbygUK-4bLCmLsA&tms=1780364691&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=welt-der-wunder-live
 #EXTINF:-1 tvg-id="tvku.weltderwunderlive" group-title="Haber",Welt (tvku)
 https://cdn900.tvkulesi.com/welttv.m3u8?tkn=swppHDAKSwFy5DOPY2qddQ&tms=1780363544&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=welt-der-wunder-live
 #EXTINF:-1 tvg-id="tvku.weltderwunderlive" group-title="Haber",Welt (v-kavu)
 https://cdn900.kavuntv.net/welttv.m3u8?tkn=2D-uRoPC8qqV7rA2jy9APA&tms=1780359904&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=welt-der-wunder-live
 #EXTINF:-1 tvg-id="tvku.baristv" group-title="Haber",Barış Tv
 https://dmxleo.dailymotion.com/cdn/manifest/video/x26uvk8.m3u8?bs=1&rid=0&cookie_sync_ab_gk=1&reader_gdpr_flag=1&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=1&reader_us_privacy=1---&eb=https%3A%2F%2Ftr.tvkulesi.com%2F
+#EXTINF:-1 tvg-id="tvku.baristv" group-title="Haber",Barış Tv (kavu)
+https://dmxleo.dailymotion.com/cdn/manifest/video/x26uvk8.m3u8?bs=1&rid=0&cookie_sync_ab_gk=1&reader_gdpr_flag=1&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=1&reader_us_privacy=1---&eb=https%3A%2F%2Famp.kavuntv.net%2F
 #EXTINF:-1 tvg-id="tvku.baristv" group-title="Haber",Barış Tv (v-kavu)
 https://dmxleo.dailymotion.com/cdn/manifest/video/x26uvk8.m3u8?bs=1&rid=0&cookie_sync_ab_gk=1&reader_gdpr_flag=1&reader_gdpr_consent=&gdpr_binary_consent=opt-out&gdpr_comes_from_infopack=0&reader_us_privacy=1---&eb=https%3A%2F%2Famp.kavuntv.net%2F
 #EXTINF:-1 tvg-id="tvku.tagesschaulive" group-title="Haber",Tagesschau
 https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
 #EXTINF:-1 tvg-id="tvku.1antv" group-title="Haber",1AN TV
 https://cdn503.tvkulesi.com/1antv.m3u8?tkn=pay_BsfrRezTGEirE4WuXw&tms=1780357330&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1an-tv
+#EXTINF:-1 tvg-id="tvku.1antv" group-title="Haber",1AN TV (kavu)
+https://cdn509.kavuntv.net/1antv.m3u8?tkn=SuNeX0XiJGWkM7-mxowU_g&tms=1780364699&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1an-tv
 #EXTINF:-1 tvg-id="tvku.1antv" group-title="Haber",1AN TV (tvku)
 https://cdn507.tvkulesi.com/1antv.m3u8?tkn=PX58mwly4JVEfywMGM2_Eg&tms=1780363552&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1an-tv
 #EXTINF:-1 tvg-id="tvku.1antv" group-title="Haber",1AN TV (v-kavu)
 https://cdn509.kavuntv.net/1antv.m3u8?tkn=vBboZsTVGH5PZoY0REOQrA&tms=1780359920&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=1an-tv
 #EXTINF:-1 tvg-id="tvku.france24english" group-title="Haber",France 24 English
 https://cdn900.tvkulesi.com/france24english.m3u8?tkn=euv9CT5qU_8ERja6BpGscA&tms=1780357335&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-english
+#EXTINF:-1 tvg-id="tvku.france24english" group-title="Haber",France 24 English (kavu)
+https://cdn900.kavuntv.net/france24english.m3u8?tkn=mTAMPTKUelfWS4nJ1q8Kug&tms=1780364702&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-english
 #EXTINF:-1 tvg-id="tvku.france24english" group-title="Haber",France 24 English (tvku)
 https://cdn900.tvkulesi.com/france24english.m3u8?tkn=1fZUjhGqqAJ67ReGIzmJkg&tms=1780363554&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=france-24-english
 #EXTINF:-1 tvg-id="tvku.france24english" group-title="Haber",France 24 English (v-kavu)
@@ -2369,18 +2603,24 @@ https://cdn900.kavuntv.net/france24english.m3u8?tkn=2DcMybU0fr76kwlL_2U5uQ&tms=1
 https://d1x82nydcxndze.cloudfront.net/live/index.m3u8
 #EXTINF:-1 tvg-id="tvku.chptv" group-title="Haber",CHP Tv
 https://cdn503.tvkulesi.com/halktv.m3u8?tkn=qDKCbBiL6mzfmE5Q24VMnA&tms=1780357359&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=chp-tv
+#EXTINF:-1 tvg-id="tvku.chptv" group-title="Haber",CHP Tv (kavu)
+https://cdn502.kavuntv.net/halktv.m3u8?tkn=Yj5gQ928w6CXQ8nbYql7hw&tms=1780364713&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=chp-tv
 #EXTINF:-1 tvg-id="tvku.chptv" group-title="Haber",CHP Tv (tvku)
 https://cdn507.tvkulesi.com/halktv.m3u8?tkn=4MBpe95yX-DzA26LBeTbvA&tms=1780363565&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=chp-tv
 #EXTINF:-1 tvg-id="tvku.chptv" group-title="Haber",CHP Tv (v-kavu)
 https://cdn504.kavuntv.net/halktv.m3u8?tkn=sTtis_rfVvhHTu-61UUnEw&tms=1780359950&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=chp-tv
 #EXTINF:-1 tvg-id="tvku.ntvavrupa" group-title="Haber",NTV Avrupa
 https://cdn502.tvkulesi.com/ntv.m3u8?tkn=86xfuyGxegfGzCtfHZidhw&tms=1780357364&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-avrupa
+#EXTINF:-1 tvg-id="tvku.ntvavrupa" group-title="Haber",NTV Avrupa (kavu)
+https://cdn501.kavuntv.net/ntv.m3u8?tkn=Wap3fK4Qvj10fs6TDZca0Q&tms=1780364715&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-avrupa
 #EXTINF:-1 tvg-id="tvku.ntvavrupa" group-title="Haber",NTV Avrupa (tvku)
 https://cdn501.tvkulesi.com/ntv.m3u8?tkn=_WR4Bk73vvBr7LU5eKlz7Q&tms=1780363567&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-avrupa
 #EXTINF:-1 tvg-id="tvku.ntvavrupa" group-title="Haber",NTV Avrupa (v-kavu)
 https://cdn505.kavuntv.net/ntv.m3u8?tkn=4gWW4PHeiTff0sojhan9LQ&tms=1780359956&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ntv-avrupa
 #EXTINF:-1 tvg-id="tvku.tagesschau24live" group-title="Haber",Tagesschau24
 https://cdn900.tvkulesi.com/tagesschau24.m3u8?tkn=Iu0w81ifJ7wW6BytlkD6aQ&tms=1780357370&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tagesschau24-live
+#EXTINF:-1 tvg-id="tvku.tagesschau24live" group-title="Haber",Tagesschau24 (kavu)
+https://cdn900.kavuntv.net/tagesschau24.m3u8?tkn=QQtVqFn3oW5Ci6HGjBDvNg&tms=1780364718&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tagesschau24-live
 #EXTINF:-1 tvg-id="tvku.tagesschau24live" group-title="Haber",Tagesschau24 (tvku)
 https://cdn900.tvkulesi.com/tagesschau24.m3u8?tkn=_6J_19lB7pI-Jcvycl-f-w&tms=1780363570&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tagesschau24-live
 #EXTINF:-1 tvg-id="tvku.tagesschau24live" group-title="Haber",Tagesschau24 (v-kavu)
@@ -2393,6 +2633,8 @@ https://linear417-gb-hls1-prd-ak.cdn.skycdp.com/100e/Content/HLS_001_1080_30/Liv
 https://d1yx2biofua75q.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-agcuky3hp0j0j/index.m3u8
 #EXTINF:-1 tvg-id="tvku.medeniyettv" group-title="Haber",Medeniyet Tv
 https://cdn503.tvkulesi.com/medeniyettv.m3u8?tkn=RloagbEbIko601U_z5AMRQ&tms=1780357400&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=medeniyet-tv
+#EXTINF:-1 tvg-id="tvku.medeniyettv" group-title="Haber",Medeniyet Tv (kavu)
+https://cdn503.kavuntv.net/medeniyettv.m3u8?tkn=TQOdSweweIyhD0VomtSDzA&tms=1780364731&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=medeniyet-tv
 #EXTINF:-1 tvg-id="tvku.medeniyettv" group-title="Haber",Medeniyet Tv (tvku)
 https://cdn501.tvkulesi.com/medeniyettv.m3u8?tkn=TRWttNLvyVbUKTed_8Blrw&tms=1780363583&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=medeniyet-tv
 #EXTINF:-1 tvg-id="tvku.medeniyettv" group-title="Haber",Medeniyet Tv (v-kavu)
@@ -2401,6 +2643,8 @@ https://cdn509.kavuntv.net/medeniyettv.m3u8?tkn=TwtwQ_3D9anYUXABGTCWZQ&tms=17803
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="tvku.tele1tv" group-title="Haber",Tele1 Tv
 https://cdn506.tvkulesi.com/tele1.m3u8?tkn=ta0vL-aSIHuoOJM-mC6H8Q&tms=1780357414&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tele1-tv
+#EXTINF:-1 tvg-id="tvku.tele1tv" group-title="Haber",Tele1 Tv (kavu)
+https://cdn501.kavuntv.net/tele1.m3u8?tkn=z8HENbcQyHOg7NkFLT5qxw&tms=1780364736&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tele1-tv
 #EXTINF:-1 tvg-id="tvku.tele1tv" group-title="Haber",Tele1 Tv (tvku)
 https://cdn501.tvkulesi.com/tele1.m3u8?tkn=ipn0LrUWOyLaV7F-cpBKqQ&tms=1780363588&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tele1-tv
 #EXTINF:-1 tvg-id="tvku.tele1tv" group-title="Haber",Tele1 Tv (v-kavu)
@@ -2415,18 +2659,24 @@ https://bcovlive-a.akamaihd.net/d89ede8094c741b7924120b27764153c/eu-central-1/53
 https://live.presstv.ir/hls/presstv_5_482/index.m3u8
 #EXTINF:-1 tvg-id="tvku.alikhbariatv" group-title="Haber",Alikhbaria TV
 https://cdn900.tvkulesi.com/alikhbaria.m3u8?tkn=w6f44PvlR1GoCw1Fhp-9BA&tms=1780357452&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=alikhbaria-tv
+#EXTINF:-1 tvg-id="tvku.alikhbariatv" group-title="Haber",Alikhbaria TV (kavu)
+https://cdn900.kavuntv.net/alikhbaria.m3u8?tkn=a60H6gXljpaT7hgHblZ7Sw&tms=1780364750&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=alikhbaria-tv
 #EXTINF:-1 tvg-id="tvku.alikhbariatv" group-title="Haber",Alikhbaria TV (tvku)
 https://cdn900.tvkulesi.com/alikhbaria.m3u8?tkn=Pc2RJWYcIHoVxvdnJoY4Rw&tms=1780363601&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=alikhbaria-tv
 #EXTINF:-1 tvg-id="tvku.alikhbariatv" group-title="Haber",Alikhbaria TV (v-kavu)
 https://cdn900.kavuntv.net/alikhbaria.m3u8?tkn=6VfR6-CzpYFzDF1074Li9Q&tms=1780360024&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=alikhbaria-tv
 #EXTINF:-1 tvg-id="tvku.lidertv" group-title="Haber",Lider Tv
 https://cdn503.tvkulesi.com/lidertv.m3u8?tkn=llHOBQ1PfGGfoRH5RIkzdw&tms=1780357460&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lider-tv
+#EXTINF:-1 tvg-id="tvku.lidertv" group-title="Haber",Lider Tv (kavu)
+https://cdn509.kavuntv.net/lidertv.m3u8?tkn=z7-4dNJPb6uwlhOqVKrvqQ&tms=1780364752&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lider-tv
 #EXTINF:-1 tvg-id="tvku.lidertv" group-title="Haber",Lider Tv (tvku)
 https://cdn503.tvkulesi.com/lidertv.m3u8?tkn=oq3Y5m_TBxGFDW_5XK9aqQ&tms=1780363604&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lider-tv
 #EXTINF:-1 tvg-id="tvku.lidertv" group-title="Haber",Lider Tv (v-kavu)
 https://cdn508.kavuntv.net/lidertv.m3u8?tkn=VAV-_dZbarimMiJI_ej96w&tms=1780360028&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=lider-tv
 #EXTINF:-1 tvg-id="tvku.oe24tvlive" group-title="Haber",oe24.TV
 https://cdn900.tvkulesi.com/oe24tv.m3u8?tkn=QmalFp9SvAZY2vTLXpjkpA&tms=1780357465&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=oe24tv-live
+#EXTINF:-1 tvg-id="tvku.oe24tvlive" group-title="Haber",oe24.TV (kavu)
+https://cdn900.kavuntv.net/oe24tv.m3u8?tkn=c6fcglNLkDU0iFK0-d77YA&tms=1780364755&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=oe24tv-live
 #EXTINF:-1 tvg-id="tvku.oe24tvlive" group-title="Haber",oe24.TV (tvku)
 https://cdn900.tvkulesi.com/oe24tv.m3u8?tkn=dKpi0ayZ3uSRKH2ewWI74Q&tms=1780363607&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=oe24tv-live
 #EXTINF:-1 tvg-id="tvku.oe24tvlive" group-title="Haber",oe24.TV (v-kavu)
@@ -2435,24 +2685,32 @@ https://cdn900.kavuntv.net/oe24tv.m3u8?tkn=oAXcEVeH7bVYkZmae6LoXg&tms=1780360033
 https://cdn-tytturk.yayin.com.tr/tytturk/index.m3u8
 #EXTINF:-1 tvg-id="tvku.anews" group-title="Haber",A News
 https://cdn900.tvkulesi.com/anews.m3u8?tkn=QrugwwUiD9vT8Oyr-rLeug&tms=1780357502&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-news
+#EXTINF:-1 tvg-id="tvku.anews" group-title="Haber",A News (kavu)
+https://cdn900.kavuntv.net/anews.m3u8?tkn=NQbFUVv-A4Oayo900XKfdQ&tms=1780364769&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-news
 #EXTINF:-1 tvg-id="tvku.anews" group-title="Haber",A News (tvku)
 https://cdn900.tvkulesi.com/anews.m3u8?tkn=9gOxjZSlgtQ6DZGguEx3gA&tms=1780363623&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-news
 #EXTINF:-1 tvg-id="tvku.anews" group-title="Haber",A News (v-kavu)
 https://cdn900.kavuntv.net/anews.m3u8?tkn=9z88-hCk2C2xDeM-1ng_yA&tms=1780360058&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a-news
 #EXTINF:-1 tvg-id="tvku.kozatv" group-title="Haber",Koza Tv
 https://cdn900.tvkulesi.com/kozatv.m3u8?tkn=sX9ffA4afjRh8OKPmT8ZHg&tms=1780357507&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koza-tv
+#EXTINF:-1 tvg-id="tvku.kozatv" group-title="Haber",Koza Tv (kavu)
+https://cdn900.kavuntv.net/kozatv.m3u8?tkn=oI49T9WkTfcpZzz4c4mNvg&tms=1780364771&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koza-tv
 #EXTINF:-1 tvg-id="tvku.kozatv" group-title="Haber",Koza Tv (tvku)
 https://cdn900.tvkulesi.com/kozatv.m3u8?tkn=VK3dPKT9wkbrlt0AaEQMUQ&tms=1780363625&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koza-tv
 #EXTINF:-1 tvg-id="tvku.kozatv" group-title="Haber",Koza Tv (v-kavu)
 https://cdn900.kavuntv.net/kozatv.m3u8?tkn=cZ_9qX8Xe-P_EpUAZTHl9w&tms=1780360063&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koza-tv
 #EXTINF:-1 tvg-id="tvku.parktv" group-title="Haber",Park Tv
 https://cdn508.tvkulesi.com/parktv.m3u8?tkn=WOpWvryqOPa6zRerfk6lFg&tms=1780357515&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=park-tv
+#EXTINF:-1 tvg-id="tvku.parktv" group-title="Haber",Park Tv (kavu)
+https://cdn505.kavuntv.net/parktv.m3u8?tkn=GSzrwMIKL7IcKdaKIIj7zQ&tms=1780364775&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=park-tv
 #EXTINF:-1 tvg-id="tvku.parktv" group-title="Haber",Park Tv (tvku)
 https://cdn509.tvkulesi.com/parktv.m3u8?tkn=CzpXuL9TrBMmaltA1IyxTg&tms=1780363628&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=park-tv
 #EXTINF:-1 tvg-id="tvku.parktv" group-title="Haber",Park Tv (v-kavu)
 https://cdn504.kavuntv.net/parktv.m3u8?tkn=hNMT8r77l_bIa5O5qoMhDg&tms=1780360068&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=park-tv
 #EXTINF:-1 tvg-id="tvku.ekoturktv" group-title="Haber",Ekotürk Tv
 https://cdn507.tvkulesi.com/ekoturktv.m3u8?tkn=UD8SPPMuaNfhhKQwH56AmQ&tms=1780357520&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekoturk-tv
+#EXTINF:-1 tvg-id="tvku.ekoturktv" group-title="Haber",Ekotürk Tv (kavu)
+https://cdn501.kavuntv.net/ekoturktv.m3u8?tkn=wq0G5cymrQ9RZiIzxLDfnA&tms=1780364777&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekoturk-tv
 #EXTINF:-1 tvg-id="tvku.ekoturktv" group-title="Haber",Ekotürk Tv (tvku)
 https://cdn504.tvkulesi.com/ekoturktv.m3u8?tkn=-sUW8Td9GFRTsysBdgXsFQ&tms=1780363631&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekoturk-tv
 #EXTINF:-1 tvg-id="tvku.ekoturktv" group-title="Haber",Ekotürk Tv (v-kavu)
@@ -2461,18 +2719,24 @@ https://cdn508.kavuntv.net/ekoturktv.m3u8?tkn=oMn2662ey4BFCWQFvugP5g&tms=1780360
 https://59cba4d34b678.streamlock.net/live/tarimturktv/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.galatv" group-title="Haber",Gala Tv
 https://cdn506.tvkulesi.com/trtmuzik.m3u8?tkn=9UcrFCOcbQqkwHbok-aKgw&tms=1780357541&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gala-tv
+#EXTINF:-1 tvg-id="tvku.galatv" group-title="Haber",Gala Tv (kavu)
+https://cdn501.kavuntv.net/trtmuzik.m3u8?tkn=M4LoVpJ4fyQzEqYc5XfKrQ&tms=1780364782&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gala-tv
 #EXTINF:-1 tvg-id="tvku.galatv" group-title="Haber",Gala Tv (tvku)
 https://cdn509.tvkulesi.com/trtmuzik.m3u8?tkn=lrKq-w47I1s9ZC4S-1balg&tms=1780363636&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gala-tv
 #EXTINF:-1 tvg-id="tvku.galatv" group-title="Haber",Gala Tv (v-kavu)
 https://cdn506.kavuntv.net/trtmuzik.m3u8?tkn=NTdMaGiD1fTIC2bkc8M_sA&tms=1780360093&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gala-tv
 #EXTINF:-1 tvg-id="tvku.uzayhaber" group-title="Haber",Uzay Haber
 https://cdn900.tvkulesi.com/uzayhaber.m3u8?tkn=QCkAWSA-EozFhWuXNyj2ag&tms=1780357546&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=uzay-haber
+#EXTINF:-1 tvg-id="tvku.uzayhaber" group-title="Haber",Uzay Haber (kavu)
+https://cdn900.kavuntv.net/uzayhaber.m3u8?tkn=L3WalDa--J_-UlWdetg9IQ&tms=1780364785&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=uzay-haber
 #EXTINF:-1 tvg-id="tvku.uzayhaber" group-title="Haber",Uzay Haber (tvku)
 https://cdn900.tvkulesi.com/uzayhaber.m3u8?tkn=VJjasrgSSd1rx9u10dr-qA&tms=1780363639&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=uzay-haber
 #EXTINF:-1 tvg-id="tvku.uzayhaber" group-title="Haber",Uzay Haber (v-kavu)
 https://cdn900.kavuntv.net/uzayhaber.m3u8?tkn=1BzbO-Mwz-5EOpFXRS271g&tms=1780360099&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=uzay-haber
 #EXTINF:-1 tvg-id="tvku.aljazeeraenglish" group-title="Haber",Al Jazeera English
 https://cdn900.tvkulesi.com/aljazeeraint.m3u8?tkn=JeVzNrRhOLWa9je5gARAQA&tms=1780357551&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-english
+#EXTINF:-1 tvg-id="tvku.aljazeeraenglish" group-title="Haber",Al Jazeera English (kavu)
+https://cdn900.kavuntv.net/aljazeeraint.m3u8?tkn=AHQ5Zz7GDhxvEV1LVFgl1Q&tms=1780364787&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-english
 #EXTINF:-1 tvg-id="tvku.aljazeeraenglish" group-title="Haber",Al Jazeera English (tvku)
 https://cdn900.tvkulesi.com/aljazeeraint.m3u8?tkn=vPklJZXJ1OUkYat7Q6xdMA&tms=1780363641&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=al-jazeera-english
 #EXTINF:-1 tvg-id="tvku.aljazeeraenglish" group-title="Haber",Al Jazeera English (v-kavu)
@@ -2481,6 +2745,8 @@ https://cdn900.kavuntv.net/aljazeeraint.m3u8?tkn=ztIi415ukRaMtf-pw2CklQ&tms=1780
 https://cdn900.tvkulesi.com/tv85.m3u8?tkn=LfkmyGQrOf60bWR6MZVHOw&tms=1780357601&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv85
 #EXTINF:-1 tvg-id="tvku.trtspor2" group-title="Spor",TRT Spor 2
 https://cdn502.tvkulesi.com/trtspor2.m3u8?tkn=CLGP58b1zoDZ-0rwQrNV9g&tms=1780357605&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-spor-2
+#EXTINF:-1 tvg-id="tvku.trtspor2" group-title="Spor",TRT Spor 2 (kavu)
+https://cdn503.kavuntv.net/trtspor2.m3u8?tkn=bjAb04csn2M7zux8Cb1wsw&tms=1780364814&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-spor-2
 #EXTINF:-1 tvg-id="tvku.trtspor2" group-title="Spor",TRT Spor 2 (tvku)
 https://cdn503.tvkulesi.com/trtspor2.m3u8?tkn=eVeIkSg7wHVXpcJD5PpeFA&tms=1780363668&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-spor-2
 #EXTINF:-1 tvg-id="tvku.trtspor2" group-title="Spor",TRT Spor 2 (v-kavu)
@@ -2491,6 +2757,8 @@ https://ciner-live.daioncdn.net/ht-spor/ht-spor.m3u8
 https://live.sportstv.com.tr/hls/low/sportstv_fhd/index.m3u8
 #EXTINF:-1 tvg-id="tvku.euro90tv" group-title="Spor",Euro 90 Tv
 https://cdn506.tvkulesi.com/euro90tv.m3u8?tkn=xHlcyjuyNuSvL6zVqATGOA&tms=1780357631&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=euro-90-tv
+#EXTINF:-1 tvg-id="tvku.euro90tv" group-title="Spor",Euro 90 Tv (kavu)
+https://cdn501.kavuntv.net/euro90tv.m3u8?tkn=HbOsOU46oftvw9FLz_VsRw&tms=1780364828&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=euro-90-tv
 #EXTINF:-1 tvg-id="tvku.euro90tv" group-title="Spor",Euro 90 Tv (tvku)
 https://cdn502.tvkulesi.com/euro90tv.m3u8?tkn=JdRmn8xqHtUXK32v7j0tHw&tms=1780363681&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=euro-90-tv
 #EXTINF:-1 tvg-id="tvku.euro90tv" group-title="Spor",Euro 90 Tv (v-kavu)
@@ -2511,6 +2779,8 @@ https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
 https://tjktv-live.tjk.org/tjktv2.m3u8
 #EXTINF:-1 tvg-id="tvku.htspor" group-title="Spor",HT Spor
 https://cdn508.tvkulesi.com/htspor.m3u8?tkn=AWYZ4Q8so_foIZoW2B9tVg&tms=1780357689&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ht-spor
+#EXTINF:-1 tvg-id="tvku.htspor" group-title="Spor",HT Spor (kavu)
+https://cdn503.kavuntv.net/htspor.m3u8?tkn=iY3Vr60PpVEX2x4WGo1kwA&tms=1780364854&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ht-spor
 #EXTINF:-1 tvg-id="tvku.htspor" group-title="Spor",HT Spor (tvku)
 https://cdn503.tvkulesi.com/htspor.m3u8?tkn=PhZ8RwrrUdz40fs30spGpQ&tms=1780363708&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ht-spor
 #EXTINF:-1 tvg-id="tvku.htspor" group-title="Spor",HT Spor (v-kavu)
@@ -2519,6 +2789,8 @@ https://cdn505.kavuntv.net/htspor.m3u8?tkn=Fr4MelNdEFuaKQy-NKXzdQ&tms=1780361008
 https://tv-trtspor1.medya.trt.com.tr/master_720.m3u8
 #EXTINF:-1 tvg-id="tvku.eurosporttv" group-title="Spor",Eurosport TV
 https://cdn507.tvkulesi.com/trtspor.m3u8?tkn=vuxKyZGdY6rnqwDHHBR0tQ&tms=1780357708&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=eurosport-tv
+#EXTINF:-1 tvg-id="tvku.eurosporttv" group-title="Spor",Eurosport TV (kavu)
+https://cdn505.kavuntv.net/trtspor.m3u8?tkn=Emann5-8UVueHlX-U7dStA&tms=1780364862&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=eurosport-tv
 #EXTINF:-1 tvg-id="tvku.eurosporttv" group-title="Spor",Eurosport TV (tvku)
 https://cdn508.tvkulesi.com/trtspor.m3u8?tkn=vAB7bKUUgV91CMmR23RqWQ&tms=1780363716&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=eurosport-tv
 #EXTINF:-1 tvg-id="tvku.eurosporttv" group-title="Spor",Eurosport TV (v-kavu)
@@ -2527,6 +2799,8 @@ https://cdn506.kavuntv.net/trtspor.m3u8?tkn=P75dhCsbn_f12NWoADvZTw&tms=178036102
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-id="tvku.f1izle" group-title="Spor",F1 Formula 1
 https://cdn509.tvkulesi.com/idmantv.m3u8?tkn=XVTh-w8AL9fHO_VeaVQgMQ&tms=1780357726&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=f1-izle
+#EXTINF:-1 tvg-id="tvku.f1izle" group-title="Spor",F1 Formula 1 (kavu)
+https://cdn504.kavuntv.net/idmantv.m3u8?tkn=0pfIkqhzQ67OZuP1IHuo4w&tms=1780364870&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=f1-izle
 #EXTINF:-1 tvg-id="tvku.f1izle" group-title="Spor",F1 Formula 1 (tvku)
 https://cdn503.tvkulesi.com/idmantv.m3u8?tkn=yp2e0peR0oxuXOrjd9260A&tms=1780363724&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=f1-izle
 #EXTINF:-1 tvg-id="tvku.f1izle" group-title="Spor",F1 Formula 1 (v-kavu)
@@ -2537,6 +2811,8 @@ https://cdn503.tvkulesi.com/beinsporthaber.m3u8?tkn=C3ADEPFfdzl3MjLHmPmrsQ&tms=1
 https://cdn503.kavuntv.net/beinsporthaber.m3u8?tkn=8Lq8UdBm24-lCjrTp9aocQ&tms=1780361055&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bein-sports-haber
 #EXTINF:-1 tvg-id="tvku.kidzanimez" group-title="Cocuk",Kidz Animez
 https://cdn506.tvkulesi.com/kidzanimez.m3u8?tkn=REBrweY-2vnE8d9eDJBeuA&tms=1780357783&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kidz-animez
+#EXTINF:-1 tvg-id="tvku.kidzanimez" group-title="Cocuk",Kidz Animez (kavu)
+https://cdn501.kavuntv.net/kidzanimez.m3u8?tkn=MaUN69j93mpkFWjOQ5u7DA&tms=1780364899&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kidz-animez
 #EXTINF:-1 tvg-id="tvku.kidzanimez" group-title="Cocuk",Kidz Animez (tvku)
 https://cdn507.tvkulesi.com/kidzanimez.m3u8?tkn=eU8znFB78e7VRx1DuGIp8g&tms=1780363753&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kidz-animez
 #EXTINF:-1 tvg-id="tvku.kidzanimez" group-title="Cocuk",Kidz Animez (v-kavu)
@@ -2551,12 +2827,16 @@ https://cdn502.tvkulesi.com/minikago.m3u8?tkn=lzOI_LM2RwrHwsMw0Bwxqg&tms=1780357
 https://cdn503.kavuntv.net/minikago.m3u8?tkn=Ps4uZgpginnYaZijoglYEg&tms=1780361107&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=minika-go
 #EXTINF:-1 tvg-id="tvku.disneychannel" group-title="Cocuk",Disney Channel
 https://cdn508.tvkulesi.com/trtcocuk.m3u8?tkn=G1d9nkV_LYWT7KgeE3-Usw&tms=1780357798&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel
+#EXTINF:-1 tvg-id="tvku.disneychannel" group-title="Cocuk",Disney Channel (kavu)
+https://cdn503.kavuntv.net/trtcocuk.m3u8?tkn=5ShHAx2xcxazQwbNVdRHCA&tms=1780364907&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel
 #EXTINF:-1 tvg-id="tvku.disneychannel" group-title="Cocuk",Disney Channel (tvku)
 https://cdn505.tvkulesi.com/trtcocuk.m3u8?tkn=ncgnjs2uGQb-ZSnErTPegw&tms=1780363761&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel
 #EXTINF:-1 tvg-id="tvku.disneychannel" group-title="Cocuk",Disney Channel (v-kavu)
 https://cdn509.kavuntv.net/trtcocuk.m3u8?tkn=CsITvyICroJfkhe_Yytk0A&tms=1780361112&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel
 #EXTINF:-1 tvg-id="tvku.superrtllive" group-title="Cocuk",Super RTL
 https://cdn900.tvkulesi.com/superrtl.m3u8?tkn=WqoZ-B10Z5Z6FpJsA3CxZA&tms=1780357803&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=super-rtl-live
+#EXTINF:-1 tvg-id="tvku.superrtllive" group-title="Cocuk",Super RTL (kavu)
+https://cdn900.kavuntv.net/superrtl.m3u8?tkn=EnJj7mG9cSMfQ9jM1ocH5w&tms=1780364909&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=super-rtl-live
 #EXTINF:-1 tvg-id="tvku.superrtllive" group-title="Cocuk",Super RTL (tvku)
 https://cdn900.tvkulesi.com/superrtl.m3u8?tkn=zqIWmN-9lhkCSGAHAlSEbQ&tms=1780363764&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=super-rtl-live
 #EXTINF:-1 tvg-id="tvku.superrtllive" group-title="Cocuk",Super RTL (v-kavu)
@@ -2565,70 +2845,94 @@ https://cdn900.kavuntv.net/superrtl.m3u8?tkn=AHgSJhifbhdcetdQDqp3GQ&tms=17803611
 https://zindikurmanci.zaroktv.com.tr/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="tvku.kikalive" group-title="Cocuk",Kika
 https://cdn900.tvkulesi.com/kikatv.m3u8?tkn=oPyFAicOp7VHDZa0kVmd3A&tms=1780357812&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kika-live
+#EXTINF:-1 tvg-id="tvku.kikalive" group-title="Cocuk",Kika (kavu)
+https://cdn900.kavuntv.net/kikatv.m3u8?tkn=bZXpRg042jD9hXY14rLxRg&tms=1780364915&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kika-live
 #EXTINF:-1 tvg-id="tvku.kikalive" group-title="Cocuk",Kika (tvku)
 https://cdn900.tvkulesi.com/kikatv.m3u8?tkn=eDrubZcakScaO8OwQoEMBw&tms=1780363769&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kika-live
 #EXTINF:-1 tvg-id="tvku.kikalive" group-title="Cocuk",Kika (v-kavu)
 https://cdn900.kavuntv.net/kikatv.m3u8?tkn=6Dv4Z1pxAvPMWi_Xo6PTqw&tms=1780361127&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kika-live
 #EXTINF:-1 tvg-id="tvku.disneychannellive" group-title="Cocuk",Disney De
 https://cdn900.tvkulesi.com/disneyde.m3u8?tkn=Ft_9PJfRD3WUcnnhqZ4utQ&tms=1780357818&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel-live
+#EXTINF:-1 tvg-id="tvku.disneychannellive" group-title="Cocuk",Disney De (kavu)
+https://cdn900.kavuntv.net/disneyde.m3u8?tkn=RB8aSC2CghDcgS5xVBq56Q&tms=1780364917&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel-live
 #EXTINF:-1 tvg-id="tvku.disneychannellive" group-title="Cocuk",Disney De (tvku)
 https://cdn900.tvkulesi.com/disneyde.m3u8?tkn=cRxzZO2y5D0vBRV0FCE7fg&tms=1780363772&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel-live
 #EXTINF:-1 tvg-id="tvku.disneychannellive" group-title="Cocuk",Disney De (v-kavu)
 https://cdn900.kavuntv.net/disneyde.m3u8?tkn=V_No3zYguvpmcgRpJL_63A&tms=1780361135&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=disney-channel-live
 #EXTINF:-1 tvg-id="tvku.kabetv" group-title="Dini",Kabe Tv
 https://cdn900.tvkulesi.com/kabetv.m3u8?tkn=wF05hluIBlojN9Vbyfj7OQ&tms=1780357835&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kabe-tv
+#EXTINF:-1 tvg-id="tvku.kabetv" group-title="Dini",Kabe Tv (kavu)
+https://cdn900.kavuntv.net/kabetv.m3u8?tkn=CkKlCBW2LSKRMdTQr6Y0qw&tms=1780364927&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kabe-tv
 #EXTINF:-1 tvg-id="tvku.kabetv" group-title="Dini",Kabe Tv (v-kavu)
 https://cdn900.kavuntv.net/kabetv.m3u8?tkn=r6BcxFtZRDUCzz1KjA6ZAw&tms=1780361152&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kabe-tv
 #EXTINF:-1 tvg-id="tvku.sunnahtv" group-title="Dini",Sunnah tv
 https://cdn900.tvkulesi.com/sunnahtv.m3u8?tkn=fNFrPqKpEvVoITsiLLLrpA&tms=1780357840&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sunnah-tv
+#EXTINF:-1 tvg-id="tvku.sunnahtv" group-title="Dini",Sunnah tv (kavu)
+https://cdn900.kavuntv.net/sunnahtv.m3u8?tkn=PVlXBVegGZr2DDEq0ftOPA&tms=1780364931&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sunnah-tv
 #EXTINF:-1 tvg-id="tvku.sunnahtv" group-title="Dini",Sunnah tv (tvku)
 https://cdn900.tvkulesi.com/sunnahtv.m3u8?tkn=KJvUYmYKNFcMpELLQOQCkw&tms=1780363784&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sunnah-tv
 #EXTINF:-1 tvg-id="tvku.sunnahtv" group-title="Dini",Sunnah tv (v-kavu)
 https://cdn900.kavuntv.net/sunnahtv.m3u8?tkn=TZPcVO_DTLayJOiwDpZFJQ&tms=1780361157&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sunnah-tv
 #EXTINF:-1 tvg-id="tvku.vavtv" group-title="Dini",Vav Tv
 https://cdn508.tvkulesi.com/vavtv.m3u8?tkn=6oo40k6uzq3BkJTb_ZqI3g&tms=1780357844&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vav-tv
+#EXTINF:-1 tvg-id="tvku.vavtv" group-title="Dini",Vav Tv (kavu)
+https://cdn509.kavuntv.net/vavtv.m3u8?tkn=BV3mbRIqOoH7kiojVS7Vug&tms=1780364933&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vav-tv
 #EXTINF:-1 tvg-id="tvku.vavtv" group-title="Dini",Vav Tv (tvku)
 https://cdn503.tvkulesi.com/vavtv.m3u8?tkn=SeuHNxopw1Dm73zYPJAs1g&tms=1780363788&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vav-tv
 #EXTINF:-1 tvg-id="tvku.vavtv" group-title="Dini",Vav Tv (v-kavu)
 https://cdn509.kavuntv.net/vavtv.m3u8?tkn=qYHA9hIP9V_ptQvy2fWsMQ&tms=1780361162&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vav-tv
 #EXTINF:-1 tvg-id="tvku.semerkandtv" group-title="Dini",Semerkand Tv
 https://cdn900.tvkulesi.com/semerkandtv.m3u8?tkn=6YwWyMKfJnMDCfN8iiAYzA&tms=1780357854&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=semerkand-tv
+#EXTINF:-1 tvg-id="tvku.semerkandtv" group-title="Dini",Semerkand Tv (kavu)
+https://cdn900.kavuntv.net/semerkandtv.m3u8?tkn=rj3OFpfxLHYB4dHBSKTnLQ&tms=1780364939&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=semerkand-tv
 #EXTINF:-1 tvg-id="tvku.semerkandtv" group-title="Dini",Semerkand Tv (tvku)
 https://cdn900.tvkulesi.com/semerkandtv.m3u8?tkn=1v9W-A7jclut0pAgeUAYAQ&tms=1780363792&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=semerkand-tv
 #EXTINF:-1 tvg-id="tvku.semerkandtv" group-title="Dini",Semerkand Tv (v-kavu)
 https://cdn900.kavuntv.net/semerkandtv.m3u8?tkn=VbkDAWJ5PJAASCYfRw9oew&tms=1780361172&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=semerkand-tv
 #EXTINF:-1 tvg-id="tvku.ikratv" group-title="Dini",İkra Tv
 https://cdn900.tvkulesi.com/ikratv.m3u8?tkn=LUVjSf7O8vHe-XH0ToeK6Q&tms=1780357859&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ikra-tv
+#EXTINF:-1 tvg-id="tvku.ikratv" group-title="Dini",İkra Tv (kavu)
+https://cdn900.kavuntv.net/ikratv.m3u8?tkn=B6W63aaq6xk8kvFuBHyaxA&tms=1780364941&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ikra-tv
 #EXTINF:-1 tvg-id="tvku.ikratv" group-title="Dini",İkra Tv (tvku)
 https://cdn900.tvkulesi.com/ikratv.m3u8?tkn=3zP_gU58akKTvtxBtdiVIA&tms=1780363795&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ikra-tv
 #EXTINF:-1 tvg-id="tvku.ikratv" group-title="Dini",İkra Tv (v-kavu)
 https://cdn900.kavuntv.net/ikratv.m3u8?tkn=U5nvQQdEqK0x5UOGK6PCvg&tms=1780361177&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ikra-tv
 #EXTINF:-1 tvg-id="tvku.mekketv" group-title="Dini",Mekke Tv
 https://cdn900.tvkulesi.com/kabetv.m3u8?tkn=rkz4kDrBsz96rgI_YSx1jg&tms=1780357864&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mekke-tv
+#EXTINF:-1 tvg-id="tvku.mekketv" group-title="Dini",Mekke Tv (kavu)
+https://cdn900.kavuntv.net/kabetv.m3u8?tkn=Xs75PmNRh7y3eGS66cm3BQ&tms=1780364944&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mekke-tv
 #EXTINF:-1 tvg-id="tvku.mekketv" group-title="Dini",Mekke Tv (tvku)
 https://cdn900.tvkulesi.com/kabetv.m3u8?tkn=HXPTZNPrIekuV3SHgmewmg&tms=1780363798&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mekke-tv
 #EXTINF:-1 tvg-id="tvku.mekketv" group-title="Dini",Mekke Tv (v-kavu)
 https://cdn900.kavuntv.net/kabetv.m3u8?tkn=rLIK6js1kmESkQDrA2doJw&tms=1780361183&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mekke-tv
 #EXTINF:-1 tvg-id="tvku.diyanettv" group-title="Dini",Diyanet Tv
 https://cdn900.tvkulesi.com/trtdiyanet.m3u8?tkn=cFbfZRNcPRlyaN_JAfWc8A&tms=1780357877&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyanet-tv
+#EXTINF:-1 tvg-id="tvku.diyanettv" group-title="Dini",Diyanet Tv (kavu)
+https://cdn900.kavuntv.net/trtdiyanet.m3u8?tkn=YUOF40F__31_htMrBZLipw&tms=1780364947&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyanet-tv
 #EXTINF:-1 tvg-id="tvku.diyanettv" group-title="Dini",Diyanet Tv (tvku)
 https://cdn900.tvkulesi.com/trtdiyanet.m3u8?tkn=IEBCL2ZzIBYl_G5MwkVdiA&tms=1780363801&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyanet-tv
 #EXTINF:-1 tvg-id="tvku.diyanettv" group-title="Dini",Diyanet Tv (v-kavu)
 https://cdn900.kavuntv.net/trtdiyanet.m3u8?tkn=2SNbesWg7pBYihxXhCs8ZQ&tms=1780361187&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyanet-tv
 #EXTINF:-1 tvg-id="tvku.ewtnlive" group-title="Dini",Ewtn
 https://cdn900.tvkulesi.com/ewtnde.m3u8?tkn=Hmnsw8sta2tS-GwMZA0cwQ&tms=1780357884&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ewtn-live
+#EXTINF:-1 tvg-id="tvku.ewtnlive" group-title="Dini",Ewtn (kavu)
+https://cdn900.kavuntv.net/ewtnde.m3u8?tkn=K09rJg0BLea6nXeR2Xp1Xg&tms=1780364949&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ewtn-live
 #EXTINF:-1 tvg-id="tvku.ewtnlive" group-title="Dini",Ewtn (tvku)
 https://cdn900.tvkulesi.com/ewtnde.m3u8?tkn=X9P1WtWSqHVc5VJvpJ8l0A&tms=1780363803&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ewtn-live
 #EXTINF:-1 tvg-id="tvku.ewtnlive" group-title="Dini",Ewtn (v-kavu)
 https://cdn900.kavuntv.net/ewtnde.m3u8?tkn=k-R7zIHOD0VmzuexPZo5RQ&tms=1780361192&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ewtn-live
 #EXTINF:-1 tvg-id="tvku.sat7turk" group-title="Dini",SAT7 Türk
 https://cdn900.tvkulesi.com/sat7turk.m3u8?tkn=R4kwqQ62rv86j4ON4CedFw&tms=1780357890&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sat7-turk
+#EXTINF:-1 tvg-id="tvku.sat7turk" group-title="Dini",SAT7 Türk (kavu)
+https://cdn900.kavuntv.net/sat7turk.m3u8?tkn=EzIPcqPj2S0WVD_xVdmVjw&tms=1780364952&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sat7-turk
 #EXTINF:-1 tvg-id="tvku.sat7turk" group-title="Dini",SAT7 Türk (tvku)
 https://cdn900.tvkulesi.com/sat7turk.m3u8?tkn=SMfwYsjQ90VpLkwRw01_zQ&tms=1780363806&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sat7-turk
 #EXTINF:-1 tvg-id="tvku.sat7turk" group-title="Dini",SAT7 Türk (v-kavu)
 https://cdn900.kavuntv.net/sat7turk.m3u8?tkn=5vzx3d4jG_bHc04gWnWr3w&tms=1780361197&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sat7-turk
 #EXTINF:-1 tvg-id="tvku.vizyon58" group-title="Yerel",Vizyon 58
 https://cdn900.tvkulesi.com/vizyon58.m3u8?tkn=HbUPDtWQYmOkz3ofg2EPQA&tms=1780357913&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vizyon-58
+#EXTINF:-1 tvg-id="tvku.vizyon58" group-title="Yerel",Vizyon 58 (kavu)
+https://cdn900.kavuntv.net/vizyon58.m3u8?tkn=bP3gU25ZbPI484itlsgC7A&tms=1780364964&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vizyon-58
 #EXTINF:-1 tvg-id="tvku.vizyon58" group-title="Yerel",Vizyon 58 (tvku)
 https://cdn900.tvkulesi.com/vizyon58.m3u8?tkn=C-OQLePEmCmfng_sg86nMw&tms=1780363818&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=vizyon-58
 #EXTINF:-1 tvg-id="tvku.vizyon58" group-title="Yerel",Vizyon 58 (v-kavu)
@@ -2637,6 +2941,8 @@ https://cdn900.kavuntv.net/vizyon58.m3u8?tkn=5W59iPVN-G_K_BYFyZji2g&tms=17803612
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8?hash=6d3689b0077d86c22a4b1bffe62a4ac6
 #EXTINF:-1 tvg-id="tvku.guneydogutv" group-title="Yerel",Güneydoğu TV
 https://cdn900.tvkulesi.com/guneydogutv.m3u8?tkn=7ytxw_6GTukonIKYT9jnFA&tms=1780357934&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=guneydogu-tv
+#EXTINF:-1 tvg-id="tvku.guneydogutv" group-title="Yerel",Güneydoğu TV (kavu)
+https://cdn900.kavuntv.net/guneydogutv.m3u8?tkn=-mtWjP2CbJrMRZLO3wjp3Q&tms=1780364970&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=guneydogu-tv
 #EXTINF:-1 tvg-id="tvku.guneydogutv" group-title="Yerel",Güneydoğu TV (tvku)
 https://cdn900.tvkulesi.com/guneydogutv.m3u8?tkn=Ki8rrarIOjx73jM6g36TZg&tms=1780363824&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=guneydogu-tv
 #EXTINF:-1 tvg-id="tvku.guneydogutv" group-title="Yerel",Güneydoğu TV (v-kavu)
@@ -2649,36 +2955,48 @@ https://stream01.tv35.com.tr/hls2/tv35izmir.m3u8
 https://vdo.digitalbox.xyz:3986/live/unitvlive.m3u8
 #EXTINF:-1 tvg-id="tvku.ekintv" group-title="Yerel",Ekin Tv
 https://cdn900.tvkulesi.com/ekintv.m3u8?tkn=1c8UUY1Z8eedLtCNkwMhHQ&tms=1780357999&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekin-tv
+#EXTINF:-1 tvg-id="tvku.ekintv" group-title="Yerel",Ekin Tv (kavu)
+https://cdn900.kavuntv.net/ekintv.m3u8?tkn=07tf5fO116DlZVSKx-siQw&tms=1780364991&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekin-tv
 #EXTINF:-1 tvg-id="tvku.ekintv" group-title="Yerel",Ekin Tv (tvku)
 https://cdn900.tvkulesi.com/ekintv.m3u8?tkn=3uNwltqAcPf1RKBFNefDZA&tms=1780363845&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekin-tv
 #EXTINF:-1 tvg-id="tvku.ekintv" group-title="Yerel",Ekin Tv (v-kavu)
 https://cdn900.kavuntv.net/ekintv.m3u8?tkn=KKMHO6wxc00jRmQg6YPXjQ&tms=1780361306&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ekin-tv
 #EXTINF:-1 tvg-id="tvku.trakyaturktv" group-title="Yerel",Trakya Türk Tv
 https://cdn900.tvkulesi.com/trakyaturktv.m3u8?tkn=4KniGyhn_mkeqMHOrQ8_Og&tms=1780358003&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trakya-turk-tv
+#EXTINF:-1 tvg-id="tvku.trakyaturktv" group-title="Yerel",Trakya Türk Tv (kavu)
+https://cdn900.kavuntv.net/trakyaturktv.m3u8?tkn=4ISoilbX8MY-pd9h0zm_JQ&tms=1780364995&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trakya-turk-tv
 #EXTINF:-1 tvg-id="tvku.trakyaturktv" group-title="Yerel",Trakya Türk Tv (tvku)
 https://cdn900.tvkulesi.com/trakyaturktv.m3u8?tkn=HvR1r0Fo9yLC8rG0aBFLcw&tms=1780363848&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trakya-turk-tv
 #EXTINF:-1 tvg-id="tvku.trakyaturktv" group-title="Yerel",Trakya Türk Tv (v-kavu)
 https://cdn900.kavuntv.net/trakyaturktv.m3u8?tkn=qNrWzls6zH5GL0qGSHtRRw&tms=1780361311&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trakya-turk-tv
 #EXTINF:-1 tvg-id="tvku.tekrumelitv" group-title="Yerel",Tek Rümeli TV
 https://cdn900.tvkulesi.com/tekrumelitv.m3u8?tkn=qM1ACjKNx063YXt3EVL2pg&tms=1780358008&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tek-rumeli-tv
+#EXTINF:-1 tvg-id="tvku.tekrumelitv" group-title="Yerel",Tek Rümeli TV (kavu)
+https://cdn900.kavuntv.net/tekrumelitv.m3u8?tkn=oKjvCgp5_GJub_0Bgi0GLA&tms=1780364996&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tek-rumeli-tv
 #EXTINF:-1 tvg-id="tvku.tekrumelitv" group-title="Yerel",Tek Rümeli TV (tvku)
 https://cdn900.tvkulesi.com/tekrumelitv.m3u8?tkn=XR9uh754f2euO370xKEs6w&tms=1780363850&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tek-rumeli-tv
 #EXTINF:-1 tvg-id="tvku.tekrumelitv" group-title="Yerel",Tek Rümeli TV (v-kavu)
 https://cdn900.kavuntv.net/tekrumelitv.m3u8?tkn=71-1J6tcuxVIWsZXNi17Vg&tms=1780361357&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tek-rumeli-tv
 #EXTINF:-1 tvg-id="tvku.manisatv" group-title="Yerel",Manisa Tv
 https://cdn507.tvkulesi.com/manisatv.m3u8?tkn=byw2E0ou6-Xob3TzRZZuAA&tms=1780358013&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=manisa-tv
+#EXTINF:-1 tvg-id="tvku.manisatv" group-title="Yerel",Manisa Tv (kavu)
+https://cdn509.kavuntv.net/manisatv.m3u8?tkn=JbA82XJ6QiBr3H3f9tOPbQ&tms=1780364999&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=manisa-tv
 #EXTINF:-1 tvg-id="tvku.manisatv" group-title="Yerel",Manisa Tv (tvku)
 https://cdn509.tvkulesi.com/manisatv.m3u8?tkn=ZPNpxQ5NrYXSCdFq_YVg_w&tms=1780363853&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=manisa-tv
 #EXTINF:-1 tvg-id="tvku.manisatv" group-title="Yerel",Manisa Tv (v-kavu)
 https://cdn505.kavuntv.net/manisatv.m3u8?tkn=6-A03BIaOY3IwhwxD32Onw&tms=1780361362&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=manisa-tv
 #EXTINF:-1 tvg-id="tvku.kanalege" group-title="Yerel",Kanal Ege
 https://cdn900.tvkulesi.com/kanalege.m3u8?tkn=6r6lMq5ntfLGZqzUh_TNyQ&tms=1780358019&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-ege
+#EXTINF:-1 tvg-id="tvku.kanalege" group-title="Yerel",Kanal Ege (kavu)
+https://cdn900.kavuntv.net/kanalege.m3u8?tkn=3cvgrncs8m7tp6m9KPCxYw&tms=1780365002&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-ege
 #EXTINF:-1 tvg-id="tvku.kanalege" group-title="Yerel",Kanal Ege (tvku)
 https://cdn900.tvkulesi.com/kanalege.m3u8?tkn=T1jUK9Kiw8Z2qBSmqtZxwQ&tms=1780363856&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-ege
 #EXTINF:-1 tvg-id="tvku.kanalege" group-title="Yerel",Kanal Ege (v-kavu)
 https://cdn900.kavuntv.net/kanalege.m3u8?tkn=B7XbSgw1-jsfZJYBpbvFtw&tms=1780361367&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-ege
 #EXTINF:-1 tvg-id="tvku.kanal42" group-title="Yerel",Kanal 42
 https://cdn900.tvkulesi.com/tv42.m3u8?tkn=KGA7Z0ork8hDHrLLfjs1Sw&tms=1780358023&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-42
+#EXTINF:-1 tvg-id="tvku.kanal42" group-title="Yerel",Kanal 42 (kavu)
+https://cdn900.kavuntv.net/tv42.m3u8?tkn=vF7Nzf-gkHXroaRqxzc7hQ&tms=1780365004&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-42
 #EXTINF:-1 tvg-id="tvku.kanal42" group-title="Yerel",Kanal 42 (tvku)
 https://cdn900.tvkulesi.com/tv42.m3u8?tkn=t4HhjkiL5rqdCnlOjuWSrw&tms=1780363858&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-42
 #EXTINF:-1 tvg-id="tvku.kanal42" group-title="Yerel",Kanal 42 (v-kavu)
@@ -2699,12 +3017,16 @@ https://cdn900.kavuntv.net/tv264.m3u8?tkn=Yphu0BsG8lHCM_XFqHXFbg&tms=1780361388&
 https://59cba4d34b678.streamlock.net/canlitv/tokatsupertv/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.bitlistv" group-title="Yerel",Bitlis Tv
 https://cdn900.tvkulesi.com/bitlistv.m3u8?tkn=lnrjMhGz3t-47Fd7IzQzvA&tms=1780358060&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bitlis-tv
+#EXTINF:-1 tvg-id="tvku.bitlistv" group-title="Yerel",Bitlis Tv (kavu)
+https://cdn900.kavuntv.net/bitlistv.m3u8?tkn=GOq0q2UDoEdjDhOvor6PIA&tms=1780365018&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bitlis-tv
 #EXTINF:-1 tvg-id="tvku.bitlistv" group-title="Yerel",Bitlis Tv (tvku)
 https://cdn900.tvkulesi.com/bitlistv.m3u8?tkn=c4a0CHm1-LANGFwUd8PKeA&tms=1780363872&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bitlis-tv
 #EXTINF:-1 tvg-id="tvku.bitlistv" group-title="Yerel",Bitlis Tv (v-kavu)
 https://cdn900.kavuntv.net/bitlistv.m3u8?tkn=bPZaVKtSFH_Un2vZnmHpfA&tms=1780361409&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=bitlis-tv
 #EXTINF:-1 tvg-id="tvku.dalgatv" group-title="Yerel",Dalga Tv
 https://cdn505.tvkulesi.com/dalgatv.m3u8?tkn=6VjuiKNCM4vrzva4LLk9Qw&tms=1780358065&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dalga-tv
+#EXTINF:-1 tvg-id="tvku.dalgatv" group-title="Yerel",Dalga Tv (kavu)
+https://cdn509.kavuntv.net/dalgatv.m3u8?tkn=nZQpRAUeUoAcZ8KYGJwWaQ&tms=1780365021&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dalga-tv
 #EXTINF:-1 tvg-id="tvku.dalgatv" group-title="Yerel",Dalga Tv (tvku)
 https://cdn509.tvkulesi.com/dalgatv.m3u8?tkn=Y_nAxpc247P0SnLZZKFfdA&tms=1780363875&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=dalga-tv
 #EXTINF:-1 tvg-id="tvku.dalgatv" group-title="Yerel",Dalga Tv (v-kavu)
@@ -2713,12 +3035,16 @@ https://cdn502.kavuntv.net/dalgatv.m3u8?tkn=naNYR5eqZOLgxCr-lcBuqg&tms=178036141
 https://streaming-hls2.televizia.org/hls/adjara.m3u8
 #EXTINF:-1 tvg-id="tvku.kavkasiatv" group-title="Yerel",Kavkasia Tv
 https://cdn501.tvkulesi.com/kavkasiatv.m3u8?tkn=0D9KHPK93s1i_JCB9AvOZw&tms=1780358075&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kavkasia-tv
+#EXTINF:-1 tvg-id="tvku.kavkasiatv" group-title="Yerel",Kavkasia Tv (kavu)
+https://cdn501.kavuntv.net/kavkasiatv.m3u8?tkn=eaVQPke0wk4IBmfuRs0_iw&tms=1780365026&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kavkasia-tv
 #EXTINF:-1 tvg-id="tvku.kavkasiatv" group-title="Yerel",Kavkasia Tv (tvku)
 https://cdn509.tvkulesi.com/kavkasiatv.m3u8?tkn=tOR9_cfLS4ZOD9RkO4QzcA&tms=1780363880&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kavkasia-tv
 #EXTINF:-1 tvg-id="tvku.kavkasiatv" group-title="Yerel",Kavkasia Tv (v-kavu)
 https://cdn506.kavuntv.net/kavkasiatv.m3u8?tkn=1e9ZudtP7CzQqCcSvhYU_g&tms=1780361424&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kavkasia-tv
 #EXTINF:-1 tvg-id="tvku.marneulitv" group-title="Yerel",Marneuli Tv
 https://cdn900.tvkulesi.com/marneulitv.m3u8?tkn=LYDmtUJY5x6ToB0W_JLPag&tms=1780358080&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=marneuli-tv
+#EXTINF:-1 tvg-id="tvku.marneulitv" group-title="Yerel",Marneuli Tv (kavu)
+https://cdn900.kavuntv.net/marneulitv.m3u8?tkn=uSzroA1lkdqp4T0V58mM5g&tms=1780365029&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=marneuli-tv
 #EXTINF:-1 tvg-id="tvku.marneulitv" group-title="Yerel",Marneuli Tv (tvku)
 https://cdn900.tvkulesi.com/marneulitv.m3u8?tkn=OXKKd215Z0PmiYeU1O8TPw&tms=1780363883&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=marneuli-tv
 #EXTINF:-1 tvg-id="tvku.marneulitv" group-title="Yerel",Marneuli Tv (v-kavu)
@@ -2727,6 +3053,8 @@ https://cdn900.kavuntv.net/marneulitv.m3u8?tkn=YAFfQZ1wu6viEFk4o4OQFw&tms=178036
 https://livestream.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.gozdetv" group-title="Yerel",Gözde Tv
 https://cdn900.tvkulesi.com/gozdetv.m3u8?tkn=6fIzynQlEjZzBnAxwLKEWQ&tms=1780358093&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gozde-tv
+#EXTINF:-1 tvg-id="tvku.gozdetv" group-title="Yerel",Gözde Tv (kavu)
+https://cdn900.kavuntv.net/gozdetv.m3u8?tkn=BGh2GAe5UrWGxu9P6Iz2eg&tms=1780365034&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gozde-tv
 #EXTINF:-1 tvg-id="tvku.gozdetv" group-title="Yerel",Gözde Tv (tvku)
 https://cdn900.tvkulesi.com/gozdetv.m3u8?tkn=Ksof_LcNR-a_py7x6xsIvA&tms=1780363888&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gozde-tv
 #EXTINF:-1 tvg-id="tvku.gozdetv" group-title="Yerel",Gözde Tv (v-kavu)
@@ -2739,36 +3067,48 @@ https://cdn900.kavuntv.net/adatv.m3u8?tkn=MhNZivK2YTgIf9BbJXnSKQ&tms=1780361444&
 https://59cba4d34b678.streamlock.net/canlitv/abanttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.koytv" group-title="Yerel",Köy Tv
 https://cdn900.tvkulesi.com/koytv.m3u8?tkn=l0OdtLLA4ci1XKFa_sTduA&tms=1780358118&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koy-tv
+#EXTINF:-1 tvg-id="tvku.koytv" group-title="Yerel",Köy Tv (kavu)
+https://cdn900.kavuntv.net/koytv.m3u8?tkn=FWbVc7A4SnbFUXXQYxJc3w&tms=1780365042&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koy-tv
 #EXTINF:-1 tvg-id="tvku.koytv" group-title="Yerel",Köy Tv (tvku)
 https://cdn900.tvkulesi.com/koytv.m3u8?tkn=4EsZLnbCcbgAj_LcOxZWyw&tms=1780363896&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koy-tv
 #EXTINF:-1 tvg-id="tvku.koytv" group-title="Yerel",Köy Tv (v-kavu)
 https://cdn900.kavuntv.net/koytv.m3u8?tkn=JTOmMU2aSS4yTM1O-L0Iaw&tms=1780361465&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=koy-tv
 #EXTINF:-1 tvg-id="tvku.hrttv" group-title="Yerel",HRT Akdeniz Tv
 https://cdn900.tvkulesi.com/hrttv.m3u8?tkn=hJrUWYGwjDHr0mmaoIcjBg&tms=1780358139&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hrt-tv
+#EXTINF:-1 tvg-id="tvku.hrttv" group-title="Yerel",HRT Akdeniz Tv (kavu)
+https://cdn900.kavuntv.net/hrttv.m3u8?tkn=kGHpT88cHU7SHHuyUQ7AKg&tms=1780365047&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hrt-tv
 #EXTINF:-1 tvg-id="tvku.hrttv" group-title="Yerel",HRT Akdeniz Tv (tvku)
 https://cdn900.tvkulesi.com/hrttv.m3u8?tkn=MqdEjhNNdpw8SyKW3irVuQ&tms=1780363901&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hrt-tv
 #EXTINF:-1 tvg-id="tvku.hrttv" group-title="Yerel",HRT Akdeniz Tv (v-kavu)
 https://cdn900.kavuntv.net/hrttv.m3u8?tkn=Zgwn7Dxn-m-L0rCUHIaDCA&tms=1780361485&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hrt-tv
 #EXTINF:-1 tvg-id="tvku.grttvgagauz" group-title="Yerel",GRT Tv Gagauz
 https://cdn900.tvkulesi.com/grtgagauz.m3u8?tkn=bJjPLL4PCdRGt0suCHauRQ&tms=1780358144&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=grt-tv-gagauz
+#EXTINF:-1 tvg-id="tvku.grttvgagauz" group-title="Yerel",GRT Tv Gagauz (kavu)
+https://cdn900.kavuntv.net/grtgagauz.m3u8?tkn=5JDMErXRXfkAOeIPDJq4cQ&tms=1780365050&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=grt-tv-gagauz
 #EXTINF:-1 tvg-id="tvku.grttvgagauz" group-title="Yerel",GRT Tv Gagauz (tvku)
 https://cdn900.tvkulesi.com/grtgagauz.m3u8?tkn=Z3uIyotuT4cu5mjseS7ETQ&tms=1780363904&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=grt-tv-gagauz
 #EXTINF:-1 tvg-id="tvku.grttvgagauz" group-title="Yerel",GRT Tv Gagauz (v-kavu)
 https://cdn900.kavuntv.net/grtgagauz.m3u8?tkn=ibRnhsh4iDrG5clkIifr0g&tms=1780361491&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=grt-tv-gagauz
 #EXTINF:-1 tvg-id="tvku.aksarayarttv" group-title="Yerel",Aksaray ART Tv
 https://cdn900.tvkulesi.com/aksarayart.m3u8?tkn=lKr1adrmVpZ76k56JFUsiw&tms=1780358150&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksaray-art-tv
+#EXTINF:-1 tvg-id="tvku.aksarayarttv" group-title="Yerel",Aksaray ART Tv (kavu)
+https://cdn900.kavuntv.net/aksarayart.m3u8?tkn=6M6TImUjJhjDZKfOl2NCpw&tms=1780365053&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksaray-art-tv
 #EXTINF:-1 tvg-id="tvku.aksarayarttv" group-title="Yerel",Aksaray ART Tv (tvku)
 https://cdn900.tvkulesi.com/aksarayart.m3u8?tkn=dFJ47a91mXG6t0kCrFFGVw&tms=1780363907&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksaray-art-tv
 #EXTINF:-1 tvg-id="tvku.aksarayarttv" group-title="Yerel",Aksaray ART Tv (v-kavu)
 https://cdn900.kavuntv.net/aksarayart.m3u8?tkn=h2Qr39KJKKl3WWiaAiUM5A&tms=1780361495&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksaray-art-tv
 #EXTINF:-1 tvg-id="tvku.karadeniztv" group-title="Yerel",Karadeniz Tv
 https://cdn507.tvkulesi.com/karadeniztv.m3u8?tkn=3b4ju8knd0O2QRR6EpFAcg&tms=1780358155&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-tv
+#EXTINF:-1 tvg-id="tvku.karadeniztv" group-title="Yerel",Karadeniz Tv (kavu)
+https://cdn503.kavuntv.net/karadeniztv.m3u8?tkn=Ngmxu-7uu6XCqqG_s3wwxQ&tms=1780365055&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-tv
 #EXTINF:-1 tvg-id="tvku.karadeniztv" group-title="Yerel",Karadeniz Tv (tvku)
 https://cdn506.tvkulesi.com/karadeniztv.m3u8?tkn=jUROWj6JlvQfG9Lp2_sBvw&tms=1780363909&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-tv
 #EXTINF:-1 tvg-id="tvku.karadeniztv" group-title="Yerel",Karadeniz Tv (v-kavu)
 https://cdn504.kavuntv.net/karadeniztv.m3u8?tkn=ci4-SxvYDZwrX6eWSJXOSg&tms=1780361500&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-tv
 #EXTINF:-1 tvg-id="tvku.kibriskanalt" group-title="Yerel",Kıbrıs Kanal T
 https://cdn900.tvkulesi.com/kanaltkibris.m3u8?tkn=oljq9RywP5OgNOZDHFf0hw&tms=1780358162&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-kanal-t
+#EXTINF:-1 tvg-id="tvku.kibriskanalt" group-title="Yerel",Kıbrıs Kanal T (kavu)
+https://cdn900.kavuntv.net/kanaltkibris.m3u8?tkn=v0aylXx8QOZssB0PSYtZRg&tms=1780365058&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-kanal-t
 #EXTINF:-1 tvg-id="tvku.kibriskanalt" group-title="Yerel",Kıbrıs Kanal T (tvku)
 https://cdn900.tvkulesi.com/kanaltkibris.m3u8?tkn=KHAFsty0-IDVsp9ggTdfIw&tms=1780363912&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-kanal-t
 #EXTINF:-1 tvg-id="tvku.kibriskanalt" group-title="Yerel",Kıbrıs Kanal T (v-kavu)
@@ -2779,6 +3119,8 @@ https://cdn900.tvkulesi.com/kocaelitv.m3u8?tkn=d8w26F9-mId6LPEvTcH3wA&tms=178035
 https://cdn900.kavuntv.net/kocaelitv.m3u8?tkn=rI1kfZCYfiDqQchB0ctW_Q&tms=1780361523&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kocaeli-tv
 #EXTINF:-1 tvg-id="tvku.doruktv" group-title="Yerel",Doruk Tv
 https://cdn505.tvkulesi.com/doruktv.m3u8?tkn=RDaotNvH6-t3T-plcM1c7Q&tms=1780358183&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=doruk-tv
+#EXTINF:-1 tvg-id="tvku.doruktv" group-title="Yerel",Doruk Tv (kavu)
+https://cdn501.kavuntv.net/doruktv.m3u8?tkn=L2RyxqdofHfIbgn8OS-cag&tms=1780365069&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=doruk-tv
 #EXTINF:-1 tvg-id="tvku.doruktv" group-title="Yerel",Doruk Tv (tvku)
 https://cdn502.tvkulesi.com/doruktv.m3u8?tkn=xhSCX595MjJtzq6jTyIPnw&tms=1780363923&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=doruk-tv
 #EXTINF:-1 tvg-id="tvku.doruktv" group-title="Yerel",Doruk Tv (v-kavu)
@@ -2787,6 +3129,8 @@ https://cdn509.kavuntv.net/doruktv.m3u8?tkn=1YssKtNE1jk76VYR8emA8g&tms=178036152
 https://s6.hopslan.com/pro7x1/index.m3u8
 #EXTINF:-1 tvg-id="tvku.kanal68" group-title="Yerel",Kanal 68
 https://cdn900.tvkulesi.com/kanal68.m3u8?tkn=xk6SdPp7ZTm7vniW4Zrjxg&tms=1780358199&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-68
+#EXTINF:-1 tvg-id="tvku.kanal68" group-title="Yerel",Kanal 68 (kavu)
+https://cdn900.kavuntv.net/kanal68.m3u8?tkn=SbZc46zBWrwTnRHT0EJNkQ&tms=1780365079&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-68
 #EXTINF:-1 tvg-id="tvku.kanal68" group-title="Yerel",Kanal 68 (tvku)
 https://cdn900.tvkulesi.com/kanal68.m3u8?tkn=nPwniq-BtZuXssyetbCfxg&tms=1780363931&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-68
 #EXTINF:-1 tvg-id="tvku.kanal68" group-title="Yerel",Kanal 68 (v-kavu)
@@ -2795,6 +3139,8 @@ https://cdn900.kavuntv.net/kanal68.m3u8?tkn=ojw4On_b5zcDyRt6ttzb8Q&tms=178036154
 https://iptv.egeturk.tv/iptv/canliyayin/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.sivassrttv" group-title="Yerel",Sivas SRT Tv
 https://cdn507.tvkulesi.com/sivassrt.m3u8?tkn=2TmZJr0zFcXXmaWE8M9zQg&tms=1780358227&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sivas-srt-tv
+#EXTINF:-1 tvg-id="tvku.sivassrttv" group-title="Yerel",Sivas SRT Tv (kavu)
+https://cdn507.kavuntv.net/sivassrt.m3u8?tkn=Y9iGwbGwZmkBHXXm9ZwhnA&tms=1780365086&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sivas-srt-tv
 #EXTINF:-1 tvg-id="tvku.sivassrttv" group-title="Yerel",Sivas SRT Tv (tvku)
 https://cdn506.tvkulesi.com/sivassrt.m3u8?tkn=nFq7y3K5gyNUZ1xNOD6vAA&tms=1780363939&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=sivas-srt-tv
 #EXTINF:-1 tvg-id="tvku.sivassrttv" group-title="Yerel",Sivas SRT Tv (v-kavu)
@@ -2805,12 +3151,16 @@ https://ndrint.akamaized.net/hls/live/2020766/ndr_int/index.m3u8
 https://mcdn.br.de/br/fs/bfs_sued/hls/de/master.m3u8
 #EXTINF:-1 tvg-id="tvku.wdrlive" group-title="Yerel",WDR
 https://cdn900.tvkulesi.com/wdrtv.m3u8?tkn=fiLjVDKXe-05tbkRK7WeEQ&tms=1780358242&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=wdr-live
+#EXTINF:-1 tvg-id="tvku.wdrlive" group-title="Yerel",WDR (kavu)
+https://cdn900.kavuntv.net/wdrtv.m3u8?tkn=LVrQttunby5Cm_QFcSWXxg&tms=1780365095&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=wdr-live
 #EXTINF:-1 tvg-id="tvku.wdrlive" group-title="Yerel",WDR (tvku)
 https://cdn900.tvkulesi.com/wdrtv.m3u8?tkn=SncFdd7dDpr-_QA-kMW19w&tms=1780363957&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=wdr-live
 #EXTINF:-1 tvg-id="tvku.wdrlive" group-title="Yerel",WDR (v-kavu)
 https://cdn900.kavuntv.net/wdrtv.m3u8?tkn=mLfzvY_ELKDiU_WXynz4zw&tms=1780361583&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=wdr-live
 #EXTINF:-1 tvg-id="tvku.pamukkaletv" group-title="Yerel",Pamukkale Tv
 https://cdn900.tvkulesi.com/pamukkaletv.m3u8?tkn=MX7U4__P5--0BhDXr9Nzwg&tms=1780358247&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=pamukkale-tv
+#EXTINF:-1 tvg-id="tvku.pamukkaletv" group-title="Yerel",Pamukkale Tv (kavu)
+https://cdn900.kavuntv.net/pamukkaletv.m3u8?tkn=MXcblQoO4lw7BloEcVaD7Q&tms=1780365097&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=pamukkale-tv
 #EXTINF:-1 tvg-id="tvku.pamukkaletv" group-title="Yerel",Pamukkale Tv (tvku)
 https://cdn900.tvkulesi.com/pamukkaletv.m3u8?tkn=PHvRKDwuoNGSrwoig7o1Pg&tms=1780363960&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=pamukkale-tv
 #EXTINF:-1 tvg-id="tvku.pamukkaletv" group-title="Yerel",Pamukkale Tv (v-kavu)
@@ -2821,12 +3171,16 @@ https://cdn900.tvkulesi.com/kibrisgenctv.m3u8?tkn=zSVM3ZtaQqHgdoCnT6IL4g&tms=178
 https://cdn900.kavuntv.net/kibrisgenctv.m3u8?tkn=xchIKiOqB5O4PunufSAoqg&tms=1780361592&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-genc-tv
 #EXTINF:-1 tvg-id="tvku.drtdenizli" group-title="Yerel",DRT Denizli
 https://cdn900.tvkulesi.com/drtdenizli.m3u8?tkn=pr3maXY45z1ql6bFxrxzBg&tms=1780358259&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=drt-denizli
+#EXTINF:-1 tvg-id="tvku.drtdenizli" group-title="Yerel",DRT Denizli (kavu)
+https://cdn900.kavuntv.net/drtdenizli.m3u8?tkn=-1k-0Iu_4tj7Nr8N0rS31A&tms=1780365104&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=drt-denizli
 #EXTINF:-1 tvg-id="tvku.drtdenizli" group-title="Yerel",DRT Denizli (tvku)
 https://cdn900.tvkulesi.com/drtdenizli.m3u8?tkn=IwAILRiA6Sf3YunEIIO6vg&tms=1780363965&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=drt-denizli
 #EXTINF:-1 tvg-id="tvku.drtdenizli" group-title="Yerel",DRT Denizli (v-kavu)
 https://cdn900.kavuntv.net/drtdenizli.m3u8?tkn=NtlmdAHbQUlnSJS3_impgg&tms=1780361597&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=drt-denizli
 #EXTINF:-1 tvg-id="tvku.malatyaertv" group-title="Yerel",Malatya Er Tv
 https://cdn900.tvkulesi.com/ertv.m3u8?tkn=_PfZHFH32WJ9ml6jFTYt7g&tms=1780358264&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=malatya-er-tv
+#EXTINF:-1 tvg-id="tvku.malatyaertv" group-title="Yerel",Malatya Er Tv (kavu)
+https://cdn900.kavuntv.net/ertv.m3u8?tkn=P45qnpsDWmlqX87d0HqXbQ&tms=1780365107&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=malatya-er-tv
 #EXTINF:-1 tvg-id="tvku.malatyaertv" group-title="Yerel",Malatya Er Tv (tvku)
 https://cdn900.tvkulesi.com/ertv.m3u8?tkn=JsvXXyCqeabfE-erGS5b-w&tms=1780363968&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=malatya-er-tv
 #EXTINF:-1 tvg-id="tvku.malatyaertv" group-title="Yerel",Malatya Er Tv (v-kavu)
@@ -2835,30 +3189,40 @@ https://cdn900.kavuntv.net/ertv.m3u8?tkn=EBCnj7xrtbTx9uaQ90xeSA&tms=1780361607&h
 https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8
 #EXTINF:-1 tvg-id="tvku.tv3afyon" group-title="Yerel",TV3 Afyonkarahisar
 https://cdn900.tvkulesi.com/tv3afyon.m3u8?tkn=blcBw8_eqJQ-YYYQVxvMeA&tms=1780358299&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv3-afyon
+#EXTINF:-1 tvg-id="tvku.tv3afyon" group-title="Yerel",TV3 Afyonkarahisar (kavu)
+https://cdn900.kavuntv.net/tv3afyon.m3u8?tkn=GgWmA-Mx2kXeW3UayA5BAQ&tms=1780365120&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv3-afyon
 #EXTINF:-1 tvg-id="tvku.tv3afyon" group-title="Yerel",TV3 Afyonkarahisar (tvku)
 https://cdn900.tvkulesi.com/tv3afyon.m3u8?tkn=Pj-u_0m8jGxA-FEFcJNNKQ&tms=1780363981&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv3-afyon
 #EXTINF:-1 tvg-id="tvku.tv3afyon" group-title="Yerel",TV3 Afyonkarahisar (v-kavu)
 https://cdn900.kavuntv.net/tv3afyon.m3u8?tkn=Xs7cC3I9Ex3idKXjktal6Q&tms=1780361643&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv3-afyon
 #EXTINF:-1 tvg-id="tvku.swrtvlive" group-title="Yerel",SWR Tv
 https://cdn900.tvkulesi.com/swrtv.m3u8?tkn=I4IKxe46ivGt_zg3EPTJuA&tms=1780358304&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-tv-live
+#EXTINF:-1 tvg-id="tvku.swrtvlive" group-title="Yerel",SWR Tv (kavu)
+https://cdn900.kavuntv.net/swrtv.m3u8?tkn=gIu6z4UnJcOuiTVJ00zjng&tms=1780365123&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-tv-live
 #EXTINF:-1 tvg-id="tvku.swrtvlive" group-title="Yerel",SWR Tv (tvku)
 https://cdn900.tvkulesi.com/swrtv.m3u8?tkn=VMqeu7aE7hhZR92_0nwszA&tms=1780363984&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-tv-live
 #EXTINF:-1 tvg-id="tvku.swrtvlive" group-title="Yerel",SWR Tv (v-kavu)
 https://cdn900.kavuntv.net/swrtv.m3u8?tkn=wQgWsvTceQJ6QIGvPrsoJA&tms=1780361650&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-tv-live
 #EXTINF:-1 tvg-id="tvku.mavikadeniztv" group-title="Yerel",Mavi Kadeniz Tv
 https://cdn900.tvkulesi.com/mavikaradeniz.m3u8?tkn=doqlIP2GnuuzdQwMEt1Xeg&tms=1780358309&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mavi-kadeniz-tv
+#EXTINF:-1 tvg-id="tvku.mavikadeniztv" group-title="Yerel",Mavi Kadeniz Tv (kavu)
+https://cdn900.kavuntv.net/mavikaradeniz.m3u8?tkn=gYCgOUbNjNLaug8rXY7-xA&tms=1780365125&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mavi-kadeniz-tv
 #EXTINF:-1 tvg-id="tvku.mavikadeniztv" group-title="Yerel",Mavi Kadeniz Tv (tvku)
 https://cdn900.tvkulesi.com/mavikaradeniz.m3u8?tkn=5e5TRl4wGf03IExHkUMrKg&tms=1780363986&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mavi-kadeniz-tv
 #EXTINF:-1 tvg-id="tvku.mavikadeniztv" group-title="Yerel",Mavi Kadeniz Tv (v-kavu)
 https://cdn900.kavuntv.net/mavikaradeniz.m3u8?tkn=P0b-vJpnE6Tq-PsfR9mIlQ&tms=1780361664&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=mavi-kadeniz-tv
 #EXTINF:-1 tvg-id="tvku.tvkayseri" group-title="Yerel",TV Kayseri
 https://cdn900.tvkulesi.com/tvkayseri.m3u8?tkn=YTJjsu9I0xnEmdM32yVJRg&tms=1780358330&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-kayseri
+#EXTINF:-1 tvg-id="tvku.tvkayseri" group-title="Yerel",TV Kayseri (kavu)
+https://cdn900.kavuntv.net/tvkayseri.m3u8?tkn=Acv4evLjlNnJxMnK_wwYBQ&tms=1780365131&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-kayseri
 #EXTINF:-1 tvg-id="tvku.tvkayseri" group-title="Yerel",TV Kayseri (tvku)
 https://cdn900.tvkulesi.com/tvkayseri.m3u8?tkn=WUf48ZoNzYsKuwblLs-ZmQ&tms=1780363992&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-kayseri
 #EXTINF:-1 tvg-id="tvku.tvkayseri" group-title="Yerel",TV Kayseri (v-kavu)
 https://cdn900.kavuntv.net/tvkayseri.m3u8?tkn=mHUjxSIl2T9HmEmoJ3n-vA&tms=1780361685&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv-kayseri
 #EXTINF:-1 tvg-id="tvku.swrrplive" group-title="Yerel",SWR RP
 https://cdn900.tvkulesi.com/swrrp.m3u8?tkn=xsR49Ah855qx0ROcG0TM4A&tms=1780358335&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-rp-live
+#EXTINF:-1 tvg-id="tvku.swrrplive" group-title="Yerel",SWR RP (kavu)
+https://cdn900.kavuntv.net/swrrp.m3u8?tkn=3IkOoZ1jnycIYrBbh5hy6A&tms=1780365133&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-rp-live
 #EXTINF:-1 tvg-id="tvku.swrrplive" group-title="Yerel",SWR RP (tvku)
 https://cdn900.tvkulesi.com/swrrp.m3u8?tkn=5jIyaVXckTHWCa81mraWZg&tms=1780363994&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=swr-rp-live
 #EXTINF:-1 tvg-id="tvku.swrrplive" group-title="Yerel",SWR RP (v-kavu)
@@ -2873,6 +3237,8 @@ https://cdn900.tvkulesi.com/kanal23.m3u8?tkn=5QijbQHmQxaifM_uMAatSw&tms=17803583
 https://cdn900.kavuntv.net/kanal23.m3u8?tkn=BQptLgiNqle5W6NRSAK2kA&tms=1780361701&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-23
 #EXTINF:-1 tvg-id="tvku.kackartv" group-title="Yerel",Kaçkar Tv
 https://cdn505.tvkulesi.com/kackartv.m3u8?tkn=5ilPZ_8p7YxFFoVRyIwzew&tms=1780358349&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kackar-tv
+#EXTINF:-1 tvg-id="tvku.kackartv" group-title="Yerel",Kaçkar Tv (kavu)
+https://cdn506.kavuntv.net/kackartv.m3u8?tkn=rm7hZ8Q38vTsiF3kaOuimw&tms=1780365141&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kackar-tv
 #EXTINF:-1 tvg-id="tvku.kackartv" group-title="Yerel",Kaçkar Tv (tvku)
 https://cdn502.tvkulesi.com/kackartv.m3u8?tkn=eWzNf-pa7shFpgqQ5n84XQ&tms=1780364003&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kackar-tv
 #EXTINF:-1 tvg-id="tvku.kackartv" group-title="Yerel",Kaçkar Tv (v-kavu)
@@ -2881,6 +3247,8 @@ https://cdn507.kavuntv.net/kackartv.m3u8?tkn=roUDph7bEs4gBVE4d7W_Wg&tms=17803617
 https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.goncatv" group-title="Yerel",Gonca Tv
 https://cdn900.tvkulesi.com/goncatv.m3u8?tkn=ZIqsS_N1NWPPgPKph5-TBA&tms=1780358368&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gonca-tv
+#EXTINF:-1 tvg-id="tvku.goncatv" group-title="Yerel",Gonca Tv (kavu)
+https://cdn900.kavuntv.net/goncatv.m3u8?tkn=bBT0q2vigRzJcY4JiA15yw&tms=1780365149&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gonca-tv
 #EXTINF:-1 tvg-id="tvku.goncatv" group-title="Yerel",Gonca Tv (tvku)
 https://cdn900.tvkulesi.com/goncatv.m3u8?tkn=8En_BrcDsW3yLtrn6tOJYg&tms=1780364010&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=gonca-tv
 #EXTINF:-1 tvg-id="tvku.goncatv" group-title="Yerel",Gonca Tv (v-kavu)
@@ -2889,18 +3257,24 @@ https://cdn900.kavuntv.net/goncatv.m3u8?tkn=cj8Xvs5oXdusEM3afPRIjw&tms=178036172
 https://vdo.digitalbox.xyz:3266/live/kanal34tvlive.m3u8
 #EXTINF:-1 tvg-id="tvku.naxcivantv" group-title="Yerel",NTV (Naxçıvan TV)
 https://cdn900.tvkulesi.com/naxcivantv.m3u8?tkn=yYVK2zhI32InOmQv7dvP5g&tms=1780358389&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=naxcivan-tv
+#EXTINF:-1 tvg-id="tvku.naxcivantv" group-title="Yerel",NTV (Naxçıvan TV) (kavu)
+https://cdn900.kavuntv.net/naxcivantv.m3u8?tkn=iMIBqD3y4tiDTIJjhasv0Q&tms=1780365155&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=naxcivan-tv
 #EXTINF:-1 tvg-id="tvku.naxcivantv" group-title="Yerel",NTV (Naxçıvan TV) (tvku)
 https://cdn900.tvkulesi.com/naxcivantv.m3u8?tkn=P7PrXExitupBLwqyjNz_Jg&tms=1780364016&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=naxcivan-tv
 #EXTINF:-1 tvg-id="tvku.naxcivantv" group-title="Yerel",NTV (Naxçıvan TV) (v-kavu)
 https://cdn900.kavuntv.net/naxcivantv.m3u8?tkn=d-wApW8fXbME8DmAbLVo2g&tms=1780361750&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=naxcivan-tv
 #EXTINF:-1 tvg-id="tvku.diyartv" group-title="Yerel",Diyar Tv
 https://cdn900.tvkulesi.com/diyartv.m3u8?tkn=uv6m27nmzH4A9PFvE4JWbw&tms=1780358393&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyar-tv
+#EXTINF:-1 tvg-id="tvku.diyartv" group-title="Yerel",Diyar Tv (kavu)
+https://cdn900.kavuntv.net/diyartv.m3u8?tkn=wMAocqKFZ7uFwHs5ZGf0yw&tms=1780365157&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyar-tv
 #EXTINF:-1 tvg-id="tvku.diyartv" group-title="Yerel",Diyar Tv (tvku)
 https://cdn900.tvkulesi.com/diyartv.m3u8?tkn=NkjMUo8yu5iJ4-XohlW4fg&tms=1780364018&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyar-tv
 #EXTINF:-1 tvg-id="tvku.diyartv" group-title="Yerel",Diyar Tv (v-kavu)
 https://cdn900.kavuntv.net/diyartv.m3u8?tkn=_Gd3_iA2_wBOmrS7QuE3TQ&tms=1780361755&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=diyar-tv
 #EXTINF:-1 tvg-id="tvku.serhattv" group-title="Yerel",Serhat Tv
 https://cdn900.tvkulesi.com/serhattv.m3u8?tkn=GIQVz_NsDFJgkfgqpPtiig&tms=1780358398&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=serhat-tv
+#EXTINF:-1 tvg-id="tvku.serhattv" group-title="Yerel",Serhat Tv (kavu)
+https://cdn900.kavuntv.net/serhattv.m3u8?tkn=thCQDN7IBMgq7FwDIM1ajQ&tms=1780365160&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=serhat-tv
 #EXTINF:-1 tvg-id="tvku.serhattv" group-title="Yerel",Serhat Tv (tvku)
 https://cdn900.tvkulesi.com/serhattv.m3u8?tkn=4ymIhKlcV-e50vfSlfjPRw&tms=1780364021&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=serhat-tv
 #EXTINF:-1 tvg-id="tvku.serhattv" group-title="Yerel",Serhat Tv (v-kavu)
@@ -2913,6 +3287,8 @@ https://canalalphaju.vedge.infomaniak.com/livecast/ik:canalalphaju/playlist.m3u8
 https://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 tvg-id="tvku.altastv" group-title="Yerel",Altaş Tv
 https://cdn900.tvkulesi.com/altastv.m3u8?tkn=JJ7MyK62ePVwqHldUR_HaA&tms=1780358431&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=altas-tv
+#EXTINF:-1 tvg-id="tvku.altastv" group-title="Yerel",Altaş Tv (kavu)
+https://cdn900.kavuntv.net/altastv.m3u8?tkn=0C5SH5cnxHExeVWHEDqokQ&tms=1780365176&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=altas-tv
 #EXTINF:-1 tvg-id="tvku.altastv" group-title="Yerel",Altaş Tv (tvku)
 https://cdn900.tvkulesi.com/altastv.m3u8?tkn=FzNHSTWfjob7nDv9PpcM0A&tms=1780364037&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=altas-tv
 #EXTINF:-1 tvg-id="tvku.altastv" group-title="Yerel",Altaş Tv (v-kavu)
@@ -2931,6 +3307,8 @@ https://cdn900.kavuntv.net/kanalurfa.m3u8?tkn=XG0aE6kMFFvLZqpYmA19Cg&tms=1780361
 https://broadcasttr.com:446/iceltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="tvku.karadenizturktv" group-title="Yerel",Karadeniz Türk Tv
 https://cdn506.tvkulesi.com/karadenizturk.m3u8?tkn=qRNGNumH6Qq1rTans2s91g&tms=1780358477&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-turk-tv
+#EXTINF:-1 tvg-id="tvku.karadenizturktv" group-title="Yerel",Karadeniz Türk Tv (kavu)
+https://cdn501.kavuntv.net/karadenizturk.m3u8?tkn=RanAejU6jaeJfcek-07-0A&tms=1780365189&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-turk-tv
 #EXTINF:-1 tvg-id="tvku.karadenizturktv" group-title="Yerel",Karadeniz Türk Tv (tvku)
 https://cdn509.tvkulesi.com/karadenizturk.m3u8?tkn=g2plLOhieqKHvXKhKE2cjA&tms=1780364050&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=karadeniz-turk-tv
 #EXTINF:-1 tvg-id="tvku.karadenizturktv" group-title="Yerel",Karadeniz Türk Tv (v-kavu)
@@ -2941,6 +3319,8 @@ https://59cba4d34b678.streamlock.net/canlitv/kanal78/playlist.m3u8?hash=9f3bed7f
 https://59cba4d34b678.streamlock.net/canlitv/marmaristv/playlist.m3u8?hash=9f3bed7f9c3228fdf7c91ba4287e9c5b
 #EXTINF:-1 tvg-id="tvku.anadoludernektv" group-title="Yerel",Anadolu Dernek Tv
 https://cdn900.tvkulesi.com/anadolutv.m3u8?tkn=XzGOx1ZLi2VwjKTfXrC5bA&tms=1780358519&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=anadolu-dernek-tv
+#EXTINF:-1 tvg-id="tvku.anadoludernektv" group-title="Yerel",Anadolu Dernek Tv (kavu)
+https://cdn900.kavuntv.net/anadolutv.m3u8?tkn=1H8GIe-eNWjrHscLZjPHTQ&tms=1780365200&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=anadolu-dernek-tv
 #EXTINF:-1 tvg-id="tvku.anadoludernektv" group-title="Yerel",Anadolu Dernek Tv (tvku)
 https://cdn900.tvkulesi.com/anadolutv.m3u8?tkn=O5DX31-hoA70tNztQIcCGQ&tms=1780364061&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=anadolu-dernek-tv
 #EXTINF:-1 tvg-id="tvku.anadoludernektv" group-title="Yerel",Anadolu Dernek Tv (v-kavu)
@@ -2959,18 +3339,24 @@ https://cdn900.tvkulesi.com/kibristv.m3u8?tkn=2t5t-q6_b_9nzV5yiZWL1A&tms=1780358
 https://cdn900.kavuntv.net/kibristv.m3u8?tkn=99b3QEsoPKutBdgeoI1zUg&tms=1780361930&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kibris-tv
 #EXTINF:-1 tvg-id="tvku.brt2tv" group-title="Yerel",brt 2 Tv
 https://cdn900.tvkulesi.com/brt2.m3u8?tkn=NEOXWdmelb55_OOOOo-b7w&tms=1780358554&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=brt-2-tv
+#EXTINF:-1 tvg-id="tvku.brt2tv" group-title="Yerel",brt 2 Tv (kavu)
+https://cdn900.kavuntv.net/brt2.m3u8?tkn=bgnDNCSykfc0ApoyduT1wQ&tms=1780365213&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=brt-2-tv
 #EXTINF:-1 tvg-id="tvku.brt2tv" group-title="Yerel",brt 2 Tv (tvku)
 https://cdn900.tvkulesi.com/brt2.m3u8?tkn=rqJQC1nwTEvVQgdjsFux6g&tms=1780364074&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=brt-2-tv
 #EXTINF:-1 tvg-id="tvku.brt2tv" group-title="Yerel",brt 2 Tv (v-kavu)
 https://cdn900.kavuntv.net/brt2.m3u8?tkn=xEMoxqDLeVcBpBKUubvS7g&tms=1780362041&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=brt-2-tv
 #EXTINF:-1 tvg-id="tvku.edessatv" group-title="Yerel",Edessa Tv
 https://cdn900.tvkulesi.com/edessatv.m3u8?tkn=oUOBPKAZFf2CE0coMGoYrQ&tms=1780358563&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=edessa-tv
+#EXTINF:-1 tvg-id="tvku.edessatv" group-title="Yerel",Edessa Tv (kavu)
+https://cdn900.kavuntv.net/edessatv.m3u8?tkn=9He3FKDZoQGDg_gWspPJgQ&tms=1780365219&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=edessa-tv
 #EXTINF:-1 tvg-id="tvku.edessatv" group-title="Yerel",Edessa Tv (tvku)
 https://cdn900.tvkulesi.com/edessatv.m3u8?tkn=BqFCD5-5Kg_Ot076NQ4fsg&tms=1780364080&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=edessa-tv
 #EXTINF:-1 tvg-id="tvku.edessatv" group-title="Yerel",Edessa Tv (v-kavu)
 https://cdn900.kavuntv.net/edessatv.m3u8?tkn=ETEeZZ3f-AD3A7BOoYzG0A&tms=1780362052&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=edessa-tv
 #EXTINF:-1 tvg-id="tvku.ertsahtv" group-title="Yerel",ERT Şah Tv
 https://cdn900.tvkulesi.com/ertsahtv.m3u8?tkn=ellOt7Qq73m5Vy3rlN9Ufg&tms=1780358568&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ert-sah-tv
+#EXTINF:-1 tvg-id="tvku.ertsahtv" group-title="Yerel",ERT Şah Tv (kavu)
+https://cdn900.kavuntv.net/ertsahtv.m3u8?tkn=J5DTdgmaVk0H2wToEOCzRg&tms=1780365221&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ert-sah-tv
 #EXTINF:-1 tvg-id="tvku.ertsahtv" group-title="Yerel",ERT Şah Tv (tvku)
 https://cdn900.tvkulesi.com/ertsahtv.m3u8?tkn=8HmPsY-n6yOy5xe6aMfvQA&tms=1780364082&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ert-sah-tv
 #EXTINF:-1 tvg-id="tvku.ertsahtv" group-title="Yerel",ERT Şah Tv (v-kavu)
@@ -2981,12 +3367,16 @@ https://cdn900.tvkulesi.com/ertv.m3u8?tkn=p-H4pwpVjGL5QLqTibuWOw&tms=1780358573&
 https://cdn900.kavuntv.net/ertv.m3u8?tkn=BEXJb1Uv4Iiu35QPdvAJwQ&tms=1780362064&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=er-tv
 #EXTINF:-1 tvg-id="tvku.kanal43" group-title="Yerel",Kanal 43
 https://cdn507.tvkulesi.com/kanal43.m3u8?tkn=gURmS7LbtPBmaMPGu-0u7Q&tms=1780358578&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-43
+#EXTINF:-1 tvg-id="tvku.kanal43" group-title="Yerel",Kanal 43 (kavu)
+https://cdn509.kavuntv.net/kanal43.m3u8?tkn=coiALnY9s1KEzTTUFmPgEg&tms=1780365227&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-43
 #EXTINF:-1 tvg-id="tvku.kanal43" group-title="Yerel",Kanal 43 (tvku)
 https://cdn503.tvkulesi.com/kanal43.m3u8?tkn=qQd0Io93yxt12i4xIp6kzA&tms=1780364088&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-43
 #EXTINF:-1 tvg-id="tvku.kanal43" group-title="Yerel",Kanal 43 (v-kavu)
 https://cdn508.kavuntv.net/kanal43.m3u8?tkn=SoD8NDLrfxU94yZT2tciHg&tms=1780362070&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-43
 #EXTINF:-1 tvg-id="tvku.kardelentv" group-title="Yerel",Kardelen Tv
 https://cdn900.tvkulesi.com/kardelentv.m3u8?tkn=dh6s4gJe_1DAIaBOD4Txvg&tms=1780358584&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kardelen-tv
+#EXTINF:-1 tvg-id="tvku.kardelentv" group-title="Yerel",Kardelen Tv (kavu)
+https://cdn900.kavuntv.net/kardelentv.m3u8?tkn=-g0Wf7E4uAMaBfjsI1Qokw&tms=1780365229&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kardelen-tv
 #EXTINF:-1 tvg-id="tvku.kardelentv" group-title="Yerel",Kardelen Tv (tvku)
 https://cdn900.tvkulesi.com/kardelentv.m3u8?tkn=4WfmvyQZ1z3LU1CTYhtodg&tms=1780364090&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kardelen-tv
 #EXTINF:-1 tvg-id="tvku.kardelentv" group-title="Yerel",Kardelen Tv (v-kavu)
@@ -2997,6 +3387,8 @@ https://cdn900.tvkulesi.com/kanal32.m3u8?tkn=RgkvrDpmABbTD7yXAUYOKQ&tms=17803585
 https://cdn900.kavuntv.net/kanal32.m3u8?tkn=V93436fjrNCmaNC1NQPT-g&tms=1780362080&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-32
 #EXTINF:-1 tvg-id="kavu.rehbertv" group-title="Haber",Rehber Tv
 https://cdn900.kavuntv.net/rehbertv.m3u8?tkn=DCASe2mYhjiKReTRa6i_tQ&tms=1780359879&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rehber-tv
+#EXTINF:-1 tvg-id="kavu.rehbertv" group-title="Haber",Rehber Tv (kavu)
+https://cdn900.kavuntv.net/rehbertv.m3u8?tkn=HyTyq816lteX21WR9PfN6w&tms=1780364678&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rehber-tv
 #EXTINF:-1 tvg-id="kavu.rehbertv" group-title="Haber",Rehber Tv (tvku)
 https://cdn900.tvkulesi.com/rehbertv.m3u8?tkn=lg9Y_CVvruFof5kFC4pEGg&tms=1780363530&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=rehber-tv
 #EXTINF:-1 tvg-id="kavu.tv85" group-title="Spor",Tv8,5
@@ -3037,3 +3429,5 @@ https://ciner.daioncdn.net/ht-spor/ht-spor_1080p.m3u8?ex=0&sid=78fxtad31ulh&app=
 >>>>>>> 6f870c472ac84c695b15f134043eac25e43521dc
 #EXTINF:-1 tvg-id="tvku.tv85" group-title="Spor",Tv8,5
 https://cdn900.tvkulesi.com/tv85.m3u8?tkn=MVwfWkdxHBBfEBUWugpM5w&tms=1780363665&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv85
+#EXTINF:-1 tvg-id="kavu.tv85" group-title="Spor",Tv8,5
+https://cdn900.kavuntv.net/tv85.m3u8?tkn=TTkrYVCBiRglWueJMep4rw&tms=1780364812&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=tv85
