@@ -123,6 +123,7 @@ def main():
     content = PLAYLIST.read_text(encoding="utf-8")
     lines = content.splitlines()
     updated = 0
+    prev_updated = 0
 
     for tvg_id, ch_id in INAT_CHANNELS.items():
         stream_url = get_stream_url(domain, ch_id)
@@ -130,13 +131,14 @@ def main():
             print(f"  {tvg_id}: stream bulunamadı")
             continue
 
-        # Playlist'te güncelle
+        # Playlist'te TÜM eşleşmeleri güncelle
+        prev_updated = updated
         for i, line in enumerate(lines):
             if f'tvg-id="{tvg_id}"' in line and i + 1 < len(lines):
                 lines[i + 1] = stream_url
                 updated += 1
-                print(f"  {tvg_id}: {stream_url[:70]}")
-                break
+        if updated > prev_updated:
+            print(f"  {tvg_id}: {stream_url[:70]}")
 
     PLAYLIST.write_text("\n".join(lines), encoding="utf-8")
     print(f"Güncellendi: {updated} kanal")
