@@ -1,12 +1,23 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml,https://epg.pw/xmltv/epg_TR.xml"
 
 # ── ULUSAL (44 kanal) ────────────────────────────
+#EXTINF:-1 tvg-id="tr.trt1" group-title="Ulusal",TRT 1
+https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
+#EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV
+https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
+#EXTINF:-1 tvg-id="tr.startv" group-title="Ulusal",Star TV
+https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
+
+#EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now TV
+https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8?st=ePadfIsxqT3VEFKnBH3dxA&e=1780353948 
 
 #EXTINF:-1 tvg-id="tr.kanald" group-title="Ulusal",Kanal D
 https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 
 #EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",Atv
 https://trkvz-live.ercdn.net/atv/atv.m3u8?st=EYfGo9cX52K5cnv08aR3iw&e=1780351340
+#EXTINF:-1 tvg-id="tr.tv8" group-title="Ulusal",TV 8
+https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
 
 #EXTINF:-1 tvg-id="tr.beyaztv" group-title="Ulusal",Beyaz TV
 https://beyaztv-live.daioncdn.net/beyaztv/beyaztv_1080p.m3u8
@@ -19,30 +30,16 @@ https://bikanal-live.ercdn.net/bikanal/bikanal_1080p.m3u8
 https://kanal7-live.daioncdn.net/kanal7/kanal7_1080p.m3u8
 
 
-#EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
-https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV
-https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
-#EXTINF:-1 tvg-id="tr.startv" group-title="Ulusal",Star TV
-https://dogus.daioncdn.net/startv/startv.m3u8?ce=3&app=a20ac41e-bdc3-4aa1-934d-26b484480ac9
+
 #EXTINF:-1 tvg-id="tr.teve2" group-title="Ulusal",Teve2
 https://live.duhnet.tv/S2/HLS_LIVE/teve2np/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.tivi6" group-title="Ulusal",Tivi6
 https://live.artidijitalmedya.com/artidijital_tivi6/tivi6/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.trt1" group-title="Ulusal",TRT 1
-https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
-#EXTINF:-1 tvg-id="tr.trt2" group-title="Ulusal",TRT 2
-https://tv-trt2.medya.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="tr.tv100" group-title="Ulusal",Tv100
-https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 
 #EXTINF:-1 tvg-id="tr.tv4" group-title="Ulusal",TV 4
 https://turkmedya-live.ercdn.net/tv4/tv4_720p.m3u8
-
-#EXTINF:-1 tvg-id="tr.tv8" group-title="Ulusal",TV 8
-https://2i4.d72577a9dd0ec71.cfd/tv8/mono.m3u8
 
 #EXTINF:-1 tvg-id="tr.tv85" group-title="Ulusal",Tv8,5
 https://2i4.d72577a9dd0ec71.cfd/tv85/mono.m3u8
@@ -53,6 +50,8 @@ https://trkvz-live.ercdn.net/a2/a2.m3u8?st=U5sEhQ5sUMKgV2TxkbzyJA&e=1780351340
 
 
 # ── HABER (29 kanal) ────────────────────────────
+#EXTINF:-1 tvg-id="tr.tv100" group-title="Haber",Tv100
+https://tv100-live.daioncdn.net/tv100/tv100_1080p.m3u8
 #EXTINF:-1 tvg-id="tr.trt3" tvg-logo="https://i.ibb.co/BN9tk1q/tbmm22.png" group-title="Haber",MECLİS
 https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/7b8dbf43-064f-4458-9c93-71089eaf493b.png" group-title="Haber",TÜRK HABER
@@ -136,6 +135,8 @@ https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8
 https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
 
 # ── KULTUR (40 kanal) ────────────────────────────
+#EXTINF:-1 tvg-id="tr.trt2" group-title="Kultur",TRT 2
+https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Kultur",Gzt TV
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtavaz" group-title="Kultur",TRT Avaz
@@ -270,8 +271,9 @@ https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
 
 #EXTINF:-1 tvg-id="tr.gurbet24tv" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png" group-title="Yerel",ERZINCAN GURBET-24
 http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.kanalv" group-title="Ulusal",Kanal V
+#EXTINF:-1 tvg-id="tr.kanalv" group-title="Yerel",Kanal V
 https://live.artidijitalmedya.com/artidijital_kanalv/kanalv/playlist.m3u8
+
 
 #EXTINF:-1 tvg-id="tr.kanal23" tvg-logo="http://assets.tvcdn.net/4ef4336c-ddd3-4de6-acda-9ce6f474902a.png" group-title="Yerel",ELAZIĞ KANAL-23
 https://live.artidijitalmedya.com/artidijital_kanal23/kanal23/playlist.m3u8
@@ -481,5 +483,3 @@ https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
 https://live.artidijitalmedya.com/artidijital_vuslattv/vuslattv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi
 https://tv-trtkurdi.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.now" group-title="Ulusal",Now TV
-https://nowtv-live-ad.ercdn.net/nowtv/playlist.m3u8?st=ePadfIsxqT3VEFKnBH3dxA&e=1780353948
