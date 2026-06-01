@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml,https://epg.pw/xmltv/epg_TR.xml"
 
 #EXTINF:-1 tvg-id="tr.24",24
 https://turkmedya-live.ercdn.net/tv24/tv24_1080p.m3u8
