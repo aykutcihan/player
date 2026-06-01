@@ -1409,3 +1409,8 @@ channels:
     name: "Med Muzik TV"
     sources:
       - staticschedule:tr.medmuziktv
+
+  tr.dosttv:
+    name: "Dost TV"
+    sources:
+      - dosttv:dosttv
