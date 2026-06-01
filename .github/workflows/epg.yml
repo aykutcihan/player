@@ -35,6 +35,9 @@ jobs:
           if exist src\__pycache__ rd /s /q src\__pycache__
           if exist src\adapters\__pycache__ rd /s /q src\adapters\__pycache__
 
+      - name: Token yenile
+        run: python src/refresh_tokens.py
+
       - name: EPG üret
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
