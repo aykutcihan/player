@@ -17,6 +17,7 @@ PLAYLIST = ROOT / "playlist.m3u"
 # tvg-id → YouTube video ID (canli yayin)
 YOUTUBE_CHANNELS = {
     "tr.ekoturk": "5ovykCkBWfU",
+    "tr.cnbce": "aZ3ycSbSYBA",
 }
 
 
