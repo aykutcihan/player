@@ -4,6 +4,9 @@
 #EXTINF:-1 tvg-id="tr.360",360
 # source: ercdn
 https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
+
+# ── YEREL ────────────────────────────
+
 #EXTINF:-1 tvg-id="tr.van65",65 Van
 # source: artidijital
 https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
