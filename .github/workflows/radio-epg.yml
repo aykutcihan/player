@@ -32,6 +32,9 @@ jobs:
       - name: Radyo EPG guncelle
         run: python src/refresh_radio_epg.py
 
+      - name: Karnaval sarki bilgisi
+        run: python src/karnaval_songs.py
+
       - name: epg-data reposuna push
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
@@ -48,6 +51,7 @@ jobs:
           git pull origin master
           cd ..
           if exist radios.xml copy /Y radios.xml _epg_data\radios.xml
+          if exist karnaval-songs.json copy /Y karnaval-songs.json _epg_data\karnaval-songs.json
           cd _epg_data
           git add -A
           git diff --cached --quiet
