@@ -39,30 +39,24 @@ jobs:
         run: python src/number1_songs.py
 
       - name: epg-data reposuna push
+        shell: powershell
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
+          $REPO_URL = "https://x-access-token:$env:EPG_DATA_TOKEN@github.com/aykutcihan/epg-data.git"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global credential.helper store
-          echo https://x-access-token:%EPG_DATA_TOKEN%@github.com > %USERPROFILE%\.git-credentials
-          if not exist _epg_data (
-            git clone https://github.com/aykutcihan/epg-data.git _epg_data
-          )
-          cd _epg_data
-          git remote set-url origin https://github.com/aykutcihan/epg-data.git
-          git pull origin master
-          cd ..
-          if exist radios.xml copy /Y radios.xml _epg_data\radios.xml
-          if exist karnaval-songs.json copy /Y karnaval-songs.json _epg_data\karnaval-songs.json
-          if exist number1-songs.json copy /Y number1-songs.json _epg_data\number1-songs.json
-          cd _epg_data
-          git add -A
-          git diff --cached --quiet
-          if errorlevel 1 (
-            git commit -m "Radyo EPG guncellendi"
-            git push origin master
-          ) else (
-            echo Degisiklik yok.
-          )
-          cd ..
+          if (Test-Path "_epg_data") { Remove-Item -Recurse -Force "_epg_data" }
+          git clone $REPO_URL _epg_data
+          if (Test-Path "radios.xml")            { Copy-Item "radios.xml"            "_epg_data/radios.xml" -Force }
+          if (Test-Path "karnaval-songs.json")   { Copy-Item "karnaval-songs.json"   "_epg_data/karnaval-songs.json" -Force }
+          if (Test-Path "number1-songs.json")    { Copy-Item "number1-songs.json"    "_epg_data/number1-songs.json" -Force }
+          git -C _epg_data add -A
+          $changed = git -C _epg_data diff --cached --quiet; $exit = $LASTEXITCODE
+          if ($exit -ne 0) {
+            git -C _epg_data commit -m "Radyo EPG guncellendi"
+            git -C _epg_data push origin master
+            Write-Host "Push basarili"
+          } else {
+            Write-Host "Degisiklik yok"
+          }
