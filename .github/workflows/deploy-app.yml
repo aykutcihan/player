@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: epg-data reposuna push
-        shell: pwsh
+        shell: powershell
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
