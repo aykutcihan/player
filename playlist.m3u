@@ -894,10 +894,22 @@ https://cdn501.kavuntv.net/halktv-master.m3u8?tkn=4cPslc-NIiYypZDBw5Upcw&tms=178
 
 #EXTINF:-1 tvg-id="tvku.hrlive",HR
 # source: tvkulesi
-https://cdn508.kavuntv.net/trthaber.m3u8?tkn=Wth3GGUP5NahOOwEY5WaVw&tms=1780439584&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-haber
-#EXTINF:-1 tvg-id="tr.ilketv" group-title="Haber",Ilke TV
-# source: diger
-https://stream.ilketv.com.tr/hls/ilkecanli.m3u8https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
+https://cdn900.tvkulesi.com/hrtv.m3u8?tkn=IaiXLxKx93HQC7Ka80QTgA&tms=1780437722&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hr-live
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d81bdb8a-5ba3-4eb9-bbae-f3b323c79f60.png",HR
+# source: tvkulesi
+https://cdn900.tvkulesi.com/hrtv.m3u8?tkn=IaiXLxKx93HQC7Ka80QTgA&tms=1780437722&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=hr-live
+#EXTINF:-1 tvg-id="tvku.htspor",HT Spor
+# source: tvkulesi
+https://cdn506.tvkulesi.com/htspor.m3u8?tkn=2ldZjFRTloukLLi5orZcNw&tms=1780437808&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ht-spor
+#EXTINF:-1 tvg-id="tvku.htspor",HT Spor
+# source: tvkulesi
+https://cdn506.tvkulesi.com/htspor.m3u8?tkn=2ldZjFRTloukLLi5orZcNw&tms=1780437808&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ht-spor
+#EXTINF:-1 tvg-id="tr.hunattv",Hunat TV
+# source: artidijital
+https://live.artidijitalmedya.com/artidijital_hunattv/hunattv/playlist.m3u8
+#EXTINF:-1 tvg-id="tr.ilketv",Ilke TV
+# source: ilketv
+https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/8f937d9e-b63c-4110-b734-fc6cfc11a6e8.png",KANAL-32 ISPARTA
 # source: socialsmart
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
@@ -905,9 +917,9 @@ https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
 # source: artidijital
 https://live.artidijitalmedya.com/artidijital_diyartv/diyartv/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.ilketv",İlke Tv
-# source: tvkulesi
-https://cdn900.kavuntv.net/ilketv.m3u8?tkn=LwzhLZC3hBcKw7cMeLcRcA&tms=1780439591&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ilke-tv
-#EXTINF:-1 tvg-id="tr.medyahabertv" group-title="Haber",Medya Haber TV
+# source: ilketv
+https://stream.ilketv.com.tr/hls/ilkecanli.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/d2c0564b-1b54-4309-bcdd-431f17f66e8d.jpg",ESENLER ŞEHİR İSTANBUL
 # source: diger
 https://yayin30.haber100.com/live/sehirekrani/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/dd542b6c-6472-4661-90af-016c86db6aca.png",KANAL-34 İSTANBUL
