@@ -58,18 +58,6 @@ https://cdn900.tvkulesi.com/aksarayart.m3u8?tkn=Oply9K2RzTOAmRCMYfNjcQ&tms=17804
 # source: artidijital
 https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="tr.aksutv2",Aksu TV
-# source: artidijital
-https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
-
-#EXTINF:-1 tvg-id="tr.aksutv2",Aksu Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/aksutv.m3u8?tkn=8edaxA5RGU0DU5souPVM6g&tms=1780442038&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksu-tv
-
-#EXTINF:-1 tvg-id="tr.aksutv2",Aksu Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/aksutv.m3u8?tkn=8edaxA5RGU0DU5souPVM6g&tms=1780442038&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksu-tv
-
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/e1e20ac4-fc50-4c80-87a8-c85f100f5cfb.png",ALANYA POSTA ANTALYA
 # source: yayin
 https://win1.yayin.com.tr/postatv/postatv/playlist.m3u8
@@ -77,14 +65,6 @@ https://win1.yayin.com.tr/postatv/postatv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.ibb.co/mHt7rQf/Tryerel.png",ALTAS ORDU
 # source: socialsmart
 https://edge1.socialsmart.tv/altastv/bant1/playlist.m3u8
-
-#EXTINF:-1 tvg-id="tvku.altastv",Altaş Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/altastv.m3u8?tkn=yQC8vh-dAwi-SPQPodxHWg&tms=1780442194&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=altas-tv
-
-#EXTINF:-1 tvg-id="tvku.altastv",Altaş Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/altastv.m3u8?tkn=yQC8vh-dAwi-SPQPodxHWg&tms=1780442194&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=altas-tv
 
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/2befe401-b51c-42f5-b750-a8e4d8b085a4.png",ANADOLU NET KAYSERİ
 # source: artidijital
