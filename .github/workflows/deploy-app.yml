@@ -34,7 +34,10 @@ jobs:
 
       - name: Build
         working-directory: app
-        run: npm run build
+        run: |
+          if (Test-Path "dist") { Remove-Item -Recurse -Force "dist" }
+          npm run build
+        shell: powershell
 
       - name: epg-data reposuna push
         shell: powershell
