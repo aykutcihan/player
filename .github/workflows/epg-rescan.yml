@@ -39,6 +39,9 @@ jobs:
       - name: TRT radyo URL guncelle
         run: python src/refresh_trt_radio.py
 
+      - name: Karnaval radyo guncelle
+        run: python src/refresh_karnaval.py
+
       - name: Degistiyse commitle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
