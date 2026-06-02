@@ -52,10 +52,13 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global credential.helper store
+          echo https://x-access-token:%EPG_DATA_TOKEN%@github.com > %USERPROFILE%\.git-credentials
           if not exist _epg_data (
-            git clone https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git _epg_data
+            git clone https://github.com/aykutcihan/epg-data.git _epg_data
           )
           cd _epg_data
+          git remote set-url origin https://github.com/aykutcihan/epg-data.git
           git pull origin master
           cd ..
           if exist epg.xml copy /Y epg.xml _epg_data\epg.xml
@@ -73,7 +76,9 @@ jobs:
           git diff --cached --quiet
           if errorlevel 1 (
             git commit -m "EPG guncellendi"
-            git push https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git master
+            git push origin master
+          ) else (
+            echo Degisiklik yok.
           )
           cd ..
 
