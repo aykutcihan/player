@@ -1025,3 +1025,42 @@ https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780407500/ei/
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780407501/ei/bYgearHcIt21svQPlayG2A8/ip/31.21.186.28/id/ztmY_cCtUl0.4/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-uhvcpaxoa-guhe.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AbKmrwrw3AlODCkxfEVgzQHGigHWKT8bJPclfIbWhlDAZzpPIkpODaSkLT-ZhnIsIAVuHXcZOVMkcqCd/spc/96Xrv5XA4LCvN5_KP1WdMSmqmDdtQ8KQsNAoSF-z9Bm4GA1moQ/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4726250/met/1780385901,/mh/2L/mm/44/mn/sn-uhvcpaxoa-guhe/ms/lva/mv/m/mvi/5/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,51565682/mt/1780385556/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIhAN3R0z1Kc0QNFikyWPSXD3J7K1qQEbJapdbpY3VTbQQcAiBu1BEZZDvR8t88Qs3pIe6FqP7Yv9YjCTjtIGWKfmnj-A%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgW5_7mBoKNVINH90d4w4rz7HUObNC-vIGPHFFcXSClKICIHjwcUCg8HNw5_KZGGrZZURuDqS6E1jFCm2b4QMZ7qro/playlist/index.m3u8
 #EXTINF:-1 tvg-id="tr.cicektaksi" group-title="Kultur",Çiçek Taksi TV (YT)
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780407714/ei/QokeasKeHMi56dsPyJLrqQk/ip/31.21.186.28/id/6SkIsrCIPfQ.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr5---sn-uhvcpaxoa-guhe.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/bui/AbKmrwo-M_tYv4Yjv-ncXNwdvJjOMniR6kDtkjgOAXyd7gCEuPPZmXvhIgEhLOjObfb25QnlC1GZCKrk/spc/96Xrv0n64rPA7ujorJ3FgrdrokhDko1_g8JANoo_QDUFdoprZg/vprv/1/reg/0/playlist_type/DVR/initcwndbps/4697500/met/1780386114,/mh/ym/mm/44/mn/sn-uhvcpaxoa-guhe/ms/lva/mv/m/mvi/5/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565116,51565682/mt/1780385794/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,playlist_duration,manifest_duration,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIgQdhM7wMyNfnidWLD7CkUGT9y1mV6BOF2cpc9jJJyptACIQDztC808lxbB5-iX0-hhsw1a5fUkD428ffzF9ccwgu_kg%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRAIgUmwlG2oRpv1wJ_bVLxOYybPTdQ9j2DOlWBNDrndu_H8CIEfA-BE1aojjMkHGE3aLHtsbKiMrtvoen7qZFY_z-Vr7/playlist/index.m3u8
+
+#EXTINF:-1,== RADYO ==
+#
+#EXTINF:-1 tvg-id="trt.radyo.radyo-1-radyo-programlari" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467415.jpeg" group-title="Radyo",Radyo 1: Radyo Programları
+https://trt.radyotvonline.net/trt_1.aac
+#EXTINF:-1 tvg-id="trt.radyo.trt-fm-turkce-pop" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467418.jpeg" group-title="Radyo",TRT FM: Türkçe Pop
+https://trt.radyotvonline.net/trt_fm.aac
+#EXTINF:-1 tvg-id="trt.radyo.radyo-3-klasik-caz-rock-pop-ve-dunya-muzigi" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467462.jpeg" group-title="Radyo",Radyo 3: Klasik, Caz, Rock, Pop ve Dünya Müziği
+https://rd-trtradyo3.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-nagme-turk-sanat-muzigi" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467465.jpeg" group-title="Radyo",TRT Nağme: Türk Sanat Müziği
+https://rd-trtnagme.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-turku-turk-halk-muzigi" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467466.jpeg" group-title="Radyo",TRT Türkü: Türk Halk Müziği
+https://rd-trtturku.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-radyo-haber" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12530424_0-0-2048-1536.jpeg" group-title="Radyo",TRT Radyo Haber
+https://trt.radyotvonline.net/trt_haber.aac
+#EXTINF:-1 tvg-id="trt.radyo.memleketim-fm" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467512.jpeg" group-title="Radyo",Memleketim FM
+https://radio-trtmemleketimfm.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.turkiyenin-sesi-radyosu" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467508.jpeg" group-title="Radyo",Türkiye'nin Sesi Radyosu
+https://radio-trttsr.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-radyo-kurdi" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467484.jpeg" group-title="Radyo",TRT Radyo Kurdî
+https://radio-trtradyo6.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.antalya-radyosu" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467521.jpeg" group-title="Radyo",Antalya Radyosu
+https://radio-trtantalya.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.cukurova-radyosu" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467486.jpeg" group-title="Radyo",Çukurova Radyosu
+https://radio-trtcukurova.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.erzurum-radyosu" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467502.jpeg" group-title="Radyo",Erzurum Radyosu
+https://radio-trterzurum.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.gap-diyarbakir-radyosu" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467503.jpeg" group-title="Radyo",GAP Diyarbakır Radyosu
+https://radio-trtgap.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trabzon-radyosu" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467470.jpeg" group-title="Radyo",Trabzon Radyosu
+https://radio-trttrabzon.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-vot-east" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467523.jpeg" group-title="Radyo",TRT VOT East
+https://radio-trtvoteast.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-vot-west" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467515.jpeg" group-title="Radyo",TRT VOT West
+https://radio-trtvotwest.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-vot-world-7547" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12474258_347-158-2684-2161.jpeg" group-title="Radyo",TRT VOT World
+https://radio-trtvotworld.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="trt.radyo.trt-arabi" tvg-logo="https://cdn-i.pr.trt.com.tr/trtdinle/12467526.jpeg" group-title="Radyo",TRT Arabi
+https://radio-trtarabi.medya.trt.com.tr/master.m3u8

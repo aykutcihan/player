@@ -36,6 +36,9 @@ jobs:
       - name: tvkulesi/kavuntv tum kategorileri tara ve guncelle
         run: python fetch_fast.py --update
 
+      - name: TRT radyo URL guncelle
+        run: python src/refresh_trt_radio.py
+
       - name: Degistiyse commitle
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
