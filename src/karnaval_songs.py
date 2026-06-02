@@ -38,12 +38,8 @@ def main():
         return
 
     result = {}
-    for key, song in data["data"].items():
-        try:
-            idx = int(key.replace("station_", ""))
-        except ValueError:
-            continue
-        station_id = id_map.get(idx)
+    for idx, (key, song) in enumerate(data["data"].items()):
+        station_id = id_map.get(idx + 1)
         if station_id:
             result[f"karnaval.{station_id}"] = {
                 "title":    song.get("title", ""),
