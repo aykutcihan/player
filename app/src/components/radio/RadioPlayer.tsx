@@ -74,11 +74,11 @@ export default function RadioPlayer({ channel }: Props) {
         <div className="text-center bg-white/5 rounded-xl px-6 py-3 w-full">
           {song.title && <div className="text-base font-medium text-white truncate">{song.title}</div>}
           {song.artist && <div className="text-sm text-white/50 mt-0.5 truncate">{song.artist}</div>}
-          {song.duration > 0 && (
+          {(song.duration ?? 0) > 0 && (
             <div className="mt-2 h-1 bg-white/10 rounded-full overflow-hidden">
               <div
                 className="h-full bg-red-500 rounded-full transition-all"
-                style={{ width: `${Math.min(100, (song.progress / song.duration) * 100)}%` }}
+                style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }}
               />
             </div>
           )}

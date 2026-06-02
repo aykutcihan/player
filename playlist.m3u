@@ -1673,3 +1673,33 @@ https://eustr75.mediatriple.net/hls/turkce_90lar/aac_hifi.m3u8
 #EXTINF:-1 tvg-id="number1.bestof" group-title="Radyo",Best Of Number1
 # source: numberone
 https://eustr75.mediatriple.net/Number1Media/29_Number1_BEST_OF.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.heart" tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2015/12/N1_Heart-1.png" group-title="Radyo",Number1 Heart
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/10_Number1_Heart.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.deephouse" tvg-logo="" group-title="Radyo",Number1 Deep House
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/09_Number1_Deephouse.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.disco" tvg-logo="" group-title="Radyo",Number1 Disco
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/28_Number1_Disco.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.greek" tvg-logo="" group-title="Radyo",Number1 Greek
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/13_Number1_Greek.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.rock" tvg-logo="" group-title="Radyo",Number1 Rock
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/15_Number1_Rock.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.turkrap" tvg-logo="" group-title="Radyo",Number1 Türk Rap
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/30_Number1_Turk_Rap.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.ask" tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2026/04/nr1ask-300x300.png" group-title="Radyo",Nr1 Aşk
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/11_Number1_Ask.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.petrol" tvg-logo="" group-title="Radyo",Petrol Ofisi Radyosu
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/32_Number1_Petrolofisi.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.turkslow" tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2015/12/N1_TRslow.png" group-title="Radyo",Number1 Türk Slow
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/03_Number1_Turk_Slow.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.ellerhavaya" tvg-logo="https://www.numberone.com.tr/wp-content/uploads/2016/09/N1_TR_EllerHavaya.png" group-title="Radyo",Number1 Türk Eller Havaya
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/05_Number1_Turk_Eller_Havaya.stream/playlist.m3u8

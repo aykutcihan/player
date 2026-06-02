@@ -35,6 +35,9 @@ jobs:
       - name: Karnaval sarki bilgisi
         run: python src/karnaval_songs.py
 
+      - name: Number1 sarki bilgisi
+        run: python src/number1_songs.py
+
       - name: epg-data reposuna push
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
@@ -52,6 +55,7 @@ jobs:
           cd ..
           if exist radios.xml copy /Y radios.xml _epg_data\radios.xml
           if exist karnaval-songs.json copy /Y karnaval-songs.json _epg_data\karnaval-songs.json
+          if exist number1-songs.json copy /Y number1-songs.json _epg_data\number1-songs.json
           cd _epg_data
           git add -A
           git diff --cached --quiet
