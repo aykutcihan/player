@@ -173,8 +173,27 @@ def write_xmltv(radios: dict, programmes: list) -> None:
     except Exception:
         pass
 
-    for prog in sorted(programmes, key=lambda p: (p.get("channel",""), p.get("start",""))):
-        tv.append(prog)
+    from xml.etree.ElementTree import Element as _Elem
+    def _sort_key(p):
+        if isinstance(p, _Elem):
+            return (p.get("channel", ""), p.get("start", ""))
+        return (getattr(p, "channel_id", ""), str(getattr(p, "start", "")))
+
+    for prog in sorted(programmes, key=_sort_key):
+        if isinstance(prog, _Elem):
+            tv.append(prog)
+        else:
+            # Programme nesnesi -> XML'e cevir
+            if not prog.stop:
+                continue
+            attrs = {
+                "start":   prog.start.strftime("%Y%m%d%H%M%S %z"),
+                "stop":    prog.stop.strftime("%Y%m%d%H%M%S %z"),
+                "channel": prog.channel_id,
+            }
+            p_el = SubElement(tv, "programme", attrib=attrs)
+            t = SubElement(p_el, "title", lang="tr")
+            t.text = prog.title or ""
 
     indent(tv, space="  ")
     ElementTree(tv).write(str(OUTPUT), encoding="utf-8", xml_declaration=True)
