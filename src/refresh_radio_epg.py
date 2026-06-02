@@ -88,12 +88,11 @@ def karnaval_programmes(stations: dict, songs: dict) -> list:
     now = datetime.now(tz=IST)
     window_end = now + timedelta(hours=4)
 
-    for idx, (song_key, song) in enumerate(songs.items()):
-        # station_1 -> index 0, non-numeric keys skip
+    for song_key, song in songs.items():
         try:
             num = int(song_key.replace("station_", "")) - 1
         except ValueError:
-            continue
+            continue  # station_5SC010_SO1 gibi sub-channel key'leri atla
         if num >= len(station_list):
             continue
         station = station_list[num]
