@@ -83,18 +83,26 @@ def main():
                 line_name_bare = re.sub(r'\s*\((tvku|kavu|v-tvku|v-kavu)\)\s*', '', line_name).strip()
                 line_clean = re.sub(r'[^a-z0-9]', '', line_name_bare.lower())
 
-                if line_clean == name_clean and i + 1 < len(lines):
-                    cur_url = lines[i + 1]
-                    if 'kavuntv.net' in cur_url or 'tvkulesi' in cur_url or slug in cur_url:
-                        if cur_url != new_url:
-                            lines[i + 1] = new_url
-                            updated += 1
+                if line_clean == name_clean:
+                    # # source: satirini atla, URL satirini bul
+                    j = i + 1
+                    while j < len(lines) and lines[j].startswith('#') and not lines[j].startswith('#EXTINF'):
+                        j += 1
+                    if j < len(lines) and lines[j].startswith('http'):
+                        cur_url = lines[j]
+                        if 'kavuntv.net' in cur_url or 'tvkulesi' in cur_url or slug in cur_url:
+                            if cur_url != new_url:
+                                lines[j] = new_url
+                                updated += 1
 
             # tvg-id = tvku.slug veya kavu.slug olan satirlari da guncelle
             for i, line in enumerate(lines):
                 if f'tvg-id="tvku.{slug}"' in line or f'tvg-id="kavu.{slug}"' in line:
-                    if i + 1 < len(lines) and lines[i + 1] != new_url:
-                        lines[i + 1] = new_url
+                    j = i + 1
+                    while j < len(lines) and lines[j].startswith('#') and not lines[j].startswith('#EXTINF'):
+                        j += 1
+                    if j < len(lines) and lines[j].startswith('http') and lines[j] != new_url:
+                        lines[j] = new_url
                         updated += 1
 
             print(f"  ok  {display_name}")
