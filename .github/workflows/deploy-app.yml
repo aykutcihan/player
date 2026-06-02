@@ -48,18 +48,18 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Her seferinde temiz clone
-          if (Test-Path "_epg_data") { Remove-Item -Recurse -Force "_epg_data" }
-          git clone $REPO_URL _epg_data
+          # gh-pages branch'ini clone et
+          if (Test-Path "_epg_ghpages") { Remove-Item -Recurse -Force "_epg_ghpages" }
+          git clone -b gh-pages $REPO_URL _epg_ghpages
 
           # Dist dosyalarini kopyala (.git hariç)
-          Get-ChildItem app/dist | Copy-Item -Destination _epg_data -Recurse -Force
+          Get-ChildItem app/dist | Copy-Item -Destination _epg_ghpages -Recurse -Force
 
-          git -C _epg_data add -A
-          $diff = git -C _epg_data diff --cached --quiet; $changed = $LASTEXITCODE
+          git -C _epg_ghpages add -A
+          $diff = git -C _epg_ghpages diff --cached --quiet; $changed = $LASTEXITCODE
           if ($changed -ne 0) {
-            git -C _epg_data commit -m "App guncellendi"
-            git -C _epg_data push origin master
+            git -C _epg_ghpages commit -m "App guncellendi"
+            git -C _epg_ghpages push origin gh-pages
             Write-Host "Push basarili"
           } else {
             Write-Host "Degisiklik yok"
