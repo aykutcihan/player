@@ -45,12 +45,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          if (-not (Test-Path "_epg_data")) {
-            git clone $REPO_URL _epg_data
-          } else {
-            git -C _epg_data remote set-url origin $REPO_URL
-            git -C _epg_data pull origin master
-          }
+          # Her seferinde temiz clone
+          if (Test-Path "_epg_data") { Remove-Item -Recurse -Force "_epg_data" }
+          git clone $REPO_URL _epg_data
 
           # Dist dosyalarini kopyala (.git hariç)
           Get-ChildItem app/dist | Copy-Item -Destination _epg_data -Recurse -Force
