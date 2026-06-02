@@ -1707,7 +1707,7 @@ https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780442540/ei/
 #EXTINF:-1 tvg-id="tr.trtbelgesel" group-title="Belgesel",TRT Belgesel
 # source: tvkulesi
 https://cdn900.tvkulesi.com/trtbelgesel.m3u8?tkn=35gPpcKrGfPXIttS9cUeRw&tms=1780436784&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-belgesel
-#EXTINF:-1 tvg-id="tr.teleon" group-title="Yerel",Tele On
+#EXTINF:-1 tvg-id="tr.teleon" group-title="Ulusal",Tele On
 # source: rumble
 https://hugh.cdn.rumble.cloud/live/t5qc33px/live-hls/rzg8-y49r/chunklist_i1_DVR.m3u8
 #EXTINF:-1 tvg-id="tr.dmax" group-title="Belgesel",D Max
