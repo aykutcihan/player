@@ -2,11 +2,11 @@
 
 # ── ULUSAL (44 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.trt1" group-title="Ulusal",TRT 1
-# source: diger
-https://2i4.d72577a9dd0ec71.cfd/trt1/mono.m3u8
+# source: trt
+https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trt1" group-title="Ulusal",TRT 1
-# source: kavuntv
-https://cdn506.kavuntv.net/trt1.m3u8?tkn=a1lSX1aT7OFY345ra8CLXA&tms=1780398133&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-1
+# source: trt
+https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.showtv" group-title="Ulusal",Show TV
 # source: ciner
 https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558
