@@ -1556,3 +1556,7 @@ channels:
     name: "Slow Karadeniz"
     sources:
       - staticschedule:tr.slowkaradeniz
+  tr.kanal6:
+    name: "Kanal 6"
+    sources:
+      - staticschedule:tr.kanal6

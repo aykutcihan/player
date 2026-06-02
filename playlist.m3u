@@ -524,8 +524,8 @@ https://yayin30.haber100.com/live/finansturk/chunklist_w377520896.m3u8
 # source: ercdn
 https://trkvz-live.ercdn.net/aparahd/aparahd.m3u8?st=u27fChT8b9fjpfQ2P7jt8g&e=1780430131
 #EXTINF:-1 tvg-id="tr.krttv" group-title="Haber",KRT TV
-# source: artidijital
-https://live.artidijitalmedya.com/artidijital_grt/grt/playlist.m3u8
+# source: youtube
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780444112/ei/cBcfapjZEuuAi9oPosaBmAQ/ip/31.21.186.28/id/LBffKHlCx8U.1/itag/96/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D137/rqh/1/hls_chunk_host/rr7---sn-uhvcpaxoa-bg9e.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwpCs3ooLCR0HPxURDV5nOVHgdUo3_o3VkCCiu7Llm-w_WaadlQ7LUm8U3rqWpV3qoGVYI7ctvxa/spc/96XrvzLERLIFLZ6JGl6mWU3CKpucnOWZY6Wsl6IAg82z8gtsQg/vprv/1/reg/0/playlist_type/DVR/initcwndbps/3857500/met/1780422512,/mh/B3/mm/44/mn/sn-uhvcpaxoa-bg9e/ms/lva/mv/m/mvi/7/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565681/mt/1780422046/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRgIhAPEsthk-A71_kuPAVbaeIix0ZbOj0ghFRzbl5U_oqd-oAiEAxOGGLO61m6XGB8r-Al2BW89J6nk8MnNPjLYOGEi8iho%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/APaTxxMwRgIhAPYkMBBNmOLJw_4_VZH8XPCFpQ0BJ85Jk7S8STfvFJhgAiEAp2PofsuzJevHth2UADxtftfHPuYZCzXHRwJ1-COPtbs%3D/playlist/index.m3u8
 
 # ── SPOR (40 kanal) ────────────────────────────
 #EXTINF:-1 tvg-id="tr.aspor" group-title="Spor",A Spor
@@ -1719,6 +1719,9 @@ https://cdn503.tvkulesi.com/tlctv.m3u8?tkn=up60IfqWwKKwJzTeG3WGNw&tms=1780436790
 #EXTINF:-1 tvg-id="tr.tytturk" group-title="Ulusal",TYT Türk
 # source: ercdn
 https://tytturk-live.ercdn.net/tytturk/tytturk_1080p.m3u8
-#EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Ulusal",Bizimev TV (YT)
+#EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Belgesel",Bizimev TV (YT)
 # source: youtube
 https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780443482/ei/-hQfav2JKcvV6dsPp760gQE/ip/31.21.186.28/id/GRLd2oYZFnM.1/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr2---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwrlSf02QN8PUjBBeJ7o1EpTcjXsBUgpZy7oKx52p30U8ywRWru-1uMjc-SKKQ32d-fAC8hskwlH/spc/96Xrv333shzFSIuR9CvUrOt6D3jaIbTn-2UBNBBrR_nW8MKs0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/3713750/met/1780421882,/mh/cX/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/2/pcm2cms/yes/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565682/mt/1780421324/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIhAPOMbB_mzX_wuOiee2117FZYzW1LvqnGAw28zuLQRzFGAiA0NQGXN9SwAwr8HZhSDbGMgQPC_xtlr7MCK_EahPbzTQ%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pcm2cms,pl,rms/lsig/APaTxxMwRQIhAOCBlxY70SzritLBDx9zUkTiM0iQMxrunXDphbP4BXr_AiAt0dBSVoGBjgzoP1jnpXWWkxYrpeTGRYTNe3JucP-PrQ%3D%3D/playlist/index.m3u8
+#EXTINF:-1 tvg-id="tr.kanal6" group-title="Yerel",Kanal 6
+# source: yayin
+https://cdn4.yayin.com.tr/channel6tv/index.m3u8
