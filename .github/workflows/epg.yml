@@ -46,6 +46,9 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python src/main.py
 
+      - name: Radyo EPG üret
+        run: python src/radios.py
+
       - name: Değiştiyse commit'le
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -54,6 +57,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:%GITHUB_TOKEN%@github.com/aykutcihan/epg-generator.git
           if exist epg.xml git add epg.xml
+          if exist radios.xml git add radios.xml
           if exist cache\tmdb.json git add cache\tmdb.json
           if exist playlist.m3u git add playlist.m3u
           if exist films.m3u git add films.m3u
