@@ -18,6 +18,8 @@ PLAYLIST = ROOT / "playlist.m3u"
 YOUTUBE_CHANNELS = {
     "tr.ekoturk": "5ovykCkBWfU",
     "tr.cnbce": "aZ3ycSbSYBA",
+    "tr.seksenler": "qGYlF1MiMxw",
+    "tr.leylaileMecnun": "3nlND4audLg",
 }
 
 
