@@ -1,6 +1,6 @@
 #EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml,https://raw.githubusercontent.com/aykutcihan/epg-generator/master/radios.xml,https://epg.pw/xmltv/epg_TR.xml"
 
-# ── ULUSAL (44 kanal) ────────────────────────────
+# ── ULUSAL ────────────────────────────
 #EXTINF:-1 tvg-id="tr.trt1" group-title="Ulusal",TRT 1
 # source: kavuntv
 https://cdn504.kavuntv.net/trt1.m3u8?tkn=3MLkUycFh3oaUo5cMkZaLw&tms=1780436499&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-1
