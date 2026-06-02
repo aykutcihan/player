@@ -394,7 +394,7 @@ https://cdn900.tvkulesi.com/kanalavrupa.m3u8?tkn=tupSGF1HvzWvxxOnKRNTjw&tms=1780
 #EXTINF:-1 tvg-id="tr.trtarabi" group-title="Avrupa",TRT Arabi
 # source: trt
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Avrupa",TRT Avaz
+#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Belgesel",TRT Avaz
 # source: trt
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi
@@ -415,7 +415,7 @@ http://cdn-gurbet24.yayin.com.tr/gurbet24/gurbet24/playlist.m3u8
 #EXTINF:-1 tvg-id="tr.trtarabi" group-title="Avrupa",TRT Arabi
 # source: trt
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Avrupa",TRT Avaz
+#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Belgesel",TRT Avaz
 # source: trt
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.trtkurdi" group-title="Avrupa",TRT Kurdi
@@ -552,13 +552,13 @@ https://2i4.d72577a9dd0ec71.cfd/trtspor/mono.m3u8
 https://2i4.d72577a9dd0ec71.cfd/trtspor2/mono.m3u8
 
 # ── KULTUR (40 kanal) ────────────────────────────
-#EXTINF:-1 tvg-id="tr.trt2" group-title="Kultur",TRT 2
+#EXTINF:-1 tvg-id="tr.trt2" group-title="Belgesel",TRT 2
 # source: trt
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="tr.gzttv" group-title="Kultur",Gzt TV
 # source: diger
 https://gzttv-live.lg.mncdn.com/gzttv/gzttv/playlist.m3u8
-#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Kultur",TRT Avaz
+#EXTINF:-1 tvg-id="tr.trtavaz" group-title="Belgesel",TRT Avaz
 # source: trt
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 
@@ -1710,3 +1710,6 @@ https://cdn900.kavuntv.net/trtbelgesel.m3u8?tkn=8zeK9AeJqqKgLcHh8vtS3g&tms=17804
 #EXTINF:-1 tvg-id="tr.teleon" group-title="Yerel",Tele On
 # source: rumble
 https://hugh.cdn.rumble.cloud/live/t5qc33px/live-hls/rzg8-y49r/chunklist_i1_DVR.m3u8
+#EXTINF:-1 tvg-id="tr.dmax" group-title="Belgesel",D Max
+# source: tvkulesi
+https://cdn501.tvkulesi.com/dmax.m3u8?tkn=y7jIO4zwpWBjSCjpZhYhzA&tms=1780435651&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=0fc69ed5916eabfbec7ec2d5d6ad7ddf&ch=d-max
