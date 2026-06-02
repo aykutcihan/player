@@ -8,8 +8,8 @@ import warnings
 from datetime import datetime, timezone
 from dateutil import tz
 
-from .base import BaseAdapter
-from ..models import Programme
+from adapters.base import BaseAdapter
+from models import Programme
 
 warnings.filterwarnings("ignore")
 IST = tz.gettz("Europe/Istanbul")
