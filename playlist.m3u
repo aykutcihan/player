@@ -4,15 +4,9 @@
 #EXTINF:-1 tvg-id="tr.360",360
 # source: ercdn
 https://turkmedya-live.ercdn.net/tv360/tv360_720p.m3u8
-# ── YEREL ────────────────────────────
 
-#EXTINF:-1 tvg-id="tr.van65",65 Van
-# source: artidijital
-https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
+# ── HABER ────────────────────────────
 
-#EXTINF:-1,== RADYO ==
-# source: diger
-#
 
 #EXTINF:-1 tvg-id="tr.ahaber",A Haber
 # source: tvkulesi
@@ -33,6 +27,17 @@ https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780439070/ei/
 #EXTINF:-1 tvg-id="tvku.a2tv",A2 Tv
 # source: tvkulesi
 https://cdn506.tvkulesi.com/a2tv.m3u8?tkn=IjSfd5GGzCEa2snNRLFgyg&tms=1780441913&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a2-tv
+
+# ── YEREL ────────────────────────────
+
+#EXTINF:-1 tvg-id="tr.van65",65 Van
+# source: artidijital
+https://live.artidijitalmedya.com/artidijital_van65/van65/playlist.m3u8
+
+#EXTINF:-1,== RADYO ==
+# source: diger
+#
+
 
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/acbd241d-4a57-47b0-997c-d82e6f869e98.png",ADIYAMAN MERCAN
 # source: artidijital
