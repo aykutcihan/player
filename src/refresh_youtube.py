@@ -83,8 +83,13 @@ def main():
 
         prev = updated
         for i, line in enumerate(lines):
-            if f'tvg-id="{tvg_id}"' in line and i + 1 < len(lines):
-                lines[i + 1] = stream_url
+            if f'tvg-id="{tvg_id}"' in line:
+                # Sonraki URL satırını bul (# source satırını atla)
+                j = i + 1
+                while j < len(lines) and lines[j].startswith('#'):
+                    j += 1
+                if j < len(lines) and lines[j].startswith('http'):
+                    lines[j] = stream_url
                 updated += 1
 
         if updated > prev:
