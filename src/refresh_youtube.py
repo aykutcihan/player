@@ -20,6 +20,10 @@ YOUTUBE_CHANNELS = {
     "tr.cnbce": "aZ3ycSbSYBA",
     "tr.seksenler": "qGYlF1MiMxw",
     "tr.leylaileMecnun": "3nlND4audLg",
+    "tr.yedinumara": "rS5dHYQsSxs",
+    "tr.kemalsunal": "mq4GiHzxZwk",
+    "tr.kralakustik": "O_-NjHABJIg",
+    "tr.tgrtbelgesel": "32y7IEtD5OU",
 }
 
 
