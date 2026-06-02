@@ -1,6 +1,33 @@
 # Mimari ve Kod Yapısı
 
-## main.py — Ana Akış
+## Sistem Mimarisi
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                  GitHub Actions Runner                   │
+│                    (Ev Makinesi)                        │
+│                                                         │
+│  epg.yml (saatlik)                                      │
+│    ├── refresh_tokens.py   → Ciner CDN token yenile     │
+│    ├── refresh_youtube.py  → YouTube HLS URL yenile     │
+│    └── main.py             → epg.xml üret               │
+│                                                         │
+│  epg-streams.yml (06:00 & 18:00)                        │
+│    ├── refresh_tvku.py     → 107 kanal tvkulesi URL     │
+│    └── refresh_films.py    → Destanfilm film scraper    │
+│                                                         │
+│  epg-rescan.yml (ayın 1'i)                              │
+│    └── fetch_fast.py --update → Tüm kanalları güncelle  │
+└─────────────────────────────────────────────────────────┘
+         │                          │
+         ▼                          ▼
+      epg.xml                  playlist.m3u
+      films.m3u            (GitHub'a commit)
+```
+
+---
+
+## main.py — EPG Ana Akışı
 
 ```python
 # 1. Ayarları yükle
@@ -10,47 +37,92 @@ channels = load_yaml("config/channels.yaml")
 # 2. Her kanal için
 for tvg_id, channel_config in channels.items():
     per_source = []
-    
-    # 3. Her source'u dene
+
+    # 3. Her EPG kaynağını dene
     for source in channel_config.sources:
         adapter = registry[prefix]
-        progs = adapter.fetch(source_id, tvg_id)  # HTTP isteği
+        progs = adapter.fetch(source_id, tvg_id)
         if progs:
             per_source.append(progs)
-    
+
     # 4. Kaynakları birleştir
     if per_source:
         merged = merge_sources(per_source)
     else:
-        merged = placeholder_programmes(tvg_id)  # Boş bloklar
-    
+        merged = placeholder_programmes(tvg_id)
+
     all_progs.extend(merged)
 
-# 5. XML yaz
+# 5. XMLTV yaz
 write_xmltv(channels, all_progs)
 ```
 
 ---
 
-## merge.py — Kaynak Birleştirme
+## merge.py — EPG Kaynak Birleştirme
 
 İki aşamalı birleştirme:
 
 **Aşama 1: Boşluk Doldurma**
 ```
-TV+ programları:  [08:00-10:00] [10:00-12:00]        [14:00-16:00]
-Tivibu programları:                         [12:00-14:30]
-Sonuç:            [08:00-10:00] [10:00-12:00] [12:00-14:00] [14:00-16:00]
-                                              ↑ Kırpıldı (14:00'da biter)
+TV+ programları:     [08:00-10:00] [10:00-12:00]        [14:00-16:00]
+Türksat programları:                          [12:00-14:30]
+Sonuç:               [08:00-10:00] [10:00-12:00] [12:00-14:00] [14:00-16:00]
+                                               ↑ Kırpıldı (14:00'da biter)
 ```
 
 **Aşama 2: Alan Zenginleştirme**
 ```
-TV+ prog: title="Film X" desc=None   category=None
-Tivibu:   title="Film X" desc="..." category="Film"
-Sonuç:    title="Film X" desc="..." category="Film"
-          ↑ Birincil kazanır, boş alanlar doldurulur
+TV+ prog:  title="Film X" desc=None    category=None
+Tivibu:    title="Film X" desc="..."   category="Film"
+Sonuç:     title="Film X" desc="..."   category="Film"
+                           ↑ Boş alanlar ikincil kaynaktan doldurulur
 ```
+
+---
+
+## refresh_tvku.py — tvkulesi Stream Yenileme
+
+```python
+# channel_slugs.json'dan 107 kanal okur
+# Her kanal için:
+#   1. tvkulesi.com/SLUG sayfasını aç
+#   2. m3u8 URL'ini yakala (Playwright network intercept)
+#   3. playlist.m3u'daki URL'i güncelle
+```
+
+`channel_slugs.json` — tvkulesi slug eşleşmeleri:
+```json
+{
+  "TRT 1": "trt1",
+  "Show TV": "showtv",
+  "A Haber": "a-haber",
+  ...
+}
+```
+
+---
+
+## refresh_films.py — Film Scraper
+
+```python
+# 1. destanfilm.com/film/en-son-cikan-filmler/ tara
+# 2. Her film için:
+#    a. Film sayfasından embed URL'i çek (vidmoly veya YouTube)
+#    b. vidmoly → Playwright ile m3u8 yakala
+#    c. YouTube → yt-dlp ile HLS URL al
+# 3. cache/films_db.json'a kaydet
+# 4. films.m3u yaz
+```
+
+---
+
+## fetch_fast.py — Aylık Toplu Tarama
+
+tvkulesi.com ve kavuntv.net'teki tüm kategorileri tarar:
+- `ulusal, haber, spor, cocuk, dini, yerel`
+- `--update` parametresiyle mevcut URL'leri de günceller
+- İlerlemeyi `fetch_progress.json`'a kaydeder (kesilirse devam eder)
 
 ---
 
@@ -58,10 +130,6 @@ Sonuç:    title="Film X" desc="..." category="Film"
 
 ```python
 IST = tz.gettz("Europe/Istanbul")  # +0300, DST yok
-
-def ist(naive_dt):
-    """Naive datetime'i Istanbul timezone'a çevirir."""
-    return naive_dt.replace(tzinfo=IST)
 
 def derive_stops(programmes):
     """Bitiş saati olmayan programlara stop ekler:
@@ -72,140 +140,14 @@ def derive_stops(programmes):
 
 ---
 
-## xmltv.py — XMLTV Çıktısı
-
-Deterministic (kararlı) çıktı üretir — aynı giriş, her zaman aynı XML.
-Bu sayede `git diff` gerçek değişiklikleri gösterir, commit gereksiz yapılmaz.
-
-```xml
-<tv generator-info-name="kisisel-epg">
-  <channel id="tr.startv">
-    <display-name>Star TV</display-name>
-  </channel>
-  <programme start="20260531090000 +0300" stop="20260531110000 +0300" channel="tr.startv">
-    <title lang="tr">Aramızda Kalsın</title>
-    <desc lang="tr">...</desc>
-    <category lang="tr">Dizi</category>
-    <date>2025</date>
-    <credits><actor>Ali Vefa</actor></credits>
-  </programme>
-</tv>
-```
-
----
-
-## enrich_tmdb.py — Film Zenginleştirme
-
-TMDB API'den film bilgisi çeker (isteğe bağlı):
-- Film kategorisindeki programlar için açıklama ekler/geliştirir
-- Oyuncu bilgisi ekler
-- Yapım yılı ekler
-- `cache/tmdb.json` dosyasına kaydeder (tekrar API çağrısını önler)
-
-TMDB_API_KEY ortam değişkeni yoksa sessizce atlanır.
-
----
-
-## placeholder.py — Boş Program Üretici
-
-Herhangi bir kaynaktan veri gelmezse:
-
-```python
-TEXT = "Yayın akışı bilgisi mevcut değil"
-
-# 7 gün, 2 saatlik bloklar
-blocks = (24 // 2) * 7  # = 84 blok
-```
-
-Samsung TV, boş program yerine bu metni gösterir.
-
----
-
-## Önbellekli adaptörler (cache pattern)
-
-Tivibu ve tvyayinakisi tek bir HTTP isteğiyle tüm kanalları yükler.
-Her `fetch()` çağrısı bu önbellekten okur — site binlerce kez sorgulanmaz.
-
-```python
-class TivibuAdapter(BaseAdapter):
-    def __init__(self):
-        self._cache = {}    # {ch_id: [Programme, ...]}
-        self._loaded = False
-
-    def fetch(self, source_id, channel_id):
-        if not self._loaded:
-            self._fill_cache()  # İlk çağrıda TÜM kanalları yükle
-        return self._cache.get(source_id, [])
-
-    def _fill_cache(self):
-        # 11 kategori sayfası yükle → 113 kanal
-        ...
-```
-
----
-
 ## Bağımlılıklar
 
 | Paket | Kullanım |
 |-------|----------|
-| `requests` | HTTP istekleri (TV+, tvyayinakisi, digiturkburada) |
+| `requests` | HTTP istekleri |
 | `beautifulsoup4` | HTML parse |
-| `lxml` | BS4 için hızlı HTML parser |
-| `PyYAML` | channels.yaml ve settings.yaml okuma |
-| `python-dateutil` | Tarih/saat parse (TV+ ISO string'leri için) |
-| `playwright` | JavaScript gerektiren siteler (Tivibu) |
-
----
-
-## settings.yaml açıklaması
-
-```yaml
-timezone: "Europe/Istanbul"    # Sabit +0300, yaz saati yok
-tz_offset: "+0300"             # XMLTV'de kullanılan offset
-
-window_days: 7                 # Placeholder kaç günlük üretilsin
-
-min_gap_minutes: 2             # Bu kadardan küçük boşlukları doldurma
-overlap_tolerance_minutes: 5   # Alan zenginleştirmede eşleşme toleransı
-
-tmdb:
-  enabled: true
-  api_key_env: "TMDB_API_KEY"  # Secret adı
-  language: "tr-TR"
-  cache_path: "cache/tmdb.json"
-  film_categories: ["Film", "Sinema", "Movie"]
-  min_desc_len: 40             # Bundan kısa açıklama "zayıf" sayılır
-  skip_desc_sources: ["tvplus"] # TV+'ın açıklaması zaten yeterli
-  max_actors: 3
-
-output_path: "epg.xml"
-generator_name: "kisisel-epg"
-```
-
----
-
-## GitHub Actions Workflow (.github/workflows/epg.yml)
-
-```yaml
-on:
-  schedule:
-    - cron: "0 * * * *"   # Her saat başı (UTC)
-  workflow_dispatch: {}     # Elle tetikleme
-
-jobs:
-  build:
-    runs-on: self-hosted    # Ev makinesi runner'ı
-    env:
-      PYTHONUTF8: "1"       # Windows Türkçe karakter sorunu için
-    defaults:
-      run:
-        shell: cmd          # Windows cmd.exe
-
-    steps:
-      - uses: actions/checkout@v4
-      - pip install -r requirements.txt
-      - playwright install chromium  # Tivibu için
-      - mkdir cache          # İlk kurulumda cache klasörü
-      - python src/main.py   # Ana script
-      - git commit + push    # Değiştiyse
-```
+| `lxml` | BS4 için hızlı parser |
+| `PyYAML` | channels.yaml okuma |
+| `python-dateutil` | Tarih/saat parse |
+| `playwright` | JS gerektiren siteler (Tivibu, tvkulesi) |
+| `yt-dlp` | YouTube HLS stream URL alma |

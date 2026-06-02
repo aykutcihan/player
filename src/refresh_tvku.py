@@ -59,11 +59,8 @@ def main():
         page = ctx.new_page()
 
         for display_name, slug in slug_map.items():
-            # Once tvkulesi dene
+            # Sadece tvkulesi
             streams = fetch_stream(page, f"{TVKU_BASE}/{slug}")
-            # Bulamazsa kavuntv dene
-            if not streams:
-                streams = fetch_stream(page, f"{KAVU_BASE}/{slug}")
 
             if not streams:
                 print(f"  !! {display_name} ({slug}) alinamadi")

@@ -24,7 +24,12 @@
       "PowerShell($f = \"C:\\\\Users\\\\Aykut\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Dev-stepup-epg-generator\\\\5fc228f0-9316-4f26-8ca7-7b1d2fc84ab1\\\\tasks\\\\ba95fv6rg.output\"; \\(Get-Item $f\\).Length; Get-Content $f -Raw)",
       "Bash(python fetch_fast.py)",
       "PowerShell(Get-Process python)",
-      "PowerShell(Stop-Process -Force 2>&1)"
+      "PowerShell(Stop-Process -Force 2>&1)",
+      "Bash(python -c \"print\\(open\\('tvku_kavu_kanallar.txt', encoding='utf-8'\\).read\\(\\).count\\(chr\\(10\\)\\)+1\\)\")",
+      "Bash(python -c \"print\\(open\\('tvku_kavu_kanallar.txt',encoding='utf-8'\\).read\\(\\).count\\(chr\\(10\\)\\)+1, 'kanal'\\)\")",
+      "WebFetch(domain:www.fullhdfilmizlesene.life)",
+      "Bash(python)",
+      "Bash(python src/refresh_tvku.py)"
     ]
   }
 }
