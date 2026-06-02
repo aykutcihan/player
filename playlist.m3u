@@ -35,21 +35,10 @@ https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780439070/ei/
 # source: tvkulesi
 https://cdn506.tvkulesi.com/a2tv.m3u8?tkn=IjSfd5GGzCEa2snNRLFgyg&tms=1780441913&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=a2-tv
 
-#EXTINF:-1 tvg-id="tr.kibrisadatv",Ada Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/adatv.m3u8?tkn=5gUXrMXOr_EGmtzohPWhrQ&tms=1780441988&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ada-tv
-#EXTINF:-1 tvg-id="tvku.adatv",Ada Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/adatv.m3u8?tkn=5gUXrMXOr_EGmtzohPWhrQ&tms=1780441988&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ada-tv
-#EXTINF:-1 tvg-id="tr.kibrisadatv",Ada Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/adatv.m3u8?tkn=5gUXrMXOr_EGmtzohPWhrQ&tms=1780441988&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ada-tv
-#EXTINF:-1 tvg-id="tvku.adatv",Ada Tv
-# source: tvkulesi
-https://cdn900.tvkulesi.com/adatv.m3u8?tkn=5gUXrMXOr_EGmtzohPWhrQ&tms=1780441988&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=ada-tv
 #EXTINF:-1 tvg-id="" tvg-logo="http://assets.tvcdn.net/acbd241d-4a57-47b0-997c-d82e6f869e98.png",ADIYAMAN MERCAN
 # source: artidijital
 https://live.artidijitalmedya.com/artidijital_mercantv/mercantv/chunks.m3u8
+
 #EXTINF:-1 tvg-id="" tvg-logo="",AFRO TURK
 # source: socialsmart
 https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
@@ -59,9 +48,11 @@ https://edge1.socialsmart.tv/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="https://i.imgur.com/eXErSv0.png",AFYONKARAHİSAR KANAL 3
 # source: artidijital
 https://live.artidijitalmedya.com/artidijital_kanal3/kanal3/chunks.m3u8
+
 #EXTINF:-1 tvg-id="tr.akittv",Akit TV
 # source: kavuntv
 https://cdn900.kavuntv.net/akittv.m3u8?tkn=RIU2-mHhrI95Io2V6
+
 #EXTINF:-1 tvg-id="tvku.aksarayarttv",Aksaray ART Tv
 # source: tvkulesi
 https://cdn900.tvkulesi.com/aksarayart.m3u8?tkn=Oply9K2RzTOAmRCMYfNjcQ&tms=1780442167&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=aksaray-art-tv
