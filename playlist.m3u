@@ -1713,3 +1713,6 @@ https://hugh.cdn.rumble.cloud/live/t5qc33px/live-hls/rzg8-y49r/chunklist_i1_DVR.
 #EXTINF:-1 tvg-id="tr.dmax" group-title="Belgesel",D Max
 # source: tvkulesi
 https://cdn501.tvkulesi.com/dmax.m3u8?tkn=y7jIO4zwpWBjSCjpZhYhzA&tms=1780435651&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=0fc69ed5916eabfbec7ec2d5d6ad7ddf&ch=d-max
+#EXTINF:-1 tvg-id="tr.tlc" group-title="Belgesel",TLC
+# source: tvkulesi
+https://cdn508.tvkulesi.com/tlctv.m3u8?tkn=rCbdXJZI4q7uPTlxMxZB8g&tms=1780435748&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=0fc69ed5916eabfbec7ec2d5d6ad7ddf&ch=tlc-tv
