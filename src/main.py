@@ -23,6 +23,7 @@ from normalize import derive_stops, ist
 from enrich_tmdb import TMDbEnricher
 from placeholder import placeholder_programmes
 from xmltv import write_xmltv
+from json_epg import write_json_epg
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -114,6 +115,9 @@ def main():
     out = ROOT / settings.get("output_path", "epg.xml")
     out.write_text(xml, "utf-8")
     print(f"\nYazıldı: {out}  ({len(channels)} kanal, {len(all_progs)} program)")
+
+    # Kanal bazli JSON EPG
+    write_json_epg(channels, all_progs, ROOT / "epg")
 
 
 if __name__ == "__main__":
