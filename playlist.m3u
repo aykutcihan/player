@@ -1652,3 +1652,24 @@ https://playerservices.streamtheworld.com/api/livestream-redirect/SC009_SO1.mp3
 #EXTINF:-1 tvg-id="karnaval.362" tvg-logo="https://mediacdns.karnaval.com/media/station_media/362/logos/small_logo.png?v=170725021316" group-title="Radyo",K-Pop
 # source: karnaval
 https://playerservices.streamtheworld.com/api/livestream-redirect/KPOP.mp3
+#EXTINF:-1 tvg-id="number1.fm" group-title="Radyo",Number1 FM
+# source: numberone
+https://eustr75.mediatriple.net//Number1Media/01_Number1Fm.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.dance" group-title="Radyo",Number1 Dance
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/06_Number1_Dance.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.lounge" group-title="Radyo",Number1 Lounge
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/12_Number1_Lounge.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.slow" group-title="Radyo",Number1 Slow
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/16_Number1_Slow.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.damar" group-title="Radyo",Number1 Türk Damar
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/20_Number1_Turk_Damar.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="number1.90lar" group-title="Radyo",Number1 Türk 90lar
+# source: numberone
+https://eustr75.mediatriple.net/hls/turkce_90lar/aac_hifi.m3u8
+#EXTINF:-1 tvg-id="number1.bestof" group-title="Radyo",Best Of Number1
+# source: numberone
+https://eustr75.mediatriple.net/Number1Media/29_Number1_BEST_OF.stream/playlist.m3u8
