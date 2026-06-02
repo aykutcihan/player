@@ -1716,3 +1716,9 @@ https://cdn501.tvkulesi.com/dmax.m3u8?tkn=y7jIO4zwpWBjSCjpZhYhzA&tms=1780435651&
 #EXTINF:-1 tvg-id="tr.tlc" group-title="Belgesel",TLC
 # source: tvkulesi
 https://cdn508.tvkulesi.com/tlctv.m3u8?tkn=rCbdXJZI4q7uPTlxMxZB8g&tms=1780435748&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=0fc69ed5916eabfbec7ec2d5d6ad7ddf&ch=tlc-tv
+#EXTINF:-1 tvg-id="tr.tytturk" group-title="Ulusal",TYT Türk
+# source: ercdn
+https://tytturk-live.ercdn.net/tytturk/tytturk_1080p.m3u8
+#EXTINF:-1 tvg-id="tr.bizimevtv" group-title="Ulusal",Bizimev TV (YT)
+# source: youtube
+https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1780443482/ei/-hQfav2JKcvV6dsPp760gQE/ip/31.21.186.28/id/GRLd2oYZFnM.1/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hls_chunk_host/rr2---sn-uhvcpaxoa-5hne.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/bui/AbKmrwrlSf02QN8PUjBBeJ7o1EpTcjXsBUgpZy7oKx52p30U8ywRWru-1uMjc-SKKQ32d-fAC8hskwlH/spc/96Xrv333shzFSIuR9CvUrOt6D3jaIbTn-2UBNBBrR_nW8MKs0Q/vprv/1/reg/0/playlist_type/DVR/initcwndbps/3713750/met/1780421882,/mh/cX/mm/44/mn/sn-uhvcpaxoa-5hne/ms/lva/mv/m/mvi/2/pcm2cms/yes/pl/21/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51565115,51565682/mt/1780421324/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,xpc,bui,spc,vprv,reg,playlist_type/sig/AHEqNM4wRQIhAPOMbB_mzX_wuOiee2117FZYzW1LvqnGAw28zuLQRzFGAiA0NQGXN9SwAwr8HZhSDbGMgQPC_xtlr7MCK_EahPbzTQ%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pcm2cms,pl,rms/lsig/APaTxxMwRQIhAOCBlxY70SzritLBDx9zUkTiM0iQMxrunXDphbP4BXr_AiAt0dBSVoGBjgzoP1jnpXWWkxYrpeTGRYTNe3JucP-PrQ%3D%3D/playlist/index.m3u8
