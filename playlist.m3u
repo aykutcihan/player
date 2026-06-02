@@ -34,9 +34,6 @@ https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3
 # source: tvkulesi
 https://cdn501.tvkulesi.com/kanald.m3u8?tkn=-im9ZZsH7Fw0lnAEeyyjTA&tms=1780437556&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=kanal-d
 
-#EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",Atv
-# source: kavuntv
-https://cdn506.kavuntv.net/atv.m3u8?tkn=EQccPHyMzMYvzBbk5pT3HQ&tms=1780436515&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv
 #EXTINF:-1 tvg-id="tr.atv" group-title="Ulusal",ATV
 # source: kavuntv
 https://cdn506.kavuntv.net/atv.m3u8?tkn=EQccPHyMzMYvzBbk5pT3HQ&tms=1780436515&hst=amp.kavuntv.net&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=atv
