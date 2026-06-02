@@ -59,20 +59,23 @@ jobs:
           )
 
       - name: epg-data reposuna push
+        shell: powershell
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
-          if not exist _epg_data (
-            git clone https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git _epg_data
-          )
-          cd _epg_data && git pull origin master && cd ..
-          if exist playlist.m3u copy /Y playlist.m3u _epg_data\playlist.m3u
-          if exist films.m3u copy /Y films.m3u _epg_data\films.m3u
-          cd _epg_data
-          git add -A
-          git diff --cached --quiet
-          if errorlevel 1 (
-            git commit -m "Stream URL guncellendi"
-            git push https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git master
-          )
-          cd ..
+          $REPO_URL = "https://x-access-token:$env:EPG_DATA_TOKEN@github.com/aykutcihan/epg-data.git"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if (Test-Path "_epg_data") { Remove-Item -Recurse -Force "_epg_data" }
+          git clone $REPO_URL _epg_data
+          if (Test-Path "playlist.m3u") { Copy-Item "playlist.m3u" "_epg_data/playlist.m3u" -Force }
+          if (Test-Path "films.m3u")    { Copy-Item "films.m3u"    "_epg_data/films.m3u"    -Force }
+          git -C _epg_data add -A
+          $exit = git -C _epg_data diff --cached --quiet; $changed = $LASTEXITCODE
+          if ($changed -ne 0) {
+            git -C _epg_data commit -m "Stream URL guncellendi"
+            git -C _epg_data push origin master
+            Write-Host "Push basarili"
+          } else {
+            Write-Host "Degisiklik yok"
+          }
