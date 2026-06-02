@@ -46,9 +46,6 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python src/main.py
 
-      - name: Radyo EPG üret
-        run: python src/radios.py
-
       - name: Değiştiyse commit'le
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
