@@ -41,6 +41,7 @@ YOUTUBE_CHANNELS = {
     "tr.aspor.yt":          "mgeW8Qm8-SY",
     "tr.ntv.yt":            "pqq5c6k70kk",
     "tr.sozcu.yt":          "ztmY_cCtUl0",
+    "tr.cicektaksi":        "6SkIsrCIPfQ",
 }
 
 
