@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => { loadAll() }, [loadAll])
 
   return (
-    <BrowserRouter basename="/epg-generator">
+    <BrowserRouter basename="/">
       <Layout>
         <Routes>
           <Route path="/"        element={<LiveTV  />} />

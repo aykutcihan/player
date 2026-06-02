@@ -1,4 +1,4 @@
-name: Deploy App (GitHub Pages)
+name: Deploy App (epg-data)
 
 on:
   push:
@@ -8,28 +8,27 @@ on:
       - '.github/workflows/deploy-app.yml'
   workflow_dispatch: {}
 
-permissions:
-  contents: read
-  pages:    write
-  id-token: write
-
 concurrency:
-  group: pages
+  group: deploy-app
   cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
+    env:
+      PYTHONUTF8: "1"
+    defaults:
+      run:
+        shell: cmd
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-          cache-dependency-path: app/package-lock.json
+      - name: Node.js kur
+        run: |
+          where node
+          node --version
 
-      - name: Install
+      - name: Bagimliliklar
         working-directory: app
         run: npm ci
 
@@ -37,18 +36,22 @@ jobs:
         working-directory: app
         run: npm run build
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: app/dist
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deploy
-        uses: actions/deploy-pages@v4
+      - name: epg-data reposuna push
+        env:
+          EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if not exist _epg_data (
+            git clone https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git _epg_data
+          )
+          cd _epg_data && git pull origin master && cd ..
+          robocopy app\dist _epg_data /MIR /NFL /NDL /NJH /NJS
+          cd _epg_data
+          git add -A
+          git diff --cached --quiet
+          if errorlevel 1 (
+            git commit -m "App guncellendi"
+            git push https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git master
+          )
+          cd ..

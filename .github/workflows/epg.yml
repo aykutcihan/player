@@ -23,13 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Bağımlılıklar
+      - name: Bagimliliklar
         run: pip install -r requirements.txt
 
       - name: Playwright tarayici
         run: playwright install chromium
 
-      - name: Hazırlık
+      - name: Hazirlik
         run: |
           if not exist cache mkdir cache
           if exist src\__pycache__ rd /s /q src\__pycache__
@@ -46,27 +46,49 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python src/main.py
 
-      - name: Değiştiyse commit'le
+      - name: epg-data reposuna push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if not exist _epg_data (
+            git clone https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git _epg_data
+          )
+          cd _epg_data
+          git pull origin master
+          cd ..
+          if exist epg.xml copy /Y epg.xml _epg_data\epg.xml
+          if exist playlist.m3u copy /Y playlist.m3u _epg_data\playlist.m3u
+          if exist films.m3u copy /Y films.m3u _epg_data\films.m3u
+          if exist cache\films_db.json (
+            if not exist _epg_data\cache mkdir _epg_data\cache
+            copy /Y cache\films_db.json _epg_data\cache\films_db.json
+          )
+          if exist epg (
+            robocopy epg _epg_data\epg /MIR /NFL /NDL /NJH /NJS
+          )
+          cd _epg_data
+          git add -A
+          git diff --cached --quiet
+          if errorlevel 1 (
+            git commit -m "EPG guncellendi"
+            git push https://x-access-token:%EPG_DATA_TOKEN%@github.com/aykutcihan/epg-data.git master
+          )
+          cd ..
+
+      - name: playlist.m3u yerel commitle
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
           git remote set-url origin https://x-access-token:%GITHUB_TOKEN%@github.com/aykutcihan/epg-generator.git
-          if exist epg.xml git add epg.xml
-          if exist epg git add epg/
-          if exist radios.xml git add radios.xml
+          git add playlist.m3u
           if exist cache\tmdb.json git add cache\tmdb.json
-          if exist playlist.m3u git add playlist.m3u
-          if exist films.m3u git add films.m3u
-          if exist cache\films_db.json git add cache\films_db.json
           git diff --cached --quiet
           if errorlevel 1 (
             git commit -m "Automated EPG update"
-            if exist .git\rebase-merge git rebase --abort
-            if exist .git\rebase-apply git rebase --abort
             git pull --rebase -X theirs origin master
             git push
           ) else (
-            echo Degisiklik yok, commit atlanıyor.
+            echo Degisiklik yok.
           )
