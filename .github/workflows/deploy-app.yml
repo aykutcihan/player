@@ -37,28 +37,30 @@ jobs:
         run: npm run build
 
       - name: epg-data reposuna push
+        shell: pwsh
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
+          $REPO_URL = "https://x-access-token:$env:EPG_DATA_TOKEN@github.com/aykutcihan/epg-data.git"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global credential.helper store
-          echo https://x-access-token:%EPG_DATA_TOKEN%@github.com > %USERPROFILE%\.git-credentials
-          if not exist _epg_data (
-            git clone https://github.com/aykutcihan/epg-data.git _epg_data
-          )
-          cd _epg_data
-          git remote set-url origin https://github.com/aykutcihan/epg-data.git
-          git pull origin master
-          cd ..
-          robocopy app\dist _epg_data /MIR /NFL /NDL /NJH /NJS
-          cd _epg_data
-          git add -A
-          git diff --cached --quiet
-          if errorlevel 1 (
-            git commit -m "App guncellendi"
-            git push origin master
-          ) else (
-            echo Degisiklik yok.
-          )
-          cd ..
+
+          if (-not (Test-Path "_epg_data")) {
+            git clone $REPO_URL _epg_data
+          } else {
+            git -C _epg_data remote set-url origin $REPO_URL
+            git -C _epg_data pull origin master
+          }
+
+          # Dist dosyalarini kopyala (.git hariç)
+          Get-ChildItem app/dist | Copy-Item -Destination _epg_data -Recurse -Force
+
+          git -C _epg_data add -A
+          $diff = git -C _epg_data diff --cached --quiet; $changed = $LASTEXITCODE
+          if ($changed -ne 0) {
+            git -C _epg_data commit -m "App guncellendi"
+            git -C _epg_data push origin master
+            Write-Host "Push basarili"
+          } else {
+            Write-Host "Degisiklik yok"
+          }
