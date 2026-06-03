@@ -394,8 +394,8 @@ https://canli.tgrthaber.com/tgrt.m3u8
 https://1hskrdto.rocketcdn.com/fenerbahcetv.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="tr.trtspor",TRT Spor
-# source: 
-https://cdn504.tvkulesi.com/trtspor2.m3u8?tkn=N-yn-opPdVQW_qwncBvsKA&tms=1780442116&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=1a1bc56e7b12133136d6889659a91800&ch=trt-spor-2
+# source: tvkulesi
+https://cdn501.tvkulesi.com/trtspor.m3u8?tkn=dMe21Mu5AZz7NlpALlYoFQ&tms=1780460347&hst=tr.tvkulesi.com&ip=31.21.186.28&utkn=0fc69ed5916eabfbec7ec2d5d6ad7ddf&ch=trt-spor
 
 #EXTINF:-1 tvg-id="tr.htspor",HT Spor
 # source: tvkulesi
