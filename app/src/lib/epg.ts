@@ -36,11 +36,11 @@ export async function fetchEpg(channelId: string): Promise<Programme[]> {
 }
 
 export function currentProgramme(progs: Programme[]): Programme | null {
-  const now = new Date().toISOString()
-  return progs.find(p => p.start <= now && p.stop > now) ?? null
+  const now = Date.now()
+  return progs.find(p => new Date(p.start).getTime() <= now && new Date(p.stop).getTime() > now) ?? null
 }
 
 export function upcomingProgrammes(progs: Programme[], limit = 5): Programme[] {
-  const now = new Date().toISOString()
-  return progs.filter(p => p.start > now).slice(0, limit)
+  const now = Date.now()
+  return progs.filter(p => new Date(p.start).getTime() > now).slice(0, limit)
 }
