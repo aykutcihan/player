@@ -4,3 +4,6 @@ __pycache__/
 venv/
 .env
 *.log
+
+_tv_takip/
+_epg_data/
