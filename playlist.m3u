@@ -493,6 +493,10 @@ https://live.artidijitalmedya.com/artidijital_ciftcitv/ciftcitv/chunks.m3u8
 
 
 # ── MUSIC ────────────────────────────
+#EXTINF:-1 tvg-id="tr.cemtv",Cem TV
+# source: cemtv
+https://tv.cemtv.net:19360/cemtv/cemtv.m3u8
+
 #EXTINF:-1 tvg-id="tr.chilltv" tvg-logo="http://assets.tvcdn.net/972fe810-96d7-4cad-8918-fe0c28a45e7d.png",Chill TV
 # source: fasttvcdn
 https://playlist.fasttvcdn.com/pl/rfrk9821hdy9dayo8wfyha/chill-tv/playlist.m3u8
