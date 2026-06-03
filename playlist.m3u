@@ -1,4 +1,4 @@
-#EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-generator/master/epg.xml,https://raw.githubusercontent.com/aykutcihan/epg-generator/master/radios.xml,https://epg.pw/xmltv/epg_TR.xml"
+#EXTM3U url-tvg="https://raw.githubusercontent.com/aykutcihan/epg-data/master/epg.xml,https://raw.githubusercontent.com/aykutcihan/epg-data/master/radios.xml,https://epg.pw/xmltv/epg_TR.xml"
 
 # ── ULUSAL ────────────────────────────
 #EXTINF:-1 tvg-id="tr.mceutv",MCEU TV
