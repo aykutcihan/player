@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: epg-streams
@@ -38,25 +38,6 @@ jobs:
 
       - name: Film listesi guncelle
         run: python src/refresh_films.py
-
-      - name: epg-generator yerel commitle
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:%GITHUB_TOKEN%@github.com/aykutcihan/epg-generator.git
-          if exist playlist.m3u git add playlist.m3u
-          if exist films.m3u git add films.m3u
-          if exist cache\films_db.json git add cache\films_db.json
-          git diff --cached --quiet
-          if errorlevel 1 (
-            git commit -m "Stream URL guncellendi"
-            git pull --rebase -X ours origin master
-            git push
-          ) else (
-            echo Degisiklik yok.
-          )
 
       - name: epg-data reposuna push
         shell: powershell
