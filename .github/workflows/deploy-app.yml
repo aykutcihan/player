@@ -44,7 +44,7 @@ jobs:
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
-          $REPO_URL = "https://x-access-token:$env:EPG_DATA_TOKEN@github.com/aykutcihan/epg-data.git"
+          $REPO_URL = "https://x-access-token:$env:EPG_DATA_TOKEN@github.com/aykutcihan/tv-takip.git"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 

@@ -53,7 +53,7 @@ jobs:
           git diff --cached --quiet
           if errorlevel 1 (
             git commit -m "Aylik kanal tarama tamamlandi"
-            git pull --rebase -X theirs origin master
+            git pull --rebase -X theirs origin main
             git push
           ) else (
             echo Degisiklik yok.
