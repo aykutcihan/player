@@ -84,7 +84,6 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
   const scrollRef  = useRef<HTMLDivElement>(null)
-  const pointerStart = useRef({ x: 0, y: 0, sl: 0, dragging: false })
   const currentIdxRef = useRef(0)
 
   useEffect(() => {

@@ -12,7 +12,7 @@ const HIDE_DELAY = 3000
 export default function LiveTV() {
   const { channels, activeChannel, channelGroup, setChannel, setGroup } = useStore()
   const playerRef   = useRef<VideoPlayerHandle>(null)
-  const hideTimer   = useRef<ReturnType<typeof setTimeout>>()
+  const hideTimer   = useRef<ReturnType<typeof setTimeout>>(undefined)
   const [uiVisible, setUiVisible] = useState(false)
   const [epgOpen,   setEpgOpen]   = useState(false)
   const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)

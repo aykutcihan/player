@@ -18,7 +18,7 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
   const startY   = useRef(0)
   const startCI  = useRef(0)
   const dragDelta = useRef(0)
-  const animRef  = useRef<number>()
+  const animRef  = useRef<number>(undefined)
   const n = groups.length
 
   useEffect(() => {
