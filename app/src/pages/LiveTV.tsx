@@ -4,6 +4,7 @@ import ChannelList  from '../components/tv/ChannelList'
 import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupWheel   from '../components/tv/GroupWheel'
 import NowBar       from '../components/tv/NowBar'
+import EpgOverlay   from '../components/tv/EpgOverlay'
 import Player       from '../components/tv/Player'
 import EpgPanel     from '../components/tv/EpgPanel'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
@@ -15,7 +16,8 @@ export default function LiveTV() {
   const { channels, activeChannel, channelGroup, setChannel, setGroup } = useStore()
   const playerRef   = useRef<VideoPlayerHandle>(null)
   const hideTimer   = useRef<ReturnType<typeof setTimeout>>()
-  const [uiVisible, setUiVisible] = useState(false)
+  const [uiVisible,  setUiVisible]  = useState(false)
+  const [epgOpen,    setEpgOpen]    = useState(false)
   const groups = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
 
@@ -71,29 +73,43 @@ export default function LiveTV() {
         )}
 
         {/* Üst bar: logo + şu an + sonraki */}
-        {activeChannel && (
+        {/* EPG Overlay — açıkken NowBar ve ChannelStrip gizlenir */}
+        {epgOpen && activeChannel && (
+          <EpgOverlay
+            channel={activeChannel}
+            onClose={() => setEpgOpen(false)}
+            onSeekTo={t => { playerRef.current?.seekToTime(t) }}
+          />
+        )}
+
+        {!epgOpen && activeChannel && (
           <NowBar
             channel={activeChannel}
             visible={uiVisible}
             onSeekTo={t => playerRef.current?.seekToTime(t)}
+            onLogoClick={() => setEpgOpen(true)}
           />
         )}
 
         {/* Sol: Grup tekerleği */}
-        <GroupWheel
-          groups={groups}
-          active={channelGroup}
-          onSelect={setGroup}
-          visible={uiVisible}
-        />
+        {!epgOpen && (
+          <GroupWheel
+            groups={groups}
+            active={channelGroup}
+            onSelect={setGroup}
+            visible={uiVisible}
+          />
+        )}
 
         {/* Kanal şeridi — kontrollerin ÜSTÜNDE */}
-        <ChannelStrip
-          channels={groupChannels}
-          active={activeChannel}
-          onSelect={ch => { setChannel(ch); showUi() }}
-          visible={uiVisible}
-        />
+        {!epgOpen && (
+          <ChannelStrip
+            channels={groupChannels}
+            active={activeChannel}
+            onSelect={ch => { setChannel(ch); showUi() }}
+            visible={uiVisible}
+          />
+        )}
       </div>
 
       {/* Sağ: EPG */}

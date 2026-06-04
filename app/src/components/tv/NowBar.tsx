@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
-interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void }
+interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void }
 
 const BOX_W = 140  // tüm kutular aynı genişlik
 
@@ -79,7 +79,7 @@ function ProgramBox({ prog, type, isOpen, onToggle, isDvr }: {
   )
 }
 
-export default function NowBar({ channel, visible, onSeekTo }: Props) {
+export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
@@ -130,8 +130,12 @@ export default function NowBar({ channel, visible, onSeekTo }: Props) {
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
       <div className="relative flex items-center pt-3 px-3 gap-2">
-        {/* Logo */}
-        <div className="shrink-0">
+        {/* Logo — tıklanabilir */}
+        <div
+          className="shrink-0 cursor-pointer hover:ring-2 hover:ring-white/30 rounded transition-all"
+          onClick={onLogoClick}
+          title="EPG listesini aç"
+        >
           {channel.logo
             ? <img src={channel.logo} alt="" className="w-10 h-10 object-contain rounded bg-white/10" />
             : <div className="w-10 h-10 rounded bg-white/10 flex items-center justify-center">
