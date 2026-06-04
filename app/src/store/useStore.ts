@@ -22,7 +22,7 @@ interface Store {
   loadAll:        () => Promise<void>
   setChannel:     (ch: Channel) => void
   setGroup:       (g: string)   => void
-  setRadio:       (ch: Channel) => void
+  setRadio:       (ch: Channel | null) => void
 }
 
 export const useStore = create<Store>((set, get) => ({
@@ -66,5 +66,5 @@ export const useStore = create<Store>((set, get) => ({
 
   setChannel: (ch) => set({ activeChannel: ch }),
   setGroup:   (g)  => set({ channelGroup: g }),
-  setRadio:   (ch) => set({ activeRadio: ch }),
+  setRadio:   (ch) => set({ activeRadio: ch ?? null }),
 }))
