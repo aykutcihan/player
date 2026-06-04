@@ -165,10 +165,12 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
               }
             }}
           >
-            <div className="px-3 py-1.5 rounded-xl border border-white/25 bg-black/70 backdrop-blur-sm"
-              style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.05em' }}
+            <div className="px-2.5 py-1 rounded-lg"
+              style={{ background: 'linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.04))', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)' }}
             >
-              <span className="text-white/90 text-sm italic">detay için tıkla</span>
+              <span style={{ fontFamily: '"Helvetica Neue", system-ui', fontWeight: 300, fontSize: 12, letterSpacing: '0.12em', color: 'rgba(255,255,255,0.85)', textTransform: 'uppercase' }}>
+                detay için tıkla
+              </span>
             </div>
           </div>
         </div>
