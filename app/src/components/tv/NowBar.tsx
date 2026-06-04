@@ -2,82 +2,43 @@ import { useEffect, useRef, useState } from 'react'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
-interface Props {
-  channel: Channel
-  visible: boolean
-}
+interface Props { channel: Channel; visible: boolean }
 
 function fmtTime(iso: string) {
   return new Date(iso).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })
 }
 
-function ProgramCard({
-  prog, isCurrent, isPast, onClick
-}: { prog: Programme; isCurrent: boolean; isPast: boolean; onClick: () => void }) {
-  const bg = isCurrent
-    ? 'bg-red-900/50 border-red-500/50'
-    : isPast
-      ? 'bg-slate-800/70 border-slate-600/40 hover:bg-slate-700/70'
-      : 'bg-indigo-950/50 border-indigo-700/30 hover:bg-indigo-900/50'
-
-  return (
-    <button
-      onClick={onClick}
-      className={`flex-none flex flex-col justify-center px-3 py-1.5 rounded-lg transition-all text-left border ${bg} ${
-        isCurrent ? 'min-w-[160px]' : 'min-w-[130px]'
-      }`}
-      style={{ height: 56 }}
-    >
-      {isCurrent && (
-        <div className="text-[9px] text-red-400 font-semibold mb-0.5">▶ ŞU AN</div>
-      )}
-      {isPast && !isCurrent && (
-        <div className="text-[9px] text-slate-400 mb-0.5">geçmiş</div>
-      )}
-      <div className={`font-medium leading-tight truncate max-w-[150px] ${
-        isCurrent ? 'text-white text-xs' : isPast ? 'text-slate-300 text-[11px]' : 'text-indigo-200 text-[11px]'
-      }`}>
-        {prog.title}
-      </div>
-      <div className="text-[9px] text-white/40 mt-0.5">
-        {fmtTime(prog.start)} – {fmtTime(prog.stop)}
-      </div>
-    </button>
-  )
-}
-
-function ProgramDetail({ prog, onClose }: { prog: Programme; onClose: () => void }) {
+function Detail({ prog, onClose }: { prog: Programme; onClose: () => void }) {
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
-    const h = (e: MouseEvent) => { if (ref.current && !ref.current.contains(e.target as Node)) onClose() }
+    const h = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) onClose()
+    }
     setTimeout(() => document.addEventListener('mousedown', h), 0)
     return () => document.removeEventListener('mousedown', h)
   }, [onClose])
   return (
-    <div ref={ref}
-      className="absolute top-full left-0 mt-2 w-80 bg-[#111] border border-white/15 rounded-xl p-4 shadow-2xl z-30">
-      <div className="text-base font-semibold text-white mb-1">{prog.title}</div>
-      <div className="text-xs text-white/50 mb-3">{fmtTime(prog.start)} – {fmtTime(prog.stop)}</div>
+    <div ref={ref} className="absolute top-full left-0 mt-2 w-72 bg-[#111] border border-white/15 rounded-xl p-4 shadow-2xl z-50">
+      <div className="text-sm font-semibold text-white mb-1">{prog.title}</div>
+      <div className="text-xs text-white/50 mb-2">{fmtTime(prog.start)} – {fmtTime(prog.stop)}</div>
       {prog.desc
-        ? <div className="text-xs text-white/60 leading-relaxed border-t border-white/10 pt-3">{prog.desc}</div>
-        : <div className="text-xs text-white/25 italic border-t border-white/10 pt-3">Açıklama yok</div>
-      }
-      {prog.category && <div className="text-[10px] text-white/25 mt-2">{prog.category}</div>}
+        ? <div className="text-xs text-white/60 leading-relaxed border-t border-white/10 pt-2">{prog.desc}</div>
+        : <div className="text-xs text-white/25 italic border-t border-white/10 pt-2">Açıklama yok</div>}
     </div>
   )
 }
 
 export default function NowBar({ channel, visible }: Props) {
-  const [progs,   setProgs]   = useState<Programme[]>([])
-  const [current, setCurrent] = useState<Programme | null>(null)
-  const [detail,  setDetail]  = useState<Programme | null>(null)
-  const [show,    setShow]    = useState(false)
-  const scrollRef  = useRef<HTMLDivElement>(null)
-  const currentRef = useRef<HTMLButtonElement>(null)
-  const isDrag     = useRef(false)
-  const didDrag    = useRef(false)
-  const startX     = useRef(0)
-  const startSL    = useRef(0)
+  const [past,     setPast]     = useState<Programme[]>([])
+  const [current,  setCurrent]  = useState<Programme | null>(null)
+  const [upcoming, setUpcoming] = useState<Programme[]>([])
+  const [detail,   setDetail]   = useState<Programme | null>(null)
+  const [show,     setShow]     = useState(false)
+
+  const scrollRef   = useRef<HTMLDivElement>(null)
+  const anchorRef   = useRef<HTMLDivElement>(null)
+  const dragStart   = useRef({ x: 0, sl: 0, moved: false })
+  const dragging    = useRef(false)
 
   useEffect(() => {
     if (visible) setShow(true)
@@ -86,115 +47,108 @@ export default function NowBar({ channel, visible }: Props) {
 
   useEffect(() => {
     if (!channel.tvgId) return
-    setProgs([])
-    setCurrent(null)
     fetchEpg(channel.tvgId).then(all => {
-      const past     = pastProgrammes(all, 10)
-      const cur      = currentProgramme(all)
-      const upcoming = upcomingProgrammes(all, 10)
-      const combined = [...past.reverse(), ...(cur ? [cur] : []), ...upcoming]
-      setProgs(combined)
-      setCurrent(cur)
+      setPast(pastProgrammes(all, 8).reverse())
+      setCurrent(currentProgramme(all))
+      setUpcoming(upcomingProgrammes(all, 8))
     })
   }, [channel.tvgId])
 
-  // Yüklenince "şu an"ı logonun hemen yanına getir
+  // Şu anki program logonun hemen yanına gelecek şekilde scroll et
   useEffect(() => {
-    if (!scrollRef.current || progs.length === 0) return
-    setTimeout(() => {
-      const container = scrollRef.current
-      const el = container?.querySelector('[data-current="true"]') as HTMLElement
-      if (el && container) {
-        const containerRect = container.getBoundingClientRect()
-        const elRect        = el.getBoundingClientRect()
-        container.scrollLeft += elRect.left - containerRect.left
-      }
-    }, 100)
-  }, [progs])
+    if (!anchorRef.current || !scrollRef.current) return
+    // "şu an" divinin sol kenarı = scroll container'ın sol kenarıyla hizalı olsun
+    const container = scrollRef.current
+    const anchor    = anchorRef.current
+    // anchor'ın container içindeki offset'i = scrollLeft yapılacak değer
+    const offset = anchor.offsetLeft
+    container.scrollLeft = offset
+  }, [current, past])
 
-  const onPointerDown = (e: React.PointerEvent) => {
-    isDrag.current  = true
-    didDrag.current = false
-    startX.current  = e.clientX
-    startSL.current = scrollRef.current?.scrollLeft ?? 0
-    ;(e.target as HTMLElement).setPointerCapture(e.pointerId)
+  const onMouseDown = (e: React.MouseEvent) => {
+    dragging.current = true
+    dragStart.current = { x: e.clientX, sl: scrollRef.current?.scrollLeft ?? 0, moved: false }
   }
-  const onPointerMove = (e: React.PointerEvent) => {
-    if (!isDrag.current || !scrollRef.current) return
-    const dx = e.clientX - startX.current
-    if (Math.abs(dx) > 4) didDrag.current = true
-    scrollRef.current.scrollLeft = startSL.current - dx
+  const onMouseMove = (e: React.MouseEvent) => {
+    if (!dragging.current || !scrollRef.current) return
+    const dx = e.clientX - dragStart.current.x
+    if (Math.abs(dx) > 3) dragStart.current.moved = true
+    scrollRef.current.scrollLeft = dragStart.current.sl - dx
   }
-  const onPointerUp = (e: React.PointerEvent) => {
-    isDrag.current = false
-    // Eğer drag olmadıysa click'i engelleme
-    if (!didDrag.current) {
-      const el = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement
-      el?.click()
-    }
-    didDrag.current = false
+  const onMouseUp = () => { dragging.current = false }
+
+  const handleClick = (prog: Programme) => {
+    if (dragStart.current.moved) return
+    setDetail(d => d?.start === prog.start ? null : prog)
   }
 
-  const onWheel = (e: React.WheelEvent) => {
-    e.preventDefault()
-    if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY * 0.8
+  const cardClass = (type: 'past' | 'current' | 'future') => {
+    const base = 'flex-none flex flex-col justify-center px-3 py-2 rounded-lg border cursor-pointer transition-colors'
+    if (type === 'current') return `${base} bg-red-900/50 border-red-500/60 min-w-[160px]`
+    if (type === 'past')    return `${base} bg-slate-800/60 border-slate-600/30 hover:bg-slate-700/60 min-w-[130px]`
+    return `${base} bg-indigo-950/50 border-indigo-700/30 hover:bg-indigo-900/50 min-w-[130px]`
   }
 
   if (!show) return null
 
+  const allProgs = [
+    ...past.map(p => ({ p, type: 'past' as const })),
+    ...(current ? [{ p: current, type: 'current' as const }] : []),
+    ...upcoming.map(p => ({ p, type: 'future' as const })),
+  ]
+
   return (
     <div className={`absolute top-0 left-0 right-0 z-20 transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
-      {/* Gradient */}
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
-      <div className="relative flex items-center pt-3 px-3 gap-2">
-
-        {/* Logo — sabit, üstte */}
+      <div className="relative flex items-center pt-3 px-3 gap-3">
+        {/* Logo — sabit */}
         <div className="shrink-0 z-10">
-          {channel.logo ? (
-            <img src={channel.logo} alt={channel.name}
-              className="w-10 h-10 object-contain rounded bg-white/10" />
-          ) : (
-            <div className="w-10 h-10 rounded bg-white/10 flex items-center justify-center">
-              <span className="text-white/50 text-[9px]">{channel.name.slice(0,4)}</span>
-            </div>
-          )}
+          {channel.logo
+            ? <img src={channel.logo} alt="" className="w-10 h-10 object-contain rounded bg-white/10" />
+            : <div className="w-10 h-10 rounded bg-white/10 flex items-center justify-center">
+                <span className="text-white/40 text-[9px]">{channel.name.slice(0,4)}</span>
+              </div>}
         </div>
 
-        {/* Soldan sağa kayan program şeridi */}
-        <div className="relative flex-1 min-w-0">
-          {/* Sol maske — logo arkasından çıkma efekti */}
-          <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/40 to-transparent pointer-events-none z-10" />
-          {/* Sağ maske */}
-          <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-black/60 to-transparent pointer-events-none z-10" />
+        {/* Scrollable program şeridi */}
+        <div className="relative flex-1 min-w-0 overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-3 bg-gradient-to-r from-black/50 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-black/60 to-transparent z-10 pointer-events-none" />
 
           <div
             ref={scrollRef}
-            className="flex items-center gap-2 overflow-x-auto cursor-grab active:cursor-grabbing"
-            style={{ scrollbarWidth: 'none', height: 64 }}
-            onPointerDown={onPointerDown}
-            onPointerMove={onPointerMove}
-            onPointerUp={onPointerUp}
-            onPointerCancel={onPointerUp}
-            onWheel={onWheel}
+            className="flex gap-2 overflow-x-auto select-none"
+            style={{ scrollbarWidth: 'none', height: 64, cursor: dragging.current ? 'grabbing' : 'grab' }}
+            onMouseDown={onMouseDown}
+            onMouseMove={onMouseMove}
+            onMouseUp={onMouseUp}
+            onMouseLeave={onMouseUp}
+            onWheel={e => { e.preventDefault(); if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY }}
           >
-            {progs.map((p, i) => {
-              const isCur  = current ? p.start === current.start : false
-              const isPast = current ? p.stop <= current.start : false
-              return (
-                <div key={i} className="relative shrink-0" data-current={isCur ? 'true' : undefined}>
-                  <ProgramCard
-                    prog={p}
-                    isCurrent={isCur}
-                    isPast={isPast}
-                    onClick={() => setDetail(detail?.start === p.start ? null : p)}
-                  />
-                  {detail?.start === p.start && (
-                    <ProgramDetail prog={p} onClose={() => setDetail(null)} />
-                  )}
+            {allProgs.map(({ p, type }, i) => (
+              <div
+                key={i}
+                ref={type === 'current' ? anchorRef : undefined}
+                className="relative shrink-0"
+                style={{ height: 64 }}
+                onClick={() => handleClick(p)}
+              >
+                <div className={cardClass(type)} style={{ height: 56 }}>
+                  {type === 'current' && <div className="text-[9px] text-red-400 font-semibold mb-0.5">▶ ŞU AN</div>}
+                  {type === 'past'    && <div className="text-[9px] text-slate-400 mb-0.5">geçmiş</div>}
+                  <div className={`font-medium leading-tight truncate ${
+                    type === 'current' ? 'text-white text-xs max-w-[150px]'
+                    : type === 'past'  ? 'text-slate-300 text-[11px] max-w-[120px]'
+                    : 'text-indigo-200 text-[11px] max-w-[120px]'
+                  }`}>{p.title}</div>
+                  <div className="text-[9px] text-white/40 mt-0.5">{fmtTime(p.start)}–{fmtTime(p.stop)}</div>
                 </div>
-              )
-            })}
+                {detail?.start === p.start && (
+                  <Detail prog={p} onClose={() => setDetail(null)} />
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
