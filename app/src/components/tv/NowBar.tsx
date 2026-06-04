@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import ScrollContainer from 'react-indiana-drag-scroll'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
@@ -79,7 +80,7 @@ export default function NowBar({ channel, visible }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
-  const scrollRef    = useRef<HTMLDivElement>(null)
+  const scrollRef = useRef<HTMLElement>(null)
   const currentIdxRef = useRef(0)
 
   useEffect(() => {
@@ -115,18 +116,6 @@ export default function NowBar({ channel, visible }: Props) {
     return () => clearTimeout(t)
   }, [show, items])
 
-  // Drag scroll
-  const drag = useRef({ x: 0, sl: 0, active: false, moved: false })
-  const onMouseDown = (e: React.MouseEvent) => {
-    drag.current = { x: e.clientX, sl: scrollRef.current?.scrollLeft ?? 0, active: true, moved: false }
-  }
-  const onMouseMove = (e: React.MouseEvent) => {
-    if (!drag.current.active || !scrollRef.current) return
-    const dx = e.clientX - drag.current.x
-    if (Math.abs(dx) > 4) drag.current.moved = true
-    scrollRef.current.scrollLeft = drag.current.sl - dx
-  }
-  const onMouseUp = () => { drag.current.active = false }
 
   if (!show) return null
 
@@ -152,16 +141,12 @@ export default function NowBar({ channel, visible }: Props) {
           <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/50 to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-black/60 to-transparent z-10 pointer-events-none" />
 
-          <div
-            ref={scrollRef}
-            className="flex gap-2 overflow-x-auto"
-            style={{ scrollbarWidth: 'none', height: 68, cursor: 'grab' }}
-            onMouseDown={onMouseDown}
-            onMouseMove={onMouseMove}
-            onMouseUp={onMouseUp}
-            onMouseLeave={onMouseUp}
-            onWheel={e => { e.preventDefault(); if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY }}
-            onClickCapture={e => { if (drag.current.moved) { e.stopPropagation(); drag.current.moved = false } }}
+          <ScrollContainer
+            innerRef={scrollRef}
+            className="flex gap-2"
+            style={{ scrollbarWidth: 'none', height: 68 }}
+            horizontal
+            vertical={false}
           >
             {items.map((item, i) => (
               <ProgramBox
@@ -172,7 +157,7 @@ export default function NowBar({ channel, visible }: Props) {
                 onToggle={() => setOpenIdx(idx => idx === i ? null : i)}
               />
             ))}
-          </div>
+          </ScrollContainer>
         </div>
       </div>
     </div>
