@@ -218,7 +218,6 @@ export default function Radio() {
                   : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
               }`}
             >
-              <span>⭐</span>
               {editingFav === i
                 ? <input
                     autoFocus value={editName}
