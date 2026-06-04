@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, type Programme } from '../../lib/epg'
+import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
 interface Props { channel: Channel; visible: boolean }
@@ -10,9 +10,10 @@ function fmtTime(iso: string) {
   return new Date(iso).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })
 }
 
-function ProgramBox({ prog, type, isOpen, onToggle }: {
+function ProgramBox({ prog, type, isOpen, onToggle, isDvr }: {
   prog:     Programme | null
   type:     'past' | 'current' | 'future'
+  isDvr?:  boolean
   isOpen:   boolean
   onToggle: () => void
 }) {
@@ -46,6 +47,9 @@ function ProgramBox({ prog, type, isOpen, onToggle }: {
       >
         {type === 'current' && (
           <div className="text-[9px] text-red-400 font-semibold mb-0.5">▶ ŞU AN</div>
+        )}
+        {type === 'past' && isDvr && (
+          <div className="text-[9px] text-green-400 mb-0.5">⏪ geri sar</div>
         )}
         <div className={`text-xs font-medium leading-tight line-clamp-2 ${titleColor}`}>
           {prog?.title ?? ''}
@@ -157,6 +161,7 @@ export default function NowBar({ channel, visible }: Props) {
                 type={item.type}
                 isOpen={openIdx === i}
                 onToggle={() => setOpenIdx(idx => idx === i ? null : i)}
+                isDvr={isDvrStream(channel.url)}
               />
             ))}
           </div>
