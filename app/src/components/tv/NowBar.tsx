@@ -105,36 +105,26 @@ export default function NowBar({ channel, visible }: Props) {
   }, [channel.tvgId])
 
   useEffect(() => {
-    if (!current) return
+    if (!current || !show) return
     const t = setTimeout(() => {
-      const anchor    = anchorRef.current
       const container = scrollRef.current
-      if (anchor && container) container.scrollLeft = anchor.offsetLeft
-    }, 80)
+      const anchor    = anchorRef.current
+      if (!container || !anchor) return
+      const cRect = container.getBoundingClientRect()
+      const aRect = anchor.getBoundingClientRect()
+      container.scrollLeft += aRect.left - cRect.left
+    }, 50)
     return () => clearTimeout(t)
-  }, [current])
-
-  const wasDragging = useRef(false)
+  }, [current, show])
 
   const onMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
-    wasDragging.current = false
     drag.current = { x: e.clientX, sl: scrollRef.current?.scrollLeft ?? 0, active: true }
   }
   const onMouseMove = (e: React.MouseEvent) => {
     if (!drag.current.active || !scrollRef.current) return
-    const dx = e.clientX - drag.current.x
-    if (Math.abs(dx) > 5) wasDragging.current = true
-    scrollRef.current.scrollLeft = drag.current.sl - dx
+    scrollRef.current.scrollLeft = drag.current.sl - (e.clientX - drag.current.x)
   }
   const onMouseUp = () => { drag.current.active = false }
-
-  // Drag sırasında child click'lerini capture phase'de engelle
-  const onClickCapture = (e: React.MouseEvent) => {
-    if (wasDragging.current) {
-      e.stopPropagation()
-      wasDragging.current = false
-    }
-  }
 
   const allProgs: { p: Programme; type: 'past' | 'current' | 'future' }[] = [
     ...past.map(p => ({ p, type: 'past' as const })),
@@ -171,7 +161,6 @@ export default function NowBar({ channel, visible }: Props) {
             onMouseMove={onMouseMove}
             onMouseUp={onMouseUp}
             onMouseLeave={onMouseUp}
-            onClickCapture={onClickCapture}
             onWheel={e => { e.preventDefault(); if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY }}
           >
             {allProgs.map(({ p, type }, i) => (
