@@ -59,10 +59,12 @@ export default function RadioPlayer({ channel }: Props) {
     return () => clearTimeout(timer)
   }, [channel.tvgId])
 
-  // Şarkı bilgisi — sadece Number1 (GitHub JSON, Karnaval artık Worker'dan)
+  // Number1 ve Turkuvaz için şarkı bilgisi (GitHub JSON)
   useEffect(() => {
-    if (!channel.tvgId.startsWith('number1.')) {
-      if (!channel.tvgId.startsWith('powerapp.') && !channel.tvgId.startsWith('karnaval.') && !channel.tvgId.startsWith('turkuvaz.') && !channel.tvgId.startsWith('show.')) setSong(null)
+    const isJson = channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('turkuvaz.')
+    if (!isJson) {
+      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.')
+      if (!isWorker) setSong(null)
       return
     }
 
