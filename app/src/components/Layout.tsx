@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 
 const NAV = [
-  { to: '/',       label: '📺 Canlı TV' },
+  { to: '/',       label: '📺 TV' },
   { to: '/radyo',  label: '📻 Radyo'    },
   { to: '/muzik',  label: '🎵 Müzik'    },
   { to: '/filmler',label: '🎬 Filmler'  },
