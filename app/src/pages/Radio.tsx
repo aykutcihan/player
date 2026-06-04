@@ -21,65 +21,60 @@ export default function Radio() {
   const visibleChannels = activeGroup ? (groups.get(activeGroup) ?? []) : []
 
   return (
-    <div className="flex h-[calc(100svh-48px)]">
+    <div className="flex flex-col h-[calc(100svh-48px)]">
 
-      {/* Grup listesi */}
-      <div className="w-44 shrink-0 bg-[#1a1a1a] border-r border-white/10 overflow-y-auto">
+      {/* Üst grup sekmeleri */}
+      <div className="flex items-center gap-1 px-3 py-2 bg-[#1a1a1a] border-b border-white/10 overflow-x-auto shrink-0 scrollbar-none">
         {groupNames.map(g => (
-          <div
+          <button
             key={g}
             onClick={() => { setActiveGroup(g); setRadio(null) }}
-            className={`px-4 py-3 cursor-pointer text-sm font-medium border-b border-white/5 transition-colors ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors shrink-0 ${
               activeGroup === g
-                ? 'bg-red-700 text-white'
-                : 'text-white/60 hover:bg-white/5 hover:text-white'
+                ? 'bg-red-600 text-white'
+                : 'text-white/50 hover:text-white hover:bg-white/10'
             }`}
           >
             {g}
-          </div>
+          </button>
         ))}
       </div>
 
-      {/* Kanal listesi */}
-      {!activeRadio && (
-        <div className="flex-1 overflow-y-auto bg-[#111]">
-          {!activeGroup ? (
-            <div className="flex items-center justify-center h-full text-white/30 text-sm">
-              Soldan grup seçin
-            </div>
-          ) : (
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 p-4">
-              {visibleChannels.map((ch, i) => (
-                <div
-                  key={i}
-                  onClick={() => setRadio(ch)}
-                  className="flex flex-col items-center gap-2 p-3 rounded-xl bg-white/5 hover:bg-white/10 cursor-pointer transition-colors"
-                >
-                  {ch.logo
-                    ? <img src={ch.logo} alt="" className="w-16 h-16 object-contain rounded-xl bg-white/10" />
-                    : <div className="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center text-3xl">📻</div>
-                  }
-                  <div className="text-xs text-white/70 text-center leading-tight truncate w-full text-center">{ch.name}</div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+      {/* Alt alan */}
+      <div className="flex flex-1 min-h-0">
 
-      {/* Player */}
-      {activeRadio && (
-        <div className="flex-1 flex flex-col items-center justify-center bg-[#111]">
-          <button
-            onClick={() => setRadio(null)}
-            className="absolute top-16 left-48 m-4 text-white/40 hover:text-white text-sm"
-          >
-            ← Geri
-          </button>
-          <RadioPlayer channel={activeRadio} />
-        </div>
-      )}
+        {/* Sol: radyo listesi */}
+        {activeGroup && (
+          <div className="w-56 shrink-0 bg-[#1a1a1a] border-r border-white/10 overflow-y-auto">
+            {visibleChannels.map((ch, i) => (
+              <div
+                key={i}
+                onClick={() => setRadio(ch)}
+                className={`flex items-center gap-3 px-3 py-2.5 cursor-pointer border-b border-white/5 hover:bg-white/5 transition-colors ${
+                  activeRadio?.url === ch.url ? 'bg-red-900/40' : ''
+                }`}
+              >
+                {ch.logo
+                  ? <img src={ch.logo} alt="" className="w-8 h-8 object-contain rounded-lg shrink-0 bg-white/10" />
+                  : <div className="w-8 h-8 rounded-lg bg-white/10 shrink-0 flex items-center justify-center">📻</div>
+                }
+                <div className="text-sm text-white/80 truncate">{ch.name}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
+        {/* Sağ: player veya boş */}
+        <div className="flex-1 flex items-center justify-center bg-[#111]">
+          {activeRadio
+            ? <RadioPlayer channel={activeRadio} />
+            : <p className="text-white/30 text-sm">
+                {activeGroup ? 'Soldan radyo seçin' : 'Üstten grup seçin'}
+              </p>
+          }
+        </div>
+
+      </div>
     </div>
   )
 }
