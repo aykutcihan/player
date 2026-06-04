@@ -75,7 +75,7 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
     const rel = i - HALF  // -2, -1, 0, 1, 2
     const idx = mod(centerI + rel)
     const dist = Math.abs(rel)
-    const opacity = dist === 0 ? 1 : dist === 1 ? 0.55 : 0.30
+    const opacity = dist === 0 ? 1 : dist === 1 ? 0.68 : 0.42
     const scale   = dist === 0 ? 1 : dist === 1 ? 0.88 : 0.76
     const weight  = dist === 0 ? '700' : '400'
     const color   = dist === 0 ? '#fff' : '#ffffff'
