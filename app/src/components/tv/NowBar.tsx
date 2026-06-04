@@ -54,21 +54,28 @@ export default function NowBar({ channel, visible }: Props) {
     })
   }, [channel.tvgId])
 
-  // Şu anki program logonun hemen yanına — her kanal değişince sıfırla
+  // Kanal değişince scroll sıfırla
   useEffect(() => {
-    const container = scrollRef.current
-    if (!container) return
-    // Önce sıfırla, ardından anchor pozisyonuna git
-    container.scrollLeft = 0
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const anchor = anchorRef.current
-        if (anchor && container) {
-          container.scrollLeft = anchor.offsetLeft
-        }
-      })
-    })
-  }, [channel.tvgId, current])
+    if (scrollRef.current) scrollRef.current.scrollLeft = 0
+    setPast([])
+    setCurrent(null)
+    setUpcoming([])
+  }, [channel.tvgId])
+
+  // Current yüklenince logonun yanına scroll et
+  useEffect(() => {
+    if (!current) return
+    const go = () => {
+      const anchor    = anchorRef.current
+      const container = scrollRef.current
+      if (anchor && container) {
+        container.scrollLeft = anchor.offsetLeft
+      }
+    }
+    // Layout bitmesini bekle
+    const t = setTimeout(go, 50)
+    return () => clearTimeout(t)
+  }, [current])
 
   const onMouseDown = (e: React.MouseEvent) => {
     dragging.current = true
