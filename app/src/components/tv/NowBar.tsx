@@ -42,8 +42,6 @@ function ProgramCard({
   isOpen: boolean
   onToggle: () => void
 }) {
-  const downX = useRef(0)
-
   const bg = type === 'current'
     ? 'bg-red-900/50 border-red-500/60'
     : type === 'past'
@@ -54,11 +52,7 @@ function ProgramCard({
     <div
       className="relative shrink-0"
       style={{ height: 64 }}
-      onMouseDown={e => { downX.current = e.clientX }}
-      onMouseUp={e => {
-        // 5px'den az hareket = click
-        if (Math.abs(e.clientX - downX.current) < 5) onToggle()
-      }}
+      onClick={onToggle}
     >
       <div
         className={`flex flex-col justify-center px-3 rounded-lg border cursor-pointer ${bg} ${
@@ -120,15 +114,27 @@ export default function NowBar({ channel, visible }: Props) {
     return () => clearTimeout(t)
   }, [current])
 
-  // Scroll drag — sadece container üzerinde
+  const wasDragging = useRef(false)
+
   const onMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+    wasDragging.current = false
     drag.current = { x: e.clientX, sl: scrollRef.current?.scrollLeft ?? 0, active: true }
   }
   const onMouseMove = (e: React.MouseEvent) => {
     if (!drag.current.active || !scrollRef.current) return
-    scrollRef.current.scrollLeft = drag.current.sl - (e.clientX - drag.current.x)
+    const dx = e.clientX - drag.current.x
+    if (Math.abs(dx) > 5) wasDragging.current = true
+    scrollRef.current.scrollLeft = drag.current.sl - dx
   }
   const onMouseUp = () => { drag.current.active = false }
+
+  // Drag sırasında child click'lerini capture phase'de engelle
+  const onClickCapture = (e: React.MouseEvent) => {
+    if (wasDragging.current) {
+      e.stopPropagation()
+      wasDragging.current = false
+    }
+  }
 
   const allProgs: { p: Programme; type: 'past' | 'current' | 'future' }[] = [
     ...past.map(p => ({ p, type: 'past' as const })),
@@ -165,6 +171,7 @@ export default function NowBar({ channel, visible }: Props) {
             onMouseMove={onMouseMove}
             onMouseUp={onMouseUp}
             onMouseLeave={onMouseUp}
+            onClickCapture={onClickCapture}
             onWheel={e => { e.preventDefault(); if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY }}
           >
             {allProgs.map(({ p, type }, i) => (
