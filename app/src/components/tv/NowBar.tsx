@@ -143,10 +143,32 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
                 <span className="text-white/40 text-[9px] group-hover:text-[13px]">{channel.name.slice(0,4)}</span>
               </div>
           }
-          {/* Hover ipucu — şeridin altında */}
-          <div className="absolute left-0 top-[48px] opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
-            <div className="bg-black/85 text-white text-xs px-3 py-1.5 rounded-lg border border-white/20 font-medium">
-              📺 EPG için tıkla
+          {/* Hover ipucu — logodan çıkıyor gibi */}
+          <div
+            className="absolute left-0 top-[44px] pointer-events-none whitespace-nowrap"
+            style={{
+              opacity: 0,
+              transform: 'scale(0.4) translateY(-8px)',
+              transformOrigin: 'top left',
+              transition: 'opacity 0.25s ease, transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
+            }}
+            ref={el => {
+              if (el) {
+                el.closest('.group')?.addEventListener('mouseenter', () => {
+                  el.style.opacity = '1'
+                  el.style.transform = 'scale(1) translateY(0)'
+                })
+                el.closest('.group')?.addEventListener('mouseleave', () => {
+                  el.style.opacity = '0'
+                  el.style.transform = 'scale(0.4) translateY(-8px)'
+                })
+              }
+            }}
+          >
+            <div className="px-3 py-1.5 rounded-xl border border-white/25 bg-black/70 backdrop-blur-sm"
+              style={{ fontFamily: 'Georgia, serif', letterSpacing: '0.05em' }}
+            >
+              <span className="text-white/90 text-sm italic">detay için tıkla</span>
             </div>
           </div>
         </div>
