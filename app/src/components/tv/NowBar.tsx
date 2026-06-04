@@ -84,12 +84,13 @@ export default function NowBar({ channel, visible }: Props) {
   const onMouseMove = (e: React.MouseEvent) => {
     if (!dragging.current || !scrollRef.current) return
     const dx = e.clientX - dragStart.current.x
-    if (Math.abs(dx) > 3) dragStart.current.moved = true
+    if (Math.abs(dx) > 5) dragStart.current.moved = true
     scrollRef.current.scrollLeft = dragStart.current.sl - dx
   }
   const onMouseUp = () => { dragging.current = false }
 
-  const handleClick = (prog: Programme) => {
+  const handleClick = (e: React.MouseEvent, prog: Programme) => {
+    e.stopPropagation()
     if (dragStart.current.moved) return
     setDetail(d => d?.start === prog.start ? null : prog)
   }
@@ -144,7 +145,7 @@ export default function NowBar({ channel, visible }: Props) {
                 ref={type === 'current' ? anchorRef : undefined}
                 className="relative shrink-0"
                 style={{ height: 64 }}
-                onClick={() => handleClick(p)}
+                onClick={e => handleClick(e, p)}
               >
                 <div className={cardClass(type)} style={{ height: 56 }}>
                   {type === 'current' && <div className="text-[9px] text-red-400 font-semibold mb-0.5">▶ ŞU AN</div>}
