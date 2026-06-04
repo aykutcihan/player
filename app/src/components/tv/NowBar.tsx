@@ -58,7 +58,8 @@ function ProgramBox({ prog, type, isOpen, onToggle }: {
       {isOpen && prog && (
         <div
           ref={ref}
-          className="absolute top-full left-0 mt-2 w-72 bg-[#111] border border-white/15 rounded-xl p-4 shadow-2xl z-50"
+          className="absolute bottom-full left-0 mb-2 w-72 bg-[#111] border border-white/15 rounded-xl p-4 shadow-2xl"
+          style={{ zIndex: 9999 }}
           onMouseDown={e => e.stopPropagation()}
         >
           <div className="text-sm font-semibold text-white mb-1">{prog.title}</div>
@@ -118,6 +119,7 @@ export default function NowBar({ channel, visible }: Props) {
   const drag = useRef({ x: 0, sl: 0, active: false, moved: false })
   const onMouseDown = (e: React.MouseEvent) => {
     drag.current = { x: e.clientX, sl: scrollRef.current?.scrollLeft ?? 0, active: true, moved: false }
+    e.preventDefault() // dikey kaymayi engelle
   }
   const onMouseMove = (e: React.MouseEvent) => {
     if (!drag.current.active || !scrollRef.current) return
