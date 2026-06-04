@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
-import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying } from '../../lib/powerplaying'
+import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fetchOzgurNowPlaying } from '../../lib/powerplaying'
 
 interface Props {
   channel: Channel
@@ -45,13 +45,15 @@ export default function RadioPlayer({ channel }: Props) {
     const isPower    = channel.tvgId.startsWith('powerapp.')
     const isKarnaval = channel.tvgId.startsWith('karnaval.')
     const isShow     = channel.tvgId.startsWith('show.')
-    if (!isPower && !isKarnaval && !isShow) return
+    const isOzgur    = channel.tvgId.startsWith('ozgur.')
+    if (!isPower && !isKarnaval && !isShow && !isOzgur) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
       let info = null
-      if (isPower)    info = await fetchPowerNowPlaying(channel.tvgId)
+      if (isPower)         info = await fetchPowerNowPlaying(channel.tvgId)
       else if (isKarnaval) info = await fetchKarnavalNowPlaying(channel.tvgId)
       else if (isShow)     info = await fetchShowNowPlaying(channel.tvgId)
+      else if (isOzgur)    info = await fetchOzgurNowPlaying(channel.tvgId)
       if (info) setSong(info)
       timer = setTimeout(refresh, 30000)
     }
@@ -63,7 +65,7 @@ export default function RadioPlayer({ channel }: Props) {
   useEffect(() => {
     const isJson = channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('turkuvaz.')
     if (!isJson) {
-      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.')
+      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.')
       if (!isWorker) setSong(null)
       return
     }

@@ -29,6 +29,18 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Radyo Özgür FM — ICY metadata (Worker üzerinden)
+export async function fetchOzgurNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('ozgur.')) return null
+  try {
+    const r = await fetch(`${PROXY}/ozgur`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return { title: d.title || '', artist: d.artist || '', cover: '' }
+  } catch { return null }
+}
+
 // Show Radyo — HLS EXTINF metadata (Worker üzerinden)
 export async function fetchShowNowPlaying(tvgId: string): Promise<NowPlaying | null> {
   if (!tvgId.startsWith('show.')) return null
