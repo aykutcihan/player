@@ -78,7 +78,7 @@ export default function EpgOverlay({ channel, onClose, onSeekTo }: Props) {
         </div>
 
         {/* Program listesi */}
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 overflow-y-auto" style={{ scrollbarWidth: 'none' }}>
           {progs.map(({ p, type }, i) => {
             const isCurrent = type === 'current'
             const isPast    = type === 'past'
