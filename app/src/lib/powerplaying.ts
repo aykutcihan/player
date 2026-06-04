@@ -29,6 +29,19 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Radyohome kanalları — HLS EXTINF metadata (Worker üzerinden)
+export async function fetchRadyohomeNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('radyohome.')) return null
+  const slug = tvgId.replace('radyohome.', '')
+  try {
+    const r = await fetch(`${PROXY}/radyohome/${slug}`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return { title: d.title || '', artist: d.artist || '', cover: d.cover || '' }
+  } catch { return null }
+}
+
 // Radyo 7 kanalları — JSON API (Worker üzerinden)
 export async function fetchRadyo7NowPlaying(tvgId: string): Promise<NowPlaying | null> {
   if (!tvgId.startsWith('radyo7.')) return null
