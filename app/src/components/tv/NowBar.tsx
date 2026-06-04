@@ -145,25 +145,23 @@ export default function NowBar({ channel, visible }: Props) {
             ref={scrollRef}
             className="flex gap-2"
             style={{ height: 68, overflowX: 'auto', overflowY: 'hidden', scrollbarWidth: 'none', cursor: 'grab' }}
-            onPointerDown={e => {
+            onMouseDown={e => {
               pointerStart.current = { x: e.clientX, y: e.clientY, sl: scrollRef.current?.scrollLeft ?? 0, dragging: false }
-              ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
             }}
-            onPointerMove={e => {
+            onMouseMove={e => {
+              if (e.buttons !== 1) return
               const dx = e.clientX - pointerStart.current.x
-              const dy = e.clientY - pointerStart.current.y
-              if (Math.abs(dx) > 4 || Math.abs(dy) > 4) pointerStart.current.dragging = true
-              if (pointerStart.current.dragging && scrollRef.current) {
-                scrollRef.current.scrollLeft = pointerStart.current.sl - dx
+              if (Math.abs(dx) > 5) {
+                pointerStart.current.dragging = true
+                if (scrollRef.current) scrollRef.current.scrollLeft = pointerStart.current.sl - dx
               }
             }}
-            onPointerUp={e => {
-              if (!pointerStart.current.dragging) {
-                // drag olmadı — click'i hedefe ilet
-                const el = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement
-                el?.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }))
+            onMouseUp={() => { pointerStart.current.dragging = false }}
+            onClickCapture={e => {
+              if (pointerStart.current.dragging) {
+                e.stopPropagation()
+                pointerStart.current.dragging = false
               }
-              pointerStart.current.dragging = false
             }}
           >
             {items.map((item, i) => (
