@@ -3,6 +3,7 @@ import { useStore } from '../store/useStore'
 import RadioPlayer from '../components/radio/RadioPlayer'
 import FavChannelList from '../components/radio/FavChannelList'
 import FavPickerModal from '../components/radio/FavPickerModal'
+import GroupWheel from '../components/tv/GroupWheel'
 import { useFavorites } from '../lib/useFavorites'
 import type { Channel } from '../lib/m3u'
 
@@ -12,19 +13,41 @@ export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
   const { groups: favGroups, addToGroup, removeFromGroup, reorderGroup, renameGroup, resolveChannels } = useFavorites()
 
-  const [activeGroup, setActiveGroup] = useState<string | null>(null)
+  const [activeGroup, setActiveGroup] = useState<string>('__fav__0')
+  const [uiVisible,   setUiVisible]   = useState(true)
   const [picker, setPicker]           = useState<Channel | null>(null)
   const [toast, setToast]             = useState<string | null>(null)
   const [editingFav, setEditingFav]   = useState<number | null>(null)
   const [editName, setEditName]       = useState('')
-  const [, setShowFavList] = useState(false)
 
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const timerRef  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-  const didLong   = useRef(false)
+  const scrollRef  = useRef<HTMLDivElement>(null)
+  const hideTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const timerRef   = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const didLong    = useRef(false)
 
-  // Grup haritası
-  const normalGroups = useMemo(() => {
+  // Tüm grup listesi: favoriler + normal gruplar
+  const normalGroupNames = useMemo(() => {
+    const seen = new Set<string>()
+    for (const ch of radioChannels) {
+      const g = ch.group || 'Diğer'
+      seen.add(g)
+    }
+    return [...seen]
+  }, [radioChannels])
+
+  const allGroups = useMemo(() => [
+    ...favGroups.map((g, i) => `⭐ ${g.name}__fav__${i}`),
+    ...normalGroupNames,
+  ], [favGroups, normalGroupNames])
+
+  const isFavGroup = (g: string) => g.includes('__fav__')
+  const favIdxOf   = (g: string) => parseInt(g.split('__fav__')[1])
+
+
+  const isFavTab = isFavGroup(activeGroup)
+  const favIdx   = isFavTab ? favIdxOf(activeGroup) : -1
+
+  const normalGroupMap = useMemo(() => {
     const map = new Map<string, Channel[]>()
     for (const ch of radioChannels) {
       const g = ch.group || 'Diğer'
@@ -34,14 +57,19 @@ export default function Radio() {
     return map
   }, [radioChannels])
 
-  const isFavTab = activeGroup?.startsWith('__fav__') ?? false
-  const favIdx   = isFavTab ? parseInt(activeGroup!.replace('__fav__', '')) : -1
-
   const visibleChannels = useMemo((): Channel[] => {
     if (isFavTab) return resolveChannels(favIdx, radioChannels)
-    if (!activeGroup) return []
-    return normalGroups.get(activeGroup) ?? []
-  }, [activeGroup, isFavTab, favIdx, normalGroups, radioChannels, resolveChannels])
+    return normalGroupMap.get(activeGroup) ?? []
+  }, [activeGroup, isFavTab, favIdx, normalGroupMap, radioChannels, resolveChannels])
+
+  // UI göster/gizle
+  const showUi = useCallback(() => {
+    setUiVisible(true)
+    clearTimeout(hideTimer.current)
+    hideTimer.current = setTimeout(() => setUiVisible(false), 4000)
+  }, [])
+
+  useEffect(() => { showUi() }, [])
 
   // Aktif kanala scroll
   useEffect(() => {
@@ -73,7 +101,7 @@ export default function Radio() {
     if (!picker) return
     const err = addToGroup(groupIdx, picker.tvgId)
     setPicker(null)
-    showToast(err ? err : `${picker.name} → ${favGroups[groupIdx].name}`)
+    showToast(err ?? `${picker.name} → ${favGroups[groupIdx].name}`)
   }, [picker, addToGroup, favGroups])
 
   function showToast(msg: string) {
@@ -90,84 +118,44 @@ export default function Radio() {
     setEditingFav(null)
   }
 
-  const groupNames = [...normalGroups.keys()]
-
   return (
-    <div className="relative flex flex-col h-[calc(100svh-48px)] bg-[#111] overflow-hidden">
-
-      {/* Üst grup sekme çubuğu */}
-      <div className="flex items-center gap-1 px-3 py-2 bg-black/60 backdrop-blur-sm border-b border-white/10 overflow-x-auto shrink-0 scrollbar-none z-10">
-        {/* Favori sekmeler */}
-        {favGroups.map((g, i) => {
-          const key = `__fav__${i}`
-          const isActive = activeGroup === key
-          return (
-            <button
-              key={key}
-              onClick={() => { setActiveGroup(key); setShowFavList(false) }}
-              onDoubleClick={() => startRename(i)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors shrink-0 flex items-center gap-1 ${
-                isActive ? 'bg-yellow-500/80 text-black' : 'text-yellow-400/60 hover:text-yellow-300 hover:bg-white/10'
-              }`}
-            >
-              ⭐
-              {editingFav === i
-                ? <input
-                    autoFocus value={editName}
-                    onChange={e => setEditName(e.target.value)}
-                    onBlur={commitRename}
-                    onKeyDown={e => e.key === 'Enter' && commitRename()}
-                    className="bg-transparent outline-none w-16 text-black"
-                    onClick={e => e.stopPropagation()}
-                  />
-                : g.name
-              }
-            </button>
-          )
-        })}
-
-        <div className="w-px h-5 bg-white/10 shrink-0 mx-1" />
-
-        {/* Normal gruplar */}
-        {groupNames.map(g => (
-          <button
-            key={g}
-            onClick={() => { setActiveGroup(g); setShowFavList(false) }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium whitespace-nowrap transition-colors shrink-0 ${
-              activeGroup === g
-                ? 'bg-red-600 text-white'
-                : 'text-white/50 hover:text-white hover:bg-white/10'
-            }`}
-          >
-            {g}
-          </button>
-        ))}
-      </div>
-
+    <div
+      className="relative flex flex-col h-[calc(100svh-48px)] bg-[#111] overflow-hidden"
+      onMouseMove={showUi}
+      onClick={showUi}
+    >
       {/* Ana alan — player */}
       <div className="flex-1 flex items-center justify-center min-h-0">
         {activeRadio
           ? <RadioPlayer channel={activeRadio} />
           : <div className="text-white/20 text-sm text-center px-8">
-              {activeGroup ? 'Alttaki listeden radyo seç' : 'Üstten grup seç'}
+              Soldan grup seç, alttaki listeden radyo tıkla
             </div>
         }
       </div>
 
-      {/* Favori liste overlay (favori sekmesi seçilince açılır) */}
-      {isFavTab && (
-        <div className="absolute inset-x-0 bottom-[88px] top-10 z-20 bg-[#111]/95 overflow-y-auto">
+      {/* Favori liste overlay */}
+      {isFavTab && uiVisible && (
+        <div className="absolute left-24 right-0 top-0 bottom-[88px] z-10 bg-[#111]/90 overflow-y-auto">
           <div className="max-w-sm mx-auto py-2">
             <div className="flex items-center justify-between px-4 py-2 text-xs text-yellow-400/60">
               <span>⭐ {favGroups[favIdx]?.name} · {visibleChannels.length}/10</span>
-              <div className="flex gap-2">
-                <button onClick={() => startRename(favIdx)} className="hover:text-yellow-300">✏️ Yeniden adlandır</button>
-              </div>
+              <button onClick={() => startRename(favIdx)} className="hover:text-yellow-300">
+                {editingFav === favIdx
+                  ? <input autoFocus value={editName}
+                      onChange={e => setEditName(e.target.value)}
+                      onBlur={commitRename}
+                      onKeyDown={e => e.key === 'Enter' && commitRename()}
+                      className="bg-white/10 rounded px-2 outline-none text-white w-28"
+                      onClick={e => e.stopPropagation()} />
+                  : '✏️ Yeniden adlandır'
+                }
+              </button>
             </div>
             <FavChannelList
               channels={visibleChannels}
               active={activeRadio}
-              onSelect={ch => { setRadio(ch) }}
+              onSelect={ch => setRadio(ch)}
               onRemove={tvgId => removeFromGroup(favIdx, tvgId)}
               onReorder={(o, n) => reorderGroup(favIdx, o, n)}
             />
@@ -175,9 +163,17 @@ export default function Radio() {
         </div>
       )}
 
+      {/* Sol GroupWheel */}
+      <GroupWheel
+        groups={allGroups}
+        active={activeGroup}
+        onSelect={setActiveGroup}
+        visible={uiVisible}
+      />
+
       {/* Alt kanal şeridi */}
-      {!isFavTab && visibleChannels.length > 0 && (
-        <div className="shrink-0 bg-black/70 backdrop-blur-sm border-t border-white/10">
+      {!isFavTab && (
+        <div className={`shrink-0 bg-black/70 backdrop-blur-sm border-t border-white/10 transition-opacity duration-300 ${uiVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div
             ref={scrollRef}
             className="flex gap-2 px-3 py-2 overflow-x-auto"
@@ -206,6 +202,11 @@ export default function Radio() {
                 <span className="text-[8px] text-white/50 truncate w-14 text-center leading-tight">{ch.name}</span>
               </button>
             ))}
+            {visibleChannels.length === 0 && (
+              <div className="flex items-center justify-center w-full py-3 text-white/20 text-xs">
+                Grup boş
+              </div>
+            )}
           </div>
         </div>
       )}
