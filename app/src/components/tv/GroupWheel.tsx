@@ -13,7 +13,7 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
   const [isDrag,  setIsDrag]  = useState(false)
   const startY    = useRef(0)
   const startOff  = useRef(0)
-  const ITEM_H    = 52   // her öğenin piksel yüksekliği
+  const ITEM_H    = 68   // her öğenin piksel yüksekliği
 
   // Görünürlük
   useEffect(() => {
@@ -72,8 +72,8 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
     >
       {/* Sürükleme alanı */}
       <div
-        className="relative flex flex-col items-center cursor-grab active:cursor-grabbing"
-        style={{ height: ITEM_H * 3, touchAction: 'none' }}
+        className="relative flex flex-col items-center cursor-grab active:cursor-grabbing bg-black/90 rounded-r-xl"
+        style={{ height: ITEM_H * 3, touchAction: 'none', minWidth: '52px' }}
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
@@ -81,13 +81,13 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
         onWheel={onWheel}
       >
         {/* Gradient maskeler */}
-        <div className="absolute inset-x-0 top-0 h-12 bg-gradient-to-b from-black/70 to-transparent pointer-events-none z-10" />
-        <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-black/70 to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-black to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-black to-transparent pointer-events-none z-10" />
 
         {/* Ortadaki aktif öğe vurgusu */}
         <div className="absolute left-0 right-0 pointer-events-none z-10"
           style={{ top: ITEM_H, height: ITEM_H }}>
-          <div className="h-full border-y border-red-500/40 bg-red-900/20 backdrop-blur-sm" />
+          <div className="h-full border-y-2 border-red-500 bg-red-900/40" />
         </div>
 
         {/* Öğeler */}
@@ -96,22 +96,20 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
           if (idx < 0 || idx >= groups.length) {
             return <div key={rel} style={{ height: ITEM_H }} />
           }
-          const g       = groups[idx]
-          const isActive = g === active
+          const g = groups[idx]
           return (
             <div
               key={rel}
               onClick={() => onSelect(g)}
               style={{ height: ITEM_H }}
-              className={`w-full flex items-center justify-center px-3 transition-all duration-200 ${
-                rel === 0
-                  ? 'opacity-100 scale-100'
-                  : 'opacity-40 scale-90'
+              className={`w-full flex items-center justify-center px-2 transition-all duration-200 ${
+                rel === 0 ? 'opacity-100' : 'opacity-50'
               }`}
             >
-              <span className={`text-xs font-medium whitespace-nowrap writing-mode-vertical ${
-                isActive ? 'text-white' : 'text-white/60'
-              }`}
+              <span
+                className={`font-semibold whitespace-nowrap ${
+                  rel === 0 ? 'text-white text-sm' : 'text-white/70 text-xs'
+                }`}
                 style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', transform: 'rotate(180deg)' }}
               >
                 {g}
