@@ -12,23 +12,30 @@ function fmtTime(iso: string) {
 }
 
 function ProgramCard({
-  prog, isCurrent, onClick
-}: { prog: Programme; isCurrent: boolean; onClick: () => void }) {
+  prog, isCurrent, isPast, onClick
+}: { prog: Programme; isCurrent: boolean; isPast: boolean; onClick: () => void }) {
+  const bg = isCurrent
+    ? 'bg-red-900/50 border-red-500/50'
+    : isPast
+      ? 'bg-slate-800/70 border-slate-600/40 hover:bg-slate-700/70'
+      : 'bg-indigo-950/50 border-indigo-700/30 hover:bg-indigo-900/50'
+
   return (
     <button
       onClick={onClick}
-      className={`flex-none flex flex-col justify-center px-3 py-1.5 rounded-lg transition-all text-left ${
-        isCurrent
-          ? 'bg-red-900/50 border border-red-500/50 min-w-[160px]'
-          : 'bg-white/5 border border-white/10 hover:bg-white/10 min-w-[130px]'
+      className={`flex-none flex flex-col justify-center px-3 py-1.5 rounded-lg transition-all text-left border ${bg} ${
+        isCurrent ? 'min-w-[160px]' : 'min-w-[130px]'
       }`}
       style={{ height: 56 }}
     >
       {isCurrent && (
         <div className="text-[9px] text-red-400 font-semibold mb-0.5">▶ ŞU AN</div>
       )}
+      {isPast && !isCurrent && (
+        <div className="text-[9px] text-slate-400 mb-0.5">geçmiş</div>
+      )}
       <div className={`font-medium leading-tight truncate max-w-[150px] ${
-        isCurrent ? 'text-white text-xs' : 'text-white/60 text-[11px]'
+        isCurrent ? 'text-white text-xs' : isPast ? 'text-slate-300 text-[11px]' : 'text-indigo-200 text-[11px]'
       }`}>
         {prog.title}
       </div>
@@ -158,12 +165,14 @@ export default function NowBar({ channel, visible }: Props) {
             onWheel={onWheel}
           >
             {progs.map((p, i) => {
-              const isCur = current ? p.start === current.start : false
+              const isCur  = current ? p.start === current.start : false
+              const isPast = current ? p.stop <= current.start : false
               return (
-                <div key={i} className="relative" data-current={isCur ? 'true' : undefined}>
+                <div key={i} className="relative shrink-0" data-current={isCur ? 'true' : undefined}>
                   <ProgramCard
                     prog={p}
                     isCurrent={isCur}
+                    isPast={isPast}
                     onClick={() => setDetail(detail?.start === p.start ? null : p)}
                   />
                   {detail?.start === p.start && (
