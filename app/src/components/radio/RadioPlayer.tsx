@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
+import { fetchPowerNowPlaying } from '../../lib/powerplaying'
 
 interface Props {
   channel: Channel
@@ -39,11 +40,24 @@ export default function RadioPlayer({ channel }: Props) {
     return () => clearInterval(t)
   }, [channel.tvgId])
 
+  // Power kanalları için anlık şarkı bilgisi
+  useEffect(() => {
+    if (!channel.tvgId.startsWith('powerapp.')) return
+    let timer: ReturnType<typeof setTimeout>
+    const refresh = async () => {
+      const info = await fetchPowerNowPlaying(channel.tvgId)
+      if (info) setSong(info)
+      timer = setTimeout(refresh, 30000)
+    }
+    refresh()
+    return () => clearTimeout(timer)
+  }, [channel.tvgId])
+
   // Şarkı bilgisi — Karnaval ve Number1 kanallar için
   useEffect(() => {
-    const isSupported = channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('powerapp.')
+    const isSupported = channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('number1.')
     if (!isSupported) {
-      setSong(null)
+      if (!channel.tvgId.startsWith('powerapp.')) setSong(null)
       return
     }
 
