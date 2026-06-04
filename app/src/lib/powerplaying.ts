@@ -29,6 +29,19 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Radyo Viva kanalları — HLS EXTINF metadata (Worker üzerinden)
+export async function fetchVivaNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('viva.')) return null
+  const slug = tvgId.replace('viva.', '')
+  try {
+    const r = await fetch(`${PROXY}/viva/${slug}`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return { title: d.title || '', artist: d.artist || '', cover: d.cover || '' }
+  } catch { return null }
+}
+
 // Radyo Fenomen kanalları — anlık şarkı (Worker üzerinden)
 export async function fetchFenomenNowPlaying(tvgId: string): Promise<NowPlaying | null> {
   if (!tvgId.startsWith('fenomen.')) return null
