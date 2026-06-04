@@ -20,9 +20,24 @@ export default function Radio() {
   const [editingFav,    setEditingFav]    = useState<number | null>(null)
   const [editName,      setEditName]      = useState('')
 
-  const scrollRef = useRef<HTMLDivElement>(null)
-  const timerRef  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-  const didLong   = useRef(false)
+  const scrollRef      = useRef<HTMLDivElement>(null)
+  const dropScrollRef  = useRef<HTMLDivElement>(null)
+  const dropScrollPos  = useRef(0)
+  const pickerRef      = useRef<Channel | null>(null)
+  const timerRef       = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const didLong        = useRef(false)
+
+  // pickerRef'i picker state ile senkron tut
+  useEffect(() => { pickerRef.current = picker }, [picker])
+
+  // Picker açılınca scroll pozisyonunu kaydet, kapanınca geri yükle
+  useEffect(() => {
+    if (picker) {
+      dropScrollPos.current = dropScrollRef.current?.scrollLeft ?? 0
+    } else if (dropScrollRef.current && dropScrollPos.current > 0) {
+      dropScrollRef.current.scrollLeft = dropScrollPos.current
+    }
+  }, [picker])
 
   // Grup haritası
   const normalGroupMap = useMemo(() => {
@@ -52,9 +67,13 @@ export default function Radio() {
     el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
   }, [activeRadio, stripChannels])
 
-  // Dropdown dışına tıklayınca kapat
+  // Dropdown dışına tıklayınca kapat — picker açıksa kapatma
   useEffect(() => {
-    const close = () => { setRadioOpen(false); setBrowseGroup(null) }
+    const close = () => {
+      if (pickerRef.current) return
+      setRadioOpen(false)
+      setBrowseGroup(null)
+    }
     if (radioOpen) {
       document.addEventListener('click', close)
       return () => document.removeEventListener('click', close)
@@ -153,7 +172,7 @@ export default function Radio() {
                     <span className="text-white/30 text-xs">·</span>
                     <span className="text-white/60 text-xs font-medium">{browseGroup}</span>
                   </div>
-                  <div className="flex gap-2 p-2 overflow-x-auto max-h-28" style={{ scrollbarWidth: 'none' }}>
+                  <div ref={dropScrollRef} className="flex gap-2 p-2 overflow-x-auto max-h-28" style={{ scrollbarWidth: 'none' }}>
                     {dropChannels.map((ch, i) => (
                       <button
                         key={i}
