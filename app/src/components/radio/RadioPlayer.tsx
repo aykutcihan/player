@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
-import { fetchPowerNowPlaying } from '../../lib/powerplaying'
+import { fetchPowerNowPlaying, fetchKarnavalNowPlaying } from '../../lib/powerplaying'
 
 interface Props {
   channel: Channel
@@ -40,12 +40,16 @@ export default function RadioPlayer({ channel }: Props) {
     return () => clearInterval(t)
   }, [channel.tvgId])
 
-  // Power kanalları için anlık şarkı (Cloudflare Worker)
+  // Power ve Karnaval kanalları için anlık şarkı (Cloudflare Worker)
   useEffect(() => {
-    if (!channel.tvgId.startsWith('powerapp.')) return
+    const isPower    = channel.tvgId.startsWith('powerapp.')
+    const isKarnaval = channel.tvgId.startsWith('karnaval.')
+    if (!isPower && !isKarnaval) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
-      const info = await fetchPowerNowPlaying(channel.tvgId)
+      const info = isPower
+        ? await fetchPowerNowPlaying(channel.tvgId)
+        : await fetchKarnavalNowPlaying(channel.tvgId)
       if (info) setSong(info)
       timer = setTimeout(refresh, 30000)
     }
@@ -53,11 +57,10 @@ export default function RadioPlayer({ channel }: Props) {
     return () => clearTimeout(timer)
   }, [channel.tvgId])
 
-  // Şarkı bilgisi — Karnaval ve Number1 (GitHub JSON)
+  // Şarkı bilgisi — sadece Number1 (GitHub JSON, Karnaval artık Worker'dan)
   useEffect(() => {
-    const isSupported = channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('number1.')
-    if (!isSupported) {
-      if (!channel.tvgId.startsWith('powerapp.')) setSong(null)
+    if (!channel.tvgId.startsWith('number1.')) {
+      if (!channel.tvgId.startsWith('powerapp.') && !channel.tvgId.startsWith('karnaval.')) setSong(null)
       return
     }
 
