@@ -110,7 +110,7 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
                 className={`font-semibold whitespace-nowrap ${
                   rel === 0 ? 'text-white text-sm' : 'text-white/70 text-xs'
                 }`}
-                style={{ writingMode: 'vertical-rl', textOrientation: 'mixed', transform: 'rotate(180deg)' }}
+                style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
               >
                 {g}
               </span>
