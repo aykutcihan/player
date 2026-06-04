@@ -145,23 +145,9 @@ export default function NowBar({ channel, visible }: Props) {
             ref={scrollRef}
             className="flex gap-2"
             style={{ height: 68, overflowX: 'auto', overflowY: 'hidden', scrollbarWidth: 'none', cursor: 'grab' }}
-            onMouseDown={e => {
-              pointerStart.current = { x: e.clientX, y: e.clientY, sl: scrollRef.current?.scrollLeft ?? 0, dragging: false }
-            }}
-            onMouseMove={e => {
-              if (e.buttons !== 1) return
-              const dx = e.clientX - pointerStart.current.x
-              if (Math.abs(dx) > 5) {
-                pointerStart.current.dragging = true
-                if (scrollRef.current) scrollRef.current.scrollLeft = pointerStart.current.sl - dx
-              }
-            }}
-            onMouseUp={() => { pointerStart.current.dragging = false }}
-            onClickCapture={e => {
-              if (pointerStart.current.dragging) {
-                e.stopPropagation()
-                pointerStart.current.dragging = false
-              }
+            onWheel={e => {
+              e.preventDefault()
+              if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY + e.deltaX
             }}
           >
             {items.map((item, i) => (
