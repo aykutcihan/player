@@ -1,14 +1,18 @@
+import { forwardRef } from 'react'
 import type { Channel } from '../../lib/m3u'
-import VideoPlayer from '../VideoPlayer'
+import VideoPlayer, { type VideoPlayerHandle } from '../VideoPlayer'
 
 interface Props {
   channel: Channel
 }
 
-export default function Player({ channel }: Props) {
+const Player = forwardRef<VideoPlayerHandle, Props>(({ channel }, ref) => {
   return (
     <div className="flex flex-col h-full bg-black">
-      <VideoPlayer url={channel.url} title={channel.name} />
+      <VideoPlayer ref={ref} url={channel.url} title={channel.name} />
     </div>
   )
-}
+})
+
+Player.displayName = 'Player'
+export default Player

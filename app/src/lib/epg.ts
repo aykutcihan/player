@@ -44,3 +44,18 @@ export function upcomingProgrammes(progs: Programme[], limit = 5): Programme[] {
   const now = Date.now()
   return progs.filter(p => new Date(p.start).getTime() > now).slice(0, limit)
 }
+
+export function pastProgrammes(progs: Programme[], limit = 8): Programme[] {
+  const now = Date.now()
+  return progs
+    .filter(p => new Date(p.stop).getTime() <= now)
+    .slice(-limit)
+    .reverse()
+}
+
+export function isDvrStream(url: string): boolean {
+  return url.includes('googlevideo') ||
+         url.includes('playlist_type/DVR') ||
+         url.includes('dvr') ||
+         url.includes('timeshift')
+}
