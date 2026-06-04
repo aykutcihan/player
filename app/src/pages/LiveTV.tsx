@@ -2,6 +2,7 @@ import { useRef, useState, useCallback } from 'react'
 import { useStore } from '../store/useStore'
 import ChannelList  from '../components/tv/ChannelList'
 import ChannelStrip from '../components/tv/ChannelStrip'
+import GroupWheel   from '../components/tv/GroupWheel'
 import NowBar       from '../components/tv/NowBar'
 import Player       from '../components/tv/Player'
 import EpgPanel     from '../components/tv/EpgPanel'
@@ -73,6 +74,14 @@ export default function LiveTV() {
         {activeChannel && (
           <NowBar channel={activeChannel} visible={uiVisible} />
         )}
+
+        {/* Sol: Grup tekerleği */}
+        <GroupWheel
+          groups={groups}
+          active={channelGroup}
+          onSelect={setGroup}
+          visible={uiVisible}
+        />
 
         {/* Kanal şeridi — kontrollerin ÜSTÜNDE */}
         <ChannelStrip
