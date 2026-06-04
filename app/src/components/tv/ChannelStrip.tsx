@@ -35,7 +35,7 @@ export default function ChannelStrip({ channels, active, onSelect, visible }: Pr
 
   return (
     <div
-      className={`absolute bottom-0 left-0 right-0 z-20 transition-opacity duration-300 ${
+      className={`absolute bottom-[72px] left-0 right-0 z-20 transition-opacity duration-300 ${
         visible ? 'opacity-100' : 'opacity-0'
       }`}
     >

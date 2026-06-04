@@ -7,27 +7,30 @@ import EpgPanel     from '../components/tv/EpgPanel'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 import type { Programme } from '../lib/epg'
 
-const HIDE_DELAY = 3000 // 3 saniye hareketsizlikte gizle
+const HIDE_DELAY = 3000
 
 export default function LiveTV() {
   const { channels, activeChannel, channelGroup, setChannel, setGroup } = useStore()
-  const playerRef  = useRef<VideoPlayerHandle>(null)
-  const hideTimer  = useRef<ReturnType<typeof setTimeout>>()
-  const [stripVisible, setStripVisible] = useState(false)
+  const playerRef   = useRef<VideoPlayerHandle>(null)
+  const hideTimer   = useRef<ReturnType<typeof setTimeout>>()
+  const [uiVisible, setUiVisible] = useState(false)
   const groups = [...new Set(channels.map(c => c.group))].filter(Boolean)
+  const groupChannels = channels.filter(c => c.group === channelGroup)
 
-  const showStrip = useCallback(() => {
-    setStripVisible(true)
+  const showUi = useCallback(() => {
+    setUiVisible(true)
     clearTimeout(hideTimer.current)
-    hideTimer.current = setTimeout(() => setStripVisible(false), HIDE_DELAY)
+    hideTimer.current = setTimeout(() => setUiVisible(false), HIDE_DELAY)
+  }, [])
+
+  const hideUi = useCallback(() => {
+    clearTimeout(hideTimer.current)
+    setUiVisible(false)
   }, [])
 
   function handleSelectPast(prog: Programme) {
     playerRef.current?.seekToTime(prog.start)
   }
-
-  // Aktif gruptaki kanallar — strip için
-  const groupChannels = channels.filter(c => c.group === channelGroup)
 
   return (
     <div className="flex h-[calc(100svh-48px)]">
@@ -53,23 +56,24 @@ export default function LiveTV() {
         />
       </div>
 
-      {/* Orta: Player + kanal şeridi */}
+      {/* Orta: Player + kontroller + kanal şeridi */}
       <div
-        className="relative flex flex-col flex-1 min-w-0"
-        onMouseMove={showStrip}
-        onMouseEnter={showStrip}
-        onMouseLeave={() => {
-          clearTimeout(hideTimer.current)
-          setStripVisible(false)
-        }}
+        className="relative flex flex-col flex-1 min-w-0 overflow-hidden"
+        onMouseMove={showUi}
+        onMouseEnter={showUi}
+        onMouseLeave={hideUi}
       >
-        {activeChannel && <Player ref={playerRef} channel={activeChannel} />}
+        {/* Player — özel kontroller içinde, native controls kapalı */}
+        {activeChannel && (
+          <Player ref={playerRef} channel={activeChannel} showControls={uiVisible} />
+        )}
 
+        {/* Kanal şeridi — kontrollerin ÜSTÜNDE, aynı görünürlükte */}
         <ChannelStrip
           channels={groupChannels}
           active={activeChannel}
-          onSelect={setChannel}
-          visible={stripVisible}
+          onSelect={ch => { setChannel(ch); showUi() }}
+          visible={uiVisible}
         />
       </div>
 

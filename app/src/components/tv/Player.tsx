@@ -3,13 +3,14 @@ import type { Channel } from '../../lib/m3u'
 import VideoPlayer, { type VideoPlayerHandle } from '../VideoPlayer'
 
 interface Props {
-  channel: Channel
+  channel:       Channel
+  showControls?: boolean
 }
 
-const Player = forwardRef<VideoPlayerHandle, Props>(({ channel }, ref) => {
+const Player = forwardRef<VideoPlayerHandle, Props>(({ channel, showControls }, ref) => {
   return (
     <div className="flex flex-col h-full bg-black">
-      <VideoPlayer ref={ref} url={channel.url} title={channel.name} />
+      <VideoPlayer ref={ref} url={channel.url} showControls={showControls} />
     </div>
   )
 })
