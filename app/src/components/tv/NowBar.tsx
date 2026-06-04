@@ -90,16 +90,17 @@ export default function NowBar({ channel, visible }: Props) {
     })
   }, [channel.tvgId])
 
-  // Yüklenince "şu an"a scroll et
+  // Yüklenince "şu an"a scroll et — logonun hemen yanına
   useEffect(() => {
-    if (!current || !scrollRef.current) return
+    if (!scrollRef.current || progs.length === 0) return
     setTimeout(() => {
       const el = scrollRef.current?.querySelector('[data-current="true"]') as HTMLElement
       if (el && scrollRef.current) {
-        scrollRef.current.scrollLeft = el.offsetLeft - 8
+        // Current programı en sola (logonun yanına) getir
+        scrollRef.current.scrollLeft = el.offsetLeft
       }
-    }, 50)
-  }, [current, progs])
+    }, 80)
+  }, [progs])
 
   const onPointerDown = (e: React.PointerEvent) => {
     isDrag.current = true
