@@ -14,19 +14,18 @@ concurrency:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     env:
       PYTHONUTF8: "1"
-    defaults:
-      run:
-        shell: cmd
     steps:
       - uses: actions/checkout@v4
 
       - name: Node.js kur
-        run: |
-          where node
-          node --version
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: app/package-lock.json
 
       - name: Bagimliliklar
         working-directory: app
@@ -34,33 +33,20 @@ jobs:
 
       - name: Build
         working-directory: app
-        run: |
-          if (Test-Path "dist") { Remove-Item -Recurse -Force "dist" }
-          npm run build
-        shell: powershell
+        run: npm run build
 
       - name: epg-data reposuna push
-        shell: powershell
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
-          $REPO_URL = "https://x-access-token:$env:EPG_DATA_TOKEN@github.com/aykutcihan/tv-takip.git"
+          REPO_URL="https://x-access-token:$EPG_DATA_TOKEN@github.com/aykutcihan/tv-takip.git"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          # gh-pages branch'ini clone et
-          if (Test-Path "_epg_ghpages") { Remove-Item -Recurse -Force "_epg_ghpages" }
-          git clone -b gh-pages $REPO_URL _epg_ghpages
+          rm -rf _epg_ghpages
+          git clone -b gh-pages "$REPO_URL" _epg_ghpages
 
-          # Dist dosyalarini kopyala (.git hariç)
-          Get-ChildItem app/dist | Copy-Item -Destination _epg_ghpages -Recurse -Force
+          cp -r app/dist/. _epg_ghpages/
 
           git -C _epg_ghpages add -A
-          $diff = git -C _epg_ghpages diff --cached --quiet; $changed = $LASTEXITCODE
-          if ($changed -ne 0) {
-            git -C _epg_ghpages commit -m "App guncellendi"
-            git -C _epg_ghpages push origin gh-pages
-            Write-Host "Push basarili"
-          } else {
-            Write-Host "Degisiklik yok"
-          }
+          git -C _epg_ghpages diff --cached --quiet || (git -C _epg_ghpages commit -m "App guncellendi" && git -C _epg_ghpages push origin gh-pages)
