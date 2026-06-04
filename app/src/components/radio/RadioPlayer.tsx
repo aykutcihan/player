@@ -22,9 +22,10 @@ export default function RadioPlayer({ channel }: Props) {
     audio.play().then(() => setPlaying(true)).catch(() => setError(true))
   }, [channel.url])
 
-  // Şarkı bilgisi — Karnaval kanallar için
+  // Şarkı bilgisi — Karnaval ve Number1 kanallar için
   useEffect(() => {
-    if (!channel.tvgId.startsWith('karnaval.')) {
+    const isSupported = channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('number1.')
+    if (!isSupported) {
       setSong(null)
       return
     }

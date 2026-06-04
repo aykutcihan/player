@@ -37,17 +37,18 @@ export const useStore = create<Store>((set, get) => ({
   loadAll: async () => {
     if (get().loaded) return
     try {
-      const [playlistRes, filmsRes] = await Promise.all([
+      const [playlistRes, filmsRes, radiosRes] = await Promise.all([
         fetch(URLS.playlist),
         fetch(URLS.films),
+        fetch(URLS.radios_playlist),
       ])
-      const [playlistText, filmsText] = await Promise.all([
+      const [playlistText, filmsText, radiosText] = await Promise.all([
         playlistRes.text(),
         filmsRes.text(),
+        radiosRes.ok ? radiosRes.text() : Promise.resolve(''),
       ])
-      const all      = parseM3U(playlistText)
-      const channels = all.filter(c => c.group !== 'Radyo')
-      const radios   = all.filter(c => c.group === 'Radyo')
+      const channels = parseM3U(playlistText)
+      const radios   = parseM3U(radiosText)
       const films    = parseFilms(filmsText)
 
       set({
