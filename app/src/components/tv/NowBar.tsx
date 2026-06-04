@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
-interface Props { channel: Channel; visible: boolean }
+interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void }
 
 const BOX_W = 140  // tüm kutular aynı genişlik
 
@@ -79,7 +79,7 @@ function ProgramBox({ prog, type, isOpen, onToggle, isDvr }: {
   )
 }
 
-export default function NowBar({ channel, visible }: Props) {
+export default function NowBar({ channel, visible, onSeekTo }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
@@ -160,7 +160,13 @@ export default function NowBar({ channel, visible }: Props) {
                 prog={item.prog}
                 type={item.type}
                 isOpen={openIdx === i}
-                onToggle={() => setOpenIdx(idx => idx === i ? null : i)}
+                onToggle={() => {
+                  if (item.type === 'past' && isDvrStream(channel.url) && onSeekTo) {
+                    onSeekTo(item.prog.start)
+                  } else {
+                    setOpenIdx(idx => idx === i ? null : i)
+                  }
+                }}
                 isDvr={isDvrStream(channel.url)}
               />
             ))}

@@ -72,7 +72,11 @@ export default function LiveTV() {
 
         {/* Üst bar: logo + şu an + sonraki */}
         {activeChannel && (
-          <NowBar channel={activeChannel} visible={uiVisible} />
+          <NowBar
+            channel={activeChannel}
+            visible={uiVisible}
+            onSeekTo={t => playerRef.current?.seekToTime(t)}
+          />
         )}
 
         {/* Sol: Grup tekerleği */}
