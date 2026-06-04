@@ -129,7 +129,7 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
     }`}>
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
-      <div className="relative flex items-center pt-3 px-3 gap-2">
+      <div className="relative flex items-center pt-3 px-3 gap-2 group/bar">
         {/* Logo — tıklanabilir, hover'da büyür */}
         <div
           className="shrink-0 cursor-pointer group relative"
@@ -137,8 +137,8 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
         >
           {channel.logo
             ? <img src={channel.logo} alt=""
-                className="w-10 h-10 object-contain rounded bg-white/10 transition-transform duration-200 group-hover:scale-[2] group-hover:drop-shadow-lg" />
-            : <div className="w-10 h-10 rounded bg-white/10 flex items-center justify-center transition-transform duration-200 group-hover:scale-[2]">
+                className="w-10 h-10 object-contain rounded bg-white/10 transition-transform duration-200 origin-left group-hover:scale-[2] group-hover:drop-shadow-lg" />
+            : <div className="w-10 h-10 rounded bg-white/10 flex items-center justify-center transition-transform duration-200 origin-left group-hover:scale-[2]">
                 <span className="text-white/40 text-[9px]">{channel.name.slice(0,4)}</span>
               </div>
           }
