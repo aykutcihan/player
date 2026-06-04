@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
+import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
 
 interface Props {
   channel: Channel
@@ -8,9 +9,10 @@ interface Props {
 
 export default function RadioPlayer({ channel }: Props) {
   const audioRef              = useRef<HTMLAudioElement>(null)
-  const [playing, setPlaying] = useState(false)
-  const [error, setError]     = useState(false)
-  const [song, setSong]       = useState<NowPlaying | null>(null)
+  const [playing, setPlaying]   = useState(false)
+  const [error, setError]       = useState(false)
+  const [song, setSong]         = useState<NowPlaying | null>(null)
+  const [program, setProgram]   = useState<Programme | null>(null)
 
   // Stream
   useEffect(() => {
@@ -21,6 +23,21 @@ export default function RadioPlayer({ channel }: Props) {
     audio.src = channel.url
     audio.play().then(() => setPlaying(true)).catch(() => setError(true))
   }, [channel.url])
+
+  // TRT radyo için EPG programı
+  useEffect(() => {
+    if (!channel.tvgId.startsWith('trt.radyo.')) {
+      setProgram(null)
+      return
+    }
+    fetchEpg(channel.tvgId).then(progs => {
+      setProgram(currentProgramme(progs))
+    })
+    const t = setInterval(() => {
+      fetchEpg(channel.tvgId).then(progs => setProgram(currentProgramme(progs)))
+    }, 60000)
+    return () => clearInterval(t)
+  }, [channel.tvgId])
 
   // Şarkı bilgisi — Karnaval ve Number1 kanallar için
   useEffect(() => {
@@ -82,6 +99,17 @@ export default function RadioPlayer({ channel }: Props) {
                 style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }}
               />
             </div>
+          )}
+        </div>
+      )}
+
+      {/* TRT radyo program bilgisi */}
+      {program && (
+        <div className="text-center bg-white/5 rounded-xl px-6 py-3 w-full">
+          <div className="text-[10px] text-white/40 mb-1">🎙 Şu an yayında</div>
+          <div className="text-base font-medium text-white truncate">{program.title}</div>
+          {program.desc && (
+            <div className="text-xs text-white/40 mt-1 line-clamp-2">{program.desc}</div>
           )}
         </div>
       )}
