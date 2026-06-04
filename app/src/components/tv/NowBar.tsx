@@ -143,9 +143,9 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
                 <span className="text-white/40 text-[9px] group-hover:text-[13px]">{channel.name.slice(0,4)}</span>
               </div>
           }
-          {/* Hover ipucu */}
-          <div className="absolute left-[84px] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
-            <div className="bg-black/80 text-white text-[10px] px-2 py-1 rounded border border-white/20">
+          {/* Hover ipucu — şeridin altında */}
+          <div className="absolute left-0 top-[48px] opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+            <div className="bg-black/85 text-white text-xs px-3 py-1.5 rounded-lg border border-white/20 font-medium">
               📺 EPG için tıkla
             </div>
           </div>
