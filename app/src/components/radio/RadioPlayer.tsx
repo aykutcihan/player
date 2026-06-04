@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
-import { fetchPowerNowPlaying, fetchKarnavalNowPlaying } from '../../lib/powerplaying'
+import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchTurkuvazNowPlaying } from '../../lib/powerplaying'
 
 interface Props {
   channel: Channel
@@ -42,14 +42,15 @@ export default function RadioPlayer({ channel }: Props) {
 
   // Power ve Karnaval kanalları için anlık şarkı (Cloudflare Worker)
   useEffect(() => {
-    const isPower    = channel.tvgId.startsWith('powerapp.')
-    const isKarnaval = channel.tvgId.startsWith('karnaval.')
-    if (!isPower && !isKarnaval) return
+    const isPower     = channel.tvgId.startsWith('powerapp.')
+    const isKarnaval  = channel.tvgId.startsWith('karnaval.')
+    const isTurkuvaz  = channel.tvgId.startsWith('turkuvaz.')
+    if (!isPower && !isKarnaval && !isTurkuvaz) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
-      const info = isPower
-        ? await fetchPowerNowPlaying(channel.tvgId)
-        : await fetchKarnavalNowPlaying(channel.tvgId)
+      const info = isPower    ? await fetchPowerNowPlaying(channel.tvgId)
+                 : isKarnaval ? await fetchKarnavalNowPlaying(channel.tvgId)
+                 : await fetchTurkuvazNowPlaying(channel.tvgId)
       if (info) setSong(info)
       timer = setTimeout(refresh, 30000)
     }
@@ -60,7 +61,7 @@ export default function RadioPlayer({ channel }: Props) {
   // Şarkı bilgisi — sadece Number1 (GitHub JSON, Karnaval artık Worker'dan)
   useEffect(() => {
     if (!channel.tvgId.startsWith('number1.')) {
-      if (!channel.tvgId.startsWith('powerapp.') && !channel.tvgId.startsWith('karnaval.')) setSong(null)
+      if (!channel.tvgId.startsWith('powerapp.') && !channel.tvgId.startsWith('karnaval.') && !channel.tvgId.startsWith('turkuvaz.')) setSong(null)
       return
     }
 

@@ -29,6 +29,19 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Türkuvaz radyo şu an çalan
+export async function fetchTurkuvazNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('turkuvaz.')) return null
+  const slug = tvgId.replace('turkuvaz.', '')
+  try {
+    const r = await fetch(`${PROXY}/turkuvaz/${slug}`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return { title: d.title || '', artist: d.artist || '', cover: '' }
+  } catch { return null }
+}
+
 // Karnaval önbellek — tüm kanalları tek seferde çek
 let karnavalCache: Record<string, NowPlaying> = {}
 let karnavalTs = 0
