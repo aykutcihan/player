@@ -29,6 +29,19 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Radyo 7 kanalları — JSON API (Worker üzerinden)
+export async function fetchRadyo7NowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('radyo7.')) return null
+  const slug = tvgId.replace('radyo7.', '')
+  try {
+    const r = await fetch(`${PROXY}/radyo7/${slug}`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return { title: d.title || '', artist: d.artist || '', cover: d.cover || '' }
+  } catch { return null }
+}
+
 // Radyo Viva kanalları — HLS EXTINF metadata (Worker üzerinden)
 export async function fetchVivaNowPlaying(tvgId: string): Promise<NowPlaying | null> {
   if (!tvgId.startsWith('viva.')) return null
