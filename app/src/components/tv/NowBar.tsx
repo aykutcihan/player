@@ -144,8 +144,8 @@ export default function NowBar({ channel, visible }: Props) {
           <ScrollContainer
             innerRef={scrollRef}
             className="flex gap-2"
-            style={{ scrollbarWidth: 'none', height: 68 }}
-            horizontal
+            style={{ height: 68, overflowX: 'auto', overflowY: 'hidden' }}
+            hideScrollbars
             vertical={false}
           >
             {items.map((item, i) => (
