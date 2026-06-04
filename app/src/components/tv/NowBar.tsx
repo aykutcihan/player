@@ -75,6 +75,7 @@ export default function NowBar({ channel, visible }: Props) {
   const scrollRef  = useRef<HTMLDivElement>(null)
   const currentRef = useRef<HTMLButtonElement>(null)
   const isDrag     = useRef(false)
+  const didDrag    = useRef(false)
   const startX     = useRef(0)
   const startSL    = useRef(0)
 
@@ -97,29 +98,42 @@ export default function NowBar({ channel, visible }: Props) {
     })
   }, [channel.tvgId])
 
-  // Yüklenince "şu an"a scroll et — logonun hemen yanına
+  // Yüklenince "şu an"ı logonun hemen yanına getir
   useEffect(() => {
     if (!scrollRef.current || progs.length === 0) return
     setTimeout(() => {
-      const el = scrollRef.current?.querySelector('[data-current="true"]') as HTMLElement
-      if (el && scrollRef.current) {
-        // Current programı en sola (logonun yanına) getir
-        scrollRef.current.scrollLeft = el.offsetLeft
+      const container = scrollRef.current
+      const el = container?.querySelector('[data-current="true"]') as HTMLElement
+      if (el && container) {
+        const containerRect = container.getBoundingClientRect()
+        const elRect        = el.getBoundingClientRect()
+        container.scrollLeft += elRect.left - containerRect.left
       }
-    }, 80)
+    }, 100)
   }, [progs])
 
   const onPointerDown = (e: React.PointerEvent) => {
-    isDrag.current = true
-    startX.current = e.clientX
+    isDrag.current  = true
+    didDrag.current = false
+    startX.current  = e.clientX
     startSL.current = scrollRef.current?.scrollLeft ?? 0
     ;(e.target as HTMLElement).setPointerCapture(e.pointerId)
   }
   const onPointerMove = (e: React.PointerEvent) => {
     if (!isDrag.current || !scrollRef.current) return
-    scrollRef.current.scrollLeft = startSL.current - (e.clientX - startX.current)
+    const dx = e.clientX - startX.current
+    if (Math.abs(dx) > 4) didDrag.current = true
+    scrollRef.current.scrollLeft = startSL.current - dx
   }
-  const onPointerUp = () => { isDrag.current = false }
+  const onPointerUp = (e: React.PointerEvent) => {
+    isDrag.current = false
+    // Eğer drag olmadıysa click'i engelleme
+    if (!didDrag.current) {
+      const el = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement
+      el?.click()
+    }
+    didDrag.current = false
+  }
 
   const onWheel = (e: React.WheelEvent) => {
     e.preventDefault()
