@@ -119,7 +119,6 @@ export default function NowBar({ channel, visible }: Props) {
   const drag = useRef({ x: 0, sl: 0, active: false, moved: false })
   const onMouseDown = (e: React.MouseEvent) => {
     drag.current = { x: e.clientX, sl: scrollRef.current?.scrollLeft ?? 0, active: true, moved: false }
-    e.preventDefault() // dikey kaymayi engelle
   }
   const onMouseMove = (e: React.MouseEvent) => {
     if (!drag.current.active || !scrollRef.current) return
