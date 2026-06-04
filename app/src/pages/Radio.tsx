@@ -158,10 +158,10 @@ export default function Radio() {
                       <button
                         key={i}
                         onMouseDown={() => startPress(ch)}
-                        onMouseUp={() => { endPress(ch); setRadioOpen(false) }}
+                        onMouseUp={() => { if (!didLong.current) setRadioOpen(false); endPress(ch) }}
                         onMouseLeave={cancelPress}
                         onTouchStart={() => startPress(ch)}
-                        onTouchEnd={() => { endPress(ch); setRadioOpen(false) }}
+                        onTouchEnd={() => { if (!didLong.current) setRadioOpen(false); endPress(ch) }}
                         onTouchMove={cancelPress}
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
                           activeRadio?.tvgId === ch.tvgId
