@@ -126,8 +126,8 @@ export default function Radio() {
   return (
     <div className="flex flex-col h-[calc(100svh-48px)] bg-[#111]">
 
-      {/* Üst buton çubuğu */}
-      <div className="flex items-center gap-3 px-4 py-3 bg-[#1a1a1a] border-b border-white/10 shrink-0">
+      {/* Üst buton çubuğu — sadece 📻 */}
+      <div className="flex items-center px-4 py-3 bg-[#1a1a1a] border-b border-white/10 shrink-0">
 
         {/* 📻 Radyo dropdown butonu */}
         <div className="relative">
@@ -205,87 +205,27 @@ export default function Radio() {
           )}
         </div>
 
-        {/* Favori butonlar — sadece tıklama, renk değişimi */}
-        {favGroups.map((g, i) => {
-          const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-          const favLong = useRef(false)
-
-          const favDown = () => {
-            favLong.current = false
-            favTimerRef.current = setTimeout(() => {
-              favLong.current = true
-              setEditingFav(i)
-              setEditName(g.name)
-            }, LONG_PRESS_MS)
-          }
-          const favUp = () => {
-            clearTimeout(favTimerRef.current)
-            if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null); setRadioOpen(false) }
-          }
-          const favCancel = () => clearTimeout(favTimerRef.current)
-
-          return (
-            <button
-              key={i}
-              onMouseDown={favDown}
-              onMouseUp={favUp}
-              onMouseLeave={favCancel}
-              onTouchStart={favDown}
-              onTouchEnd={favUp}
-              onTouchMove={favCancel}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all select-none ${
-                activeFav === i
-                  ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
-                  : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
-              }`}
-            >
-              {editingFav === i
-                ? <input
-                    autoFocus value={editName}
-                    onChange={e => setEditName(e.target.value)}
-                    onBlur={commitRename}
-                    onKeyDown={e => e.key === 'Enter' && commitRename()}
-                    className="bg-transparent outline-none w-14"
-                    onClick={e => e.stopPropagation()}
-                    onMouseDown={e => e.stopPropagation()}
-                  />
-                : <span>{g.name}</span>
-              }
-            </button>
-          )
-        })}
       </div>
 
-      {/* Ana alan — player */}
-      <div className="flex-1 flex items-center justify-center min-h-0">
-        {activeRadio
-          ? <RadioPlayer channel={activeRadio} />
-          : <div className="text-white/20 text-sm text-center space-y-2">
-              <div className="text-4xl">📻</div>
-              <div>Üstten radyo seç</div>
-            </div>
-        }
-      </div>
-
-      {/* Alt kanal şeridi — fav veya grup kanalları */}
+      {/* Üst kanal şeridi — grup veya fav kanalları */}
       {(activeFav !== null || stripGroup !== null) && (
-        <div className="shrink-0 bg-black/70 backdrop-blur-sm border-t border-white/10">
+        <div className="shrink-0 bg-[#161616] border-b border-white/10">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">
                 Kanallara basılı tutarak bu favoriye ekle
               </div>
             : <div
                 ref={scrollRef}
-                className="flex gap-2 px-3 py-2 overflow-x-auto justify-center"
+                className="flex gap-2 px-3 py-2 overflow-x-auto"
                 style={{ scrollbarWidth: 'none' }}
               >
                 {stripChannels.map((ch, i) => (
                   <button
                     key={i}
-                    onMouseDown={() => startPress(ch, true)}
+                    onMouseDown={() => startPress(ch, activeFav !== null)}
                     onMouseUp={() => endPress(ch)}
                     onMouseLeave={cancelPress}
-                    onTouchStart={() => startPress(ch, true)}
+                    onTouchStart={() => startPress(ch, activeFav !== null)}
                     onTouchEnd={() => endPress(ch)}
                     onTouchMove={cancelPress}
                     className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
@@ -306,6 +246,53 @@ export default function Radio() {
           }
         </div>
       )}
+
+      {/* Ana alan — player */}
+      <div className="flex-1 flex items-center justify-center min-h-0">
+        {activeRadio
+          ? <RadioPlayer channel={activeRadio} />
+          : <div className="text-white/20 text-sm text-center space-y-2">
+              <div className="text-4xl">📻</div>
+              <div>Yukarıdan radyo seç</div>
+            </div>
+        }
+      </div>
+
+      {/* Alt favori butonları */}
+      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-t border-white/10 shrink-0">
+        {favGroups.map((g, i) => {
+          const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+          const favLong = useRef(false)
+          const favDown = () => {
+            favLong.current = false
+            favTimerRef.current = setTimeout(() => { favLong.current = true; setEditingFav(i); setEditName(g.name) }, LONG_PRESS_MS)
+          }
+          const favUp = () => {
+            clearTimeout(favTimerRef.current)
+            if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null); setRadioOpen(false) }
+          }
+          const favCancel = () => clearTimeout(favTimerRef.current)
+          return (
+            <button
+              key={i}
+              onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
+              onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all select-none ${
+                activeFav === i
+                  ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
+                  : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
+              }`}
+            >
+              {editingFav === i
+                ? <input autoFocus value={editName} onChange={e => setEditName(e.target.value)}
+                    onBlur={commitRename} onKeyDown={e => e.key === 'Enter' && commitRename()}
+                    className="bg-transparent outline-none w-16" onClick={e => e.stopPropagation()} onMouseDown={e => e.stopPropagation()} />
+                : <span>{g.name}</span>
+              }
+            </button>
+          )
+        })}
+      </div>
 
       {/* Favori seçici modal */}
       {picker && (
