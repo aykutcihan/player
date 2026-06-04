@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
-import { fetchPowerNowPlaying, fetchKarnavalNowPlaying } from '../../lib/powerplaying'
+import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying } from '../../lib/powerplaying'
 
 interface Props {
   channel: Channel
@@ -40,15 +40,18 @@ export default function RadioPlayer({ channel }: Props) {
     return () => clearInterval(t)
   }, [channel.tvgId])
 
-  // Power ve Karnaval kanalları için anlık şarkı (Cloudflare Worker)
+  // Power, Karnaval ve Show kanalları için anlık şarkı (Cloudflare Worker)
   useEffect(() => {
     const isPower    = channel.tvgId.startsWith('powerapp.')
     const isKarnaval = channel.tvgId.startsWith('karnaval.')
-    if (!isPower && !isKarnaval) return
+    const isShow     = channel.tvgId.startsWith('show.')
+    if (!isPower && !isKarnaval && !isShow) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
-      const info = isPower ? await fetchPowerNowPlaying(channel.tvgId)
-                           : await fetchKarnavalNowPlaying(channel.tvgId)
+      let info = null
+      if (isPower)    info = await fetchPowerNowPlaying(channel.tvgId)
+      else if (isKarnaval) info = await fetchKarnavalNowPlaying(channel.tvgId)
+      else if (isShow)     info = await fetchShowNowPlaying(channel.tvgId)
       if (info) setSong(info)
       timer = setTimeout(refresh, 30000)
     }
@@ -59,7 +62,7 @@ export default function RadioPlayer({ channel }: Props) {
   // Şarkı bilgisi — sadece Number1 (GitHub JSON, Karnaval artık Worker'dan)
   useEffect(() => {
     if (!channel.tvgId.startsWith('number1.')) {
-      if (!channel.tvgId.startsWith('powerapp.') && !channel.tvgId.startsWith('karnaval.') && !channel.tvgId.startsWith('turkuvaz.') && !channel.tvgId.startsWith('powerapp.')) setSong(null)
+      if (!channel.tvgId.startsWith('powerapp.') && !channel.tvgId.startsWith('karnaval.') && !channel.tvgId.startsWith('turkuvaz.') && !channel.tvgId.startsWith('show.')) setSong(null)
       return
     }
 

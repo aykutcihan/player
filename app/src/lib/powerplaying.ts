@@ -29,6 +29,19 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Show Radyo — HLS EXTINF metadata (Worker üzerinden)
+export async function fetchShowNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('show.')) return null
+  const slug = tvgId.replace('show.', '')
+  try {
+    const r = await fetch(`${PROXY}/show/${slug}`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return { title: d.title || '', artist: d.artist || '', cover: d.cover || '' }
+  } catch { return null }
+}
+
 // Türkuvaz radyo şu an çalan
 export async function fetchTurkuvazNowPlaying(tvgId: string): Promise<NowPlaying | null> {
   if (!tvgId.startsWith('turkuvaz.')) return null
@@ -78,3 +91,4 @@ export async function fetchKarnavalNowPlaying(tvgId: string): Promise<NowPlaying
     return karnavalCache[tvgId] ?? null
   } catch { return null }
 }
+
