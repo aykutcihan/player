@@ -12,7 +12,7 @@ export default function App() {
   useEffect(() => { loadAll() }, [loadAll])
 
   return (
-    <BrowserRouter basename="/epg-data">
+    <BrowserRouter basename="/tv-takip">
       <Layout>
         <Routes>
           <Route path="/"        element={<LiveTV  />} />
