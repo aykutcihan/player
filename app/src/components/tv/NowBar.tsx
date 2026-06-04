@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-import ScrollContainer from 'react-indiana-drag-scroll'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
@@ -80,7 +79,8 @@ export default function NowBar({ channel, visible }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
-  const scrollRef = useRef<HTMLElement>(null)
+  const scrollRef  = useRef<HTMLDivElement>(null)
+  const pointerStart = useRef({ x: 0, y: 0, sl: 0, dragging: false })
   const currentIdxRef = useRef(0)
 
   useEffect(() => {
@@ -141,12 +141,30 @@ export default function NowBar({ channel, visible }: Props) {
           <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-black/50 to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-black/60 to-transparent z-10 pointer-events-none" />
 
-          <ScrollContainer
-            innerRef={scrollRef}
+          <div
+            ref={scrollRef}
             className="flex gap-2"
-            style={{ height: 68, overflowX: 'auto', overflowY: 'hidden' }}
-            hideScrollbars
-            vertical={false}
+            style={{ height: 68, overflowX: 'auto', overflowY: 'hidden', scrollbarWidth: 'none', cursor: 'grab' }}
+            onPointerDown={e => {
+              pointerStart.current = { x: e.clientX, y: e.clientY, sl: scrollRef.current?.scrollLeft ?? 0, dragging: false }
+              ;(e.currentTarget as HTMLElement).setPointerCapture(e.pointerId)
+            }}
+            onPointerMove={e => {
+              const dx = e.clientX - pointerStart.current.x
+              const dy = e.clientY - pointerStart.current.y
+              if (Math.abs(dx) > 4 || Math.abs(dy) > 4) pointerStart.current.dragging = true
+              if (pointerStart.current.dragging && scrollRef.current) {
+                scrollRef.current.scrollLeft = pointerStart.current.sl - dx
+              }
+            }}
+            onPointerUp={e => {
+              if (!pointerStart.current.dragging) {
+                // drag olmadı — click'i hedefe ilet
+                const el = document.elementFromPoint(e.clientX, e.clientY) as HTMLElement
+                el?.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }))
+              }
+              pointerStart.current.dragging = false
+            }}
           >
             {items.map((item, i) => (
               <ProgramBox
@@ -157,7 +175,7 @@ export default function NowBar({ channel, visible }: Props) {
                 onToggle={() => setOpenIdx(idx => idx === i ? null : i)}
               />
             ))}
-          </ScrollContainer>
+          </div>
         </div>
       </div>
     </div>
