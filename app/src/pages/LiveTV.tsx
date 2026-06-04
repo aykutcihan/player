@@ -60,7 +60,7 @@ export default function LiveTV() {
 
       {/* Orta: Player + kontroller + kanal şeridi */}
       <div
-        className="relative flex flex-col flex-1 min-w-0 overflow-hidden"
+        className="relative flex flex-col flex-1 min-w-0"
         onMouseMove={showUi}
         onMouseEnter={showUi}
         onMouseLeave={hideUi}
