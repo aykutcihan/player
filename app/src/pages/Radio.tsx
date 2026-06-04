@@ -9,15 +9,16 @@ const LONG_PRESS_MS = 500
 
 export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
-  const { groups: favGroups, addToGroup, renameGroup, resolveChannels } = useFavorites()
+  const { groups: favGroups, addToGroup, removeFromGroup, renameGroup, resolveChannels } = useFavorites()
 
   const [radioOpen,    setRadioOpen]    = useState(false)
   const [browseGroup,  setBrowseGroup]  = useState<string | null>(null)
   const [activeFav,    setActiveFav]    = useState<number | null>(null)
-  const [picker,       setPicker]       = useState<Channel | null>(null)
-  const [toast,        setToast]        = useState<string | null>(null)
-  const [editingFav,   setEditingFav]   = useState<number | null>(null)
-  const [editName,     setEditName]     = useState('')
+  const [picker,        setPicker]        = useState<Channel | null>(null)
+  const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
+  const [toast,         setToast]         = useState<string | null>(null)
+  const [editingFav,    setEditingFav]    = useState<number | null>(null)
+  const [editName,      setEditName]      = useState('')
 
   const scrollRef = useRef<HTMLDivElement>(null)
   const timerRef  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -60,12 +61,13 @@ export default function Radio() {
     }
   }, [radioOpen])
 
-  // Basılı tut → favoriye ekle
-  const startPress = useCallback((ch: Channel) => {
+  // Basılı tut → normal listede favoriye ekle, fav listesinde kaldır onayı
+  const startPress = useCallback((ch: Channel, isFavStrip = false) => {
     didLong.current = false
     timerRef.current = setTimeout(() => {
       didLong.current = true
-      setPicker(ch)
+      if (isFavStrip) setRemoveConfirm(ch)
+      else setPicker(ch)
     }, LONG_PRESS_MS)
   }, [])
 
@@ -241,10 +243,10 @@ export default function Radio() {
                 {stripChannels.map((ch, i) => (
                   <button
                     key={i}
-                    onMouseDown={() => startPress(ch)}
+                    onMouseDown={() => startPress(ch, true)}
                     onMouseUp={() => endPress(ch)}
                     onMouseLeave={cancelPress}
-                    onTouchStart={() => startPress(ch)}
+                    onTouchStart={() => startPress(ch, true)}
                     onTouchEnd={() => endPress(ch)}
                     onTouchMove={cancelPress}
                     className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
@@ -274,6 +276,41 @@ export default function Radio() {
           onPick={handlePick}
           onClose={() => setPicker(null)}
         />
+      )}
+
+      {/* Favoriden kaldır onayı */}
+      {removeConfirm && activeFav !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center"
+          onClick={() => setRemoveConfirm(null)}
+        >
+          <div
+            className="bg-[#222] border border-white/10 rounded-2xl p-5 w-72 shadow-2xl"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="text-sm text-white/80 font-medium mb-1">
+              {favGroups[activeFav]?.name}'den kaldır?
+            </div>
+            <div className="text-xs text-white/40 mb-4 truncate">{removeConfirm.name}</div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => {
+                  removeFromGroup(activeFav, removeConfirm.tvgId)
+                  setRemoveConfirm(null)
+                }}
+                className="flex-1 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-medium transition-colors"
+              >
+                Evet
+              </button>
+              <button
+                onClick={() => setRemoveConfirm(null)}
+                className="flex-1 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white/70 text-sm transition-colors"
+              >
+                Hayır
+              </button>
+            </div>
+          </div>
+        </div>
       )}
 
       {/* Toast */}
