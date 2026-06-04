@@ -11,9 +11,11 @@ export interface NowPlaying {
 let karnavalCache: Record<string, NowPlaying> = {}
 let number1Cache:  Record<string, NowPlaying> = {}
 let powerCache:    Record<string, NowPlaying> = {}
-let karnavalTs = 0
-let number1Ts  = 0
-let powerTs    = 0
+let turkuvazCache: Record<string, NowPlaying> = {}
+let karnavalTs  = 0
+let number1Ts   = 0
+let powerTs     = 0
+let turkuvazTs  = 0
 const TTL = 28000
 
 async function fetchJson(url: string): Promise<Record<string, NowPlaying>> {
@@ -40,5 +42,9 @@ export async function fetchAllNowPlaying(): Promise<Record<string, NowPlaying>> 
     powerCache = await fetchJson(URLS.powerSongs)
     powerTs = now
   }
-  return { ...karnavalCache, ...number1Cache, ...powerCache }
+  if (now - turkuvazTs > TTL) {
+    turkuvazCache = await fetchJson(URLS.turkuvazSongs)
+    turkuvazTs = now
+  }
+  return { ...karnavalCache, ...number1Cache, ...powerCache, ...turkuvazCache }
 }

@@ -12,4 +12,5 @@ export const URLS = {
   karnavalSongs: `${BASE}/karnaval-songs.json`,
   number1Songs:  `${BASE}/number1-songs.json`,
   powerSongs:    `${BASE}/power-songs.json`,
+  turkuvazSongs: `${BASE}/turkuvaz-songs.json`,
 }
