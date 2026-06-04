@@ -11,11 +11,56 @@ function fmtTime(iso: string) {
   return new Date(iso).toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' })
 }
 
+interface TooltipProps {
+  prog:    Programme
+  onClose: () => void
+  label:   string
+}
+
+function ProgramTooltip({ prog, onClose, label }: TooltipProps) {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) onClose()
+    }
+    setTimeout(() => document.addEventListener('mousedown', handler), 0)
+    return () => document.removeEventListener('mousedown', handler)
+  }, [onClose])
+
+  return (
+    <div
+      ref={ref}
+      className="absolute top-full left-0 mt-2 w-80 bg-[#111] border border-white/15 rounded-xl p-4 shadow-2xl z-30"
+    >
+      <div className="text-[10px] text-white/40 mb-1 uppercase tracking-wider">{label}</div>
+      <div className="text-base font-semibold text-white mb-1">{prog.title}</div>
+      {prog.subTitle && (
+        <div className="text-xs text-white/60 italic mb-2">{prog.subTitle}</div>
+      )}
+      <div className="text-xs text-white/50 mb-3">
+        {fmtTime(prog.start)} – {fmtTime(prog.stop)}
+      </div>
+      {prog.desc ? (
+        <div className="text-xs text-white/60 leading-relaxed border-t border-white/10 pt-3">
+          {prog.desc}
+        </div>
+      ) : (
+        <div className="text-xs text-white/20 italic border-t border-white/10 pt-3">
+          Program açıklaması mevcut değil
+        </div>
+      )}
+      {prog.category && (
+        <div className="text-[10px] text-white/25 mt-3">{prog.category}</div>
+      )}
+    </div>
+  )
+}
+
 export default function NowBar({ channel, visible }: Props) {
-  const [current,  setCurrent]  = useState<Programme | null>(null)
-  const [next,     setNext]     = useState<Programme | null>(null)
-  const [tooltip,  setTooltip]  = useState<Programme | null>(null)
-  const tooltipRef = useRef<HTMLDivElement>(null)
+  const [current,      setCurrent]      = useState<Programme | null>(null)
+  const [next,         setNext]         = useState<Programme | null>(null)
+  const [activeTooltip, setActiveTooltip] = useState<'current' | 'next' | null>(null)
   const [show, setShow] = useState(false)
 
   useEffect(() => {
@@ -28,24 +73,13 @@ export default function NowBar({ channel, visible }: Props) {
 
   useEffect(() => {
     if (!channel.tvgId) return
+    setCurrent(null)
+    setNext(null)
     fetchEpg(channel.tvgId).then(progs => {
       setCurrent(currentProgramme(progs))
-      const upcoming = upcomingProgrammes(progs, 1)
-      setNext(upcoming[0] ?? null)
+      setNext(upcomingProgrammes(progs, 1)[0] ?? null)
     })
   }, [channel.tvgId])
-
-  // Dışa tıklayınca tooltip kapat
-  useEffect(() => {
-    if (!tooltip) return
-    const handler = (e: MouseEvent) => {
-      if (tooltipRef.current && !tooltipRef.current.contains(e.target as Node)) {
-        setTooltip(null)
-      }
-    }
-    document.addEventListener('mousedown', handler)
-    return () => document.removeEventListener('mousedown', handler)
-  }, [tooltip])
 
   if (!show) return null
 
@@ -56,20 +90,16 @@ export default function NowBar({ channel, visible }: Props) {
       }`}
     >
       {/* Gradient */}
-      <div className="absolute inset-0 h-24 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
+      <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
-      {/* İçerik */}
-      <div className="relative flex items-center gap-3 px-4 pt-3 pb-6">
-        {/* Kanal logosu */}
+      <div className="relative flex items-start gap-3 px-4 pt-3 pb-6">
+        {/* Logo */}
         {channel.logo ? (
-          <img
-            src={channel.logo}
-            alt={channel.name}
-            className="w-10 h-10 object-contain rounded bg-white/10 shrink-0"
-          />
+          <img src={channel.logo} alt={channel.name}
+            className="w-10 h-10 object-contain rounded bg-white/10 shrink-0 mt-1" />
         ) : (
-          <div className="w-10 h-10 rounded bg-white/10 shrink-0 flex items-center justify-center">
-            <span className="text-white/50 text-[10px]">{channel.name.slice(0,4)}</span>
+          <div className="w-10 h-10 rounded bg-white/10 shrink-0 mt-1 flex items-center justify-center">
+            <span className="text-white/50 text-[9px]">{channel.name.slice(0,4)}</span>
           </div>
         )}
 
@@ -77,8 +107,8 @@ export default function NowBar({ channel, visible }: Props) {
         {current && (
           <div className="relative">
             <button
-              onClick={() => setTooltip(tooltip?.title === current.title ? null : current)}
-              className="flex flex-col items-start hover:opacity-80 transition-opacity"
+              onClick={() => setActiveTooltip(activeTooltip === 'current' ? null : 'current')}
+              className="flex flex-col items-start text-left hover:opacity-80 transition-opacity"
             >
               <span className="text-[10px] text-red-400 font-medium">▶ ŞU AN</span>
               <span className="text-sm text-white font-medium leading-tight max-w-[200px] truncate">
@@ -88,43 +118,25 @@ export default function NowBar({ channel, visible }: Props) {
                 {fmtTime(current.start)} – {fmtTime(current.stop)}
               </span>
             </button>
-
-            {/* Tooltip */}
-            {tooltip?.title === current.title && (
-              <div
-                ref={tooltipRef}
-                className="absolute top-full left-0 mt-2 w-72 bg-[#1a1a1a] border border-white/10 rounded-lg p-3 shadow-xl z-30"
-              >
-                <div className="text-xs text-red-400 mb-1">▶ Şu an yayında</div>
-                <div className="text-sm font-medium text-white mb-1">{current.title}</div>
-                <div className="text-xs text-white/50 mb-2">
-                  {fmtTime(current.start)} – {fmtTime(current.stop)}
-                </div>
-                {current.subTitle && (
-                  <div className="text-xs text-white/60 italic mb-1">{current.subTitle}</div>
-                )}
-                {current.desc && (
-                  <div className="text-xs text-white/50 leading-relaxed">{current.desc}</div>
-                )}
-                {current.category && (
-                  <div className="text-[10px] text-white/30 mt-2">{current.category}</div>
-                )}
-              </div>
+            {activeTooltip === 'current' && (
+              <ProgramTooltip
+                prog={current}
+                label="Şu an yayında"
+                onClose={() => setActiveTooltip(null)}
+              />
             )}
           </div>
         )}
 
         {/* Ayraç */}
-        {current && next && (
-          <div className="w-px h-8 bg-white/20 shrink-0" />
-        )}
+        {current && next && <div className="w-px h-8 bg-white/20 shrink-0 mt-2" />}
 
         {/* Sonraki */}
         {next && (
           <div className="relative">
             <button
-              onClick={() => setTooltip(tooltip?.title === next.title ? null : next)}
-              className="flex flex-col items-start hover:opacity-80 transition-opacity"
+              onClick={() => setActiveTooltip(activeTooltip === 'next' ? null : 'next')}
+              className="flex flex-col items-start text-left hover:opacity-80 transition-opacity"
             >
               <span className="text-[10px] text-white/40 font-medium">SONRAKI</span>
               <span className="text-sm text-white/70 leading-tight max-w-[200px] truncate">
@@ -132,27 +144,12 @@ export default function NowBar({ channel, visible }: Props) {
               </span>
               <span className="text-[10px] text-white/30">{fmtTime(next.start)}</span>
             </button>
-
-            {tooltip?.title === next.title && (
-              <div
-                ref={tooltipRef}
-                className="absolute top-full left-0 mt-2 w-72 bg-[#1a1a1a] border border-white/10 rounded-lg p-3 shadow-xl z-30"
-              >
-                <div className="text-xs text-white/40 mb-1">Sonraki program</div>
-                <div className="text-sm font-medium text-white mb-1">{next.title}</div>
-                <div className="text-xs text-white/50 mb-2">
-                  {fmtTime(next.start)} – {fmtTime(next.stop)}
-                </div>
-                {next.subTitle && (
-                  <div className="text-xs text-white/60 italic mb-1">{next.subTitle}</div>
-                )}
-                {next.desc && (
-                  <div className="text-xs text-white/50 leading-relaxed">{next.desc}</div>
-                )}
-                {next.category && (
-                  <div className="text-[10px] text-white/30 mt-2">{next.category}</div>
-                )}
-              </div>
+            {activeTooltip === 'next' && (
+              <ProgramTooltip
+                prog={next}
+                label="Sonraki program"
+                onClose={() => setActiveTooltip(null)}
+              />
             )}
           </div>
         )}
