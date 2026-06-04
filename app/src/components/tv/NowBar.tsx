@@ -130,20 +130,21 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
       <div className="relative flex items-center pt-3 px-3 gap-2 group/bar">
-        {/* Logo — tıklanabilir, hover'da büyür */}
+        {/* Logo — tıklanabilir, hover'da büyür ve yer açar */}
         <div
-          className="shrink-0 cursor-pointer group relative"
+          className="shrink-0 cursor-pointer group relative transition-all duration-200 w-10 hover:w-20"
           onClick={onLogoClick}
+          style={{ height: 40 }}
         >
           {channel.logo
             ? <img src={channel.logo} alt=""
-                className="w-10 h-10 object-contain rounded bg-white/10 transition-transform duration-200 origin-left group-hover:scale-[2] group-hover:drop-shadow-lg" />
-            : <div className="w-10 h-10 rounded bg-white/10 flex items-center justify-center transition-transform duration-200 origin-left group-hover:scale-[2]">
-                <span className="text-white/40 text-[9px]">{channel.name.slice(0,4)}</span>
+                className="absolute top-0 left-0 w-10 h-10 object-contain rounded bg-white/10 transition-all duration-200 group-hover:w-20 group-hover:h-20 group-hover:-top-5 group-hover:drop-shadow-lg" />
+            : <div className="absolute top-0 left-0 w-10 h-10 rounded bg-white/10 flex items-center justify-center transition-all duration-200 group-hover:w-20 group-hover:h-20 group-hover:-top-5">
+                <span className="text-white/40 text-[9px] group-hover:text-[13px]">{channel.name.slice(0,4)}</span>
               </div>
           }
           {/* Hover ipucu */}
-          <div className="absolute left-12 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+          <div className="absolute left-[84px] top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
             <div className="bg-black/80 text-white text-[10px] px-2 py-1 rounded border border-white/20">
               📺 EPG için tıkla
             </div>
