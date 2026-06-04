@@ -13,6 +13,7 @@ export default function Radio() {
 
   const [radioOpen,    setRadioOpen]    = useState(false)
   const [browseGroup,  setBrowseGroup]  = useState<string | null>(null)
+  const [stripGroup,   setStripGroup]   = useState<string | null>(null) // alt şeritte gösterilen grup
   const [activeFav,    setActiveFav]    = useState<number | null>(null)
   const [picker,        setPicker]        = useState<Channel | null>(null)
   const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
@@ -52,11 +53,12 @@ export default function Radio() {
 
   const groupNames = useMemo(() => [...normalGroupMap.keys()], [normalGroupMap])
 
-  // Alt şerit kanalları — aktif fav seçiliyse onun kanalları
+  // Alt şerit kanalları — fav veya seçili grup
   const stripChannels = useMemo((): Channel[] => {
     if (activeFav !== null) return resolveChannels(activeFav, radioChannels)
+    if (stripGroup) return normalGroupMap.get(stripGroup) ?? []
     return []
-  }, [activeFav, radioChannels, resolveChannels])
+  }, [activeFav, stripGroup, radioChannels, normalGroupMap, resolveChannels])
 
   // Aktif kanala scroll
   useEffect(() => {
@@ -130,7 +132,7 @@ export default function Radio() {
         {/* 📻 Radyo dropdown butonu */}
         <div className="relative">
           <button
-            onClick={e => { e.stopPropagation(); setRadioOpen(p => !p); setBrowseGroup(null) }}
+            onClick={e => { e.stopPropagation(); setRadioOpen(p => !p); setBrowseGroup(null); setStripGroup(null); setActiveFav(null) }}
             className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all ${
               radioOpen
                 ? 'bg-red-600 text-white shadow-lg shadow-red-900/40'
@@ -177,10 +179,10 @@ export default function Radio() {
                       <button
                         key={i}
                         onMouseDown={() => startPress(ch)}
-                        onMouseUp={() => { if (!didLong.current) setRadioOpen(false); endPress(ch) }}
+                        onMouseUp={() => { if (!didLong.current) { setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } endPress(ch) }}
                         onMouseLeave={cancelPress}
                         onTouchStart={() => startPress(ch)}
-                        onTouchEnd={() => { if (!didLong.current) setRadioOpen(false); endPress(ch) }}
+                        onTouchEnd={() => { if (!didLong.current) { setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } endPress(ch) }}
                         onTouchMove={cancelPress}
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
                           activeRadio?.tvgId === ch.tvgId
@@ -218,7 +220,7 @@ export default function Radio() {
           }
           const favUp = () => {
             clearTimeout(favTimerRef.current)
-            if (!favLong.current) setActiveFav(prev => prev === i ? null : i)
+            if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null); setRadioOpen(false) }
           }
           const favCancel = () => clearTimeout(favTimerRef.current)
 
@@ -265,8 +267,8 @@ export default function Radio() {
         }
       </div>
 
-      {/* Alt kanal şeridi — aktif fav kanalları */}
-      {activeFav !== null && (
+      {/* Alt kanal şeridi — fav veya grup kanalları */}
+      {(activeFav !== null || stripGroup !== null) && (
         <div className="shrink-0 bg-black/70 backdrop-blur-sm border-t border-white/10">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">
@@ -288,7 +290,7 @@ export default function Radio() {
                     onTouchMove={cancelPress}
                     className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
                       activeRadio?.tvgId === ch.tvgId
-                        ? 'border-yellow-500 bg-yellow-900/30 scale-105'
+                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
                         : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
                     }`}
                   >
