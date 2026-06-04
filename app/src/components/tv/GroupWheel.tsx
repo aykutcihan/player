@@ -7,7 +7,7 @@ interface Props {
   visible:  boolean
 }
 
-const ITEM_H   = 48   // her öğe yüksekliği px
+const ITEM_H   = 40   // her öğe yüksekliği px
 const VISIBLE  = 5    // görünen öğe sayısı (tek sayı)
 const HALF     = Math.floor(VISIBLE / 2)
 
