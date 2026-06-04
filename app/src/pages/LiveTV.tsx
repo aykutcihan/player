@@ -2,6 +2,7 @@ import { useRef, useState, useCallback } from 'react'
 import { useStore } from '../store/useStore'
 import ChannelList  from '../components/tv/ChannelList'
 import ChannelStrip from '../components/tv/ChannelStrip'
+import NowBar       from '../components/tv/NowBar'
 import Player       from '../components/tv/Player'
 import EpgPanel     from '../components/tv/EpgPanel'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
@@ -63,12 +64,17 @@ export default function LiveTV() {
         onMouseEnter={showUi}
         onMouseLeave={hideUi}
       >
-        {/* Player — özel kontroller içinde, native controls kapalı */}
+        {/* Player */}
         {activeChannel && (
           <Player ref={playerRef} channel={activeChannel} showControls={uiVisible} />
         )}
 
-        {/* Kanal şeridi — kontrollerin ÜSTÜNDE, aynı görünürlükte */}
+        {/* Üst bar: logo + şu an + sonraki */}
+        {activeChannel && (
+          <NowBar channel={activeChannel} visible={uiVisible} />
+        )}
+
+        {/* Kanal şeridi — kontrollerin ÜSTÜNDE */}
         <ChannelStrip
           channels={groupChannels}
           active={activeChannel}
