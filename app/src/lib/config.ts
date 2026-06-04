@@ -11,4 +11,5 @@ export const URLS = {
   epg:           (channelId: string) => `${BASE}/epg/${channelId}.json`,
   karnavalSongs: `${BASE}/karnaval-songs.json`,
   number1Songs:  `${BASE}/number1-songs.json`,
+  powerSongs:    `${BASE}/power-songs.json`,
 }

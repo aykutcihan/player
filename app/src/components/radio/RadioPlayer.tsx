@@ -41,7 +41,7 @@ export default function RadioPlayer({ channel }: Props) {
 
   // Şarkı bilgisi — Karnaval ve Number1 kanallar için
   useEffect(() => {
-    const isSupported = channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('number1.')
+    const isSupported = channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('powerapp.')
     if (!isSupported) {
       setSong(null)
       return
