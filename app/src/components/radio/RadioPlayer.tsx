@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
-import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fetchOzgurNowPlaying } from '../../lib/powerplaying'
+import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fetchOzgurNowPlaying, fetchFenomenNowPlaying } from '../../lib/powerplaying'
 
 interface Props {
   channel: Channel
@@ -46,14 +46,16 @@ export default function RadioPlayer({ channel }: Props) {
     const isKarnaval = channel.tvgId.startsWith('karnaval.')
     const isShow     = channel.tvgId.startsWith('show.')
     const isOzgur    = channel.tvgId.startsWith('ozgur.')
-    if (!isPower && !isKarnaval && !isShow && !isOzgur) return
+    const isFenomen  = channel.tvgId.startsWith('fenomen.')
+    if (!isPower && !isKarnaval && !isShow && !isOzgur && !isFenomen) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
       let info = null
-      if (isPower)         info = await fetchPowerNowPlaying(channel.tvgId)
-      else if (isKarnaval) info = await fetchKarnavalNowPlaying(channel.tvgId)
-      else if (isShow)     info = await fetchShowNowPlaying(channel.tvgId)
-      else if (isOzgur)    info = await fetchOzgurNowPlaying(channel.tvgId)
+      if (isPower)          info = await fetchPowerNowPlaying(channel.tvgId)
+      else if (isKarnaval)  info = await fetchKarnavalNowPlaying(channel.tvgId)
+      else if (isShow)      info = await fetchShowNowPlaying(channel.tvgId)
+      else if (isOzgur)     info = await fetchOzgurNowPlaying(channel.tvgId)
+      else if (isFenomen)   info = await fetchFenomenNowPlaying(channel.tvgId)
       if (info) setSong(info)
       timer = setTimeout(refresh, 30000)
     }
@@ -65,7 +67,7 @@ export default function RadioPlayer({ channel }: Props) {
   useEffect(() => {
     const isJson = channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('turkuvaz.')
     if (!isJson) {
-      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.')
+      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.') || channel.tvgId.startsWith('fenomen.')
       if (!isWorker) setSong(null)
       return
     }

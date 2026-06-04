@@ -29,6 +29,25 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
   } catch { return null }
 }
 
+// Radyo Fenomen kanalları — anlık şarkı (Worker üzerinden)
+export async function fetchFenomenNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('fenomen.')) return null
+  const slug = tvgId.replace('fenomen.', '')
+  try {
+    const r = await fetch(`${PROXY}/fenomen/${slug}`)
+    if (!r.ok) return null
+    const d = await r.json()
+    if (!d.title && !d.artist) return null
+    return {
+      title:    d.title   || '',
+      artist:   d.artist  || '',
+      cover:    d.cover   || '',
+      progress: d.progress ?? 0,
+      duration: d.duration ?? 0,
+    }
+  } catch { return null }
+}
+
 // Radyo Özgür FM — ICY metadata (Worker üzerinden)
 export async function fetchOzgurNowPlaying(tvgId: string): Promise<NowPlaying | null> {
   if (!tvgId.startsWith('ozgur.')) return null
