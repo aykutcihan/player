@@ -7,21 +7,21 @@ import type { Channel } from '../lib/m3u'
 
 const LONG_PRESS_MS = 500
 
-type MenuKey = 'radio' | 'fav0' | 'fav1' | 'fav2' | null
-
 export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
-  const { groups: favGroups, addToGroup, removeFromGroup, renameGroup, resolveChannels } = useFavorites()
+  const { groups: favGroups, addToGroup, renameGroup, resolveChannels } = useFavorites()
 
-  const [openMenu,   setOpenMenu]   = useState<MenuKey>(null)
-  const [browseGroup, setBrowseGroup] = useState<string | null>(null) // 📻 içinde seçili grup
-  const [picker, setPicker]         = useState<Channel | null>(null)
-  const [toast, setToast]           = useState<string | null>(null)
-  const [editingFav, setEditingFav] = useState<number | null>(null)
-  const [editName, setEditName]     = useState('')
+  const [radioOpen,    setRadioOpen]    = useState(false)
+  const [browseGroup,  setBrowseGroup]  = useState<string | null>(null)
+  const [activeFav,    setActiveFav]    = useState<number | null>(null)
+  const [picker,       setPicker]       = useState<Channel | null>(null)
+  const [toast,        setToast]        = useState<string | null>(null)
+  const [editingFav,   setEditingFav]   = useState<number | null>(null)
+  const [editName,     setEditName]     = useState('')
 
-  const timerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-  const didLong  = useRef(false)
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const timerRef  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const didLong   = useRef(false)
 
   // Grup haritası
   const normalGroupMap = useMemo(() => {
@@ -36,30 +36,31 @@ export default function Radio() {
 
   const groupNames = useMemo(() => [...normalGroupMap.keys()], [normalGroupMap])
 
-  // Menü toggle
-  const toggle = (key: MenuKey) => {
-    setOpenMenu(prev => prev === key ? null : key)
-    setBrowseGroup(null)
-  }
+  // Alt şerit kanalları — aktif fav seçiliyse onun kanalları
+  const stripChannels = useMemo((): Channel[] => {
+    if (activeFav !== null) return resolveChannels(activeFav, radioChannels)
+    return []
+  }, [activeFav, radioChannels, resolveChannels])
 
-  // Dışa tıklayınca kapat
+  // Aktif kanala scroll
   useEffect(() => {
-    const close = () => { setOpenMenu(null); setBrowseGroup(null) }
-    if (openMenu) {
+    if (!activeRadio || !scrollRef.current) return
+    const idx = stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId)
+    if (idx < 0) return
+    const el = scrollRef.current.children[idx] as HTMLElement
+    el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+  }, [activeRadio, stripChannels])
+
+  // Dropdown dışına tıklayınca kapat
+  useEffect(() => {
+    const close = () => { setRadioOpen(false); setBrowseGroup(null) }
+    if (radioOpen) {
       document.addEventListener('click', close)
       return () => document.removeEventListener('click', close)
     }
-  }, [openMenu])
+  }, [radioOpen])
 
-  // 📻 dropdown içeriği
-  const dropdownChannels = useMemo((): Channel[] => {
-    if (!openMenu) return []
-    if (openMenu === 'radio') return browseGroup ? (normalGroupMap.get(browseGroup) ?? []) : []
-    const idx = parseInt(openMenu.replace('fav', ''))
-    return resolveChannels(idx, radioChannels)
-  }, [openMenu, browseGroup, normalGroupMap, radioChannels, resolveChannels])
-
-  // Basılı tut (favoriye ekle)
+  // Basılı tut → favoriye ekle
   const startPress = useCallback((ch: Channel) => {
     didLong.current = false
     timerRef.current = setTimeout(() => {
@@ -70,7 +71,7 @@ export default function Radio() {
 
   const endPress = useCallback((ch: Channel) => {
     clearTimeout(timerRef.current)
-    if (!didLong.current) { setRadio(ch); setOpenMenu(null) }
+    if (!didLong.current) setRadio(ch)
   }, [setRadio])
 
   const cancelPress = useCallback(() => clearTimeout(timerRef.current), [])
@@ -98,7 +99,11 @@ export default function Radio() {
     setEditingFav(null)
   }
 
-  const favIdx = openMenu?.startsWith('fav') ? parseInt(openMenu.replace('fav', '')) : -1
+  // 📻 dropdown içindeki kanallar
+  const dropChannels = useMemo((): Channel[] =>
+    browseGroup ? (normalGroupMap.get(browseGroup) ?? []) : [],
+    [browseGroup, normalGroupMap]
+  )
 
   return (
     <div className="flex flex-col h-[calc(100svh-48px)] bg-[#111]">
@@ -106,135 +111,160 @@ export default function Radio() {
       {/* Üst buton çubuğu */}
       <div className="flex items-center gap-3 px-4 py-3 bg-[#1a1a1a] border-b border-white/10 shrink-0">
 
-        {/* 📻 Radyo butonu */}
-        <button
-          onClick={e => { e.stopPropagation(); toggle('radio') }}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all ${
-            openMenu === 'radio'
-              ? 'bg-red-600 text-white shadow-lg shadow-red-900/40'
-              : 'bg-white/8 text-white/70 hover:bg-white/12 hover:text-white'
-          }`}
-        >
-          <span className="text-xl">📻</span>
-          <span>Radyo</span>
-          <span className="text-[10px] opacity-60">{openMenu === 'radio' ? '▲' : '▼'}</span>
-        </button>
+        {/* 📻 Radyo dropdown butonu */}
+        <div className="relative">
+          <button
+            onClick={e => { e.stopPropagation(); setRadioOpen(p => !p); setBrowseGroup(null) }}
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all ${
+              radioOpen
+                ? 'bg-red-600 text-white shadow-lg shadow-red-900/40'
+                : 'bg-white/8 text-white/70 hover:bg-white/12 hover:text-white'
+            }`}
+          >
+            <span className="text-xl">📻</span>
+            <span>Radyo</span>
+            <span className="text-[10px] opacity-60">{radioOpen ? '▲' : '▼'}</span>
+          </button>
 
-        {/* Favori butonlar */}
-        {favGroups.map((g, i) => {
-          const key = `fav${i}` as MenuKey
-          const isOpen = openMenu === key
-          return (
-            <button
-              key={i}
-              onClick={e => { e.stopPropagation(); toggle(key) }}
-              onDoubleClick={e => startRename(i, e)}
-              className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all ${
-                isOpen
-                  ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
-                  : 'bg-white/8 text-yellow-400/80 hover:bg-white/12 hover:text-yellow-300'
-              }`}
+          {/* Dropdown */}
+          {radioOpen && (
+            <div
+              className="absolute top-full left-0 mt-2 z-40 bg-[#222] border border-white/10 rounded-2xl shadow-2xl overflow-hidden min-w-[280px]"
+              onClick={e => e.stopPropagation()}
             >
-              <span>⭐</span>
-              {editingFav === i
-                ? <input
-                    autoFocus value={editName}
-                    onChange={e => setEditName(e.target.value)}
-                    onBlur={commitRename}
-                    onKeyDown={e => e.key === 'Enter' && commitRename()}
-                    className="bg-transparent outline-none w-16"
-                    onClick={e => e.stopPropagation()}
-                  />
-                : <span>{g.name}</span>
-              }
-              <span className="text-[10px] opacity-60">{isOpen ? '▲' : '▼'}</span>
-            </button>
-          )
-        })}
-      </div>
-
-      {/* Dropdown paneli */}
-      {openMenu && (
-        <div
-          className="relative z-30 bg-[#1e1e1e] border-b border-white/10 shadow-xl"
-          onClick={e => e.stopPropagation()}
-        >
-          {/* 📻 → grup listesi */}
-          {openMenu === 'radio' && !browseGroup && (
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 p-3 max-h-56 overflow-y-auto">
-              {groupNames.map(g => (
-                <button
-                  key={g}
-                  onClick={() => setBrowseGroup(g)}
-                  className="px-3 py-2 rounded-xl bg-white/5 hover:bg-red-700/50 text-white/70 hover:text-white text-xs font-medium transition-colors text-center"
-                >
-                  {g}
-                </button>
-              ))}
+              {!browseGroup ? (
+                /* Grup listesi */
+                <div className="grid grid-cols-2 gap-1 p-2 max-h-64 overflow-y-auto">
+                  {groupNames.map(g => (
+                    <button
+                      key={g}
+                      onClick={() => setBrowseGroup(g)}
+                      className="px-3 py-2 rounded-xl bg-white/5 hover:bg-red-700/50 text-white/70 hover:text-white text-xs font-medium transition-colors text-left"
+                    >
+                      {g}
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                /* Kanal listesi */
+                <>
+                  <div className="flex items-center gap-2 px-3 pt-2 pb-1 border-b border-white/5">
+                    <button
+                      onClick={() => setBrowseGroup(null)}
+                      className="text-white/40 hover:text-white text-xs"
+                    >← Gruplar</button>
+                    <span className="text-white/30 text-xs">·</span>
+                    <span className="text-white/60 text-xs font-medium">{browseGroup}</span>
+                  </div>
+                  <div className="flex gap-2 p-2 overflow-x-auto max-h-28" style={{ scrollbarWidth: 'none' }}>
+                    {dropChannels.map((ch, i) => (
+                      <button
+                        key={i}
+                        onMouseDown={() => startPress(ch)}
+                        onMouseUp={() => { endPress(ch); setRadioOpen(false) }}
+                        onMouseLeave={cancelPress}
+                        onTouchStart={() => startPress(ch)}
+                        onTouchEnd={() => { endPress(ch); setRadioOpen(false) }}
+                        onTouchMove={cancelPress}
+                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
+                          activeRadio?.tvgId === ch.tvgId
+                            ? 'border-red-500 bg-red-900/40'
+                            : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
+                        }`}
+                      >
+                        {ch.logo
+                          ? <img src={ch.logo} alt={ch.name} className="w-9 h-9 object-contain rounded-lg"
+                              onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                          : <span className="text-xl">📻</span>
+                        }
+                        <span className="text-[8px] text-white/50 truncate w-14 text-center">{ch.name}</span>
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
           )}
-
-          {/* 📻 → seçili grup kanalları */}
-          {openMenu === 'radio' && browseGroup && (
-            <>
-              <div className="flex items-center gap-2 px-3 pt-2 pb-1">
-                <button onClick={() => setBrowseGroup(null)}
-                  className="text-white/40 hover:text-white text-xs flex items-center gap-1">
-                  ← Gruplar
-                </button>
-                <span className="text-white/20 text-xs">·</span>
-                <span className="text-white/60 text-xs font-medium">{browseGroup}</span>
-              </div>
-              <ChannelGrid
-                channels={dropdownChannels}
-                active={activeRadio}
-                onPress={startPress}
-                onRelease={endPress}
-                onCancel={cancelPress}
-              />
-            </>
-          )}
-
-          {/* Favori kanalları */}
-          {openMenu?.startsWith('fav') && (
-            <>
-              <div className="flex items-center justify-between px-3 pt-2 pb-1">
-                <span className="text-yellow-400/60 text-xs font-medium">
-                  ⭐ {favGroups[favIdx]?.name} · {dropdownChannels.length}/10
-                </span>
-                <button onClick={e => startRename(favIdx, e)}
-                  className="text-white/30 hover:text-white/60 text-xs">
-                  ✏️ Yeniden adlandır
-                </button>
-              </div>
-              {dropdownChannels.length === 0
-                ? <div className="text-center py-6 text-white/20 text-xs">
-                    Kanallara basılı tutarak buraya ekle
-                  </div>
-                : <ChannelGrid
-                    channels={dropdownChannels}
-                    active={activeRadio}
-                    onPress={startPress}
-                    onRelease={endPress}
-                    onCancel={cancelPress}
-                    onRemove={tvgId => removeFromGroup(favIdx, tvgId)}
-                  />
-              }
-            </>
-          )}
         </div>
-      )}
+
+        {/* Favori butonlar — sadece tıklama, renk değişimi */}
+        {favGroups.map((g, i) => (
+          <button
+            key={i}
+            onClick={() => setActiveFav(prev => prev === i ? null : i)}
+            onDoubleClick={e => startRename(i, e)}
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all ${
+              activeFav === i
+                ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
+                : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
+            }`}
+          >
+            <span>⭐</span>
+            {editingFav === i
+              ? <input
+                  autoFocus value={editName}
+                  onChange={e => setEditName(e.target.value)}
+                  onBlur={commitRename}
+                  onKeyDown={e => e.key === 'Enter' && commitRename()}
+                  className="bg-transparent outline-none w-14"
+                  onClick={e => e.stopPropagation()}
+                />
+              : <span>{g.name}</span>
+            }
+          </button>
+        ))}
+      </div>
 
       {/* Ana alan — player */}
       <div className="flex-1 flex items-center justify-center min-h-0">
         {activeRadio
           ? <RadioPlayer channel={activeRadio} />
-          : <div className="text-white/20 text-sm text-center px-8 space-y-2">
+          : <div className="text-white/20 text-sm text-center space-y-2">
               <div className="text-4xl">📻</div>
               <div>Üstten radyo seç</div>
             </div>
         }
       </div>
+
+      {/* Alt kanal şeridi — aktif fav kanalları */}
+      {activeFav !== null && (
+        <div className="shrink-0 bg-black/70 backdrop-blur-sm border-t border-white/10">
+          {stripChannels.length === 0
+            ? <div className="text-center py-3 text-white/20 text-xs">
+                Kanallara basılı tutarak bu favoriye ekle
+              </div>
+            : <div
+                ref={scrollRef}
+                className="flex gap-2 px-3 py-2 overflow-x-auto"
+                style={{ scrollbarWidth: 'none' }}
+              >
+                {stripChannels.map((ch, i) => (
+                  <button
+                    key={i}
+                    onMouseDown={() => startPress(ch)}
+                    onMouseUp={() => endPress(ch)}
+                    onMouseLeave={cancelPress}
+                    onTouchStart={() => startPress(ch)}
+                    onTouchEnd={() => endPress(ch)}
+                    onTouchMove={cancelPress}
+                    className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
+                      activeRadio?.tvgId === ch.tvgId
+                        ? 'border-yellow-500 bg-yellow-900/30 scale-105'
+                        : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
+                    }`}
+                  >
+                    {ch.logo
+                      ? <img src={ch.logo} alt={ch.name} className="w-9 h-9 object-contain rounded-lg"
+                          onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                      : <span className="text-xl">📻</span>
+                    }
+                    <span className="text-[8px] text-white/50 truncate w-14 text-center leading-tight">{ch.name}</span>
+                  </button>
+                ))}
+              </div>
+          }
+        </div>
+      )}
 
       {/* Favori seçici modal */}
       {picker && (
@@ -252,53 +282,6 @@ export default function Radio() {
           {toast}
         </div>
       )}
-    </div>
-  )
-}
-
-// Kanal ızgarası bileşeni
-interface GridProps {
-  channels:  Channel[]
-  active:    Channel | null
-  onPress:   (ch: Channel) => void
-  onRelease: (ch: Channel) => void
-  onCancel:  () => void
-  onRemove?: (tvgId: string) => void
-}
-
-function ChannelGrid({ channels, active, onPress, onRelease, onCancel, onRemove }: GridProps) {
-  return (
-    <div className="flex gap-2 px-3 pb-3 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
-      {channels.map((ch, i) => (
-        <div key={i} className="relative flex-none">
-          <button
-            onMouseDown={() => onPress(ch)}
-            onMouseUp={() => onRelease(ch)}
-            onMouseLeave={onCancel}
-            onTouchStart={() => onPress(ch)}
-            onTouchEnd={() => onRelease(ch)}
-            onTouchMove={onCancel}
-            className={`flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
-              active?.tvgId === ch.tvgId
-                ? 'border-red-500 bg-red-900/40'
-                : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
-            }`}
-          >
-            {ch.logo
-              ? <img src={ch.logo} alt={ch.name} className="w-9 h-9 object-contain rounded-lg"
-                  onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
-              : <span className="text-2xl">📻</span>
-            }
-            <span className="text-[8px] text-white/50 truncate w-14 text-center leading-tight">{ch.name}</span>
-          </button>
-          {onRemove && (
-            <button
-              onClick={() => onRemove(ch.tvgId)}
-              className="absolute -top-1 -right-1 w-4 h-4 bg-red-600 rounded-full text-white text-[8px] flex items-center justify-center hover:bg-red-500"
-            >✕</button>
-          )}
-        </div>
-      ))}
     </div>
   )
 }
