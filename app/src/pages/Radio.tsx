@@ -91,11 +91,6 @@ export default function Radio() {
     setTimeout(() => setToast(null), 2500)
   }
 
-  function startRename(i: number, e: React.MouseEvent) {
-    e.stopPropagation()
-    setEditingFav(i)
-    setEditName(favGroups[i].name)
-  }
   function commitRename() {
     if (editingFav !== null && editName.trim()) renameGroup(editingFav, editName.trim())
     setEditingFav(null)
@@ -190,31 +185,55 @@ export default function Radio() {
         </div>
 
         {/* Favori butonlar — sadece tıklama, renk değişimi */}
-        {favGroups.map((g, i) => (
-          <button
-            key={i}
-            onClick={() => setActiveFav(prev => prev === i ? null : i)}
-            onDoubleClick={e => startRename(i, e)}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all ${
-              activeFav === i
-                ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
-                : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
-            }`}
-          >
-            <span>⭐</span>
-            {editingFav === i
-              ? <input
-                  autoFocus value={editName}
-                  onChange={e => setEditName(e.target.value)}
-                  onBlur={commitRename}
-                  onKeyDown={e => e.key === 'Enter' && commitRename()}
-                  className="bg-transparent outline-none w-14"
-                  onClick={e => e.stopPropagation()}
-                />
-              : <span>{g.name}</span>
-            }
-          </button>
-        ))}
+        {favGroups.map((g, i) => {
+          const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+          const favLong = useRef(false)
+
+          const favDown = () => {
+            favLong.current = false
+            favTimerRef.current = setTimeout(() => {
+              favLong.current = true
+              setEditingFav(i)
+              setEditName(g.name)
+            }, LONG_PRESS_MS)
+          }
+          const favUp = () => {
+            clearTimeout(favTimerRef.current)
+            if (!favLong.current) setActiveFav(prev => prev === i ? null : i)
+          }
+          const favCancel = () => clearTimeout(favTimerRef.current)
+
+          return (
+            <button
+              key={i}
+              onMouseDown={favDown}
+              onMouseUp={favUp}
+              onMouseLeave={favCancel}
+              onTouchStart={favDown}
+              onTouchEnd={favUp}
+              onTouchMove={favCancel}
+              className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl text-sm font-semibold transition-all select-none ${
+                activeFav === i
+                  ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
+                  : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
+              }`}
+            >
+              <span>⭐</span>
+              {editingFav === i
+                ? <input
+                    autoFocus value={editName}
+                    onChange={e => setEditName(e.target.value)}
+                    onBlur={commitRename}
+                    onKeyDown={e => e.key === 'Enter' && commitRename()}
+                    className="bg-transparent outline-none w-14"
+                    onClick={e => e.stopPropagation()}
+                    onMouseDown={e => e.stopPropagation()}
+                  />
+                : <span>{g.name}</span>
+              }
+            </button>
+          )
+        })}
       </div>
 
       {/* Ana alan — player */}
