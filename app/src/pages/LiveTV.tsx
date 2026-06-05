@@ -198,7 +198,7 @@ export default function LiveTV() {
         <NowBar
           channel={activeChannel}
           visible={uiVisible}
-          bottomOffset={76}
+          bottomOffset={68}
         />
       )}
 
