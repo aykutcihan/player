@@ -162,10 +162,11 @@ export default function LiveTV() {
 
   return (
     <div className="relative w-full h-screen bg-black">
-      {/* Player */}
-      {activeChannel && (
-        <Player ref={playerRef} channel={activeChannel} showControls={false} />
-      )}
+      {/* Player — kanal yoksa siyah */}
+      {activeChannel
+        ? <Player ref={playerRef} channel={activeChannel} showControls={false} />
+        : <div className="absolute inset-0 bg-black" />
+      }
 
       {/* Pause/Play overlay */}
       {playIcon && (

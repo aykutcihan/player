@@ -25,6 +25,7 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
   const videoRef    = useRef<HTMLVideoElement>(null)
   const hlsRef      = useRef<Hls | null>(null)
   const [playing,   setPlaying]   = useState(false)
+  const [loading,   setLoading]   = useState(true)
   const [volume,    setVolume]     = useState(1)
   const [muted,     setMuted]      = useState(false)
   const [currentT,  setCurrentT]   = useState(0)
@@ -58,8 +59,11 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
     if (!video || !url) return
     hlsRef.current?.destroy()
 
-    const onPlay     = () => setPlaying(true)
+    setLoading(true)
+    const onPlay     = () => { setPlaying(true); setLoading(false) }
     const onPause    = () => setPlaying(false)
+    const onWaiting  = () => setLoading(true)
+    const onPlaying  = () => setLoading(false)
     const onTimeUpd  = () => {
       setCurrentT(video.currentTime)
       setDuration(video.duration)
@@ -69,6 +73,8 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
 
     video.addEventListener('play',        onPlay)
     video.addEventListener('pause',       onPause)
+    video.addEventListener('waiting',     onWaiting)
+    video.addEventListener('playing',     onPlaying)
     video.addEventListener('timeupdate',  onTimeUpd)
     video.addEventListener('volumechange',onVolChg)
 
@@ -86,6 +92,8 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
     return () => {
       video.removeEventListener('play',        onPlay)
       video.removeEventListener('pause',       onPause)
+      video.removeEventListener('waiting',     onWaiting)
+      video.removeEventListener('playing',     onPlaying)
       video.removeEventListener('timeupdate',  onTimeUpd)
       video.removeEventListener('volumechange',onVolChg)
       hlsRef.current?.destroy()
@@ -135,6 +143,12 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
 
   return (
     <div className="relative w-full h-full bg-black flex flex-col">
+      {/* Yükleniyor spinner */}
+      {loading && (
+        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+          <div className="w-14 h-14 border-4 border-white/20 border-t-white rounded-full animate-spin" />
+        </div>
+      )}
       {/* Video */}
       <video
         ref={videoRef}
