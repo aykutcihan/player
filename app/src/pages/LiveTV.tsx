@@ -5,7 +5,6 @@ import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupWheel   from '../components/tv/GroupWheel'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
-import { App } from '@capacitor/app'
 import { backButtonBus } from '../lib/backButtonBus'
 
 const HIDE_DELAY = 5000
@@ -133,19 +132,17 @@ export default function LiveTV() {
       }
     }
 
-    // Android geri tuşu — tüm durumlar buradan yönetilir
-    const backHandler = App.addListener('backButton', () => {
-      if (uiVisible) {
-        backButtonBus.consume() // Layout'un handler'ını engelle
-        closeUi()
-      }
-      // UI kapalıysa Layout'un handler'ı devralır → '/'
+    // Android geri tuşu — registry'e kaydet
+    backButtonBus.register(() => {
+      if (uiVisible) { closeUi(); return true } // handle edildi
+      return false // Layout handle etsin
     })
+
 
     window.addEventListener('keydown', onKey)
     return () => {
       window.removeEventListener('keydown', onKey)
-      backHandler.then(h => h.remove())
+      backButtonBus.unregister()
     }
   }, [focusZone, focusIdx, channels, groups, activeChannel, channelGroup,
       uiVisible, setChannel, setGroup, openUi, closeUi, resetTimer, navigate])

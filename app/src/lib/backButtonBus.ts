@@ -1,7 +1,15 @@
-// Geri tuşu olayını sayfa bileşenleri arasında koordine eder
-let consumed = false
+// Sayfa bileşenleri geri tuşunu intercept edebilir
+// register() → true döndürürse Layout handle etmez
+
+type Handler = () => boolean
+
+let _handler: Handler | null = null
 
 export const backButtonBus = {
-  consume() { consumed = true; setTimeout(() => { consumed = false }, 100) },
-  isConsumed() { return consumed },
+  register(h: Handler)  { _handler = h },
+  unregister()          { _handler = null },
+  handle(): boolean     { return _handler ? _handler() : false },
+  // eski API uyumu
+  consume()             {},
+  isConsumed()          { return false },
 }

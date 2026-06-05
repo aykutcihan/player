@@ -9,8 +9,8 @@ export default function Layout() {
 
   useEffect(() => {
     const handler = App.addListener('backButton', () => {
-      // Başka bir bileşen bu olayı tükettiyse → atla
-      if (backButtonBus.isConsumed()) return
+      // Sayfa bileşeni handle ettiyse → atla
+      if (backButtonBus.handle()) return
 
       const now = Date.now()
       // Çift basış 2 sn içinde → uygulamadan çık
