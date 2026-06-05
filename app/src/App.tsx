@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home   from './pages/Home'
 import LiveTV from './pages/LiveTV'
@@ -13,7 +13,7 @@ export default function App() {
   useEffect(() => { loadAll() }, [loadAll])
 
   return (
-    <BrowserRouter basename="/tv-takip">
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route element={<Layout />}>
@@ -23,6 +23,6 @@ export default function App() {
           <Route path="/filmler"  element={<Films  />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
