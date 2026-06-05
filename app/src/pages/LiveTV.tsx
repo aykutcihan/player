@@ -1,16 +1,19 @@
 import { useRef, useState, useCallback, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/useStore'
 import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupWheel   from '../components/tv/GroupWheel'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 import { App } from '@capacitor/app'
+import { backButtonBus } from '../lib/backButtonBus'
 
 const HIDE_DELAY = 5000
 
 type FocusZone = 'none' | 'channels' | 'groups'
 
 export default function LiveTV() {
+  const navigate = useNavigate()
   const { channels, activeChannel, channelGroup, setChannel, setGroup } = useStore()
   const playerRef  = useRef<VideoPlayerHandle>(null)
   const hideTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -130,9 +133,13 @@ export default function LiveTV() {
       }
     }
 
-    // Android geri tuşu
+    // Android geri tuşu — tüm durumlar buradan yönetilir
     const backHandler = App.addListener('backButton', () => {
-      if (uiVisible) { closeUi(); return }
+      if (uiVisible) {
+        backButtonBus.consume() // Layout'un handler'ını engelle
+        closeUi()
+      }
+      // UI kapalıysa Layout'un handler'ı devralır → '/'
     })
 
     window.addEventListener('keydown', onKey)
@@ -141,7 +148,7 @@ export default function LiveTV() {
       backHandler.then(h => h.remove())
     }
   }, [focusZone, focusIdx, channels, groups, activeChannel, channelGroup,
-      uiVisible, setChannel, setGroup, openUi, closeUi, resetTimer])
+      uiVisible, setChannel, setGroup, openUi, closeUi, resetTimer, navigate])
 
   const focusedChannel = channels[focusIdx] ?? null
 

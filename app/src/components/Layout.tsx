@@ -1,18 +1,20 @@
 import { Outlet, useNavigate } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import { App } from '@capacitor/app'
+import { backButtonBus } from '../lib/backButtonBus'
 
 export default function Layout() {
-  const navigate  = useNavigate()
-  const pressTime = useRef<number>(0)
+  const navigate   = useNavigate()
+  const pressTime  = useRef<number>(0)
 
   useEffect(() => {
-    // Capacitor Android geri tuşu
-    // Tek basış → ana menü, çift basış (2 sn içinde) → çık
     const handler = App.addListener('backButton', () => {
+      // Başka bir bileşen bu olayı tükettiyse → atla
+      if (backButtonBus.isConsumed()) return
+
       const now = Date.now()
+      // Çift basış 2 sn içinde → uygulamadan çık
       if (pressTime.current && now - pressTime.current < 2000) {
-        // Çift basış → uygulamadan çık
         App.exitApp()
         return
       }
@@ -20,7 +22,6 @@ export default function Layout() {
       navigate('/')
     })
 
-    // Web/TV için klavye geri tuşu
     const onKey = (e: KeyboardEvent) => {
       if (e.keyCode === 27 || e.keyCode === 10009) navigate('/')
     }
