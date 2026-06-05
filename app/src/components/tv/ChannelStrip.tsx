@@ -18,14 +18,16 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
     else { const t = setTimeout(() => setShow(false), 300); return () => clearTimeout(t) }
   }, [visible])
 
-  // Odaklanan kanala scroll et
+  // Odaklanan kanala scroll et — focused veya visible değişince
   useEffect(() => {
-    if (!focused || !scrollRef.current) return
-    const idx = channels.findIndex(c => c.tvgId === focused.tvgId)
+    if (!scrollRef.current) return
+    const target = focused ?? null
+    if (!target) return
+    const idx = channels.findIndex(c => c.tvgId === target.tvgId)
     if (idx < 0) return
     const el = scrollRef.current.children[idx] as HTMLElement
     el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-  }, [focused, channels])
+  }, [focused, channels, visible])
 
   if (!show) return null
 

@@ -92,15 +92,24 @@ export default function LiveTV() {
       // ── GRUP ──────────────────────────────────────────────
       if (focusZone === 'groups') {
         const gIdx = groups.indexOf(channelGroup)
+
+        const goToScroll = (group?: string) => {
+          const targetGroup = group ?? channelGroup
+          // Grubun ilk kanalına odaklan
+          const firstInGroup = channels.findIndex(c => c.group === targetGroup)
+          if (firstInGroup >= 0) setFocusIdx(firstInGroup)
+          setFocusZone('channels')
+        }
+
         if (e.keyCode === 38) {
           const prev = groups[gIdx - 1]
           if (prev) setGroup(prev)
         } else if (e.keyCode === 40) {
           const next = groups[gIdx + 1]
           if (next) setGroup(next)
-          else setFocusZone('channels') // son grup → scrola dön
+          else goToScroll() // son grup → scrola dön
         } else if (e.keyCode === 13) {
-          setFocusZone('channels') // OK → grubu seç, scrola dön
+          goToScroll() // OK → grubu seç, scrola dön
         }
         // Sol/Sağ gruplarda çalışmıyor
       }

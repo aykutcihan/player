@@ -7,8 +7,8 @@ interface Props {
   visible:  boolean
 }
 
-const ITEM_H   = 40   // her öğe yüksekliği px
-const VISIBLE  = 5    // görünen öğe sayısı (tek sayı)
+const ITEM_H   = 44   // her öğe yüksekliği px
+const VISIBLE  = 3    // görünen öğe sayısı (tek sayı)
 const HALF     = Math.floor(VISIBLE / 2)
 
 export default function GroupWheel({ groups, active, onSelect, visible }: Props) {
