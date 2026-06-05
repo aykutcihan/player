@@ -1,10 +1,11 @@
 import { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-import LiveTV  from './pages/LiveTV'
-import Radio   from './pages/Radio'
-import Music   from './pages/Music'
-import Films   from './pages/Films'
+import Home   from './pages/Home'
+import LiveTV from './pages/LiveTV'
+import Radio  from './pages/Radio'
+import Music  from './pages/Music'
+import Films  from './pages/Films'
 import { useStore } from './store/useStore'
 
 export default function App() {
@@ -13,14 +14,15 @@ export default function App() {
 
   return (
     <BrowserRouter basename="/tv-takip">
-      <Layout>
-        <Routes>
-          <Route path="/"        element={<LiveTV  />} />
-          <Route path="/radyo"   element={<Radio   />} />
-          <Route path="/muzik"   element={<Music   />} />
-          <Route path="/filmler" element={<Films   />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route element={<Layout />}>
+          <Route path="/tv"       element={<LiveTV />} />
+          <Route path="/radyo"    element={<Radio  />} />
+          <Route path="/muzik"    element={<Music  />} />
+          <Route path="/filmler"  element={<Films  />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   )
 }
