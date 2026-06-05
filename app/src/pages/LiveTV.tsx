@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback } from 'react'
+import { useRef, useState, useCallback, useEffect } from 'react'
 import { useStore } from '../store/useStore'
 import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupWheel   from '../components/tv/GroupWheel'
@@ -13,7 +13,7 @@ export default function LiveTV() {
   const { channels, activeChannel, channelGroup, setChannel, setGroup } = useStore()
   const playerRef   = useRef<VideoPlayerHandle>(null)
   const hideTimer   = useRef<ReturnType<typeof setTimeout>>(undefined)
-  const [uiVisible, setUiVisible] = useState(false)
+  const [uiVisible, setUiVisible] = useState(true)
   const [epgOpen,   setEpgOpen]   = useState(false)
   const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
@@ -28,6 +28,23 @@ export default function LiveTV() {
     clearTimeout(hideTimer.current)
     setUiVisible(false)
   }, [])
+
+  // TV uzaktan kumanda — herhangi bir tuşa basınca UI göster
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      showUi()
+      const idx = groupChannels.findIndex(c => c.tvgId === activeChannel?.tvgId)
+      if (e.keyCode === 40 || e.keyCode === 39) { // aşağı/sağ → sonraki kanal
+        const next = groupChannels[idx + 1]
+        if (next) setChannel(next)
+      } else if (e.keyCode === 38 || e.keyCode === 37) { // yukarı/sol → önceki kanal
+        const prev = groupChannels[idx - 1]
+        if (prev) setChannel(prev)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [showUi, groupChannels, activeChannel, setChannel])
 
   return (
     <div
