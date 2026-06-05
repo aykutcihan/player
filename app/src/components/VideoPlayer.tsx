@@ -20,7 +20,7 @@ function fmt(sec: number) {
   return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
 }
 
-const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, showControls = true }, ref) => {
+const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
   const videoRef    = useRef<HTMLVideoElement>(null)
   const hlsRef      = useRef<Hls | null>(null)
   const [playing,   setPlaying]   = useState(false)
