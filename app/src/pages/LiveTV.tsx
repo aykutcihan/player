@@ -29,22 +29,23 @@ export default function LiveTV() {
     setUiVisible(false)
   }, [])
 
-  // TV uzaktan kumanda — herhangi bir tuşa basınca UI göster
+  // TV uzaktan kumanda — tüm kanallar üzerinden gezin
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
+      if ([37, 38, 39, 40, 13].includes(e.keyCode)) e.preventDefault()
       showUi()
-      const idx = groupChannels.findIndex(c => c.tvgId === activeChannel?.tvgId)
-      if (e.keyCode === 40 || e.keyCode === 39) { // aşağı/sağ → sonraki kanal
-        const next = groupChannels[idx + 1]
-        if (next) setChannel(next)
-      } else if (e.keyCode === 38 || e.keyCode === 37) { // yukarı/sol → önceki kanal
-        const prev = groupChannels[idx - 1]
-        if (prev) setChannel(prev)
+      const idx = channels.findIndex(c => c.tvgId === activeChannel?.tvgId)
+      if (e.keyCode === 40 || e.keyCode === 39) {
+        const next = channels[idx + 1]
+        if (next) { setChannel(next); setGroup(next.group) }
+      } else if (e.keyCode === 38 || e.keyCode === 37) {
+        const prev = channels[idx - 1]
+        if (prev) { setChannel(prev); setGroup(prev.group) }
       }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [showUi, groupChannels, activeChannel, setChannel])
+  }, [showUi, channels, activeChannel, setChannel, setGroup])
 
   return (
     <div
