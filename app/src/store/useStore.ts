@@ -61,6 +61,8 @@ export const useStore = create<Store>((set, get) => ({
       })
     } catch (e) {
       console.error('Veri yüklenemedi:', e)
+      // TV'de hata durumunda state'i bozuk bırakma
+      set({ loaded: true })
     }
   },
 

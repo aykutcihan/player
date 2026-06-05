@@ -123,7 +123,7 @@ export default function GroupWheel({ groups, active, onSelect, visible }: Props)
             }}
           >
             <span style={{ fontWeight: weight, color, fontSize: 13, whiteSpace: 'nowrap' }}>
-              {groups[idx].includes('__fav__') ? groups[idx].split('__fav__')[0].trim() : groups[idx]}
+              {groups[idx] ? (groups[idx].includes('__fav__') ? groups[idx].split('__fav__')[0].trim() : groups[idx]) : ''}
             </span>
           </div>
         ))}

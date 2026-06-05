@@ -78,7 +78,7 @@ export default function LiveTV() {
       )}
 
       {/* Grup tekerleği — sol */}
-      {!epgOpen && (
+      {!epgOpen && groups.length > 0 && (
         <GroupWheel
           groups={groups}
           active={channelGroup}
