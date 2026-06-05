@@ -116,16 +116,13 @@ export default function RadioPlayer({ channel }: Props) {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#111]/40 via-transparent to-[#111]/90" />
 
-      {/* Scrollable content */}
-      <div
-        className="relative z-10 flex flex-col items-center gap-5 px-8 pt-10 pb-4 flex-1 overflow-y-auto"
-        style={{ scrollbarWidth: 'none' }}
-      >
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-8 pb-4 flex-1 min-h-0">
         {/* Cover art */}
         <div className="relative shrink-0">
           {cover
-            ? <img src={cover} alt="" className="w-48 h-48 rounded-3xl object-cover shadow-2xl" />
-            : <div className="w-48 h-48 rounded-3xl bg-white/10 flex items-center justify-center text-7xl">📻</div>
+            ? <img src={cover} alt="" className="w-40 h-40 rounded-3xl object-cover shadow-2xl" />
+            : <div className="w-40 h-40 rounded-3xl bg-white/10 flex items-center justify-center text-6xl">📻</div>
           }
           {playing && (
             <span className="absolute -top-1.5 -right-1.5 w-3 h-3 bg-red-500 rounded-full animate-pulse ring-2 ring-[#111]" />
