@@ -6,9 +6,11 @@ import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fet
 
 interface Props {
   channel: Channel
+  onPrev?: () => void
+  onNext?: () => void
 }
 
-export default function RadioPlayer({ channel }: Props) {
+export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
   const audioRef              = useRef<HTMLAudioElement>(null)
   const [playing, setPlaying]   = useState(false)
   const [error, setError]       = useState(false)
@@ -161,15 +163,31 @@ export default function RadioPlayer({ channel }: Props) {
         )}
       </div>
 
-      {/* Play/Pause */}
+      {/* Controls */}
       <div className="relative z-10 flex flex-col items-center gap-2 py-5 shrink-0">
         {error && <div className="text-red-400 text-xs">Stream yüklenemedi</div>}
-        <button
-          onClick={toggle}
-          className="w-16 h-16 rounded-full bg-white hover:bg-white/90 active:scale-95 flex items-center justify-center text-2xl text-black transition-all shadow-2xl"
-        >
-          {playing ? '⏸' : '▶'}
-        </button>
+        <div className="flex items-center gap-5">
+          <button
+            onClick={onPrev}
+            disabled={!onPrev}
+            className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white text-lg transition-all active:scale-95"
+          >
+            ◀
+          </button>
+          <button
+            onClick={toggle}
+            className="w-16 h-16 rounded-full bg-white hover:bg-white/90 active:scale-95 flex items-center justify-center text-2xl text-black transition-all shadow-2xl"
+          >
+            {playing ? '⏸' : '▶'}
+          </button>
+          <button
+            onClick={onNext}
+            disabled={!onNext}
+            className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white text-lg transition-all active:scale-95"
+          >
+            ▶
+          </button>
+        </div>
       </div>
 
       <audio ref={audioRef} onEnded={() => setPlaying(false)} />

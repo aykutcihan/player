@@ -60,6 +60,10 @@ export default function Radio() {
     return []
   }, [activeFav, stripGroup, radioChannels, normalGroupMap, resolveChannels])
 
+  const currentStripIdx = useMemo(() =>
+    activeRadio ? stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId) : -1,
+  [activeRadio, stripChannels])
+
   // Aktif kanala scroll
   useEffect(() => {
     if (!activeRadio || !scrollRef.current) return
@@ -237,18 +241,18 @@ export default function Radio() {
                     onTouchStart={() => startPress(ch, activeFav !== null)}
                     onTouchEnd={() => endPress(ch)}
                     onTouchMove={cancelPress}
-                    className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 ${
+                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
                       activeRadio?.tvgId === ch.tvgId
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
                         : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
                     }`}
                   >
                     {ch.logo
-                      ? <img src={ch.logo} alt={ch.name} className="w-9 h-9 object-contain rounded-lg"
+                      ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
                           onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
-                      : <span className="text-xl">📻</span>
+                      : <span className="text-2xl">📻</span>
                     }
-                    <span className="text-[8px] text-white/50 truncate w-14 text-center leading-tight">{ch.name}</span>
+                    <span className="text-[10px] text-white/60 truncate w-full text-center leading-tight">{ch.name}</span>
                   </button>
                 ))}
               </div>
@@ -259,7 +263,11 @@ export default function Radio() {
       {/* Ana alan — player */}
       <div className="flex-1 min-h-0 relative">
         {activeRadio
-          ? <RadioPlayer channel={activeRadio} />
+          ? <RadioPlayer
+              channel={activeRadio}
+              onPrev={currentStripIdx > 0 ? () => setRadio(stripChannels[currentStripIdx - 1]) : undefined}
+              onNext={currentStripIdx < stripChannels.length - 1 ? () => setRadio(stripChannels[currentStripIdx + 1]) : undefined}
+            />
           : (
             <div className="flex flex-col items-center justify-center h-full gap-3">
               <div className="text-5xl opacity-20">📻</div>
