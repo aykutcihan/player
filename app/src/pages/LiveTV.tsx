@@ -245,7 +245,7 @@ export default function LiveTV() {
       {epgOpen && activeChannel && (
         <EpgOverlay
           channel={activeChannel}
-          onClose={() => setEpgOpen(false)}
+          onClose={() => { setEpgOpen(false); openUi('channels') }}
           onSeekTo={t => playerRef.current?.seekToTime(t)}
         />
       )}
