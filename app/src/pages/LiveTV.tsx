@@ -31,7 +31,7 @@ export default function LiveTV() {
 
   return (
     <div
-      className="relative w-full h-[calc(100svh-48px)]"
+      className="relative w-full h-[calc(100vh-48px)]"
       onMouseMove={showUi}
       onMouseEnter={showUi}
       onMouseLeave={hideUi}

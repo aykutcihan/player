@@ -124,7 +124,7 @@ export default function Radio() {
   )
 
   return (
-    <div className="flex flex-col h-[calc(100svh-48px)] bg-[#111]">
+    <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111]">
 
       {/* Üst buton çubuğu — sadece 📻 */}
       <div className="flex items-center px-4 py-3 bg-[#1a1a1a] border-b border-white/10 shrink-0">

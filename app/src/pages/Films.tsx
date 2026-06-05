@@ -7,7 +7,7 @@ export default function Films() {
   const [active, setActive] = useState<typeof films[0] | null>(null)
 
   return (
-    <div className="flex h-[calc(100svh-48px)]">
+    <div className="flex h-[calc(100vh-48px)]">
       {/* Film listesi */}
       <div className="w-80 bg-[#1a1a1a] border-r border-white/10 shrink-0 overflow-y-auto">
         {films.map((f, i) => (
