@@ -178,6 +178,7 @@ export default function Radio() {
                     {dropChannels.map((ch, i) => (
                       <button
                         key={i}
+                        onClick={() => { if (!didLong.current) { setRadio(ch); setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } didLong.current = false }}
                         onMouseDown={() => startPress(ch)}
                         onMouseUp={() => { if (!didLong.current) { setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } endPress(ch) }}
                         onMouseLeave={cancelPress}
@@ -222,6 +223,7 @@ export default function Radio() {
                 {stripChannels.map((ch, i) => (
                   <button
                     key={i}
+                    onClick={() => { if (!didLong.current) setRadio(ch); didLong.current = false }}
                     onMouseDown={() => startPress(ch, activeFav !== null)}
                     onMouseUp={() => endPress(ch)}
                     onMouseLeave={cancelPress}
