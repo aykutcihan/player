@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
-interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void }
+interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void; bottomOffset?: number }
 
 const BOX_W = 140  // tüm kutular aynı genişlik
 
@@ -79,7 +79,7 @@ function ProgramBox({ prog, type, isOpen, onToggle, isDvr }: {
   )
 }
 
-export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Props) {
+export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottomOffset }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
@@ -122,10 +122,14 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick }: Prop
 
   if (!show) return null
 
+  const posStyle = bottomOffset !== undefined
+    ? { bottom: bottomOffset, top: 'auto' }
+    : { top: 0 }
+
   return (
-    <div className={`absolute top-0 left-0 right-0 z-20 transition-opacity duration-300 ${
+    <div className={`absolute left-0 right-0 z-20 transition-opacity duration-300 ${
       visible ? 'opacity-100' : 'opacity-0'
-    }`}>
+    }`} style={posStyle}>
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
       <div className="relative flex items-center pt-3 px-3 gap-2 group/bar">

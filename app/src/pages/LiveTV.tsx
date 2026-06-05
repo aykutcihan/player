@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/useStore'
 import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupWheel   from '../components/tv/GroupWheel'
+import NowBar       from '../components/tv/NowBar'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 import { backButtonBus } from '../lib/backButtonBus'
@@ -178,6 +179,15 @@ export default function LiveTV() {
           active={channelGroup}
           onSelect={g => { setGroup(g); setFocusZone('channels'); resetTimer() }}
           visible={uiVisible}
+        />
+      )}
+
+      {/* NowBar — kanal şeridinin üstünde */}
+      {activeChannel && (
+        <NowBar
+          channel={activeChannel}
+          visible={uiVisible}
+          bottomOffset={104}
         />
       )}
 
