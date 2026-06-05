@@ -45,8 +45,8 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
           style={{ scrollbarWidth: 'none' }}
         >
           {channels.map((ch, i) => {
-            const isActive  = active?.tvgId === ch.tvgId
-            const isFocused = focused?.tvgId === ch.tvgId
+            const isActive  = active?.tvgId === ch.tvgId  // aynı kanal tüm kopyalarda kırmızı
+            const isFocused = focused?.url === ch.url      // sadece o tek kanal büyür
             return (
               <button
                 key={i}
