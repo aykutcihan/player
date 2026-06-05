@@ -62,6 +62,9 @@ export default function Home() {
       <div className="mt-16 text-white/20 text-sm">
         ← → ile seç &nbsp;·&nbsp; OK ile gir
       </div>
+      <div style={{position:'fixed',bottom:4,right:4,color:'yellow',fontSize:12,background:'#000',padding:4}}>
+        iW:{window.innerWidth} iH:{window.innerHeight} sW:{window.screen.width} sH:{window.screen.height}
+      </div>
     </div>
   )
 }
