@@ -2,7 +2,8 @@ import { useEffect, useRef, useImperativeHandle, forwardRef, useState, useCallba
 import Hls from 'hls.js'
 
 export interface VideoPlayerHandle {
-  seekToTime: (isoTime: string) => void
+  seekToTime:  (isoTime: string) => void
+  togglePlay?: () => void
 }
 
 interface Props {
@@ -44,6 +45,11 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
         video.currentTime = seekPos
         video.play().catch(() => {})
       }
+    },
+    togglePlay() {
+      const v = videoRef.current
+      if (!v) return
+      v.paused ? v.play().catch(() => {}) : v.pause()
     }
   }))
 
