@@ -19,5 +19,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Hata yakalama - TV debug
+      window.onerror = function(msg, src, line) {
+        var d = document.createElement('div');
+        d.style.cssText = 'position:fixed;top:0;left:0;right:0;background:red;color:white;padding:20px;font-size:24px;z-index:99999';
+        d.textContent = 'HATA: ' + msg + ' (' + line + ')';
+        document.body.appendChild(d);
+      };
+      setTimeout(function() {
+        if (document.getElementById('root').children.length === 0) {
+          var d = document.createElement('div');
+          d.style.cssText = 'position:fixed;top:0;left:0;right:0;background:orange;color:black;padding:20px;font-size:24px;z-index:99999';
+          d.textContent = 'React mount edilemedi';
+          document.body.appendChild(d);
+        }
+      }, 5000);
+    </script>
   </body>
 </html>
