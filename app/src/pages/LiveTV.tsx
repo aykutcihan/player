@@ -22,7 +22,9 @@ export default function LiveTV() {
   const [focusZone,    setFocusZone]    = useState<FocusZone>('none')
   const [focusIdx,     setFocusIdx]     = useState(0)
   const [playIcon,     setPlayIcon]     = useState<'play' | 'pause' | null>(null)
+  const [chLoading,    setChLoading]    = useState(false)
   const playIconTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const loadTimer      = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
@@ -32,6 +34,15 @@ export default function LiveTV() {
     const idx = channels.findIndex(c => c.url === activeChannel?.url)
     if (idx >= 0) setFocusIdx(idx)
   }, [activeChannel, channels])
+
+  // Kanal değişince yükleniyor spinner göster
+  useEffect(() => {
+    if (!activeChannel) return
+    setChLoading(true)
+    clearTimeout(loadTimer.current)
+    loadTimer.current = setTimeout(() => setChLoading(false), 3000)
+    return () => clearTimeout(loadTimer.current)
+  }, [activeChannel?.url])
 
   const closeUi = useCallback(() => {
     setUiVisible(false)
@@ -167,6 +178,13 @@ export default function LiveTV() {
         ? <Player ref={playerRef} channel={activeChannel} showControls={false} />
         : <div className="absolute inset-0 bg-black" />
       }
+
+      {/* Yükleniyor spinner */}
+      {chLoading && (
+        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none bg-black/30">
+          <div className="w-16 h-16 border-4 border-white/20 border-t-white rounded-full animate-spin" />
+        </div>
+      )}
 
       {/* Pause/Play overlay */}
       {playIcon && (
