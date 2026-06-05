@@ -69,6 +69,13 @@ export default function Radio() {
     el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
   }, [activeRadio, stripChannels])
 
+  // Strip açılınca ilk butona focus — TV kumandası için
+  useEffect(() => {
+    if (activeFav === null && stripGroup === null) return
+    const btn = scrollRef.current?.querySelector('button') as HTMLElement | null
+    btn?.focus()
+  }, [stripGroup, activeFav])
+
   // Dropdown dışına tıklayınca kapat — picker açıksa kapatma
   useEffect(() => {
     const close = () => {
