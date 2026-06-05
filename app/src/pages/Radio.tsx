@@ -248,13 +248,16 @@ export default function Radio() {
       )}
 
       {/* Ana alan — player */}
-      <div className="flex-1 flex items-center justify-center min-h-0">
+      <div className="flex-1 min-h-0 relative">
         {activeRadio
           ? <RadioPlayer channel={activeRadio} />
-          : <div className="text-white/20 text-sm text-center space-y-2">
-              <div className="text-4xl">📻</div>
-              <div>Yukarıdan radyo seç</div>
+          : (
+            <div className="flex flex-col items-center justify-center h-full gap-3">
+              <div className="text-5xl opacity-20">📻</div>
+              <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
+              <div className="text-white/15 text-xs">Üstten bir kanal seç</div>
             </div>
+          )
         }
       </div>
 
@@ -277,18 +280,24 @@ export default function Radio() {
               key={i}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-2xl text-sm font-semibold transition-all select-none ${
+              className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold transition-all select-none ${
                 activeFav === i
                   ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
                   : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
               }`}
             >
+              <span className="text-base">⭐</span>
               {editingFav === i
                 ? <input autoFocus value={editName} onChange={e => setEditName(e.target.value)}
                     onBlur={commitRename} onKeyDown={e => e.key === 'Enter' && commitRename()}
                     className="bg-transparent outline-none w-16" onClick={e => e.stopPropagation()} onMouseDown={e => e.stopPropagation()} />
                 : <span>{g.name}</span>
               }
+              {g.channels.length > 0 && (
+                <span className={`text-xs px-1.5 py-0.5 rounded-full ${activeFav === i ? 'bg-black/20 text-black/60' : 'bg-white/10 text-white/35'}`}>
+                  {g.channels.length}
+                </span>
+              )}
             </button>
           )
         })}
