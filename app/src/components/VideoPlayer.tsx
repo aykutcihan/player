@@ -137,12 +137,8 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, showControls = 
         onClick={togglePlay}
       />
 
-      {/* Özel kontroller */}
-      <div
-        className={`shrink-0 bg-gradient-to-t from-black/90 to-transparent transition-opacity duration-300 ${
-          showControls ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-      >
+      {/* Kontroller gizli */}
+      <div className="hidden">
         {/* Seek bar */}
         {!isLive && isFinite(duration) && duration > 0 && (
           <div className="px-4 pt-2">
