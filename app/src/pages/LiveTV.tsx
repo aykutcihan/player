@@ -4,6 +4,7 @@ import { useStore } from '../store/useStore'
 import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupStrip   from '../components/tv/GroupStrip'
 import NowBar       from '../components/tv/NowBar'
+import EpgOverlay   from '../components/tv/EpgOverlay'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 import { backButtonBus } from '../lib/backButtonBus'
@@ -24,6 +25,7 @@ export default function LiveTV() {
   const [focusIdx,     setFocusIdx]     = useState(0)
   const [playIcon,     setPlayIcon]     = useState<'play' | 'pause' | null>(null)
   const [epgStep,      setEpgStep]      = useState(0)
+  const [epgOpen,      setEpgOpen]      = useState(false)
   const [chLoading,    setChLoading]    = useState(false)
   const playIconTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const loadTimer      = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -240,13 +242,24 @@ export default function LiveTV() {
       )}
 
       {/* NowBar — kanal şeridinin üstünde */}
-      {activeChannel && (
+      {/* EPG Overlay */}
+      {epgOpen && activeChannel && (
+        <EpgOverlay
+          channel={activeChannel}
+          onClose={() => setEpgOpen(false)}
+          onSeekTo={t => playerRef.current?.seekToTime(t)}
+        />
+      )}
+
+      {activeChannel && !epgOpen && (
         <NowBar
           channel={activeChannel}
           visible={uiVisible}
           bottomOffset={68}
           epgFocused={focusZone === 'epg'}
           epgStep={epgStep}
+          onLogoClick={() => setEpgOpen(true)}
+          onSeekTo={t => playerRef.current?.seekToTime(t)}
         />
       )}
 
