@@ -51,27 +51,29 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
               <button
                 key={i}
                 onClick={() => onSelect(ch)}
-                className={`flex-none w-16 h-16 rounded-lg flex flex-col items-center justify-center gap-1 border-2 transition-all ${
-                  isActive
-                    ? 'border-red-500 bg-red-900/40 scale-110'
-                    : isFocused
-                    ? 'border-white bg-white/20 scale-105'
-                    : 'border-white/10 bg-white/5 hover:border-white/30'
+                className={`flex-none rounded-lg flex flex-col items-center justify-center gap-1 border-2 transition-all duration-200 ${
+                  isFocused
+                    ? 'w-24 h-24 border-white bg-white/15 scale-100'
+                    : isActive
+                    ? 'w-16 h-16 border-red-500 bg-red-900/40'
+                    : 'w-16 h-16 border-white/10 bg-white/5 hover:border-white/30'
                 }`}
               >
                 {ch.logo ? (
                   <img
                     src={ch.logo}
                     alt={ch.name}
-                    className="w-10 h-10 object-contain rounded"
+                    className={`object-contain rounded transition-all duration-200 ${isFocused ? 'w-14 h-14' : 'w-10 h-10'}`}
                     onError={e => { (e.target as HTMLImageElement).style.display = 'none' }}
                   />
                 ) : (
-                  <span className="text-white/40 text-[9px] text-center leading-tight px-1 truncate w-full text-center">
-                    {ch.name.slice(0, 6)}
+                  <span className="text-white/60 text-[10px] text-center leading-tight px-1 truncate w-full text-center">
+                    {ch.name.slice(0, 8)}
                   </span>
                 )}
-                <span className="text-[8px] text-white/50 truncate w-14 text-center">{ch.name}</span>
+                <span className={`truncate text-center leading-tight transition-all duration-200 ${
+                  isFocused ? 'text-[10px] text-white w-20' : 'text-[8px] text-white/50 w-14'
+                }`}>{ch.name}</span>
               </button>
             )
           })}
