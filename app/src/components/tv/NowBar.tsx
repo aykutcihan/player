@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
-interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void; bottomOffset?: number; epgFocused?: boolean; epgStep?: number }
+interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void; bottomOffset?: number; epgFocused?: boolean; epgStep?: number; epgOnLogo?: boolean }
 
 const BOX_W = 140  // tüm kutular aynı genişlik
 
@@ -79,7 +79,7 @@ function ProgramBox({ prog, type, isOpen, onToggle, isDvr }: {
   )
 }
 
-export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottomOffset, epgFocused = false, epgStep = 0 }: Props) {
+export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottomOffset, epgFocused = false, epgStep = 0, epgOnLogo = false }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
@@ -140,9 +140,11 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottom
       <div className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-black/80 to-transparent pointer-events-none" />
 
       <div className="relative flex items-center pt-3 px-3 gap-2 group/bar">
-        {/* Logo — tıklanabilir, hover'da büyür ve yer açar */}
+        {/* Logo — tıklanabilir, EPG odaklıyken parlak çerçeve */}
         <div
-          className="shrink-0 cursor-pointer group relative transition-all duration-200 w-10 hover:w-20"
+          className={`shrink-0 cursor-pointer group relative transition-all duration-200 w-10 hover:w-20 ${
+            epgOnLogo && epgFocused ? 'outline outline-2 outline-white rounded-lg' : ''
+          }`}
           onClick={onLogoClick}
           style={{ height: 40 }}
         >

@@ -25,6 +25,7 @@ export default function LiveTV() {
   const [focusIdx,     setFocusIdx]     = useState(0)
   const [playIcon,     setPlayIcon]     = useState<'play' | 'pause' | null>(null)
   const [epgStep,      setEpgStep]      = useState(0)
+  const [epgOnLogo,    setEpgOnLogo]    = useState(true)  // EPG'de logo mu program mı odaklı
   const [epgOpen,      setEpgOpen]      = useState(false)
   const [chLoading,    setChLoading]    = useState(false)
   const playIconTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -139,7 +140,7 @@ export default function LiveTV() {
         } else if (e.keyCode === 37) {
           setFocusIdx(prev => Math.max(prev - 1, 0))
         } else if (e.keyCode === 38) {
-          setFocusZone('epg'); setEpgStep(0)
+          setFocusZone('epg'); setEpgStep(0); setEpgOnLogo(true)
         } else if (e.keyCode === 13) {
           const ch = channels[focusIdx]
           if (ch) { setChannel(ch); setGroup(ch.group); closeUi() }
@@ -149,10 +150,20 @@ export default function LiveTV() {
 
       // ── GRUP ──────────────────────────────────────────────
       if (focusZone === 'epg') {
-        if (e.keyCode === 39) setEpgStep(s => s + 1)        // Sağ → ileri program
-        else if (e.keyCode === 37) setEpgStep(s => s - 1)   // Sol → geri program
-        else if (e.keyCode === 38) setFocusZone('groups')   // Yukarı → gruplara
-        else if (e.keyCode === 40) setFocusZone('channels') // Aşağı → kanallara
+        if (epgOnLogo) {
+          if (e.keyCode === 39) { setEpgOnLogo(false); setEpgStep(0) } // Sağ → programlara geç
+          else if (e.keyCode === 13) setEpgOpen(true)                   // OK → tam EPG aç
+          else if (e.keyCode === 38) setFocusZone('groups')             // Yukarı → gruplara
+          else if (e.keyCode === 40) setFocusZone('channels')           // Aşağı → kanallara
+        } else {
+          if (e.keyCode === 39) setEpgStep(s => s + 1)                 // Sağ → ileri program
+          else if (e.keyCode === 37) {
+            if (epgStep > 0) setEpgStep(s => s - 1)
+            else { setEpgOnLogo(true) }                                 // Sol sona gelince logoya dön
+          }
+          else if (e.keyCode === 38) setFocusZone('groups')
+          else if (e.keyCode === 40) setFocusZone('channels')
+        }
         return
       }
 
@@ -258,6 +269,7 @@ export default function LiveTV() {
           bottomOffset={68}
           epgFocused={focusZone === 'epg'}
           epgStep={epgStep}
+          epgOnLogo={epgOnLogo}
           onLogoClick={() => setEpgOpen(true)}
           onSeekTo={t => playerRef.current?.seekToTime(t)}
         />
