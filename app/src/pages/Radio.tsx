@@ -280,6 +280,7 @@ export default function Radio() {
           return (
             <button
               key={i}
+              onClick={() => { if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null); setRadioOpen(false) } favLong.current = false }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
               className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold transition-all select-none ${
