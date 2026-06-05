@@ -13,9 +13,11 @@ function fmtTime(iso: string) {
 }
 
 export default function EpgOverlay({ channel, onClose, onSeekTo }: Props) {
-  const [progs,    setProgs]    = useState<{ p: Programme; type: 'past'|'current'|'future' }[]>([])
-  const [selected, setSelected] = useState<Programme | null>(null)
-  const currentRef = useRef<HTMLDivElement>(null)
+  const [progs,      setProgs]      = useState<{ p: Programme; type: 'past'|'current'|'future' }[]>([])
+  const [selected,   setSelected]   = useState<Programme | null>(null)
+  const [focusedIdx, setFocusedIdx] = useState(0)
+  const currentRef  = useRef<HTMLDivElement>(null)
+  const focusedRef  = useRef<HTMLDivElement>(null)
   const dvr = isDvrStream(channel.url)
 
   useEffect(() => {
@@ -36,12 +38,35 @@ export default function EpgOverlay({ channel, onClose, onSeekTo }: Props) {
     setTimeout(() => currentRef.current?.scrollIntoView({ block: 'center', behavior: 'instant' }), 100)
   }, [progs])
 
-  // ESC ile kapat
+  // Odaklanan programa scroll et
   useEffect(() => {
-    const h = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    focusedRef.current?.scrollIntoView({ block: 'nearest', behavior: 'smooth' })
+  }, [focusedIdx])
+
+  // Şu anki programa odaklan (programlar yüklenince)
+  useEffect(() => {
+    const currentIdx = progs.findIndex(({ type }) => type === 'current')
+    if (currentIdx >= 0) setFocusedIdx(currentIdx)
+  }, [progs])
+
+  // Klavye navigasyonu
+  useEffect(() => {
+    const h = (e: KeyboardEvent) => {
+      e.preventDefault()
+      if (e.keyCode === 40) { // Aşağı
+        setFocusedIdx(i => Math.min(i + 1, progs.length - 1))
+      } else if (e.keyCode === 38) { // Yukarı
+        setFocusedIdx(i => Math.max(i - 1, 0))
+      } else if (e.keyCode === 13) { // OK → detay göster/gizle
+        const item = progs[focusedIdx]
+        if (item) handleClick(item.p, item.type)
+      } else if (e.keyCode === 27 || e.keyCode === 10009 || e.keyCode === 4 || e.keyCode === 37) {
+        onClose() // ESC / Back / Sol → kapat
+      }
+    }
     window.addEventListener('keydown', h)
     return () => window.removeEventListener('keydown', h)
-  }, [onClose])
+  }, [onClose, progs, focusedIdx])
 
   function handleClick(p: Programme, type: string) {
     if (type === 'past' && dvr && onSeekTo) {
@@ -85,10 +110,17 @@ export default function EpgOverlay({ channel, onClose, onSeekTo }: Props) {
             const isSelected = selected?.start === p.start
 
             return (
-              <div key={i} ref={isCurrent ? currentRef : undefined}>
+              <div key={i}
+                ref={el => {
+                  if (isCurrent && currentRef) (currentRef as React.MutableRefObject<HTMLDivElement | null>).current = el
+                  if (i === focusedIdx && focusedRef) (focusedRef as React.MutableRefObject<HTMLDivElement | null>).current = el
+                }}
+              >
                 <div
                   className={`flex gap-3 px-4 py-3 cursor-pointer border-b border-white/5 transition-colors ${
-                    isCurrent
+                    i === focusedIdx
+                      ? 'bg-white/15 outline outline-1 outline-white/40'
+                      : isCurrent
                       ? 'bg-red-900/30 border-l-2 border-l-red-500'
                       : isPast
                       ? 'hover:bg-white/5 opacity-70'
