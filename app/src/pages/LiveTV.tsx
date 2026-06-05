@@ -7,10 +7,11 @@ import NowBar       from '../components/tv/NowBar'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 import { backButtonBus } from '../lib/backButtonBus'
+import { NativeVideo, isNativeVideoAvailable } from '../lib/nativeVideo'
 
 const HIDE_DELAY = 5000
 
-type FocusZone = 'none' | 'channels' | 'groups'
+type FocusZone = 'none' | 'channels' | 'epg' | 'groups'
 
 export default function LiveTV() {
   const navigate = useNavigate()
@@ -22,6 +23,7 @@ export default function LiveTV() {
   const [focusZone,    setFocusZone]    = useState<FocusZone>('none')
   const [focusIdx,     setFocusIdx]     = useState(0)
   const [playIcon,     setPlayIcon]     = useState<'play' | 'pause' | null>(null)
+  const [epgStep,      setEpgStep]      = useState(0)
   const [chLoading,    setChLoading]    = useState(false)
   const playIconTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const loadTimer      = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -35,12 +37,28 @@ export default function LiveTV() {
     if (idx >= 0) setFocusIdx(idx)
   }, [activeChannel, channels])
 
-  // Kanal değişince yükleniyor spinner göster
+  // Kanal değişince spinner — native event gelince kapat, max 8sn
   useEffect(() => {
     if (!activeChannel) return
     setChLoading(true)
     clearTimeout(loadTimer.current)
-    loadTimer.current = setTimeout(() => setChLoading(false), 3000)
+
+    if (isNativeVideoAvailable()) {
+      // ExoPlayer'dan event bekle
+      let removed = false
+      NativeVideo.addListener('videoState', (data) => {
+        if (data.state === 'playing' && !removed) {
+          removed = true
+          setChLoading(false)
+          clearTimeout(loadTimer.current)
+        }
+      })
+      // Max 8 saniye bekle
+      loadTimer.current = setTimeout(() => setChLoading(false), 8000)
+    } else {
+      // Web: video event'i VideoPlayer halleder, kısa timeout
+      loadTimer.current = setTimeout(() => setChLoading(false), 500)
+    }
     return () => clearTimeout(loadTimer.current)
   }, [activeChannel?.url])
 
@@ -116,7 +134,7 @@ export default function LiveTV() {
         } else if (e.keyCode === 37) {
           setFocusIdx(prev => Math.max(prev - 1, 0))
         } else if (e.keyCode === 38) {
-          setFocusZone('groups')
+          setFocusZone('epg'); setEpgStep(0)
         } else if (e.keyCode === 13) {
           const ch = channels[focusIdx]
           if (ch) { setChannel(ch); setGroup(ch.group); closeUi() }
@@ -125,6 +143,14 @@ export default function LiveTV() {
       }
 
       // ── GRUP ──────────────────────────────────────────────
+      if (focusZone === 'epg') {
+        if (e.keyCode === 39) setEpgStep(s => s + 1)        // Sağ → ileri program
+        else if (e.keyCode === 37) setEpgStep(s => s - 1)   // Sol → geri program
+        else if (e.keyCode === 38) setFocusZone('groups')   // Yukarı → gruplara
+        else if (e.keyCode === 40) setFocusZone('channels') // Aşağı → kanallara
+        return
+      }
+
       if (focusZone === 'groups') {
         const n    = groups.length
         const gIdx = groups.indexOf(channelGroup)
@@ -144,11 +170,9 @@ export default function LiveTV() {
           const prev = groups[(gIdx - 1 + n) % n]
           setGroup(prev)
         } else if (e.keyCode === 40) {
-          // Aşağı → scrola dön
-          goToScroll()
+          setFocusZone('epg'); setEpgStep(0) // Aşağı → EPG'ye
         } else if (e.keyCode === 13) {
-          // OK → scrola dön
-          goToScroll()
+          goToScroll() // OK → kanala geç
         }
         // Yukarı gruplarda çalışmıyor
       }
@@ -179,9 +203,9 @@ export default function LiveTV() {
         : <div className="absolute inset-0 bg-black" />
       }
 
-      {/* Yükleniyor spinner */}
+      {/* Yükleniyor spinner — tam siyah arka plan */}
       {chLoading && (
-        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none bg-black/30">
+        <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none bg-black">
           <div className="w-16 h-16 border-4 border-white/20 border-t-white rounded-full animate-spin" />
         </div>
       )}
@@ -218,6 +242,8 @@ export default function LiveTV() {
           channel={activeChannel}
           visible={uiVisible}
           bottomOffset={68}
+          epgFocused={focusZone === 'epg'}
+          epgStep={epgStep}
         />
       )}
 

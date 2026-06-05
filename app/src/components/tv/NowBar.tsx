@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
-interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void; bottomOffset?: number }
+interface Props { channel: Channel; visible: boolean; onSeekTo?: (isoTime: string) => void; onLogoClick?: () => void; bottomOffset?: number; epgFocused?: boolean; epgStep?: number }
 
 const BOX_W = 140  // tüm kutular aynı genişlik
 
@@ -79,7 +79,7 @@ function ProgramBox({ prog, type, isOpen, onToggle, isDvr }: {
   )
 }
 
-export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottomOffset }: Props) {
+export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottomOffset, epgFocused = false, epgStep = 0 }: Props) {
   const [items,   setItems]   = useState<{ prog: Programme; type: 'past'|'current'|'future' }[]>([])
   const [openIdx, setOpenIdx] = useState<number | null>(null)
   const [show,    setShow]    = useState(false)
@@ -118,6 +118,13 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottom
     }, 50)
     return () => clearTimeout(t)
   }, [show, items])
+
+  // EPG navigasyon — epgStep değişince scroll
+  useEffect(() => {
+    if (!scrollRef.current || items.length === 0) return
+    const targetIdx = Math.max(0, Math.min(items.length - 1, currentIdxRef.current + epgStep))
+    scrollRef.current.scrollTo({ left: targetIdx * BOX_W, behavior: 'smooth' })
+  }, [epgStep, items])
 
 
   if (!show) return null
@@ -192,22 +199,27 @@ export default function NowBar({ channel, visible, onSeekTo, onLogoClick, bottom
               if (scrollRef.current) scrollRef.current.scrollLeft += e.deltaY + e.deltaX
             }}
           >
-            {items.map((item, i) => (
-              <ProgramBox
-                key={i}
-                prog={item.prog}
-                type={item.type}
-                isOpen={openIdx === i}
-                onToggle={() => {
-                  if (item.type === 'past' && isDvrStream(channel.url) && onSeekTo) {
-                    onSeekTo(item.prog.start)
-                  } else {
-                    setOpenIdx(idx => idx === i ? null : i)
-                  }
-                }}
-                isDvr={isDvrStream(channel.url)}
-              />
-            ))}
+            {items.map((item, i) => {
+              const focusedProgIdx = Math.max(0, Math.min(items.length - 1, currentIdxRef.current + epgStep))
+              const isFocused = epgFocused && i === focusedProgIdx
+              return (
+                <div key={i} className={isFocused ? 'outline outline-2 outline-white/80 rounded-lg' : ''}>
+                  <ProgramBox
+                    prog={item.prog}
+                    type={item.type}
+                    isOpen={openIdx === i}
+                    onToggle={() => {
+                      if (item.type === 'past' && isDvrStream(channel.url) && onSeekTo) {
+                        onSeekTo(item.prog.start)
+                      } else {
+                        setOpenIdx(idx => idx === i ? null : i)
+                      }
+                    }}
+                    isDvr={isDvrStream(channel.url)}
+                  />
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
