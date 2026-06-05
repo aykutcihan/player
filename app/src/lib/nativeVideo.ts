@@ -3,13 +3,14 @@ import { registerPlugin } from '@capacitor/core'
 export interface NativeVideoPlugin {
   play(options: { url: string }): Promise<void>
   stop(): Promise<void>
+  addListener(event: 'videoState', handler: (data: { state: string }) => void): Promise<{ remove: () => void }>
 }
 
 export const NativeVideo = registerPlugin<NativeVideoPlugin>('NativeVideo', {
-  // Web fallback — native olmayan ortamda (browser/Tizen) hiçbir şey yapma
   web: {
     play: async () => {},
     stop: async () => {},
+    addListener: async () => ({ remove: () => {} }),
   },
 })
 
