@@ -3,33 +3,50 @@ import { useEffect, useRef } from 'react'
 import { App } from '@capacitor/app'
 import { backButtonBus } from '../lib/backButtonBus'
 
+const LONG_PRESS_MS = 800
+
 export default function Layout() {
-  const navigate   = useNavigate()
-  const pressTime  = useRef<number>(0)
+  const navigate      = useNavigate()
+  const downTime      = useRef<number>(0)
+  const exitTimer     = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   useEffect(() => {
+    // Capacitor back button — normal kısa basış
     const handler = App.addListener('backButton', () => {
-      // Sayfa bileşeni handle ettiyse → atla
       if (backButtonBus.handle()) return
-
-      const now = Date.now()
-      // Çift basış 2 sn içinde → uygulamadan çık
-      if (pressTime.current && now - pressTime.current < 2000) {
-        App.exitApp()
-        return
-      }
-      pressTime.current = now
       navigate('/')
     })
 
+    // Android keyCode 4 = back tuşu — uzun basış tespiti
+    const onDown = (e: KeyboardEvent) => {
+      if (e.keyCode !== 4) return
+      downTime.current = Date.now()
+      clearTimeout(exitTimer.current)
+      exitTimer.current = setTimeout(() => {
+        App.exitApp() // 800ms basılı tutulunca çık
+      }, LONG_PRESS_MS)
+    }
+
+    const onUp = (e: KeyboardEvent) => {
+      if (e.keyCode !== 4) return
+      clearTimeout(exitTimer.current) // Erken bırakılırsa çıkma
+    }
+
+    // Web/TV klavye geri (ESC, Samsung Back)
     const onKey = (e: KeyboardEvent) => {
       if (e.keyCode === 27 || e.keyCode === 10009) navigate('/')
     }
+
+    window.addEventListener('keydown', onDown)
+    window.addEventListener('keyup',   onUp)
     window.addEventListener('keydown', onKey)
 
     return () => {
       handler.then(h => h.remove())
+      window.removeEventListener('keydown', onDown)
+      window.removeEventListener('keyup',   onUp)
       window.removeEventListener('keydown', onKey)
+      clearTimeout(exitTimer.current)
     }
   }, [navigate])
 
