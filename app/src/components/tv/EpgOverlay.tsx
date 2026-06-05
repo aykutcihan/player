@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { backButtonBus } from '../../lib/backButtonBus'
 import { fetchEpg, currentProgramme, pastProgrammes, upcomingProgrammes, isDvrStream, type Programme } from '../../lib/epg'
 import type { Channel } from '../../lib/m3u'
 
@@ -49,23 +50,29 @@ export default function EpgOverlay({ channel, onClose, onSeekTo }: Props) {
     if (currentIdx >= 0) setFocusedIdx(currentIdx)
   }, [progs])
 
-  // Klavye navigasyonu
+  // Klavye navigasyonu + backButtonBus kaydı
   useEffect(() => {
+    // Android Capacitor geri tuşu — EPG kapatır
+    backButtonBus.register(() => { onClose(); return true })
+
     const h = (e: KeyboardEvent) => {
-      e.preventDefault()
-      if (e.keyCode === 40) { // Aşağı
+      if ([37, 38, 39, 40, 13, 27, 10009, 4].includes(e.keyCode)) e.preventDefault()
+      if (e.keyCode === 40) {
         setFocusedIdx(i => Math.min(i + 1, progs.length - 1))
-      } else if (e.keyCode === 38) { // Yukarı
+      } else if (e.keyCode === 38) {
         setFocusedIdx(i => Math.max(i - 1, 0))
-      } else if (e.keyCode === 13) { // OK → detay göster/gizle
+      } else if (e.keyCode === 13) {
         const item = progs[focusedIdx]
         if (item) handleClick(item.p, item.type)
       } else if (e.keyCode === 27 || e.keyCode === 10009 || e.keyCode === 4 || e.keyCode === 37) {
-        onClose() // ESC / Back / Sol → kapat
+        onClose()
       }
     }
     window.addEventListener('keydown', h)
-    return () => window.removeEventListener('keydown', h)
+    return () => {
+      window.removeEventListener('keydown', h)
+      backButtonBus.unregister()
+    }
   }, [onClose, progs, focusedIdx])
 
   function handleClick(p: Programme, type: string) {
