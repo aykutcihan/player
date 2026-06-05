@@ -219,46 +219,6 @@ export default function Radio() {
 
       </div>
 
-      {/* Üst kanal şeridi — grup veya fav kanalları */}
-      {(activeFav !== null || stripGroup !== null) && (
-        <div className="shrink-0 bg-[#161616] border-b border-white/10">
-          {stripChannels.length === 0
-            ? <div className="text-center py-3 text-white/20 text-xs">
-                Kanallara basılı tutarak bu favoriye ekle
-              </div>
-            : <div
-                ref={scrollRef}
-                className="flex gap-2 px-3 py-2 overflow-x-auto"
-                style={{ scrollbarWidth: 'none' }}
-              >
-                {stripChannels.map((ch, i) => (
-                  <button
-                    key={i}
-                    onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
-                    onMouseDown={() => startPress(ch, activeFav !== null)}
-                    onMouseUp={() => endPress(ch)}
-                    onMouseLeave={cancelPress}
-                    onTouchStart={() => startPress(ch, activeFav !== null)}
-                    onTouchEnd={() => endPress(ch)}
-                    onTouchMove={cancelPress}
-                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
-                      activeRadio?.tvgId === ch.tvgId
-                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
-                        : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
-                    }`}
-                  >
-                    {ch.logo
-                      ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
-                          onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
-                      : <span className="text-2xl">📻</span>
-                    }
-                    <span className="text-[10px] text-white/60 truncate w-full text-center leading-tight">{ch.name}</span>
-                  </button>
-                ))}
-              </div>
-          }
-        </div>
-      )}
 
       {/* Ana alan — player */}
       <div className="flex-1 min-h-0 relative">
@@ -320,6 +280,47 @@ export default function Radio() {
           )
         })}
       </div>
+
+      {/* Alt kanal şeridi — grup veya fav kanalları */}
+      {(activeFav !== null || stripGroup !== null) && (
+        <div className="shrink-0 bg-[#161616] border-t border-white/10">
+          {stripChannels.length === 0
+            ? <div className="text-center py-3 text-white/20 text-xs">
+                Kanallara basılı tutarak bu favoriye ekle
+              </div>
+            : <div
+                ref={scrollRef}
+                className="flex gap-2 px-3 py-2 overflow-x-auto"
+                style={{ scrollbarWidth: 'none' }}
+              >
+                {stripChannels.map((ch, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
+                    onMouseDown={() => startPress(ch, activeFav !== null)}
+                    onMouseUp={() => endPress(ch)}
+                    onMouseLeave={cancelPress}
+                    onTouchStart={() => startPress(ch, activeFav !== null)}
+                    onTouchEnd={() => endPress(ch)}
+                    onTouchMove={cancelPress}
+                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
+                      activeRadio?.tvgId === ch.tvgId
+                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
+                        : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
+                    }`}
+                  >
+                    {ch.logo
+                      ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
+                          onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                      : <span className="text-2xl">📻</span>
+                    }
+                    <span className="text-[10px] text-white/60 truncate w-full text-center leading-tight">{ch.name}</span>
+                  </button>
+                ))}
+              </div>
+          }
+        </div>
+      )}
 
       {/* Favori seçici modal */}
       {picker && (
