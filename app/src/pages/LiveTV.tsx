@@ -80,8 +80,6 @@ export default function LiveTV() {
           setFocusIdx(prev => Math.max(prev - 1, 0))
         } else if (e.keyCode === 38) {
           setFocusZone('groups')
-        } else if (e.keyCode === 40) {
-          closeUi()
         } else if (e.keyCode === 13) {
           const ch = channels[focusIdx]
           if (ch) { setChannel(ch); setGroup(ch.group); closeUi() }
