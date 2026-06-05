@@ -1,18 +1,35 @@
 import { Outlet, useNavigate } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
+import { App } from '@capacitor/app'
 
 export default function Layout() {
-  const navigate = useNavigate()
+  const navigate  = useNavigate()
+  const pressTime = useRef<number>(0)
 
-  // Geri tuşu → ana menüye dön
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.keyCode === 27 || e.keyCode === 10009) {
-        navigate('/')
+    // Capacitor Android geri tuşu
+    // Tek basış → ana menü, çift basış (2 sn içinde) → çık
+    const handler = App.addListener('backButton', () => {
+      const now = Date.now()
+      if (pressTime.current && now - pressTime.current < 2000) {
+        // Çift basış → uygulamadan çık
+        App.exitApp()
+        return
       }
+      pressTime.current = now
+      navigate('/')
+    })
+
+    // Web/TV için klavye geri tuşu
+    const onKey = (e: KeyboardEvent) => {
+      if (e.keyCode === 27 || e.keyCode === 10009) navigate('/')
     }
     window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
+
+    return () => {
+      handler.then(h => h.remove())
+      window.removeEventListener('keydown', onKey)
+    }
   }, [navigate])
 
   return (
