@@ -150,19 +150,29 @@ export default function LiveTV() {
 
       // ── GRUP ──────────────────────────────────────────────
       if (focusZone === 'epg') {
+        const goToChannels = () => {
+          // Grup değiştiyse focusIdx'i güncelle
+          const currentFocused = channels[focusIdx]
+          if (!currentFocused || currentFocused.group !== channelGroup) {
+            const firstInGroup = channels.findIndex(c => c.group === channelGroup)
+            if (firstInGroup >= 0) setFocusIdx(firstInGroup)
+          }
+          setFocusZone('channels')
+        }
+
         if (epgOnLogo) {
-          if (e.keyCode === 39) { setEpgOnLogo(false); setEpgStep(0) } // Sağ → programlara geç
-          else if (e.keyCode === 13) setEpgOpen(true)                   // OK → tam EPG aç
-          else if (e.keyCode === 38) setFocusZone('groups')             // Yukarı → gruplara
-          else if (e.keyCode === 40) setFocusZone('channels')           // Aşağı → kanallara
+          if (e.keyCode === 39) { setEpgOnLogo(false); setEpgStep(0) }
+          else if (e.keyCode === 13) setEpgOpen(true)
+          else if (e.keyCode === 38) setFocusZone('groups')
+          else if (e.keyCode === 40) goToChannels()
         } else {
-          if (e.keyCode === 39) setEpgStep(s => s + 1)                 // Sağ → ileri program
+          if (e.keyCode === 39) setEpgStep(s => s + 1)
           else if (e.keyCode === 37) {
             if (epgStep > 0) setEpgStep(s => s - 1)
-            else { setEpgOnLogo(true) }                                 // Sol sona gelince logoya dön
+            else setEpgOnLogo(true)
           }
           else if (e.keyCode === 38) setFocusZone('groups')
-          else if (e.keyCode === 40) setFocusZone('channels')
+          else if (e.keyCode === 40) goToChannels()
         }
         return
       }
@@ -186,6 +196,9 @@ export default function LiveTV() {
           const prev = groups[(gIdx - 1 + n) % n]
           setGroup(prev)
         } else if (e.keyCode === 40) {
+          // Gruba inince focusIdx'i bu grubun ilk kanalına ayarla
+          const firstInGroup = channels.findIndex(c => c.group === channelGroup)
+          if (firstInGroup >= 0) setFocusIdx(firstInGroup)
           setFocusZone('epg'); setEpgStep(0) // Aşağı → EPG'ye
         } else if (e.keyCode === 13) {
           goToScroll() // OK → kanala geç
