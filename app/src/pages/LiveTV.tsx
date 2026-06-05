@@ -46,7 +46,7 @@ export default function LiveTV() {
     if (isNativeVideoAvailable()) {
       // ExoPlayer'dan event bekle
       let removed = false
-      NativeVideo.addListener('videoState', (data) => {
+      NativeVideo.addListener('videoState', (data: { state: string }) => {
         if (data.state === 'playing' && !removed) {
           removed = true
           setChLoading(false)
