@@ -1,9 +1,6 @@
 import { useRef, useState, useCallback, useEffect } from 'react'
 import { useStore } from '../store/useStore'
 import ChannelStrip from '../components/tv/ChannelStrip'
-import GroupWheel   from '../components/tv/GroupWheel'
-import NowBar       from '../components/tv/NowBar'
-import EpgOverlay   from '../components/tv/EpgOverlay'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 
@@ -14,8 +11,6 @@ export default function LiveTV() {
   const playerRef   = useRef<VideoPlayerHandle>(null)
   const hideTimer   = useRef<ReturnType<typeof setTimeout>>(undefined)
   const [uiVisible, setUiVisible] = useState(true)
-  const [epgOpen,   setEpgOpen]   = useState(false)
-  const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
 
   const showUi = useCallback(() => {
@@ -59,37 +54,10 @@ export default function LiveTV() {
         <Player ref={playerRef} channel={activeChannel} showControls={uiVisible} />
       )}
 
-      {/* EPG Overlay */}
-      {epgOpen && activeChannel && (
-        <EpgOverlay
-          channel={activeChannel}
-          onClose={() => setEpgOpen(false)}
-          onSeekTo={t => playerRef.current?.seekToTime(t)}
-        />
-      )}
-
-      {/* NowBar — üst bar */}
-      {!epgOpen && activeChannel && (
-        <NowBar
-          channel={activeChannel}
-          visible={uiVisible}
-          onSeekTo={t => playerRef.current?.seekToTime(t)}
-          onLogoClick={() => setEpgOpen(true)}
-        />
-      )}
-
-      {/* Grup tekerleği — sol */}
-      {!epgOpen && groups.length > 0 && (
-        <GroupWheel
-          groups={groups}
-          active={channelGroup}
-          onSelect={setGroup}
-          visible={uiVisible}
-        />
-      )}
+      {/* EPG, NowBar, GroupWheel — geçici kapalı */}
 
       {/* Kanal şeridi — alt */}
-      {!epgOpen && (
+      {(
         <ChannelStrip
           channels={groupChannels}
           active={activeChannel}
