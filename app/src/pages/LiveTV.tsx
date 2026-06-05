@@ -241,19 +241,7 @@ export default function LiveTV() {
         </div>
       )}
 
-      {/* Yatay grup şeridi */}
-      {groups.length > 0 && (
-        <GroupStrip
-          groups={groups}
-          active={channelGroup}
-          focused={focusZone === 'groups'}
-          onSelect={g => { setGroup(g); setFocusZone('channels'); resetTimer() }}
-          visible={uiVisible}
-        />
-      )}
-
-      {/* NowBar — kanal şeridinin üstünde */}
-      {/* EPG Overlay */}
+      {/* EPG açıkken sadece EPG görünür */}
       {epgOpen && activeChannel && (
         <EpgOverlay
           channel={activeChannel}
@@ -262,27 +250,46 @@ export default function LiveTV() {
         />
       )}
 
-      {activeChannel && !epgOpen && (
-        <NowBar
-          channel={activeChannel}
-          visible={uiVisible}
-          bottomOffset={68}
-          epgFocused={focusZone === 'epg'}
-          epgStep={epgStep}
-          epgOnLogo={epgOnLogo}
-          onLogoClick={() => setEpgOpen(true)}
-          onSeekTo={t => playerRef.current?.seekToTime(t)}
-        />
+      {/* EPG kapalıyken normal UI */}
+      {!epgOpen && (
+        <>
+          {/* Yatay grup şeridi */}
+          {groups.length > 0 && (
+            <GroupStrip
+              groups={groups}
+              active={channelGroup}
+              focused={focusZone === 'groups'}
+              onSelect={g => { setGroup(g); setFocusZone('channels'); resetTimer() }}
+              visible={uiVisible}
+            />
+          )}
+
+          {/* NowBar */}
+          {activeChannel && (
+            <NowBar
+              channel={activeChannel}
+              visible={uiVisible}
+              bottomOffset={68}
+              epgFocused={focusZone === 'epg'}
+              epgStep={epgStep}
+              epgOnLogo={epgOnLogo}
+              onLogoClick={() => setEpgOpen(true)}
+              onSeekTo={t => playerRef.current?.seekToTime(t)}
+            />
+          )}
+        </>
       )}
 
-      {/* Kanal şeridi */}
-      <ChannelStrip
-        channels={groupChannels}
-        active={activeChannel}
-        focused={focusZone === 'channels' ? focusedChannel : null}
-        onSelect={ch => { setChannel(ch); setGroup(ch.group); closeUi() }}
-        visible={uiVisible}
-      />
+      {/* Kanal şeridi — EPG kapalıyken */}
+      {!epgOpen && (
+        <ChannelStrip
+          channels={groupChannels}
+          active={activeChannel}
+          focused={focusZone === 'channels' ? focusedChannel : null}
+          onSelect={ch => { setChannel(ch); setGroup(ch.group); closeUi() }}
+          visible={uiVisible}
+        />
+      )}
     </div>
   )
 }
