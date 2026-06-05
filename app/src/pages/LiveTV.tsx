@@ -61,13 +61,15 @@ export default function LiveTV() {
 
       if (focusZone === 'none') {
         if (e.keyCode === 38) {
-          const idx = channels.findIndex(c => c.tvgId === activeChannel?.tvgId)
-          const prev = channels[Math.max(0, idx - 1)]
-          if (prev && prev.tvgId !== activeChannel?.tvgId) { setChannel(prev); setGroup(prev.group) }
-        } else if (e.keyCode === 40) {
+          // Yukarı → listede sonraki kanal
           const idx = channels.findIndex(c => c.tvgId === activeChannel?.tvgId)
           const next = channels[Math.min(channels.length - 1, idx + 1)]
           if (next && next.tvgId !== activeChannel?.tvgId) { setChannel(next); setGroup(next.group) }
+        } else if (e.keyCode === 40) {
+          // Aşağı → listede önceki kanal
+          const idx = channels.findIndex(c => c.tvgId === activeChannel?.tvgId)
+          const prev = channels[Math.max(0, idx - 1)]
+          if (prev && prev.tvgId !== activeChannel?.tvgId) { setChannel(prev); setGroup(prev.group) }
         } else if (e.keyCode === 37 || e.keyCode === 39) {
           openUi('channels')
         } else if (e.keyCode === 13) {
