@@ -22,9 +22,9 @@ export default function LiveTV() {
   const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
 
-  // Aktif kanal değişince odak indexini güncelle
+  // Aktif kanal değişince odak indexini güncelle (url ile — tvg-id duplikat olabilir)
   useEffect(() => {
-    const idx = channels.findIndex(c => c.tvgId === activeChannel?.tvgId)
+    const idx = channels.findIndex(c => c.url === activeChannel?.url)
     if (idx >= 0) setFocusIdx(idx)
   }, [activeChannel, channels])
 
