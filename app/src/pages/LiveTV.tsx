@@ -4,6 +4,7 @@ import ChannelStrip from '../components/tv/ChannelStrip'
 import GroupWheel   from '../components/tv/GroupWheel'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
+import { App } from '@capacitor/app'
 
 const HIDE_DELAY = 5000
 
@@ -52,6 +53,12 @@ export default function LiveTV() {
       e.preventDefault()
 
       // ── UI KAPALI ──────────────────────────────────────────
+      // UI açıkken geri tuşu → UI kapat
+      if (uiVisible && (e.keyCode === 27 || e.keyCode === 10009 || e.keyCode === 4)) {
+        closeUi()
+        return
+      }
+
       if (focusZone === 'none') {
         if (e.keyCode === 38) {
           const idx = channels.findIndex(c => c.tvgId === activeChannel?.tvgId)
@@ -113,10 +120,18 @@ export default function LiveTV() {
       }
     }
 
+    // Android geri tuşu
+    const backHandler = App.addListener('backButton', () => {
+      if (uiVisible) { closeUi(); return }
+    })
+
     window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
+    return () => {
+      window.removeEventListener('keydown', onKey)
+      backHandler.then(h => h.remove())
+    }
   }, [focusZone, focusIdx, channels, groups, activeChannel, channelGroup,
-      setChannel, setGroup, openUi, closeUi, resetTimer])
+      uiVisible, setChannel, setGroup, openUi, closeUi, resetTimer])
 
   const focusedChannel = channels[focusIdx] ?? null
 
