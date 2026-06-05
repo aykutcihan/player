@@ -264,10 +264,10 @@ export default function LiveTV() {
             />
           )}
 
-          {/* NowBar */}
+          {/* NowBar — kanal gezinirken odaklanan kanalın EPG'si */}
           {activeChannel && (
             <NowBar
-              channel={activeChannel}
+              channel={focusZone === 'channels' && focusedChannel ? focusedChannel : activeChannel}
               visible={uiVisible}
               bottomOffset={68}
               epgFocused={focusZone === 'epg'}
