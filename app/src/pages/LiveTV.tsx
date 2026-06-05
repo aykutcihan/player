@@ -85,7 +85,7 @@ export default function LiveTV() {
           const icon = wasPlaying ? 'pause' : 'play' // toggle sonrası durum
           setPlayIcon(icon)
           clearTimeout(playIconTimer.current)
-          playIconTimer.current = setTimeout(() => setPlayIcon(null), icon === 'play' ? 2000 : 999999)
+          playIconTimer.current = setTimeout(() => setPlayIcon(null), icon === 'play' ? 1000 : 999999)
         }
         return
       }
@@ -162,9 +162,15 @@ export default function LiveTV() {
       {/* Pause/Play overlay */}
       {playIcon && (
         <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
-          <div className="text-white/90 text-9xl drop-shadow-2xl">
-            {playIcon === 'pause' ? '⏸' : '▶'}
-          </div>
+          {playIcon === 'pause' ? (
+            <svg viewBox="0 0 24 24" className="w-28 h-28 drop-shadow-2xl" fill="rgba(255,255,255,0.85)">
+              <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+            </svg>
+          ) : (
+            <svg viewBox="0 0 24 24" className="w-28 h-28 drop-shadow-2xl" fill="rgba(255,255,255,0.85)">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          )}
         </div>
       )}
 
