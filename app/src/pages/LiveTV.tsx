@@ -2,7 +2,7 @@ import { useRef, useState, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/useStore'
 import ChannelStrip from '../components/tv/ChannelStrip'
-import GroupWheel   from '../components/tv/GroupWheel'
+import GroupStrip   from '../components/tv/GroupStrip'
 import NowBar       from '../components/tv/NowBar'
 import Player       from '../components/tv/Player'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
@@ -109,27 +109,31 @@ export default function LiveTV() {
 
       // ── GRUP ──────────────────────────────────────────────
       if (focusZone === 'groups') {
+        const n    = groups.length
         const gIdx = groups.indexOf(channelGroup)
 
-        const goToScroll = (group?: string) => {
-          const targetGroup = group ?? channelGroup
-          // Grubun ilk kanalına odaklan
-          const firstInGroup = channels.findIndex(c => c.group === targetGroup)
+        const goToScroll = () => {
+          const firstInGroup = channels.findIndex(c => c.group === channelGroup)
           if (firstInGroup >= 0) setFocusIdx(firstInGroup)
           setFocusZone('channels')
         }
 
-        if (e.keyCode === 38) {
-          const prev = groups[gIdx - 1]
-          if (prev) setGroup(prev)
+        if (e.keyCode === 39) {
+          // Sağ → sonraki grup (sonsuz döngü)
+          const next = groups[(gIdx + 1) % n]
+          setGroup(next)
+        } else if (e.keyCode === 37) {
+          // Sol → önceki grup (sonsuz döngü)
+          const prev = groups[(gIdx - 1 + n) % n]
+          setGroup(prev)
         } else if (e.keyCode === 40) {
-          const next = groups[gIdx + 1]
-          if (next) setGroup(next)
-          else goToScroll() // son grup → scrola dön
+          // Aşağı → scrola dön
+          goToScroll()
         } else if (e.keyCode === 13) {
-          goToScroll() // OK → grubu seç, scrola dön
+          // OK → scrola dön
+          goToScroll()
         }
-        // Sol/Sağ gruplarda çalışmıyor
+        // Yukarı gruplarda çalışmıyor
       }
     }
 
@@ -172,11 +176,12 @@ export default function LiveTV() {
         </div>
       )}
 
-      {/* Grup tekerleği — sadece UI açıkken ve grup odaklanınca */}
-      {uiVisible && groups.length > 0 && (
-        <GroupWheel
+      {/* Yatay grup şeridi */}
+      {groups.length > 0 && (
+        <GroupStrip
           groups={groups}
           active={channelGroup}
+          focused={focusZone === 'groups'}
           onSelect={g => { setGroup(g); setFocusZone('channels'); resetTimer() }}
           visible={uiVisible}
         />
