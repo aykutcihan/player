@@ -37,29 +37,32 @@ export default function LiveTV() {
     if (idx >= 0) setFocusIdx(idx)
   }, [activeChannel, channels])
 
-  // Kanal değişince spinner — native event gelince kapat, max 8sn
+  // Kanal değişince spinner — native event gelince kapat
+  const listenerRef = useRef<{ remove: () => void } | null>(null)
   useEffect(() => {
     if (!activeChannel) return
     setChLoading(true)
     clearTimeout(loadTimer.current)
 
+    // Eski listener'ı temizle
+    if (listenerRef.current) { listenerRef.current.remove(); listenerRef.current = null }
+
     if (isNativeVideoAvailable()) {
-      // ExoPlayer'dan event bekle
-      let removed = false
       NativeVideo.addListener('videoState', (data: { state: string }) => {
-        if (data.state === 'playing' && !removed) {
-          removed = true
+        if (data.state === 'playing') {
           setChLoading(false)
           clearTimeout(loadTimer.current)
         }
-      })
-      // Max 8 saniye bekle
-      loadTimer.current = setTimeout(() => setChLoading(false), 8000)
+      }).then(handle => { listenerRef.current = handle })
+      // Max 5 saniye bekle
+      loadTimer.current = setTimeout(() => setChLoading(false), 5000)
     } else {
-      // Web: video event'i VideoPlayer halleder, kısa timeout
-      loadTimer.current = setTimeout(() => setChLoading(false), 500)
+      loadTimer.current = setTimeout(() => setChLoading(false), 300)
     }
-    return () => clearTimeout(loadTimer.current)
+    return () => {
+      clearTimeout(loadTimer.current)
+      if (listenerRef.current) { listenerRef.current.remove(); listenerRef.current = null }
+    }
   }, [activeChannel?.url])
 
   const closeUi = useCallback(() => {
