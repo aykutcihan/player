@@ -15,9 +15,11 @@ export default function LiveTV() {
   const playerRef  = useRef<VideoPlayerHandle>(null)
   const hideTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
-  const [uiVisible, setUiVisible] = useState(false)
-  const [focusZone, setFocusZone] = useState<FocusZone>('none')
-  const [focusIdx,  setFocusIdx]  = useState(0)
+  const [uiVisible,    setUiVisible]    = useState(false)
+  const [focusZone,    setFocusZone]    = useState<FocusZone>('none')
+  const [focusIdx,     setFocusIdx]     = useState(0)
+  const [playIcon,     setPlayIcon]     = useState<'play' | 'pause' | null>(null)
+  const playIconTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
@@ -73,8 +75,14 @@ export default function LiveTV() {
         } else if (e.keyCode === 37 || e.keyCode === 39) {
           openUi('channels')
         } else if (e.keyCode === 13) {
-          // OK → pause/play
+          // OK → pause/play + emoji göster
+          const video = document.querySelector('video') as HTMLVideoElement | null
+          const wasPlaying = video ? !video.paused : true
           playerRef.current?.togglePlay?.()
+          const icon = wasPlaying ? 'pause' : 'play' // toggle sonrası durum
+          setPlayIcon(icon)
+          clearTimeout(playIconTimer.current)
+          playIconTimer.current = setTimeout(() => setPlayIcon(null), icon === 'play' ? 2000 : 999999)
         }
         return
       }
@@ -142,6 +150,15 @@ export default function LiveTV() {
       {/* Player */}
       {activeChannel && (
         <Player ref={playerRef} channel={activeChannel} showControls={false} />
+      )}
+
+      {/* Pause/Play overlay */}
+      {playIcon && (
+        <div className="absolute inset-0 flex items-center justify-center z-30 pointer-events-none">
+          <div className="text-white/90 text-9xl drop-shadow-2xl">
+            {playIcon === 'pause' ? '⏸' : '▶'}
+          </div>
+        </div>
       )}
 
       {/* Grup tekerleği — sadece UI açıkken ve grup odaklanınca */}
