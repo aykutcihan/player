@@ -178,7 +178,7 @@ export default function Radio() {
                     {dropChannels.map((ch, i) => (
                       <button
                         key={i}
-                        onClick={() => { if (!didLong.current) { setRadio(ch); setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } didLong.current = false }}
+                        onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) { setRadio(ch); setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } didLong.current = false }}
                         onMouseDown={() => startPress(ch)}
                         onMouseUp={() => { if (!didLong.current) { setRadioOpen(false); setStripGroup(browseGroup); setActiveFav(null) } endPress(ch) }}
                         onMouseLeave={cancelPress}
@@ -223,7 +223,7 @@ export default function Radio() {
                 {stripChannels.map((ch, i) => (
                   <button
                     key={i}
-                    onClick={() => { if (!didLong.current) setRadio(ch); didLong.current = false }}
+                    onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
                     onMouseDown={() => startPress(ch, activeFav !== null)}
                     onMouseUp={() => endPress(ch)}
                     onMouseLeave={cancelPress}
@@ -280,7 +280,7 @@ export default function Radio() {
           return (
             <button
               key={i}
-              onClick={() => { if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null); setRadioOpen(false) } favLong.current = false }}
+              onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null); setRadioOpen(false) } favLong.current = false }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
               className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold transition-all select-none ${
