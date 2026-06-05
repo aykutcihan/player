@@ -32,7 +32,7 @@ export default function GroupStrip({ groups, active, onSelect, visible, focused 
       className={`absolute left-0 right-0 z-20 flex items-center gap-2 px-4 py-2 transition-opacity duration-300 ${
         visible ? 'opacity-100' : 'opacity-0'
       }`}
-      style={{ bottom: 175 }}
+      style={{ bottom: 148 }}
     >
       {visibleGroups.map(({ name, idx, pos }) => {
         const isActive = idx === activeIdx
