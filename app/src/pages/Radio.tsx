@@ -18,13 +18,17 @@ export default function Radio() {
 
   const [stripGroup,    setStripGroup]    = useState<string | null>(null)
   const [activeFav,     setActiveFav]     = useState<number | null>(null)
+  const [groupOffset,   setGroupOffset]   = useState(0)
   const [picker,        setPicker]        = useState<Channel | null>(null)
   const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
   const [toast,         setToast]         = useState<string | null>(null)
   const [editingFav,    setEditingFav]    = useState<number | null>(null)
   const [editName,      setEditName]      = useState('')
 
-  const groupsRef  = useRef<HTMLDivElement>(null)
+  const grpRef0    = useRef<HTMLButtonElement>(null)
+  const grpRef1    = useRef<HTMLButtonElement>(null)
+  const grpRef2    = useRef<HTMLButtonElement>(null)
+  const grpRefs    = [grpRef0, grpRef1, grpRef2]
   const scrollRef  = useRef<HTMLDivElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
   const timerRef   = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -44,6 +48,16 @@ export default function Radio() {
   }, [radioChannels])
 
   const groupNames = useMemo(() => [...normalGroupMap.keys()], [normalGroupMap])
+
+  // Görünür 3 grup (sonsuz döngü)
+  const visibleGroups = useMemo(() =>
+    groupNames.length === 0 ? [] : [0, 1, 2].map(i => groupNames[(groupOffset + i) % groupNames.length]),
+  [groupNames, groupOffset])
+
+  // Sayfa açılınca ilk grup butonu focus
+  useEffect(() => {
+    if (groupNames.length > 0) grpRef0.current?.focus()
+  }, [groupNames.length])
 
   // Şerit kanalları — fav veya seçili grup
   const stripChannels = useMemo((): Channel[] => {
@@ -109,48 +123,32 @@ export default function Radio() {
   return (
     <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111]">
 
-      {/* Grup şeridi — 3 büyük buton, sonsuz döngü */}
-      <div className="shrink-0 border-b border-white/10">
-        <div
-          ref={groupsRef}
-          className="flex overflow-x-auto scroll-smooth"
-          style={{ scrollbarWidth: 'none' }}
-        >
-          {groupNames.map((g, i) => (
-            <button
-              key={g}
-              onClick={() => {
-                setStripGroup(g === stripGroup ? null : g)
-                setActiveFav(null)
-                ;(groupsRef.current?.children[i] as HTMLElement)?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-              }}
-              onKeyDown={e => {
-                if (e.key === 'ArrowRight') {
-                  e.preventDefault()
-                  const next = (i + 1) % groupNames.length
-                  const el = groupsRef.current?.children[next] as HTMLElement
-                  el?.focus()
-                  el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-                }
-                if (e.key === 'ArrowLeft') {
-                  e.preventDefault()
-                  const prev = (i - 1 + groupNames.length) % groupNames.length
-                  const el = groupsRef.current?.children[prev] as HTMLElement
-                  el?.focus()
-                  el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-                }
-              }}
-              style={{ flexShrink: 0, width: 'calc(100% / 3)' }}
-              className={`flex items-center justify-center py-5 text-sm font-bold transition-all border-b-2 ${
-                stripGroup === g
-                  ? 'bg-red-900/40 text-white border-red-500'
-                  : 'bg-white/3 text-white/50 border-transparent hover:bg-white/8 hover:text-white'
-              }`}
-            >
-              {g}
-            </button>
-          ))}
-        </div>
+      {/* Grup carousel — 3 buton, favori butonları gibi, sonsuz döngü */}
+      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-b border-white/10 shrink-0">
+        {visibleGroups.map((g, btnIdx) => (
+          <button
+            key={btnIdx}
+            ref={grpRefs[btnIdx]}
+            onClick={() => { setStripGroup(g === stripGroup ? null : g); setActiveFav(null) }}
+            onKeyDown={e => {
+              if (e.key === 'ArrowRight') {
+                e.preventDefault()
+                setGroupOffset(prev => (prev + 1) % groupNames.length)
+              }
+              if (e.key === 'ArrowLeft') {
+                e.preventDefault()
+                setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length)
+              }
+            }}
+            className={`flex-1 py-3 rounded-2xl text-sm font-semibold transition-all select-none text-center ${
+              stripGroup === g
+                ? 'bg-red-600 text-white shadow-lg shadow-red-900/30'
+                : 'bg-white/8 text-white/60 hover:bg-white/12 hover:text-white'
+            }`}
+          >
+            {g}
+          </button>
+        ))}
       </div>
 
       {/* Kanal şeridi — seçili grup veya fav */}
