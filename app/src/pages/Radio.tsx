@@ -124,7 +124,7 @@ export default function Radio() {
   }
 
   return (
-    <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111]">
+    <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111] pt-3">
 
       {/* Ana alan — player */}
       <div className="flex-1 min-h-0 relative">
