@@ -185,7 +185,7 @@ export default function Radio() {
               }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-              className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
+              className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 ${
                 activeFav === i
                   ? 'border-yellow-500 bg-yellow-900/30 scale-105'
                   : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
