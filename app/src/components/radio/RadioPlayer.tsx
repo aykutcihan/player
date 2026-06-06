@@ -121,12 +121,6 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
           )}
         </div>
 
-        {/* Channel info */}
-        <div className="text-center">
-          <div className="text-xl font-bold">{channel.name}</div>
-          <div className="text-xs text-white/40 mt-0.5">{channel.group}</div>
-        </div>
-
         {/* Song info */}
         {song && (song.title || song.artist) && (
           <div className="w-full text-center bg-black/30 backdrop-blur-md rounded-2xl px-5 py-3.5 border border-white/8">

@@ -20,6 +20,8 @@ export default function Radio() {
   const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
   const [toast,          setToast]          = useState<string | null>(null)
   const [channelOffset,  setChannelOffset]  = useState(0)
+  const [displayName,    setDisplayName]    = useState<string>('')
+  const nameTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const grpRef0    = useRef<HTMLButtonElement>(null)
   const grpRef1    = useRef<HTMLButtonElement>(null)
@@ -82,6 +84,22 @@ export default function Radio() {
   const currentStripIdx = useMemo(() =>
     activeRadio ? stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId) : -1,
   [activeRadio, stripChannels])
+
+  // Preview: gezinince ortadaki isim, 3s sonra çalana dön
+  useEffect(() => {
+    const midName = visibleChannels[1]?.ch.name ?? ''
+    setDisplayName(midName)
+    clearTimeout(nameTimerRef.current)
+    nameTimerRef.current = setTimeout(() => {
+      setDisplayName(activeRadio?.name ?? midName)
+    }, 3000)
+    return () => clearTimeout(nameTimerRef.current)
+  }, [channelOffset])
+
+  // Çalan radyo değişince displayName güncelle
+  useEffect(() => {
+    setDisplayName(activeRadio?.name ?? '')
+  }, [activeRadio])
 
   // Grup/fav değişince ilk kanal ortada başlasın
   useEffect(() => {
@@ -252,8 +270,8 @@ export default function Radio() {
                   </button>
                 ))}
                 </div>
-                <div className="text-sm font-semibold text-white text-center" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
-                  {visibleChannels[1]?.ch.name ?? ''}
+                <div className="text-base font-semibold text-white text-center transition-all duration-300" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
+                  {displayName}
                 </div>
               </div>
           }
