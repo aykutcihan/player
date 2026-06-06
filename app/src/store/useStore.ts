@@ -14,15 +14,17 @@ interface Store {
   // Radyo
   radioChannels:  Channel[]
   activeRadio:    Channel | null
+  radioNowPlaying: { title: string; artist: string } | null
 
   // Yükleme
   loaded: boolean
 
   // Actions
-  loadAll:        () => Promise<void>
-  setChannel:     (ch: Channel) => void
-  setGroup:       (g: string)   => void
-  setRadio:       (ch: Channel | null) => void
+  loadAll:           () => Promise<void>
+  setChannel:        (ch: Channel) => void
+  setGroup:          (g: string)   => void
+  setRadio:          (ch: Channel | null) => void
+  setRadioNowPlaying:(info: { title: string; artist: string } | null) => void
 }
 
 export const useStore = create<Store>((set, get) => ({
@@ -30,9 +32,10 @@ export const useStore = create<Store>((set, get) => ({
   activeChannel: null,
   channelGroup:  'Ulusal',
   films:         [],
-  radioChannels: [],
-  activeRadio:   null,
-  loaded:        false,
+  radioChannels:    [],
+  activeRadio:      null,
+  radioNowPlaying:  null,
+  loaded:           false,
 
   loadAll: async () => {
     if (get().loaded) return
@@ -66,7 +69,8 @@ export const useStore = create<Store>((set, get) => ({
     }
   },
 
-  setChannel: (ch) => set({ activeChannel: ch }),
-  setGroup:   (g)  => set({ channelGroup: g }),
-  setRadio:   (ch) => set({ activeRadio: ch ?? null }),
+  setChannel:         (ch)   => set({ activeChannel: ch }),
+  setGroup:           (g)    => set({ channelGroup: g }),
+  setRadio:           (ch)   => set({ activeRadio: ch ?? null, radioNowPlaying: null }),
+  setRadioNowPlaying: (info) => set({ radioNowPlaying: info }),
 }))

@@ -33,12 +33,16 @@ function GroupIcon({ group }: { group: string }) {
 }
 
 export default function Radio() {
-  const { radioChannels, activeRadio, setRadio } = useStore()
+  const { radioChannels, activeRadio, setRadio, setRadioNowPlaying } = useStore()
   const { groups: favGroups, addToGroup, removeFromGroup, resolveChannels } = useFavorites()
 
   const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 639px)').matches)
   const [coverUrl,      setCoverUrl]      = useState('')
   const [song,          setSong]          = useState<NowPlaying | null>(null)
+  const handleSongChange = useCallback((s: NowPlaying | null) => {
+    setSong(s)
+    setRadioNowPlaying(s?.title || s?.artist ? { title: s?.title ?? '', artist: s?.artist ?? '' } : null)
+  }, [setRadioNowPlaying])
   const [program,       setProgram]       = useState<Programme | null>(null)
   const [logoErrors,    setLogoErrors]    = useState<Set<string>>(new Set())
   const [stripGroup,    setStripGroup]    = useState<string | null>(null)
@@ -66,6 +70,9 @@ export default function Radio() {
   const mobPlayerArea   = useRef<HTMLDivElement>(null)
   const mobGroupArea    = useRef<HTMLDivElement>(null)
   const mobChArea       = useRef<HTMLDivElement>(null)
+  const dskPlayerArea   = useRef<HTMLDivElement>(null)
+  const dskGroupArea    = useRef<HTMLDivElement>(null)
+  const dskChArea       = useRef<HTMLDivElement>(null)
   const fav0TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const fav1TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const fav2TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -141,8 +148,9 @@ export default function Radio() {
     return () => clearTimeout(nameTimerRef.current)
   }, [channelOffset])
 
-  // Çalan radyo değişince displayName güncelle
+  // Çalan radyo değişince displayName güncelle, bekleyen timer'ı iptal et
   useEffect(() => {
+    clearTimeout(nameTimerRef.current)
     setDisplayName(activeRadio?.name ?? '')
   }, [activeRadio])
 
@@ -172,36 +180,22 @@ export default function Radio() {
     chRef1.current?.focus()
   }, [stripGroup, activeFav])
 
-  // Dikey bölümler arası klavye döngüsü (sadece mobile layout)
-  useEffect(() => {
-    const handle = (e: KeyboardEvent) => {
-      if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return
-      if (!isMobile) return
-      const active = document.activeElement as HTMLElement | null
-      if (!active) return
-      const inPlayer  = mobPlayerArea.current?.contains(active)
-      const inGroup   = mobGroupArea.current?.contains(active)
-      const inFav     = favRef.current?.contains(active)
-      const inChannel = mobChArea.current?.contains(active)
-      if (!inPlayer && !inGroup && !inFav && !inChannel) return
-      e.preventDefault()
-      const hasChannel = stripChannels.length > 0 && (activeFav !== null || stripGroup !== null)
-      const toPlayer = () => (playBtnRef.current ?? grpRef1.current)?.focus()
-      if (e.key === 'ArrowDown') {
-        if (inPlayer)       grpRef1.current?.focus()
-        else if (inGroup)   favMidRef.current?.focus()
-        else if (inFav)     hasChannel ? chRef1.current?.focus() : toPlayer()
-        else if (inChannel) toPlayer()
-      } else {
-        if (inPlayer)       hasChannel ? chRef1.current?.focus() : favMidRef.current?.focus()
-        else if (inGroup)   toPlayer()
-        else if (inFav)     grpRef1.current?.focus()
-        else if (inChannel) favMidRef.current?.focus()
-      }
+  // Merkezi section navigasyonu — per-button onKeyDown tarafından çağrılır
+  const navigate = useCallback((from: 'player' | 'group' | 'fav' | 'channel', dir: 'up' | 'down') => {
+    const hasChannel = stripChannels.length > 0 && (activeFav !== null || stripGroup !== null)
+    const toPlayer = () => (playBtnRef.current ?? grpRef1.current)?.focus()
+    if (dir === 'down') {
+      if (from === 'player')  grpRef1.current?.focus()
+      else if (from === 'group')   favMidRef.current?.focus()
+      else if (from === 'fav')     hasChannel ? chRef1.current?.focus() : toPlayer()
+      else if (from === 'channel') toPlayer()
+    } else {
+      if (from === 'player')       hasChannel ? chRef1.current?.focus() : favMidRef.current?.focus()
+      else if (from === 'group')   toPlayer()
+      else if (from === 'fav')     grpRef1.current?.focus()
+      else if (from === 'channel') favMidRef.current?.focus()
     }
-    window.addEventListener('keydown', handle)
-    return () => window.removeEventListener('keydown', handle)
-  }, [isMobile, activeFav, stripGroup, stripChannels.length])
+  }, [stripChannels.length, activeFav, stripGroup])
 
   const handlePick = useCallback((groupIdx: number) => {
     if (!picker) return
@@ -243,9 +237,12 @@ export default function Radio() {
                 onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
                 onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
                 playBtnRef={playBtnRef}
-                onSongChange={setSong}
+                onSongChange={handleSongChange}
                 onProgramChange={setProgram}
-                onPlayKeyDown={undefined}
+                onPlayKeyDown={e => {
+                  if (e.key === 'ArrowDown') { e.preventDefault(); navigate('player', 'down') }
+                  if (e.key === 'ArrowUp')   { e.preventDefault(); navigate('player', 'up') }
+                }}
               />
             : !activeRadio
               ? <div className="flex flex-col items-center justify-center h-full gap-3">
@@ -284,6 +281,8 @@ export default function Radio() {
               onKeyDown={e => {
                 if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
                 if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
+                if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('group', 'down') }
+                if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('group', 'up') }
               }}
               className={`flex-none flex flex-col items-center justify-center gap-1 w-[25vw] h-[25vw] rounded-xl text-[3vw] font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
             >
@@ -305,6 +304,8 @@ export default function Radio() {
                 onKeyDown={e => {
                   if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                   if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
+                  if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('fav', 'down') }
+                  if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('fav', 'up') }
                 }}
                 onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
                 onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
@@ -328,6 +329,8 @@ export default function Radio() {
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
+                          if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('channel', 'down') }
+                          if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('channel', 'up') }
                         }}
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
@@ -352,15 +355,15 @@ export default function Radio() {
         {/* SOL: Grup + Fav + Kanal */}
         <div className="flex flex-col justify-center items-center gap-3 py-10 px-10 border-r border-white/10">
 
-          <div className="grid grid-cols-3 gap-2 w-full">
+          <div ref={dskGroupArea} className="grid grid-cols-3 gap-2 w-full">
             {visibleGroups.map((g, btnIdx) => (
               <button key={btnIdx} ref={!isMobile ? grpRefs[btnIdx] : undefined}
                 onClick={() => { setStripGroup(g); setActiveFav(null) }}
                 onKeyDown={e => {
                   if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
                   if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
-                  if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
-                  if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
+                  if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('group', 'down') }
+                  if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('group', 'up') }
                 }}
                 className={`w-full aspect-square flex flex-col items-center justify-center gap-1 rounded-xl text-xs font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
               >
@@ -380,8 +383,8 @@ export default function Radio() {
                 <button key={i} ref={i === 1 ? (!isMobile ? favMidRef : undefined) : undefined}
                   onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
                   onKeyDown={e => {
-                    if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
-                    if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); chRef1.current?.focus() }
+                    if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('fav', 'down') }
+                    if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('fav', 'up') }
                     if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                     if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
                   }}
@@ -399,14 +402,15 @@ export default function Radio() {
             <div className="w-full">
               {stripChannels.length === 0
                 ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-                : <div className="grid grid-cols-3 gap-2 w-full">
+                : <div ref={dskChArea} className="grid grid-cols-3 gap-2 w-full">
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
                       <button key={btnIdx} ref={!isMobile ? chRefs[btnIdx] : undefined}
                         onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
-                          if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                          if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('channel', 'down') }
+                          if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('channel', 'up') }
                         }}
                         className={`w-full aspect-square flex flex-col items-center justify-center gap-1 p-1 rounded-xl border transition-all select-none overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
@@ -425,16 +429,19 @@ export default function Radio() {
 
         {/* SAĞ: Player + Şarkı + Radyo adı */}
         <div className="min-h-0 flex flex-col justify-center px-8 py-8">
-          <div className="flex-none relative">
+          <div ref={dskPlayerArea} className="flex-none relative">
             {activeRadio && !isMobile
               ? <RadioPlayer
                   channel={activeRadio}
                   onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
                   onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
                   playBtnRef={playBtnRef}
-                  onSongChange={setSong}
+                  onSongChange={handleSongChange}
                   onProgramChange={setProgram}
-                  onPlayKeyDown={e => { if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() } }}
+                  onPlayKeyDown={e => {
+                    if (e.key === 'ArrowDown') { e.preventDefault(); navigate('player', 'down') }
+                    if (e.key === 'ArrowUp')   { e.preventDefault(); navigate('player', 'up') }
+                  }}
                 />
               : !activeRadio
                 ? <div className="flex flex-col items-center justify-center gap-3 py-8">
