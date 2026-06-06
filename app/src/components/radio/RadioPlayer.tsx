@@ -147,6 +147,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             disabled={!onPrev}
             onKeyDown={e => {
               if (e.key === 'ArrowRight') { e.preventDefault(); playBtnRef?.current?.focus() }
+              if (e.key === 'ArrowDown' || e.key === 'ArrowUp') onPlayKeyDown?.(e)
             }}
             className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white transition-all active:scale-95"
           >
@@ -170,6 +171,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             disabled={!onNext}
             onKeyDown={e => {
               if (e.key === 'ArrowLeft') { e.preventDefault(); playBtnRef?.current?.focus() }
+              if (e.key === 'ArrowDown' || e.key === 'ArrowUp') onPlayKeyDown?.(e)
             }}
             className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white transition-all active:scale-95"
           >
