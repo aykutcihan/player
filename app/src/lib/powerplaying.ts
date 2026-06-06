@@ -16,12 +16,10 @@ export async function fetchPowerNowPlaying(tvgId: string): Promise<NowPlaying | 
     if (d?.meta?.status !== 200) return null
     const timeline = d?.data?.timeline?.[0]
     if (!timeline) return null
-    const raw    = timeline.artistTitle ?? ''
-    const parts  = raw.includes(' - ') ? raw.split(' - ', 2) : ['', raw]
-    const img    = d?.data?.image ?? {}
+    const img = d?.data?.image ?? {}
     return {
-      title:    (parts[1]?.trim() || raw).trim(),
-      artist:   parts[0].trim(),
+      title:    (timeline.songTitle   ?? '').trim(),
+      artist:   (timeline.artistTitle ?? '').trim(),
       cover:    img.prefix ? img.prefix + '150x150' + img.suffix : '',
       progress: (timeline.duration ?? 0) - (timeline.remainingSeconds ?? 0),
       duration: timeline.duration ?? 0,
