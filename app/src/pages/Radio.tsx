@@ -189,7 +189,7 @@ export default function Radio() {
       <div className="relative z-10 flex flex-col md:flex-row flex-1 min-h-0 md:divide-x md:divide-white/10">
 
         {/* SOL KOLON: Player + Şarkı bilgisi */}
-        <div className="flex-1 min-h-0 flex flex-col md:px-6">
+        <div className="flex-1 min-h-0 flex flex-col md:px-6 md:py-6">
           <div className="flex-1 min-h-0 relative">
             {activeRadio
               ? <RadioPlayer
@@ -243,7 +243,7 @@ export default function Radio() {
         </div>
 
         {/* SAĞ KOLON: Grup + Fav + Kanal */}
-        <div className="shrink-0 flex flex-col justify-center items-center gap-1 py-1 md:py-4 md:w-64 md:px-4">
+        <div className="shrink-0 flex flex-col justify-center items-center gap-1 py-1 md:py-6 md:w-64 md:px-4">
 
           {/* Grup carousel */}
           <div className="flex items-center justify-center gap-2 px-1 py-1">
