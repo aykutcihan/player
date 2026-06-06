@@ -14,6 +14,7 @@ export default function Layout() {
   const activeRadio      = useStore(s => s.activeRadio)
   const radioNowPlaying  = useStore(s => s.radioNowPlaying)
   const isRadioPage      = location.pathname === '/radyo'
+  const isTVPage         = location.pathname === '/tv'
 
   useEffect(() => {
     // Capacitor back button — normal kısa basış
@@ -61,7 +62,7 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      {!isRadioPage && activeRadio && (
+      {!isRadioPage && !isTVPage && activeRadio && (
         <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center gap-3 px-4 py-2 bg-[#1a1a1a]/95 backdrop-blur-sm border-t border-white/10">
           <span className="text-lg">📻</span>
           <div className="flex-1 min-w-0">
