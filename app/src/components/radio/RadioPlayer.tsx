@@ -130,6 +130,15 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
 
   // Media Session API — kilit ekranı / bildirim
   useEffect(() => {
+    // document.title → Safari kilit ekranı fallback
+    const trackTitle = song?.title
+      ? `${song.title}${song.artist ? ` — ${song.artist}` : ''}`
+      : channel.name
+    document.title = trackTitle
+    return () => { document.title = 'Stepup' }
+  }, [song, channel.name])
+
+  useEffect(() => {
     if (!('mediaSession' in navigator)) return
     navigator.mediaSession.metadata = new MediaMetadata({
       title:  song?.title  || channel.name,
