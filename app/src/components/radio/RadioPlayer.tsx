@@ -136,11 +136,11 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
   }
 
   return (
-    <div className="relative flex flex-col h-full w-full justify-end">
+    <div className="relative flex flex-col w-full justify-center">
       {/* Controls */}
       <div className="relative z-10 flex flex-col items-center gap-2 py-3 shrink-0">
         {error && <div className="text-red-400 text-xs">Stream yüklenemedi</div>}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center justify-center gap-4 w-full max-w-[260px] mx-auto px-4">
           <button
             ref={prevBtnRef}
             onClick={onPrev}
@@ -148,7 +148,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             onKeyDown={e => {
               if (e.key === 'ArrowRight') { e.preventDefault(); playBtnRef?.current?.focus() }
             }}
-            className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white text-lg transition-all active:scale-95"
+            className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white transition-all active:scale-95"
           >
             ◀
           </button>
@@ -160,7 +160,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
               if (e.key === 'ArrowRight') { e.preventDefault(); nextBtnRef.current?.focus() }
               else onPlayKeyDown?.(e)
             }}
-            className="w-16 h-16 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 flex items-center justify-center text-2xl text-white transition-all"
+            className="flex-[1.3] aspect-square rounded-full bg-white/15 hover:bg-white/25 active:scale-95 flex items-center justify-center text-white transition-all"
           >
             {playing ? '⏸' : '▶'}
           </button>
@@ -171,7 +171,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             onKeyDown={e => {
               if (e.key === 'ArrowLeft') { e.preventDefault(); playBtnRef?.current?.focus() }
             }}
-            className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white text-lg transition-all active:scale-95"
+            className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white transition-all active:scale-95"
           >
             ▶
           </button>

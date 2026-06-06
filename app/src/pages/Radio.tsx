@@ -36,6 +36,7 @@ export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
   const { groups: favGroups, addToGroup, removeFromGroup, resolveChannels } = useFavorites()
 
+  const [isMobile, setIsMobile] = useState(() => window.matchMedia('(max-width: 639px)').matches)
   const [coverUrl,      setCoverUrl]      = useState('')
   const [song,          setSong]          = useState<NowPlaying | null>(null)
   const [program,       setProgram]       = useState<Programme | null>(null)
@@ -62,8 +63,22 @@ export default function Radio() {
   const favMidRef  = useRef<HTMLButtonElement>(null)
   const playBtnRef = useRef<HTMLButtonElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
+  const fav0TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const fav1TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const fav2TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const favTimerRefs = [fav0TimerRef, fav1TimerRef, fav2TimerRef]
+  const fav0Long = useRef(false)
+  const fav1Long = useRef(false)
+  const fav2Long = useRef(false)
+  const favLongs = [fav0Long, fav1Long, fav2Long]
 
   useEffect(() => { pickerRef.current = picker }, [picker])
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 639px)')
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mq.addEventListener('change', handler)
+    return () => mq.removeEventListener('change', handler)
+  }, [])
 
   // Grup haritası
   const normalGroupMap = useMemo(() => {
@@ -185,72 +200,133 @@ export default function Radio() {
       />
       <div className="absolute inset-0 bg-[#111]/75 pointer-events-none" />
 
-      {/* Ana içerik — telefonda dikey, md+'da yatay iki kolon */}
-      <div className="relative z-10 flex flex-col md:flex-row flex-1 min-h-0 md:divide-x md:divide-white/10">
+      {/* ── DİKEY LAYOUT (mobile) ── */}
+      <div className="relative z-10 flex flex-col flex-1 min-h-0 sm:hidden gap-1">
 
-        {/* SOL KOLON: Player + Şarkı bilgisi */}
-        <div className="flex-1 min-h-0 flex flex-col md:px-6 md:py-6">
-          <div className="flex-1 min-h-0 relative">
-            {activeRadio
-              ? <RadioPlayer
-                  channel={activeRadio}
-                  onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
-                  onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
-                  playBtnRef={playBtnRef}
-                  onSongChange={setSong}
-                  onProgramChange={setProgram}
-                  onPlayKeyDown={e => {
-                    if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
-                  }}
-                />
-              : (
-                <div className="flex flex-col items-center justify-center h-full gap-3">
+        <div className="shrink-0 relative">
+          {activeRadio && isMobile
+            ? <RadioPlayer
+                channel={activeRadio}
+                onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
+                onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
+                playBtnRef={playBtnRef}
+                onSongChange={setSong}
+                onProgramChange={setProgram}
+                onPlayKeyDown={e => { if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() } }}
+              />
+            : !activeRadio
+              ? <div className="flex flex-col items-center justify-center h-full gap-3">
                   <div className="text-5xl opacity-20">📻</div>
                   <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
                   <div className="text-white/15 text-xs">Aşağıdan bir grup seç</div>
                 </div>
-              )
-            }
-          </div>
-
-          {/* Şarkı / Program bilgisi */}
-          <div className="shrink-0 text-center px-6 py-2 min-h-[60px] flex flex-col justify-center">
-            {song && (song.title || song.artist) ? (
-              <>
-                {song.title && <MarqueeText text={song.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
-                {song.artist && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium">{song.artist}</div>}
-                {(song.duration ?? 0) > 0 && (
-                  <div className="mt-2 h-1 bg-white/15 rounded-full overflow-hidden">
-                    <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
-                      style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }} />
-                  </div>
-                )}
-              </>
-            ) : program ? (
-              <>
-                <MarqueeText text={program.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />
-                {program.desc && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
-              </>
-            ) : null}
-          </div>
-
-          {/* Radyo adı — sol kolonda şarkının altı */}
-          {(activeFav !== null || stripGroup !== null) && stripChannels.length > 0 && (
-            <div className="shrink-0 text-center px-6 pb-2">
-              <MarqueeText text={displayName} className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg" />
-            </div>
-          )}
+              : null
+          }
         </div>
 
-        {/* SAĞ KOLON: Grup + Fav + Kanal */}
-        <div className="shrink-0 flex flex-col justify-center items-center gap-1 py-1 md:py-6 md:w-64 md:px-4">
+        <div className="flex-1 min-h-0 text-center px-6 py-2 flex flex-col justify-center">
+          {song && (song.title || song.artist) ? (
+            <>
+              {song.title && <MarqueeText text={song.title} className="text-xl font-bold text-white leading-tight drop-shadow-lg" />}
+              {song.artist && <div className="text-sm text-white/60 mt-1 font-medium">{song.artist}</div>}
+              {(song.duration ?? 0) > 0 && (
+                <div className="mt-2 h-1 bg-white/15 rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
+                    style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }} />
+                </div>
+              )}
+            </>
+          ) : program ? (
+            <>
+              <MarqueeText text={program.title} className="text-xl font-bold text-white leading-tight drop-shadow-lg" />
+              {program.desc && <div className="text-sm text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
+            </>
+          ) : null}
+        </div>
 
-          {/* Grup carousel */}
-          <div className="flex items-center justify-center gap-2 px-1 py-1">
+        <div className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
+          {visibleGroups.map((g, btnIdx) => (
+            <button key={btnIdx} ref={grpRefs[btnIdx]}
+              onClick={() => { setStripGroup(g); setActiveFav(null) }}
+              onKeyDown={e => {
+                if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
+                if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
+                if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
+                if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
+              }}
+              className={`flex-none flex flex-col items-center justify-center gap-1 w-16 h-16 sm:w-20 sm:h-20 rounded-xl text-xs sm:text-sm font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
+            >
+              <GroupIcon group={g} />{g}
+            </button>
+          ))}
+        </div>
+
+        <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
+          {favGroups.map((_g, i) => {
+            const favTimerRef = favTimerRefs[i]
+            const favLong = favLongs[i]
+            const favDown = () => { favLong.current = false; favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS) }
+            const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } }
+            const favCancel = () => clearTimeout(favTimerRef.current)
+            return (
+              <button key={i} ref={i === 1 ? favMidRef : undefined}
+                onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
+                onKeyDown={e => {
+                  if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
+                  if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); chRef1.current?.focus() }
+                  if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
+                  if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
+                }}
+                onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
+                onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
+                className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 ${activeFav === i ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-white/15 bg-white/5'}`}
+              >
+                <span className="text-4xl sm:text-6xl leading-none" style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}>⭐</span>
+              </button>
+            )
+          })}
+        </div>
+
+        {(activeFav !== null || stripGroup !== null) && (
+          <div className="relative z-10 shrink-0">
+            {stripChannels.length === 0
+              ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
+              : <div className="flex flex-col items-center gap-3 py-1">
+                  <div className="flex items-center justify-center gap-2">
+                    {visibleChannels.map(({ ch, idx }, btnIdx) => (
+                      <button key={btnIdx} ref={chRefs[btnIdx]}
+                        onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
+                        onKeyDown={e => {
+                          if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
+                          if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
+                          if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                        }}
+                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
+                      >
+                        {ch.logo && !logoErrors.has(ch.tvgId)
+                          ? <img src={ch.logo} alt={ch.name} className="w-10 h-10 object-contain rounded-lg" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          : <span className="text-2xl">📻</span>
+                        }
+                        <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />
+                      </button>
+                    ))}
+                  </div>
+                  <div className="text-lg font-bold text-white text-center truncate mb-3 w-[calc(3*4rem+2*0.5rem)] sm:w-[calc(3*5rem+2*0.5rem)]">{displayName}</div>
+                </div>
+            }
+          </div>
+        )}
+      </div>
+
+      {/* ── YATAY LAYOUT (md+) ── */}
+      <div className="relative z-10 hidden sm:grid grid-cols-2 flex-1 min-h-0">
+
+        {/* SOL: Grup + Fav + Kanal */}
+        <div className="flex flex-col justify-center items-center gap-3 py-10 px-10 border-r border-white/10">
+
+          <div className="grid grid-cols-3 gap-2 w-full">
             {visibleGroups.map((g, btnIdx) => (
-              <button
-                key={btnIdx}
-                ref={grpRefs[btnIdx]}
+              <button key={btnIdx} ref={grpRefs[btnIdx]}
                 onClick={() => { setStripGroup(g); setActiveFav(null) }}
                 onKeyDown={e => {
                   if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
@@ -258,36 +334,22 @@ export default function Radio() {
                   if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
                   if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
                 }}
-                className={`flex-none flex flex-col items-center justify-center gap-1 w-16 h-16 sm:w-20 sm:h-20 rounded-xl text-xs sm:text-sm font-semibold transition-all select-none text-center border ${
-                  stripGroup === g
-                    ? 'border-red-500 bg-red-800 text-white scale-105'
-                    : 'border-white/15 bg-transparent text-white'
-                }`}
+                className={`w-full aspect-square flex flex-col items-center justify-center gap-1 rounded-xl text-xs font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
               >
-                <GroupIcon group={g} />
-                {g}
+                <GroupIcon group={g} />{g}
               </button>
             ))}
           </div>
 
-          {/* Fav butonları */}
-          <div ref={favRef} className="flex items-center justify-center gap-2 px-1 py-1">
+          <div ref={favRef} className="grid grid-cols-3 gap-2 w-full">
             {favGroups.map((_g, i) => {
-              const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-              const favLong = useRef(false)
-              const favDown = () => {
-                favLong.current = false
-                favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS)
-              }
-              const favUp = () => {
-                clearTimeout(favTimerRef.current)
-                if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) }
-              }
+              const favTimerRef = favTimerRefs[i]
+              const favLong = favLongs[i]
+              const favDown = () => { favLong.current = false; favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS) }
+              const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } }
               const favCancel = () => clearTimeout(favTimerRef.current)
               return (
-                <button
-                  key={i}
-                  ref={i === 1 ? favMidRef : undefined}
+                <button key={i} ref={i === 1 ? favMidRef : undefined}
                   onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
                   onKeyDown={e => {
                     if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
@@ -297,50 +359,31 @@ export default function Radio() {
                   }}
                   onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
                   onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-                  className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 ${
-                    activeFav === i
-                      ? 'border-yellow-500 bg-yellow-800 scale-105'
-                      : 'border-white/15 bg-white/5'
-                  }`}
+                  className={`w-full aspect-square flex flex-col items-center justify-center rounded-xl border transition-all select-none ${activeFav === i ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-white/15 bg-white/5'}`}
                 >
-                  <span
-                    className="text-4xl sm:text-6xl leading-none"
-                    style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}
-                  >⭐</span>
+                  <span className="text-4xl leading-none" style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}>⭐</span>
                 </button>
               )
             })}
           </div>
 
-          {/* Kanal şeridi */}
           {(activeFav !== null || stripGroup !== null) && (
-            <div className="shrink-0">
+            <div className="w-full">
               {stripChannels.length === 0
                 ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-                : <div className="flex items-center justify-center gap-2 py-1">
+                : <div className="grid grid-cols-3 gap-2 w-full">
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
-                      <button
-                        key={btnIdx}
-                        ref={chRefs[btnIdx]}
-                        onClick={() => {
-                          setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length)
-                          setRadio(ch)
-                          chRef1.current?.focus()
-                        }}
+                      <button key={btnIdx} ref={chRefs[btnIdx]}
+                        onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
                         }}
-                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 justify-center overflow-hidden ${
-                          btnIdx === 1
-                            ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
-                            : 'border-white/15 bg-transparent'
-                        }`}
+                        className={`w-full aspect-square flex flex-col items-center justify-center gap-1 p-1 rounded-xl border transition-all select-none overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
-                          ? <img src={ch.logo} alt={ch.name} className="w-10 h-10 object-contain rounded-lg"
-                              onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] aspect-square object-contain rounded-lg" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                           : <span className="text-2xl">📻</span>
                         }
                         <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />
@@ -348,6 +391,55 @@ export default function Radio() {
                     ))}
                   </div>
               }
+            </div>
+          )}
+        </div>
+
+        {/* SAĞ: Player + Şarkı + Radyo adı */}
+        <div className="min-h-0 flex flex-col justify-center px-8 py-8">
+          <div className="flex-none relative">
+            {activeRadio && !isMobile
+              ? <RadioPlayer
+                  channel={activeRadio}
+                  onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
+                  onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
+                  playBtnRef={playBtnRef}
+                  onSongChange={setSong}
+                  onProgramChange={setProgram}
+                  onPlayKeyDown={e => { if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() } }}
+                />
+              : !activeRadio
+                ? <div className="flex flex-col items-center justify-center gap-3 py-8">
+                    <div className="text-5xl opacity-20">📻</div>
+                    <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
+                  </div>
+                : null
+            }
+          </div>
+
+          <div className="shrink-0 text-center py-4 min-h-[70px] flex flex-col justify-center">
+            {song && (song.title || song.artist) ? (
+              <>
+                {song.title && <MarqueeText text={song.title} className="text-[clamp(1.25rem,2.5vw,3rem)] font-bold text-white leading-tight drop-shadow-lg" />}
+                {song.artist && <div className="text-[clamp(0.875rem,1.5vw,1.75rem)] text-white/60 mt-2 font-medium">{song.artist}</div>}
+                {(song.duration ?? 0) > 0 && (
+                  <div className="mt-3 h-1 bg-white/15 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
+                      style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }} />
+                  </div>
+                )}
+              </>
+            ) : program ? (
+              <>
+                <MarqueeText text={program.title} className="text-[clamp(1.25rem,2.5vw,3rem)] font-bold text-white leading-tight drop-shadow-lg" />
+                {program.desc && <div className="text-[clamp(0.875rem,1.5vw,1.75rem)] text-white/60 mt-2 font-medium line-clamp-2">{program.desc}</div>}
+              </>
+            ) : null}
+          </div>
+
+          {(activeFav !== null || stripGroup !== null) && stripChannels.length > 0 && (
+            <div className="shrink-0 text-center pb-2">
+              <MarqueeText text={displayName} className="text-[clamp(1.5rem,3vw,4rem)] font-bold text-white drop-shadow-lg" />
             </div>
           )}
         </div>
