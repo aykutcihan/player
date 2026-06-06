@@ -319,18 +319,18 @@ export default function Radio() {
                       if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                       if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
                     }}
-                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 justify-center ${
+                    className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-20 h-20 justify-center overflow-hidden ${
                       btnIdx === 1
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
                         : 'border-white/15 bg-transparent'
                     }`}
                   >
                     {ch.logo && !logoErrors.has(ch.tvgId)
-                      ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
+                      ? <img src={ch.logo} alt={ch.name} className="w-10 h-10 object-contain rounded-lg"
                           onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                       : <span className="text-2xl">📻</span>
                     }
-                    <span className="text-[10px] text-white truncate w-full text-center leading-tight">{ch.name}</span>
+                    <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />
                   </button>
                 ))}
                 </div>
