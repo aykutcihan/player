@@ -127,7 +127,7 @@ export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
             : <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center text-4xl">📻</div>
           }
           {playing && (
-            <span className="absolute -top-1.5 -right-1.5 w-3 h-3 bg-red-500 rounded-full animate-pulse ring-2 ring-[#111]" />
+            <span className="absolute top-1 right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse ring-2 ring-[#111]" />
           )}
         </div>
 
