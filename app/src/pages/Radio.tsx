@@ -323,7 +323,7 @@ export default function Radio() {
                 }}
                 onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
                 onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-                className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-[25vw] h-[25vw] ${activeFav === i ? 'border-red-500 bg-red-800 scale-105' : 'border-white/15 bg-white/5'}`}
+                className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-[25vw] h-[25vw] ${activeFav === i ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-white/15 bg-white/5'}`}
               >
                 <span className="text-[14vw] leading-none" style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}>⭐</span>
               </button>
@@ -349,7 +349,7 @@ export default function Radio() {
                         onMouseDown={() => chDown(ch)} onMouseUp={chUp} onMouseLeave={chCancel}
                         onTouchStart={() => chDown(ch)} onTouchEnd={chUp} onTouchMove={chCancel}
                         onContextMenu={e => e.preventDefault()}
-                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-red-500 bg-red-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
+                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
                           ? <img src={ch.logo} alt={ch.name} className="w-[55%] h-[55%] object-contain rounded-lg pointer-events-none select-none" draggable={false} style={{ WebkitTouchCallout: 'none' }} onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
@@ -407,7 +407,7 @@ export default function Radio() {
                   }}
                   onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
                   onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-                  className={`w-full aspect-square flex flex-col items-center justify-center rounded-xl border transition-all select-none ${activeFav === i ? 'border-red-500 bg-red-800 scale-105' : 'border-white/15 bg-white/5'}`}
+                  className={`w-full aspect-square flex flex-col items-center justify-center rounded-xl border transition-all select-none ${activeFav === i ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-white/15 bg-white/5'}`}
                 >
                   <span className="text-4xl leading-none" style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}>⭐</span>
                 </button>
@@ -432,7 +432,7 @@ export default function Radio() {
                         onMouseDown={() => chDown(ch)} onMouseUp={chUp} onMouseLeave={chCancel}
                         onTouchStart={() => chDown(ch)} onTouchEnd={chUp} onTouchMove={chCancel}
                         onContextMenu={e => e.preventDefault()}
-                        className={`w-full aspect-square flex flex-col items-center justify-center gap-1 p-1 rounded-xl border transition-all select-none overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-red-500 bg-red-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
+                        className={`w-full aspect-square flex flex-col items-center justify-center gap-1 p-1 rounded-xl border transition-all select-none overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
                           ? <img src={ch.logo} alt={ch.name} className="w-[55%] aspect-square object-contain rounded-lg pointer-events-none" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
