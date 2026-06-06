@@ -160,3 +160,28 @@ export async function fetchKarnavalNowPlaying(tvgId: string): Promise<NowPlaying
   } catch { return null }
 }
 
+// Herkul Radyo — RadioKing API (CORS açık, direkt çek)
+const RADIOKING_API = 'https://api.radioking.io/widget/radio/herkulradyo/track/current'
+
+export async function fetchHerkulNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (!tvgId.startsWith('herkul.')) return null
+  try {
+    const r = await fetch(RADIOKING_API)
+    if (!r.ok) return null
+    const d = await r.json()
+    const start    = d.started_at ? new Date(d.started_at).getTime() : 0
+    const end      = d.end_at     ? new Date(d.end_at).getTime()     : 0
+    const now      = Date.now()
+    const duration = end > start ? (end - start) / 1000 : (d.duration ?? 0)
+    const progress = start ? Math.max(0, (now - start) / 1000) : 0
+    return {
+      title:    d.album  || d.title  || '',
+      artist:   d.artist || '',
+      cover:    d.default_cover ? '' : (d.cover || ''),
+      progress,
+      duration,
+    }
+  } catch { return null }
+}
+
+

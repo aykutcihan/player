@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
-import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fetchOzgurNowPlaying, fetchFenomenNowPlaying, fetchVivaNowPlaying, fetchRadyo7NowPlaying, fetchRadyohomeNowPlaying } from '../../lib/powerplaying'
+import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fetchOzgurNowPlaying, fetchFenomenNowPlaying, fetchVivaNowPlaying, fetchRadyo7NowPlaying, fetchRadyohomeNowPlaying, fetchHerkulNowPlaying } from '../../lib/powerplaying'
 
 export function MarqueeText({ text, className }: { text: string; className?: string }) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -89,7 +89,8 @@ export default function RadioPlayer({ channel, onPrev, onNext, mediaOnPrev, medi
     const isViva      = channel.tvgId.startsWith('viva.')
     const isRadyo7    = channel.tvgId.startsWith('radyo7.')
     const isRadyohome = channel.tvgId.startsWith('radyohome.')
-    if (!isPower && !isKarnaval && !isShow && !isOzgur && !isFenomen && !isViva && !isRadyo7 && !isRadyohome) return
+    const isHerkul    = channel.tvgId.startsWith('herkul.')
+    if (!isPower && !isKarnaval && !isShow && !isOzgur && !isFenomen && !isViva && !isRadyo7 && !isRadyohome && !isHerkul) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
       let info = null
@@ -101,6 +102,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, mediaOnPrev, medi
       else if (isViva)     info = await fetchVivaNowPlaying(channel.tvgId)
       else if (isRadyo7)   info = await fetchRadyo7NowPlaying(channel.tvgId)
       else if (isRadyohome)info = await fetchRadyohomeNowPlaying(channel.tvgId)
+      else if (isHerkul)   info = await fetchHerkulNowPlaying(channel.tvgId)
       if (info) setSong(info)
       timer = setTimeout(refresh, 30000)
     }
@@ -112,7 +114,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, mediaOnPrev, medi
   useEffect(() => {
     const isJson = channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('turkuvaz.')
     if (!isJson) {
-      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.') || channel.tvgId.startsWith('fenomen.') || channel.tvgId.startsWith('viva.') || channel.tvgId.startsWith('radyo7.') || channel.tvgId.startsWith('radyohome.')
+      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.') || channel.tvgId.startsWith('fenomen.') || channel.tvgId.startsWith('viva.') || channel.tvgId.startsWith('radyo7.') || channel.tvgId.startsWith('radyohome.') || channel.tvgId.startsWith('herkul.')
       if (!isWorker) setSong(null)
       return
     }
