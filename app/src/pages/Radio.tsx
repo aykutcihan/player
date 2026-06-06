@@ -167,7 +167,7 @@ export default function Radio() {
             className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
                 ? 'border-red-500 bg-red-800 text-white scale-105'
-                : 'border-white/15 bg-white/5 text-white'
+                : 'border-white/15 bg-transparent text-white'
             }`}
           >
             {g}
@@ -238,7 +238,7 @@ export default function Radio() {
                     className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
                       activeRadio?.tvgId === ch.tvgId
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
-                        : 'border-white/15 bg-white/5'
+                        : 'border-white/15 bg-transparent'
                     }`}
                   >
                     {ch.logo
