@@ -220,7 +220,7 @@ export default function Radio() {
             >
               <span
                 className="text-6xl leading-none"
-                style={{ filter: i === 0 ? 'none' : i === 1 ? 'hue-rotate(200deg) saturate(1.4)' : 'hue-rotate(120deg) saturate(1.3)' }}
+                style={{ filter: i === 0 ? 'none' : i === 1 ? 'hue-rotate(165deg) saturate(1.5)' : 'hue-rotate(220deg) saturate(1.5)' }}
               >⭐</span>
             </button>
           )
