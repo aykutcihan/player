@@ -7,10 +7,6 @@ import type { Channel } from '../lib/m3u'
 
 const LONG_PRESS_MS = 500
 
-function wrapFocus(ref: React.RefObject<HTMLDivElement | null>, idx: number, total: number, dir: 1 | -1) {
-  const next = (idx + dir + total) % total
-  ;(ref.current?.children[next] as HTMLElement)?.focus()
-}
 
 export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
