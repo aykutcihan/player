@@ -154,8 +154,9 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
       audioRef.current?.pause()
       setPlaying(false)
     })
-    navigator.mediaSession.setActionHandler('previoustrack', onPrev ?? null)
-    navigator.mediaSession.setActionHandler('nexttrack',     onNext ?? null)
+    // Safari bazı sürümlerinde previoustrack/nexttrack desteklemeyip hata fırlatır
+    try { navigator.mediaSession.setActionHandler('previoustrack', onPrev ?? null) } catch {}
+    try { navigator.mediaSession.setActionHandler('nexttrack',     onNext ?? null) } catch {}
   }, [onPrev, onNext])
 
   const toggle = () => {
