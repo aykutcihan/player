@@ -119,7 +119,7 @@ export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
       <div className="absolute inset-0 bg-gradient-to-b from-[#111]/40 via-transparent to-[#111]/90" />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-8 pb-4 flex-1 min-h-0">
+      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-14 pb-4 flex-1 min-h-0">
         {/* Cover art */}
         <div className="relative shrink-0">
           {cover
