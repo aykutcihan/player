@@ -4,6 +4,37 @@ import { fetchAllNowPlaying, type NowPlaying } from '../../lib/nowplaying'
 import { fetchEpg, currentProgramme, type Programme } from '../../lib/epg'
 import { fetchPowerNowPlaying, fetchKarnavalNowPlaying, fetchShowNowPlaying, fetchOzgurNowPlaying, fetchFenomenNowPlaying, fetchVivaNowPlaying, fetchRadyo7NowPlaying, fetchRadyohomeNowPlaying } from '../../lib/powerplaying'
 
+function MarqueeText({ text, className }: { text: string; className?: string }) {
+  const containerRef = useRef<HTMLDivElement>(null)
+  const textRef      = useRef<HTMLSpanElement>(null)
+  const [shift, setShift] = useState(0)
+
+  useEffect(() => {
+    const el     = textRef.current
+    const parent = containerRef.current
+    if (!el || !parent) return
+    const overflow = el.scrollWidth - parent.clientWidth
+    setShift(overflow > 0 ? overflow : 0)
+  }, [text])
+
+  const dur = shift > 0 ? Math.max(4, shift / 30) : 0  // ~30px/s
+
+  return (
+    <div ref={containerRef} className="overflow-hidden w-full">
+      {shift > 0 && (
+        <style>{`@keyframes mq{0%,15%{transform:translateX(0)}70%,85%{transform:translateX(-${shift}px)}100%{transform:translateX(0)}}`}</style>
+      )}
+      <span
+        ref={textRef}
+        className={`inline-block whitespace-nowrap ${className ?? ''}`}
+        style={shift > 0 ? { animation: `mq ${dur}s ease-in-out infinite` } : {}}
+      >
+        {text}
+      </span>
+    </div>
+  )
+}
+
 interface Props {
   channel: Channel
   onPrev?: () => void
@@ -115,13 +146,13 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
       <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-8 pb-4 flex-1 min-h-0">
         {/* Song info */}
         {song && (song.title || song.artist) && (
-          <div className="w-full text-center bg-black/30 backdrop-blur-md rounded-2xl px-5 py-3.5 border border-white/8">
-            {song.title && <div className="text-sm font-semibold text-white truncate">{song.title}</div>}
-            {song.artist && <div className="text-xs text-white/50 mt-0.5 truncate">{song.artist}</div>}
+          <div className="w-full text-center px-4">
+            {song.title && <MarqueeText text={song.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
+            {song.artist && <div className="text-base text-white/60 mt-2 font-medium">{song.artist}</div>}
             {(song.duration ?? 0) > 0 && (
-              <div className="mt-2.5 h-0.5 bg-white/10 rounded-full overflow-hidden">
+              <div className="mt-4 h-1 bg-white/15 rounded-full overflow-hidden">
                 <div
-                  className="h-full bg-red-400 rounded-full transition-all duration-1000"
+                  className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
                   style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }}
                 />
               </div>

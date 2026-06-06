@@ -14,6 +14,7 @@ export default function Radio() {
   const { groups: favGroups, addToGroup, removeFromGroup, resolveChannels } = useFavorites()
 
   const [coverUrl,      setCoverUrl]      = useState('')
+  const [logoErrors,    setLogoErrors]    = useState<Set<string>>(new Set())
   const [stripGroup,    setStripGroup]    = useState<string | null>(null)
   const [activeFav,     setActiveFav]     = useState<number | null>(null)
   const [groupOffset,   setGroupOffset]   = useState(0)
@@ -183,7 +184,7 @@ export default function Radio() {
           <button
             key={btnIdx}
             ref={grpRefs[btnIdx]}
-            onClick={() => { setStripGroup(g === stripGroup ? null : g); setActiveFav(null) }}
+            onClick={() => { setStripGroup(g); setActiveFav(null) }}
             onKeyDown={e => {
               if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
               if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
@@ -270,9 +271,9 @@ export default function Radio() {
                         : 'border-white/15 bg-transparent'
                     }`}
                   >
-                    {ch.logo
+                    {ch.logo && !logoErrors.has(ch.tvgId)
                       ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
-                          onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                          onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                       : <span className="text-2xl">📻</span>
                     }
                     <span className="text-[10px] text-white truncate w-full text-center leading-tight">{ch.name}</span>
