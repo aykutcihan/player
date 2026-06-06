@@ -123,7 +123,7 @@ export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
         {/* Cover art */}
         <div className="relative shrink-0">
           {cover
-            ? <img src={cover} alt="" className="w-20 h-20 rounded-2xl object-cover shadow-2xl" />
+            ? <img src={cover} alt="" className="max-h-24 max-w-[220px] w-auto h-auto object-contain rounded-xl shadow-2xl" />
             : <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center text-4xl">📻</div>
           }
           {playing && (
