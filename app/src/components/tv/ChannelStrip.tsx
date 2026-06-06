@@ -74,7 +74,7 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
                     }}
                   />
                 ) : null}
-                <svg hidden={!!ch.logo} viewBox="0 0 24 24" className="w-8 h-8 text-white/20" fill="currentColor">
+                <svg style={{ display: ch.logo ? 'none' : undefined }} viewBox="0 0 24 24" className="w-8 h-8 text-white/20" fill="currentColor">
                   <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
                 </svg>
                 <span className="text-[8px] text-white/50 truncate w-14 text-center">{ch.name}</span>
