@@ -54,9 +54,11 @@ export default function Radio() {
     groupNames.length === 0 ? [] : [0, 1, 2].map(i => groupNames[(groupOffset + i) % groupNames.length]),
   [groupNames, groupOffset])
 
-  // Sayfa açılınca ilk grup butonu focus
+  // Sayfa açılınca Pop grubu varsayılan seç, ilk grup butonu focus
   useEffect(() => {
-    if (groupNames.length > 0) grpRef0.current?.focus()
+    if (groupNames.length === 0) return
+    setStripGroup(groupNames.includes('Pop') ? 'Pop' : groupNames[0])
+    grpRef0.current?.focus()
   }, [groupNames.length])
 
   // Şerit kanalları — fav veya seçili grup
@@ -123,8 +125,26 @@ export default function Radio() {
   return (
     <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111]">
 
-      {/* Grup carousel — 3 buton, favori butonları gibi, sonsuz döngü */}
-      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-b border-white/10 shrink-0">
+      {/* Ana alan — player */}
+      <div className="flex-1 min-h-0 relative">
+        {activeRadio
+          ? <RadioPlayer
+              channel={activeRadio}
+              onPrev={currentStripIdx > 0 ? () => setRadio(stripChannels[currentStripIdx - 1]) : undefined}
+              onNext={currentStripIdx < stripChannels.length - 1 ? () => setRadio(stripChannels[currentStripIdx + 1]) : undefined}
+            />
+          : (
+            <div className="flex flex-col items-center justify-center h-full gap-3">
+              <div className="text-5xl opacity-20">📻</div>
+              <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
+              <div className="text-white/15 text-xs">Aşağıdan bir grup seç</div>
+            </div>
+          )
+        }
+      </div>
+
+      {/* Grup carousel — favorilerin üstünde, aynı boyut */}
+      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-t border-white/10 shrink-0">
         {visibleGroups.map((g, btnIdx) => (
           <button
             key={btnIdx}
@@ -149,69 +169,6 @@ export default function Radio() {
             {g}
           </button>
         ))}
-      </div>
-
-      {/* Kanal şeridi — seçili grup veya fav */}
-      {(activeFav !== null || stripGroup !== null) && (
-        <div className="shrink-0 bg-[#161616] border-b border-white/10">
-          {stripChannels.length === 0
-            ? <div className="text-center py-3 text-white/20 text-xs">
-                Kanallara basılı tutarak bu favoriye ekle
-              </div>
-            : <div
-                ref={scrollRef}
-                className="flex gap-2 px-3 py-2 overflow-x-auto"
-                style={{ scrollbarWidth: 'none' }}
-              >
-                {stripChannels.map((ch, i) => (
-                  <button
-                    key={i}
-                    onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
-                    onKeyDown={e => {
-                      if (e.key === 'ArrowRight') { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, 1) }
-                      if (e.key === 'ArrowLeft')  { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, -1) }
-                    }}
-                    onMouseDown={() => startPress(ch, activeFav !== null)}
-                    onMouseUp={() => endPress(ch)}
-                    onMouseLeave={cancelPress}
-                    onTouchStart={() => startPress(ch, activeFav !== null)}
-                    onTouchEnd={() => endPress(ch)}
-                    onTouchMove={cancelPress}
-                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
-                      activeRadio?.tvgId === ch.tvgId
-                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
-                        : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
-                    }`}
-                  >
-                    {ch.logo
-                      ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
-                          onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
-                      : <span className="text-2xl">📻</span>
-                    }
-                    <span className="text-[10px] text-white/60 truncate w-full text-center leading-tight">{ch.name}</span>
-                  </button>
-                ))}
-              </div>
-          }
-        </div>
-      )}
-
-      {/* Ana alan — player */}
-      <div className="flex-1 min-h-0 relative">
-        {activeRadio
-          ? <RadioPlayer
-              channel={activeRadio}
-              onPrev={currentStripIdx > 0 ? () => setRadio(stripChannels[currentStripIdx - 1]) : undefined}
-              onNext={currentStripIdx < stripChannels.length - 1 ? () => setRadio(stripChannels[currentStripIdx + 1]) : undefined}
-            />
-          : (
-            <div className="flex flex-col items-center justify-center h-full gap-3">
-              <div className="text-5xl opacity-20">📻</div>
-              <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
-              <div className="text-white/15 text-xs">Üstten bir grup seç</div>
-            </div>
-          )
-        }
       </div>
 
       {/* Alt favori butonları */}
@@ -256,6 +213,45 @@ export default function Radio() {
           )
         })}
       </div>
+
+      {/* Kanal şeridi — en altta, varsayılan Pop */}
+      {(activeFav !== null || stripGroup !== null) && (
+        <div className="shrink-0 bg-[#161616] border-t border-white/10">
+          {stripChannels.length === 0
+            ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
+            : <div ref={scrollRef} className="flex gap-2 px-3 py-2 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
+                {stripChannels.map((ch, i) => (
+                  <button
+                    key={i}
+                    onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
+                    onKeyDown={e => {
+                      if (e.key === 'ArrowRight') { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, 1) }
+                      if (e.key === 'ArrowLeft')  { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, -1) }
+                    }}
+                    onMouseDown={() => startPress(ch, activeFav !== null)}
+                    onMouseUp={() => endPress(ch)}
+                    onMouseLeave={cancelPress}
+                    onTouchStart={() => startPress(ch, activeFav !== null)}
+                    onTouchEnd={() => endPress(ch)}
+                    onTouchMove={cancelPress}
+                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
+                      activeRadio?.tvgId === ch.tvgId
+                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
+                        : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
+                    }`}
+                  >
+                    {ch.logo
+                      ? <img src={ch.logo} alt={ch.name} className="w-11 h-11 object-contain rounded-lg"
+                          onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
+                      : <span className="text-2xl">📻</span>
+                    }
+                    <span className="text-[10px] text-white/60 truncate w-full text-center leading-tight">{ch.name}</span>
+                  </button>
+                ))}
+              </div>
+          }
+        </div>
+      )}
 
       {/* Favori seçici modal */}
       {picker && (
