@@ -143,10 +143,10 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
     <div className="relative flex flex-col h-full w-full">
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-12 pb-4 flex-1 min-h-0">
+      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-4 pb-2 flex-1 min-h-0">
         {/* Song info */}
         {song && (song.title || song.artist) && (
-          <div className="w-full text-center px-4 mt-6">
+          <div className="w-full text-center px-4 mt-2">
             {song.title && <MarqueeText text={song.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
             {song.artist && <div className="text-base text-white/60 mt-2 font-medium">{song.artist}</div>}
             {(song.duration ?? 0) > 0 && (
@@ -162,16 +162,15 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
 
         {/* TRT program */}
         {program && (
-          <div className="w-full text-center bg-black/30 backdrop-blur-md rounded-2xl px-5 py-3.5 border border-white/8">
-            <div className="text-[9px] text-white/30 uppercase tracking-widest mb-1">Şu an yayında</div>
-            <div className="text-sm font-semibold text-white truncate">{program.title}</div>
-            {program.desc && <div className="text-xs text-white/35 mt-1 line-clamp-2">{program.desc}</div>}
+          <div className="w-full text-center px-4 mt-2">
+            <MarqueeText text={program.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />
+            {program.desc && <div className="text-base text-white/60 mt-2 font-medium line-clamp-2">{program.desc}</div>}
           </div>
         )}
       </div>
 
       {/* Controls */}
-      <div className="relative z-10 flex flex-col items-center gap-2 py-5 shrink-0">
+      <div className="relative z-10 flex flex-col items-center gap-2 py-3 shrink-0">
         {error && <div className="text-red-400 text-xs">Stream yüklenemedi</div>}
         <div className="flex items-center gap-5">
           <button
