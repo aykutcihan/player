@@ -83,6 +83,7 @@ export default function Radio() {
   const favLongs = [fav0Long, fav1Long, fav2Long]
   const chLongTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const chLongRef      = useRef(false)
+  const swipeX         = useRef<number | null>(null)
 
   useEffect(() => { pickerRef.current = picker }, [picker])
   useEffect(() => {
@@ -138,6 +139,25 @@ export default function Radio() {
   const currentStripIdx = useMemo(() =>
     activeRadio ? stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId) : -1,
   [activeRadio, stripChannels])
+
+  // Araba/kulaklık tuşları için — her zaman tüm kanallar arasında geçiş
+  const currentAllIdx = useMemo(() =>
+    activeRadio ? radioChannels.findIndex(c => c.tvgId === activeRadio.tvgId) : -1,
+  [activeRadio, radioChannels])
+
+  const mediaOnPrev = useCallback(() => {
+    if (stripChannels.length > 1 && currentStripIdx >= 0)
+      setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length])
+    else if (radioChannels.length > 0)
+      setRadio(radioChannels[((currentAllIdx >= 0 ? currentAllIdx : 0) - 1 + radioChannels.length) % radioChannels.length])
+  }, [stripChannels, currentStripIdx, radioChannels, currentAllIdx, setRadio])
+
+  const mediaOnNext = useCallback(() => {
+    if (stripChannels.length > 1 && currentStripIdx >= 0)
+      setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length])
+    else if (radioChannels.length > 0)
+      setRadio(radioChannels[((currentAllIdx >= 0 ? currentAllIdx : 0) + 1) % radioChannels.length])
+  }, [stripChannels, currentStripIdx, radioChannels, currentAllIdx, setRadio])
 
   // Preview: gezinince ortadaki isim, 3s sonra çalana dön
   useEffect(() => {
@@ -288,7 +308,16 @@ export default function Radio() {
           ) : null}
         </div>
 
-        <div ref={mobGroupArea} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
+        <div ref={mobGroupArea}
+          onTouchStart={e => { swipeX.current = e.touches[0].clientX }}
+          onTouchEnd={e => {
+            const diff = swipeX.current !== null ? swipeX.current - e.changedTouches[0].clientX : 0
+            if (Math.abs(diff) > 50) {
+              if (diff > 0) setGroupOffset(prev => (prev + 1) % groupNames.length)
+              else setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length)
+            }
+          }}
+          className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
           {visibleGroups.map((g, btnIdx) => (
             <button key={btnIdx} ref={isMobile ? grpRefs[btnIdx] : undefined}
               onClick={() => { setStripGroup(g); setActiveFav(null) }}
@@ -305,7 +334,17 @@ export default function Radio() {
           ))}
         </div>
 
-        <div ref={isMobile ? favRef : undefined} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
+        <div ref={isMobile ? favRef : undefined}
+          onTouchStart={e => { swipeX.current = e.touches[0].clientX }}
+          onTouchEnd={e => {
+            const diff = swipeX.current !== null ? swipeX.current - e.changedTouches[0].clientX : 0
+            if (Math.abs(diff) > 50) {
+              const n = favGroups.length
+              if (diff > 0) setActiveFav(prev => ((prev ?? 0) + 1) % n)
+              else setActiveFav(prev => ((prev ?? 0) - 1 + n) % n)
+            }
+          }}
+          className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
           {favGroups.map((_g, i) => {
             const favTimerRef = favTimerRefs[i]
             const favLong = favLongs[i]
@@ -336,7 +375,16 @@ export default function Radio() {
             {stripChannels.length === 0
               ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
               : <div className="flex flex-col items-center gap-3 py-1">
-                  <div className="flex items-center justify-center gap-2">
+                  <div className="flex items-center justify-center gap-2"
+                    onTouchStart={e => { swipeX.current = e.touches[0].clientX }}
+                    onTouchEnd={e => {
+                      const diff = swipeX.current !== null ? swipeX.current - e.changedTouches[0].clientX : 0
+                      if (Math.abs(diff) > 50) {
+                        if (diff > 0) setChannelOffset(prev => (prev + 1) % stripChannels.length)
+                        else setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length)
+                      }
+                    }}
+                  >
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
                       <button key={btnIdx} ref={isMobile ? chRefs[btnIdx] : undefined}
                         onClick={() => { if (!chLongRef.current) { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() } }}
@@ -455,6 +503,8 @@ export default function Radio() {
                   channel={activeRadio}
                   onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
                   onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
+                  mediaOnPrev={mediaOnPrev}
+                  mediaOnNext={mediaOnNext}
                   playBtnRef={playBtnRef}
                   onSongChange={handleSongChange}
                   onProgramChange={setProgram}

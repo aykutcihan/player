@@ -39,13 +39,15 @@ interface Props {
   channel: Channel
   onPrev?: () => void
   onNext?: () => void
+  mediaOnPrev?: () => void  // araba/kulaklık tuşları için — her zaman çalışır
+  mediaOnNext?: () => void
   playBtnRef?: React.RefObject<HTMLButtonElement | null>
   onPlayKeyDown?: (e: React.KeyboardEvent) => void
   onSongChange?: (song: NowPlaying | null) => void
   onProgramChange?: (program: Programme | null) => void
 }
 
-export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPlayKeyDown, onSongChange, onProgramChange }: Props) {
+export default function RadioPlayer({ channel, onPrev, onNext, mediaOnPrev, mediaOnNext, playBtnRef, onPlayKeyDown, onSongChange, onProgramChange }: Props) {
   const audioRef   = useRef<HTMLAudioElement>(null)
   const prevBtnRef = useRef<HTMLButtonElement>(null)
   const nextBtnRef = useRef<HTMLButtonElement>(null)
@@ -163,10 +165,10 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
       audioRef.current?.pause()
       setPlaying(false)
     })
-    // Safari bazı sürümlerinde previoustrack/nexttrack desteklemeyip hata fırlatır
-    try { navigator.mediaSession.setActionHandler('previoustrack', onPrev ?? null) } catch {}
-    try { navigator.mediaSession.setActionHandler('nexttrack',     onNext ?? null) } catch {}
-  }, [onPrev, onNext])
+    // mediaOnPrev/Next her zaman çalışır (araba/kulaklık), yoksa ekran butonu fallback
+    try { navigator.mediaSession.setActionHandler('previoustrack', mediaOnPrev ?? onPrev ?? null) } catch {}
+    try { navigator.mediaSession.setActionHandler('nexttrack',     mediaOnNext ?? onNext ?? null) } catch {}
+  }, [onPrev, onNext, mediaOnPrev, mediaOnNext])
 
   const toggle = () => {
     const audio = audioRef.current
@@ -191,7 +193,9 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             }}
             className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white transition-all active:scale-95"
           >
-            ◀
+            <svg viewBox="0 0 24 24" className="w-[45%] h-[45%]" fill="currentColor">
+              <path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/>
+            </svg>
           </button>
           <button
             ref={playBtnRef}
@@ -203,7 +207,10 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             }}
             className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 active:scale-95 flex items-center justify-center text-white transition-all"
           >
-            {playing ? '⏸' : '▶'}
+            {playing
+              ? <svg viewBox="0 0 24 24" className="w-[45%] h-[45%]" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+              : <svg viewBox="0 0 24 24" className="w-[45%] h-[45%]" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            }
           </button>
           <button
             ref={nextBtnRef}
@@ -215,7 +222,9 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
             }}
             className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white transition-all active:scale-95"
           >
-            ▶
+            <svg viewBox="0 0 24 24" className="w-[45%] h-[45%]" fill="currentColor">
+              <path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/>
+            </svg>
           </button>
         </div>
       </div>
