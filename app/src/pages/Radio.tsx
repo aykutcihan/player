@@ -310,11 +310,11 @@ export default function Radio() {
             const favTimerRef = favTimerRefs[i]
             const favLong = favLongs[i]
             const favDown = () => { favLong.current = false; favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS) }
-            const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } }
+            const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(i); setStripGroup(null) } }
             const favCancel = () => clearTimeout(favTimerRef.current)
             return (
               <button key={i} ref={i === 1 ? (isMobile ? favMidRef : undefined) : undefined}
-                onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
+                onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(i); setStripGroup(null) } favLong.current = false }}
                 onKeyDown={e => {
                   if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                   if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
@@ -394,11 +394,11 @@ export default function Radio() {
               const favTimerRef = favTimerRefs[i]
               const favLong = favLongs[i]
               const favDown = () => { favLong.current = false; favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS) }
-              const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } }
+              const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(i); setStripGroup(null) } }
               const favCancel = () => clearTimeout(favTimerRef.current)
               return (
                 <button key={i} ref={i === 1 ? (!isMobile ? favMidRef : undefined) : undefined}
-                  onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
+                  onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(i); setStripGroup(null) } favLong.current = false }}
                   onKeyDown={e => {
                     if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('fav', 'down') }
                     if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('fav', 'up') }
