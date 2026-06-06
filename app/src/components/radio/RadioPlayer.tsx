@@ -143,10 +143,10 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
     <div className="relative flex flex-col h-full w-full">
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-8 pb-4 flex-1 min-h-0">
+      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-12 pb-4 flex-1 min-h-0">
         {/* Song info */}
         {song && (song.title || song.artist) && (
-          <div className="w-full text-center px-4">
+          <div className="w-full text-center px-4 mt-6">
             {song.title && <MarqueeText text={song.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
             {song.artist && <div className="text-base text-white/60 mt-2 font-medium">{song.artist}</div>}
             {(song.duration ?? 0) > 0 && (
@@ -193,7 +193,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
               if (e.key === 'ArrowRight') { e.preventDefault(); nextBtnRef.current?.focus() }
               else onPlayKeyDown?.(e)
             }}
-            className="w-16 h-16 rounded-full bg-white hover:bg-white/90 active:scale-95 flex items-center justify-center text-2xl text-black transition-all shadow-2xl"
+            className="w-16 h-16 rounded-full bg-white/15 hover:bg-white/25 active:scale-95 flex items-center justify-center text-2xl text-white transition-all"
           >
             {playing ? '⏸' : '▶'}
           </button>

@@ -8,6 +8,27 @@ import type { Channel } from '../lib/m3u'
 
 const LONG_PRESS_MS = 500
 
+function GroupIcon({ group }: { group: string }) {
+  const p = { viewBox: "0 0 24 24", className: "w-5 h-5", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round" as const, strokeLinejoin: "round" as const }
+  switch (group) {
+    case 'Pop':     return <svg {...p}><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+    case 'Rock':    return <svg {...p}><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+    case 'Slow':    return <svg {...p}><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+    case 'Chill':   return <svg {...p}><path d="M6 20V11Q6 3 17 4"/><line x1="17" y1="4" x2="17" y2="20"/><line x1="6" y1="20" x2="17" y2="20"/><line x1="9" y1="8" x2="9" y2="20"/><line x1="12" y1="6" x2="12" y2="20"/><line x1="15" y1="4.5" x2="15" y2="20"/></svg>
+    case 'Dans':    return <svg {...p}><rect x="3" y="3" width="4" height="18" rx="1"/><rect x="10" y="8" width="4" height="13" rx="1"/><rect x="17" y="5" width="4" height="16" rx="1"/></svg>
+    case 'Rap':     return <svg {...p}><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+    case 'Haber':   return <svg {...p}><circle cx="12" cy="12" r="2"/><path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/></svg>
+    case 'Nostalji':return <svg {...p}><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+    case 'THM':     return <svg {...p}><ellipse cx="8" cy="17" rx="4" ry="3"/><line x1="11" y1="15" x2="19" y2="4"/><line x1="13" y1="12" x2="11" y2="10"/><line x1="15" y1="9" x2="13" y2="7"/><circle cx="20" cy="3" r="1.5"/></svg>
+    case 'TSM':     return <svg {...p}><path d="M9 17H5a2 2 0 0 0-2 2"/><path d="M14 7.5c-1-2-4-1.5-5 0s0 4.5 2 5"/><path d="M5 17c0 1.7 1.3 3 3 3s3-1.3 3-3-1.3-3-3-3-3 1.3-3 3zm12 0c0 1.7 1.3 3 3 3"/><path d="M17 17c0-1.7-1.3-3-3-3s-3 1.3-3 3 1.3 3 3 3 3-1.3 3-3z"/><path d="M14 7.5V17"/><path d="M9 12.5V17"/></svg>
+    case 'Etnik':   return <svg {...p}><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    case 'Fantazi': return <svg {...p}><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    case 'Dini':    return <svg {...p}><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+    case 'Yabancı': return <svg {...p}><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+    case 'Özgün':   return <svg {...p}><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/></svg>
+    default:        return <svg {...p}><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+  }
+}
 
 export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
@@ -139,7 +160,7 @@ export default function Radio() {
 
 
   return (
-    <div className="relative flex flex-col h-[calc(100vh-48px)] pt-3 gap-1">
+    <div className="relative flex flex-col h-screen gap-1 overflow-hidden pb-2">
 
       {/* Tüm ekran blur arka plan */}
       <div
@@ -154,6 +175,7 @@ export default function Radio() {
         }}
       />
       <div className="absolute inset-0 bg-[#111]/75 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#111] to-transparent pointer-events-none z-10" />
 
       {/* Ana alan — player */}
       <div className="flex-1 min-h-0 relative">
@@ -191,12 +213,13 @@ export default function Radio() {
               if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
               if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
             }}
-            className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
+            className={`flex-none flex flex-col items-center justify-center gap-1 w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
                 ? 'border-red-500 bg-red-800 text-white scale-105'
                 : 'border-white/15 bg-transparent text-white'
             }`}
           >
+            <GroupIcon group={g} />
             {g}
           </button>
         ))}
@@ -280,7 +303,7 @@ export default function Radio() {
                   </button>
                 ))}
                 </div>
-                <div className="text-2xl font-bold text-white text-center transition-all duration-300 truncate" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
+                <div className="text-2xl font-bold text-white text-center transition-all duration-300 truncate mb-3" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
                   {displayName}
                 </div>
               </div>
