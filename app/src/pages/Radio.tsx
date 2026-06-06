@@ -150,10 +150,10 @@ export default function Radio() {
               if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length) }
               if (e.key === 'ArrowDown')  { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
             }}
-            className={`flex-1 py-3 rounded-2xl text-sm font-semibold transition-all select-none text-center ${
+            className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
-                ? 'bg-red-600 text-white shadow-lg shadow-red-900/30'
-                : 'bg-white/8 text-white/60 hover:bg-white/12 hover:text-white'
+                ? 'border-red-500 bg-red-900/40 text-white scale-105'
+                : 'border-white/10 bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
             }`}
           >
             {g}
