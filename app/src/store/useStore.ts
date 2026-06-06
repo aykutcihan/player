@@ -30,7 +30,7 @@ interface Store {
 export const useStore = create<Store>((set, get) => ({
   channels:      [],
   activeChannel: null,
-  channelGroup:  'Ulusal',
+  channelGroup:  'Tümü',
   films:         [],
   radioChannels:    [],
   activeRadio:      null,

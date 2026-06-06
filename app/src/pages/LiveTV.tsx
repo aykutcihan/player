@@ -34,8 +34,8 @@ export default function LiveTV() {
   const loadTimer      = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const bannerTimer    = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
-  const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
-  const groupChannels = channels.filter(c => c.group === channelGroup)
+  const groups        = ['Tümü', ...[...new Set(channels.map(c => c.group))].filter(Boolean)]
+  const groupChannels = channelGroup === 'Tümü' ? channels : channels.filter(c => c.group === channelGroup)
 
   // Aktif kanal değişince odak indexini güncelle — zaten doğru URL'deyse dokunma
   useEffect(() => {
