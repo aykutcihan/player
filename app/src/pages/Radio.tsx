@@ -187,7 +187,7 @@ export default function Radio() {
               onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
               onKeyDown={e => {
                 if (e.key === 'ArrowUp')   { e.preventDefault(); grpRef0.current?.focus() }
-                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); (scrollRef.current?.querySelector('button') as HTMLElement)?.focus() }
+                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); const idx = Math.max(0, currentStripIdx); (scrollRef.current?.children[idx] as HTMLElement)?.focus() }
               }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
