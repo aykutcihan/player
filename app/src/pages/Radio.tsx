@@ -311,7 +311,7 @@ export default function Radio() {
                       </button>
                     ))}
                   </div>
-                  <div className="text-lg font-bold text-white text-center truncate mb-3 w-[calc(3*4rem+2*0.5rem)] sm:w-[calc(3*5rem+2*0.5rem)]">{displayName}</div>
+                  <div className="text-lg font-bold text-white text-center truncate mb-8 w-[calc(3*4rem+2*0.5rem)] sm:w-[calc(3*5rem+2*0.5rem)]">{displayName}</div>
                 </div>
             }
           </div>
