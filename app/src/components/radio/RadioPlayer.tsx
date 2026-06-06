@@ -132,7 +132,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
   useEffect(() => {
     // document.title → Safari kilit ekranı fallback
     const trackTitle = song?.title
-      ? `${song.title}${song.artist ? ` — ${song.artist}` : ''} · ${channel.name}`
+      ? `${channel.name} · ${song.title}${song.artist ? ` — ${song.artist}` : ''}`
       : channel.name
     document.title = trackTitle
     return () => { document.title = 'Stepup' }
