@@ -81,6 +81,8 @@ export default function Radio() {
   const fav1Long = useRef(false)
   const fav2Long = useRef(false)
   const favLongs = [fav0Long, fav1Long, fav2Long]
+  const chLongTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const chLongRef      = useRef(false)
 
   useEffect(() => { pickerRef.current = picker }, [picker])
   useEffect(() => {
@@ -179,6 +181,18 @@ export default function Radio() {
     if (activeFav === null && stripGroup === null) return
     chRef1.current?.focus()
   }, [stripGroup, activeFav])
+
+  // Kanal butonları uzun basış — favori ekle / çıkar
+  const chDown = useCallback((ch: Channel) => {
+    chLongRef.current = false
+    chLongTimerRef.current = setTimeout(() => {
+      chLongRef.current = true
+      if (activeFav !== null) setRemoveConfirm(ch)
+      else setPicker(ch)
+    }, LONG_PRESS_MS)
+  }, [activeFav])
+  const chUp     = useCallback(() => clearTimeout(chLongTimerRef.current), [])
+  const chCancel = useCallback(() => clearTimeout(chLongTimerRef.current), [])
 
   // Merkezi section navigasyonu — per-button onKeyDown tarafından çağrılır
   const navigate = useCallback((from: 'player' | 'group' | 'fav' | 'channel', dir: 'up' | 'down') => {
@@ -325,17 +339,20 @@ export default function Radio() {
                   <div className="flex items-center justify-center gap-2">
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
                       <button key={btnIdx} ref={isMobile ? chRefs[btnIdx] : undefined}
-                        onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
+                        onClick={() => { if (!chLongRef.current) { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() } }}
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('channel', 'down') }
                           if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('channel', 'up') }
                         }}
+                        onMouseDown={() => chDown(ch)} onMouseUp={chUp} onMouseLeave={chCancel}
+                        onTouchStart={() => chDown(ch)} onTouchEnd={chUp} onTouchMove={chCancel}
+                        onContextMenu={e => e.preventDefault()}
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
-                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] h-[55%] object-contain rounded-lg" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] h-[55%] object-contain rounded-lg pointer-events-none" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                           : <span className="text-2xl">📻</span>
                         }
                         <MarqueeText text={ch.name} className="text-[2.8vw] text-white text-center leading-tight" />
@@ -405,17 +422,20 @@ export default function Radio() {
                 : <div ref={dskChArea} className="grid grid-cols-3 gap-2 w-full">
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
                       <button key={btnIdx} ref={!isMobile ? chRefs[btnIdx] : undefined}
-                        onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
+                        onClick={() => { if (!chLongRef.current) { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() } }}
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowDown')  { e.preventDefault(); navigate('channel', 'down') }
                           if (e.key === 'ArrowUp')    { e.preventDefault(); navigate('channel', 'up') }
                         }}
+                        onMouseDown={() => chDown(ch)} onMouseUp={chUp} onMouseLeave={chCancel}
+                        onTouchStart={() => chDown(ch)} onTouchEnd={chUp} onTouchMove={chCancel}
+                        onContextMenu={e => e.preventDefault()}
                         className={`w-full aspect-square flex flex-col items-center justify-center gap-1 p-1 rounded-xl border transition-all select-none overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
-                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] aspect-square object-contain rounded-lg" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] aspect-square object-contain rounded-lg pointer-events-none" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                           : <span className="text-2xl">📻</span>
                         }
                         <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />
