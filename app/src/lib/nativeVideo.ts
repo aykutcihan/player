@@ -15,12 +15,6 @@ export const NativeVideo = registerPlugin<NativeVideoPlugin>('NativeVideo', {
 })
 
 export function isNativeVideoAvailable(): boolean {
-  const cap = (window as any).Capacitor
-  if (!cap) return false
-  const native = typeof cap.isNativePlatform === 'function'
-    ? cap.isNativePlatform()
-    : cap.isNativePlatform
-  if (!native) return false
-  // Plugin gerçekten register edilmiş mi kontrol et
-  return !!(cap.Plugins?.NativeVideo)
+  // NativeVideo native plugin stabil olmadığından web player kullanıyoruz
+  return false
 }
