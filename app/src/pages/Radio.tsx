@@ -212,7 +212,10 @@ export default function Radio() {
                 playBtnRef={playBtnRef}
                 onSongChange={setSong}
                 onProgramChange={setProgram}
-                onPlayKeyDown={e => { if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() } }}
+                onPlayKeyDown={e => {
+                  if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
+                  if (e.key === 'ArrowUp')   { e.preventDefault(); (activeFav !== null || stripGroup !== null) ? chRef1.current?.focus() : favMidRef.current?.focus() }
+                }}
               />
             : !activeRadio
               ? <div className="flex flex-col items-center justify-center h-full gap-3">
@@ -246,7 +249,7 @@ export default function Radio() {
 
         <div className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
           {visibleGroups.map((g, btnIdx) => (
-            <button key={btnIdx} ref={grpRefs[btnIdx]}
+            <button key={btnIdx} ref={isMobile ? grpRefs[btnIdx] : undefined}
               onClick={() => { setStripGroup(g); setActiveFav(null) }}
               onKeyDown={e => {
                 if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
@@ -261,7 +264,7 @@ export default function Radio() {
           ))}
         </div>
 
-        <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
+        <div ref={isMobile ? favRef : undefined} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
           {favGroups.map((_g, i) => {
             const favTimerRef = favTimerRefs[i]
             const favLong = favLongs[i]
@@ -269,11 +272,11 @@ export default function Radio() {
             const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } }
             const favCancel = () => clearTimeout(favTimerRef.current)
             return (
-              <button key={i} ref={i === 1 ? favMidRef : undefined}
+              <button key={i} ref={i === 1 ? (isMobile ? favMidRef : undefined) : undefined}
                 onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
                 onKeyDown={e => {
-                  if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
-                  if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); chRef1.current?.focus() }
+                  if (e.key === 'ArrowUp')   { e.preventDefault(); grpRef1.current?.focus() }
+                  if (e.key === 'ArrowDown') { e.preventDefault(); (activeFav !== null || stripGroup !== null) ? chRef1.current?.focus() : playBtnRef.current?.focus() }
                   if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                   if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
                 }}
@@ -294,12 +297,13 @@ export default function Radio() {
               : <div className="flex flex-col items-center gap-3 py-1">
                   <div className="flex items-center justify-center gap-2">
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
-                      <button key={btnIdx} ref={chRefs[btnIdx]}
+                      <button key={btnIdx} ref={isMobile ? chRefs[btnIdx] : undefined}
                         onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                          if (e.key === 'ArrowDown')  { e.preventDefault(); playBtnRef.current?.focus() }
                         }}
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
@@ -326,7 +330,7 @@ export default function Radio() {
 
           <div className="grid grid-cols-3 gap-2 w-full">
             {visibleGroups.map((g, btnIdx) => (
-              <button key={btnIdx} ref={grpRefs[btnIdx]}
+              <button key={btnIdx} ref={!isMobile ? grpRefs[btnIdx] : undefined}
                 onClick={() => { setStripGroup(g); setActiveFav(null) }}
                 onKeyDown={e => {
                   if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
@@ -341,7 +345,7 @@ export default function Radio() {
             ))}
           </div>
 
-          <div ref={favRef} className="grid grid-cols-3 gap-2 w-full">
+          <div ref={!isMobile ? favRef : undefined} className="grid grid-cols-3 gap-2 w-full">
             {favGroups.map((_g, i) => {
               const favTimerRef = favTimerRefs[i]
               const favLong = favLongs[i]
@@ -349,7 +353,7 @@ export default function Radio() {
               const favUp = () => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } }
               const favCancel = () => clearTimeout(favTimerRef.current)
               return (
-                <button key={i} ref={i === 1 ? favMidRef : undefined}
+                <button key={i} ref={i === 1 ? (!isMobile ? favMidRef : undefined) : undefined}
                   onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
                   onKeyDown={e => {
                     if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
@@ -373,7 +377,7 @@ export default function Radio() {
                 ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
                 : <div className="grid grid-cols-3 gap-2 w-full">
                     {visibleChannels.map(({ ch, idx }, btnIdx) => (
-                      <button key={btnIdx} ref={chRefs[btnIdx]}
+                      <button key={btnIdx} ref={!isMobile ? chRefs[btnIdx] : undefined}
                         onClick={() => { setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length); setRadio(ch); chRef1.current?.focus() }}
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
