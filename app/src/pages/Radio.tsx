@@ -168,7 +168,7 @@ export default function Radio() {
       </div>
 
       {/* Alt favori butonları */}
-      <div ref={favRef} className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-t border-white/10 shrink-0">
+      <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-2 bg-[#1a1a1a] border-t border-white/10 shrink-0">
         {favGroups.map((g, i) => {
           const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
           const favLong = useRef(false)
@@ -191,24 +191,16 @@ export default function Radio() {
               }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-              className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold transition-all select-none ${
+              className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
                 activeFav === i
-                  ? 'bg-yellow-500 text-black shadow-lg shadow-yellow-900/30'
-                  : 'bg-white/8 text-yellow-400/70 hover:bg-white/12 hover:text-yellow-300'
+                  ? 'border-yellow-500 bg-yellow-900/30 scale-105'
+                  : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
               }`}
             >
-              <span className="text-base">⭐</span>
-              {editingFav === i
-                ? <input autoFocus value={editName} onChange={e => setEditName(e.target.value)}
-                    onBlur={commitRename} onKeyDown={e => e.key === 'Enter' && commitRename()}
-                    className="bg-transparent outline-none w-16" onClick={e => e.stopPropagation()} onMouseDown={e => e.stopPropagation()} />
-                : <span>{g.name}</span>
-              }
-              {g.channels.length > 0 && (
-                <span className={`text-xs px-1.5 py-0.5 rounded-full ${activeFav === i ? 'bg-black/20 text-black/60' : 'bg-white/10 text-white/35'}`}>
-                  {g.channels.length}
-                </span>
-              )}
+              <div className="relative w-11 h-11 flex items-center justify-center">
+                <span className="text-4xl leading-none">⭐</span>
+                <span className="absolute text-sm font-black text-yellow-900">{i + 1}</span>
+              </div>
             </button>
           )
         })}
