@@ -1,10 +1,12 @@
 import { useMemo, useState, useRef, useCallback, useEffect } from 'react'
 
 import { useStore } from '../store/useStore'
-import RadioPlayer from '../components/radio/RadioPlayer'
+import RadioPlayer, { MarqueeText } from '../components/radio/RadioPlayer'
 import FavPickerModal from '../components/radio/FavPickerModal'
 import { useFavorites } from '../lib/useFavorites'
 import type { Channel } from '../lib/m3u'
+import type { NowPlaying } from '../lib/nowplaying'
+import type { Programme } from '../lib/epg'
 
 const LONG_PRESS_MS = 500
 
@@ -35,6 +37,8 @@ export default function Radio() {
   const { groups: favGroups, addToGroup, removeFromGroup, resolveChannels } = useFavorites()
 
   const [coverUrl,      setCoverUrl]      = useState('')
+  const [song,          setSong]          = useState<NowPlaying | null>(null)
+  const [program,       setProgram]       = useState<Programme | null>(null)
   const [logoErrors,    setLogoErrors]    = useState<Set<string>>(new Set())
   const [stripGroup,    setStripGroup]    = useState<string | null>(null)
   const [activeFav,     setActiveFav]     = useState<number | null>(null)
@@ -132,6 +136,11 @@ export default function Radio() {
     setChannelOffset((startIdx - 1 + stripChannels.length) % stripChannels.length)
   }, [stripGroup, activeFav])
 
+  // Cover URL — şarkı kapağı yoksa kanal logosu
+  useEffect(() => {
+    setCoverUrl(song?.cover || activeRadio?.logo || '')
+  }, [song, activeRadio])
+
   // Çalan radyo değişince şeridi ortala
   useEffect(() => {
     if (!activeRadio || stripChannels.length === 0) return
@@ -185,7 +194,8 @@ export default function Radio() {
               onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
               onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
               playBtnRef={playBtnRef}
-              onCoverChange={setCoverUrl}
+              onSongChange={setSong}
+              onProgramChange={setProgram}
               onPlayKeyDown={e => {
                 if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
               }}
@@ -198,6 +208,27 @@ export default function Radio() {
             </div>
           )
         }
+      </div>
+
+      {/* Şarkı / Program bilgisi */}
+      <div className="relative z-10 shrink-0 text-center px-6 py-2 min-h-[60px] flex flex-col justify-center">
+        {song && (song.title || song.artist) ? (
+          <>
+            {song.title && <MarqueeText text={song.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
+            {song.artist && <div className="text-base text-white/60 mt-1 font-medium">{song.artist}</div>}
+            {(song.duration ?? 0) > 0 && (
+              <div className="mt-2 h-1 bg-white/15 rounded-full overflow-hidden">
+                <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
+                  style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }} />
+              </div>
+            )}
+          </>
+        ) : program ? (
+          <>
+            <MarqueeText text={program.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />
+            {program.desc && <div className="text-base text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
+          </>
+        ) : null}
       </div>
 
       {/* Grup carousel — favorilerin üstünde, aynı boyut */}
@@ -272,7 +303,7 @@ export default function Radio() {
         <div className="relative z-10 shrink-0">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-            : <div className="flex flex-col items-center gap-1 py-1">
+            : <div className="flex flex-col items-center gap-3 py-1">
                 <div className="flex items-center justify-center gap-2">
                 {visibleChannels.map(({ ch, idx }, btnIdx) => (
                   <button
