@@ -168,7 +168,7 @@ export default function Radio() {
           const favLong = useRef(false)
           const favDown = () => {
             favLong.current = false
-            favTimerRef.current = setTimeout(() => { favLong.current = true; setEditingFav(i); setEditName(g.name) }, LONG_PRESS_MS)
+            favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS)
           }
           const favUp = () => {
             clearTimeout(favTimerRef.current)
