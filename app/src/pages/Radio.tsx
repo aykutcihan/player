@@ -221,7 +221,8 @@ export default function Radio() {
         <div className="relative z-10 shrink-0">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-            : <div className="flex items-center justify-center gap-2 px-3 py-2">
+            : <div className="flex flex-col items-center gap-1 py-2">
+                <div className="flex items-center justify-center gap-2">
                 {visibleChannels.map(({ ch, idx }, btnIdx) => (
                   <button
                     key={btnIdx}
@@ -250,6 +251,10 @@ export default function Radio() {
                     <span className="text-[10px] text-white truncate w-full text-center leading-tight">{ch.name}</span>
                   </button>
                 ))}
+                </div>
+                <div className="text-sm font-semibold text-white text-center" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
+                  {visibleChannels[1]?.ch.name ?? ''}
+                </div>
               </div>
           }
         </div>
