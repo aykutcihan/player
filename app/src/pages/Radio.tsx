@@ -169,7 +169,7 @@ export default function Radio() {
 
 
   return (
-    <div className="relative flex flex-col h-screen gap-1 overflow-hidden pb-2">
+    <div className="relative flex flex-col h-screen overflow-hidden">
 
       {/* Tüm ekran blur arka plan */}
       <div
@@ -184,163 +184,175 @@ export default function Radio() {
         }}
       />
       <div className="absolute inset-0 bg-[#111]/75 pointer-events-none" />
-      <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#111] to-transparent pointer-events-none z-10" />
 
-      {/* Ana alan — player */}
-      <div className="flex-1 min-h-0 relative">
-        {activeRadio
-          ? <RadioPlayer
-              channel={activeRadio}
-              onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
-              onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
-              playBtnRef={playBtnRef}
-              onSongChange={setSong}
-              onProgramChange={setProgram}
-              onPlayKeyDown={e => {
-                if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
-              }}
-            />
-          : (
-            <div className="flex flex-col items-center justify-center h-full gap-3">
-              <div className="text-5xl opacity-20">📻</div>
-              <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
-              <div className="text-white/15 text-xs">Aşağıdan bir grup seç</div>
+      {/* Ana içerik — telefonda dikey, md+'da yatay iki kolon */}
+      <div className="relative z-10 flex flex-col md:flex-row flex-1 min-h-0 md:divide-x md:divide-white/10">
+
+        {/* SOL KOLON: Player + Şarkı bilgisi */}
+        <div className="flex-1 min-h-0 flex flex-col md:px-6">
+          <div className="flex-1 min-h-0 relative">
+            {activeRadio
+              ? <RadioPlayer
+                  channel={activeRadio}
+                  onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
+                  onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
+                  playBtnRef={playBtnRef}
+                  onSongChange={setSong}
+                  onProgramChange={setProgram}
+                  onPlayKeyDown={e => {
+                    if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
+                  }}
+                />
+              : (
+                <div className="flex flex-col items-center justify-center h-full gap-3">
+                  <div className="text-5xl opacity-20">📻</div>
+                  <div className="text-white/25 text-sm font-medium">Radyo seçilmedi</div>
+                  <div className="text-white/15 text-xs">Aşağıdan bir grup seç</div>
+                </div>
+              )
+            }
+          </div>
+
+          {/* Şarkı / Program bilgisi */}
+          <div className="shrink-0 text-center px-6 py-2 min-h-[60px] flex flex-col justify-center">
+            {song && (song.title || song.artist) ? (
+              <>
+                {song.title && <MarqueeText text={song.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
+                {song.artist && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium">{song.artist}</div>}
+                {(song.duration ?? 0) > 0 && (
+                  <div className="mt-2 h-1 bg-white/15 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
+                      style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }} />
+                  </div>
+                )}
+              </>
+            ) : program ? (
+              <>
+                <MarqueeText text={program.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />
+                {program.desc && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
+              </>
+            ) : null}
+          </div>
+
+          {/* Radyo adı — sol kolonda şarkının altı */}
+          {(activeFav !== null || stripGroup !== null) && stripChannels.length > 0 && (
+            <div className="shrink-0 text-center px-6 pb-2">
+              <MarqueeText text={displayName} className="text-2xl sm:text-3xl font-bold text-white drop-shadow-lg" />
             </div>
-          )
-        }
-      </div>
-
-      {/* Şarkı / Program bilgisi */}
-      <div className="relative z-10 shrink-0 text-center px-6 py-2 min-h-[60px] flex flex-col justify-center">
-        {song && (song.title || song.artist) ? (
-          <>
-            {song.title && <MarqueeText text={song.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
-            {song.artist && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium">{song.artist}</div>}
-            {(song.duration ?? 0) > 0 && (
-              <div className="mt-2 h-1 bg-white/15 rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
-                  style={{ width: `${Math.min(100, ((song.progress ?? 0) / (song.duration ?? 1)) * 100)}%` }} />
-              </div>
-            )}
-          </>
-        ) : program ? (
-          <>
-            <MarqueeText text={program.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />
-            {program.desc && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
-          </>
-        ) : null}
-      </div>
-
-      {/* Grup carousel — favorilerin üstünde, aynı boyut */}
-      <div className="relative z-10 flex items-center justify-center gap-2 px-3 py-1 shrink-0">
-        {visibleGroups.map((g, btnIdx) => (
-          <button
-            key={btnIdx}
-            ref={grpRefs[btnIdx]}
-            onClick={() => { setStripGroup(g); setActiveFav(null) }}
-            onKeyDown={e => {
-              if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
-              if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
-              if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
-              if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
-            }}
-            className={`flex-none flex flex-col items-center justify-center gap-1 w-16 h-16 sm:w-20 sm:h-20 rounded-xl text-xs sm:text-sm font-semibold transition-all select-none text-center border ${
-              stripGroup === g
-                ? 'border-red-500 bg-red-800 text-white scale-105'
-                : 'border-white/15 bg-transparent text-white'
-            }`}
-          >
-            <GroupIcon group={g} />
-            {g}
-          </button>
-        ))}
-      </div>
-
-      {/* Alt favori butonları */}
-      <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
-        {favGroups.map((_g, i) => {
-          const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-          const favLong = useRef(false)
-          const favDown = () => {
-            favLong.current = false
-            favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS)
-          }
-          const favUp = () => {
-            clearTimeout(favTimerRef.current)
-            if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) }
-          }
-          const favCancel = () => clearTimeout(favTimerRef.current)
-          return (
-            <button
-              key={i}
-              ref={i === 1 ? favMidRef : undefined}
-              onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
-              onKeyDown={e => {
-                if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
-                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); chRef1.current?.focus() }
-                if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
-                if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
-              }}
-              onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
-              onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-              className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 ${
-                activeFav === i
-                  ? 'border-yellow-500 bg-yellow-800 scale-105'
-                  : 'border-white/15 bg-white/5'
-              }`}
-            >
-              <span
-                className="text-4xl sm:text-6xl leading-none"
-                style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}
-              >⭐</span>
-            </button>
-          )
-        })}
-      </div>
-
-      {/* Kanal şeridi — grup carousel kopyası, 3 kanal, orta sabit */}
-      {(activeFav !== null || stripGroup !== null) && (
-        <div className="relative z-10 shrink-0">
-          {stripChannels.length === 0
-            ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-            : <div className="flex flex-col items-center gap-3 py-1">
-                <div className="flex items-center justify-center gap-2">
-                {visibleChannels.map(({ ch, idx }, btnIdx) => (
-                  <button
-                    key={btnIdx}
-                    ref={chRefs[btnIdx]}
-                    onClick={() => {
-                      setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length)
-                      setRadio(ch)
-                      chRef1.current?.focus()
-                    }}
-                    onKeyDown={e => {
-                      if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
-                      if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
-                      if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
-                    }}
-                    className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 justify-center overflow-hidden ${
-                      btnIdx === 1
-                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
-                        : 'border-white/15 bg-transparent'
-                    }`}
-                  >
-                    {ch.logo && !logoErrors.has(ch.tvgId)
-                      ? <img src={ch.logo} alt={ch.name} className="w-10 h-10 object-contain rounded-lg"
-                          onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
-                      : <span className="text-2xl">📻</span>
-                    }
-                    <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />
-                  </button>
-                ))}
-                </div>
-                <div className="text-lg sm:text-2xl font-bold text-white text-center transition-all duration-300 truncate mb-3 w-[calc(3*4rem+2*0.5rem)] sm:w-[calc(3*5rem+2*0.5rem)]">
-                  {displayName}
-                </div>
-              </div>
-          }
+          )}
         </div>
-      )}
+
+        {/* SAĞ KOLON: Grup + Fav + Kanal */}
+        <div className="shrink-0 flex flex-col justify-center items-center gap-1 py-1 md:py-4 md:w-64 md:px-4">
+
+          {/* Grup carousel */}
+          <div className="flex items-center justify-center gap-2 px-1 py-1">
+            {visibleGroups.map((g, btnIdx) => (
+              <button
+                key={btnIdx}
+                ref={grpRefs[btnIdx]}
+                onClick={() => { setStripGroup(g); setActiveFav(null) }}
+                onKeyDown={e => {
+                  if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
+                  if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
+                  if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
+                  if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
+                }}
+                className={`flex-none flex flex-col items-center justify-center gap-1 w-16 h-16 sm:w-20 sm:h-20 rounded-xl text-xs sm:text-sm font-semibold transition-all select-none text-center border ${
+                  stripGroup === g
+                    ? 'border-red-500 bg-red-800 text-white scale-105'
+                    : 'border-white/15 bg-transparent text-white'
+                }`}
+              >
+                <GroupIcon group={g} />
+                {g}
+              </button>
+            ))}
+          </div>
+
+          {/* Fav butonları */}
+          <div ref={favRef} className="flex items-center justify-center gap-2 px-1 py-1">
+            {favGroups.map((_g, i) => {
+              const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+              const favLong = useRef(false)
+              const favDown = () => {
+                favLong.current = false
+                favTimerRef.current = setTimeout(() => { favLong.current = true }, LONG_PRESS_MS)
+              }
+              const favUp = () => {
+                clearTimeout(favTimerRef.current)
+                if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) }
+              }
+              const favCancel = () => clearTimeout(favTimerRef.current)
+              return (
+                <button
+                  key={i}
+                  ref={i === 1 ? favMidRef : undefined}
+                  onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
+                  onKeyDown={e => {
+                    if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
+                    if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); chRef1.current?.focus() }
+                    if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
+                    if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
+                  }}
+                  onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
+                  onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
+                  className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 ${
+                    activeFav === i
+                      ? 'border-yellow-500 bg-yellow-800 scale-105'
+                      : 'border-white/15 bg-white/5'
+                  }`}
+                >
+                  <span
+                    className="text-4xl sm:text-6xl leading-none"
+                    style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}
+                  >⭐</span>
+                </button>
+              )
+            })}
+          </div>
+
+          {/* Kanal şeridi */}
+          {(activeFav !== null || stripGroup !== null) && (
+            <div className="shrink-0">
+              {stripChannels.length === 0
+                ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
+                : <div className="flex items-center justify-center gap-2 py-1">
+                    {visibleChannels.map(({ ch, idx }, btnIdx) => (
+                      <button
+                        key={btnIdx}
+                        ref={chRefs[btnIdx]}
+                        onClick={() => {
+                          setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length)
+                          setRadio(ch)
+                          chRef1.current?.focus()
+                        }}
+                        onKeyDown={e => {
+                          if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
+                          if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
+                          if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                        }}
+                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 justify-center overflow-hidden ${
+                          btnIdx === 1
+                            ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
+                            : 'border-white/15 bg-transparent'
+                        }`}
+                      >
+                        {ch.logo && !logoErrors.has(ch.tvgId)
+                          ? <img src={ch.logo} alt={ch.name} className="w-10 h-10 object-contain rounded-lg"
+                              onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          : <span className="text-2xl">📻</span>
+                        }
+                        <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />
+                      </button>
+                    ))}
+                  </div>
+              }
+            </div>
+          )}
+        </div>
+      </div>
+
 
       {/* Favori seçici modal */}
       {picker && (
