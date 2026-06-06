@@ -38,7 +38,7 @@ const Player = forwardRef<VideoPlayerHandle, Props>(({ channel, showControls }, 
 
   return (
     <div className="flex flex-col h-full bg-black">
-      <VideoPlayer ref={ref} url={channel.url} showControls={showControls} />
+      <VideoPlayer ref={ref} url={channel.url} urls={channel.urls} showControls={showControls} />
     </div>
   )
 })

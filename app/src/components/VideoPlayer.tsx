@@ -7,9 +7,10 @@ export interface VideoPlayerHandle {
 }
 
 interface Props {
-  url:         string
-  title?:      string
-  showControls?: boolean  // dışarıdan kontrol görünürlüğü
+  url:          string
+  urls?:        string[]  // fallback URL listesi
+  title?:       string
+  showControls?: boolean
 }
 
 function fmt(sec: number) {
@@ -21,9 +22,26 @@ function fmt(sec: number) {
   return `${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`
 }
 
-const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
-  const videoRef    = useRef<HTMLVideoElement>(null)
-  const hlsRef      = useRef<Hls | null>(null)
+async function fetchBandwidth(url: string, signal: AbortSignal): Promise<number> {
+  if (!url.includes('.m3u8')) return 1_000_000
+  try {
+    const res = await fetch(url, { signal, mode: 'cors' })
+    if (!res.ok) return 0
+    const text = await res.text()
+    const bws = [...text.matchAll(/BANDWIDTH=(\d+)/g)].map(m => parseInt(m[1]))
+    return bws.length ? Math.max(...bws) : 1_000_000
+  } catch {
+    return signal.aborted ? -1 : 0
+  }
+}
+
+const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, urls }, ref) => {
+  const videoRef       = useRef<HTMLVideoElement>(null)
+  const hlsRef         = useRef<Hls | null>(null)
+  const urlListRef     = useRef<string[]>([])
+  const urlIdxRef      = useRef(0)
+  const upgradeCtrlRef = useRef<AbortController | null>(null)
+  const [activeUrl, setActiveUrl] = useState(url)
   const [playing,   setPlaying]   = useState(false)
   const [loading,   setLoading]   = useState(true)
   const [error,     setError]     = useState(false)
@@ -55,45 +73,88 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
     }
   }))
 
+  // Kanal değişince URL listesini sıfırla, upgrade'i iptal et
+  useEffect(() => {
+    upgradeCtrlRef.current?.abort()
+    urlListRef.current = urls && urls.length > 0 ? urls : [url]
+    urlIdxRef.current  = 0
+    setActiveUrl(urlListRef.current[0])
+  }, [url, urls])
+
   useEffect(() => {
     const video = videoRef.current
-    if (!video || !url) return
+    if (!video || !activeUrl) return
     hlsRef.current?.destroy()
 
     setLoading(true)
     setError(false)
-    const onPlay     = () => { setPlaying(true); setLoading(false) }
-    const onPause    = () => setPlaying(false)
-    const onWaiting  = () => setLoading(true)
-    const onPlaying  = () => setLoading(false)
-    const onError    = () => { setLoading(false); setError(true) }
+
+    const tryNextUrl = () => {
+      const list = urlListRef.current
+      const next = urlIdxRef.current + 1
+      if (next < list.length) {
+        urlIdxRef.current = next
+        setActiveUrl(list[next])
+      } else {
+        setLoading(false)
+        setError(true)
+      }
+    }
+
+    const onPlay    = () => { setPlaying(true); setLoading(false) }
+    const onPause   = () => setPlaying(false)
+    const onWaiting = () => setLoading(true)
+    const onPlaying = () => {
+      setLoading(false)
+      // Arka planda kalite kontrolü — 2sn sonra diğer URL'leri ölç
+      upgradeCtrlRef.current?.abort()
+      const ctrl = new AbortController()
+      upgradeCtrlRef.current = ctrl
+      setTimeout(async () => {
+        if (ctrl.signal.aborted) return
+        const allUrls = urlListRef.current
+        const others  = allUrls.filter(u => u !== activeUrl)
+        if (others.length === 0) return
+        const [currentBw, ...otherBws] = await Promise.all([
+          fetchBandwidth(activeUrl, ctrl.signal),
+          ...others.map(u => fetchBandwidth(u, ctrl.signal)),
+        ])
+        if (ctrl.signal.aborted) return
+        const best = others
+          .map((u, i) => ({ url: u, bw: otherBws[i] }))
+          .filter(x => x.bw > 0 && x.bw > (currentBw ?? 0))
+          .sort((a, b) => b.bw - a.bw)[0]
+        if (best) setActiveUrl(best.url)
+      }, 2000)
+    }
+    const onError   = () => tryNextUrl()
     const onTimeUpd  = () => {
       setCurrentT(video.currentTime)
       setDuration(video.duration)
       setIsLive(!isFinite(video.duration) || video.duration > 86400)
     }
-    const onVolChg   = () => { setVolume(video.volume); setMuted(video.muted) }
+    const onVolChg = () => { setVolume(video.volume); setMuted(video.muted) }
 
-    video.addEventListener('play',        onPlay)
-    video.addEventListener('pause',       onPause)
-    video.addEventListener('waiting',     onWaiting)
-    video.addEventListener('playing',     onPlaying)
-    video.addEventListener('timeupdate',  onTimeUpd)
-    video.addEventListener('volumechange',onVolChg)
-    video.addEventListener('error',       onError)
+    video.addEventListener('play',         onPlay)
+    video.addEventListener('pause',        onPause)
+    video.addEventListener('waiting',      onWaiting)
+    video.addEventListener('playing',      onPlaying)
+    video.addEventListener('timeupdate',   onTimeUpd)
+    video.addEventListener('volumechange', onVolChg)
+    video.addEventListener('error',        onError)
 
     const tryNative = () => {
       hlsRef.current?.destroy()
       hlsRef.current = null
-      video.src = url
-      video.play().catch(() => { setLoading(false); setError(true) })
+      video.src = activeUrl
+      video.play().catch(() => tryNextUrl())
     }
 
-    if (url.includes('.m3u8') && Hls.isSupported()) {
+    if (activeUrl.includes('.m3u8') && Hls.isSupported()) {
       const hls = new Hls({ enableWorker: true, backBufferLength: 3600 })
       hlsRef.current = hls
       let mediaRecovered = false
-      hls.loadSource(url)
+      hls.loadSource(activeUrl)
       hls.attachMedia(video)
       hls.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(() => {}))
       hls.on(Hls.Events.ERROR, (_, data) => {
@@ -101,17 +162,13 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
         if (data.type === Hls.ErrorTypes.MEDIA_ERROR && !mediaRecovered) {
           mediaRecovered = true
           hls.recoverMediaError()
-        } else if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
-          // Network hatasında native'e düş
-          tryNative()
         } else {
-          // Kurtarılamaz hata — native dene
           tryNative()
         }
       })
     } else {
-      video.src = url
-      video.play().catch(() => { setLoading(false); setError(true) })
+      video.src = activeUrl
+      video.play().catch(() => tryNextUrl())
     }
 
     return () => {
@@ -124,7 +181,7 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
       video.removeEventListener('error',       onError)
       hlsRef.current?.destroy()
     }
-  }, [url])
+  }, [activeUrl])
 
   const togglePlay = useCallback(() => {
     const v = videoRef.current
