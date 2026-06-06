@@ -166,8 +166,8 @@ export default function Radio() {
             }}
             className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
-                ? 'border-red-500 bg-red-900/40 text-white scale-105'
-                : 'border-white/10 bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
+                ? 'border-red-500 bg-red-800 text-white scale-105'
+                : 'border-white/20 bg-white/20 text-white/80 hover:bg-white/30 hover:text-white'
             }`}
           >
             {g}
@@ -201,8 +201,8 @@ export default function Radio() {
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
               className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 ${
                 activeFav === i
-                  ? 'border-yellow-500 bg-yellow-900/30 scale-105'
-                  : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
+                  ? 'border-yellow-500 bg-yellow-800/80 scale-105'
+                  : 'border-white/20 bg-white/20 hover:border-white/40 hover:bg-white/30'
               }`}
             >
               <div className="relative flex items-center justify-center">
@@ -237,8 +237,8 @@ export default function Radio() {
                     onTouchMove={cancelPress}
                     className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
                       activeRadio?.tvgId === ch.tvgId
-                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-900/30 scale-105' : 'border-red-500 bg-red-900/40 scale-105'
-                        : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
+                        ? activeFav !== null ? 'border-yellow-500 bg-yellow-800/80 scale-105' : 'border-red-500 bg-red-800 scale-105'
+                        : 'border-white/20 bg-white/20 hover:border-white/40 hover:bg-white/30'
                     }`}
                   >
                     {ch.logo
