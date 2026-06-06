@@ -218,10 +218,9 @@ export default function Radio() {
                   : 'border-white/15 bg-white/5'
               }`}
             >
-              <div className="relative flex items-center justify-center">
-                <span className="text-6xl leading-none">⭐</span>
-                <span className="absolute text-base font-black text-yellow-900">{i + 1}</span>
-              </div>
+              <span className={`text-6xl leading-none ${
+                i === 0 ? 'text-amber-400' : i === 1 ? 'text-sky-400' : 'text-emerald-400'
+              }`}>★</span>
             </button>
           )
         })}
