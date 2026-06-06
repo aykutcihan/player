@@ -352,7 +352,7 @@ export default function Radio() {
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
-                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] h-[55%] object-contain rounded-lg pointer-events-none" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          ? <img src={ch.logo} alt={ch.name} className="w-[55%] h-[55%] object-contain rounded-lg pointer-events-none select-none" draggable={false} style={{ WebkitTouchCallout: 'none' }} onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                           : <span className="text-2xl">📻</span>
                         }
                         <MarqueeText text={ch.name} className="text-[2.8vw] text-white text-center leading-tight" />
