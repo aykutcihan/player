@@ -153,7 +153,7 @@ export default function Radio() {
       </div>
 
       {/* Grup carousel — favorilerin üstünde, aynı boyut */}
-      <div className="relative z-10 flex items-center justify-center gap-3 px-4 py-3 shrink-0 bg-black/50 rounded-2xl mx-2">
+      <div className="relative z-10 flex items-center justify-center gap-3 px-4 py-3 shrink-0">
         {visibleGroups.map((g, btnIdx) => (
           <button
             key={btnIdx}
@@ -216,7 +216,7 @@ export default function Radio() {
 
       {/* Kanal şeridi — en altta, varsayılan Pop */}
       {(activeFav !== null || stripGroup !== null) && (
-        <div className="relative z-10 shrink-0 bg-black/60 rounded-2xl mx-2 mb-1">
+        <div className="relative z-10 shrink-0">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
             : <div ref={scrollRef} className="flex gap-2 px-3 py-2 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
