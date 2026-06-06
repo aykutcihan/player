@@ -29,6 +29,7 @@ export default function Radio() {
   const grpRefs       = [grpRef0, grpRef1, grpRef2]
   const scrollRef     = useRef<HTMLDivElement>(null)
   const favRef        = useRef<HTMLDivElement>(null)
+  const favMidRef     = useRef<HTMLButtonElement>(null)
   const playBtnRef    = useRef<HTMLButtonElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
   const timerRef   = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -171,7 +172,7 @@ export default function Radio() {
               if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
               if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
               if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
-              if (e.key === 'ArrowDown')  { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
+              if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
             }}
             className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
@@ -201,10 +202,13 @@ export default function Radio() {
           return (
             <button
               key={i}
+              ref={i === 1 ? favMidRef : undefined}
               onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
               onKeyDown={e => {
-                if (e.key === 'ArrowUp')   { e.preventDefault(); grpRef1.current?.focus() }
+                if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
                 if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); const idx = Math.max(0, currentStripIdx); (scrollRef.current?.children[idx] as HTMLElement)?.focus() }
+                if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
+                if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
               }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
@@ -236,7 +240,7 @@ export default function Radio() {
                     onKeyDown={e => {
                       if (e.key === 'ArrowRight') { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, 1) }
                       if (e.key === 'ArrowLeft')  { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, -1) }
-                      if (e.key === 'ArrowUp')    { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
+                      if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
                     }}
                     onMouseDown={() => startPress(ch, activeFav !== null)}
                     onMouseUp={() => endPress(ch)}
