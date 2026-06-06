@@ -254,7 +254,7 @@ export default function Radio() {
                 if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
                 if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
               }}
-              className={`flex-none flex flex-col items-center justify-center gap-1 w-16 h-16 sm:w-20 sm:h-20 rounded-xl text-xs sm:text-sm font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
+              className={`flex-none flex flex-col items-center justify-center gap-1 w-20 h-20 rounded-xl text-xs font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
             >
               <GroupIcon group={g} />{g}
             </button>
@@ -279,9 +279,9 @@ export default function Radio() {
                 }}
                 onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
                 onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-                className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 ${activeFav === i ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-white/15 bg-white/5'}`}
+                className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 ${activeFav === i ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-white/15 bg-white/5'}`}
               >
-                <span className="text-4xl sm:text-6xl leading-none" style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}>⭐</span>
+                <span className="text-5xl leading-none" style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}>⭐</span>
               </button>
             )
           })}
@@ -301,10 +301,10 @@ export default function Radio() {
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
                         }}
-                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
+                        className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-20 h-20 justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >
                         {ch.logo && !logoErrors.has(ch.tvgId)
-                          ? <img src={ch.logo} alt={ch.name} className="w-10 h-10 object-contain rounded-lg" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
+                          ? <img src={ch.logo} alt={ch.name} className="w-12 h-12 object-contain rounded-lg" onError={() => setLogoErrors(prev => new Set([...prev, ch.tvgId]))} />
                           : <span className="text-2xl">📻</span>
                         }
                         <MarqueeText text={ch.name} className="text-[10px] text-white text-center leading-tight" />

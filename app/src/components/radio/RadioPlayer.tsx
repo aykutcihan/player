@@ -140,7 +140,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
       {/* Controls */}
       <div className="relative z-10 flex flex-col items-center gap-2 py-3 shrink-0">
         {error && <div className="text-red-400 text-xs">Stream yüklenemedi</div>}
-        <div className="flex items-center justify-center gap-4 w-[85vw] max-w-xs mx-auto">
+        <div className="flex items-center justify-center gap-[5%] w-full px-[8%]">
           <button
             ref={prevBtnRef}
             onClick={onPrev}
