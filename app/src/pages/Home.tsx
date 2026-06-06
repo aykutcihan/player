@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const ITEMS = [
@@ -9,16 +9,22 @@ const ITEMS = [
 ]
 
 export default function Home() {
-  const navigate  = useNavigate()
+  const navigate   = useNavigate()
   const [focus, setFocus] = useState(0)
+  const btnRefs    = useRef<(HTMLButtonElement | null)[]>([])
+
+  // Sayfa açılınca ilk butona focus ver (TV remote için kritik)
+  useEffect(() => {
+    btnRefs.current[0]?.focus()
+  }, [])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.keyCode === 37 || e.keyCode === 38) { // sol / yukarı
-        setFocus(f => (f - 1 + ITEMS.length) % ITEMS.length)
+        setFocus(f => { const n = (f - 1 + ITEMS.length) % ITEMS.length; btnRefs.current[n]?.focus(); return n })
       } else if (e.keyCode === 39 || e.keyCode === 40) { // sağ / aşağı
-        setFocus(f => (f + 1) % ITEMS.length)
-      } else if (e.keyCode === 13) { // Enter / OK
+        setFocus(f => { const n = (f + 1) % ITEMS.length; btnRefs.current[n]?.focus(); return n })
+      } else if (e.keyCode === 13 || e.keyCode === 23) { // Enter / OK / DPAD_CENTER
         navigate(ITEMS[focus].path)
       }
     }
@@ -32,6 +38,7 @@ export default function Home() {
         {ITEMS.map((item, i) => (
           <button
             key={i}
+            ref={el => { btnRefs.current[i] = el }}
             onClick={() => navigate(item.path)}
             onFocus={() => setFocus(i)}
             className={`flex items-center justify-center w-[40vw] h-[40vw] sm:w-[18vw] sm:h-[18vw] rounded-3xl border-2 transition-all duration-200 outline-none ${
