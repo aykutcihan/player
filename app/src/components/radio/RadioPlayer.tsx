@@ -201,7 +201,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
               if (e.key === 'ArrowRight') { e.preventDefault(); nextBtnRef.current?.focus() }
               else onPlayKeyDown?.(e)
             }}
-            className={`flex-1 aspect-square rounded-full flex items-center justify-center text-white transition-all active:scale-95 ${playing ? '' : 'bg-white/15 hover:bg-white/25'}`}
+            className="flex-1 aspect-square rounded-full bg-white/15 hover:bg-white/25 active:scale-95 flex items-center justify-center text-white transition-all"
           >
             {playing ? '⏸' : '▶'}
           </button>
