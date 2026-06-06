@@ -238,9 +238,21 @@ export default function Radio() {
                     key={i}
                     onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
                     onKeyDown={e => {
-                      if (e.key === 'ArrowRight') { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, 1) }
-                      if (e.key === 'ArrowLeft')  { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, -1) }
-                      if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                      if (e.key === 'ArrowRight') {
+                        e.preventDefault()
+                        const next = (i + 1) % stripChannels.length
+                        const el = scrollRef.current?.children[next] as HTMLElement
+                        el?.focus()
+                        el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+                      }
+                      if (e.key === 'ArrowLeft') {
+                        e.preventDefault()
+                        const prev = (i - 1 + stripChannels.length) % stripChannels.length
+                        const el = scrollRef.current?.children[prev] as HTMLElement
+                        el?.focus()
+                        el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+                      }
+                      if (e.key === 'ArrowUp') { e.preventDefault(); favMidRef.current?.focus() }
                     }}
                     onMouseDown={() => startPress(ch, activeFav !== null)}
                     onMouseUp={() => endPress(ch)}
