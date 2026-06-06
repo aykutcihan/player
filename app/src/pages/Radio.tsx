@@ -163,7 +163,7 @@ export default function Radio() {
 
       {/* Alt favori butonları */}
       <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-2 bg-[#1a1a1a] border-t border-white/10 shrink-0">
-        {favGroups.map((g, i) => {
+        {favGroups.map((_g, i) => {
           const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
           const favLong = useRef(false)
           const favDown = () => {
