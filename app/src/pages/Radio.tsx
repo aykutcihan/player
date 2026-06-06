@@ -167,7 +167,7 @@ export default function Radio() {
             className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
                 ? 'border-red-500 bg-red-800 text-white scale-105'
-                : 'border-white/15 bg-[#111] text-white/70 hover:text-white'
+                : 'border-white/15 bg-white/5 text-white'
             }`}
           >
             {g}
@@ -202,7 +202,7 @@ export default function Radio() {
               className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 ${
                 activeFav === i
                   ? 'border-yellow-500 bg-yellow-800 scale-105'
-                  : 'border-white/15 bg-[#111]'
+                  : 'border-white/15 bg-white/5'
               }`}
             >
               <div className="relative flex items-center justify-center">
@@ -238,7 +238,7 @@ export default function Radio() {
                     className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
                       activeRadio?.tvgId === ch.tvgId
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
-                        : 'border-white/15 bg-[#111]'
+                        : 'border-white/15 bg-white/5'
                     }`}
                   >
                     {ch.logo
@@ -246,7 +246,7 @@ export default function Radio() {
                           onError={e => { (e.target as HTMLImageElement).style.display = 'none' }} />
                       : <span className="text-2xl">📻</span>
                     }
-                    <span className="text-[10px] text-white/60 truncate w-full text-center leading-tight">{ch.name}</span>
+                    <span className="text-[10px] text-white truncate w-full text-center leading-tight">{ch.name}</span>
                   </button>
                 ))}
               </div>
