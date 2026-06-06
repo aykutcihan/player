@@ -13,6 +13,7 @@ export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
   const { groups: favGroups, addToGroup, removeFromGroup, resolveChannels } = useFavorites()
 
+  const [coverUrl,      setCoverUrl]      = useState('')
   const [stripGroup,    setStripGroup]    = useState<string | null>(null)
   const [activeFav,     setActiveFav]     = useState<number | null>(null)
   const [groupOffset,   setGroupOffset]   = useState(0)
@@ -109,6 +110,13 @@ export default function Radio() {
     setChannelOffset((startIdx - 1 + stripChannels.length) % stripChannels.length)
   }, [stripGroup, activeFav])
 
+  // Çalan radyo değişince şeridi ortala
+  useEffect(() => {
+    if (!activeRadio || stripChannels.length === 0) return
+    const idx = stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId)
+    if (idx >= 0) setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length)
+  }, [activeRadio?.tvgId])
+
   // Kanal şeridi açılınca orta butona focus
   useEffect(() => {
     if (activeFav === null && stripGroup === null) return
@@ -136,12 +144,12 @@ export default function Radio() {
       <div
         className="absolute inset-0 transition-opacity duration-700 pointer-events-none"
         style={{
-          backgroundImage: activeRadio?.logo ? `url(${activeRadio.logo})` : 'none',
+          backgroundImage: coverUrl ? `url(${coverUrl})` : 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'blur(60px)',
-          transform: 'scale(1.3)',
-          opacity: activeRadio?.logo ? 0.35 : 0,
+          filter: 'blur(6px)',
+          transform: 'scale(1.05)',
+          opacity: coverUrl ? 0.9 : 0,
         }}
       />
       <div className="absolute inset-0 bg-[#111]/75 pointer-events-none" />
@@ -151,9 +159,10 @@ export default function Radio() {
         {activeRadio
           ? <RadioPlayer
               channel={activeRadio}
-              onPrev={currentStripIdx > 0 ? () => setRadio(stripChannels[currentStripIdx - 1]) : undefined}
-              onNext={currentStripIdx < stripChannels.length - 1 ? () => setRadio(stripChannels[currentStripIdx + 1]) : undefined}
+              onPrev={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx - 1 + stripChannels.length) % stripChannels.length]) : undefined}
+              onNext={stripChannels.length > 1 ? () => setRadio(stripChannels[(currentStripIdx + 1) % stripChannels.length]) : undefined}
               playBtnRef={playBtnRef}
+              onCoverChange={setCoverUrl}
               onPlayKeyDown={e => {
                 if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
               }}
@@ -169,7 +178,7 @@ export default function Radio() {
       </div>
 
       {/* Grup carousel — favorilerin üstünde, aynı boyut */}
-      <div className="relative z-10 flex items-center justify-center gap-3 px-4 py-3 shrink-0">
+      <div className="relative z-10 flex items-center justify-center gap-2 px-3 py-2 shrink-0">
         {visibleGroups.map((g, btnIdx) => (
           <button
             key={btnIdx}
@@ -270,7 +279,7 @@ export default function Radio() {
                   </button>
                 ))}
                 </div>
-                <div className="text-xl font-bold text-white text-center transition-all duration-300" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
+                <div className="text-2xl font-bold text-white text-center transition-all duration-300 truncate" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
                   {displayName}
                 </div>
               </div>

@@ -10,9 +10,10 @@ interface Props {
   onNext?: () => void
   playBtnRef?: React.RefObject<HTMLButtonElement | null>
   onPlayKeyDown?: (e: React.KeyboardEvent) => void
+  onCoverChange?: (url: string) => void
 }
 
-export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPlayKeyDown }: Props) {
+export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPlayKeyDown, onCoverChange }: Props) {
   const audioRef    = useRef<HTMLAudioElement>(null)
   const prevBtnRef  = useRef<HTMLButtonElement>(null)
   const nextBtnRef  = useRef<HTMLButtonElement>(null)
@@ -105,22 +106,13 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
 
   const cover = song?.cover || channel.logo || ''
 
+  useEffect(() => { onCoverChange?.(cover) }, [cover])
+
   return (
     <div className="relative flex flex-col h-full w-full">
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-24 pb-4 flex-1 min-h-0">
-        {/* Cover art */}
-        <div className="relative shrink-0">
-          {cover
-            ? <img src={cover} alt="" className="max-h-24 max-w-[220px] w-auto h-auto object-contain rounded-xl shadow-2xl" />
-            : <div className="w-20 h-20 rounded-2xl bg-white/10 flex items-center justify-center text-4xl">📻</div>
-          }
-          {playing && (
-            <span className="absolute top-1 right-1 w-3 h-3 bg-red-500 rounded-full animate-pulse ring-2 ring-[#111]" />
-          )}
-        </div>
-
+      <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-8 pb-4 flex-1 min-h-0">
         {/* Song info */}
         {song && (song.title || song.artist) && (
           <div className="w-full text-center bg-black/30 backdrop-blur-md rounded-2xl px-5 py-3.5 border border-white/8">
