@@ -214,8 +214,8 @@ export default function Radio() {
       <div className="relative z-10 shrink-0 text-center px-6 py-2 min-h-[60px] flex flex-col justify-center">
         {song && (song.title || song.artist) ? (
           <>
-            {song.title && <MarqueeText text={song.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
-            {song.artist && <div className="text-base text-white/60 mt-1 font-medium">{song.artist}</div>}
+            {song.title && <MarqueeText text={song.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />}
+            {song.artist && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium">{song.artist}</div>}
             {(song.duration ?? 0) > 0 && (
               <div className="mt-2 h-1 bg-white/15 rounded-full overflow-hidden">
                 <div className="h-full bg-gradient-to-r from-red-500 to-pink-400 rounded-full transition-all duration-1000"
@@ -225,8 +225,8 @@ export default function Radio() {
           </>
         ) : program ? (
           <>
-            <MarqueeText text={program.title} className="text-2xl font-bold text-white leading-tight drop-shadow-lg" />
-            {program.desc && <div className="text-base text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
+            <MarqueeText text={program.title} className="text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-lg" />
+            {program.desc && <div className="text-sm sm:text-base text-white/60 mt-1 font-medium line-clamp-2">{program.desc}</div>}
           </>
         ) : null}
       </div>
@@ -244,7 +244,7 @@ export default function Radio() {
               if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
               if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
             }}
-            className={`flex-none flex flex-col items-center justify-center gap-1 w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
+            className={`flex-none flex flex-col items-center justify-center gap-1 w-16 h-16 sm:w-20 sm:h-20 rounded-xl text-xs sm:text-sm font-semibold transition-all select-none text-center border ${
               stripGroup === g
                 ? 'border-red-500 bg-red-800 text-white scale-105'
                 : 'border-white/15 bg-transparent text-white'
@@ -283,14 +283,14 @@ export default function Radio() {
               }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
-              className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 ${
+              className={`flex-none flex flex-col items-center justify-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 ${
                 activeFav === i
                   ? 'border-yellow-500 bg-yellow-800 scale-105'
                   : 'border-white/15 bg-white/5'
               }`}
             >
               <span
-                className="text-6xl leading-none"
+                className="text-4xl sm:text-6xl leading-none"
                 style={{ filter: i === 0 ? 'saturate(1.5) brightness(1.3)' : i === 1 ? 'hue-rotate(155deg) saturate(1.5)' : 'hue-rotate(60deg) saturate(1.8) brightness(0.9)' }}
               >⭐</span>
             </button>
@@ -319,7 +319,7 @@ export default function Radio() {
                       if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
                       if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
                     }}
-                    className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-20 h-20 justify-center overflow-hidden ${
+                    className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-16 h-16 sm:w-20 sm:h-20 justify-center overflow-hidden ${
                       btnIdx === 1
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
                         : 'border-white/15 bg-transparent'
@@ -334,7 +334,7 @@ export default function Radio() {
                   </button>
                 ))}
                 </div>
-                <div className="text-2xl font-bold text-white text-center transition-all duration-300 truncate mb-3" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
+                <div className="text-lg sm:text-2xl font-bold text-white text-center transition-all duration-300 truncate mb-3 w-[calc(3*4rem+2*0.5rem)] sm:w-[calc(3*5rem+2*0.5rem)]">
                   {displayName}
                 </div>
               </div>
