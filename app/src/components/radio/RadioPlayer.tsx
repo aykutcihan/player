@@ -104,20 +104,6 @@ export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
   return (
     <div className="relative flex flex-col h-full w-full">
 
-      {/* Blurred cover background — tüm ekranı kaplar */}
-      <div
-        className="fixed inset-0 -z-10 transition-opacity duration-700"
-        style={{
-          backgroundImage: cover ? `url(${cover})` : 'none',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          filter: 'blur(60px)',
-          transform: 'scale(1.3)',
-          opacity: cover ? 0.35 : 0,
-        }}
-      />
-      <div className="fixed inset-0 -z-10 bg-[#111]/75" />
-
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-24 pb-4 flex-1 min-h-0">
         {/* Cover art */}

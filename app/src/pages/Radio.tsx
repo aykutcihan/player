@@ -118,7 +118,21 @@ export default function Radio() {
 
 
   return (
-    <div className="flex flex-col h-[calc(100vh-48px)] pt-3 gap-1">
+    <div className="relative flex flex-col h-[calc(100vh-48px)] pt-3 gap-1">
+
+      {/* Tüm ekran blur arka plan */}
+      <div
+        className="absolute inset-0 transition-opacity duration-700 pointer-events-none"
+        style={{
+          backgroundImage: activeRadio?.logo ? `url(${activeRadio.logo})` : 'none',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(60px)',
+          transform: 'scale(1.3)',
+          opacity: activeRadio?.logo ? 0.35 : 0,
+        }}
+      />
+      <div className="absolute inset-0 bg-[#111]/75 pointer-events-none" />
 
       {/* Ana alan — player */}
       <div className="flex-1 min-h-0 relative">
