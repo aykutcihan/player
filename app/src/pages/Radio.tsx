@@ -25,11 +25,12 @@ export default function Radio() {
   const [editingFav,    setEditingFav]    = useState<number | null>(null)
   const [editName,      setEditName]      = useState('')
 
-  const grpRef0    = useRef<HTMLButtonElement>(null)
-  const grpRef1    = useRef<HTMLButtonElement>(null)
-  const grpRef2    = useRef<HTMLButtonElement>(null)
-  const grpRefs    = [grpRef0, grpRef1, grpRef2]
-  const scrollRef  = useRef<HTMLDivElement>(null)
+  const grpRef0       = useRef<HTMLButtonElement>(null)
+  const grpRef1       = useRef<HTMLButtonElement>(null)
+  const grpRef2       = useRef<HTMLButtonElement>(null)
+  const grpRefs       = [grpRef0, grpRef1, grpRef2]
+  const scrollRef     = useRef<HTMLDivElement>(null)
+  const favRef        = useRef<HTMLDivElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
   const timerRef   = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const didLong    = useRef(false)
@@ -151,14 +152,9 @@ export default function Radio() {
             ref={grpRefs[btnIdx]}
             onClick={() => { setStripGroup(g === stripGroup ? null : g); setActiveFav(null) }}
             onKeyDown={e => {
-              if (e.key === 'ArrowRight') {
-                e.preventDefault()
-                setGroupOffset(prev => (prev + 1) % groupNames.length)
-              }
-              if (e.key === 'ArrowLeft') {
-                e.preventDefault()
-                setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length)
-              }
+              if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length) }
+              if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length) }
+              if (e.key === 'ArrowDown')  { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
             }}
             className={`flex-1 py-3 rounded-2xl text-sm font-semibold transition-all select-none text-center ${
               stripGroup === g
@@ -172,7 +168,7 @@ export default function Radio() {
       </div>
 
       {/* Alt favori butonları */}
-      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-t border-white/10 shrink-0">
+      <div ref={favRef} className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-t border-white/10 shrink-0">
         {favGroups.map((g, i) => {
           const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
           const favLong = useRef(false)
@@ -189,6 +185,10 @@ export default function Radio() {
             <button
               key={i}
               onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
+              onKeyDown={e => {
+                if (e.key === 'ArrowUp')   { e.preventDefault(); grpRef0.current?.focus() }
+                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); (scrollRef.current?.querySelector('button') as HTMLElement)?.focus() }
+              }}
               onMouseDown={favDown} onMouseUp={favUp} onMouseLeave={favCancel}
               onTouchStart={favDown} onTouchEnd={favUp} onTouchMove={favCancel}
               className={`flex items-center gap-2 px-5 py-3 rounded-2xl text-sm font-semibold transition-all select-none ${
@@ -227,6 +227,7 @@ export default function Radio() {
                     onKeyDown={e => {
                       if (e.key === 'ArrowRight') { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, 1) }
                       if (e.key === 'ArrowLeft')  { e.preventDefault(); wrapFocus(scrollRef, i, stripChannels.length, -1) }
+                      if (e.key === 'ArrowUp')    { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
                     }}
                     onMouseDown={() => startPress(ch, activeFav !== null)}
                     onMouseUp={() => endPress(ch)}
