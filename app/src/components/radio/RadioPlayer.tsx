@@ -128,6 +128,36 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
   useEffect(() => { onSongChange?.(song) },       [song])
   useEffect(() => { onProgramChange?.(program) }, [program])
 
+  // Media Session API — kilit ekranı / bildirim
+  useEffect(() => {
+    if (!('mediaSession' in navigator)) return
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title:  song?.title  || channel.name,
+      artist: song?.artist || '',
+      album:  channel.name,
+      artwork: channel.logo ? [{ src: channel.logo, sizes: '512x512' }] : [],
+    })
+  }, [song, channel.name, channel.logo])
+
+  useEffect(() => {
+    if (!('mediaSession' in navigator)) return
+    navigator.mediaSession.playbackState = playing ? 'playing' : 'paused'
+  }, [playing])
+
+  useEffect(() => {
+    if (!('mediaSession' in navigator)) return
+    navigator.mediaSession.setActionHandler('play', () => {
+      audioRef.current?.play().catch(() => {})
+      setPlaying(true)
+    })
+    navigator.mediaSession.setActionHandler('pause', () => {
+      audioRef.current?.pause()
+      setPlaying(false)
+    })
+    navigator.mediaSession.setActionHandler('previoustrack', onPrev ?? null)
+    navigator.mediaSession.setActionHandler('nexttrack',     onNext ?? null)
+  }, [onPrev, onNext])
+
   const toggle = () => {
     const audio = audioRef.current
     if (!audio) return
