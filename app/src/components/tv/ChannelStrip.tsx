@@ -67,13 +67,16 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
                     src={ch.logo}
                     alt={ch.name}
                     className="w-10 h-10 object-contain rounded"
-                    onError={e => { (e.target as HTMLImageElement).style.display = 'none' }}
+                    onError={e => {
+                      const t = e.target as HTMLImageElement
+                      t.style.display = 'none'
+                      t.nextElementSibling?.removeAttribute('hidden')
+                    }}
                   />
-                ) : (
-                  <span className="text-white/40 text-[9px] text-center leading-tight px-1 truncate w-full text-center">
-                    {ch.name.slice(0, 6)}
-                  </span>
-                )}
+                ) : null}
+                <svg hidden={!!ch.logo} viewBox="0 0 24 24" className="w-8 h-8 text-white/20" fill="currentColor">
+                  <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
+                </svg>
                 <span className="text-[8px] text-white/50 truncate w-14 text-center">{ch.name}</span>
               </button>
             )

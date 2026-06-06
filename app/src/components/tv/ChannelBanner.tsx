@@ -64,11 +64,12 @@ export default function ChannelBanner({ channel, visible }: Props) {
           <div className="flex items-center gap-6 flex-1">
             <div className="shrink-0 w-36 h-36">
               {channel.logo
-                ? <img src={channel.logo} alt="" className="w-full h-full object-contain drop-shadow-2xl" />
-                : <div className="w-full h-full rounded-2xl bg-black/30 flex items-center justify-center">
-                    <span className="text-white/50 text-xl font-bold">{channel.name.slice(0, 3)}</span>
-                  </div>
-              }
+                ? <img src={channel.logo} alt="" className="w-full h-full object-contain drop-shadow-2xl"
+                    onError={e => { const t = e.target as HTMLImageElement; t.style.display = 'none'; t.nextElementSibling?.removeAttribute('hidden') }} />
+                : null}
+              <svg hidden={!!channel.logo} viewBox="0 0 24 24" className="w-full h-full text-white/20 p-3" fill="currentColor">
+                <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
+              </svg>
             </div>
 
             {program && (

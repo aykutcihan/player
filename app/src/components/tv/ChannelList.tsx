@@ -18,9 +18,12 @@ export default function ChannelList({ channels, active, onSelect }: Props) {
           }`}
         >
           {ch.logo
-            ? <img src={ch.logo} alt="" className="w-8 h-8 object-contain rounded shrink-0 bg-white/10" />
-            : <div className="w-8 h-8 rounded bg-white/10 shrink-0" />
-          }
+            ? <img src={ch.logo} alt="" className="w-8 h-8 object-contain rounded shrink-0 bg-white/10"
+                onError={e => { const t = e.target as HTMLImageElement; t.style.display = 'none'; t.nextElementSibling?.removeAttribute('hidden') }} />
+            : null}
+          <svg hidden={!!ch.logo} viewBox="0 0 24 24" className="w-8 h-8 shrink-0 text-white/20" fill="currentColor">
+            <path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/>
+          </svg>
           <span className="text-sm text-white/80 truncate">{ch.name}</span>
         </div>
       ))}
