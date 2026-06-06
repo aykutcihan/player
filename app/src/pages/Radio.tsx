@@ -59,10 +59,13 @@ export default function Radio() {
   const chRef1     = useRef<HTMLButtonElement>(null)
   const chRef2     = useRef<HTMLButtonElement>(null)
   const chRefs     = [chRef0, chRef1, chRef2]
-  const favRef     = useRef<HTMLDivElement>(null)
-  const favMidRef  = useRef<HTMLButtonElement>(null)
-  const playBtnRef = useRef<HTMLButtonElement>(null)
-  const pickerRef  = useRef<Channel | null>(null)
+  const favRef          = useRef<HTMLDivElement>(null)
+  const favMidRef       = useRef<HTMLButtonElement>(null)
+  const playBtnRef      = useRef<HTMLButtonElement>(null)
+  const pickerRef       = useRef<Channel | null>(null)
+  const mobPlayerArea   = useRef<HTMLDivElement>(null)
+  const mobGroupArea    = useRef<HTMLDivElement>(null)
+  const mobChArea       = useRef<HTMLDivElement>(null)
   const fav0TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const fav1TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const fav2TimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
@@ -169,6 +172,36 @@ export default function Radio() {
     chRef1.current?.focus()
   }, [stripGroup, activeFav])
 
+  // Dikey bölümler arası klavye döngüsü (sadece mobile layout)
+  useEffect(() => {
+    const handle = (e: KeyboardEvent) => {
+      if (e.key !== 'ArrowUp' && e.key !== 'ArrowDown') return
+      if (!isMobile) return
+      const active = document.activeElement as HTMLElement | null
+      if (!active) return
+      const inPlayer  = mobPlayerArea.current?.contains(active)
+      const inGroup   = mobGroupArea.current?.contains(active)
+      const inFav     = favRef.current?.contains(active)
+      const inChannel = mobChArea.current?.contains(active)
+      if (!inPlayer && !inGroup && !inFav && !inChannel) return
+      e.preventDefault()
+      const hasChannel = stripChannels.length > 0 && (activeFav !== null || stripGroup !== null)
+      const toPlayer = () => (playBtnRef.current ?? grpRef1.current)?.focus()
+      if (e.key === 'ArrowDown') {
+        if (inPlayer)       grpRef1.current?.focus()
+        else if (inGroup)   favMidRef.current?.focus()
+        else if (inFav)     hasChannel ? chRef1.current?.focus() : toPlayer()
+        else if (inChannel) toPlayer()
+      } else {
+        if (inPlayer)       hasChannel ? chRef1.current?.focus() : favMidRef.current?.focus()
+        else if (inGroup)   toPlayer()
+        else if (inFav)     grpRef1.current?.focus()
+        else if (inChannel) favMidRef.current?.focus()
+      }
+    }
+    window.addEventListener('keydown', handle)
+    return () => window.removeEventListener('keydown', handle)
+  }, [isMobile, activeFav, stripGroup, stripChannels.length])
 
   const handlePick = useCallback((groupIdx: number) => {
     if (!picker) return
@@ -203,7 +236,7 @@ export default function Radio() {
       {/* ── DİKEY LAYOUT (mobile) ── */}
       <div className="relative z-10 flex flex-col flex-1 min-h-0 sm:hidden gap-1">
 
-        <div className="shrink-0 relative">
+        <div ref={mobPlayerArea} className="shrink-0 relative">
           {activeRadio && isMobile
             ? <RadioPlayer
                 channel={activeRadio}
@@ -212,10 +245,7 @@ export default function Radio() {
                 playBtnRef={playBtnRef}
                 onSongChange={setSong}
                 onProgramChange={setProgram}
-                onPlayKeyDown={e => {
-                  if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
-                  if (e.key === 'ArrowUp')   { e.preventDefault(); (activeFav !== null || stripGroup !== null) ? chRef1.current?.focus() : favMidRef.current?.focus() }
-                }}
+                onPlayKeyDown={undefined}
               />
             : !activeRadio
               ? <div className="flex flex-col items-center justify-center h-full gap-3">
@@ -247,15 +277,13 @@ export default function Radio() {
           ) : null}
         </div>
 
-        <div className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
+        <div ref={mobGroupArea} className="flex items-center justify-center gap-2 px-3 py-1 shrink-0">
           {visibleGroups.map((g, btnIdx) => (
             <button key={btnIdx} ref={isMobile ? grpRefs[btnIdx] : undefined}
               onClick={() => { setStripGroup(g); setActiveFav(null) }}
               onKeyDown={e => {
                 if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
                 if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
-                if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
-                if (e.key === 'ArrowDown')  { e.preventDefault(); favMidRef.current?.focus() }
               }}
               className={`flex-none flex flex-col items-center justify-center gap-1 w-[25vw] h-[25vw] rounded-xl text-[3vw] font-semibold transition-all select-none text-center border ${stripGroup === g ? 'border-red-500 bg-red-800 text-white scale-105' : 'border-white/15 bg-transparent text-white'}`}
             >
@@ -275,8 +303,6 @@ export default function Radio() {
               <button key={i} ref={i === 1 ? (isMobile ? favMidRef : undefined) : undefined}
                 onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
                 onKeyDown={e => {
-                  if (e.key === 'ArrowUp')   { e.preventDefault(); grpRef1.current?.focus() }
-                  if (e.key === 'ArrowDown') { e.preventDefault(); (activeFav !== null || stripGroup !== null) ? chRef1.current?.focus() : playBtnRef.current?.focus() }
                   if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                   if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
                 }}
@@ -291,7 +317,7 @@ export default function Radio() {
         </div>
 
         {(activeFav !== null || stripGroup !== null) && (
-          <div className="relative z-10 shrink-0">
+          <div ref={mobChArea} className="relative z-10 shrink-0">
             {stripChannels.length === 0
               ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
               : <div className="flex flex-col items-center gap-3 py-1">
@@ -302,8 +328,6 @@ export default function Radio() {
                         onKeyDown={e => {
                           if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
                           if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
-                          if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
-                          if (e.key === 'ArrowDown')  { e.preventDefault(); playBtnRef.current?.focus() }
                         }}
                         className={`flex-none flex flex-col items-center gap-1 p-2 rounded-xl border transition-all select-none w-[25vw] h-[25vw] justify-center overflow-hidden ${btnIdx === 1 ? (activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105') : 'border-white/15 bg-transparent'}`}
                       >

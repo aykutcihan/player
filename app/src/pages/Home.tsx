@@ -27,29 +27,29 @@ export default function Home() {
   }, [focus, navigate])
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#0a0a0a] select-none">
+    <div className="flex flex-col items-center justify-center h-screen bg-[#0a0a0a] select-none px-4">
 
       {/* Başlık */}
-      <div className="mb-16 text-center">
-        <div className="text-white/20 text-2xl tracking-widest uppercase mb-2">Hoş Geldiniz</div>
-        <div className="text-white/60 text-base">Kategori seçin</div>
+      <div className="mb-8 sm:mb-16 text-center">
+        <div className="text-white/20 text-xl sm:text-2xl tracking-widest uppercase mb-2">Hoş Geldiniz</div>
+        <div className="text-white/60 text-sm sm:text-base">Kategori seçin</div>
       </div>
 
-      {/* Ana menü */}
-      <div className="flex gap-8">
+      {/* Ana menü — telefon portrede 2×2 grid, geniş ekranda yatay sıra */}
+      <div className="grid grid-cols-2 sm:flex gap-4 sm:gap-8">
         {ITEMS.map((item, i) => (
           <button
             key={i}
             onClick={() => navigate(item.path)}
             onFocus={() => setFocus(i)}
-            className={`flex flex-col items-center gap-4 px-10 py-8 rounded-3xl border-2 transition-all duration-200 outline-none ${
+            className={`flex flex-col items-center gap-3 sm:gap-4 px-6 py-6 sm:px-10 sm:py-8 rounded-3xl border-2 transition-all duration-200 outline-none ${
               focus === i
                 ? 'border-red-500 bg-red-600/20 scale-110 shadow-2xl shadow-red-900/50'
                 : 'border-white/10 bg-white/5'
             }`}
           >
-            <span className="text-7xl leading-none">{item.emoji}</span>
-            <span className={`text-xl font-semibold transition-colors ${
+            <span className="text-5xl sm:text-7xl leading-none">{item.emoji}</span>
+            <span className={`text-base sm:text-xl font-semibold transition-colors ${
               focus === i ? 'text-white' : 'text-white/50'
             }`}>
               {item.label}
@@ -59,7 +59,7 @@ export default function Home() {
       </div>
 
       {/* Alt bilgi */}
-      <div className="mt-16 text-white/20 text-sm">
+      <div className="mt-8 sm:mt-16 text-white/20 text-sm">
         ← → ile seç &nbsp;·&nbsp; OK ile gir
       </div>
     </div>
