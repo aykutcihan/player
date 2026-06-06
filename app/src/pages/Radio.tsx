@@ -270,7 +270,7 @@ export default function Radio() {
                   </button>
                 ))}
                 </div>
-                <div className="text-base font-semibold text-white text-center transition-all duration-300" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
+                <div className="text-xl font-bold text-white text-center transition-all duration-300" style={{ width: 'calc(3 * 80px + 2 * 8px)' }}>
                   {displayName}
                 </div>
               </div>
