@@ -109,25 +109,42 @@ export default function Radio() {
   return (
     <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111]">
 
-      {/* Grup şeridi — en üst, sonsuz döngü */}
-      <div className="shrink-0 bg-[#1a1a1a] border-b border-white/10">
+      {/* Grup şeridi — 3 büyük buton, sonsuz döngü */}
+      <div className="shrink-0 border-b border-white/10">
         <div
           ref={groupsRef}
-          className="flex gap-2 px-3 py-2 overflow-x-auto"
+          className="flex overflow-x-auto scroll-smooth"
           style={{ scrollbarWidth: 'none' }}
         >
           {groupNames.map((g, i) => (
             <button
               key={g}
-              onClick={() => { setStripGroup(g === stripGroup ? null : g); setActiveFav(null) }}
-              onKeyDown={e => {
-                if (e.key === 'ArrowRight') { e.preventDefault(); wrapFocus(groupsRef, i, groupNames.length, 1) }
-                if (e.key === 'ArrowLeft')  { e.preventDefault(); wrapFocus(groupsRef, i, groupNames.length, -1) }
+              onClick={() => {
+                setStripGroup(g === stripGroup ? null : g)
+                setActiveFav(null)
+                ;(groupsRef.current?.children[i] as HTMLElement)?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
               }}
-              className={`flex-none px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-colors ${
+              onKeyDown={e => {
+                if (e.key === 'ArrowRight') {
+                  e.preventDefault()
+                  const next = (i + 1) % groupNames.length
+                  const el = groupsRef.current?.children[next] as HTMLElement
+                  el?.focus()
+                  el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+                }
+                if (e.key === 'ArrowLeft') {
+                  e.preventDefault()
+                  const prev = (i - 1 + groupNames.length) % groupNames.length
+                  const el = groupsRef.current?.children[prev] as HTMLElement
+                  el?.focus()
+                  el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+                }
+              }}
+              style={{ flexShrink: 0, width: 'calc(100% / 3)' }}
+              className={`flex items-center justify-center py-5 text-sm font-bold transition-all border-b-2 ${
                 stripGroup === g
-                  ? 'bg-red-600 text-white shadow-sm'
-                  : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
+                  ? 'bg-red-900/40 text-white border-red-500'
+                  : 'bg-white/3 text-white/50 border-transparent hover:bg-white/8 hover:text-white'
               }`}
             >
               {g}
