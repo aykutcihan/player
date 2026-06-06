@@ -1,4 +1,5 @@
 import { useMemo, useState, useRef, useCallback, useEffect } from 'react'
+
 import { useStore } from '../store/useStore'
 import RadioPlayer from '../components/radio/RadioPlayer'
 import FavPickerModal from '../components/radio/FavPickerModal'
@@ -29,8 +30,6 @@ export default function Radio() {
   const favMidRef     = useRef<HTMLButtonElement>(null)
   const playBtnRef    = useRef<HTMLButtonElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
-  const timerRef   = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-  const didLong    = useRef(false)
 
   useEffect(() => { pickerRef.current = picker }, [picker])
 
@@ -92,22 +91,6 @@ export default function Radio() {
     scrollRef.current?.focus()
   }, [stripGroup, activeFav])
 
-  // Long-press handlers
-  const startPress = useCallback((ch: Channel, isFavStrip = false) => {
-    didLong.current = false
-    timerRef.current = setTimeout(() => {
-      didLong.current = true
-      if (isFavStrip) setRemoveConfirm(ch)
-      else setPicker(ch)
-    }, LONG_PRESS_MS)
-  }, [])
-
-  const endPress = useCallback((ch: Channel) => {
-    clearTimeout(timerRef.current)
-    if (!didLong.current) setRadio(ch)
-  }, [setRadio])
-
-  const cancelPress = useCallback(() => clearTimeout(timerRef.current), [])
 
   const handlePick = useCallback((groupIdx: number) => {
     if (!picker) return
