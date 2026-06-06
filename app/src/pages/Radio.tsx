@@ -148,8 +148,6 @@ export default function Radio() {
               playBtnRef={playBtnRef}
               onPlayKeyDown={e => {
                 if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
-                if (e.key === 'ArrowLeft' && currentStripIdx > 0) { e.preventDefault(); setRadio(stripChannels[currentStripIdx - 1]) }
-                if (e.key === 'ArrowRight' && currentStripIdx < stripChannels.length - 1) { e.preventDefault(); setRadio(stripChannels[currentStripIdx + 1]) }
               }}
             />
           : (

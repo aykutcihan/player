@@ -13,7 +13,9 @@ interface Props {
 }
 
 export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPlayKeyDown }: Props) {
-  const audioRef              = useRef<HTMLAudioElement>(null)
+  const audioRef    = useRef<HTMLAudioElement>(null)
+  const prevBtnRef  = useRef<HTMLButtonElement>(null)
+  const nextBtnRef  = useRef<HTMLButtonElement>(null)
   const [playing, setPlaying]   = useState(false)
   const [error, setError]       = useState(false)
   const [song, setSong]         = useState<NowPlaying | null>(null)
@@ -156,8 +158,12 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
         {error && <div className="text-red-400 text-xs">Stream yüklenemedi</div>}
         <div className="flex items-center gap-5">
           <button
+            ref={prevBtnRef}
             onClick={onPrev}
             disabled={!onPrev}
+            onKeyDown={e => {
+              if (e.key === 'ArrowRight') { e.preventDefault(); playBtnRef?.current?.focus() }
+            }}
             className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white text-lg transition-all active:scale-95"
           >
             ◀
@@ -165,14 +171,22 @@ export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPla
           <button
             ref={playBtnRef}
             onClick={toggle}
-            onKeyDown={onPlayKeyDown}
+            onKeyDown={e => {
+              if (e.key === 'ArrowLeft')  { e.preventDefault(); prevBtnRef.current?.focus() }
+              if (e.key === 'ArrowRight') { e.preventDefault(); nextBtnRef.current?.focus() }
+              else onPlayKeyDown?.(e)
+            }}
             className="w-16 h-16 rounded-full bg-white hover:bg-white/90 active:scale-95 flex items-center justify-center text-2xl text-black transition-all shadow-2xl"
           >
             {playing ? '⏸' : '▶'}
           </button>
           <button
+            ref={nextBtnRef}
             onClick={onNext}
             disabled={!onNext}
+            onKeyDown={e => {
+              if (e.key === 'ArrowLeft') { e.preventDefault(); playBtnRef?.current?.focus() }
+            }}
             className="w-12 h-12 rounded-full bg-white/15 hover:bg-white/25 disabled:opacity-20 disabled:cursor-default flex items-center justify-center text-white text-lg transition-all active:scale-95"
           >
             ▶
