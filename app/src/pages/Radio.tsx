@@ -18,17 +18,20 @@ export default function Radio() {
   const [groupOffset,   setGroupOffset]   = useState(0)
   const [picker,        setPicker]        = useState<Channel | null>(null)
   const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
-  const [toast,         setToast]         = useState<string | null>(null)
-  const [channelIdx,    setChannelIdx]    = useState(0)
+  const [toast,          setToast]          = useState<string | null>(null)
+  const [channelOffset,  setChannelOffset]  = useState(0)
 
-  const grpRef0       = useRef<HTMLButtonElement>(null)
-  const grpRef1       = useRef<HTMLButtonElement>(null)
-  const grpRef2       = useRef<HTMLButtonElement>(null)
-  const grpRefs       = [grpRef0, grpRef1, grpRef2]
-  const scrollRef     = useRef<HTMLDivElement>(null)
-  const favRef        = useRef<HTMLDivElement>(null)
-  const favMidRef     = useRef<HTMLButtonElement>(null)
-  const playBtnRef    = useRef<HTMLButtonElement>(null)
+  const grpRef0    = useRef<HTMLButtonElement>(null)
+  const grpRef1    = useRef<HTMLButtonElement>(null)
+  const grpRef2    = useRef<HTMLButtonElement>(null)
+  const grpRefs    = [grpRef0, grpRef1, grpRef2]
+  const chRef0     = useRef<HTMLButtonElement>(null)
+  const chRef1     = useRef<HTMLButtonElement>(null)
+  const chRef2     = useRef<HTMLButtonElement>(null)
+  const chRefs     = [chRef0, chRef1, chRef2]
+  const favRef     = useRef<HTMLDivElement>(null)
+  const favMidRef  = useRef<HTMLButtonElement>(null)
+  const playBtnRef = useRef<HTMLButtonElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
 
   useEffect(() => { pickerRef.current = picker }, [picker])
@@ -68,27 +71,30 @@ export default function Radio() {
     return []
   }, [activeFav, stripGroup, radioChannels, normalGroupMap, resolveChannels])
 
+  // Görünür 3 kanal (orta = seçili)
+  const visibleChannels = useMemo(() =>
+    stripChannels.length === 0 ? [] : [0, 1, 2].map(i => ({
+      ch: stripChannels[(channelOffset + i) % stripChannels.length],
+      idx: (channelOffset + i) % stripChannels.length,
+    })),
+  [stripChannels, channelOffset])
+
   const currentStripIdx = useMemo(() =>
     activeRadio ? stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId) : -1,
   [activeRadio, stripChannels])
 
-  // Aktif radyo değişince channelIdx güncelle
+  // Grup/fav değişince ilk kanal ortada başlasın
   useEffect(() => {
-    const idx = stripChannels.findIndex(c => c.tvgId === activeRadio?.tvgId)
-    setChannelIdx(idx >= 0 ? idx : 0)
-  }, [activeRadio, stripChannels])
+    if (stripChannels.length === 0) return
+    const activeIdx = stripChannels.findIndex(c => c.tvgId === activeRadio?.tvgId)
+    const startIdx = activeIdx >= 0 ? activeIdx : 0
+    setChannelOffset((startIdx - 1 + stripChannels.length) % stripChannels.length)
+  }, [stripGroup, activeFav])
 
-  // channelIdx değişince ortaya scroll
-  useEffect(() => {
-    if (!scrollRef.current || stripChannels.length === 0) return
-    const el = scrollRef.current.children[channelIdx] as HTMLElement
-    el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-  }, [channelIdx])
-
-  // Kanal şeridi açılınca container'a focus
+  // Kanal şeridi açılınca orta butona focus
   useEffect(() => {
     if (activeFav === null && stripGroup === null) return
-    scrollRef.current?.focus()
+    chRef1.current?.focus()
   }, [stripGroup, activeFav])
 
 
@@ -189,7 +195,7 @@ export default function Radio() {
               onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
               onKeyDown={e => {
                 if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
-                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); scrollRef.current?.focus() }
+                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); chRef1.current?.focus() }
                 if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                 if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
               }}
@@ -210,29 +216,28 @@ export default function Radio() {
         })}
       </div>
 
-      {/* Kanal şeridi — en altta, varsayılan Pop */}
+      {/* Kanal şeridi — grup carousel kopyası, 3 kanal, orta sabit */}
       {(activeFav !== null || stripGroup !== null) && (
         <div className="relative z-10 shrink-0">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-            : <div
-                ref={scrollRef}
-                tabIndex={0}
-                onKeyDown={e => {
-                  if (e.key === 'ArrowRight') { e.preventDefault(); setChannelIdx(prev => (prev + 1) % stripChannels.length) }
-                  if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelIdx(prev => (prev - 1 + stripChannels.length) % stripChannels.length) }
-                  if (e.key === 'Enter')      { e.preventDefault(); setRadio(stripChannels[channelIdx]) }
-                  if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
-                }}
-                className="flex gap-2 px-3 py-2 overflow-x-auto outline-none"
-                style={{ scrollbarWidth: 'none' }}
-              >
-                {stripChannels.map((ch, i) => (
-                  <div
-                    key={i}
-                    onClick={() => { setChannelIdx(i); setRadio(ch) }}
-                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 cursor-pointer ${
-                      i === channelIdx
+            : <div className="flex items-center justify-center gap-2 px-3 py-2">
+                {visibleChannels.map(({ ch, idx }, btnIdx) => (
+                  <button
+                    key={btnIdx}
+                    ref={chRefs[btnIdx]}
+                    onClick={() => {
+                      setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length)
+                      setRadio(ch)
+                      chRef1.current?.focus()
+                    }}
+                    onKeyDown={e => {
+                      if (e.key === 'ArrowRight') { e.preventDefault(); setChannelOffset(prev => (prev + 1) % stripChannels.length); chRef1.current?.focus() }
+                      if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelOffset(prev => (prev - 1 + stripChannels.length) % stripChannels.length); chRef1.current?.focus() }
+                      if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                    }}
+                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 h-20 justify-center ${
+                      btnIdx === 1
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
                         : 'border-white/15 bg-transparent'
                     }`}
@@ -243,7 +248,7 @@ export default function Radio() {
                       : <span className="text-2xl">📻</span>
                     }
                     <span className="text-[10px] text-white truncate w-full text-center leading-tight">{ch.name}</span>
-                  </div>
+                  </button>
                 ))}
               </div>
           }
