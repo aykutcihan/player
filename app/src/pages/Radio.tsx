@@ -18,6 +18,7 @@ export default function Radio() {
   const [picker,        setPicker]        = useState<Channel | null>(null)
   const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
   const [toast,         setToast]         = useState<string | null>(null)
+  const [channelIdx,    setChannelIdx]    = useState(0)
 
   const grpRef0       = useRef<HTMLButtonElement>(null)
   const grpRef1       = useRef<HTMLButtonElement>(null)
@@ -72,20 +73,23 @@ export default function Radio() {
     activeRadio ? stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId) : -1,
   [activeRadio, stripChannels])
 
-  // Aktif kanala scroll
+  // Aktif radyo değişince channelIdx güncelle
   useEffect(() => {
-    if (!activeRadio || !scrollRef.current) return
-    const idx = stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId)
-    if (idx < 0) return
-    const el = scrollRef.current.children[idx] as HTMLElement
-    el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+    const idx = stripChannels.findIndex(c => c.tvgId === activeRadio?.tvgId)
+    setChannelIdx(idx >= 0 ? idx : 0)
   }, [activeRadio, stripChannels])
 
-  // Kanal şeridi açılınca ilk butona focus
+  // channelIdx değişince ortaya scroll
+  useEffect(() => {
+    if (!scrollRef.current || stripChannels.length === 0) return
+    const el = scrollRef.current.children[channelIdx] as HTMLElement
+    el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
+  }, [channelIdx])
+
+  // Kanal şeridi açılınca container'a focus
   useEffect(() => {
     if (activeFav === null && stripGroup === null) return
-    const btn = scrollRef.current?.querySelector('button') as HTMLElement | null
-    btn?.focus()
+    scrollRef.current?.focus()
   }, [stripGroup, activeFav])
 
   // Long-press handlers
@@ -202,7 +206,7 @@ export default function Radio() {
               onClick={() => { clearTimeout(favTimerRef.current); if (!favLong.current) { setActiveFav(prev => prev === i ? null : i); setStripGroup(null) } favLong.current = false }}
               onKeyDown={e => {
                 if (e.key === 'ArrowUp')    { e.preventDefault(); grpRef1.current?.focus() }
-                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); const idx = Math.max(0, currentStripIdx); (scrollRef.current?.children[idx] as HTMLElement)?.focus() }
+                if (e.key === 'ArrowDown' && (activeFav !== null || stripGroup !== null)) { e.preventDefault(); scrollRef.current?.focus() }
                 if (e.key === 'ArrowLeft')  { e.preventDefault(); (favRef.current?.children[(i - 1 + 3) % 3] as HTMLElement)?.focus() }
                 if (e.key === 'ArrowRight') { e.preventDefault(); (favRef.current?.children[(i + 1) % 3] as HTMLElement)?.focus() }
               }}
@@ -228,36 +232,24 @@ export default function Radio() {
         <div className="relative z-10 shrink-0">
           {stripChannels.length === 0
             ? <div className="text-center py-3 text-white/20 text-xs">Kanallara basılı tutarak bu favoriye ekle</div>
-            : <div ref={scrollRef} className="flex gap-2 px-3 py-2 overflow-x-auto" style={{ scrollbarWidth: 'none' }}>
+            : <div
+                ref={scrollRef}
+                tabIndex={0}
+                onKeyDown={e => {
+                  if (e.key === 'ArrowRight') { e.preventDefault(); setChannelIdx(prev => (prev + 1) % stripChannels.length) }
+                  if (e.key === 'ArrowLeft')  { e.preventDefault(); setChannelIdx(prev => (prev - 1 + stripChannels.length) % stripChannels.length) }
+                  if (e.key === 'Enter')      { e.preventDefault(); setRadio(stripChannels[channelIdx]) }
+                  if (e.key === 'ArrowUp')    { e.preventDefault(); favMidRef.current?.focus() }
+                }}
+                className="flex gap-2 px-3 py-2 overflow-x-auto outline-none"
+                style={{ scrollbarWidth: 'none' }}
+              >
                 {stripChannels.map((ch, i) => (
-                  <button
+                  <div
                     key={i}
-                    onClick={() => { clearTimeout(timerRef.current); if (!didLong.current) setRadio(ch); didLong.current = false }}
-                    onKeyDown={e => {
-                      if (e.key === 'ArrowRight') {
-                        e.preventDefault()
-                        const next = (i + 1) % stripChannels.length
-                        const el = scrollRef.current?.children[next] as HTMLElement
-                        el?.focus()
-                        el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-                      }
-                      if (e.key === 'ArrowLeft') {
-                        e.preventDefault()
-                        const prev = (i - 1 + stripChannels.length) % stripChannels.length
-                        const el = scrollRef.current?.children[prev] as HTMLElement
-                        el?.focus()
-                        el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' })
-                      }
-                      if (e.key === 'ArrowUp') { e.preventDefault(); favMidRef.current?.focus() }
-                    }}
-                    onMouseDown={() => startPress(ch, activeFav !== null)}
-                    onMouseUp={() => endPress(ch)}
-                    onMouseLeave={cancelPress}
-                    onTouchStart={() => startPress(ch, activeFav !== null)}
-                    onTouchEnd={() => endPress(ch)}
-                    onTouchMove={cancelPress}
-                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 ${
-                      activeRadio?.tvgId === ch.tvgId
+                    onClick={() => { setChannelIdx(i); setRadio(ch) }}
+                    className={`flex-none flex flex-col items-center gap-1.5 p-2.5 rounded-xl border transition-all select-none w-20 cursor-pointer ${
+                      i === channelIdx
                         ? activeFav !== null ? 'border-yellow-500 bg-yellow-800 scale-105' : 'border-red-500 bg-red-800 scale-105'
                         : 'border-white/15 bg-transparent'
                     }`}
@@ -268,7 +260,7 @@ export default function Radio() {
                       : <span className="text-2xl">📻</span>
                     }
                     <span className="text-[10px] text-white truncate w-full text-center leading-tight">{ch.name}</span>
-                  </button>
+                  </div>
                 ))}
               </div>
           }
