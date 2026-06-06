@@ -1,11 +1,12 @@
 import { useRef, useState, useCallback, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useStore } from '../store/useStore'
-import ChannelStrip from '../components/tv/ChannelStrip'
-import GroupStrip   from '../components/tv/GroupStrip'
-import NowBar       from '../components/tv/NowBar'
-import EpgOverlay   from '../components/tv/EpgOverlay'
-import Player       from '../components/tv/Player'
+import ChannelStrip  from '../components/tv/ChannelStrip'
+import GroupStrip    from '../components/tv/GroupStrip'
+import NowBar        from '../components/tv/NowBar'
+import EpgOverlay    from '../components/tv/EpgOverlay'
+import Player        from '../components/tv/Player'
+import ChannelBanner from '../components/tv/ChannelBanner'
 import type { VideoPlayerHandle } from '../components/VideoPlayer'
 import { backButtonBus } from '../lib/backButtonBus'
 import { NativeVideo, isNativeVideoAvailable } from '../lib/nativeVideo'
@@ -28,8 +29,10 @@ export default function LiveTV() {
   const [epgOnLogo,    setEpgOnLogo]    = useState(true)  // EPG'de logo mu program mı odaklı
   const [epgOpen,      setEpgOpen]      = useState(false)
   const [chLoading,    setChLoading]    = useState(false)
+  const [bannerVisible, setBannerVisible] = useState(false)
   const playIconTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const loadTimer      = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const bannerTimer    = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const groups        = [...new Set(channels.map(c => c.group))].filter(Boolean)
   const groupChannels = channels.filter(c => c.group === channelGroup)
@@ -75,11 +78,19 @@ export default function LiveTV() {
   }, [])
 
   const openUi = useCallback((zone: FocusZone = 'channels') => {
+    setBannerVisible(false)
+    clearTimeout(bannerTimer.current)
     setUiVisible(true)
     setFocusZone(zone)
     clearTimeout(hideTimer.current)
     hideTimer.current = setTimeout(closeUi, HIDE_DELAY)
   }, [closeUi])
+
+  const showBanner = useCallback(() => {
+    setBannerVisible(true)
+    clearTimeout(bannerTimer.current)
+    bannerTimer.current = setTimeout(() => setBannerVisible(false), 5000)
+  }, [])
 
   const resetTimer = useCallback(() => {
     clearTimeout(hideTimer.current)
@@ -108,6 +119,7 @@ export default function LiveTV() {
             const next = channels[newIdx]
             if (next) { setChannel(next); setGroup(next.group) }
           }
+          showBanner()
         } else if (e.keyCode === 40) {
           // Aşağı → index ile önceki kanal
           const newIdx = Math.max(0, focusIdx - 1)
@@ -116,6 +128,7 @@ export default function LiveTV() {
             const prev = channels[newIdx]
             if (prev) { setChannel(prev); setGroup(prev.group) }
           }
+          showBanner()
         } else if (e.keyCode === 37 || e.keyCode === 39) {
           openUi('channels')
         } else if (e.keyCode === 13) {
@@ -220,7 +233,7 @@ export default function LiveTV() {
       backButtonBus.unregister()
     }
   }, [focusZone, focusIdx, channels, groups, activeChannel, channelGroup,
-      uiVisible, setChannel, setGroup, openUi, closeUi, resetTimer, navigate])
+      uiVisible, setChannel, setGroup, openUi, closeUi, resetTimer, navigate, showBanner])
 
   const focusedChannel = channels[focusIdx] ?? null
 
@@ -252,6 +265,11 @@ export default function LiveTV() {
             </svg>
           )}
         </div>
+      )}
+
+      {/* Kanal banner — yukarı/aşağı ile kanal değiştirince */}
+      {activeChannel && (
+        <ChannelBanner channel={activeChannel} visible={bannerVisible} />
       )}
 
       {/* EPG açıkken sadece EPG görünür */}

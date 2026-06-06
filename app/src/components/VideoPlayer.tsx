@@ -26,6 +26,7 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
   const hlsRef      = useRef<Hls | null>(null)
   const [playing,   setPlaying]   = useState(false)
   const [loading,   setLoading]   = useState(true)
+  const [error,     setError]     = useState(false)
   const [volume,    setVolume]     = useState(1)
   const [muted,     setMuted]      = useState(false)
   const [currentT,  setCurrentT]   = useState(0)
@@ -60,10 +61,12 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
     hlsRef.current?.destroy()
 
     setLoading(true)
+    setError(false)
     const onPlay     = () => { setPlaying(true); setLoading(false) }
     const onPause    = () => setPlaying(false)
     const onWaiting  = () => setLoading(true)
     const onPlaying  = () => setLoading(false)
+    const onError    = () => { setLoading(false); setError(true) }
     const onTimeUpd  = () => {
       setCurrentT(video.currentTime)
       setDuration(video.duration)
@@ -77,16 +80,38 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
     video.addEventListener('playing',     onPlaying)
     video.addEventListener('timeupdate',  onTimeUpd)
     video.addEventListener('volumechange',onVolChg)
+    video.addEventListener('error',       onError)
+
+    const tryNative = () => {
+      hlsRef.current?.destroy()
+      hlsRef.current = null
+      video.src = url
+      video.play().catch(() => { setLoading(false); setError(true) })
+    }
 
     if (url.includes('.m3u8') && Hls.isSupported()) {
       const hls = new Hls({ enableWorker: true, backBufferLength: 3600 })
       hlsRef.current = hls
+      let mediaRecovered = false
       hls.loadSource(url)
       hls.attachMedia(video)
       hls.on(Hls.Events.MANIFEST_PARSED, () => video.play().catch(() => {}))
+      hls.on(Hls.Events.ERROR, (_, data) => {
+        if (!data.fatal) return
+        if (data.type === Hls.ErrorTypes.MEDIA_ERROR && !mediaRecovered) {
+          mediaRecovered = true
+          hls.recoverMediaError()
+        } else if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+          // Network hatasında native'e düş
+          tryNative()
+        } else {
+          // Kurtarılamaz hata — native dene
+          tryNative()
+        }
+      })
     } else {
       video.src = url
-      video.play().catch(() => {})
+      video.play().catch(() => { setLoading(false); setError(true) })
     }
 
     return () => {
@@ -96,6 +121,7 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
       video.removeEventListener('playing',     onPlaying)
       video.removeEventListener('timeupdate',  onTimeUpd)
       video.removeEventListener('volumechange',onVolChg)
+      video.removeEventListener('error',       onError)
       hlsRef.current?.destroy()
     }
   }, [url])
@@ -144,9 +170,19 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url }, ref) => {
   return (
     <div className="relative w-full h-full bg-black flex flex-col">
       {/* Yükleniyor spinner */}
-      {loading && (
+      {loading && !error && (
         <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
           <div className="w-14 h-14 border-4 border-white/20 border-t-white rounded-full animate-spin" />
+        </div>
+      )}
+
+      {/* Hata */}
+      {error && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none gap-3">
+          <svg viewBox="0 0 24 24" className="w-16 h-16 text-white/30" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+          </svg>
+          <div className="text-white/50 text-lg">Yayın yüklenemedi</div>
         </div>
       )}
       {/* Video */}
