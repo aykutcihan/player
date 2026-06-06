@@ -139,7 +139,7 @@ export default function Radio() {
       </div>
 
       {/* Grup carousel — favorilerin üstünde, aynı boyut */}
-      <div className="flex items-center justify-center gap-3 px-4 py-3 bg-[#1a1a1a] border-t border-white/10 shrink-0">
+      <div className="flex items-center justify-center gap-3 px-4 py-3 shrink-0">
         {visibleGroups.map((g, btnIdx) => (
           <button
             key={btnIdx}
@@ -162,7 +162,7 @@ export default function Radio() {
       </div>
 
       {/* Alt favori butonları */}
-      <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-2 bg-[#1a1a1a] border-t border-white/10 shrink-0">
+      <div ref={favRef} className="flex items-center justify-center gap-2 px-3 py-2 shrink-0">
         {favGroups.map((_g, i) => {
           const favTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
           const favLong = useRef(false)
