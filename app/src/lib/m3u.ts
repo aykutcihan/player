@@ -18,13 +18,14 @@ export interface Film {
 // Güvenilirlik sırası — düşük = önce dene (hızlı başlangıç)
 // Arka planda kalite kontrolü VideoPlayer tarafından yapılır
 const SOURCE_PRIORITY: [string, number][] = [
-  ['youtube',      0],  // IP bağımsız, her zaman çalışır
-  ['googlevideo',  0],
-  ['ercdn',        1],  // token var ama IP bağımsız
-  ['mncdn',        1],
-  ['daioncdn',     2],
-  ['tvkulesi',     3],  // IP bağlı, 4 saatte yenileniyor
-  ['kavuntv',      4],  // IP bağlı, aylık yenileniyor
+  ['youtube',        0],  // IP bağımsız, her zaman çalışır
+  ['googlevideo',    0],
+  ['medya.trt',      0],  // TRT resmi CDN, token yok, en güvenilir
+  ['ercdn',          1],  // token var ama IP bağımsız
+  ['mncdn',          1],
+  ['daioncdn',       2],
+  ['tvkulesi',       3],  // IP bağlı, 4 saatte yenileniyor
+  ['kavuntv',        4],  // IP bağlı, aylık yenileniyor
 ]
 
 function sourcePriority(source: string, url: string): number {
