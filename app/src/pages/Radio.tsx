@@ -53,11 +53,14 @@ export default function Radio() {
     groupNames.length === 0 ? [] : [0, 1, 2].map(i => groupNames[(groupOffset + i) % groupNames.length]),
   [groupNames, groupOffset])
 
-  // Sayfa açılınca Pop grubu varsayılan seç, ilk grup butonu focus
+  // Sayfa açılınca Pop ortada olacak şekilde offset ayarla, orta butona focus
   useEffect(() => {
     if (groupNames.length === 0) return
-    setStripGroup(groupNames.includes('Pop') ? 'Pop' : groupNames[0])
-    grpRef0.current?.focus()
+    const defaultGroup = groupNames.includes('Pop') ? 'Pop' : groupNames[0]
+    setStripGroup(defaultGroup)
+    const popIdx = groupNames.indexOf(defaultGroup)
+    setGroupOffset((popIdx - 1 + groupNames.length) % groupNames.length)
+    grpRef1.current?.focus()
   }, [groupNames.length])
 
   // Şerit kanalları — fav veya seçili grup
@@ -160,8 +163,8 @@ export default function Radio() {
             ref={grpRefs[btnIdx]}
             onClick={() => { setStripGroup(g === stripGroup ? null : g); setActiveFav(null) }}
             onKeyDown={e => {
-              if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length) }
-              if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length) }
+              if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
+              if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
               if (e.key === 'ArrowDown')  { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
             }}
             className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${
