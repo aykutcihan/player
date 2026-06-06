@@ -102,21 +102,21 @@ export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
   const cover = song?.cover || channel.logo || ''
 
   return (
-    <div className="relative flex flex-col h-full w-full overflow-hidden">
+    <div className="relative flex flex-col h-full w-full">
 
-      {/* Blurred cover background */}
+      {/* Blurred cover background — tüm ekranı kaplar */}
       <div
-        className="absolute inset-0 transition-opacity duration-700"
+        className="fixed inset-0 -z-10 transition-opacity duration-700"
         style={{
           backgroundImage: cover ? `url(${cover})` : 'none',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'blur(60px)',
           transform: 'scale(1.3)',
-          opacity: cover ? 0.4 : 0,
+          opacity: cover ? 0.35 : 0,
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#111]/40 via-transparent to-[#111]/90" />
+      <div className="fixed inset-0 -z-10 bg-[#111]/75" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center gap-4 px-8 pt-24 pb-4 flex-1 min-h-0">
