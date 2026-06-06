@@ -191,9 +191,9 @@ export default function Radio() {
                   : 'border-white/10 bg-white/5 hover:border-white/30 hover:bg-white/10'
               }`}
             >
-              <div className="relative w-11 h-11 flex items-center justify-center">
-                <span className="text-4xl leading-none">⭐</span>
-                <span className="absolute text-sm font-black text-yellow-900">{i + 1}</span>
+              <div className="relative flex items-center justify-center">
+                <span className="text-6xl leading-none">⭐</span>
+                <span className="absolute text-base font-black text-yellow-900">{i + 1}</span>
               </div>
             </button>
           )
