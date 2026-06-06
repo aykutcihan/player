@@ -29,6 +29,7 @@ export default function Radio() {
   const grpRefs       = [grpRef0, grpRef1, grpRef2]
   const scrollRef     = useRef<HTMLDivElement>(null)
   const favRef        = useRef<HTMLDivElement>(null)
+  const playBtnRef    = useRef<HTMLButtonElement>(null)
   const pickerRef  = useRef<Channel | null>(null)
   const timerRef   = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
   const didLong    = useRef(false)
@@ -144,6 +145,12 @@ export default function Radio() {
               channel={activeRadio}
               onPrev={currentStripIdx > 0 ? () => setRadio(stripChannels[currentStripIdx - 1]) : undefined}
               onNext={currentStripIdx < stripChannels.length - 1 ? () => setRadio(stripChannels[currentStripIdx + 1]) : undefined}
+              playBtnRef={playBtnRef}
+              onPlayKeyDown={e => {
+                if (e.key === 'ArrowDown') { e.preventDefault(); grpRef1.current?.focus() }
+                if (e.key === 'ArrowLeft' && currentStripIdx > 0) { e.preventDefault(); setRadio(stripChannels[currentStripIdx - 1]) }
+                if (e.key === 'ArrowRight' && currentStripIdx < stripChannels.length - 1) { e.preventDefault(); setRadio(stripChannels[currentStripIdx + 1]) }
+              }}
             />
           : (
             <div className="flex flex-col items-center justify-center h-full gap-3">
@@ -165,6 +172,7 @@ export default function Radio() {
             onKeyDown={e => {
               if (e.key === 'ArrowRight') { e.preventDefault(); setGroupOffset(prev => (prev + 1) % groupNames.length); grpRef1.current?.focus() }
               if (e.key === 'ArrowLeft')  { e.preventDefault(); setGroupOffset(prev => (prev - 1 + groupNames.length) % groupNames.length); grpRef1.current?.focus() }
+              if (e.key === 'ArrowUp')    { e.preventDefault(); playBtnRef.current?.focus() }
               if (e.key === 'ArrowDown')  { e.preventDefault(); (favRef.current?.querySelector('button') as HTMLElement)?.focus() }
             }}
             className={`flex-none flex items-center justify-center w-20 h-20 rounded-xl text-sm font-semibold transition-all select-none text-center border ${

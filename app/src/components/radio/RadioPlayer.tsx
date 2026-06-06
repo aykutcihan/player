@@ -8,9 +8,11 @@ interface Props {
   channel: Channel
   onPrev?: () => void
   onNext?: () => void
+  playBtnRef?: React.RefObject<HTMLButtonElement | null>
+  onPlayKeyDown?: (e: React.KeyboardEvent) => void
 }
 
-export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
+export default function RadioPlayer({ channel, onPrev, onNext, playBtnRef, onPlayKeyDown }: Props) {
   const audioRef              = useRef<HTMLAudioElement>(null)
   const [playing, setPlaying]   = useState(false)
   const [error, setError]       = useState(false)
@@ -161,7 +163,9 @@ export default function RadioPlayer({ channel, onPrev, onNext }: Props) {
             ◀
           </button>
           <button
+            ref={playBtnRef}
             onClick={toggle}
+            onKeyDown={onPlayKeyDown}
             className="w-16 h-16 rounded-full bg-white hover:bg-white/90 active:scale-95 flex items-center justify-center text-2xl text-black transition-all shadow-2xl"
           >
             {playing ? '⏸' : '▶'}
