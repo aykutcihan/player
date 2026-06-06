@@ -14,7 +14,7 @@ function wrapFocus(ref: React.RefObject<HTMLDivElement | null>, idx: number, tot
 
 export default function Radio() {
   const { radioChannels, activeRadio, setRadio } = useStore()
-  const { groups: favGroups, addToGroup, removeFromGroup, renameGroup, resolveChannels } = useFavorites()
+  const { groups: favGroups, addToGroup, removeFromGroup, resolveChannels } = useFavorites()
 
   const [stripGroup,    setStripGroup]    = useState<string | null>(null)
   const [activeFav,     setActiveFav]     = useState<number | null>(null)
@@ -22,8 +22,6 @@ export default function Radio() {
   const [picker,        setPicker]        = useState<Channel | null>(null)
   const [removeConfirm, setRemoveConfirm] = useState<Channel | null>(null)
   const [toast,         setToast]         = useState<string | null>(null)
-  const [editingFav,    setEditingFav]    = useState<number | null>(null)
-  const [editName,      setEditName]      = useState('')
 
   const grpRef0       = useRef<HTMLButtonElement>(null)
   const grpRef1       = useRef<HTMLButtonElement>(null)
@@ -118,10 +116,6 @@ export default function Radio() {
     setTimeout(() => setToast(null), 2500)
   }
 
-  function commitRename() {
-    if (editingFav !== null && editName.trim()) renameGroup(editingFav, editName.trim())
-    setEditingFav(null)
-  }
 
   return (
     <div className="flex flex-col h-[calc(100vh-48px)] bg-[#111] pt-3">
