@@ -219,7 +219,9 @@ export default function Radio() {
               }`}
             >
               <span className={`text-6xl leading-none ${
-                i === 0 ? 'text-amber-400' : i === 1 ? 'text-sky-400' : 'text-emerald-400'
+                i === 0 ? 'text-amber-300 drop-shadow-[0_0_10px_rgba(252,211,77,0.9)]'
+                : i === 1 ? 'text-sky-300 drop-shadow-[0_0_10px_rgba(125,211,252,0.9)]'
+                : 'text-emerald-300 drop-shadow-[0_0_10px_rgba(110,231,183,0.9)]'
               }`}>★</span>
             </button>
           )
