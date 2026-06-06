@@ -7,12 +7,15 @@ export interface FavGroup {
 }
 
 const MAX = 10
+const MIN = 3
 const STORAGE_KEY = 'radio_favorites'
 
+const DEFAULT_CHANNELS = ['karnaval.16', 'fenomen.fenomenturk', 'powerapp.powerpop']
+
 const DEFAULT: FavGroup[] = [
-  { name: 'Favori 1', channels: [] },
-  { name: 'Favori 2', channels: [] },
-  { name: 'Favori 3', channels: [] },
+  { name: 'Favori 1', channels: [...DEFAULT_CHANNELS] },
+  { name: 'Favori 2', channels: [...DEFAULT_CHANNELS] },
+  { name: 'Favori 3', channels: [...DEFAULT_CHANNELS] },
 ]
 
 function load(): FavGroup[] {
@@ -20,7 +23,11 @@ function load(): FavGroup[] {
     const raw = localStorage.getItem(STORAGE_KEY)
     if (!raw) return DEFAULT
     const parsed = JSON.parse(raw)
-    if (Array.isArray(parsed) && parsed.length === 3) return parsed
+    if (!Array.isArray(parsed) || parsed.length !== 3) return DEFAULT
+    // Boş grupları varsayılanlarla doldur
+    return parsed.map((gr: FavGroup, i: number) =>
+      gr.channels.length === 0 ? { ...gr, channels: [...DEFAULT[i].channels] } : gr
+    )
   } catch {}
   return DEFAULT
 }
@@ -48,11 +55,13 @@ export function useFavorites() {
     return null
   }, [groups, update])
 
-  const removeFromGroup = useCallback((groupIdx: number, tvgId: string) => {
+  const removeFromGroup = useCallback((groupIdx: number, tvgId: string): string | null => {
+    if (groups[groupIdx].channels.length <= MIN) return `En az ${MIN} radyo olmalı`
     const next = groups.map((gr, i) =>
       i === groupIdx ? { ...gr, channels: gr.channels.filter(id => id !== tvgId) } : gr
     )
     update(next)
+    return null
   }, [groups, update])
 
   const reorderGroup = useCallback((groupIdx: number, oldIdx: number, newIdx: number) => {

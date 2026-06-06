@@ -507,7 +507,7 @@ export default function Radio() {
             <div className="text-xs text-white/40 mb-4 truncate">{removeConfirm.name}</div>
             <div className="flex gap-2">
               <button
-                onClick={() => { removeFromGroup(activeFav, removeConfirm.tvgId); setRemoveConfirm(null) }}
+                onClick={() => { const err = removeFromGroup(activeFav, removeConfirm.tvgId); setRemoveConfirm(null); if (err) showToast(err) }}
                 className="flex-1 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-sm font-medium transition-colors"
               >
                 Evet
