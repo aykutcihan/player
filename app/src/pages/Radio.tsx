@@ -218,9 +218,10 @@ export default function Radio() {
                   : 'border-white/15 bg-white/5'
               }`}
             >
-              <span className={`text-6xl leading-none ${
-                i === 0 ? 'text-amber-400' : i === 1 ? 'text-sky-400' : 'text-emerald-400'
-              }`}>★</span>
+              <span
+                className="text-6xl leading-none"
+                style={{ filter: i === 0 ? 'none' : i === 1 ? 'hue-rotate(200deg) saturate(1.4)' : 'hue-rotate(120deg) saturate(1.3)' }}
+              >⭐</span>
             </button>
           )
         })}
