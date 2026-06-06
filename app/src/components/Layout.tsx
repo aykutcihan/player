@@ -62,7 +62,7 @@ export default function Layout() {
       </main>
 
       {!isRadioPage && activeRadio && (
-        <div className="shrink-0 flex items-center gap-3 px-4 py-2 bg-[#1a1a1a] border-t border-white/10">
+        <div className="fixed bottom-0 left-0 right-0 z-50 flex items-center gap-3 px-4 py-2 bg-[#1a1a1a]/95 backdrop-blur-sm border-t border-white/10">
           <span className="text-lg">📻</span>
           <div className="flex-1 min-w-0">
             <div className="text-sm font-semibold text-white truncate">{activeRadio.name}</div>
