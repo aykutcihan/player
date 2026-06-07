@@ -37,13 +37,14 @@ export default function LiveTV() {
   const groups        = ['Tümü', ...[...new Set(channels.map(c => c.group))].filter(Boolean)]
   const groupChannels = channelGroup === 'Tümü' ? channels : channels.filter(c => c.group === channelGroup)
 
-  // Aktif kanal değişince odak indexini güncelle — zaten doğru URL'deyse dokunma
+  // Aktif kanal değişince odak indexini güncelle
+  // focusIdx dep'e YOK — navigasyon sırasında resetlemesin
   useEffect(() => {
     if (!activeChannel) return
-    if (channels[focusIdx]?.url === activeChannel.url) return
     const idx = channels.findIndex(c => c.url === activeChannel.url)
     if (idx >= 0) setFocusIdx(idx)
-  }, [activeChannel, channels, focusIdx])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeChannel, channels])
 
   // Kanal değişince spinner — native event gelince kapat
   const listenerRef = useRef<{ remove: () => void } | null>(null)
