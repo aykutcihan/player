@@ -21,15 +21,18 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
   // Scroll: show=true olunca (DOM hazır) aktif/odak kanala git
   useEffect(() => {
     if (!show || !scrollRef.current) return
-    const target = focused ?? active
-    if (!target) return
-    const idx = channels.findIndex(c => c.url === target.url)
-    if (idx < 0) return
-    const el = scrollRef.current.children[idx] as HTMLElement
-    // DOM render için bekle
-    setTimeout(() => {
-      el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'instant' })
-    }, 100)
+    // focused önce dene, grupta yoksa active'e düş
+    const candidates = [focused, active].filter(Boolean) as typeof active[]
+    for (const target of candidates) {
+      if (!target) continue
+      const idx = channels.findIndex(c => c.url === target.url)
+      if (idx < 0) continue
+      const el = scrollRef.current.children[idx] as HTMLElement
+      setTimeout(() => {
+        el?.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'instant' })
+      }, 100)
+      return
+    }
   }, [show, focused, active, channels])
 
   if (!show) return null

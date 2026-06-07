@@ -150,10 +150,19 @@ export default function LiveTV() {
 
       // ── SCROLL (KANAL ŞERİDİ) ──────────────────────────────
       if (focusZone === 'channels') {
-        if (e.keyCode === 39) {
-          setFocusIdx(prev => Math.min(prev + 1, channels.length - 1))
-        } else if (e.keyCode === 37) {
-          setFocusIdx(prev => Math.max(prev - 1, 0))
+        if (e.keyCode === 39 || e.keyCode === 37) {
+          // groupChannels içinde gezin — tüm channels değil
+          const curCh = channels[focusIdx]
+          const gIdx  = groupChannels.findIndex(c => c.url === curCh?.url)
+          const base  = gIdx < 0 ? 0 : gIdx
+          const nextGIdx = e.keyCode === 39
+            ? Math.min(base + 1, groupChannels.length - 1)
+            : Math.max(base - 1, 0)
+          const nextCh = groupChannels[nextGIdx]
+          if (nextCh) {
+            const nextIdx = channels.findIndex(c => c.url === nextCh.url)
+            if (nextIdx >= 0) setFocusIdx(nextIdx)
+          }
         } else if (e.keyCode === 38) {
           setFocusZone('epg'); setEpgStep(0); setEpgOnLogo(true)
         } else if (e.keyCode === 13) {
@@ -247,8 +256,8 @@ export default function LiveTV() {
         : <div className="absolute inset-0 bg-black" />
       }
 
-      {/* Yükleniyor spinner — tam siyah arka plan */}
-      {chLoading && (
+      {/* Yükleniyor spinner — sadece native'de (web'de VideoPlayer kendi spinner'ını gösterir) */}
+      {chLoading && isNativeVideoAvailable() && (
         <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none bg-black">
           <div className="w-16 h-16 border-4 border-white/20 border-t-white rounded-full animate-spin" />
         </div>
