@@ -89,7 +89,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, mediaOnPrev, medi
     const isViva      = channel.tvgId.startsWith('viva.')
     const isRadyo7    = channel.tvgId.startsWith('radyo7.')
     const isRadyohome = channel.tvgId.startsWith('radyohome.')
-    const isHerkul    = channel.tvgId.startsWith('herkul.')
+    const isHerkul    = channel.tvgId.startsWith('herkul.') || channel.tvgId.startsWith('cihan.')
     if (!isPower && !isKarnaval && !isShow && !isOzgur && !isFenomen && !isViva && !isRadyo7 && !isRadyohome && !isHerkul) return
     let timer: ReturnType<typeof setTimeout>
     const refresh = async () => {
@@ -114,7 +114,7 @@ export default function RadioPlayer({ channel, onPrev, onNext, mediaOnPrev, medi
   useEffect(() => {
     const isJson = channel.tvgId.startsWith('number1.') || channel.tvgId.startsWith('turkuvaz.')
     if (!isJson) {
-      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.') || channel.tvgId.startsWith('fenomen.') || channel.tvgId.startsWith('viva.') || channel.tvgId.startsWith('radyo7.') || channel.tvgId.startsWith('radyohome.') || channel.tvgId.startsWith('herkul.')
+      const isWorker = channel.tvgId.startsWith('powerapp.') || channel.tvgId.startsWith('karnaval.') || channel.tvgId.startsWith('show.') || channel.tvgId.startsWith('ozgur.') || channel.tvgId.startsWith('fenomen.') || channel.tvgId.startsWith('viva.') || channel.tvgId.startsWith('radyo7.') || channel.tvgId.startsWith('radyohome.') || channel.tvgId.startsWith('herkul.') || channel.tvgId.startsWith('cihan.')
       if (!isWorker) setSong(null)
       return
     }

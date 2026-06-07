@@ -160,13 +160,16 @@ export async function fetchKarnavalNowPlaying(tvgId: string): Promise<NowPlaying
   } catch { return null }
 }
 
-// Herkul Radyo — RadioKing API (CORS açık, direkt çek)
-const RADIOKING_API = 'https://api.radioking.io/widget/radio/herkulradyo/track/current'
+// RadioKing tabanlı radyolar — CORS açık, direkt çek
+const RADIOKING_APIS: Record<string, string> = {
+  'herkul.radyo': 'https://api.radioking.io/widget/radio/herkulradyo/track/current',
+  'cihan.radyo':  'https://api.radioking.io/widget/radio/cihan-radyo/track/current',
+  'cihan.sema':   'https://api.radioking.io/widgets/api/v1/radio/605425/track/current',
+}
 
-export async function fetchHerkulNowPlaying(tvgId: string): Promise<NowPlaying | null> {
-  if (!tvgId.startsWith('herkul.')) return null
+async function fetchRadioKingNowPlaying(apiUrl: string): Promise<NowPlaying | null> {
   try {
-    const r = await fetch(RADIOKING_API)
+    const r = await fetch(apiUrl)
     if (!r.ok) return null
     const d = await r.json()
     const start    = d.started_at ? new Date(d.started_at).getTime() : 0
@@ -182,6 +185,12 @@ export async function fetchHerkulNowPlaying(tvgId: string): Promise<NowPlaying |
       duration,
     }
   } catch { return null }
+}
+
+export async function fetchHerkulNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  const api = RADIOKING_APIS[tvgId]
+  if (!api) return null
+  return fetchRadioKingNowPlaying(api)
 }
 
 
