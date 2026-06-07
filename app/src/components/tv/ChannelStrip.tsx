@@ -24,7 +24,7 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
     else { const t = setTimeout(() => setShow(false), 300); return () => clearTimeout(t) }
   }, [visible])
 
-  // Focused kanal değişince translateX hesapla → tekerlek gibi ak
+  // Focused kanal değişince translateX hesapla
   useEffect(() => {
     const container = wrapRef.current
     if (!container) return
@@ -33,11 +33,17 @@ export default function ChannelStrip({ channels, active, focused, onSelect, visi
     const idx = channels.findIndex(c => c.url === target.url)
     if (idx < 0) return
 
-    const containerW   = container.offsetWidth
-    const centerOffset = containerW / 2 - ITEM_W / 2
-    const newTx        = centerOffset - idx * STEP
+    const containerW = container.offsetWidth || window.innerWidth
+    const center     = containerW / 2 - ITEM_W / 2
+    const rawTx      = center - idx * STEP
 
-    setAnimate(!!focused)   // focused değişince smooth, ilk açılışta instant
+    // Sol: ilk kanal sol kenardan başlar (maxTx=0)
+    // Orta: merkeze gelince sabit kalır
+    // Sağ: son kanal sağ kenarda durur (minTx)
+    const minTx = Math.min(0, containerW - channels.length * STEP)
+    const newTx = Math.max(minTx, Math.min(0, rawTx))
+
+    setAnimate(!!focused)
     setTx(newTx)
   }, [focused, active, channels, show])
 
