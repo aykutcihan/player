@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import type { Channel } from '../../lib/m3u'
 
-const ITEM_W = 64   // w-16
-const ITEM_G = 12   // gap-3
-const STEP   = ITEM_W + ITEM_G  // 76px
+const ITEM_W  = 64  // w-16  (px)
+const ITEM_G  = 12  // gap-3 (px)
+const STEP    = ITEM_W + ITEM_G  // 76px per kanal
 
 interface Props {
   channels: Channel[]
@@ -14,100 +14,52 @@ interface Props {
 }
 
 export default function ChannelStrip({ channels, active, focused, onSelect, visible }: Props) {
-  const wrapRef     = useRef<HTMLDivElement>(null)
-  const virtualRef  = useRef<number | null>(null)  // tripled array'deki sanal idx
-  const prevRealRef = useRef<number>(-1)
-  const resetTimer  = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
-
-  const [show, setShow] = useState(false)
-  const [tx,   setTx]   = useState(0)
-  const [anim, setAnim] = useState(false)
+  const wrapRef      = useRef<HTMLDivElement>(null)   // overflow:hidden kap
+  const [show,      setShow]      = useState(false)
+  const [tx,        setTx]        = useState(0)        // translateX
+  const [animate,   setAnimate]   = useState(false)
 
   useEffect(() => {
     if (visible) setShow(true)
     else { const t = setTimeout(() => setShow(false), 300); return () => clearTimeout(t) }
   }, [visible])
 
+  // Focused kanal değişince translateX hesapla → tekerlek gibi ak
   useEffect(() => {
     const container = wrapRef.current
     if (!container) return
-    const n = channels.length
-    if (n === 0) return
-
     const target = focused ?? active
     if (!target) return
-    const realIdx = channels.findIndex(c => c.url === target.url)
-    if (realIdx < 0) return
+    const idx = channels.findIndex(c => c.url === target.url)
+    if (idx < 0) return
 
-    const containerW = container.offsetWidth || window.innerWidth
-    const center     = containerW / 2 - ITEM_W / 2
+    const containerW   = container.offsetWidth
+    const centerOffset = containerW / 2 - ITEM_W / 2
+    const newTx        = centerOffset - idx * STEP
 
-    // Animasyonsuz jump — ilk açılış veya grup değişimi
-    const doJump = (vIdx: number) => {
-      clearTimeout(resetTimer.current)
-      virtualRef.current   = vIdx
-      prevRealRef.current  = realIdx
-      setAnim(false)
-      setTx(center - vIdx * STEP)
-    }
-
-    // Animasyonlu adım — normal navigasyon
-    const doStep = (vIdx: number, wrapped: boolean) => {
-      clearTimeout(resetTimer.current)
-      virtualRef.current   = vIdx
-      prevRealRef.current  = realIdx
-      setAnim(true)
-      setTx(center - vIdx * STEP)
-      // Wrap olduktan sonra animasyon bitince sessizce ortaya reset
-      if (wrapped) {
-        resetTimer.current = setTimeout(() => {
-          const mid = n + realIdx
-          virtualRef.current = mid
-          setAnim(false)
-          setTx(center - mid * STEP)
-        }, 260)
-      }
-    }
-
-    // İlk render veya focused=null (sadece active geldi)
-    if (virtualRef.current === null || !focused) {
-      doJump(n + realIdx)
-      return
-    }
-
-    const prev = prevRealRef.current
-    const vIdx = virtualRef.current
-
-    const goingRight = realIdx === (prev + 1) % n
-    const goingLeft  = realIdx === (prev - 1 + n) % n
-
-    if (goingRight) {
-      doStep(vIdx + 1, realIdx < prev)   // realIdx < prev → wrap oldu
-    } else if (goingLeft) {
-      doStep(vIdx - 1, realIdx > prev)   // realIdx > prev → wrap oldu
-    } else {
-      doJump(n + realIdx)                // adjacent değil → jump
-    }
+    setAnimate(!!focused)   // focused değişince smooth, ilk açılışta instant
+    setTx(newTx)
   }, [focused, active, channels, show])
 
   if (!show) return null
 
-  const n       = channels.length
-  const tripled = n > 0 ? [...channels, ...channels, ...channels] : channels
-
   return (
-    <div className={`absolute bottom-0 left-0 right-0 z-20 transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'}`}>
+    <div
+      className={`absolute bottom-0 left-0 right-0 z-20 transition-opacity duration-300 ${
+        visible ? 'opacity-100' : 'opacity-0'
+      }`}
+    >
       <div className="h-8 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
       <div className="bg-black/70 backdrop-blur-sm py-3 overflow-hidden" ref={wrapRef}>
         <div
-          className="flex gap-3"
+          className="flex gap-3 pl-0"
           style={{
             transform:  `translateX(${tx}px)`,
-            transition: anim ? 'transform 0.22s ease-out' : 'none',
+            transition: animate ? 'transform 0.22s ease-out' : 'none',
             willChange: 'transform',
           }}
         >
-          {tripled.map((ch, i) => {
+          {channels.map((ch, i) => {
             const isActive  = active?.tvgId === ch.tvgId
             const isFocused = focused?.url  === ch.url
             return (
