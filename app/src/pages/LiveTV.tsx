@@ -156,9 +156,10 @@ export default function LiveTV() {
           const curCh = channels[focusIdx]
           const gIdx  = groupChannels.findIndex(c => c.url === curCh?.url)
           const base  = gIdx < 0 ? 0 : gIdx
+          const n = groupChannels.length
           const nextGIdx = e.keyCode === 39
-            ? Math.min(base + 1, groupChannels.length - 1)
-            : Math.max(base - 1, 0)
+            ? (base + 1) % n
+            : (base - 1 + n) % n
           const nextCh = groupChannels[nextGIdx]
           if (nextCh) {
             const nextIdx = channels.findIndex(c => c.url === nextCh.url)
