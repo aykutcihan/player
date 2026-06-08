@@ -31,7 +31,40 @@ jobs:
         working-directory: radyo
         run: npm run build
 
-      - name: tv-takip gh-pages reposuna push (radyo-app/ alt klasoru)
+      - name: JDK kur
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Android SDK kur
+        uses: android-actions/setup-android@v3
+
+      - name: Capacitor android sync
+        working-directory: radyo
+        run: npx cap sync android
+
+      - name: Imzalama anahtarini hazirla
+        working-directory: radyo/android
+        env:
+          RADYO_KEYSTORE_BASE64: ${{ secrets.RADYO_KEYSTORE_BASE64 }}
+          RADYO_KEYSTORE_PASSWORD: ${{ secrets.RADYO_KEYSTORE_PASSWORD }}
+          RADYO_KEY_ALIAS: ${{ secrets.RADYO_KEY_ALIAS }}
+          RADYO_KEY_PASSWORD: ${{ secrets.RADYO_KEY_PASSWORD }}
+        run: |
+          echo "$RADYO_KEYSTORE_BASE64" | base64 -d > app/radyo-release.keystore
+          cat > keystore.properties <<EOF
+          storeFile=radyo-release.keystore
+          storePassword=$RADYO_KEYSTORE_PASSWORD
+          keyAlias=$RADYO_KEY_ALIAS
+          keyPassword=$RADYO_KEY_PASSWORD
+          EOF
+
+      - name: Release APK derle (imzali)
+        working-directory: radyo/android
+        run: ./gradlew assembleRelease
+
+      - name: tv-takip gh-pages reposuna push (radyo-app/ alt klasoru + APK)
         env:
           EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
         run: |
@@ -45,6 +78,7 @@ jobs:
           rm -rf _radyo_ghpages/radyo-app
           mkdir -p _radyo_ghpages/radyo-app
           cp -r radyo/dist/. _radyo_ghpages/radyo-app/
+          cp radyo/android/app/build/outputs/apk/release/app-release.apk _radyo_ghpages/radyo-app/radyo.apk
 
           git -C _radyo_ghpages add -A
           git -C _radyo_ghpages diff --cached --quiet || (git -C _radyo_ghpages commit -m "Radyo app guncellendi" && git -C _radyo_ghpages push origin gh-pages)
