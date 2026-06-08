@@ -13,6 +13,17 @@ import type {
 // Access-Control-Allow-Origin header'ı olmayan kaynaklar (ör. tvkulesi) da oynatılabilir.
 export const useCapacitorHttpLoader = () => Capacitor.isNativePlatform()
 
+// Cihazda Chrome DevTools erişimi olmadığı için son yükleme denemelerini
+// hata ekranında gösterip teşhis koymaya yarar.
+const debugLog: string[] = []
+export function pushDebug(line: string) {
+  debugLog.push(line)
+  if (debugLog.length > 12) debugLog.shift()
+}
+export function getDebugLog(): string[] {
+  return [`platform=${Capacitor.getPlatform()} native=${Capacitor.isNativePlatform()}`, ...debugLog]
+}
+
 function base64ToArrayBuffer(base64: string): ArrayBuffer {
   const binStr = atob(base64)
   const bytes = new Uint8Array(binStr.length)
@@ -46,6 +57,7 @@ export class CapacitorHttpLoader implements Loader<LoaderContext> {
     this.stats.loading.start = performance.now()
 
     const isBinary = context.responseType === 'arraybuffer'
+    const shortUrl = context.url.length > 60 ? context.url.slice(0, 60) + '…' : context.url
 
     CapacitorHttp.get({
       url: context.url,
@@ -56,6 +68,7 @@ export class CapacitorHttpLoader implements Loader<LoaderContext> {
       this.stats.loading.first = this.stats.loading.end = performance.now()
 
       if (res.status >= 400) {
+        pushDebug(`HTTP ${res.status} ← ${shortUrl}`)
         callbacks.onError({ code: res.status, text: `HTTP ${res.status}` }, context, res, this.stats)
         return
       }
@@ -66,12 +79,15 @@ export class CapacitorHttpLoader implements Loader<LoaderContext> {
 
       const size = isBinary ? (data as ArrayBuffer).byteLength : (data as string).length
       this.stats.loaded = this.stats.total = size
+      pushDebug(`OK ${size}b ← ${shortUrl}`)
 
       const response: LoaderResponse = { url: res.url || context.url, data }
       callbacks.onSuccess(response, this.stats, context, res)
     }).catch((err) => {
       if (this.aborted) return
-      callbacks.onError({ code: 0, text: err?.message ?? 'CapacitorHttp load error' }, context, err, this.stats)
+      const msg = err?.message ?? 'CapacitorHttp load error'
+      pushDebug(`ERR ${msg} ← ${shortUrl}`)
+      callbacks.onError({ code: 0, text: msg }, context, err, this.stats)
     })
   }
 

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useImperativeHandle, forwardRef, useState, useCallback } from 'react'
 import Hls from 'hls.js'
-import { CapacitorHttpLoader, useCapacitorHttpLoader } from '../lib/capacitorHlsLoader'
+import { CapacitorHttpLoader, useCapacitorHttpLoader, getDebugLog } from '../lib/capacitorHlsLoader'
 
 export interface VideoPlayerHandle {
   seekToTime:  (isoTime: string) => void
@@ -272,6 +272,10 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, urls }, ref) =>
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
           </svg>
           <div className="text-white/50 text-lg">Yayın yüklenemedi</div>
+          {/* Geçici teşhis bilgisi — cihazda DevTools erişimi olmadan loader durumunu görmek için */}
+          <div className="text-white/30 text-[10px] font-mono text-center max-w-[90%] leading-tight">
+            {getDebugLog().map((l, i) => <div key={i}>{l}</div>)}
+          </div>
         </div>
       )}
       {/* Video */}
