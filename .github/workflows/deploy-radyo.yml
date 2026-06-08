@@ -62,7 +62,9 @@ jobs:
 
       - name: Release APK derle (imzali)
         working-directory: radyo/android
-        run: ./gradlew assembleRelease
+        run: |
+          chmod +x ./gradlew
+          ./gradlew assembleRelease
 
       - name: tv-takip gh-pages reposuna push (radyo-app/ alt klasoru + APK)
         env:
