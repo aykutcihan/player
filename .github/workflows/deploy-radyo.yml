@@ -1,0 +1,50 @@
+name: Deploy Radyo App
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'radyo/**'
+      - '.github/workflows/deploy-radyo.yml'
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-radyo
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Node.js kur
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Bagimliliklar
+        working-directory: radyo
+        run: npm install
+
+      - name: Build
+        working-directory: radyo
+        run: npm run build
+
+      - name: tv-takip gh-pages reposuna push (radyo-app/ alt klasoru)
+        env:
+          EPG_DATA_TOKEN: ${{ secrets.EPG_DATA_TOKEN }}
+        run: |
+          REPO_URL="https://x-access-token:$EPG_DATA_TOKEN@github.com/aykutcihan/tv-takip.git"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          rm -rf _radyo_ghpages
+          git clone -b gh-pages "$REPO_URL" _radyo_ghpages
+
+          rm -rf _radyo_ghpages/radyo-app
+          mkdir -p _radyo_ghpages/radyo-app
+          cp -r radyo/dist/. _radyo_ghpages/radyo-app/
+
+          git -C _radyo_ghpages add -A
+          git -C _radyo_ghpages diff --cached --quiet || (git -C _radyo_ghpages commit -m "Radyo app guncellendi" && git -C _radyo_ghpages push origin gh-pages)
