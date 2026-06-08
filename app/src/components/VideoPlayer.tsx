@@ -1,5 +1,6 @@
 import { useEffect, useRef, useImperativeHandle, forwardRef, useState, useCallback } from 'react'
 import Hls from 'hls.js'
+import { CapacitorHttpLoader, useCapacitorHttpLoader } from '../lib/capacitorHlsLoader'
 
 export interface VideoPlayerHandle {
   seekToTime:  (isoTime: string) => void
@@ -89,7 +90,13 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, urls }, ref) =>
     setLoading(true)
     setError(false)
 
+    // Cleanup sonrası ateşlenen stale Promise .catch() callback'lerini engeller.
+    // video.play() Promise'i effect temizlendikten sonra reject edebilir; bu flag
+    // olmadan eski closure urlIdxRef'i yanlış ilerletir ve çalışan URL'ler atlanır.
+    let cancelled = false
+
     const tryNextUrl = () => {
+      if (cancelled) return
       const list = urlListRef.current
       const next = urlIdxRef.current + 1
       if (next < list.length) {
@@ -101,30 +108,46 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, urls }, ref) =>
       }
     }
 
-    const onPlay    = () => { setPlaying(true); setLoading(false) }
+    // Sessiz arıza koruması: URL ne error event'i ne de play() reddi ile haber verir,
+    // sadece sonsuza dek "yükleniyor" durumunda kalırsa belirli sürede bir sonraki URL'e geç.
+    let stallTimer: ReturnType<typeof setTimeout> | null = setTimeout(() => {
+      stallTimer = null
+      tryNextUrl()
+    }, 12000)
+    const clearStallTimer = () => {
+      if (stallTimer !== null) { clearTimeout(stallTimer); stallTimer = null }
+    }
+
+    const onPlay    = () => { clearStallTimer(); setPlaying(true); setLoading(false) }
     const onPause   = () => setPlaying(false)
     const onWaiting = () => setLoading(true)
     const onPlaying = () => {
       setLoading(false)
-      // Arka planda kalite kontrolü — 2sn sonra diğer URL'leri ölç
+      // Arka planda kalite kontrolü — 2sn sonra daha yüksek öncelikli URL'leri ölç
+      // Sadece mevcut URL'den daha önce gelen adaylar denenir; düşük öncelikli kaynağa
+      // geçiş yapılmaz (token süresi dolmuş kaynağa upgrade→fail→döngü sorununu önler)
       upgradeCtrlRef.current?.abort()
       const ctrl = new AbortController()
       upgradeCtrlRef.current = ctrl
       setTimeout(async () => {
         if (ctrl.signal.aborted) return
-        const allUrls = urlListRef.current
-        const others  = allUrls.filter(u => u !== activeUrl)
-        if (others.length === 0) return
-        const [currentBw, ...otherBws] = await Promise.all([
+        const allUrls    = urlListRef.current
+        const currentIdx = urlIdxRef.current
+        const candidates = allUrls.slice(0, currentIdx) // yalnızca daha yüksek öncelikli
+        if (candidates.length === 0) return
+        const [currentBw, ...candidateBws] = await Promise.all([
           fetchBandwidth(activeUrl, ctrl.signal),
-          ...others.map(u => fetchBandwidth(u, ctrl.signal)),
+          ...candidates.map(u => fetchBandwidth(u, ctrl.signal)),
         ])
         if (ctrl.signal.aborted) return
-        const best = others
-          .map((u, i) => ({ url: u, bw: otherBws[i] }))
+        const best = candidates
+          .map((u, i) => ({ url: u, bw: candidateBws[i], idx: i }))
           .filter(x => x.bw > 0 && x.bw > (currentBw ?? 0))
           .sort((a, b) => b.bw - a.bw)[0]
-        if (best) setActiveUrl(best.url)
+        if (best) {
+          urlIdxRef.current = best.idx  // fallback chain doğru yerden devam etsin
+          setActiveUrl(best.url)
+        }
       }, 2000)
     }
     const onError   = () => tryNextUrl()
@@ -151,7 +174,14 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, urls }, ref) =>
     }
 
     if (activeUrl.includes('.m3u8') && Hls.isSupported()) {
-      const hls = new Hls({ enableWorker: true, backBufferLength: 3600 })
+      const hls = new Hls({
+        enableWorker: true,
+        backBufferLength: 3600,
+        // CORS header'ı olmayan kaynaklar (tvkulesi vb.) WebView'da engellenir;
+        // native platformda istekleri CapacitorHttp üzerinden native HTTP'ye yönlendirip
+        // tarayıcı CORS kısıtlamasını by-pass ediyoruz.
+        ...(useCapacitorHttpLoader() ? { loader: CapacitorHttpLoader } : {}),
+      })
       hlsRef.current = hls
       let mediaRecovered = false
       hls.loadSource(activeUrl)
@@ -172,6 +202,8 @@ const VideoPlayer = forwardRef<VideoPlayerHandle, Props>(({ url, urls }, ref) =>
     }
 
     return () => {
+      cancelled = true
+      clearStallTimer()
       video.removeEventListener('play',        onPlay)
       video.removeEventListener('pause',       onPause)
       video.removeEventListener('waiting',     onWaiting)
