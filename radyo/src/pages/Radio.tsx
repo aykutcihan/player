@@ -192,8 +192,8 @@ export default function Radio() {
     const f = favGroups.length  || 1
     const c = stripChannels.length || 1
     const d1 = attach(mobGroupArea.current,
-      () => setGroupOffset(p => (p + 1) % n),
-      () => setGroupOffset(p => (p - 1 + n) % n))
+      () => setGroupOffset(p => (p + 3) % n),
+      () => setGroupOffset(p => (p - 3 + n) % n))
     const d2 = attach(favRef.current,
       () => setActiveFav(p => (((p ?? 0) + 1) % f)),
       () => setActiveFav(p => (((p ?? 0) - 1 + f) % f)))
