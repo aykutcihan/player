@@ -193,4 +193,19 @@ export async function fetchHerkulNowPlaying(tvgId: string): Promise<NowPlaying |
   return fetchRadioKingNowPlaying(api)
 }
 
+// Radyo Kuran — SonicPanel anlık cüz bilgisi (CORS açık, direkt çek)
+export async function fetchRadyoKuranNowPlaying(tvgId: string): Promise<NowPlaying | null> {
+  if (tvgId !== 'radyokuran.fm') return null
+  try {
+    const r = await fetch('https://anadolu.liderhost.com.tr:10995/stats?json=1')
+    if (!r.ok) return null
+    const d = await r.json()
+    const raw = (d?.songtitle ?? '').trim()
+    if (!raw) return null
+    const dash = raw.indexOf(' - ')
+    const title = dash !== -1 ? raw.slice(dash + 3).trim() : raw
+    return { title, artist: '', cover: '' }
+  } catch { return null }
+}
+
 
