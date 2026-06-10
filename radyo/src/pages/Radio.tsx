@@ -68,6 +68,7 @@ export default function Radio() {
   const [channelOffset,  setChannelOffset]  = useState(0)
   const [displayName,    setDisplayName]    = useState<string>('')
   const nameTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
+  const channelRevertTimerRef = useRef<ReturnType<typeof setTimeout> | undefined>(undefined)
 
   const grpRef0    = useRef<HTMLButtonElement>(null)
   const grpRef1    = useRef<HTMLButtonElement>(null)
@@ -218,8 +219,8 @@ export default function Radio() {
       () => setActiveFav(p => (((p ?? 0) + 1) % f)),
       () => setActiveFav(p => (((p ?? 0) - 1 + f) % f)))
     const d3 = attach(mobChInnerRef.current,
-      () => setChannelOffset(p => (p + 1) % c),
-      () => setChannelOffset(p => (p - 1 + c) % c))
+      () => setChannelOffset(p => (p + 3) % c),
+      () => setChannelOffset(p => (p - 3 + c) % c))
     return () => { d1(); d2(); d3() }
   }, [groupNames.length, favGroups.length, stripChannels.length])
 
@@ -259,6 +260,20 @@ export default function Radio() {
     const idx = stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId)
     if (idx >= 0) setChannelOffset((idx - 1 + stripChannels.length) % stripChannels.length)
   }, [activeRadio?.tvgId])
+
+  // Şerit kaydırılıp 5sn boyunca yeni radyo seçilmezse çalan kanala geri dön
+  useEffect(() => {
+    clearTimeout(channelRevertTimerRef.current)
+    if (!activeRadio || stripChannels.length === 0) return
+    const idx = stripChannels.findIndex(c => c.tvgId === activeRadio.tvgId)
+    if (idx === -1) return
+    const centeredOffset = (idx - 1 + stripChannels.length) % stripChannels.length
+    if (channelOffset === centeredOffset) return
+    channelRevertTimerRef.current = setTimeout(() => {
+      setChannelOffset(centeredOffset)
+    }, 5000)
+    return () => clearTimeout(channelRevertTimerRef.current)
+  }, [channelOffset, activeRadio, stripChannels])
 
   // Kanal şeridi açılınca orta butona focus
   useEffect(() => {
