@@ -42,12 +42,10 @@ android {
             }
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
-    }
+    // Not: compileOptions capacitor.build.gradle tarafindan VERSION_21 olarak set ediliyor
+    // (apply from bu dosyadan sonra calisiyor), Kotlin'i de ayni hedefe esitliyoruz.
     kotlinOptions {
-        jvmTarget = "17"
+        jvmTarget = "21"
     }
 }
 
