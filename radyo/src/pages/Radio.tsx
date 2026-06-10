@@ -10,6 +10,11 @@ import type { Programme } from '../lib/epg'
 
 const LONG_PRESS_MS = 500
 
+const GROUP_ORDER = [
+  'Dini', 'Pop', 'Yabancı', 'Chill', 'Özgün', 'THM', 'Etnik',
+  'Dans', 'Fantazi', 'Slow', 'Nostalji', 'TSM', 'Rap', 'Rock', 'Haber',
+]
+
 function GroupIcon({ group }: { group: string }) {
   const p = { viewBox: "0 0 24 24", className: "w-[40%] h-[40%]", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round" as const, strokeLinejoin: "round" as const }
   switch (group) {
@@ -104,7 +109,16 @@ export default function Radio() {
     return map
   }, [radioChannels])
 
-  const groupNames = useMemo(() => [...normalGroupMap.keys()], [normalGroupMap])
+  const groupNames = useMemo(() => {
+    return [...normalGroupMap.keys()].sort((a, b) => {
+      const ia = GROUP_ORDER.indexOf(a)
+      const ib = GROUP_ORDER.indexOf(b)
+      if (ia === -1 && ib === -1) return 0
+      if (ia === -1) return 1
+      if (ib === -1) return -1
+      return ia - ib
+    })
+  }, [normalGroupMap])
 
   // Görünür 3 grup (sonsuz döngü)
   const visibleGroups = useMemo(() =>
