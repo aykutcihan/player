@@ -1,5 +1,6 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import type { Channel } from './m3u'
+import { RadioFavorites } from './radioFavoritesBridge'
 
 export interface FavGroup {
   name: string
@@ -34,10 +35,17 @@ function load(): FavGroup[] {
 
 function save(groups: FavGroup[]) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(groups))
+  RadioFavorites.setFavorites({ groups }).catch(() => {})
 }
 
 export function useFavorites() {
   const [groups, setGroups] = useState<FavGroup[]>(load)
+
+  // Mevcut favorileri Android Auto servisinin ilk kez okuyabilmesi icin native tarafa senkronla
+  useEffect(() => {
+    RadioFavorites.setFavorites({ groups }).catch(() => {})
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   const update = useCallback((next: FavGroup[]) => {
     setGroups(next)
