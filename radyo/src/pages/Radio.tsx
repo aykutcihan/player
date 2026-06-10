@@ -15,6 +15,15 @@ const GROUP_ORDER = [
   'Dans', 'Fantazi', 'Slow', 'Nostalji', 'TSM', 'Rap', 'Rock', 'Haber',
 ]
 
+const POP_CHANNEL_ORDER = [
+  'Kral Pop Radyo', 'Süper FM', 'Fenomen Türk', 'Süper2', 'Show Radyo', 'Best FM',
+  'Fenomen Karışık', 'Power Pop', 'Power Turk Taptaze', 'Süper Yeni', 'Show Trend',
+  'Virgin Radio Türkiye', 'Pal FM', 'Kafa Radyo', 'Kiss Türk', 'başka', 'Radyo Viva',
+  'NR1 Türk Eller Havaya', 'Viva Pop', 'Radyo Türkuvaz', 'Show Eller Havaya',
+  'Pop Hit 7', 'Garaj Radyo', 'Karadeniz FM', 'Pop Home', 'Radyo 7 (Home)', 'Radyo D',
+  'Radyo Vokal', 'Turkuland', 'MydonoseTürk',
+]
+
 function GroupIcon({ group }: { group: string }) {
   const p = { viewBox: "0 0 24 24", className: "w-[40%] h-[40%]", fill: "none", stroke: "currentColor", strokeWidth: 1.5, strokeLinecap: "round" as const, strokeLinejoin: "round" as const }
   switch (group) {
@@ -138,6 +147,17 @@ export default function Radio() {
   // Şerit kanalları — fav veya seçili grup
   const stripChannels = useMemo((): Channel[] => {
     if (activeFav !== null) return resolveChannels(activeFav, radioChannels)
+    if (stripGroup === 'Pop') {
+      const channels = normalGroupMap.get(stripGroup) ?? []
+      return [...channels].sort((a, b) => {
+        const ia = POP_CHANNEL_ORDER.indexOf(a.name)
+        const ib = POP_CHANNEL_ORDER.indexOf(b.name)
+        if (ia === -1 && ib === -1) return 0
+        if (ia === -1) return 1
+        if (ib === -1) return -1
+        return ia - ib
+      })
+    }
     if (stripGroup) return normalGroupMap.get(stripGroup) ?? []
     return []
   }, [activeFav, stripGroup, radioChannels, normalGroupMap, resolveChannels])
